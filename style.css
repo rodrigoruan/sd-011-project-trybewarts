@@ -25,6 +25,11 @@ main {
   flex: 50%;
 }
 
+.radio-control-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
 .select-control-wrapper select {
   flex-grow: 1;
 }
