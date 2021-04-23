@@ -30,4 +30,5 @@ main #evaluation-form {
   width: 675px;
   height: 50px;
   background-color: aqua;
+  flex-direction: column;
 }
