@@ -15,3 +15,7 @@ main {
 .form-line {
   display: flex;
 }
+
+.family-radio {
+  flex-direction: column;
+}
