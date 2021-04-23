@@ -39,3 +39,7 @@ body {
 #trybewarts-header-title {
   align-self: center;
 }
+
+.trybewarts-login input:nth-child(1) {
+  border: 2px solid red;
+}
