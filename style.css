@@ -9,3 +9,14 @@
   width: 10%;
   padding: 20px;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+
+main {
+  display: flex;
+}
+
+
