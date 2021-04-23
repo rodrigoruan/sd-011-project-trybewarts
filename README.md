@@ -100,7 +100,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 ### Antes de começar a desenvolver:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-011-project-trybewarts.git`.
+  * `git clone git@github.com:betrybe/sd-0x-project-trybewarts.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-011-project-trybewarts`
 
@@ -269,7 +269,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   * Existem dois inputs e um botão dentro do formulário
   * Os inputs deverão conter placeholders com as palavras *'Login'* e *'Senha'*,
   * O formulário deve ser um flex container
-  * O formulário deve aceitar como padrão o login 'tryber@betrybe.com' e a senha '123456'
+  * O formulário deve aceitar como padrão o login 'tryber@teste.com' e a senha '123456'
     - Caso o login ou a senha sejam **diferentes** do padrão, ao clicar no botão deverá ser emitido um alerta contendo o texto *'Login ou senha inválidos.'*
     - Caso o login ou a senha sejam **as mesmas** definidas por padrão, ao clicar no botão deverá ser emitido um alerta contendo o texto *'Olá, Tryber!'*
 
@@ -314,11 +314,9 @@ Pontos importantes:
   - O elemento `main` e o `form` possuem a propriedade CSS `display: flex`
   - O elemento `form` possui a propriedade CSS `width: 675px`
 
-### 6. Crie um id para o formulário do requisito 5
+### 6. Faça com que o formulário do requisito 5 seja um container flex com o eixo principal vertical
 
-  Pontos importantes:
-  * Esse id deverá se chamar `evaluation-form`
-  * Esse id deverá possuir a propriedade `display: flex`
+  Ponto importante:
   * Alinhe o eixo principal dessa classe para ser o eixo vertical
 
   #### O que será verificado:
@@ -331,7 +329,7 @@ Pontos importantes:
 
   Pontos importantes:
   * Deve possuir o id ``trybewarts-forms-logo``
-  * O atributo `src` do logotipo deve apontar para ``./images/trybewarts-colored.svg``
+  * O atributo `src` do logotipo deve apontar para ``images/trybewarts-colored.svg``
   * A imagem deve possuir um `height` de `500px`
 
   #### O que será verificado:
@@ -354,13 +352,15 @@ Pontos importantes:
 ### 9. Crie um select 'Casa' contendo quatro options
 
   Pontos importantes:
-  * Deverá conter a opção `Gitnória` e um id ``gitnoria-house``
-  * Deverá conter a opção `Reactpuff`e um id ``reactpuff-house``
-  * Deverá conter a opção `Corvinode`e um id ``corvinode-house``
-  * Deverá conter a opção `Pytherina`e um id ``pytherina-house``
+  * Deverá  o select conter o id ``house``
+  * Deverá conter a opção com text e value `Gitnória` e com o id ``gitnoria-house``
+  * Deverá conter a opção com text e value `Reactpuff`e com o id ``reactpuff-house``
+  * Deverá conter a opção com text e value `Corvinode`e com o id ``corvinode-house``
+  * Deverá conter a opção com text e value `Pytherina`e com o id ``pytherina-house```
 
   #### O que será verificado:
 
+  - Existe um elemento `select` com o id `house`
   - Existe um elemento `option` com o id `gitnoria-house`
   - Existe um elemento `option` com o id `reactpuff-house`
   - Existe um elemento `option` com o id `corvinode-house`
@@ -380,6 +380,7 @@ Pontos importantes:
   Pontos importantes:
   * Os campos de *'Email'* e *'Casa'* devem estar abaixo dos de *'Nome'* e *'Sobrenome'*
   * Os campos de *'Email'* e *'Casa'* devem estar lado a lado
+  * O campo *'Casa'* deve possuir o `id="house"`
 
   #### O que será verificado:
 
@@ -408,8 +409,9 @@ Pontos importantes:
 
   Pontos importantes:
   * Um elemento com o id `label-content` e o texto *"Qual conteúdo você está com mais vontade de aprender?"* deverá ser criado
-  * O campo deve ser formado por seis checkbox com as seguintes opções (seguindo esta ordem): *HoFs*, *Jest*, *Promises*, *React*, *SQL* e *Python*
   * Os valores (`value`) dos campos são, respectivamente: *Higher Order Functions*, *Jest*, *Promises*, *React*, *SQL*, *Python*
+  * Os valores (`value`) dos campos são, respectivamente: *HoFs*, *Jest*, *Promises*, *React*, *SQL*, *Python*
+  * As classes (`class`) dos campos devem ser `subject`
   * Posicione as checkbox para ficar lado a lado
   * Posicione as checkbox a abaixo do label
 
@@ -429,6 +431,7 @@ Pontos importantes:
   Pontos importantes:
   * Um elemento com o id `label-rate` e o texto *"Como você avalia a Trybewarts?"* deverá ser criado
   * O campo deve ser formado por dez radio buttons, contendo as opções de 1 a 10
+  * Os radio buttons devem ter o atributo `value` com o valor de suas opções de 1 a 10
   * Os radio buttons devem ter o atributo `name` com o valor *"rate"*
   * Posicione os radio buttons para ficar lado a lado
   * Posicione os radio buttons à direita da label
@@ -437,6 +440,7 @@ Pontos importantes:
 
   - Existe um elemento `label` com o id `label-rate` que possui um conteúdo de texto `Como você avalia a Trybewarts?`
   - Existem 10 `radio-buttons` com o atributo `name="rate"`
+  - Existem 10 `radio-buttons` contendo o atributo `value` de 1 a 10
   - Os `radio-buttons` estão à direita do texto da label
 
 ### 15. Crie uma textarea com o id 'textarea' e uma label com a classe 'textarea' contendo o número máximo de caracteres igual à 500
@@ -446,8 +450,8 @@ Pontos importantes:
   * O campo `textarea` deverá ter o máximo de 500 caracteres
 
   #### O que será verificado:
-
-  - Existe uma label com o id `textarea` e o texto `Deixe seu comentário:`
+  
+  - Existe uma `label` com a classe `textarea` e o texto `Deixe seu comentário:`
   - O elemento `textarea` possui um limite de 500 caracteres
 
 ### 16. Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações
@@ -503,10 +507,12 @@ Pontos importantes:
   * O contador inicialmente deve possuir o valor `500`
   * O contador deverá decrementar a medida que algo for escrito no campo `textarea`
   * O contador deverá incrementar a medida que algo for deletado no campo `textarea`
+  * O elemento `textarea` deverá possuir `id="textarea"`
 
   #### O que será verificado:
 
   - Existe um elemento com o id `counter`
+  - Existe um elemento com o id `textarea`
   - O preenchimento do campo de `textarea` altera o número apresentado no elemento `#counter`
 
 ### 21. Faça com que ao clicar no botão 'Enviar', o conteúdo do formulário seja substituído pelas informações preenchidas
@@ -522,6 +528,7 @@ Pontos importantes:
 
   #### O que será verificado:
 
+  - Os `inputs` tipo `checkbox` referentes à lista de conteúdo possuem `class="subject"`
   - Ao clicar no botão de enviar, existe um texto no formato `Nome: -Nome- -Sobrenome-`
   - Ao clicar no botão de enviar, existe um texto no formato `Email: -Email-`
   - Ao clicar no botão de enviar, existe um texto no formato `Casa: -Casa-`
