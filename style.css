@@ -18,7 +18,7 @@ header {
   color: white;
 }
 
-.logo {
+.trybewarts-header-logo {
   justify-items: center;
   width: 100px;
   padding: 10px;
@@ -43,9 +43,19 @@ header {
   justify-content: center;
 }
 
-.trybewarts-forms {
+/* Section Center */
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex: column nowrap;
+}
+
+.trybewarts-form {
   display: flex;
   flex: column nowrap;
-  background-color: brown;
+}
+
+.section-form {
+  display: flex;
 }
 
