@@ -7,17 +7,6 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -34,4 +23,14 @@
   display: flex;
   align-content: center;
   background-color: white;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
