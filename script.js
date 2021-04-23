@@ -11,3 +11,6 @@ function clickenter() {
 }
 
 enter.addEventListener('click', clickenter);
+
+const checkboxAgreement = document.getElementById('agreement');
+const btnAgreement = document.getElementById('submit-btn');
