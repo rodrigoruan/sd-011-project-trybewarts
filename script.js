@@ -1,6 +1,6 @@
 // -Declaração de constantes
-const loginInput = document.querySelector('#email').value;
-const passwordInput = document.querySelector('#password').value;
+// const loginInput = document.querySelector('#email').value;
+// const passwordInput = document.querySelector('#password').value;
 const buttonLogin = document.querySelector('#button');
 
 function errorAlert() {
@@ -12,7 +12,7 @@ function helloTryber() {
 
 function emailChecker() {
   let checker = false;
-
+  const loginInput = document.querySelector('#email').value;
   for (let index = 0; index < loginInput.length; index += 1) {
     if (loginInput[index] === '@') {
       checker = true;
@@ -24,6 +24,7 @@ function emailChecker() {
 }
 
 function passwordChecker() {
+  const passwordInput = document.querySelector('#password').value;
   if (passwordInput.isNaN) {
     errorAlert();
   }
@@ -33,6 +34,8 @@ function passwordChecker() {
 }
 
 function addEventListenerChecker() {
+  const loginInput = document.querySelector('#email').value;
+  const passwordInput = document.querySelector('#password').value;
   passwordChecker();
   emailChecker();
   if (loginInput === 'tryber@teste.com' && passwordInput === '123456') {
