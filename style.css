@@ -13,3 +13,12 @@
   align-self: center;
   color: white;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
