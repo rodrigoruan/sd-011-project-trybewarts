@@ -35,26 +35,30 @@
         <button type="submit" id="submit" value="Submit">Submit</button>
       </form>
     </header>
-
     <main class="main-form">
       <form action="" method="get" id="evaluation-form">
-      <input type="text" placeholder="Nome" name="nome" id="input-name">
-      <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
-      <input type="email" placeholder="Email" name="email2" id="input-email">
-    </main>
-<!--requisito 9 casas-->
-    <div id="select-houses">
-      <label for="select-trybehouses">Casa:</label> 
-      <select name="select-trybehouses" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode"</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
+        <div id="namensurname">
+          <input type="text" placeholder="Nome" name="nome" id="input-name">
+          <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
+        </div>
+        <div id="select-houses-form">
+        <div id="registeremail">
+          <input type="email" placeholder="Email" name="email2" id="input-email">
+        </div>
+        <div id="select-houses">
+          <label for="select-trybehouses">Casa</label> 
+          <select name="select-trybehouses" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode"</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+      </div>
+      </form>
     </div>
-    
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
-
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
