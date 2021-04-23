@@ -12,5 +12,19 @@
 
 .trybewarts-login {
 	align-self: center;
+	border-radius: 3px;
 }
 
+#trybewarts-header-title {
+	align-self: center;
+	color: white;
+}
+
+main {
+	display: flex;
+}
+
+#evaluation-form {
+	display: flex;
+	width: 675px;
+}

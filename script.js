@@ -10,3 +10,4 @@ document.getElementById('loginButton').addEventListener('click', () => {
 	  alert('Login ou Senha invalidos.');
   }
 });
+
