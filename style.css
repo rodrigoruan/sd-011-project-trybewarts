@@ -11,3 +11,11 @@
 .header .trybewarts-header-title {
   align-items: center;
 }
+
+main {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
