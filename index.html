@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="/images/trybewarts-header-logo.svg" alt="trybewarts-logo">
+    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="trybewarts-logo">
     
     <h1>Trybewarts</h1>
     
@@ -30,129 +30,131 @@
 
     </form>
   </header>
-  <form action="" method="GET" enctype="multipart/form-data">
-    <fieldset>
-      <h1>forms</h1>
-
-      <div class="control">
-        <input class="input"  type="text" name="nome" id="name" placeholder="Nome" required maxlength="40">
-      </div>
-
-      <div class="control">
-        <input class="input"  type="text" name="sobrenome" id="last-name" placeholder="Sobrenome" required maxlength="40">
-      </div>
-
-      <div class="control">
-        <input class="input"  type="email" name="email" id="email" placeholder="Email" required maxlength="50">
-      </div>
-
+  <main>
+      <form id="evaluation-form" action="" method="GET" enctype="multipart/form-data">
+        <fieldset>
+          <h1>forms</h1>
     
-      <label class="label" for="house">Casa</label>
-      <div class="control">
-        <div class="select">
-          <select name="house" id="house" value = "" required></select>
-        </div>
-      </div>
+          <div class="control">
+            <input class="input"  type="text" name="nome" id="name" placeholder="Nome" required maxlength="40">
+          </div>
+    
+          <div class="control">
+            <input class="input"  type="text" name="sobrenome" id="last-name" placeholder="Sobrenome" required maxlength="40">
+          </div>
+    
+          <div class="control">
+            <input class="input"  type="email" name="email" id="email" placeholder="Email" required maxlength="50">
+          </div>
+    
         
-      <div class="control">
-        
-        <p>Qual é a sua família?</p>
-        <label for="frontend">
-          <input class="radio" type="radio" name="family" id="frontend" value="fe" required checked>Família Frontend
-        </label>
-        <label class="radio" for="backend">
-          <input class="radio" type="radio" name="family" id="backend" value="be" required>Família Backend
-        </label>
-        <label class="radio" for="fullstack">
-          <input class="radio" type="radio" name="family" id="fullstack" value="fs" required>Família Fullstack
-        </label>
-      </div>
-
-      <div class="control">
-        <p>Qual conteúdo você está com mais vontade de aprender</p>
-        
-        
-        <label for="hofs">HoFs</label>
-        <input type="checkbox" id="hofs" name="tech" value="hofs"> 
-
-        <label for="jest">Jest</label>
-        <input type="checkbox" id="jest" name="tech" value="jest">
-
-        <label for="promises">Promises</label>
-        <input type="checkbox" id="promises" name="tech" value="promises">
-
-        <label for="react">React</label>
-        <input type="checkbox" id="react" name="tech" value="react">
-
-        <label for="sql">SQL</label>
-        <input type="checkbox" id="sql" name="tech" value="sql"> 
-
-        <label for="python">Python</label>
-        <input type="checkbox" id="python" name="tech" value="python"> 
-      </div>
-
-      <div class="control">
-        
-        <p>Como você avalia a Trybewarts ?</p>
-
-        <label class="radio" for="n1">
-          <input class="radio" type="radio" name="note" id="n1" value="1" required checked>1
-        </label>
-
-        <label class="radio" for="n2">
-          <input class="radio" type="radio" name="note" id="n2" value="2" required>2
-        </label>
-
-        <label class="radio" for="n3">
-          <input class="radio" type="radio" name="note" id="n3" value="3" required>3
-        </label>
-
-        <label class="radio" for="n4">
-          <input class="radio" type="radio" name="note" id="n4" value="4" required>4
-        </label>
-
-        <label class="radio" for="n5">
-          <input class="radio" type="radio" name="note" id="n5" value="5" required>5
-        </label>
-
-        <label class="radio" for="n6">
-          <input class="radio" type="radio" name="note" id="n6" value="6" required>6
-        </label>
-
-        <label class="radio" for="n7">
-          <input class="radio" type="radio" name="note" id="n7" value="7" required>7
-        </label>
-
-        <label class="radio" for="n8">
-          <input class="radio" type="radio" name="note" id="n8" value="8" required>8
-        </label>
-
-        <label class="radio" for="n9">
-          <input class="radio" type="radio" name="note" id="n9" value="9" required>9
-        </label>
-
-        <label class="radio" for="n10">
-          <input class="radio" type="radio" name="note" id="n10" value="10" required>10
-        </label>
-
-      </div>
-
-      <div class="control">
-        <p>Deixe seu comentário:</p>
-        <textarea name="coment" id="text-coment" cols="40" rows="10"></textarea>
-      </div>
-
-      <div class="control">
-        <label for="agree">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agree" name="agree" value="" required> 
-      </div>
-      
-      <div class="control">
-        <button class="button" id="button" type="button" >Enviar</button>
-      </div>
-    </fieldset>
-  </form>
-
+          <label class="label" for="house">Casa</label>
+          <div class="control">
+            <div class="select">
+              <select name="house" id="house" value = "" required></select>
+            </div>
+          </div>
+            
+          <div class="control">
+            
+            <p>Qual é a sua família?</p>
+            <label for="frontend">
+              <input class="radio" type="radio" name="family" id="frontend" value="fe" required checked>Família Frontend
+            </label>
+            <label class="radio" for="backend">
+              <input class="radio" type="radio" name="family" id="backend" value="be" required>Família Backend
+            </label>
+            <label class="radio" for="fullstack">
+              <input class="radio" type="radio" name="family" id="fullstack" value="fs" required>Família Fullstack
+            </label>
+          </div>
+    
+          <div class="control">
+            <p>Qual conteúdo você está com mais vontade de aprender</p>
+            
+            
+            <label for="hofs">HoFs</label>
+            <input type="checkbox" id="hofs" name="tech" value="hofs"> 
+    
+            <label for="jest">Jest</label>
+            <input type="checkbox" id="jest" name="tech" value="jest">
+    
+            <label for="promises">Promises</label>
+            <input type="checkbox" id="promises" name="tech" value="promises">
+    
+            <label for="react">React</label>
+            <input type="checkbox" id="react" name="tech" value="react">
+    
+            <label for="sql">SQL</label>
+            <input type="checkbox" id="sql" name="tech" value="sql"> 
+    
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="tech" value="python"> 
+          </div>
+    
+          <div class="control">
+            
+            <p>Como você avalia a Trybewarts ?</p>
+    
+            <label class="radio" for="n1">
+              <input class="radio" type="radio" name="note" id="n1" value="1" required checked>1
+            </label>
+    
+            <label class="radio" for="n2">
+              <input class="radio" type="radio" name="note" id="n2" value="2" required>2
+            </label>
+    
+            <label class="radio" for="n3">
+              <input class="radio" type="radio" name="note" id="n3" value="3" required>3
+            </label>
+    
+            <label class="radio" for="n4">
+              <input class="radio" type="radio" name="note" id="n4" value="4" required>4
+            </label>
+    
+            <label class="radio" for="n5">
+              <input class="radio" type="radio" name="note" id="n5" value="5" required>5
+            </label>
+    
+            <label class="radio" for="n6">
+              <input class="radio" type="radio" name="note" id="n6" value="6" required>6
+            </label>
+    
+            <label class="radio" for="n7">
+              <input class="radio" type="radio" name="note" id="n7" value="7" required>7
+            </label>
+    
+            <label class="radio" for="n8">
+              <input class="radio" type="radio" name="note" id="n8" value="8" required>8
+            </label>
+    
+            <label class="radio" for="n9">
+              <input class="radio" type="radio" name="note" id="n9" value="9" required>9
+            </label>
+    
+            <label class="radio" for="n10">
+              <input class="radio" type="radio" name="note" id="n10" value="10" required>10
+            </label>
+    
+          </div>
+    
+          <div class="control">
+            <p>Deixe seu comentário:</p>
+            <textarea name="coment" id="text-coment" cols="40" rows="10"></textarea>
+          </div>
+    
+          <div class="control">
+            <label for="agree">Você concorda com o uso das informações acima?</label>
+            <input type="checkbox" id="agree" name="agree" value="" required> 
+          </div>
+          
+          <div class="control">
+            <button class="button" id="button" type="button" >Enviar</button>
+          </div>
+        </fieldset>
+      </form>  
+  </main>
+ 
 </body>
 <script src="script.js"></script>
 
