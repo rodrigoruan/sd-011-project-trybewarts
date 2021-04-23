@@ -7,7 +7,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
@@ -15,6 +15,15 @@
   align-items: center;
 }
 
-.trybe-header-logo {
+.trybewarts-header-logo {
   height: 80px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
