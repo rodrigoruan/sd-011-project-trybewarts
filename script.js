@@ -22,3 +22,14 @@ const cadButton = document.getElementById('submit-btn');
 check.addEventListener('click', () => {
   cadButton.toggleAttribute('disabled');
 });
+
+// Requisito 20
+
+const textArea = document.getElementById('textarea');
+const countText = document.getElementById('counter');
+
+textArea.addEventListener('keyup', () => {
+  console.log('tes');
+  const x = 500 - textArea.value.length;
+  countText.innerText = x;
+});
