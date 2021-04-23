@@ -36,6 +36,11 @@ main {
   display: flex;
 }
 
+.family {
+  display: flex;
+  flex-direction: column;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
