@@ -39,6 +39,21 @@ main {
   top: 3rem;
 }
 
+.name-lastname {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-house {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
 #label-family {
   display: flex;
   flex-direction: column;
