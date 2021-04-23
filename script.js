@@ -28,5 +28,4 @@ textPlace.addEventListener('keyup', () => {
   const textSize = textPlace.value.length;
   const count = 500 - textSize;
   counter.innerHTML = count.toString();
-})
-
+});
