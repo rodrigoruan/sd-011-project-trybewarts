@@ -1,6 +1,6 @@
-// function clickLogin() {
-
-// }
+function clickLogin() {
+  console.log('teste');
+}
 
 
 // function validateLogin() {
@@ -9,5 +9,5 @@
 // }
 
 // window.onload = function load() {
-  
+
 // };

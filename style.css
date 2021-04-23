@@ -18,6 +18,7 @@
 .trybewarts-login {
   display: flex;
 }
+
 main {
   display: flex;
   position: relative;
@@ -50,6 +51,10 @@ main {
 }
 
 .checkbox {
+  display: flex;
+  flex-direction: column;
+}
+#label-family {
   display: flex;
   flex-direction: column;
 }

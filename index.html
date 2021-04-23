@@ -14,10 +14,9 @@
     
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     
-    <form class="trybewarts-login" action="" method="get" enctype="multipart/form-data">
-    
+    <form  class='trybewarts-login' action="" method="get" enctype="multipart/form-data">  
       <div>
-        <input type="text" name="login" id="login" placeholder="Login" required  maxlength=""> 
+        <input type="email" name="login" id="login" placeholder="Login" required  maxlength="" > 
       </div>
 
       <div>
@@ -25,7 +24,7 @@
       </div>
 
       <div class="control">
-        <button id="login-button" type="button">Logar</button>
+        <button class="button" type="submit" onclick="click()">Logar</button>
       </div>
 
     </form>
@@ -59,17 +58,25 @@
               </select>
             </div>
           </div>
+<<<<<<< HEAD
           <div class="control">
             
             <p>Qual é a sua família?</p>
             <label class="radio" for="frontend">
               <input class="radio" type="radio" name="family" id="frontend" value="fe" required checked>Família Frontend
+=======
+            
+          <div class="control" id="label-family">
+            <p>Qual sua família?</p>
+            <label class="radio" for="frontend">
+              <input class="radio" type="radio" name="family" id="frontend" value="Frontend" required checked>Frontend
+>>>>>>> 8100e7626f6a5d40931484b88a65a154d06c1a93
             </label>
             <label class="radio" for="backend">
-              <input class="radio" type="radio" name="family" id="backend" value="be" required>Família Backend
+              <input class="radio" type="radio" name="family" id="backend" value="Backend" required>Backend
             </label>
             <label class="radio" for="fullstack">
-              <input class="radio" type="radio" name="family" id="fullstack" value="fs" required>Família Fullstack
+              <input class="radio" type="radio" name="family" id="fullstack" value="FullStack" required>Fullstack
             </label>
           </div>
     
@@ -164,5 +171,4 @@
  
 </body>
 <script src="script.js"></script>
-
 </html>
