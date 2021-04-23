@@ -33,79 +33,72 @@
       <form id="evaluation-form" action="" method="GET" enctype="multipart/form-data">
         <fieldset>
           <h1>forms</h1>
-          
-          <div class="name-lastname">
-            <div class="control">
-              <input class="input"  type="text" name="nome" id="input-name" placeholder="Nome" required maxlength="40">
-            </div>
-    
-            <div class="control">
-              <input class="input"  type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" required maxlength="40">
-            </div>
+          <div class="control">
+            <input class="input"  type="text" name="nome" id="input-name" placeholder="Nome" required maxlength="40">
           </div>
-          
-          <div class="email-house">
-            <div class="control">
-              <input class="input"  type="email" name="email" id="input-email" placeholder="Email" required maxlength="50">
-            </div>
-            <div class="select-house"></div>
-              <label class="label" for="house">Casa</label>
-              <select name="house" id="house"required>
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+    
+          <div class="control">
+            <input class="input"  type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" required maxlength="40">
+          </div>
+    
+          <div class="control">
+            <input class="input"  type="email" name="email" id="input-email" placeholder="Email" required maxlength="50">
+          </div>
+    
+        <label class="label" for="house">Casa</label>
+          <div class="control">
+            <div class="select">
+              <select name="house" id="house" value = "" required>
+                <option id="gitnoria-house" value="Gitnória"></option>
+                <option id="reactpuff-house" value="Reactpuff"></option>
+                <option id="corvinode-house" value="Corvinode"></option>
+                <option id="pytherina-house" value="Pytherina"></option>
               </select>
             </div>
           </div>
-<<<<<<< HEAD
-          <div class="control">
-            
-            <p>Qual é a sua família?</p>
-            <label class="radio" for="frontend">
-              <input class="radio" type="radio" name="family" id="frontend" value="fe" required checked>Família Frontend
-=======
             
           <div class="control" id="label-family">
-            <p>Qual sua família?</p>
-            <label class="radio" for="frontend">
-              <input class="radio" type="radio" name="family" id="frontend" value="Frontend" required checked>Frontend
->>>>>>> 8100e7626f6a5d40931484b88a65a154d06c1a93
-            </label>
-            <label class="radio" for="backend">
-              <input class="radio" type="radio" name="family" id="backend" value="Backend" required>Backend
-            </label>
-            <label class="radio" for="fullstack">
-              <input class="radio" type="radio" name="family" id="fullstack" value="FullStack" required>Fullstack
-            </label>
-          </div>
-    
-          <div class="checkbox">
-            
-            <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-              
+            <label>Qual sua família?</label>
             <div>
-              <label for="hofs">HoFs</label>
-              <input type="checkbox" class="subject" name="tech" value="HoFs"> 
-      
-              <label for="jest">Jest</label>
-              <input type="checkbox" class="subject" name="tech" value="Jest">
-      
-              <label for="promises">Promises</label>
-              <input type="checkbox" class="subject" name="tech" value="Promises">
-      
-              <label for="react">React</label>
-              <input type="checkbox" class="subject" name="tech" value="React">
-      
-              <label for="sql">SQL</label>
-              <input type="checkbox" class="subject" name="tech" value="SQL"> 
-      
-              <label for="python">Python</label>
-              <input type="checkbox" class="subject" name="tech" value="Python"> 
+              <label for="frontend"></label>
+              <input type="radio" name="family" id="frontend" value="Frontend" required checked>Frontend
+              
+              <label for="backend"> </label>
+              <input type="radio" name="family" id="backend" value="Backend" required>Backend
+              
+              <label for="fullstack"></label>
+              <input type="radio" name="family" id="fullstack" value="FullStack" required>Fullstack       
             </div>
           </div>
           
+<<<<<<< HEAD
           <div class="radio-rate">
+=======
+          <div class="control">
+            <p>Qual conteúdo você está com mais vontade de aprender</p>
+            
+            
+            <label for="hofs">HoFs</label>
+            <input type="checkbox" id="hofs" name="tech" value="hofs"> 
+    
+            <label for="jest">Jest</label>
+            <input type="checkbox" id="jest" name="tech" value="jest">
+    
+            <label for="promises">Promises</label>
+            <input type="checkbox" id="promises" name="tech" value="promises">
+    
+            <label for="react">React</label>
+            <input type="checkbox" id="react" name="tech" value="react">
+    
+            <label for="sql">SQL</label>
+            <input type="checkbox" id="sql" name="tech" value="sql"> 
+    
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="tech" value="python"> 
+          </div>
+    
+          <div class="control">
+>>>>>>> 93dc565a85522e9b7d814d94e18a05acbb777ff8
             
             <label id="label-rate" for="">Como você avalia a Trybewarts?</label>    
             <label class="radio" for="n1">
