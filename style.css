@@ -70,3 +70,8 @@ main {
 #house {
   flex-basis: 30px;
 }
+
+.container-select {
+  display: flex;
+  flex-direction: column;
+}
