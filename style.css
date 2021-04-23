@@ -1,7 +1,23 @@
 header {
-    top: 0px;
-    background-color: rgb(50, 167, 145);
-    width: 100%;
-    display: flex;
-  }
+  top: 0px;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  display: flex;
+}
+
+  /* Requisito 5 */
+main {
+   display: flex;
+}
   
+  /* Requisito 5 e 6 */
+  #evaluation-form {
+   display: flex;
+   width: 675px;
+   flex-direction: column;
+}
+  
+  /* Requisito 7 */
+ #trybewarts-forms-logo {
+   height: 500px;
+}
