@@ -20,25 +20,18 @@
         <h1 id = "trybewarts-header-title">Trybewarts</h1>
       <!--Form de login-->
       <form action="" method="get" class="trybewarts-login">
-        <div class="form-row">
-            <div class="line-content"></div>
-            <label for="email">Login</label>
-            <input type="email" placeholder="Login" name="email" id="email">
-            <label for="password">Senha</label>
-            <input type="password" id="pass" placeholder="Senha" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-            <input type="submit" id="submit" value="Submit">
-        </div>
+        <input type="email" placeholder="Login" name="email" id="email">
+        <input type="password" id="pass" placeholder="Senha" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <button type="submit" id="submit" value="Submit">Submit</button>
+      </form>
     </header>
 
 
     <main class="main-form">
-      <form action="" method="get" class="evaluation-form">
-      <input type="text" placeholder="Nome" name="nome" id="input-name" size="10">
-      <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
-      <input type="email" placeholder="Email" name="email2" id="input-email">
-    <main>
-    #
-
+    <form action="" method="get" id="evaluation-form">
+    <input type="text" placeholder="Nome" name="nome" id="input-name">
+    <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
+    <input type="email" placeholder="Email" name="email2" id="input-email">
     </main>
     
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
