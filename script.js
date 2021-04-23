@@ -3,16 +3,31 @@ const passwordInput = document.querySelector('#password');
 const buttonLogin = document.querySelector('#button');
 
 function emailChecker() {
-  const loginInput = document.querySelector('#email');
-  for ( let index = 0; index < texto.length; index += 1){
-    console.log('a');
+  const loginInput = document.querySelector('#email').value;
+  let test = false;
+  for ( let index = 0; index < loginInput.length; index += 1){
+    if (loginInput[index] === '@') {
+      test = true;
+    }
   }
-
-//   let test = loginInput.innerText.split('@');
-
-//   if () {
-//     console.log('a')
-//   }
+  if(!test){
+    alert('Login ou senha inválidos.');
+  }
 }
 
-buttonLogin.addEventListener('click', emailChecker);
+function passwordChecker() {
+  let password = passwordInput.value;
+  if (isNaN(password)) {
+    alert('Login ou senha inválidos.');
+  }
+  if (password.length !== 6){
+    alert('Login ou senha inválidos.');
+  }
+}
+
+function addEventListenerChecker(){
+  passwordChecker()
+  emailChecker()
+}
+
+buttonLogin.addEventListener('click', addEventListenerChecker);
