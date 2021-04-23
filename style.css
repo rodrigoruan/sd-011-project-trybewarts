@@ -19,6 +19,10 @@ body {
   height: 80px;
 }
 
+.sub-container {
+  display: flex;
+}
+
 .header img {
   align-items: flex-start;
   width: 73px;
@@ -30,6 +34,7 @@ body {
 
 .header form {
   align-self: flex-end;
+  margin-right: 100px;
 }
 
 .header__form--input , #header__form--botao {
@@ -60,4 +65,20 @@ body {
   background-color: rgb(78, 44, 131);
   color: white;
   height: 53px;
+}
+
+#trybewarts-header-title {
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__form , #evaluation-form {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
 }
