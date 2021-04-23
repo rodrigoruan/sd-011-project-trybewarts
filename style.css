@@ -25,7 +25,7 @@ main {
 
 .header {
   display: flex;
-  background-color: rgb(50 , 167 , 145);
+  background-color: rgb(50, 167, 145);
   height: 100px;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +33,4 @@ main {
 
 .trybewarts-login {
   display: flex;
-  }
+}
