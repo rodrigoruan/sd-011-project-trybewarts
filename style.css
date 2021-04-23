@@ -14,3 +14,7 @@
   display: flex;
   justify-content: flex-end;
 }
+
+#evaluation-form {
+  width: 675px;
+}
