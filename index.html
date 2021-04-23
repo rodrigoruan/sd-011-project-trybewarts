@@ -23,43 +23,41 @@
     </header>
     <main>
       <form id= "evaluation-form" action="">
+
         <input type="text" placeholder="Nome" id="input-name" />
         <input type="text" placeholder="Sobrenome" id="input-lastname" />
         <input type="text" placeholder="Email" id="input-email" />
-      <label id="label-content">
-        Qual conteúdo você está com mais vontade de aprender?
-      </label>
 
-      <label for="HoFs">
-      <input type="checkbox" id="HoFs" value="HoFs">HoFs
-      </label>
+        <div id="div-content">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label for="HoFs"><input type="checkbox" id="HoFs" value="HoFs">HoFs</label>
+          <label for="Jest"><input type="checkbox" id="Jest" value="Jest">Jest</label>
+          <label for="Promises"><input type="checkbox" id="Promises" value="Promises">Promises</label>
+          <label for="React"><input type="checkbox" id="React" value="React">React</label>
+          <label for="SQL"><input type="checkbox" id="SQL" value="SQL">SQL</label>
+          <label for="Python"><input type="checkbox" id="Python" value="Python">Python</label>
+        </div>
 
-      <label for="Jest">
-      <input type="checkbox" id="Jest" value="Jest">Jest
-      </label>
-
-      <label for="Promises">
-      <input type="checkbox" id="Promises" value="Promises">Promises
-      </label>
-
-      <label for="React">
-      <input type="checkbox" id="React" value="React">React
-      </label>
-
-      <label for="SQL">
-      <input type="checkbox" id="SQL" value="SQL">SQL
-      </label>
-
-      <label for="Python">
-      <input type="checkbox" id="Python" value="Python">Python
-      </label>
+        <div id="rate">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <label for="1"><input type="radio" value="1" name="rate" id="1">1</label>
+          <label for="2"><input type="radio" value="2" name="rate" id="2">2</label>
+          <label for="3"><input type="radio" value="3" name="rate" id="3">3</label>
+          <label for="4"><input type="radio" value="4" name="rate" id="4">4</label>
+          <label for="5"><input type="radio" value="5" name="rate" id="5">5</label>
+          <label for="6"><input type="radio" value="6" name="rate" id="6">6</label>
+          <label for="7"><input type="radio" value="7" name="rate" id="7">7</label>
+          <label for="8"><input type="radio" value="8" name="rate" id="8">8</label>
+          <label for="9"><input type="radio" value="9" name="rate" id="9">9</label>
+          <label for="10"><input type="radio" value="10" name="rate" id="10">10</label>
+        </div>
       </form>
       <img
         src="images/trybewarts-colored.svg"
         alt="Logo da Trybewarts"
         id="trybewarts-forms-logo"
       />
-      
+
     </main>
     <div id="forms">
 
