@@ -1,8 +1,8 @@
-#header {
+.header {
   display: flex;
   background-color: rgb(50, 167, 145);
   flex-flow: nowrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -18,3 +18,10 @@
   border-radius: 25%;
 }
 
+#trybewarts-header-title {
+  order: 1;
+}
+
+.trybewarts-login {
+  order: 2;
+}
