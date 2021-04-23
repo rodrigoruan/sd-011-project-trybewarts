@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 <body>
 <!-- requisito 1 -->
   <header class="header">
@@ -24,6 +24,7 @@
       </form>
     </div>
   </header>
+
   <main>
     <div class='principal-div'>
       <h2>Forms</h2>
@@ -43,10 +44,39 @@
             </select>
           </label>
         </div>
-        
+        <hr>
+        <!-- requisito 12 -->
+        <div class='div'>
+          <div class='div-column'>
+            <label id='label-family' for='family'>Qual sua família?</label> 
+            <label for='family'>Família Frontend</label> 
+            <input type='radio' id='family' name='family'value="Frontend" required>
+            <label for='family'>Família Backend</label> 
+            <input type='radio' id='family' name='family' value="Backend" required>
+            <label for='family'>Família FullStack</label> 
+            <input type='radio' id='family' name='family' value="FullStack" required>
+          </div>
+          <div>
+            <!-- requisito 13 -->
+            <div class='div-row'>
+              <label id='label-content' for='label'>Qual conteúdo você está com mais vontade de aprender?</label>
+              <input class ='subject' type='checkbox' id='label' value="HoFs" required>
+              <label for='label'> HoFs</label> 
+              <input class ='subject' type='checkbox' id='label' value="Jest" required>
+              <label for='label'> Jest</label> 
+              <input class ='subject' type='checkbox' id='label' value="Promises" required>
+              <label for='label'>Promises</label> 
+              <input class ='subject' type='checkbox' id='label' value="React" required>
+              <label for='label'>Reacts</label> 
+              <input class ='subject' type='checkbox' id='label' value="SQL" required>
+              <label for='label'>SQL</label> 
+              <input class ='subject' type='checkbox' id='label' value="Python" required>
+              <label for='label'>Python</label> 
+            </div>
+          </div>
+        </div>
       </form>
     </div>
-
     <!-- Requisito 7 -->
     <div class='img-div'>
       <img id='trybewarts-forms-logo' src='images/trybewarts-colored.svg'>
@@ -55,7 +85,6 @@
 
   <!-- Requisito 19 -->
   <footer class='footer'>Direitos reservados à Trybewarts©</footer>
-
   <script src='script.js'></script>
-</body>
+  </body>
 </html>
