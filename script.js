@@ -6,7 +6,7 @@ loginButton.addEventListener('click', () => {
   if (document.getElementById('login').value === 'tryber@teste.com') {
     if (document.getElementById('senha').value === '123456') {
       alert('Olá, Tryber!'); // só aparece email e senha estiver igual
-    } 
+    }
   } else {
     alert('Login ou senha inválidos.');// else email incorreto
   }
