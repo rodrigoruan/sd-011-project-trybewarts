@@ -38,16 +38,32 @@
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-      <div id="divfamily">
-        <label id="label-family" for="family">Qual sua família?</label>
-        <div>
-          <input type="radio" name="family" value="Frontend">Front-End 
+      <hr>
+      <div id="contentfamily">
+        <div id="divfamily">
+          <label id="label-family" for="family">Qual sua família?</label>
+          <div>
+            <input type="radio" name="family" value="Frontend">Front-End 
+          </div>
+          <div>
+            <input type="radio" name="family" value="Backend">Back-End
+          </div>
+          <div>
+            <input type="radio" name="family" value="FullStack">Full-Stack
+          </div>
         </div>
-        <div>
-          <input type="radio" name="family" value="Backend">Back-End
-        </div>
-        <div>
-          <input type="radio" name="family" value="FullStack">Full-Stack
+        <div id="divcontent">
+          <label for="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div>
+            <input class="subject" type="checkbox" value="HoFs">Higher Order Functions
+            <input class="subject" type="checkbox" value="Jest">Jest
+            <input class="subject" type="checkbox" value="Promises">Promises
+          </div>
+          <div>
+            <input class="subject" type="checkbox" value="React">React
+            <input class="subject" type="checkbox" value="SQL">SQL
+            <input class="subject" type="checkbox" value="Python">Python
+          </div>
         </div>
       </div>
     </form>
