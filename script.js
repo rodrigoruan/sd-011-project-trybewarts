@@ -27,7 +27,19 @@ function addEventDisableButton() {
   checkbox.addEventListener('change', disableButon);
 }
 
+function countChars() {
+  const counter = document.getElementById('counter');
+  const textarea = document.getElementById('textarea');
+  counter.innerText = 500 - textarea.value.length;
+}
+
+function addEventCount() {
+  const textarea = document.getElementById('textarea');
+  textarea.addEventListener('keyup', countChars);
+}
+
 window.onload = function load() {
   addEventCheckLogin();
   addEventDisableButton();
+  addEventCount();
 };

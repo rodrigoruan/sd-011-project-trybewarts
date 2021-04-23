@@ -46,3 +46,14 @@ label {
   display: flex;
   align-items: center;
 }
+
+#container-comment {
+  position: relative;
+  max-width: 535px;
+}
+
+#counter {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
