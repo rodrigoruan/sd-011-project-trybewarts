@@ -26,3 +26,11 @@ header img {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.input {
+  width: 300px;
+}
+
+.div-nome {
+  display: row;
+}
