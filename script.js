@@ -3,6 +3,9 @@ const submitButton = document.querySelector('#submit-btn');
 const agreementCheck = document.querySelector('#agreement');
 const textArea = document.getElementById('textarea');
 const counterText = document.getElementById('counter');
+const main = document.querySelector('main');
+const form = document.querySelector('#evaluation-form');
+
 
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
@@ -31,10 +34,16 @@ function counter() {
   counterText.innerText = difference;
 }
 
+function submitForm(event) {
+  event.preventDefault();
+  main.removeChild(form);
+}
+
 function addEventListeners() {
   loginButton.addEventListener('click', checkForLogin);
   agreementCheck.addEventListener('change', checkAgreement);
   textArea.addEventListener('keyup', counter);
+  submitButton.addEventListener('click', submitForm);
 }
 
 window.onload = () => {
