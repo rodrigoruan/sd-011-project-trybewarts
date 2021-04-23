@@ -24,18 +24,45 @@
 
     <main>
       <form action="" method="GET" id="evaluation-form">
-        <input type="text" name="name" id="input-name" class="name" placeholder="Nome">
-        <input type="text" name="surname" id="input-lastname" class="name" placeholder="Sobrenome" class="down-below">
-        <input type="email" name="email" id="input-email" placeholder="Email" class="down-below">
+        <div class="row1">
+        <input type="text" name="name" id="input-name" placeholder="Nome">
+        <input type="text" name="surname" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div class="row">
+          <input type="email" name="email" id="input-email" placeholder="Email">
+        <label for="">Casa</label>
+      <select id="house" name="trybewarts-casas">
+        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+      </select>
+      </div>
+      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="row">
+      <input type="checkbox" value="HoFs">
+      <label>HoFs</label>
+      <input type="checkbox" value="Jest">
+      <label>Jest</label>
+      <input type="checkbox" value="Promises">
+      <label>Promises</label>
+      </div>
+      <div class="row">
+      <input type="checkbox" value="React">
+      <label>React</label>
+      <input type="checkbox" value="SQL">
+      <label>SQL</label>
+      <input type="checkbox" value="Python">
+      <label>Python</label>
+      </div>
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea id="textarea" name="comment" maxlength="500" placeholder="Digite aqui" ></textarea>
+      <div class="row">
+      <input type="checkbox" id="agreement" value="agreement">
+      <label id="label-info" for="agreement">Você concorda com o uso das informações acima?</label>
+      </div>
       </form>
       </main>
-      <label for="">Casa</label>
-      <select id="house" name="trybewarts-casas">
-        <option value="Gitnória">Gitnória</option>
-        <option value="Reactpuff">Reactpuff</option>
-        <option value="Corvinode">Corvinode</option>
-        <option value="Pytherina">Pytherina</option>
-      </select>
     
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     <script src="script.js"></script>

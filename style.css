@@ -1,6 +1,5 @@
 main {
   display: flex;
-
 }
 
 main form {
@@ -8,7 +7,7 @@ main form {
   width: 675px;
 }
 
-main form #evaluation-form {
+#evaluation-form {
   display: flex;
   flex-direction: column;
 }
@@ -20,12 +19,12 @@ main form #evaluation-form {
   margin-right: 10%;
 }
 
-.name {
+.row1 {
   display: flex;
   margin-top: 20%;
 }
 
-.down-below {
+.row {
   display: flex;
 }
 
