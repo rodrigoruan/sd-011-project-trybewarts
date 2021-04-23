@@ -2,7 +2,7 @@ const loginUser = document.querySelector('.login');
 const passUser = document.querySelector('.senha');
 const loginBtn = document.querySelector('.acesso');
 
-loginBtn.addEventListener('click', function acesso() {
+loginBtn.addEventListener('click', () => {
   console.log(loginUser.value);
   console.log(passUser.value);
 
@@ -12,3 +12,6 @@ loginBtn.addEventListener('click', function acesso() {
     alert('Login ou senha inválidos');
   }
 });
+
+const title = document.getElementById('trybewarts-header-title');
+title.innerText = 'Trybewarts';
