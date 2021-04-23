@@ -1,8 +1,6 @@
 const formLogin = document.querySelector('.trybewarts-login');
 const inputEmail = document.querySelector('#login');
 const inputSenha = document.querySelector('#senha');
-const enviar = document.querySelector('#enviar');
-
 
 function verificaLogin() {
   const email = inputEmail.value;
