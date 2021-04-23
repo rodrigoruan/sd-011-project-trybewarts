@@ -14,7 +14,36 @@ body {
   background-color: rgb(50, 167, 145);
   display: flex;
   height: 100px;
-  padding: 12px 0;
+  padding: 12px 120px;
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.trybewarts-login > * {
+  height: 40px;
+  border-radius: 12px;
+  padding: 6px 16px;
+  width: 160px;
+}
+
+.trybewarts-login > input {
+  background-color: white;
+  color: rgb(70, 70, 70);
+}
+
+.trybewarts-login > button {
+  border: none;
+  color: white;
+  background-color: rgb(78, 44, 131);
+}
+
+.trybewarts-login > button:hover , .trybewarts-login > button:focus {
+  filter: drop-shadow(0 0 8px rgba(78, 44, 131, 0.4));
 }
 
 main {
