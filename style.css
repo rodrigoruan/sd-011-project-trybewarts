@@ -12,3 +12,7 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+label input {
+  display: block;
+}
