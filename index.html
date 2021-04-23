@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Trybewarts</title>
 </head>
 <body>
-  <header>
+  <header class=header>
     <div>
       <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts" id="trybewarts-header-lgo">
     </div>
     <div>
-      <form action="">
+      <form class="trybewarts-login" action="">
         <div class="field">
           <p class="control has-icons-left has-icons-right">
             <input class="input" type="text" placeholder="Login">
@@ -38,9 +38,10 @@
       </form>
     </div>
   </header>
-  <main class="main-content">
+  <main class="main-content">    
     <form action="" id="evaluation-form">
-      <div class="field">
+      <div class="nome-sobrenome">
+        <div class="field">
         <label class="label">Nome</label>
         <div class="control">
           <input id="input-name" class="input" type="text" placeholder="Nome">
@@ -52,27 +53,43 @@
           <input id="input-lastname" class="input" type="text" placeholder="Sobrenome">
         </div>
       </div>
-      <div class="field">
-        <label class="label">E-mail</label>
-        <div class="control">
-          <input id="input-email" class="input" type="email" placeholder="Email">
-        </div>
       </div>
-      <div class="field">
-        <label class="label">Casa</label>
-        <div class="control">
-          <div class="select">
-            <select id="house">
-              <option id="gitnoria-house">Gitnória</option>
-              <option id="reactpuff-house">Reactpuff</option>
-              <option id="corvinode-house">Corvinode</option>
-              <option id="pytherina-house">Pytherina</option>
-            </select>
+      <div class="email-casa">
+        <div class="field">
+          <label class="label">E-mail</label>
+          <div class="control">
+            <input id="input-email" class="input" type="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Casa</label>
+          <div class="control">
+            <div class="select">
+              <select id="house">
+                <option id="gitnoria-house">Gitnória</option>
+                <option id="reactpuff-house">Reactpuff</option>
+                <option id="corvinode-house">Corvinode</option>
+                <option id="pytherina-house">Pytherina</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
+      <div class="field">
+        <div class="family-label" class="control">
+          <label id="label-family" class="radio"> Qual sua família?</label> 
+            <input type="radio" name="family">
+            Frontend
+            <input type="radio" name="family">
+            Backend
+            <input type="radio" name="family">
+            FullStack                     
+        </div>        
+      </div>  
     </form>
-  </main>
-  
+    <div>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts-logo">
+    </div>
+  </main>  
 </body>
 </html>
