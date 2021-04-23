@@ -5,3 +5,12 @@ html {
 * , *:before , *:after {
   box-sizing: inherit;
 }
+
+.main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
