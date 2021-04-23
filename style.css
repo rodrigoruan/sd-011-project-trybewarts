@@ -30,8 +30,8 @@
 
 #loginButton {
   background-color: blueviolet;
-  padding: auto;
-  border-radius: 25%;
+  padding: 0 1.2em;
+  border-radius: 10%;
 }
 
 main {
@@ -46,4 +46,14 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#evaluation-form #input-name {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#input-lastname {
+  margin: 0 auto;
+  padding: 0 auto;
 }
