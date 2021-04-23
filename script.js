@@ -1,9 +1,9 @@
-const login = document.getElementById('login');
-const pass = document.getElementById('pass');
+const login = document.getElementById('login').value;
+const pass = document.getElementById('pass').value;
 const submitButton = document.getElementById('submit-button');
 
-function validation() {
-  if (login.value === 'tryber@teste.com' && pass.value === '123456') {
+function validation () {
+  if (login == 'tryber@teste.com' && pass == '123456') {
     alert('Olá Tryber!');
   }
 
