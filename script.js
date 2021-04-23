@@ -1,4 +1,4 @@
-npconst headerForm = document.querySelector('.trybewarts-login');
+const headerForm = document.querySelector('.trybewarts-login');
 const loginSubmit = document.getElementById('trybewarts-login-submit');
 
 loginSubmit.addEventListener('click', (event) => {
