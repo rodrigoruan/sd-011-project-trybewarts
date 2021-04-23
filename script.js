@@ -4,6 +4,8 @@ const join = document.querySelector('#join');
 const feedback = document.querySelector('.feedback');
 const submit = document.querySelector('#submit-btn');
 const agree = document.querySelector('#agreement');
+const counter = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
 
 for (let index = 1; index <= 10; index += 1) {
   const label = document.createElement('label');
@@ -39,4 +41,9 @@ agree.addEventListener('click', () => {
     submit.removeAttribute('disabled');
     checkbox = true;
   }
+});
+
+textarea.addEventListener('keyup', () => {
+  const counterValue = 500 - textarea.value.length;
+  counter.innerText = counterValue;
 });
