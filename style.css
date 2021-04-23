@@ -6,7 +6,11 @@
 .trybewarts-header-logo{
     width: 60px;
     height: 60px;
-    display: flex;
-    justify-content: start;
+      
     
+}
+
+.trybewarts-login{
+    display: flex;
+    justify-self: right;
 }
