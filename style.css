@@ -23,9 +23,7 @@ main form {
 #trybewarts-forms-logo {
   height: auto;
   width: 40%;
-  float: right;
-  margin-right: 30px;
-  
+  margin-right: 10%;
 }
 
 .row1 {
@@ -97,10 +95,37 @@ hr {
   flex-direction: column;
 }
 
-.radio-family input {
+.radio-family input , .radio-rates input {
   width: 25px;
 }
 
 label {
   font-size: 25px;
 }
+
+.radio-rates {
+  display: flex;
+}
+
+footer {
+  background-color: rgb(60, 64, 74);
+  /* bottom: 0; */
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  /* position: fixed; */
+  letter-spacing: 2px;
+  text-align: center;
+  /* width: 100%; */
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+
+ #counter {
+  left: 650px;
+  bottom: 380px;
+} 
