@@ -1,6 +1,17 @@
+const check = document.getElementById('agreement');
+const submit = document.getElementById('submit-btn');
+
 const login = document.getElementById('login');
 const password = document.getElementById('password');
 const loginButton = document.getElementById('login-button');
+
+function checkTerms() {
+  if (!check.value) {
+    submit.disabled = true;
+  } else {
+    submit.disabled = false;
+  }
+}
 
 function submitLogin() {
   if (login.value === 'tryber@betrybe.com' && password.value === '123456') {
@@ -11,3 +22,6 @@ function submitLogin() {
 }
 
 loginButton.addEventListener('click', submitLogin);
+check.addEventListener('click', checkTerms);
+
+checkTerms();
