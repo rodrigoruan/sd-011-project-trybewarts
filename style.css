@@ -10,3 +10,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* Requisito 7 */
+#trybewarts-forms-logo {
+  height: 500px;
+}
