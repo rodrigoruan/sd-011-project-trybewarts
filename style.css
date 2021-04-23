@@ -1,5 +1,6 @@
 main {
   display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -15,13 +16,14 @@ main {
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 #trybewarts-header-title {
@@ -30,6 +32,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  align-self: flex-end;
 }
 
 #families {
