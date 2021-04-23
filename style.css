@@ -61,3 +61,12 @@ main {
   border: none;
   margin: 5px;
 }
+
+.conteiner-II {
+  display: flex;
+}
+
+#family-conteiner {
+  display: flex;
+  flex-direction: column;
+}
