@@ -36,6 +36,29 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+        <!-- o hr é pra criar o efeito visual de uma linha separando os cconteudos -->
+        <hr>
+        <!-- Eu criei input do tipo radio para poder escolher qual das três familias vou pertencer -->
+        <section>
+          <!-- Deixei a pergunta em um paragrafo por escolha mesmo -->
+          <p id='label-family' >Qual sua família?</p>
+          <div>
+            <!-- decidi deixar cada input dentro de uma div para que poça ficar uma de baaixo da outra sem ter que usar css -->
+            <div>
+              <input type="radio" name="family" id='Frontend' value="Frontend">
+              <label for="Frontend">Família Frontend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" id='Backend' value="Backend">
+              <label for="Backend">Família Backend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" id='FullStack' value="FullStack">
+              <label for="FullStack">Família FullStack</label>
+            </div>
+          </div>
+        </section>
+
       </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts-logo" id='trybewarts-forms-logo'>
