@@ -48,3 +48,18 @@
 .radio-btn-family {
   display: flex;
 }
+
+.subject {
+  display: flex;
+  align-items: center;
+}
+
+#subjects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#subjects-container div {
+  display: flex;
+  margin: 5px 0;
+}
