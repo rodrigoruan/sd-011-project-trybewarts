@@ -1,0 +1,39 @@
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 675px;
+}
+
+.div-form {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+#content-check{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-container {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
