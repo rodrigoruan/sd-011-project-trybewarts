@@ -8,6 +8,7 @@
 .conteudo {
   display: flex;
   justify-content: space-around;
+  padding: 4rem 0;
 }
 
 .trybewarts-login {
@@ -18,10 +19,6 @@
   display: flex;
   width: 675px;
   flex-direction: column;
-}
-
-main {
-  display: flex;
 }
 
 #trybewarts-forms-logo {
