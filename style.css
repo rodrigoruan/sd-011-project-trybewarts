@@ -8,15 +8,21 @@
   display: flex;
   height: 100px;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 1400px;
   margin: 0 auto;
 }
 
 .trybewarts-header-logo {
   height: 80%;
+}
+
+.trybewarts-login {
+  display: flex;
 }
