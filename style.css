@@ -21,3 +21,11 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.inputs {
+  width: 390px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

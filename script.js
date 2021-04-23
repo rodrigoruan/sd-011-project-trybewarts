@@ -1,4 +1,4 @@
-/** Verifica se login */
+/** Verifica áreas de login */
 const loginButton = document.querySelector('#login-btn');
 const inputUser = document.querySelector('#login');
 const inputPass = document.querySelector('#pass');
