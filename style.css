@@ -13,12 +13,13 @@
   height: 500px;
 }
 
-form {
+#evaluation-form {
   width: 675px;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
 
