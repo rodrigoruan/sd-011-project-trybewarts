@@ -23,3 +23,8 @@ main {
   height: 500px;
 }
 
+#checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
