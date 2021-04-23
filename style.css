@@ -17,6 +17,7 @@
 
 main {
   display: flex;
+  position: relative;
 }
 
 #evaluation-form {
@@ -25,4 +26,11 @@ main {
   border: 2px solid red;
   width: 675px;
   height: 90vh;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  position: absolute;
+  right: 7rem;
+  top: 3rem;
 }
