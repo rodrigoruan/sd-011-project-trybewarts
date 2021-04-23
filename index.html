@@ -25,6 +25,7 @@
 
     <main id="main-page">
       <form id="evaluation-form" action="">
+        <div class="name-lastname">
         <label for="name">Nome</label>
         <input 
           id="input-name" 
@@ -40,7 +41,7 @@
           name="lastname"
           placeholder="Sobrenome"
         />
-
+        </div>
         <label for="email">Email</label>
         <input 
           id="input-email" 
@@ -48,6 +49,14 @@
           name="email" 
           placeholder="Email"
          />
+
+         <label for="house">Casa</label>
+         <select name="house" id="house">
+           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+           <option id="corvinode-house" value="Corvinode">Corvinode</option>
+           <option id="pytherina-house" value="Pytherina">Pytherina</option>
+         </select>
       </form>
 
       <img
