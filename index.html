@@ -7,20 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header class="header">
-    <img
-      class="trybewarts-header-logo"
-      src="images/trybewarts-header-logo.svg"
-      alt="Logo de Trybewarts"
-    />
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="">
-      <input type="text" placeholder="Login" />
-      <input type="text" placeholder="Senha" />
-      <input type="submit" />
-    </form>
-  </header>
+
   <body>
+    <header class="header">
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+        alt="Logo de Trybewarts"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login" action="">
+        <input type="text" id="login" placeholder="Login" />
+        <input type="text" id="password" placeholder="Senha" />
+        <button type="button" id="submit-button">Enviar!</button>
+      </form>
+    </header>
+
     <main>
       <form id="evaluation-form" action="">
         <div id="personal-info">
@@ -68,6 +70,8 @@
       />
     </main>
 
+    <footer>Direitos reservados à Trybewarts©</footer>
+    
     <script src="script.js"></script>
   </body>
 </html>
