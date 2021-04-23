@@ -5,6 +5,11 @@
 }
 
 .trybewarts-login {
-display: flex;
-align-self: center;
+  display: flex;
+  align-self: center;
+}
+
+#trybewarts-header-title {
+  align-self: center;
+  color: white;
 }
