@@ -49,11 +49,6 @@
   align-items: flex-start;
 }
 
-#label-rate {
-  display: flex;
-}
-
-<<<<<<< HEAD
 #label-family {
   display: flex;
   flex-direction: column;
@@ -65,12 +60,9 @@
   flex-direction: column;
   width: 30%;
 }
-=======
-#label-infos {
-  display: flex;
-}
 
-#agreement {
-  margin-left: 20px;
+#label-rate {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
->>>>>>> 9a9f008380cf12948ce6916f613148bb2ca38705
