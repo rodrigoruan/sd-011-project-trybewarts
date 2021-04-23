@@ -44,3 +44,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.family-container,
+.content-container {
+  display: flex;
+  flex-direction: column;
+}

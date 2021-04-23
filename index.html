@@ -31,7 +31,7 @@
 
       <div class="container">
         <input id="input-email" placeholder="Email" name="Email">
-  
+
         <select id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -41,20 +41,64 @@
       </div>
 
       <label id="label-family">Qual sua família?</label>
-      <label for="radio-frontend">
-        <input type="radio" id="radio-frontend" value="Frontend" name="family">
-        Família Frontend
-      </label>
-      <label for="radio-backend">
-        <input type="radio" id="radio-backend" value="Backend" name="family">
-        Família Backend
-      </label>
-      <label for="radio-fullstack">
-        <input type="radio" id="radio-fullstack" value="FullStack" name="family">
-        Família FullStack
-      </label>
+      <div class="family-container">
+        <label for="radio-frontend">
+          <input type="radio" id="radio-frontend" value="Frontend" name="family">
+          Família Frontend
+        </label>
+        <label for="radio-backend">
+          <input type="radio" id="radio-backend" value="Backend" name="family">
+          Família Backend
+        </label>
+        <label for="radio-fullstack">
+          <input type="radio" id="radio-fullstack" value="FullStack" name="family">
+          Família FullStack
+        </label>
+      </div>
+
+      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="content-container">
+        <label for="checkbox-hofs">
+          <input type="checkbox" id="checkbox-hofs" value="HoFs" name="hard-skills">
+          HoFs
+        </label>
+        <label for="checkbox-jest">
+          <input type="checkbox" id="checkbox-jest" value="Jest" name="hard-skills">
+          Jest
+        </label>
+        <label for="checkbox-promises">
+          <input type="checkbox" id="checkbox-promises" value="Promises" name="hard-skills">
+          Promises
+        </label>
+        <label for="checkbox-react">
+          <input type="checkbox" id="checkbox-react" value="React" name="hard-skills">
+          React
+        </label>
+        <label for="checkbox-sql">
+          <input type="checkbox" id="checkbox-sql" value="SQL" name="hard-skills">
+          SQL
+        </label>
+        <label for="checkbox-python">
+          <input type="checkbox" id="checkbox-python" value="Python" name="hard-skills">
+          Python
+        </label>
+      </div>
+
+      <div class="rate-container">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <label for="radio-rate1"><input type="radio" id="radio-rate1" value="1" name="rate">1</label>
+        <label for="radio-rate2"><input type="radio" id="radio-rate2" value="2" name="rate">2</label>
+        <label for="radio-rate3"><input type="radio" id="radio-rate3" value="3" name="rate">3</label>
+        <label for="radio-rate4"><input type="radio" id="radio-rate4" value="4" name="rate">4</label>
+        <label for="radio-rate5"><input type="radio" id="radio-rate5" value="5" name="rate">5</label>
+        <label for="radio-rate6"><input type="radio" id="radio-rate6" value="6" name="rate">6</label>
+        <label for="radio-rate7"><input type="radio" id="radio-rate7" value="7" name="rate">7</label>
+        <label for="radio-rate8"><input type="radio" id="radio-rate8" value="8" name="rate">8</label>
+        <label for="radio-rate9"><input type="radio" id="radio-rate9" value="9" name="rate">9</label>
+        <label for="radio-rate10"><input type="radio" id="radio-rate10" value="10" name="rate">10</label>
+      </div>
     </form>
-    
+
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </main>
 
