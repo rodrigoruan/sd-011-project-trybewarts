@@ -8,14 +8,14 @@ main {
   display: flex;
 }
 
-form {
-  width: 675px;
-}
-
 #evaluation-form {
   width: 675px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#input-name , #input-lastname {
+  flex: 50%;
 }
 
 #trybewarts-forms-logo {
