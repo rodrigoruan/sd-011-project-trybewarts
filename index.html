@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
-
 <body>
-  <div class="header">
+
+  <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="logotipo da escola" class="trybewarts-header-logo">
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -22,7 +22,47 @@
       </div>
     </form>
 
-  </div>
+  </header>
+
+  <main id='form-container'>
+    <form action="" method="get" id='evaluation-form'>
+      <h1>Formulário</h1>
+      <div class="line-content">
+        <input id='input-name' type="text" placeholder="Nome">
+        <input id='input-lastname' type="text" placeholder="Sobrenome">
+      </div>
+     
+      <div class="line-content">
+        <input id='input-email' type="email" placeholder="Email">
+        <select name="house" id="house">
+          <option id='gitnoria-house' value="Gitnória" type='text'>Gitnória</option>
+          <option id='reactpuff-house' value="Reactpuff" type='text'>Reactpuff</option>
+          <option id='corvinode-house' value="Corvinode" type='text'>Corvinode</option>
+          <option id='pytherina-house' value="Pytherina" type='text'>Pytherina</option>
+        </select>
+      </div>
+     
+      <div class="line-content">
+        <label id='label-family'>Qual sua família?
+          <input type="radio" name="family" value="Frontend">Família Frontend
+          <input type="radio" name="family" value="Backend">Família Backend
+          <input type="radio" name="family" value="FullStack">Família FullStack
+        </label>
+      </div>
+
+      <label id="label-rate">
+        Como você avalia a Trybewarts?
+        1 <input type="radio" name="rate" id="" value="1">
+        2 <input type="radio" name="rate" id="" value="2">
+        3 <input type="radio" name="rate" id="" value="3">
+        4 <input type="radio" name="rate" id="" value="4">
+        5 <input type="radio" name="rate" id="" value="5">
+        6 <input type="radio" name="rate" id="" value="6">
+        7 <input type="radio" name="rate" id="" value="7">
+        8 <input type="radio" name="rate" id="" value="8">
+        9 <input type="radio" name="rate" id="" value="9">
+        10 <input type="radio" name="rate" id="" value="10">
+      </label>
   
   <script src="script.js"></script>
 </body>
