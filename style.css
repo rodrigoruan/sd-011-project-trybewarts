@@ -32,3 +32,19 @@ input {
 h1.trybewarts-header-title {
   color: white;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  background-color: yellow;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  width: auto;
+}

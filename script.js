@@ -26,7 +26,7 @@ function validateAccess() {
     if (validateEmail() && validatePassword()) {
       window.alert('Olá, Tryber!');
     } else {
-      window.alert('Login ou senha inválidos');
+      window.alert('Login ou senha inválidos.');
     }
   });
 }
