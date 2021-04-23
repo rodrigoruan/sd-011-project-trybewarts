@@ -10,6 +10,7 @@ function validateLogin() {
     }
   });
 }
+validateLogin();
 
 function validateForm() {
   const btnSubmit = document.getElementById('submit-btn');

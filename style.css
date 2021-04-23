@@ -59,6 +59,20 @@ main {
 
 .inputEmailDropdown {
   display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#input-name {
+  margin: 0 10px;
+}
+
+#input-email {
+  margin: 0 10px;
+}
+
+#dropdownContainer {
+  width: 195px;
 }
 
 #div-family {
