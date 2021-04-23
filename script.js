@@ -6,7 +6,5 @@ btnLogin.addEventListener('click', () => {
   if ((user === 'tryber@teste.com') && (password === '123456')) {
     alert('Login ou senha inválidos.');
     return;
-  } else {
-    alert('Olá, Tryber!');
-  }
+  } alert('Olá, Tryber!');
 });
