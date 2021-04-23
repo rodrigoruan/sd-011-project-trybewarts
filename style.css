@@ -38,3 +38,14 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+#nomes {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+#email-casa {
+  display: flex;
+  justify-content: space-around;
+}
