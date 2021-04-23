@@ -11,3 +11,14 @@ validateLogin.addEventListener('click', (event) => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const requiredBtn = document.getElementById('agreement');
+const disabledBtn = document.getElementById('submit-btn');
+
+requiredBtn.addEventListener('click', () => {
+  if (requiredBtn.checked) {
+    disabledBtn.disabled = false;
+  } else {
+    disabledBtn.disabled = true;
+  }
+});
