@@ -22,7 +22,6 @@ body {
 .trybewarts-header-logo {
   width: 100%;
   height: 100%;
-  padding: 5px;
 }
 
 #login-button {
@@ -36,13 +35,13 @@ body {
   align-self: center;
 }
 
+.trybewarts-login input {
+  margin: 5px;
+}
+
 #trybewarts-header-title {
   align-self: center;
 }
-
-/* .trybewarts-login input:nth-child(1) {
-  border: 2px solid red;
-} */
 
 main {
   display: flex;
@@ -58,5 +57,6 @@ main {
 }
 
 #trybewarts-forms-logo {
+  width: 100%;
   height: 500px;
 }
