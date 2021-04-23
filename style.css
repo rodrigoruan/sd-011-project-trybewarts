@@ -31,6 +31,6 @@
   height: 500px;
 }
 
-label.family {
+#label-family input {
   display: block;
 }
