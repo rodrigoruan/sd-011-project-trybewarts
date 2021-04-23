@@ -39,3 +39,8 @@ header img {
   display: flex;
   flex-direction: column;
 }
+
+.learn-content {
+  display: flex;
+  flex-direction: column;
+}
