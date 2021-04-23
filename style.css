@@ -20,6 +20,7 @@
 }
 main {
   display: flex;
+  position: relative;
 }
 
 #evaluation-form {
@@ -33,3 +34,9 @@ main {
 
 
 
+#trybewarts-forms-logo {
+  height: 500px;
+  position: absolute;
+  right: 7rem;
+  top: 3rem;
+}
