@@ -29,3 +29,36 @@ textPlace.addEventListener('keyup', () => {
   const count = 500 - textSize;
   counter.innerHTML = count.toString();
 });
+
+//21
+const nameInput = document.querySelector('#input-name');
+const lastNameInput = document.querySelector('#input-lastname');
+const emailInput = document.querySelector('#input-email');
+const houseInput = document.querySelector('#house');
+const houseChoice = document.getElementsByClassName('family');
+const wichContent = document.getElementsByClassName('subject');
+const radioRate = document.getElementsByClassName('radioRate');
+// const textPlace = document.querySelector('#textarea');
+const checkedFunction = checkedRadio();
+function checkedRadio() {
+  for(let index = 0; index < houseChoice.length; index += 1){
+    if(houseChoice[index].checked === true){
+      return houseChoice[index].value
+    }
+  }
+}
+
+
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  console.log(nameInput.value);
+console.log(lastNameInput.value);
+console.log(emailInput.value);
+console.log(houseInput.value);
+console.log(houseChoice.value);
+console.log(wichContent.value);
+console.log(radioRate.value);
+console.log(textPlace.value);
+});
+
