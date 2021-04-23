@@ -24,7 +24,7 @@ body {
   height: 50px;
 }
 
-.trybewarts-header-title {
+#trybewarts-header-title {
   color: white;
   font-size: 1.5em;
 }
@@ -45,4 +45,13 @@ body {
   width: 60px;
   background-color: red;
   border-radius: 8px;
+}
+
+.trybewarts-main, .trybewarts-form {
+  display: flex;
+}
+
+.trybewarts-form {
+  width: 675px;
+  flex-direction: column;
 }
