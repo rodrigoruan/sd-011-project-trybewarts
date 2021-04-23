@@ -41,7 +41,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [12. Crie um campo de entrada para qual família a pessoa estudante se identifica](#12-crie-um-campo-de-entrada-para-qual-família-a-pessoa-estudante-se-identifica)
     - [13. Crie campos de entrada do tipo 'checkbox' contendo seis opções](#13-crie-campos-de-entrada-do-tipo-checkbox-contendo-seis-opções)
     - [14. Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts](#14-crie-campo-de-entrada-para-avaliar-de-1-a-10-o-nível-de-satisfação-com-a-trybewarts)
-    - [15. Crie uma textarea com o id 'textarea' contendo o número máximo de caracteres igual à 500](#15-crie-uma-textarea-com-o-id-textarea-contendo-o-número-máximo-de-caracteres-igual-à-500)
+    - [15. Crie uma textarea com o id 'textarea' contendo o número máximo de caracteres igual à 500](#15-crie-uma-textarea-com-o-id-textarea-e-uma-label-com-a-classe-textarea-contendo-o-número-máximo-de-caracteres-igual-à-500)
     - [16. Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações](#16-crie-um-campo-de-entrada-do-tipo-checkbox-com-o-id-agreement-para-validar-as-informações)
     - [17. Crie um botão de Enviar para submeter o formulário](#17-crie-um-botão-de-enviar-para-submeter-o-formulário)
     - [18. Faça com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada](#18-faça-com-que-o-botão-enviar-seja-habilitado-somente-após-a-checkbox-do-requisito-16-ser-selecionada)
@@ -352,11 +352,11 @@ Pontos importantes:
 ### 9. Crie um select 'Casa' contendo quatro options
 
   Pontos importantes:
-  * Deverá  o select conter o id ``house``
+  * O select deverá conter o id ``house``
   * Deverá conter a opção com text e value `Gitnória` e com o id ``gitnoria-house``
-  * Deverá conter a opção com text e value `Reactpuff`e com o id ``reactpuff-house``
-  * Deverá conter a opção com text e value `Corvinode`e com o id ``corvinode-house``
-  * Deverá conter a opção com text e value `Pytherina`e com o id ``pytherina-house```
+  * Deverá conter a opção com text e value `Reactpuff` e com o id ``reactpuff-house``
+  * Deverá conter a opção com text e value `Corvinode` e com o id ``corvinode-house``
+  * Deverá conter a opção com text e value `Pytherina` e com o id ``pytherina-house``
 
   #### O que será verificado:
 
