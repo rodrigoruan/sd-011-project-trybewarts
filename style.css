@@ -5,8 +5,13 @@
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
   width: 100%;
   height: 200px;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-flow: column wrap;
 }
