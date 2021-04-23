@@ -8,3 +8,6 @@
 .trybewarts-header-logo {
   width: 60px;
 }
+.trybewarts-login {
+  display: flex;
+}
