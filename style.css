@@ -55,7 +55,7 @@ header {
 
 .section-form {
   display: flex;
-  flex: column wrap
+  flex: column wrap;
 }
 
 #trybewarts-forms-logo {

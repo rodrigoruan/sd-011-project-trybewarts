@@ -6,7 +6,6 @@ function validation() {
   if (login === 'tryber@teste.com' && pass === '123456') {
     alert('Olá Tryber!');
   }
-
   else {
     alert('Login ou senha inválidos');
   }
