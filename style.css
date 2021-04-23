@@ -33,3 +33,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+#score {
+  display: flex;
+  flex-direction: row;
+}
