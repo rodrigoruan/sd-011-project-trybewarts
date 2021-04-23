@@ -13,3 +13,12 @@ btnLogin.addEventListener('click', (evt) => {
     console.log(senha.value);
   }
 });
+
+// Requisito 18
+
+const check = document.getElementById('agreement');
+const cadButton = document.getElementById('submit-btn');
+
+check.addEventListener('click', () => {
+  cadButton.toggleAttribute('disabled');
+});
