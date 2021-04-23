@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  margin-right: auto;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
