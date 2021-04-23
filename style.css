@@ -52,3 +52,11 @@
 #label-rate {
   display: flex;
 }
+
+#label-infos {
+  display: flex;
+}
+
+#agreement {
+  margin-left: 20px;
+}
