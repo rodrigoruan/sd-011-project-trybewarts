@@ -34,6 +34,7 @@
 
 #evaluation-form {
   width: 675px;
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
@@ -46,4 +47,8 @@
 
 .trybewarts-header-logo {
   align-items: flex-start;
+}
+
+#label-rate {
+  display:flex;
 }
