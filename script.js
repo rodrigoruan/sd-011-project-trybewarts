@@ -21,3 +21,11 @@ agreement.addEventListener('click', (event) => {
     submitBtn.disabled = true;
   }
 });
+
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+counter.innerText = textArea.maxLength;
+textArea.addEventListener('keyup', () => {
+  counter.innerText = textArea.maxLength - textArea.value.length;
+});
