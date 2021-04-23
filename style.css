@@ -1,16 +1,4 @@
 .header {
-<<<<<<< HEAD
-    background-color: rgb(50, 167, 145);
-    display: flex;
-  }
-
-.trybewarts-header-logo {
-  width: 10%;
-  padding: 20px 20px;
-}
-
-
-=======
   background-color: rgb(50, 167, 145);
   display: flex;
 }
@@ -20,4 +8,3 @@
   padding: 20px;
   order: -1;
 }
->>>>>>> e3fe60fb0a21c0febafab96cd436b78386ac2b74
