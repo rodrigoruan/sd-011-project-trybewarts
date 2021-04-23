@@ -18,3 +18,9 @@
 .trybewarts-login {
   display: flex;
 }
+
+#title-id {
+  display: flex;
+  align-content: center;
+  background-color: white;
+}
