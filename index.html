@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<header class="header">
-  <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo de Trybewarts">
-  <h1 id="trybewarts-header-title">Trybewarts</h1>
-  <form class="trybewarts-login" action="">
-    <input type="text" placeholder="Login">
-    <input type="text" placeholder="Senha">
-    <input type="submit">
-  </form>
-</header>
-<body>
-  <main>
-    <form id="evaluation-form" action="">
-      
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="header">
+    <img
+      class="trybewarts-header-logo"
+      src="images/trybewarts-header-logo.svg"
+      alt="Logo de Trybewarts"
+    />
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login" action="">
+      <input type="text" placeholder="Login" />
+      <input type="text" placeholder="Senha" />
+      <input type="submit" />
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Escudo Trybewarts">
-  </main>
+  </header>
+  <body>
+    <main>
+      <form id="evaluation-form" action="">
+        <div id="personal-info">
+          <input type="text" name="name" placeholder="Nome" id="input-name" />
 
-  <script src="script.js"></script>
-</body>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Sobrenome"
+            id="input-lastname"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            id="input-email"
+          />
+
+          <label for="house">Casa:</label>
+          <select name="house" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            <option value="none" id="preselect" selected hidden>
+              Selecione sua Casa
+            </option>
+          </select>
+        </div>
+        <hr />
+        <div id="preferences"></div>
+        <hr />
+        <div id="feedback"></div>
+
+        <div id="submission">
+          <!-- colocar o botão e o checkbox -->
+        </div>
+      </form>
+
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="Escudo Trybewarts"
+      />
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-
