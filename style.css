@@ -26,5 +26,27 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
 }
 
+.row1 {
+  display: flex;
+}
+
+.familydiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#house {
+  display: flex;
+}
+
+#input-email {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
