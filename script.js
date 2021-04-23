@@ -2,8 +2,6 @@ console.log('VQV');
 
 const submitLoginBtn = document.getElementById('header-submit');
 
-submitLoginBtn.addEventListener('click', verifiedValues)
-
 function verifiedValues() {
   let loginValue = document.getElementById('login').value;
   let passwordValue = document.getElementById('password').value;
@@ -14,3 +12,5 @@ function verifiedValues() {
     alert('Login ou senha inválidos.')
   }
 }
+
+submitLoginBtn.addEventListener('click', verifiedValues);
