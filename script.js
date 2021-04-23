@@ -1,13 +1,8 @@
 // -Declaração de constantes
-// const loginInput = document.querySelector('#email').value;
-// const passwordInput = document.querySelector('#password').value;
 const buttonLogin = document.querySelector('#button');
 
 function errorAlert() {
   alert('Login ou senha inválidos.');
-}
-function helloTryber() {
-  alert('Olá, Tryber!');
 }
 
 function emailChecker() {
@@ -39,7 +34,7 @@ function addEventListenerChecker() {
   passwordChecker();
   emailChecker();
   if (loginInput === 'tryber@teste.com' && passwordInput === '123456') {
-    helloTryber();
+    alert('Olá, Tryber!');
   }
 }
 
