@@ -12,3 +12,11 @@
 
 .trybewarts-header-logo {
 }
+
+.trybewarts-login {
+  display: flex;
+}
+
+.form-container {
+  display: flex;
+}
