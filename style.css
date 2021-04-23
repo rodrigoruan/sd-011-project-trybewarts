@@ -35,7 +35,7 @@ main {
   align-self: center;
 }
 
-#input-lastname, #input-name {
+#input-lastname , #input-name {
   display: flex;
   flex-grow: 1;
   width: 40vh;
