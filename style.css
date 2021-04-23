@@ -45,3 +45,8 @@ main {
 header img {
   width: 80px;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
