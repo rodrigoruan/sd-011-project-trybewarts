@@ -100,15 +100,15 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 ### Antes de começar a desenvolver:
 
 1. Clone o repositório
-  * `git clone git@github.com:betrybe/sd-0x-project-trybewarts.git`.
+  * `git clone git@github.com:betrybe/sd-011-project-trybewarts.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-011-project-trybewarts`
 
-2. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
+2. Crie uma branch a partir da branch `main`
+  * Verifique que você está na branch `main`
     * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
+  * Se não estiver, mude para a branch `main`
+    * Exemplo: `git checkout main`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-trybewarts-project`
