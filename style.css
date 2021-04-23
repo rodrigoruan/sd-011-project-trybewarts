@@ -31,3 +31,8 @@ main {
 main #evaluation-form {
   flex-direction: row;
 }
+
+/* Estilização - Requisito 12 */
+main {
+  flex-direction: column;
+}
