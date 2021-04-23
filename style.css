@@ -52,6 +52,14 @@ body {
 }
 
 .trybewarts-form {
-  width: 675px;
+  min-width: 675px;
   flex-direction: column;
+}
+
+.trybewarts-main{
+  justify-content: space-between;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
