@@ -21,8 +21,14 @@ main {
   width: 675px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#nomeSobrenome, #emailHouse {
+  display: flex;
+}
+
