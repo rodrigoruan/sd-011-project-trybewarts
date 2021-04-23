@@ -54,14 +54,16 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 #label-family {
   display: flex;
   flex-direction: column;
 }
 
 .radio-rate {
-display: flex;
+  display: flex;
 }
+
 #label-family div {
   display: flex;
   flex-direction: column-reverse;
