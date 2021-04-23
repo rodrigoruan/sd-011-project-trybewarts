@@ -2,11 +2,12 @@ const login = document.querySelector('#login');
 const password = document.querySelector('#password');
 const buttonSubmit = document.querySelector('#submit');
 
-function loginValidation(imputPassword, imputLogin) {
-  if (imputPassword !== 123456 && imputLogin !== 'tryber@teste.com') {
-    return alert('Login ou senha inválidos');
+function loginValidation(inputPassword, inputLogin) {
+  if (inputPassword === '123456' && inputLogin === 'tryber@teste.com') {
+    alert('Olá Tryber');
+    return; 
   }
-  alert('Olá Tryber');
+  alert('Login ou senha inválidos')
 }
 
 function loginSubmit() {
@@ -14,3 +15,17 @@ function loginSubmit() {
 }
 
 buttonSubmit.addEventListener('click', loginSubmit);
+
+const submitBtn = document.getElementById('submit-btn');
+const agreement = document.getElementById('agreement');
+submitBtn.disabled = true;
+
+function submitEnable() {
+  if (agreement.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+agreement.addEventListener('click', submitEnable);
