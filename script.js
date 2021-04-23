@@ -6,14 +6,14 @@ const submit = document.querySelector('#submit-btn');
 const agree = document.querySelector('#agreement');
 const counter = document.querySelector('#counter');
 const textarea = document.querySelector('#textarea');
-const clear = document.querySelector('.clear');
-const inputName = document.querySelector('#input-name');
-const inputName2 = document.querySelector('#input-lastname');
-const email = document.querySelector('#input-email');
-const casa = document.querySelector('#house');
-const family = document.querySelector('input[name="family"]:checked');
-const materias = document.querySelectorAll('[class="subject"]:checked');
-const avaliation = document.querySelector('input[name="rate"]:checked');
+// const clear = document.querySelector('.clear');
+// const inputName = document.querySelector('#input-name');
+// const inputName2 = document.querySelector('#input-lastname');
+// const email = document.querySelector('#input-email');
+// const casa = document.querySelector('#house');
+// const family = document.querySelector('input[name="family"]:checked');
+// const materias = document.querySelectorAll('[class="subject"]:checked');
+// const avaliation = document.querySelector('input[name="rate"]:checked');
 
 for (let index = 1; index <= 10; index += 1) {
   const label = document.createElement('label');
