@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,16 @@ header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
 }
 
 header form {
   display: flex;
+  padding: 20px;
+}
+
+.field p {
+  padding: 5px;
 }
 
 .main-content {
