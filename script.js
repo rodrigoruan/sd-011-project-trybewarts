@@ -18,7 +18,6 @@ function submitLogin() {
 }
 
 loginButton.addEventListener('click', submitLogin);
-
 check.addEventListener('change', checkTerms);
 
-window.onload = checkTerms;
+checkTerms();
