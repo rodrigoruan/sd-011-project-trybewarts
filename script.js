@@ -10,7 +10,7 @@ function checkTerms() {
 }
 
 function submitLogin() {
-  if (login.value.toLowerCase() === 'tryber@betrybe.com' && password.value === '123456') {
+  if (login.value.toLowerCase() === 'tryber@betrybe.com' || password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
