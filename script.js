@@ -1,5 +1,14 @@
 const submitBtn = document.getElementById('submit-btn');
 
+// Ativa o botão
+function ActivateButton() {
+  submitBtn.disabled = false;
+}
+
+// Desativa o botão
+function DeactivateButton() {
+  submitBtn.disabled = true;
+}
 
 // Checa se o usuário concorda com os termos ticando a checkbox
 function CheckAgreement() {
@@ -13,19 +22,11 @@ function CheckAgreement() {
   });
 }
 
-// Ativa o botão
-function ActivateButton() {
-  submitBtn.disabled = false;
-}
-
-// Desativa o botão
-function DeactivateButton() {
-  submitBtn.disabled = true;
-}
 
 // Função que chama todas as funções do site
 function Onload() {
-  submitBtn.disabled = true //Seta o valor inicial do botão Enviar como desativado
+  //Seta o valor inicial do botão Enviar como desativado
+  submitBtn.disabled = true; 
   CheckAgreement();
 }
 
