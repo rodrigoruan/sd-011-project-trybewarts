@@ -24,3 +24,11 @@ main {
   width: 675px;
 }
 
+
+
+
+
+#div-label-family {
+  display: flex;
+  flex-direction: column;
+}
