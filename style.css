@@ -21,7 +21,7 @@ header {
 .trybewarts-header-logo {
   justify-items: center;
   width: 100px;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 .title {
@@ -57,5 +57,5 @@ header {
 }
 
 .section-form {
-  background-color: magenta;
 }
+
