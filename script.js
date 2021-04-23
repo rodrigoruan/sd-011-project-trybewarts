@@ -10,3 +10,17 @@ function alertFunction() {
 
 const buttonClick = document.getElementById('sendBtn');
 buttonClick.addEventListener('click', alertFunction);
+
+function createRadios() {
+  const getLabel = document.getElementById('radios');
+  const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (let i = 0; i < numbersArray.length; i += 1) {
+    const createRadio = document.createElement('input');
+    createRadio.setAttribute('type', 'radio');
+    createRadio.setAttribute('name', 'rate');
+    createRadio.setAttribute('value', numbersArray[i]);
+    getLabel.appendChild(createRadio);
+  }
+}
+
+createRadios();
