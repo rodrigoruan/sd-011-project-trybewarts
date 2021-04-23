@@ -27,3 +27,9 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* Requisito 12 */
+div {
+  display: flex;
+}
+
