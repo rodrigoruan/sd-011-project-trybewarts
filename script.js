@@ -8,3 +8,6 @@ function login() {
     alert('Login ou senha inválidos');
   }
 }
+
+const buttonLogin = document.querySelector('.btn-login');
+buttonLogin.addEventListener('click', login);
