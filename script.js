@@ -36,29 +36,36 @@ const lastNameInput = document.querySelector('#input-lastname');
 const emailInput = document.querySelector('#input-email');
 const houseInput = document.querySelector('#house');
 const houseChoice = document.getElementsByClassName('family');
+const rateChoice = document.getElementsByClassName('radioRate');
 const wichContent = document.getElementsByClassName('subject');
 const radioRate = document.getElementsByClassName('radioRate');
 // const textPlace = document.querySelector('#textarea');
-const checkedFunction = checkedRadio();
 function checkedRadio() {
   for(let index = 0; index < houseChoice.length; index += 1){
     if(houseChoice[index].checked === true){
-      return houseChoice[index].value
+      return houseChoice[index]
     }
   }
 }
-
-
-
+function checkedRate() {
+  for(let index = 0; index < rateChoice.length; index += 1){
+    if(rateChoice[index].checked === true){
+      return rateChoice[index]
+    }
+  }
+}
 submitButton.addEventListener('click', (event) => {
+  const checkedFunction = checkedRadio();
+  const checkedRated = checkedRate();
   event.preventDefault();
   console.log(nameInput.value);
-console.log(lastNameInput.value);
-console.log(emailInput.value);
-console.log(houseInput.value);
-console.log(houseChoice.value);
-console.log(wichContent.value);
-console.log(radioRate.value);
-console.log(textPlace.value);
+  console.log(lastNameInput.value);
+  console.log(emailInput.value);
+  console.log(houseInput.value);
+  console.log(checkedFunction.value);
+  console.log(wichContent.value);
+  console.log(checkedRated.value);
+  console.log(textPlace.value);
 });
+
 
