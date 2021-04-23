@@ -21,9 +21,29 @@
   </header>
 
   <main id="content">
-    <form id="evaluation-form">
+    <form method="get" id="evaluation-form">
+     
+      <div class='full-name'>
+        <label for="name"></label>
+        <input type="text" id='input-name' name='name' placeholder="Nome">
+        <label for="last-name"></label>
+        <input type="text" id='input-lastname' name='last-name' placeholder="Sobrenome">
+      </div>
+      
+      <div class="nd-line">
+        <label for="email"></label>
+        <input type="text" id='input-email' name='email' placeholder="Email">
 
     </form method="get">
+        <label for="casa">Casa</label>
+        <select name="Casa" id="house">
+          <option value="gitnoria-house">Gitnória</option>
+          <option value="reactpuff-house">Reactpuff</option>
+          <option value="corvinode-house">Corvinode</option>
+          <option value="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+    </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
   </main>
 

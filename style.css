@@ -17,6 +17,11 @@
   height: 500px;
 }
 
+.full-name {
+  display: flex;
+  flex-direction: row;
+}
+
 .header {
   height: 80px;
   display: flex;
