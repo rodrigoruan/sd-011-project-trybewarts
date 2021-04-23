@@ -1,0 +1,17 @@
+#family-content-container {
+  display: flex;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#checkbox-container div {
+  flex-basis: 30%;
+}
