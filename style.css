@@ -36,7 +36,6 @@ header {
   display: flex;
   align-self: center;
   justify-content: end;
-  justify-content: space-between;
 }
 
 .control {
