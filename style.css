@@ -34,11 +34,6 @@ main {
   align-items: center;
 }
 
-label select {
-  flex-grow: 1;
-  align-self: stretch;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
 }
