@@ -37,7 +37,7 @@ main {
   display: flex;
 }
 
-.family-radio {
+.family-col {
   flex-direction: column;
 }
 
