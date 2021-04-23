@@ -56,3 +56,26 @@ main {
   background-color: brown;
   height: 50%;
 }
+
+.content-two {
+  display: flex;
+}
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: aqua;
+}
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  font-size: 1.5em;
+  background-color: rgb(60, 255, 0);
+}
+.subjects
+#label-content {
+  background-color: brown;
+  height: 50%;
+}
