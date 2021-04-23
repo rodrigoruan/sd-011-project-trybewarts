@@ -12,7 +12,6 @@ loginSubmit.addEventListener('click', (event) => {
 });
 
 const submitBtn = document.getElementById('submit-btn');
-const evaluationForm = document.getElementById('evaluation-form');
 const agreement = document.getElementById('agreement');
 
 agreement.addEventListener('click', (event) => {
@@ -20,6 +19,5 @@ agreement.addEventListener('click', (event) => {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
-    
   }
 });
