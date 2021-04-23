@@ -7,10 +7,9 @@
     width: 60px;
     height: 60px;
       
-    
 }
 
 .trybewarts-login{
     display: flex;
-    justify-self: right;
+    justify-self: stretch;
 }
