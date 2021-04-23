@@ -5,8 +5,7 @@ function validation() {
   const pass = document.querySelector('#pass').value;
   if (login === 'tryber@teste.com' && pass === '123456') {
     alert('Olá Tryber!');
-  }
-  else {
+  } else {
     alert('Login ou senha inválidos');
   }
 }
