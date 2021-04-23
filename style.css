@@ -10,9 +10,25 @@ html {
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
 }
 
 .trybewarts-header-logo {
-  justify-self: start;
+  height: 85px;
+}
+
+.trybewarts-login {
+
+}
+
+#header-login {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 15px;
 }
