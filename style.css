@@ -17,23 +17,24 @@
   justify-content: flex-end;
 }
 
-.main-form {
+#evaluation-form {
   border: 1px solid rgb(214, 217, 220);
   display: flex;
-  align-self: flex-start;
   border-radius: 3px;
   width: 80%;
   padding: 50px;
   margin: 0 auto 40px;
-}
-
-#evaluation-form {
-  width: 675px;
-  display: flex;
   flex-direction: column;
+  width: 675px;
 }
 
+.main-form {
+  display: flex;
+}
 #trybewarts-forms-logo {
   height: 500px;
 }
 
+.namensurname {
+  display: flex;
+}
