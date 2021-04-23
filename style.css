@@ -23,3 +23,11 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+.align-form {
+  display: flex;
+}
+
+.align-form input {
+  width: 40%;
+}
