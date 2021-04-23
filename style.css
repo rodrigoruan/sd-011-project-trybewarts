@@ -25,10 +25,35 @@ main {
   flex-wrap: wrap;
 }
 
+.divForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
+#input-name {
+  width: 200px;
+  height: 30px;
+  margin-right: 3px;
+}
+
+#input-email {
+  width: 200px;
+  height: 30px;
+  margin-right: 3px;
+  margin-top: 10px;
+}
+
+#house {
+  width: 200px;
+  height: 37px;
+  margin-top: 10px;
+}
+
 .content-two {
   display: flex;
 }
@@ -37,7 +62,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
-  
   background-color: aqua;
 }
 
@@ -50,32 +74,7 @@ main {
   background-color: rgb(60, 255, 0);
 }
 
-.subjects
-
 #label-content {
   background-color: brown;
   height: 50%;
-}
-
-.content-two {
-  display: flex;
-}
-.left-side, .right-side {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  background-color: aqua;
-}
-.checkboxes {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50%;
-  font-size: 1.5em;
-  background-color: rgb(60, 255, 0);
-}
-.subjects
-#label-content {
-  background-color: brown;
-  height: 50%;
-}
+} 
