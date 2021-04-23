@@ -10,8 +10,8 @@ btnSubmit.disabled = true;
 function checkLogin() {
   const insertedEmail = email.value;
   const insertedPassword = password.value;
-  const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]/.test(insertedEmail);
-  const passwordFormat = /^[0-9.]/.test(insertedPassword);
+  const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(insertedEmail);
+  const passwordFormat = /^[0-9.]+$/.test(insertedPassword);
   if (!emailFormat || !passwordFormat) {
     email.value = '';
     password.value = '';
