@@ -37,6 +37,7 @@ const houseInput = document.querySelector('#house');
 const houseChoice = document.getElementsByClassName('family');
 const rateChoice = document.getElementsByClassName('radioRate');
 const wichContent = document.getElementsByClassName('subject');
+const mainContent = document.querySelector('main');
 
 function checkedRadio() {
   for (let index = 0; index < houseChoice.length; index += 1) {
@@ -80,4 +81,19 @@ submitButton.addEventListener('click', (event) => {
   }
   console.log(checkedRated.value);
   console.log(textPlace.value);
+
+  const array = [
+    `Nome: ${nameInput.value} ${lastNameInput.value}`,
+    `Email: ${emailInput.value}`,
+    `Casa: ${houseInput.value}`,
+    `Família: ${checkedFunction.value}`,
+    `Avaliação: ${checkedRated.value}`,
+    `Observações: ${textPlace.value}`,
+  ];
+
+  for(let index = 0; index < array.length; index += 1){
+    const p = document.createElement('p');
+    p.innerText = array[index];
+    mainContent.appendChild(p);
+  }
 });
