@@ -3,3 +3,6 @@ node_modules/
 cypress/reports
 cypress/screenshots
 .DS_Store
+.prettierrc.json
+tempph.html
+tempph.css
