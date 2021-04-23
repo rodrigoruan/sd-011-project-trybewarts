@@ -27,6 +27,16 @@
   background-color: #4e2c83;
   color: white;
 }
+
 img {
   max-width: 60px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
