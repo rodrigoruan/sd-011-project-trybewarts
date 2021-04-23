@@ -35,6 +35,7 @@
   width: 20%;
 }
 
-.name-lastname {
+/* Requisito 10 */
+.align-items-forms {
   display: flex;
 }
