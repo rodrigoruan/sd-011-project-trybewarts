@@ -3,9 +3,11 @@ const password = document.querySelector('#password');
 const btnLogin = document.querySelector('#login');
 
 btnLogin.addEventListener('click', () => {
-  if ((user !== 'tryber@teste.com') || (password !== '123456')) {
-    alert('Login ou senha inválidos.');
-  } else {
+  const userValue = user.value;
+  const passwordValue = password.value;
+  if ((userValue === 'tryber@teste.com') || (passwordValue === '123456')) {
     alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
   }
 });
