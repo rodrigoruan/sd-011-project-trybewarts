@@ -43,3 +43,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#label-family div {
+  display: flex;
+  flex-direction: column-reverse;
+}
