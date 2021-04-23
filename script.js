@@ -4,7 +4,7 @@ const button = document.getElementById('login-button');
 
 console.log(login, password, button);
 
-button.addEventListener('click', function () {
+button.addEventListener('click', () => {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
