@@ -4,34 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <!--Logo-->
-      <div class="trybewarts-header-logo">
-        <img
+      <img
         class="trybewarts-header-logo"
         src="images/trybewarts-header-logo.svg"
-        />
-      </div>
-      <!--Título na barra-->  
-        <h1 id = "trybewarts-header-title">Trybewarts</h1>
+      />
+
+      <!--Título na barra-->
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
       <!--Form de login-->
       <form action="" method="get" class="trybewarts-login">
-        <input type="email" placeholder="Login" name="email" id="email">
-        <input type="password" id="pass" placeholder="Senha" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <input type="email" placeholder="Login" name="email" id="email" />
+        <input
+          type="password"
+          id="pass"
+          placeholder="Senha"
+          name="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        />
         <button type="submit" id="submit" value="Submit">Submit</button>
       </form>
     </header>
 
-
     <main class="main-form">
-    <form action="" method="get" id="evaluation-form">
-    <input type="text" placeholder="Nome" name="nome" id="input-name">
-    <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
-    <input type="email" placeholder="Email" name="email2" id="input-email">
+      <form action="" method="get" id="evaluation-form">
+      <input type="text" placeholder="Nome" name="nome" id="input-name">
+      <input type="text" placeholder="Sobrenome" name="sobrenome" id="input-lastname">
+      <input type="email" placeholder="Email" name="email2" id="input-email">
     </main>
 
     <div id="select-houses">
@@ -45,6 +54,7 @@
     </div>
     
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+
     <script src="script.js"></script>
   </body>
 </html>
