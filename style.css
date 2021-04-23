@@ -43,16 +43,16 @@ body {
 .trybewarts-login button {
   height: 35px;
   width: 60px;
-  background-color: red;
   border-radius: 8px;
 }
 
-.trybewarts-main , .trybewarts-form {
+.trybewarts-main,
+.trybewarts-form {
   display: flex;
 }
 
 .trybewarts-form {
-  min-width: 675px;
+  width: 675px;
   flex-direction: column;
 }
 
@@ -67,4 +67,25 @@ body {
 .family-container {
   display: flex;
   flex-direction: column;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+}
+
+.family-label-container {
+  display: flex;
+}
+
+.labels {
+  width: 350px;
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.labels label {
+  margin: 0 12px;
 }
