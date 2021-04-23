@@ -6,7 +6,7 @@ const passwordUser = document.getElementById('senha').value;
 function loginTryber() {
   if (usuario !== email || senha !== passwordUser) {
     alert('Login ou senha inválidos.');
-  } else if (usuario === email && senha === passwordUser) {
+  } else if (usuario === email || senha === passwordUser) {
     alert('Olá, Tryber!');
   }
 }
