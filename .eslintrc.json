@@ -10,6 +10,10 @@
     "extends": ["trybe-fundamentals"],
     "parserOptions": { "ecmaVersion": 11 },
     "rules": {
+      "max-lines-per-function": [
+        "error",
+        50
+      ],
       "no-console": "off",
       "no-alert": "off",
       "arrow-parens": [2, "always"],
@@ -25,6 +29,7 @@
           "ignoreRestSiblings": true
         }
       ],
-      "object-curly-newline": "off"
+      "object-curly-newline": "off",
+      "no-restricted-syntax": "off"
     }
   }
