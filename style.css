@@ -40,3 +40,6 @@ main {
   height: 500px;
 }
 
+.row {
+  flex-direction: row;
+}
