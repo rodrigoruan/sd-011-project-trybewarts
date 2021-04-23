@@ -8,12 +8,16 @@ body {
 
 main {
   display: flex;
-
 }
 
 main form {
   display: flex;
   width: 675px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
@@ -23,31 +27,12 @@ main form {
   margin-right: 10%;
 }
 
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-}
-
-main form #evaluation-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .row1 {
-  display: flex;
-}
-
-.row2 {
-  display: flex;
-  margin-top: 15px;
-}
-
-.name {
   display: flex;
   margin-top: 20%;
 }
 
-.down-below {
+.row {
   display: flex;
 }
 
@@ -107,10 +92,14 @@ hr {
   flex-direction: column;
 }
 
-.radio-family input {
+.radio-family input , .radio-rates input {
   width: 25px;
 }
 
 label {
   font-size: 25px;
+}
+
+.radio-rates {
+  display: flex;
 }
