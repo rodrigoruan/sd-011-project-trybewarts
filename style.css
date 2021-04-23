@@ -20,7 +20,8 @@ html {
 }
 
 .trybewarts-login {
-
+  display: flex;
+  justify-content: space-around;
 }
 
 .input-login {
@@ -29,7 +30,7 @@ html {
   border-radius: 8px;
   border: none;
   font-weight: bold;
-  padding: 15px;
+  padding: 12px;
   margin: 5px;
 }
 
@@ -38,8 +39,8 @@ html {
   height: 40px;
   border-radius: 8px;
   border: none;
+  margin: 5px;
   background-color: #512C7F;
   color: #ffffff;
   font-weight: bold;
-  margin: 5px;
 }
