@@ -10,10 +10,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .header img {
   width: 50px;
+}
+
+.header input {
+  padding: 5px 0;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.header button {
+  padding: 5px 10px;
+  font-size: 14px;
 }
 
 .trybewarts-login {
@@ -32,4 +44,15 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
