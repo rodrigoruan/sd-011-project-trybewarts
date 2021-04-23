@@ -27,7 +27,7 @@ function checkAgreement() {
 function counter() {
   const textLength = textArea.value.length;
   const initialText = 500;
-  let difference = initialText - textLength;
+  const difference = initialText - textLength;
   counterText.innerText = difference;
 }
 
