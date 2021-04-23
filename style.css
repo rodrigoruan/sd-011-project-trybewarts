@@ -38,7 +38,7 @@ h1.trybewarts-header-title {
   width: 675px;
   background-color: yellow;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 main {
