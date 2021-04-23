@@ -8,8 +8,15 @@
 
 .trybewarts-header-logo {
   margin-left: 0;
+  order: 1;
 }
 
 .trybewarts-login {
   display: flex;
+  order: 3;
+}
+
+.header #trybewarts-header-title {
+  align-self: center;
+  order: 2;
 }
