@@ -19,6 +19,12 @@ main {
   align-self: center;
 }
 
+#counter {
+  position: absolute;
+  top: 755px;
+  left: 755px;
+}
+
 #evaluation-form {
   display: flex;
   flex-direction: column;
