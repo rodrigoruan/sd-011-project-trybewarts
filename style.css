@@ -18,9 +18,13 @@
   display: flex;
 }
 
-#family-container input{
+#family-container input {
   display: flex;
   flex-direction: column;
+}
+
+#label-content {
+  display: flex;
 }
 
 
