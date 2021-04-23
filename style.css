@@ -6,8 +6,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
-  padding: 10px 0;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .trybewarts-header-logo {
@@ -29,7 +29,8 @@ main {
   display: flex;
 }
 
-.evaluation-form {
+#evaluation-form {
   width: 675px;
   display: flex;
+  flex-direction: column;
 }
