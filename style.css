@@ -20,3 +20,14 @@
   align-self: center;
   order: 2;
 }
+
+main {
+  display: flex;
+}
+
+main #evaluation-form {
+  display: flex;
+  width: 675px;
+  height: 50px;
+  background-color: aqua;
+}
