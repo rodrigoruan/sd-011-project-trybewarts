@@ -7,22 +7,35 @@ header {
   display: flex;
   background-color: rgb(50, 167, 145);
   width: auto;
-  height: 100px;
   justify-content: space-around;
 }
 
-.logo {
+#trybewarts-header-title {
   display: flex;
+  justify-items: center;
+  font-size: 25px;
+  color: white;  
+}
+
+.logo {
+  justify-items: center;
+  width: 60px;
+}
+
+.title {
   justify-content: center;
 }
 
 .trybewarts-login {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .control {
   display: flex;
   padding: 10px 10px;
+}
+
+.trybewarts-title {
+  align-self: center;
+  justify-content: center;
 }
