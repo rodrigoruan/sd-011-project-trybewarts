@@ -83,23 +83,25 @@
           <h3>Deixe seu comentário:</h3>
           <textarea
             name=""
-            id="text-area"
+            id="textarea"
             maxlength="500"
+            minlength="0"
             cols="30"
             rows="10"
           ></textarea>
+        <span id='counter'>500</span>
         </label>
         <label for="agreement" id="label-infos">
           <h4>Você concorda com o uso das informações acima?</h4>
           <input type="checkbox" name="agreement" id="agreement" required>
         </label>
+        <button type="submit" id='submit-btn' disabled>Enviar</button>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
     </main>
     <footer id="footer">
       <h3>Direitos reservados à Trybewarts©</h3>
     </footer>
-    <button type="submit" id='submit-btn' disabled>Enviar</button>
     <script src="script.js"></script>
   </body>
 </html>
