@@ -38,3 +38,9 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+footer {
+  text-align: center;
+  bottom: 0px;
+  background-color: rgb(53, 52, 52);
+}

@@ -11,3 +11,14 @@ submitLoginBttn.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+const submitFormButton = document.getElementById('submit-btn');
+const formCheckBox = document.getElementById('agreement');
+
+formCheckBox.addEventListener('click', () => {
+  if (formCheckBox.checked) {
+    submitFormButton.disabled = false;
+  } else {
+    submitFormButton.disabled = true;
+  }
+})
