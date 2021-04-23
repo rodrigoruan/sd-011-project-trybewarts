@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 100px;
+}
+
+header img {
+  padding: 20px;
 }
 
 .main-container {
