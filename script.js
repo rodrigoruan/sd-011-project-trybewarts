@@ -10,8 +10,8 @@ function validateLogin() {
     }
   });
 }
-validateLogin();
 
+validateLogin();
 
 const btnSubmit = document.getElementById('submit-btn');
 const checkBox = document.getElementById('agreement');
@@ -23,5 +23,3 @@ checkBox.onchange = function () {
     btnSubmit.disabled = true;
   }
 }
-
-
