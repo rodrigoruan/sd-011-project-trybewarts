@@ -1,8 +1,10 @@
 const loginButton = document.querySelector('#login-button');
 
-loginButton.addEventListener('click', function () {
+loginButton.addEventListener('click', () => {
   const trybewartsLogin = document.forms['trybewarts-login'];
-  if (trybewartsLogin.user.value === 'tryber@teste.com' && trybewartsLogin.password.value === '123456') {
+  const user = trybewartsLogin.user.value;
+  const password = trybewartsLogin.password.value;
+  if (user === 'tryber@teste.com' && password === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos');
