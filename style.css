@@ -14,7 +14,15 @@
   height: 50px;
   width: 50px;
   align-self: flex-start;
-  order: -1;
+}
+
+#trybewarts-header-title {
+  order: 1;
+}
+
+.trybewarts-login {
+  display: flex;
+  order: 2;
 }
 
 #loginButton {
