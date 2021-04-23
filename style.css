@@ -3,21 +3,22 @@ header {
   background-color: rgb(50, 167, 145);
   width: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
 
-  /* Requisito 5 */
+/* Requisito 5 */
 main {
-   display: flex;
+  display: flex;
 }
-  
-  /* Requisito 5 e 6 */
-  #evaluation-form {
-   display: flex;
-   width: 675px;
-   flex-direction: column;
+
+/* Requisito 5 e 6 */
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
-  
-  /* Requisito 7 */
- #trybewarts-forms-logo {
-   height: 500px;
+
+/* Requisito 7 */
+#trybewarts-forms-logo {
+  height: 500px;
 }
