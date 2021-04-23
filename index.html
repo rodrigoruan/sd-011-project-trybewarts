@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  
 </head>
 <body>
 
-  <header class="header">
+  <div class="header">
     <img src="images/trybewarts-header-logo.svg" alt="logotipo da escola" class="trybewarts-header-logo">
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -22,7 +23,7 @@
       </div>
     </form>
 
-  </header>
+  </div>
 
   <main id='form-container'>
     <form action="" method="get" id='evaluation-form'>
@@ -63,6 +64,13 @@
         9 <input type="radio" name="rate" id="" value="9">
         10 <input type="radio" name="rate" id="" value="10">
       </label>
+  
+      <label for="textarea" class="textarea">Deixe seu comentário:</label>
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+
+    </form>
+    <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="trybewarts-logo">
+  </main>
   
   <script src="script.js"></script>
 </body>
