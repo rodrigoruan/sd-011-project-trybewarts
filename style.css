@@ -8,3 +8,9 @@
 .trybewarts-header-logo {
   float: left;
 }
+
+/* Estilização - Requisito 7 */
+.trybewarts-forms-logo {
+  height: 500px;
+  float: right;
+}
