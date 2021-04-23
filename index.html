@@ -9,7 +9,39 @@
   </head>
   <body>
     <header class="header">
-      <h1>Trybewarts</h1>
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login" action="">
+        <input id="login" type="text" placeholder="Login" />
+
+        <input id="password" type="text" placeholder="Senha" />
+
+        <button id="buttonLogin">Logar</button>
+      </form>
     </header>
+
+    <main id="main-page">
+      <form id="evaluation-form" action="">
+        <label for="name">Nome</label>
+        <input type="text" name="name" />
+
+        <label for="lastname">Sobrenome</label>
+        <input type="text" name="lastname" />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" />
+      </form>
+
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="Logo Trybewarts"
+      />
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

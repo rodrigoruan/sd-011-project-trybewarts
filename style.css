@@ -6,4 +6,31 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  width: 5%;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+#main-page {
+  display: flex;
+  flex-grow: row wrap;
+}
+
+#evaluation-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  width: 20%;
 }
