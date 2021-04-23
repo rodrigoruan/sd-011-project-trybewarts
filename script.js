@@ -11,6 +11,6 @@ function verifiedValues() {
   } else {
     alert('Login ou senha inválidos.');
   }
-};
+}
 
 submitLoginBtn.addEventListener('click', verifiedValues);
