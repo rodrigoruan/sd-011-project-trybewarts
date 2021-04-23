@@ -4,23 +4,27 @@
   box-sizing: border-box;
 }
 
-.header {
+.header-container {
   display: flex;
   height: 100px;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
 }
 
-.header-container {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 1400px;
   margin: 0 auto;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
   height: 80%;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
 
 .trybewarts-login {
