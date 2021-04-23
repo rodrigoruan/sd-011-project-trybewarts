@@ -1,14 +1,10 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
   width: 60px;
-}
-
-.trybewarts-login {
-  display: flex;
-  align-items: center;
-  flex-grow: 10;
 }
