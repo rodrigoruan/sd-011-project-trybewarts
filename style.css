@@ -39,3 +39,11 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#logo {
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  align-items: flex-start;
+}
