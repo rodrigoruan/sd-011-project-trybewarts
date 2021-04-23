@@ -15,6 +15,10 @@
   width: 40px;
 }
 
+.trybewarts-login {
+  display: flex;
+}
+
 main {
   display: flex;
   position: relative;
