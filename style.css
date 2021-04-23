@@ -56,10 +56,15 @@ body {
   flex-direction: column;
 }
 
-.trybewarts-main{
+.trybewarts-main {
   justify-content: space-between;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.family-container {
+  display: flex;
+  flex-direction: column;
 }
