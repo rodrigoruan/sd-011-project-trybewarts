@@ -4,6 +4,9 @@ const loginButton = document.querySelector('#loginButton');
 const rateContainer = document.querySelector('#rate-container');
 const textArea = document.querySelector('textarea');
 let counter = document.querySelector('#counter')
+const checkAgreement = document.querySelector('#agreement');
+const btnSubmit = document.querySelector('#submit-btn');
+btnSubmit.disabled = true;
 
 // Função que valida o formato de E-mail
 function checkLogin() {
@@ -45,4 +48,16 @@ function wordCounter () {
   counter.innerText = 500 - nWords;
 }
 
-textArea.addEventListener('keyup', wordCounter)
+textArea.addEventListener('keyup', wordCounter);
+
+function disableSubmitButton() {
+  checkAgreement.addEventListener('click', () => {
+    if (!checkAgreement.checked) {
+      btnSubmit.disabled = true;
+    } else {
+      btnSubmit.disabled = false;
+    }
+  });
+}
+
+disableSubmitButton();
