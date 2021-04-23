@@ -2,12 +2,22 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
 }
 
-form.trybewarts-login input:nth-child(1) {
-  
+main {
+  display: flex;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+
+/* form.trybewarts-login input:nth-child(1) {
+  
+} */
