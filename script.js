@@ -11,3 +11,13 @@ function login() {
 
 const buttonLogin = document.querySelector('.btn-login');
 buttonLogin.addEventListener('click', login);
+
+const agreement = document.getElementById('agreement');
+
+agreement.addEventListener('change', () => {
+  if (agreement.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+});
