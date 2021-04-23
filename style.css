@@ -31,4 +31,17 @@ html {
   font-size: 0.9em;
   font-weight: bold;
   padding: 15px;
+  margin: 10px;
+}
+
+#header-submit {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #512C7F;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 10px;
 }
