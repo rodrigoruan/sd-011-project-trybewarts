@@ -1,7 +1,3 @@
-window.onload = function start() {
-  validateAccess();
-}
-
 // validar login
 function validateEmail() {
   const emailInput = document.getElementById('login');
@@ -27,9 +23,14 @@ function validateAccess() {
   const loginButton = document.getElementById('login-button');
 
   loginButton.addEventListener('click', () => {
-  if (validateEmail() && validatePassword()) {
-    window.alert('Olá, Tryber!');
-  } else {
-    window.alert('Login ou senha inválidos.');
-  }
-})}
+    if (validateEmail() && validatePassword()) {
+      window.alert('Olá, Tryber!');
+    } else {
+      window.alert('Login ou senha inválidos');
+    }
+  });
+}
+
+window.onload = function start() {
+  validateAccess();
+};

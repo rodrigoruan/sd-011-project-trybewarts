@@ -21,11 +21,11 @@ input {
   width: 100px;
 }
 
-form.trybewarts-login {
+.trybewarts-login {
   display: flex;
 }
 
-form.trybewarts-login input {
+.trybewarts-login input {
   margin-right: 5px;
 }
 
