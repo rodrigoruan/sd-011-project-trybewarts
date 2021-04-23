@@ -12,3 +12,7 @@ html {
   display: flex;
   height: 80px;
 }
+
+.trybewarts-header-logo {
+  justify-self: start;
+}
