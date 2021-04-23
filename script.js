@@ -2,6 +2,8 @@ const email = document.querySelector('#input-login-email');
 const password = document.querySelector('#input-login-password');
 const loginButton = document.querySelector('#loginButton');
 const rateContainer = document.querySelector('#rate-container');
+const textArea = document.querySelector('textarea');
+let counter = document.querySelector('#counter')
 
 // Função que valida o formato de E-mail
 function checkLogin() {
@@ -36,3 +38,11 @@ function createRateRadios() {
 }
 
 createRateRadios();
+
+//Contador de palavras do textarea
+function wordCounter () {
+  const nWords = textArea.value.length;
+  counter.innerText = 500 - nWords;
+}
+
+textArea.addEventListener('keyup', wordCounter)
