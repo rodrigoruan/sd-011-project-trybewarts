@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -21,8 +26,7 @@ main {
   display: flex;
   width: 675px;
   margin-top: 20px;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: wrap column;
 }
 
 .divForm {
@@ -58,7 +62,7 @@ main {
   display: flex;
 }
 
-.left-side, .right-side {
+.left-side , .right-side {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -77,4 +81,4 @@ main {
 #label-content {
   background-color: brown;
   height: 50%;
-} 
+}
