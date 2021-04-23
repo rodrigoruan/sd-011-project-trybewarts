@@ -1,10 +1,11 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
   width: 10%;
   padding: 20px;
-  order: -1;
 }
