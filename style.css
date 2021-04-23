@@ -47,11 +47,3 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
-
-#input-name {
-  align-self: flex-start;
-}
-
-#input-lastname {
-  align-self: flex-end;
-}
