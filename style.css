@@ -30,10 +30,31 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 675px;
+  align-self: center;
+}
+
+#input-lastname, #input-name {
+  display: flex;
+  flex-grow: 1;
+  width: 40vh;
+}
+
+#input-email {
+  width: 42.7vh;
+}
+
+#house {
+  width: 38.4vh;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
 }
