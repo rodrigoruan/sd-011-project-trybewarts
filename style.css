@@ -7,6 +7,10 @@
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  padding: 40px;
+  padding: 10px;
   margin: 0;
+}
+
+img {
+  width: 8%;
 }
