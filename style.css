@@ -47,15 +47,24 @@ header {
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex: column nowrap;
 }
 
 .trybewarts-form {
   display: flex;
-  flex: column nowrap;
 }
 
 .section-form {
   display: flex;
+  flex: column wrap
 }
 
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+  flex-grow: 1;
+}
+
+.image-section {
+  display: flex;
+  flex-grow: 1;
+}

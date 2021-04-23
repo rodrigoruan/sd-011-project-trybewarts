@@ -3,9 +3,7 @@ const pass = document.getElementById('pass').value;
 const submitButton = document.getElementById('submit-button');
 
 function validation () {
-  const truePass = ['123456'];
-  const trueLogin = ['tryber@teste.com'];
-  if (login == trueLogin && pass == truePass) {
+  if (login == 'tryber@teste.com' && pass == '123456') {
     alert('Olá Tryber!');
   }
 
