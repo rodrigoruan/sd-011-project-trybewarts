@@ -1,9 +1,13 @@
 // req 3 alerta ao logar
-/* function Login(){
- if (document.getElementById("email") === "tryber@teste.com" && document.getElementById("senha") === "123456"){
-  alert('Login ou senha inválidos.')
+/* const emailLogin = document.getElementById("email").innerText.value;
+const passwordLogin = document.getElementById("senha").innerText.value;
+const buttonEmail = document.getElementById("Login");
+
+function checkInput() {
+ if (emailLogin === ("tryber@teste.com") && passwordLogin === ("123456") {
+  alert('Login ou senha inválidos.');
  }else {
-     alert('Olá, Tryber!')
+  alert('Olá, Tryber!');
  }
 }
-addEventListener.Login(); */
+addEventListener.buttonEmail(click, checkInput); */
