@@ -20,3 +20,17 @@
 .form-container {
   display: flex;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
