@@ -9,5 +9,4 @@ function alertFunction() {
 }
 
 const buttonClick = document.getElementById('sendBtn');
-
 buttonClick.addEventListener('click', alertFunction);

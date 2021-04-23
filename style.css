@@ -12,3 +12,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+}
