@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', 'Times', 'serif';
 }
 
 .header {
@@ -23,11 +23,25 @@
   width: 100px;
 }
 
-.input:nth-child(3) {
+.header button {
   background-color: #4e2c83;
   color: white;
 }
 
 img {
   max-width: 60px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
