@@ -1,6 +1,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
 }
 
 main {
@@ -10,4 +12,14 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+}
+  
+
+.trybewarts-header-logo {
+  max-width: 75px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
 }
