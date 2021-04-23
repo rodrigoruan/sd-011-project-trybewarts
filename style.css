@@ -52,3 +52,15 @@
 #label-rate {
   display: flex;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
