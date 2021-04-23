@@ -95,11 +95,11 @@ body {
 }
 
 footer {
-  position:absolute;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  background-color: #696969;
+  background-color: #58555A;
 }
 
 #house , .name-input input , #input-email {
@@ -113,4 +113,9 @@ footer {
 #house {
   width: 330px;
   height: 70px;
+  background-color: white;
+}
+
+#input-email:hover , .name-input input:hover {
+  background-color: wheat;
 }
