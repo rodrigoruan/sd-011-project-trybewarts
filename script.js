@@ -6,7 +6,7 @@ const password = document.getElementById('password');
 const loginButton = document.getElementById('login-button');
 
 function checkTerms() {
-  if (!check.value) {
+  if (check.value === 'on') {
     submit.disabled = true;
   } else {
     submit.disabled = false;
@@ -22,6 +22,6 @@ function submitLogin() {
 }
 
 loginButton.addEventListener('click', submitLogin);
-check.addEventListener('click', checkTerms);
+check.addEventListener('change', checkTerms);
 
 checkTerms();
