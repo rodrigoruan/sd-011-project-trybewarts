@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main {
   display: flex;
 }
@@ -36,4 +37,33 @@ ul {
 
 #trybewarts-forms-logo {
   height: 500px;
+=======
+#family-content-container {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#checkbox-container label {
+  flex-basis: 30%;
+}
+
+footer {
+  background-color: rgb(77, 67, 67);
+  color: rgb(50, 167, 145);
+  text-align: center;
+>>>>>>> 1a32d810072621ee5f14dd64e91f2fb5a83dcc8c
 }
