@@ -9,29 +9,22 @@
 
 main {
   display: flex;
-  flex-direction: column;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-wrap: wrap;
   background-color: red;
+  flex-direction: column;
+}
+
+#form-title {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #trybewarts-forms-logo {
-  width: 30%;
-  flex-direction: row;
-}
-
-#input-name {
-  width: 30%;
-}
-
-#input-lastname {
-  width: 60%;
-}
-
-#input-email {
-  width: 60%;
+  width: 500px;
+  display: flex;
 }
