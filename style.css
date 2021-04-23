@@ -25,3 +25,13 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-top: 50px;
+}
+
+.div {
+  display: flex;
+  justify-content: flex-end;
+}
