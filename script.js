@@ -4,8 +4,8 @@ const loginButton = document.querySelector('#loginButton');
 
 // Função que valida o formato de E-mail
 function checkLogin() {
-  let insertedEmail = email.value;
-  let insertedPassword = password.value;
+  const insertedEmail = email.value;
+  const insertedPassword = password.value;
   const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]/.test(insertedEmail);
   const passwordFormat = /^[0-9.]/.test(insertedPassword);
   if (!emailFormat || !passwordFormat) {
