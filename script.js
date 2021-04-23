@@ -36,7 +36,3 @@ checkBox.addEventListener('click', () => {
     submitBtn.removeAttribute('disabled');
   }
 });
-
-const form = document.getElementsByClassName('trybewarts-login');
-
-form.get('name')
