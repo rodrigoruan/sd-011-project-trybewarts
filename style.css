@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+input {
+  width: 150px;
+  height: 40px;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+button {
+  margin: 20px 0;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(206, 199, 194);
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(22, 21, 21);
+  cursor: pointer;
+}
