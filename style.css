@@ -48,3 +48,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#divrate {
+  display: flex;
+  flex-direction: row;
+}
