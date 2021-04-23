@@ -11,12 +11,19 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo do cabeçalho">
 
+    <form onsubmit="validateLoginForm()" method="get" class="trybewarts-login" name="trybewarts-login">
+      <input name="user" class="trybewarts-login-form-items" type="email" placeholder="Login">
+
+      <input name="password" class="trybewarts-login-form-items" type="text" placeholder="Senha">
+
+      <button id="login-button" class="trybewarts-login-form-items" type="submit">ENTRAR</button>
+    </form>
   </header>
 
   <main id="content">
     <form id="evaluation-form">
 
-    </form>
+    </form method="get">
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
   </main>
 
