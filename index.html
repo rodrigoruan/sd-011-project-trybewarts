@@ -10,12 +10,11 @@
 </head>
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="trybewarts-logo">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts-logo">
     
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     
-    <form  class='trybewarts-login' action="" method="get" enctype="multipart/form-data">
-    
+    <form  class='trybewarts-login' action="" method="get" enctype="multipart/form-data">  
       <div>
         <input type="email" name="login" id="login" placeholder="Login" required  maxlength="" > 
       </div>
@@ -25,7 +24,7 @@
       </div>
 
       <div class="control">
-        <button class="button" type="submit" onclick="alert()">Logar</button>
+        <button class="button" type="submit" onclick="click()">Logar</button>
       </div>
 
     </form>
@@ -35,36 +34,39 @@
         <fieldset>
           <h1>forms</h1>
           <div class="control">
-            <input class="input"  type="text" name="nome" id="name" placeholder="Nome" required maxlength="40">
+            <input class="input"  type="text" name="nome" id="input-name" placeholder="Nome" required maxlength="40">
           </div>
     
           <div class="control">
-            <input class="input"  type="text" name="sobrenome" id="last-name" placeholder="Sobrenome" required maxlength="40">
+            <input class="input"  type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" required maxlength="40">
           </div>
     
           <div class="control">
-            <input class="input"  type="email" name="email" id="email" placeholder="Email" required maxlength="50">
+            <input class="input"  type="email" name="email" id="input-email" placeholder="Email" required maxlength="50">
           </div>
     
-        
-          <label class="label" for="house">Casa</label>
+        <label class="label" for="house">Casa</label>
           <div class="control">
             <div class="select">
-              <select name="house" id="house" value = "" required></select>
+              <select name="house" id="house" value = "" required>
+                <option id="gitnoria-house" value="Gitnória"></option>
+                <option id="reactpuff-house" value="Reactpuff"></option>
+                <option id="corvinode-house" value="Corvinode"></option>
+                <option id="pytherina-house" value="Pytherina"></option>
+              </select>
             </div>
           </div>
             
-          <div class="control">
-            
-            <p>Qual é a sua família?</p>
-            <label for="frontend">
-              <input class="radio" type="radio" name="family" id="frontend" value="fe" required checked>Família Frontend
+          <div class="control" id="label-family">
+            <p>Qual sua família?</p>
+            <label class="radio" for="frontend">
+              <input class="radio" type="radio" name="family" id="frontend" value="Frontend" required checked>Frontend
             </label>
             <label class="radio" for="backend">
-              <input class="radio" type="radio" name="family" id="backend" value="be" required>Família Backend
+              <input class="radio" type="radio" name="family" id="backend" value="Backend" required>Backend
             </label>
             <label class="radio" for="fullstack">
-              <input class="radio" type="radio" name="family" id="fullstack" value="fs" required>Família Fullstack
+              <input class="radio" type="radio" name="family" id="fullstack" value="FullStack" required>Fullstack
             </label>
           </div>
     
@@ -157,5 +159,4 @@
  
 </body>
 <script src="script.js"></script>
-
 </html>
