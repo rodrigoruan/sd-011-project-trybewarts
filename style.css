@@ -1,3 +1,56 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: (239, 239, 239);
+}
+
+main {
+  display: flex;
+
+}
+
+main form {
+  display: flex;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: auto;
+  width: 40%;
+  float: right;
+  margin-right: 10%;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+main form #evaluation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+  margin-top: 15px;
+}
+
+.name {
+  display: flex;
+  margin-top: 20%;
+}
+
+.down-below {
+  display: flex;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -5,8 +58,7 @@
 }
 
 .trybewarts-header-logo {
-  padding-left: 400px;
-  width: 110px;
+  width: 100px;
 }
 
 .trybewarts-login {
@@ -15,12 +67,12 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  padding-right: 300px;
+  padding-right: 100px;
 }
 
 input {
-  width: 150px;
-  padding: 10px;
+  width: 100px;
+  padding: 5px;
   padding-right: 90px;
   height: 40px;
   font-size: 30px;
@@ -31,10 +83,10 @@ input {
 
 button {
   margin: 20px 0;
-  padding: 15px 90px;
+  padding: 10px 60px;
   border: none;
   border-radius: 10px;
-  background-color: #4E2C83;
+  background-color: rgb(78, 44, 131);
   font-size: 25px;
   font-weight: 500;
   color: white;
@@ -44,4 +96,21 @@ button {
 #trybewarts-header-title {
   color: white;
   font-size: 60px;
+}
+
+hr {
+  width: 1000px;
+}
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-family input {
+  width: 25px;
+}
+
+label {
+  font-size: 25px;
 }
