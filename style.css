@@ -13,3 +13,7 @@ header {
   display: flex;
 }
 
+#trybewarts-header-title {
+  color: white;
+  font-size: xx-large;
+}
