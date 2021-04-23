@@ -28,6 +28,12 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#fullname {
+  display: flex;
+  flex-direction: row;
 }
 
 #trybewarts-forms-logo {
