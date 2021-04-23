@@ -8,11 +8,6 @@
   display: flex;
 }
 
-<<<<<<< HEAD
-.trybewarts-login {
-  display: flex;
-  align-content: center;
-=======
 main {
   display: flex;
 }
@@ -33,5 +28,4 @@ main {
 #trybewarts-forms-logo {
   width: 500px;
   display: flex;
->>>>>>> a34fd2accbc458df87c8de41a626a7e67f803348
 }

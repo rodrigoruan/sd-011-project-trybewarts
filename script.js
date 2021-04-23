@@ -1,6 +1,6 @@
-const email = document.getElementById("login");
-const senha = document.getElementById("senha");
-const botao = document.getElementById("button");
+const email = document.getElementById('login');
+const senha = document.getElementById('senha');
+const botao = document.getElementById('button');
 
 botao.addEventListener('click', () => {
   if (email.value === 'tryber@teste.com' && senha.value === '123456') {
