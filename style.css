@@ -5,7 +5,13 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: rgb(50, 167, 145);
-  height: 150px;
   width: 100%;
+}
+
+.trybewarts-header-logo {
+  display: flex;
 }
