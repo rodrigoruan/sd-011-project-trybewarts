@@ -20,9 +20,36 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  margin-top: 20px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-#trybewarts-form-logo {
+.divForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+#trybewarts-forms-logo {
   height: 500px;
+}
+
+#input-name {
+  width: 200px;
+  height: 30px;
+  margin-right: 3px;
+}
+
+#input-email {
+  width: 200px;
+  height: 30px;
+  margin-right: 3px;
+  margin-top: 10px;
+}
+
+#house {
+  width: 200px;
+  height: 37px;
+  margin-top: 10px;
 }
