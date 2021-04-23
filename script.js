@@ -8,6 +8,5 @@ function handleLogin() {
     alert('Login ou senha inválidos.');
   }
 }
-
 const button = document.getElementById('botao');
 button.addEventListener('click', handleLogin);
