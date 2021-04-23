@@ -1,9 +1,10 @@
-.trybewarts-header-logo {
-  width: 10%;
-  padding: 20px 20px;
-}
-
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 10%;
+  padding: 20px;
+  order: -1;
 }
