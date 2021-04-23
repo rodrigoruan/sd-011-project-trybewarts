@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /8/
 
 ---
 
@@ -19,11 +19,18 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: /Os id's poderiam ser mais padronizados, pois facilita a visualização,
+como por exemplo o primeiro e o segundo form, o primeiro tem o id trybewarts-login e o segundo
+tem o id evaluation-form, e no 7 o logo precisa ter o id trybewarts-form-logo, vendo dessa maneira
+parece dar uma bagunçada no nome dos id's.
+  Outra crítica é sobre o requisito 21, está muito difícil de interpretar e há algumas verificações
+que não estão tão explícitas assim, acredito que seria melhor essa classe subjects ter sido colocada
+anteriormente no requisito em que pedia a criação dos checkbox para não ter confusão.
+  De resto o projeto foi bem divertido de realizar e fazer em dupla também foi algo bem diferente!!!/
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Jean Esteves e Matheus Gaspar/
 
 ---
 
