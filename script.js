@@ -1,21 +1,11 @@
-function login() {
-    const email = document.querySelector('#email')
+const email = document.querySelector('#email');
+const senha = document.querySelector('#senha');
+const submit = document.querySelector('#button');
 
-    if (email.value == "" ||
-        email.value.indexOf('@') == -1 ||
-        email.value.indexOf('.') == -1) {   
-        return false;
-    }
-}
-    function isNumber(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n);
-    }
-
-    const button = document.querySelector('#button')
-    const senha = document.querySelector('#senha')
-    
-    button.addEventListener('click', () => {
-     if (login()=== true) {
-     alert('invalido')
-     }
-    })
+submit.addEventListener('click', () => {
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
+  }
+});
