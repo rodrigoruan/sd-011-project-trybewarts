@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  height: 80px;
+}
+
+#trybewarts-header-title {
+  font-size: 2em;
+  color: brown;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+input {
+  width: 111px;
+  margin: 2px;
+}
+
+#Login {
+  width: 56px;
+  margin: 3px;
+}
+
 main {
   display: flex;
   float: left;
