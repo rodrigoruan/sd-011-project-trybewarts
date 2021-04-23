@@ -47,7 +47,7 @@ body {
   border-radius: 8px;
 }
 
-.trybewarts-main, .trybewarts-form {
+.trybewarts-main , .trybewarts-form {
   display: flex;
 }
 
