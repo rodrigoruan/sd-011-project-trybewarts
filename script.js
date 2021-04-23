@@ -15,7 +15,6 @@ function loginSubmit() {
 
 buttonSubmit.addEventListener('click', loginSubmit);
 
-//requisito 17
 const submitBtn = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
 submitBtn.disabled = true;
