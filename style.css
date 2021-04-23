@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    background-color:  rgb(50, 167, 145)
+}
+
+.trybewarts-header-logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    
+}
