@@ -1,4 +1,4 @@
-function login(event) {
+function login() {
   const usuario = document.getElementsByName('Login')[0].value;
   const senha = document.getElementsByName('Senha')[0].value;
   if (usuario === 'tryber@teste.com' && senha === '123456') {
@@ -6,4 +6,7 @@ function login(event) {
   } else {
     alert('Login ou senha inválidos');
   }
-};
+}
+
+const buttonLogin = document.querySelector('.btn-login');
+buttonLogin.addEventListener('click', login);
