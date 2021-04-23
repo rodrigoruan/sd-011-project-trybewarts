@@ -45,7 +45,7 @@ main {
 
 #thirdBigContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #label-family {
@@ -65,9 +65,17 @@ main {
 
 .learningContentContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fourthBigContainer {
+  display: flex;
+  justify-content: center;
 }
 
 hr {
-  margin: 10px;
+  margin: 10px 0 10px 120px;
+  width: 500px;
 }
