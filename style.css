@@ -5,7 +5,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: rgb(50, 167, 145);
   width: 100%;
