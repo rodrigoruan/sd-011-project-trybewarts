@@ -28,5 +28,13 @@ main form {
 }
 
 main {
+  display:flex;
+}
+
+.inputsNameLastname {
+  display: flex;
+}
+
+.inputEmailDropdown {
   display: flex;
 }

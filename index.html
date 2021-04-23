@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!--Requisitos 1 ao 4 -->
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -19,15 +20,36 @@
       <button id="btnLogin">Entrar</button>
     </form>
   </header>
+  <!-- ----------------------------  -->
   <main>
     <form id="evaluation-form">
       <section>
-
+        <!-- Requisito 8 -->
+        <div class="inputsNameLastname">
+          <input id="input-name" type="text" placeholder="Nome">
+          <input id="input-lastname" type="text" placeholder="Sobrenome">
+        </div>
+        <!-- Requisito 9 e 10-->
+        <div class="inputEmailDropdown">
+          <!-- Aqui eu alinhei o input de Email com o Dropdown -->
+          <input id="input-email" type="text" placeholder="Email">
+          <fieldset for="house">Casa
+            <select id="house" name="house">
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </fieldset>
+        </div>
       </section>
     </form>
   </main>
-</body>
+  
+  <footer>
 
-<script type="text/javascript" src="script.js"></script>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
 
 </html>
