@@ -3,7 +3,7 @@ const password = document.querySelector('#input-login-password');
 const loginButton = document.querySelector('#loginButton');
 const rateContainer = document.querySelector('#rate-container');
 const textArea = document.querySelector('textarea');
-let counter = document.querySelector('#counter')
+const counter = document.querySelector('#counter');
 const checkAgreement = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
 btnSubmit.disabled = true;
@@ -42,8 +42,8 @@ function createRateRadios() {
 
 createRateRadios();
 
-//Contador de palavras do textarea
-function wordCounter () {
+// Contador de palavras do textarea
+function wordCounter() {
   const nWords = textArea.value.length;
   counter.innerText = 500 - nWords;
 }
