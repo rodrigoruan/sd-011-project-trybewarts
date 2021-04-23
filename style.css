@@ -3,7 +3,15 @@
   background-color: rgb(50, 167, 145);
 }
 
+<<<<<<< HEAD
 .trybewarts-login {
   display: flex;
   flex: row wrap;
 }
+=======
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: brown;
+}
+>>>>>>> 82cd386aed00c85d87be5713506eeff3475eee1b
