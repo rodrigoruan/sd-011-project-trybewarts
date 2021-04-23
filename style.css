@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   color: white;
 }
@@ -49,4 +49,10 @@ header img {
 .container {
   display: flex;
   justify-content: center;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
