@@ -9,10 +9,20 @@ body {
 }
 
 .header {
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
   display: flex;
   background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-  background-color: red;
+  align-self: center;
+  width: 50px;
+}
+
+.trybewarts-login {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
 }
