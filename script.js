@@ -31,4 +31,4 @@ function Onload() {
 }
 
 // Ao carregar toda a página, chama a função responsável por todas as funções
-window.onload = Onload();
+window.onload = Onload;
