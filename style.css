@@ -23,7 +23,7 @@
   width: 100px;
 }
 
-.input:nth-child(3) {
+button.input {
   background-color: #4e2c83;
   color: white;
 }
