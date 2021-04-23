@@ -9,7 +9,11 @@
   flex-direction: column;
 }
 
-form {
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#evaluation-form {
   width: 675px;
 }
 
