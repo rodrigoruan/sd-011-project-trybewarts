@@ -34,3 +34,8 @@ header img {
 .div-nome {
   display: row;
 }
+
+.radios {
+  display: flex;
+  flex-direction: column;
+}
