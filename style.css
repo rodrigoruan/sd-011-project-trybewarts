@@ -4,6 +4,7 @@ main {
 
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
 
@@ -15,4 +16,8 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
