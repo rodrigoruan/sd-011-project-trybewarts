@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Eczar, serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+  color: white;
+  height: 80px;
+}
+
+.header img {
+  align-items: flex-start;
+  width: 73px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.header form {
+  align-self: flex-end;
+}
+ 
+.header__form--input , #header__form--botao {
+  width: 150px;
+  height: 40px;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Eczar, serif;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#house , #gitnoria-house , #reactpuff-house , #corvinode-house {
+  color: black;
+}
+
+#pytherina-house , #h1__house , #input-name , #input-lastname {
+  color: black;
+}
+
+#input-email , h3 , .section__mainform--thirdrow , .label-content , .label-content2 {
+  color: black;
+}
+
+#header__form--botao {
+  background-color: rgb(78, 44, 131);
+  color: white;
+} 
+
