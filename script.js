@@ -9,4 +9,5 @@ function handleLogin() {
   }
 }
 const button = document.getElementById('botao');
+
 button.addEventListener('click', handleLogin);
