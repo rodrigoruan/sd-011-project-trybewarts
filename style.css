@@ -42,8 +42,8 @@ header {
   align-self: center;
   justify-content: center;
 }
-/* Section Center */
 
+/* Section Center */
 #evaluation-form {
   display: flex;
   width: 675px;
