@@ -10,3 +10,11 @@ loginButton.addEventListener('click', () => {
     alert('Login ou senha inválidos');
   }
 });
+
+let checkValue = document.getElementById('agreement')
+
+function agreement(event) {
+  document.getElementById("submit-btn").disabled = false;
+}
+
+checkValue.addEventListener('click', agreement);
