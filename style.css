@@ -8,6 +8,10 @@ main {
   display: flex;
 }
 
+form {
+  width: 675px;
+}
+
 #evaluation-form {
   width: 675px;
   display: flex;
