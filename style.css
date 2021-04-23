@@ -29,3 +29,7 @@ main {
   display: flex;
   margin-left: 60%;
 }
+
+.checkbox-container {
+  display: flex;
+}
