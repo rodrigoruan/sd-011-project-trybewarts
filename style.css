@@ -13,6 +13,10 @@ main {
   display: flex;
 }
 
+.trybewarts-header-logo {
+  max-height: 100%;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -29,6 +33,13 @@ main {
   height: 100px;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  text-align: center;
+  color: white;
+  font-size: 8px;
 }
 
 .trybewarts-login {
