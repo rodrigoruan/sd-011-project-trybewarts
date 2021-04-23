@@ -13,7 +13,7 @@ function checkLogin() {
   const insertedEmail = email.value;
   const insertedPassword = password.value;
   const emailFormat = /trybe@teste.com/.test(insertedEmail);
-  const passwordFormat = /^[0-9.]+$/.test(insertedPassword);
+  const passwordFormat = /123456/.test(insertedPassword);
   if (!emailFormat || !passwordFormat) {
     email.value = '';
     password.value = '';
