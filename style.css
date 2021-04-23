@@ -29,5 +29,21 @@ main {
 
 /* Requisito 10 */
 main #evaluation-form {
-  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+/* Requisito 11 */
+#input-name {
+  display: flex;
+  flex-basis: 45%;
+}
+
+#input-lastname {
+  display: flex;
+  flex-basis: 45%;
+}
+
+#input-email {
+  display: flex;
+  flex-basis: 45%;
 }
