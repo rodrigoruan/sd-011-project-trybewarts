@@ -1,6 +1,9 @@
 const loginInput = document.getElementById('loginInput');
 const senhaInput = document.getElementById('senhaInput');
 const submitLoginBttn = document.getElementById('login-button');
+const formCheckBox = document.getElementById('agreement');
+const submitFormButton = document.getElementById('submit-btn');
+submitFormButton.disabled = true;
 
 submitLoginBttn.addEventListener('click', () => {
   const loginInputVal = loginInput.value;
@@ -12,13 +15,10 @@ submitLoginBttn.addEventListener('click', () => {
   }
 });
 
-const submitFormButton = document.getElementById('submit-btn');
-const formCheckBox = document.getElementById('agreement');
-
 formCheckBox.addEventListener('click', () => {
   if (formCheckBox.checked) {
     submitFormButton.disabled = false;
   } else {
     submitFormButton.disabled = true;
   }
-})
+});

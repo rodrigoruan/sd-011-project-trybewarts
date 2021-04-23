@@ -41,6 +41,39 @@ main {
 
 footer {
   text-align: center;
-  bottom: 0px;
   background-color: rgb(53, 52, 52);
+  color: white;
+  padding: 8px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#check-info {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+input[type=radio] {
+  margin: 7px;
+}
+
+#label-infos {
+  padding-right: 10px;
+}
+
+.textarea {
+  padding: 10px 0;
+}
+
+#submit-btn {
+  background-color: rgb(60, 5, 109);
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+  border-radius: 4px;
 }
