@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-  </header>
-  
+<header class="header">
+  <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
+  <form class="trybewarts-login">
+    <label for="Login"></label> 
+    <input name="Login" type="text" placeholder="Login">
+    <label for="Senha"></label>
+    <input name="Senha" type="password" placeholder="Senha">
+    <button onclick="login(event)" type="submit">Entrar</button>
+  </form>
+</header>
+
 </body>
 </html>
