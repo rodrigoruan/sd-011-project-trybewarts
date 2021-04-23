@@ -3,13 +3,13 @@ const passUser = document.querySelector('.senha');
 const loginBtn = document.querySelector('.acesso');
 
 loginBtn.addEventListener('click', () => {
-  console.log(loginUser.value);
-  console.log(passUser.value);
+  const loginVal = loginUser.value;
+  const senhaVal = passUser.value;
 
-  if (loginUser.value === 'tryber@betrybe.com' && passUser.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos');
+  if (loginVal.value !== 'tryber@betrybe.com' || senhaVal.value !== '123456') {
+    alert('Login ou senha inválidos.');
+  } else if (loginVal.value === 'tryber@betrybe.com' && senhaVal.value === '123456') {
+    alert('');
   }
 });
 
