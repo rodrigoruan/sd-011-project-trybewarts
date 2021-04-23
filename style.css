@@ -99,7 +99,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #58555A;
+  background-color: hsl(280, 1%, 39%);
+  color: white;
 }
 
 #house , .name-input input , #input-email {
