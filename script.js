@@ -21,3 +21,12 @@ loginButton.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+
+function checkedRadio() {
+  for(let index = 0; index < houseChoice.length; index += 1){
+    if(houseChoice[index].checked === true){
+      return houseChoice[index].value
+    }
+  }
+}

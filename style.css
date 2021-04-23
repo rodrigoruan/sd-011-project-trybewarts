@@ -16,6 +16,7 @@
 
 main {
   display: flex;
+  width: 100%;
 }
 
 .trybewarts-login {
@@ -27,6 +28,18 @@ main {
   width: 675px;
   margin-top: 20px;
   flex-flow: wrap column;
+}
+
+.forms {
+  /* background-color: burlywood; */
+  width: 50%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  /* background-color: cadetblue; */
+  width: 50%;
 }
 
 .divForm {
