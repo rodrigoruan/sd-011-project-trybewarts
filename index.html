@@ -19,16 +19,35 @@
 
   <main>
     <form id="evaluation-form">
-      <input id="input-name" placeholder="Nome">Nome
-      <input id="input-lastname" placeholder="Sobrenome">Sobrenome
-      <input id="input-email" placeholder="Email">Email
+      <div class="container">
+        <input id="input-name" placeholder="Nome" name="Nome">
+        <input id="input-lastname" placeholder="Sobrenome" name="Sobrenome">
+      </div>
 
-      <select id="house">
-        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-        <option id="corvinode-house" value="Corvinode">Corvinode</option>
-        <option id="pytherina-house" value="Pytherina">Phyterina</option>
-      </select>
+      <div class="container">
+        <input id="input-email" placeholder="Email" name="Email">
+  
+        <select id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Phyterina</option>
+        </select>
+      </div>
+
+      <label id="label-family">Qual sua família?</label>
+      <label for="radio-frontend">
+        <input type="radio" id="radio-frontend" value="Frontend" name="family">
+        Família Frontend
+      </label>
+      <label for="radio-backend">
+        <input type="radio" id="radio-backend" value="Backend" name="family">
+        Família Backend
+      </label>
+      <label for="radio-fullstack">
+        <input type="radio" id="radio-fullstack" value="FullStack" name="family">
+        Família FullStack
+      </label>
     </form>
     
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
