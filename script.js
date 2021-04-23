@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 const login = document.querySelector('#login');
 const password = document.querySelector('#password');
 const buttonSubmit = document.querySelector('#submit');
@@ -18,4 +14,3 @@ function loginSubmit() {
 }
 
 buttonSubmit.addEventListener('click', loginSubmit);
->>>>>>> cc7a145c37aac905c7d6bea7b46f8213d7a12af5
