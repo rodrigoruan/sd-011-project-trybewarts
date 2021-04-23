@@ -2,86 +2,60 @@
   padding: 0;
   margin: 0;
 }
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
 }
-
 .header img {
   width: 80px;
 }
-
 main {
   display: flex;
-  width: 100%;
 }
-
 .trybewarts-login {
   display: flex;
 }
-
 #evaluation-form {
   display: flex;
   width: 675px;
   margin-top: 20px;
-  flex-flow: wrap column;
+  flex-flow: column wrap;
 }
-
-.forms {
-  /* background-color: burlywood; */
-  width: 50%;
-}
-
-.img {
-  display: flex;
-  justify-content: center;
-  /* background-color: cadetblue; */
-  width: 50%;
-}
-
 .divForm {
   display: flex;
   flex-wrap: wrap;
   width: 500px;
 }
-
 #trybewarts-forms-logo {
   height: 500px;
 }
-
 #input-name {
   width: 200px;
   height: 30px;
   margin-right: 3px;
 }
-
 #input-email {
   width: 200px;
   height: 30px;
   margin-right: 3px;
   margin-top: 10px;
 }
-
 #house {
   width: 200px;
   height: 37px;
   margin-top: 10px;
 }
-
 .content-two {
   display: flex;
 }
-
 .left-side , .right-side {
   display: flex;
   flex-direction: column;
   width: 50%;
   background-color: aqua;
 }
-
 .checkboxes {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +64,6 @@ main {
   font-size: 1.5em;
   background-color: rgb(60, 255, 0);
 }
-
 #label-content {
   background-color: brown;
   height: 50%;
