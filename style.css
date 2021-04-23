@@ -6,7 +6,6 @@
 
 .trybewarts-header-logo {
   width: 10%;
-  padding: 20px;
 }
 
 main {
@@ -17,4 +16,8 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+aside img {
+  height: 500px;
 }
