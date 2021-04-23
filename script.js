@@ -7,7 +7,3 @@ function login(event) {
     alert('Login ou senha inválidos');
   }
 };
-
-const button = document.getElementsByClassName('btn-submit');
-
-button.addEventListener('click', login)
