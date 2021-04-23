@@ -23,6 +23,16 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-form-logo {
+#trybewarts-forms-logo {
   height: 500px;
+}
+
+.content-two {
+  display: flex;
+}
+
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
