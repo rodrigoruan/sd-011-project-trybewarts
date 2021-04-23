@@ -10,7 +10,7 @@ function checkTerms() {
 }
 
 function submitLogin() {
-  if (login.value === 'tryber@betrybe.com' && password.value === '123456') {
+  if (login.value === 'tryber@betrybe.com' || password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
@@ -18,6 +18,5 @@ function submitLogin() {
 }
 
 loginButton.addEventListener('click', submitLogin);
-check.addEventListener('change', checkTerms);
 
-checkTerms();
+check .addEventListener('click', checkTerms);
