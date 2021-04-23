@@ -33,15 +33,3 @@
   padding: auto;
   border-radius: 25%;
 }
-
-#trybewarts-header-title {
-  order: 1;
-}
-
-.trybewarts-login {
-  order: 2;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
-}
