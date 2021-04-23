@@ -40,3 +40,14 @@ main {
 .family-radio {
   flex-direction: column;
 }
+
+footer {
+  background-color: rgb(66, 66, 66);
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
