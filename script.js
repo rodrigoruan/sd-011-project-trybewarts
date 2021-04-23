@@ -6,3 +6,4 @@ submit.addEventListener("click", function checkEmail() {
   let insertedEmail = email.value;
   window.alert(email.value); //default = email 'tryber@teste.com' senha '123456'
 });
+
