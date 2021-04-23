@@ -1,8 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.input {
+  border-radius: 10px;
+  margin-right: 5px;
+  border: none;
+  padding: 10px 20px;
+  width: 100px;
+}
+
+.input:nth-child(3) {
+  background-color: #4e2c83;
+  color: white;
 }
 
 img {
-  max-width: 80%;
+  max-width: 60px;
 }
