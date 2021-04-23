@@ -30,17 +30,18 @@
         
         <div class="div-form">
           <input type="email" id="input-email" placeholder="Email">
-          <label for="house">Casa:</label>
-          <select id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
+          <label>Casa:
+            <select id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </label>
         </div>
 
         <hr>
-        
+
         <div id="family-content-container">
           <label id="label-family"> Qual a sua família?
             <label>
@@ -79,22 +80,21 @@
         </div>
         <hr>
 
-        <label id="label-rate">Como você avalia a Trybewarts?
-          <label><input type="radio" name="rate" value="1">1</label>        <label><input type="radio" name="rate" value="2">2</label>        <label><input type="radio" name="rate" value="3">3</label>        <label><input type="radio" name="rate" value="4">4</label>        <label><input type="radio" name="rate" value="5">5</label>        <label><input type="radio" name="rate" value="6">6</label>        <label><input type="radio" name="rate" value="7">7</label>        <label><input type="radio" name="rate" value="8">8</label>        <label><input type="radio" name="rate" value="9">9</label>        <label><input type="radio" name="rate" value="10">10</label>
-        </label>
-        <br>
-
-        <label class="textarea">Deixe seu comentário: <br>
-          <textarea name="" id="" cols="45" rows="5" maxlength="500"></textarea>
-        </label>
-        <br>
-
-        <label id="label-infos"> 
-          <input type="checkbox" id="agreement">Você concorda com o uso das informações acima?
-        </label>
-        <br>
-
-        <button type="submit" id="submit-btn">Enviar</button>
+        <div>
+          <label id="label-rate">Como você avalia a Trybewarts?
+            <label><input type="radio" name="rate" value="1">1</label>        <label><input type="radio" name="rate" value="2">2</label>        <label><input type="radio" name="rate" value="3">3</label>        <label><input type="radio" name="rate" value="4">4</label>        <label><input type="radio" name="rate" value="5">5</label>        <label><input type="radio" name="rate" value="6">6</label>        <label><input type="radio" name="rate" value="7">7</label>        <label><input type="radio" name="rate" value="8">8</label>        <label><input type="radio" name="rate" value="9">9</label>        <label><input type="radio" name="rate" value="10">10</label>
+          </label>
+          <br>
+          <label class="textarea">Deixe seu comentário: <br>
+            <textarea name="" id=""  rows="5" cols="50" maxlength="500"></textarea>
+          </label>
+          <br>
+          <label id="label-infos">
+            <input type="checkbox" id="agreement">Você concorda com o uso das informações acima?
+          </label>
+          <br>
+          <button type="submit" id="submit-btn">Enviar</button>
+        </div>
       </form>
     </section>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Logotipo">
