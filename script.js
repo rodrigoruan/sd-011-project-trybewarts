@@ -8,6 +8,6 @@ button.addEventListener('click', function () {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
-    alert('Login ou senha inválidos');
+    alert('Login ou senha inválidos.');
   }
 });
