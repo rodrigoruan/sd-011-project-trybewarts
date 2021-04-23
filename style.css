@@ -30,7 +30,7 @@ html {
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
   padding: 12px;
   margin: 5px;
 }
@@ -41,12 +41,12 @@ html {
   border-radius: 8px;
   border: none;
   margin: 5px;
-  background-color: #512C7F;
-  color: #ffffff;
-  font-weight: bold;
+  background-color: rgb(81, 44, 127);
+  color: white;
+  font-weight: 700;
 }
 
 #trybewarts-header-title {
-  color: #ffffff;
+  color: white;
   font-size: 2.5em;
 }
