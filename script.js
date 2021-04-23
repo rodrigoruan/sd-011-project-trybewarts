@@ -14,7 +14,7 @@ function agreementCheck() {
 
 checkboxAgreement.addEventListener('click', agreementCheck);
 
-loginButton.addEventListener('click', function loginAndPasswordCheck() {
+loginButton.addEventListener('click', () => {
   if (loginPlace.value === 'tryber@teste.com' && passwordPlace.value === '123456') {
     alert('Olá, Tryber!');
   } else {
