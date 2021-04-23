@@ -4,10 +4,10 @@ const buttonSubmit = document.querySelector('#submit');
 
 function loginValidation(inputPassword, inputLogin) {
   if (inputPassword === '123456' && inputLogin === 'tryber@teste.com') {
-    alert('Olá Tryber');
+    alert('Olá, Tryber!');
     return;
   }
-  alert('Login ou senha inválidos');
+  alert('Login ou senha inválidos.');
 }
 
 function loginSubmit() {
