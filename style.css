@@ -32,3 +32,7 @@ main #evaluation-form {
   background-color: aqua;
   flex-direction: column;
 }
+
+main #trybewarts-forms-logo {
+  height: 500px;
+}
