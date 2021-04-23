@@ -3,6 +3,8 @@ const loginPasswordInput = document.getElementById('login-password-input');
 const loginButton = document.getElementById('login-button');
 const submitButton = document.getElementById('submit-btn');
 const checkAgreement = document.getElementById('agreement');
+const commentTextArea = document.getElementById('textarea');
+const counterElement = document.getElementById('counter');
 
 function login() {
   const email = loginEmailInput.value;
@@ -14,7 +16,13 @@ function login() {
   }
 }
 
+function updateCounter() {
+  const commentLength = commentTextArea.value.length;
+  counterElement.textContent = 500 - commentLength;
+}
+
 loginButton.addEventListener('click', login);
+commentTextArea.addEventListener('keyup', updateCounter);
 
 function disableSubmitButton() {
   checkAgreement.addEventListener('click', () => {
