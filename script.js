@@ -6,9 +6,9 @@ loginButton.addEventListener('click', () => {
   const loginValue = loginInput.value;
   const passwordValue = passwordInput.value;
 
-  if (loginValue === 'tryber@teste.com' && passwordValue === '123456') {
-    alert('Olá, Tryber!');
-  } else {
+  if (loginValue !== 'tryber@teste.com' && passwordValue !== '123456') {
     alert('Login ou senha inválidos.');
+  } else {
+    alert('Olá, Tryber!');
   }
 });

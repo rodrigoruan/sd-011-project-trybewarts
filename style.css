@@ -6,12 +6,22 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
+  text-align: left;
   height: 100px;
+}
+
+.justfy-img {
+  display: flex;
+  justify-content: left;
+}
+
+.form-div {
+  display: flex;
+  justify-content: right;
 }
 
 .trybewarts-login {
