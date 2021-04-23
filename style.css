@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+#evaluantion-form {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 675px;
+}
+
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
 
