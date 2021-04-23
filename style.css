@@ -18,11 +18,13 @@
   max-height: 500px;
   order: 2;
 }
+
 main {
   display: flex;
   flex-direction: row-reverse;
 }
-#evaluation-form{
+
+#evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
