@@ -30,11 +30,11 @@ main {
   flex-direction: column;
 }
 
-#fullname {
-  display: flex;
-  flex-direction: row;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#divfamily {
+  display: flex;
+  flex-direction: column;
 }
