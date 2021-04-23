@@ -27,6 +27,7 @@ function submitLogin() {
 loginButton.addEventListener('click', submitLogin);
 
 textarea.addEventListener('keyup', counterEvent);
+textarea.addEventListener('change', counterEvent);
 check.addEventListener('change', checkTerms);
 
 checkTerms();
