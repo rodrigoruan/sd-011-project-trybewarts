@@ -1,9 +1,9 @@
-const login = document.getElementById('login').value;
-const pass = document.getElementById('pass').value;
-const submitButton = document.getElementById('submit-button');
+const submitButton = document.querySelector('#submit-button');
 
-function validation () {
-  if (login == 'tryber@teste.com' && pass == '123456') {
+function validation() {
+  const login = document.querySelector('#login').value;
+  const pass = document.querySelector('#pass').value;
+  if (login === 'tryber@teste.com' && pass === '123456') {
     alert('Olá Tryber!');
   }
 
@@ -12,4 +12,4 @@ function validation () {
   }
 }
 
-submitButton.addEventListener('click', validation)
+submitButton.addEventListener('click', validation);
