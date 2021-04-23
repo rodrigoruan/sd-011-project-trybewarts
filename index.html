@@ -12,17 +12,17 @@
     <img src="images/trybewarts-header-logo.svg" alt="trybe warts logo" class="trybewarts-header-logo">
     <h1 class="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" action="" method="GET">
-        <input type="text" placeholder="Login" id="input-login">
-        <input type="password" placeholder="Senha" id="input-password">
+        <input type="text" required  placeholder="Login" id="input-login">
+        <input type="password" required  placeholder="Senha" id="input-password">
         <button id="button-login">Logar</button>
       </form>
   </header>
   <main>
     <section>
     <form action="" id="evaluation-form" method="GET">
-        <input type="text" placeholder="Nome" id="input-name">
-        <input type="text" placeholder="Sobrenome" id="input-lastname">
-        <input type="text" placeholder="Email" id="email">
+        <input type="text" required  placeholder="Nome" id="input-name">
+        <input type="text" required  placeholder="Sobrenome" id="input-lastname">
+        <input type="text" required  placeholder="Email" id="email">
       <label for="house">Casa:</label>
       <select name="house" id="house">
         <option value="gitnoria" id="gitnoria-house">Gitnória</option>
@@ -67,12 +67,17 @@
     </div>
     <label class="textarea">Deixe seu comentário:</label>
     <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+    <div>
+      <label id="label-infos">Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" id="agreement">
+    </div>
+    <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <div>
       <img src="images/trybewarts-colored.svg" alt="logo da trybe warts" id="trybewarts-forms-logo">
     </div>
   </main>
-  
+  <footer>Direitos reservados à Trybewarts©</footer>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
