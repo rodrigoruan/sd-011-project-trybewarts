@@ -88,5 +88,15 @@ main {
   justify-content: space-around;
 }
 
+.coment-area {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+textarea {
+  resize: none;
+}
+
 
 
