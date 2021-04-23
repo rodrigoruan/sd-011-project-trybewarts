@@ -1,5 +1,5 @@
-const email = document.querySelector('#input-email');
-const password = document.querySelector('#input-password');
+const email = document.querySelector('#input-login-email');
+const password = document.querySelector('#input-login-password');
 const loginButton = document.querySelector('#loginButton');
 
 // Função que valida o formato de E-mail

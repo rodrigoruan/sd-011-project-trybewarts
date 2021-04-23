@@ -18,3 +18,25 @@ body {
 .trybewarts-login {
     display: flex;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.form-line {
+  display: flex;
+}
+
+.family-radio {
+  flex-direction: column;
+}
