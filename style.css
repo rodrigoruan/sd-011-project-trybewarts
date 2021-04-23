@@ -42,8 +42,14 @@ body {
 
 .trybewarts-login button {
   height: 35px;
-  width: 60px;
+  width: 80px;
+  font-size: 15px;
   border-radius: 8px;
+  background-color: red;
+}
+
+.trybewarts-login button:hover {
+  font-size: 25px;
 }
 
 .trybewarts-main , .trybewarts-form {
@@ -52,6 +58,7 @@ body {
 
 .trybewarts-form {
   width: 675px;
+  margin: 15px;
   flex-direction: column;
 }
 
@@ -91,4 +98,45 @@ body {
 
 .evaluator {
   display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(280, 1%, 39%);
+  color: white;
+}
+
+#house , .name-input input , #input-email {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#house {
+  width: 330px;
+  height: 70px;
+  background-color: white;
+}
+
+#input-email:hover , .name-input input:hover {
+  background-color: wheat;
+}
+
+#submit-btn {
+  background-color: green;
+  color: white;
+  height: 50px;
+  border-radius: 8px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#submit-btn:hover {
+  font-size: 20px;
+  background-color: royalblue;
 }

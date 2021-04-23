@@ -33,18 +33,13 @@
     </header>
     <main class="trybewarts-main">
       <form action="" class="trybewarts-form" id="evaluation-form">
-        <div>
+        <div class="name-input">
           <input type="text" name="" placeholder="Nome" id="input-name" />
-          <input
-            type="text"
-            name=""
-            placeholder="Sobrenome"
-            id="input-lastname"
-          />
+          <input type="text" name="" placeholder="Sobrenome" id="input-lastname"/>
         </div>
-        <div>
+        <div class="email-select">
           <input type="email" name="" placeholder="Email" id="input-email" />
-          <select name="" id="house">
+          <select name="houses-trybewarts" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -88,27 +83,27 @@
               </p>
               <div class="labels">
                 <label>
-                  <input type="checkbox" name="" value="HoFs" id="" />
+                  <input type="checkbox" name="" value="HoFs"/>
                   HoFs
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Jest" id="" />
+                  <input type="checkbox" name="" value="Jest" />
                   Jest
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Promises" id="" />
+                  <input type="checkbox" name="" value="Promises"/>
                   Promises
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="React" id="" />
+                  <input type="checkbox" name="" value="React" />
                   React
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="SQL" id="" />
+                  <input type="checkbox" name="" value="SQL" />
                   SQL
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Python" id="" />
+                  <input type="checkbox" name="" value="Python" />
                   Python
                 </label>
               </div>
@@ -161,16 +156,13 @@
             <input type="checkbox" name="agreement" id="agreement" required>
           </label>
         </div>
-        <button id="submit-btn" type="submit">Enviar</button>
+        <button id="submit-btn" type="submit" disabled>Enviar</button>
       </form>
      
-      <img
-        id="trybewarts-forms-logo"
-        src="images/trybewarts-colored.svg"
-        alt=" Logo do formulario"
-      />
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt=" Logo do formulario"/>
     </main>
 
+    <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
 </html>
