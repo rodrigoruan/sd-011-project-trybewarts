@@ -7,3 +7,7 @@
 .trybewarts-login {
   display: flex;
 }
+
+form.trybewarts-login input:nth-child(1) {
+  
+}
