@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .header {
@@ -53,23 +52,17 @@ main {
   flex-direction: column;
 }
 
-.familyContainer {
-  display: flex;
-  flex-direction: column;
-}
-
 #label-content {
   display: flex;
   flex-direction: column;
 }
 
-.learningContentContainer {
+.fourthBigContainer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.fourthBigContainer {
+.textarea {
   display: flex;
   justify-content: center;
 }
