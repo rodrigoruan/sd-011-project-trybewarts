@@ -50,3 +50,11 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.feedback {
+  margin-left: 20px;
+}
+
+.rate {
+  display: flex;
+}
