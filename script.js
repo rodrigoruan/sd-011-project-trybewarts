@@ -37,7 +37,7 @@ const houseInput = document.querySelector('#house');
 const houseChoice = document.getElementsByClassName('family');
 const rateChoice = document.getElementsByClassName('radioRate');
 const wichContent = document.getElementsByClassName('subject');
-const mainContent = document.querySelector('main');
+const forms = document.querySelector('#evaluation-form');
 
 function checkedRadio() {
   for (let index = 0; index < houseChoice.length; index += 1) {
@@ -52,7 +52,7 @@ function checkedSubject() {
   for (let index = 0; index < wichContent.length; index += 1) {
     if (wichContent[index].checked === true) {
       const check = wichContent[index];
-      subjectsChoice.push(check);
+      subjectsChoice.push(check.value);
     }
   }
   return subjectsChoice;
@@ -66,34 +66,42 @@ function checkedRate() {
   }
 }
 
+function createParagraphs(array) {
+  for (let index = 0; index < array.length; index += 1) {
+    const p = document.createElement('p');
+    p.innerText = array[index];
+    forms.appendChild(p);
+  }
+}
+
+function eraseInfo() {
+  document.querySelector('.divForm').style.display = 'none';
+  document.querySelector('.content-two').style.display = 'none';
+  document.getElementById('div14').style.display = 'none';
+  document.getElementById('div15').style.display = 'none';
+  document.getElementById('div16').style.display = 'none';
+  document.getElementById('div17').style.display = 'none';
+  document.querySelector('footer').style.display = 'none';
+}
+
 submitButton.addEventListener('click', (event) => {
   const checkedFunction = checkedRadio();
   const checkedRated = checkedRate();
   const checkedSubjects = checkedSubject();
+  const subjects = checkedSubjects.join(', ');
+
   event.preventDefault();
-  console.log(nameInput.value);
-  console.log(lastNameInput.value);
-  console.log(emailInput.value);
-  console.log(houseInput.value);
-  console.log(checkedFunction.value);
-  for (const check of checkedSubjects) {
-    console.log(check.value);
-  }
-  console.log(checkedRated.value);
-  console.log(textPlace.value);
+  eraseInfo();
 
   const array = [
     `Nome: ${nameInput.value} ${lastNameInput.value}`,
     `Email: ${emailInput.value}`,
     `Casa: ${houseInput.value}`,
     `Família: ${checkedFunction.value}`,
+    `Matérias: ${subjects}`,
     `Avaliação: ${checkedRated.value}`,
     `Observações: ${textPlace.value}`,
   ];
 
-  for(let index = 0; index < array.length; index += 1){
-    const p = document.createElement('p');
-    p.innerText = array[index];
-    mainContent.appendChild(p);
-  }
+  createParagraphs(array);
 });
