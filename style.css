@@ -13,9 +13,17 @@
   height: 500px;
 }
 
-label input {
-  display: block;
+#radio-check-container {
+  background-color: green;
+  display: flex;
 }
+
+#family-container input{
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .header {
   display: flex;

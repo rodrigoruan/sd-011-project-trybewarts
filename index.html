@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
-<<<<<<< HEAD
-  
 </head>
 <body>
 
@@ -34,6 +32,7 @@
         <input id='input-lastname' type="text" placeholder="Sobrenome">
       </div>
      
+     
       <div class="line-content">
         <input id='input-email' type="email" placeholder="Email">
         <select name="house" id="house">
@@ -44,13 +43,27 @@
         </select>
       </div>
      
-      <div class="line-content">
-        <label id='label-family'>Qual sua família?
+      <div id='radio-check-container'>
+        <div class="line-content" id='family-container'>
+          <label id='label-family'> Qual sua família?
+          </label>
           <input type="radio" name="family" value="Frontend">Família Frontend
           <input type="radio" name="family" value="Backend">Família Backend
           <input type="radio" name="family" value="FullStack">Família FullStack
-        </label>
-      </div>
+        </div>
+      
+
+        <div class="line-content" id='subject-container'>
+          <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?
+            <input class='subject' type="checkbox" value='HoFs'>HoFs
+            <input class='subject' type="checkbox" value='Jest'>Jest
+            <input class='subject' type="checkbox" value='Promises'>Promises
+            <input class='subject' type="checkbox" value='React'>React
+            <input class='subject' type="checkbox" value='SQL'>SQL
+            <input class='subject' type="checkbox" value='Python'>Python
+          </label>
+        </div>
+      </div>  
 
       <label id="label-rate">
         Como você avalia a Trybewarts?
