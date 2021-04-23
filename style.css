@@ -11,6 +11,11 @@
   width: 100%;
 }
 
-.trybewarts-login {
+.trybewarts-login , main , #evaluation-form {
   display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
 }
