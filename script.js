@@ -20,7 +20,7 @@ function checkLogin() {
 
 loginButton.addEventListener('click', checkLogin);
 
-// Criação dos radios de rate
+// Criação dos Radios de Rate
 function createRateRadios() {
   const rates = 10;
   for (let index = 1; index <= rates; index += 1) {
