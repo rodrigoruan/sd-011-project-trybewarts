@@ -5,3 +5,19 @@
 #trybewarts-header-title {
   align-self: center;
 }
+main {
+  display: flex;
+}
+
+form {
+  display: flex;
+  width: 675px;
+}
+
+#evaluation-form {
+  flex-direction: column;
+}
+
+img {
+  height: 500px;
+}

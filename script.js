@@ -1,4 +1,4 @@
-const loginButton = document.querySelector('.header button');
+const loginButton = document.querySelector('#loginButton');
 
 function sendUser() {
   const loginText = document.getElementById('login').value;
