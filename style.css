@@ -9,3 +9,9 @@
   color: white;
   display: flex;
 }
+
+.trybewarts-header-logo {
+  width: 5%;
+  padding: 10px 0;
+  
+}
