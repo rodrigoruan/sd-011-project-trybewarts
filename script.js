@@ -8,5 +8,6 @@ function validateLogin() {
   } else {
     alert('Olá, Tryber!');
   }
-} 
+}
+
 button.addEventListener('click', validateLogin);
