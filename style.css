@@ -88,3 +88,7 @@ body {
 .labels label {
   margin: 0 12px;
 }
+
+.evaluator {
+  display: flex;
+}
