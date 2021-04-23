@@ -1,8 +1,12 @@
-#header {
+* {
+  margin: 0 auto;
+}
+
+.header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  flex-flow: nowrap;
-  align-items: baseline;
+  flex-flow: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -10,6 +14,7 @@
   height: 50px;
   width: 50px;
   align-self: flex-start;
+  order: -1;
 }
 
 #loginButton {
