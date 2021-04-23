@@ -68,3 +68,7 @@ header {
   display: flex;
   flex-grow: 1;
 }
+
+.title-form {
+  padding: 3%;
+}
