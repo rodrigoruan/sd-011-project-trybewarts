@@ -12,6 +12,22 @@ function addEventCheckLogin() {
   button.addEventListener('click', checkLogin);
 }
 
+function disableButon(event) {
+  const checkbox = event.target;
+  const button = document.getElementById('submit-btn');
+  if (checkbox.checked) {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
+  }
+}
+
+function addEventDisableButton() {
+  const checkbox = document.getElementById('agreement');
+  checkbox.addEventListener('change', disableButon);
+}
+
 window.onload = function load() {
   addEventCheckLogin();
+  addEventDisableButton();
 };
