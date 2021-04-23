@@ -1,19 +1,32 @@
+// function validateLogin() {
+//   const login = document.getElementById('input-login');
+//   const pass = document.getElementById('input-password');
+//   if (login.value === 'tryber@teste.com' && pass.value === '123456') {
+//     return true;
+//   }
+// }
+
+// function loginChecked() {
+//   const loginButton = document.getElementById('button-header');
+//   loginButton.addEventListener('click', () => {
+//     if (!validateLogin) {
+//       alert('Login ou senha inválidos.');
+//     }
+//     alert('Olá, Tryber!');
+//   });
+// }
+
+// loginChecked();
+const login = document.querySelector('#input-login');
+const pass = document.querySelector('#input-password');
+
 function validateLogin() {
-  const login = document.getElementById('input-login');
-  const pass = document.getElementById('input-password');
-  if (login.value === 'tryber@teste.com' && pass.value === '123456') {
-    return true;
+  if (login.value !== 'tryber@teste.com' && pass.value !== '123456') {
+    alert('Login ou senha inválidos.');
+  } else {
+    alert('Olá, Tryber!');
   }
 }
 
-function loginChecked() {
-  const loginButton = document.getElementById('button-header');
-  loginButton.addEventListener('click', function () {
-    if (!validateLogin) {
-     alert('Login ou senha inválidos.');
-    }
-    alert('Olá, Tryber!');
-  });
-}
-
-loginChecked();
+const loginButton = document.querySelector('#button-header');
+loginButton.addEventListener('click', validateLogin);
