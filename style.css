@@ -26,6 +26,14 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
 }
 
+.row1 {
+  display: flex;
+}
 
+.familydiv {
+  display: flex;
+  flex-direction: column;
+}
