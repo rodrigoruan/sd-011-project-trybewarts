@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+}
+
 #evaluantion-form {
   display: flex;
   flex-direction: column;
