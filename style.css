@@ -44,3 +44,7 @@
 .trybewarts-header-logo {
   height: 90%;
 }
+
+.radio-btn-family {
+  display: flex;
+}
