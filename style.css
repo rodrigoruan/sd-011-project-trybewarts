@@ -37,6 +37,12 @@ label {
   display: block;
   padding: 10px 0;
 }
+
 #comment {
   resize: none;
+}
+
+#container-rate {
+  display: flex;
+  align-items: center;
 }
