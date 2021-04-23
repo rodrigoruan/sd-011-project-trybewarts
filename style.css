@@ -14,3 +14,12 @@
   height: 500px;
   float: right;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+}
