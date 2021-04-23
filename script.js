@@ -1,4 +1,6 @@
 const loginButton = document.getElementById('login');
+const submitButton = document.querySelector('#submit-btn');
+const agreementCheck = document.querySelector('#agreement');
 
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
@@ -10,8 +12,17 @@ function checkForLogin() {
   }
 }
 
+function checkAgreement() {
+  const checked = agreementCheck.checked;
+
+  if (checked) {
+    submitButton.disabled = false;
+  }
+}
+
 function addEventListeners() {
   loginButton.addEventListener('click', checkForLogin);
+  agreementCheck.addEventListener('change', checkAgreement);
 }
 
 window.onload = () => {
