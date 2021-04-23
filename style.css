@@ -29,7 +29,26 @@ main section img {
   height: 500px;
 }
 
+#label-family-and-content {
+  display: flex;
+}
+
 #div-label-family {
   display: flex;
   flex-direction: column;
+}
+
+#div-label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#label-content-input label {
+  flex-grow: 1;
+  flex-basis: 30%;
 }
