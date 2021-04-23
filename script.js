@@ -4,8 +4,16 @@ const agreementCheck = document.querySelector('#agreement');
 const textArea = document.getElementById('textarea');
 const counterText = document.getElementById('counter');
 const main = document.querySelector('main');
-const form = document.querySelector('#evaluation-form');
-
+const evaluationForm = document.querySelector('#evaluation-form');
+const labelsResumo = ['Nome',
+  'Sobrenome',
+  'Email',
+  'Casa',
+  'Família',
+  'HardSkill',
+  'Avaliação',
+  'Comentário',
+  'Concorda'];
 
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
@@ -34,9 +42,16 @@ function counter() {
   counterText.innerText = difference;
 }
 
+function getForm() {
+  const form = document.querySelector('#evaluation-form');
+  const formValues = new FormData(form);
+  console.log(formValues.get());
+}
+
 function submitForm(event) {
   event.preventDefault();
-  main.removeChild(form);
+  main.removeChild(evaluationForm);
+  getForm();
 }
 
 function addEventListeners() {
