@@ -5,6 +5,11 @@
   height: 70px;
 }
 
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+}
+
 .trybewarts-login {
   display: flex;
 }
