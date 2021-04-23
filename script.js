@@ -7,4 +7,3 @@ loginSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   alert('aeee');
 });
-
