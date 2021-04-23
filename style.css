@@ -23,8 +23,18 @@ main {
   height: 500px;
 }
 
+#families {
+  display: flex;
+  flex-direction: column;
+}
+
 #checkboxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+#score {
+  display: flex;
+  flex-direction: row;
 }
