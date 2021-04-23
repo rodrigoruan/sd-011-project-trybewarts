@@ -74,7 +74,7 @@ footer {
   padding: 15px 0;
 }
 
-input[type=radio] {
+.avaliationDiv input[ type = 'radio' ] {
   margin: 7px;
 }
 
@@ -90,6 +90,6 @@ input[type=radio] {
   background-color: rgb(60, 5, 109);
   color: white;
   padding: 9px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 4px;
 }
