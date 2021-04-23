@@ -52,3 +52,11 @@
 #label-rate {
   display: flex;
 }
+
+#header-text {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  align-items: center;
+}
