@@ -24,24 +24,22 @@ html {
 }
 
 .input-login {
-  width: 180px;
+  width: 150px;
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-size: 0.9em;
   font-weight: bold;
   padding: 15px;
   margin: 5px;
 }
 
 #header-submit {
-  width: 180px;
+  width: 150px;
   height: 40px;
   border-radius: 8px;
   border: none;
   background-color: #512C7F;
   color: #ffffff;
-  font-size: 0.9em;
   font-weight: bold;
   margin: 5px;
 }
