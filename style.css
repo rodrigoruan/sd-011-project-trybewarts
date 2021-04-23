@@ -2,7 +2,6 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .trybewarts-header-logo {
@@ -18,5 +17,3 @@
 main {
   display: flex;
 }
-
-
