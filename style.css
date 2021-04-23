@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -28,12 +29,23 @@ main {
   height: 500px;
 }
 
+#secondBigContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .inputsNameLastname {
   display: flex;
 }
 
 .inputEmailDropdown {
   display: flex;
+}
+
+#thirdBigContainer {
+  display: flex;
+  justify-content: space-around;
 }
 
 #label-family {
@@ -46,17 +58,16 @@ main {
   flex-direction: column;
 }
 
-.mostWantedContentToLearn {
-  display: flex;
-}
-
 #label-content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.subject {
+.learningContentContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+hr {
+  margin: 10px;
 }

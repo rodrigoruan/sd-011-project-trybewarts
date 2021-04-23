@@ -1,69 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header></header>
+  <!--Requisitos 1 ao 4 -->
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+      <input type="text" id="formLogin" name="login" placeholder="Login">
+      <input type="text" id="formSenha" name="senha" placeholder="Senha">
+      <button id="btnLogin">Entrar</button>
+    </form>
+  </header>
+  <!-- ----------------------------  -->
   <main>
     <form id="evaluation-form" action="">
+      <section>
 
-<!-- Requisito 8 -->
-      <div class="inputsNameLastname">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
-      </div>
-
-<!-- Requisito 9 e 10 -->
-      <div class="inputEmailDropdown">
-<!-- Requisito 11 - Aqui eu alinhei o input de Email com o Dropdown -->
-        <input id="input-email" type="text" placeholder="Email">
-        <fieldset for="house">Casa
-          <select id="house" name="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
-        </fieldset>
-      </div>
-<!-- Requisito 12 -->
-        <label id="label-family" for="">Qual sua família?
-          <div class="familyContainer">
-            <label for="">
-              <input class="familyRadio" type="radio" name="family" id="" value="Frontend">Frontend
-            </label>
-            <label for="">
-              <input class="familyRadio" type="radio" name="family" id="" value="Backend">Backend
-            </label>
-            <label for="">
-              <input class="familyRadio" type="radio" name="family" id="" value="FullStack">FullStack
-            </label>
+        <section id="secondBigContainer">
+          <!-- Requisito 8 -->
+          <div class="inputsNameLastname">
+            <input id="input-name" type="text" placeholder="Nome">
+            <input id="input-lastname" type="text" placeholder="Sobrenome">
           </div>
-        </label>
+          
+          <!-- Requisito 9 e 10 -->
+          <div class="inputEmailDropdown">
+            <!-- Requisito 11 - Aqui eu alinhei o input de Email com o Dropdown -->
+            <input id="input-email" type="text" placeholder="Email">
+            <fieldset for="house">Casa:
+              <select id="house" name="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </fieldset>
+          </div>
+        </section>
 
-      <div class="mostWantedContentToLearn">
-        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?
-          <input class="subject" type="checkbox" name="" id="" value="HoFs">HoFs
-          <input class="subject" type="checkbox" name="" id="" value="Jest">Jest
-          <input class="subject" type="checkbox" name="" id="" value="Promises">Promises
-          <input class="subject" type="checkbox" name="" id="" value="React">React
-          <input class="subject" type="checkbox" name="" id="" value="SQL">SQL
-          <input class="subject" type="checkbox" name="" id="" value="Python">Python
-        </label>
-      </div>
+        <hr>
 
+        <section id="thirdBigContainer">
+          <!-- Requisito 12 -->
+          <label id="label-family" for="">Qual sua família?
+            <div class="familyContainer">
+              <label for="">
+                <input class="familyRadio" type="radio" name="family" id="" value="Frontend">Frontend
+              </label>
+              <label for="">
+                <input class="familyRadio" type="radio" name="family" id="" value="Backend">Backend
+              </label>
+              <label for="">
+                <input class="familyRadio" type="radio" name="family" id="" value="FullStack">FullStack
+              </label>
+            </div>
+          </label>
+          
+          <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?
+            <div class="learningContentContainer">
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="HoFs">HoFs
+              </label>
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="Jest">Jest
+              </label>
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="Promises">Promises
+              </label>
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="React">React
+              </label>
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="SQL">SQL
+              </label>
+              <label for="">
+                <input class="subject" type="checkbox" name="" id="" value="Python">Python
+              </label>
+            </div>
+          </label>
+        </section>
+
+        <hr>
+
+      </section>
     </form>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
-
+  
   <footer>
 
   </footer>
-  
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
