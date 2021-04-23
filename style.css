@@ -11,7 +11,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: column wrap;
   background-color: rgb(50, 167, 145);
   padding: 10px;
