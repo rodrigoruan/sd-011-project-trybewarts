@@ -7,8 +7,6 @@ form {
   width: 675px;
 }
 
-#evaluation-form{
+#evaluation-form {
   flex-direction: column;
-  color: red;
 }
-
