@@ -18,9 +18,9 @@
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
 
-<!-- Requisito 9 e 10-->
+<!-- Requisito 9 e 10 -->
       <div class="inputEmailDropdown">
-<!-- Aqui eu alinhei o input de Email com o Dropdown -->
+<!-- Requisito 11 - Aqui eu alinhei o input de Email com o Dropdown -->
         <input id="input-email" type="text" placeholder="Email">
         <fieldset for="house">Casa
           <select id="house" name="house">
@@ -30,6 +30,31 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </fieldset>
+      </div>
+<!-- Requisito 12 -->
+        <label id="label-family" for="">Qual sua família?
+          <div class="familyContainer">
+            <label for="">
+              <input class="familyRadio" type="radio" name="family" id="" value="Frontend">Frontend
+            </label>
+            <label for="">
+              <input class="familyRadio" type="radio" name="family" id="" value="Backend">Backend
+            </label>
+            <label for="">
+              <input class="familyRadio" type="radio" name="family" id="" value="FullStack">FullStack
+            </label>
+          </div>
+        </label>
+
+      <div class="mostWantedContentToLearn">
+        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?
+          <input class="subject" type="checkbox" name="" id="" value="HoFs">HoFs
+          <input class="subject" type="checkbox" name="" id="" value="Jest">Jest
+          <input class="subject" type="checkbox" name="" id="" value="Promises">Promises
+          <input class="subject" type="checkbox" name="" id="" value="React">React
+          <input class="subject" type="checkbox" name="" id="" value="SQL">SQL
+          <input class="subject" type="checkbox" name="" id="" value="Python">Python
+        </label>
       </div>
 
     </form>
