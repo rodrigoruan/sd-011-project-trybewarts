@@ -28,3 +28,7 @@ form.trybewarts-login {
 form.trybewarts-login input {
   margin-right: 5px;
 }
+
+h1.trybewarts-header-title {
+  color: white;
+}
