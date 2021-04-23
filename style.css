@@ -1,0 +1,20 @@
+#header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-flow: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  height: 50px;
+  width: 50px;
+  align-self: flex-start;
+}
+
+#loginButton {
+  background-color: blueviolet;
+  padding: auto;
+  border-radius: 25%;
+}
+
