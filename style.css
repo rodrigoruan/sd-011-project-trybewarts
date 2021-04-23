@@ -12,7 +12,27 @@
   display: flex;
 }
 
+#register-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+h2{
+  text-align: center;
+  margin-left:auto ;
+  margin-right: auto;
+}
+
+#trybewarts-forms-logo-div {
+  order: 5;
+}
+
 #trybewarts-forms-logo {
   max-height: 500px;
-  order: 2;
+}
+
+#trybewarts-login {
+  display: flex;
 }
