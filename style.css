@@ -42,10 +42,14 @@ main {
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.checkbox {
+  width: 50%;
 }
