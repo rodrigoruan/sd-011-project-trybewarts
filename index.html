@@ -18,7 +18,7 @@
         </form>
     </header>
     <main>
-        <div>
+        <div class="form">
             <form id="evaluation-form">
                 <div id=nomeSobrenome>
                     <input type="text" placeholder="Nome" id="input-name">
@@ -29,18 +29,32 @@
                     <input type="email" id="input-email" placeholder="Email">
                     <label>Casa
                         <select name="casa" id="house">
-                            <option value="Gitnória" id="gitnoria-house"></option>
-                            <option value="Reactpuff" id="reactpuff-house"></option>
-                            <option value="Corvinode" id="corvinode-house"></option>
-                            <option value="Pytherina" id="pytherina-house"></option>
+                            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                            <option value="Pytherina" id="pytherina-house">Pytherina</option>
                         </select>
                     </label>
                 </div>
             </form>
+            <div>
+            <label id="label-family">Qual sua família?
+                <br>
+                <input type="radio" value="Frontend">Familia Frontend</input>
+                <input type="radio" value="Backend">Familia Backend</input>
+                <input type="radio" value="FullStack">Familia FullStack</input>
+            </label>
+            </div>
+            <div>
+            <label>Qual conteúdo você está com mais vontade de aprender?
+                <br>
+                <input type="checkbox">
 
+            </label>
+        </div>
         </div>
         <div>
-            <img id='trybewarts-forms-logo' src="/images/trybewarts-colored.svg" alt="">
+            <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
         </div>
     </main>
 <script src='script.js'></script>
