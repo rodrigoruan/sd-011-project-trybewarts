@@ -5,6 +5,7 @@
 
 #content {
   display: flex;
+  margin-left: 50px;
 }
 
 #evaluation-form {
@@ -27,3 +28,9 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+
+/* .agreement {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+} */

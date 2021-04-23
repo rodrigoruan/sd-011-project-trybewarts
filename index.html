@@ -14,29 +14,38 @@
   </header>
 
   <main id="content">
-    <form method="get" id="evaluation-form">
-     
-      <div class='full-name'>
-        <label for="name"></label>
-        <input type="text" id='input-name' name='name' placeholder="Nome">
-        <label for="last-name"></label>
-        <input type="text" id='input-lastname' name='last-name' placeholder="Sobrenome">
-      </div>
+    <div class=content>
+      <h1>Forms</h1>
+      <form method="get" id="evaluation-form">
       
-      <div class="nd-line">
-        <label for="email"></label>
-        <input type="text" id='input-email' name='email' placeholder="Email">
+        <div class='full-name'>
+          <label for="name"></label>
+          <input type="text" id='input-name' name='name' placeholder="Nome">
+          <label for="last-name"></label>
+          <input type="text" id='input-lastname' name='last-name' placeholder="Sobrenome">
+        </div>
+        
+        <div class="nd-line">
+          <label for="email"></label>
+          <input type="text" id='input-email' name='email' placeholder="Email">
 
-        <label for="casa">Casa</label>
-        <select name="Casa" id="house">
-          <option value="gitnoria-house">Gitnória</option>
-          <option value="reactpuff-house">Reactpuff</option>
-          <option value="corvinode-house">Corvinode</option>
-          <option value="pytherina-house">Pytherina</option>
-        </select>
-      </div>
-    </form>
-    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
+          <label for="casa">Casa</label>
+          <select name="casa" id="house">
+            <option value="gitnoria-house">Gitnória</option>
+            <option value="reactpuff-house">Reactpuff</option>
+            <option value="corvinode-house">Corvinode</option>
+            <option value="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+
+        <div class='agreement'>
+          <label for="agreement"id='label-infos'>Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement" required>
+        </div>
+      </form>
+    </div>
+    
+  <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
   </main>
 
   <script src="script.js"></script>
