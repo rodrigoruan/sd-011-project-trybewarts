@@ -11,7 +11,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: column wrap;
   background-color: rgb(50, 167, 145);
   padding: 10px;
@@ -31,7 +31,7 @@ body {
 .header form {
   align-self: flex-end;
 }
-/* 
+
 .header__form--input , #header__form--botao {
   width: 150px;
   height: 40px;
@@ -59,4 +59,5 @@ body {
 #header__form--botao {
   background-color: rgb(78, 44, 131);
   color: white;
-} */
+  height: 53px;
+}
