@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.logo {
+  justify-content: start;
+}
+
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -32,6 +36,7 @@ header {
   display: flex;
   align-self: center;
   justify-content: end;
+  justify-content: space-between;
 }
 
 .control {
