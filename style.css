@@ -27,10 +27,21 @@
   height: 80px;
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* .agreement {
+.trybewarts-login {
   display: flex;
-  flex-direction: column;
-  background-color: red;
-} */
+  align-items: center;
+}
+
+.trybewarts-login-form-items {
+  padding: 10px;
+  margin: 5px;
+}
+
+.trybewarts-header-logo {
+  height: 90%;
+  margin-left: 10px;
+}
