@@ -10,7 +10,7 @@ function verificaLogin(event) {
   const senhaPadrao = '123456';
 
   if (email !== loginPadrao || senha !== senhaPadrao) {
-    alert('Login ou senha inválidos');
+    alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
   }
