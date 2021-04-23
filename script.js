@@ -2,6 +2,9 @@ const email = document.querySelector('#input-login-email');
 const password = document.querySelector('#input-login-password');
 const loginButton = document.querySelector('#loginButton');
 const rateContainer = document.querySelector('#rate-container');
+const checkAgreement = document.querySelector('#agreement');
+const btnSubmit = document.querySelector('#submit-btn');
+btnSubmit.disabled = true;
 
 // Função que valida o formato de E-mail
 function checkLogin() {
@@ -36,3 +39,15 @@ function createRateRadios() {
 }
 
 createRateRadios();
+
+function disableSubmitButton() {
+  checkAgreement.addEventListener('click', () => {
+    if (!checkAgreement.checked) {
+      btnSubmit.disabled = true;
+    } else {
+      btnSubmit.disabled = false;
+    }
+  });
+}
+
+disableSubmitButton();
