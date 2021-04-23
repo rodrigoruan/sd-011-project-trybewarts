@@ -45,8 +45,7 @@ main {
   flex-direction: column;
 }
 
-.family-container,
-.content-container {
+.family-container , .content-container {
   display: flex;
   flex-direction: column;
 }

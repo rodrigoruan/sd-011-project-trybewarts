@@ -12,9 +12,11 @@ function checkForLogin() {
   }
 }
 
+let checked = false;
 function checkAgreement() {
-  const checked = agreementCheck.checked;
-
+  if (agreementCheck.checked) {
+    checked = true;
+  }
   if (checked) {
     submitButton.disabled = false;
   }
