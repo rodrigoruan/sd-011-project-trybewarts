@@ -20,7 +20,9 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  margin-top: 20px;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #trybewarts-forms-logo {
