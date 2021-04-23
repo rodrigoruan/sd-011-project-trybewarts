@@ -42,8 +42,14 @@ body {
 
 .trybewarts-login button {
   height: 35px;
-  width: 60px;
+  width: 80px;
+  font-size: 15px;
   border-radius: 8px;
+  background-color: red;
+}
+
+.trybewarts-login button:hover {
+  font-size: 25px;
 }
 
 .trybewarts-main , .trybewarts-form {
@@ -119,4 +125,17 @@ footer {
 
 #input-email:hover , .name-input input:hover {
   background-color: wheat;
+}
+
+#submit-btn {
+  background-color: green;
+  color: white;
+  height: 50px;
+  border-radius: 8px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#submit-btn:hover {
+  font-size: 20px;
 }
