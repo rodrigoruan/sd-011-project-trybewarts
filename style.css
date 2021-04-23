@@ -15,7 +15,7 @@
   justify-content: flex-end;
 }
 
-main {
+#main {
   display: flex;
 }
 
