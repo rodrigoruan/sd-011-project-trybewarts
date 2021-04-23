@@ -39,17 +39,33 @@ main {
   height: 500px;
 }
 
+#stackFamilyDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#middleSectionForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contentLearningDiv {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 footer {
   text-align: center;
   background-color: rgb(53, 52, 52);
   color: white;
   padding: 8px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 
 #check-info {
