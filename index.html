@@ -25,11 +25,29 @@
   <main>
     <form action="" id="evaluation-form">
       <hr>
-      <div id="stackFamilyDiv">
-        <label for="" id="label-family">Qual sua família?</label>
-        <label><input type="radio" name="family" id="frontendFamily" value="Frontend"> Frontend</label>
-        <label><input type="radio" name="family" id="backendFamily" value="Backend"> Backend</label>
-        <label><input type="radio" name="family" id="fullStackFamily" value="FullStack"> FullStack</label>
+      <div id="middleSectionForm">
+        <div id="stackFamilyDiv">
+          <label for="" id="label-family">Qual sua família?</label>
+          <label><input type="radio" name="family" id="frontendFamily" value="Frontend"> Frontend</label>
+          <label><input type="radio" name="family" id="backendFamily" value="Backend"> Backend</label>
+          <label><input type="radio" name="family" id="fullStackFamily" value="FullStack"> FullStack</label>
+        </div>
+
+        <div id="contentLearningDiv">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="flex-container">
+            <div class="inputsContainer">
+              <label><input type="checkbox" name="" id="" value="HoFs" class="subject"> Higher Order Functions</label>
+              <label><input type="checkbox" name="" id="" value="Jest" class="subject"> Jest</label>
+              <label><input type="checkbox" name="" id="" value="Promises" class="subject"> Promises</label>
+            </div>
+            <div class="inputsContainer">
+              <label><input type="checkbox" name="" id="" value="React" class="subject"> React</label>
+              <label><input type="checkbox" name="" id="" value="SQL" class="subject"> SQL</label>
+              <label><input type="checkbox" name="" id="" value="Python" class="subject"> Python</label>
+            </div>
+          </div>
+        </div>
       </div>
       <hr>
     </form>
