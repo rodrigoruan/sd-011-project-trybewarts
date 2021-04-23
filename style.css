@@ -7,3 +7,11 @@
 .trybewarts-login {
   align-self: flex-end;
 }
+
+#forms {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 200px;
+}
