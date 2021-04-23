@@ -10,4 +10,13 @@
 
 .trybewarts-header-logo {
   display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  padding: 20px;
 }
