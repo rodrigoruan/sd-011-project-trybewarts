@@ -80,6 +80,8 @@ main {
   flex-direction: column;
 }
 
-.container-numbers {
+.container-info {
   display: flex;
+  flex-wrap: wrap;
+  width: 500px;
 }
