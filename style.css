@@ -102,3 +102,16 @@ label {
 .radio-rates {
   display: flex;
 }
+
+
+footer {
+  background-color: rgb(60, 64, 74);
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  position: fixed;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+}
