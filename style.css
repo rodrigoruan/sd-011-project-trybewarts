@@ -40,3 +40,13 @@ main {
 .container-info2 {
   display: flex;
 }
+
+.check-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.rate-div {
+  display: flex;
+  flex-direction: row;
+}
