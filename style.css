@@ -6,6 +6,7 @@
 
 .trybewarts-login {
   align-self: flex-end;
+  display: flex;
 }
 
 #forms {
