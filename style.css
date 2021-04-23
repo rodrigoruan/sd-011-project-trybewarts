@@ -10,3 +10,7 @@ form {
 #evaluation-form {
   flex-direction: column;
 }
+
+ img{
+  height: 500px;
+}
