@@ -21,10 +21,20 @@
     <form id="evaluation-form" action="">
       <label for=""><input placeholder="Nome" id="input-name" type="text"></label>
       <label for=""><input placeholder="Sobrenome" id="input-lastname" type="text"></label>
+      <br>
       <label for=""><input placeholder="Email" id="input-email" type="text"></label>       
-      <select name="" id="">
-        <!-- Adicionar opções -->
+      <select name="" id="house">
+        <option id="gitnoria-house" value="">Gitnória</option>
+        <option id="reactpuff-house" value="">Reactpuff</option>
+        <option id="corvinode-house" value="">Corvinode</option>
+        <option id="pytherina-house" value="">Pytherina</option>
       </select>
+      <div id="label-family">
+        Qual sua família?
+        <label for="front-radio"><input id="front-radio" name="family" type="radio">Frontend</label>
+        <label for="back-radio"><input id="back-radio" name="family" type="radio">Backend</label>
+        <label for="fs-radio"><input id="fs-radio" name="family" type="radio">FullStack</label>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
