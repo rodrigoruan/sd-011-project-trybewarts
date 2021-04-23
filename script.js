@@ -4,10 +4,12 @@ const button = document.getElementById('login-button');
 
 console.log(login, password, button);
 
-button.addEventListener('click', () => {
+function loginTry() {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
   }
-});
+}
+
+button.addEventListener('click', loginTry);
