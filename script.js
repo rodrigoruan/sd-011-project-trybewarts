@@ -8,6 +8,6 @@ function validateLogin() {
     alert('Olá, Tryber!');
   }
 }
-// oi
+
 const loginButton = document.querySelector('#button-header');
 loginButton.addEventListener('click', validateLogin);
