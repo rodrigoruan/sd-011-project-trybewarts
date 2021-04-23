@@ -37,4 +37,5 @@
 
 .namensurname {
   display: flex;
+  flex-wrap: nowrap;
 }
