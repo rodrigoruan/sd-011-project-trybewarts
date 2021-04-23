@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-header {
+.header {
   margin: 0;
   padding: 0;
   display: flex;
@@ -20,10 +20,9 @@ header {
 }
 
 .trybewarts-header-logo {
-  flex-basis: 5%;
-  flex-shrink: 1;
   width: 100%;
   height: 100%;
+  padding: 5px;
 }
 
 #login-button {
@@ -34,5 +33,9 @@ header {
 .trybewarts-login {
   display: flex;
   flex-flow: row nowrap;
+  align-self: center;
+}
+
+#trybewarts-header-title {
   align-self: center;
 }
