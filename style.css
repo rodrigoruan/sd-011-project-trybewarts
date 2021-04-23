@@ -8,13 +8,14 @@ header {
   background-color: rgb(50, 167, 145);
   width: auto;
   justify-content: space-around;
+  flex: column nowrap;
 }
 
 #trybewarts-header-title {
   display: flex;
   justify-items: center;
-  font-size: 25px;
-  color: white;  
+  font-size: 35px;
+  color: white;
 }
 
 .logo {
@@ -34,9 +35,16 @@ header {
 
 .control {
   display: flex;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .trybewarts-title {
   align-self: center;
+  justify-content: center;
+}
+
+.trybewarts-forms {
+  display: flex;
+  flex: column nowrap;
+  background-color: brown;
 }
