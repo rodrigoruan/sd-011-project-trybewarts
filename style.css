@@ -21,7 +21,7 @@ input {
 
 button {
   padding: 5px 8px;
-  background-color:rgba(84, 2, 192, 0.5);
+  background-color: rgba(84, 2, 192, 0.5);
   border-radius: 4px;
   color: white;
   border: none;
@@ -43,7 +43,7 @@ main form {
 }
 
 main {
-  display:flex;
+  display: flex;
   padding: 0 50px;
 }
 
@@ -51,7 +51,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 1;
 }
 
 .inputsNameLastname {
@@ -62,13 +61,23 @@ main {
   display: flex;
 }
 
+#div-family {
+  width: 250px;
+}
+
+#div-content {
+  width: 425px;
+}
+
 #thirdBigContainer {
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 1.5;
 }
 
 #label-family {
-  display: flex;
   flex-direction: column;
 }
 
@@ -77,18 +86,20 @@ main {
   flex-direction: column;
 }
 
-textarea{
+textarea {
   width: 675px;
 }
+
 #label-content {
-  display: flex;
   flex-direction: column;
 }
 
 .learningContentContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 200px;
 }
 
 .fourthBigContainer {
@@ -98,8 +109,7 @@ textarea{
 }
 
 hr {
-  margin: 20px 0 10px 120px;
-  width: 500px;
+  margin: 20px 0;
 }
 
 #trybewarts-forms-logo {
@@ -109,8 +119,8 @@ hr {
 footer {
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
-  background-color:rgb(59, 57, 57);
+  padding: 20px;
+  background-color: rgb(59, 57, 57);
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -120,12 +130,12 @@ footer h4 {
   color: white;
 }
 
-main form h2{
+main form h2 {
   text-align: center;
   margin: 15px 0;
 }
 
 main form button {
-  align-self:baseline;
+  align-self: baseline;
   width: 675px;
 }
