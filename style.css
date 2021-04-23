@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
 form {
   width: 675px;
 }
