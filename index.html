@@ -38,28 +38,56 @@
         <option value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
       </div>
-      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+
+      <hr />
       <div class="row">
+      
+        <div class="radio-family">
+          <label id="label-family" for="family"><span>Qual sua família?</span></label>
+          <div>
+            <input id="front" type="radio" name="family" value="Frontend" />
+            <label for="front">Família Frontend</label>
+          </div>
+          <div>
+            <input id="back" type="radio" name="family" value="Backend" />
+            <label for="back">Família Backend</label>
+          </div>
+          <div>
+            <input id="full" type="radio" name="family" value="FullStack" />
+            <label for="full">Família FullStack</label>
+          </div>
+        </div>
+        <div class="">
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="">
       <input type="checkbox" value="HoFs">
       <label>HoFs</label>
+      
       <input type="checkbox" value="Jest">
       <label>Jest</label>
+
       <input type="checkbox" value="Promises">
       <label>Promises</label>
+
       </div>
-      <div class="row">
+      <div class="">
       <input type="checkbox" value="React">
       <label>React</label>
+
       <input type="checkbox" value="SQL">
       <label>SQL</label>
+
       <input type="checkbox" value="Python">
       <label>Python</label>
       </div>
+
+      </div>
+    </div>
       <label class="textarea">Deixe seu comentário:</label>
       <textarea id="textarea" name="comment" maxlength="500" placeholder="Digite aqui" ></textarea>
       <div class="row">
       <input type="checkbox" id="agreement" value="agreement">
-      <label id="label-info" for="agreement">Você concorda com o uso das informações acima?</label>
+      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
       </div>
       </form>
       </main>

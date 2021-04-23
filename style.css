@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: (239, 239, 239);
+}
+
 main {
   display: flex;
 }
@@ -29,8 +37,8 @@ main form {
 }
 
 .header {
-  display: flex;
   background-color: rgb(50, 167, 145);
+  display: flex;
   justify-content: space-between;
 }
 
@@ -40,23 +48,54 @@ main form {
 
 .trybewarts-login {
   display: flex;
+  width: 30%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
 }
 
 input {
-  width: 150px;
+  width: 100px;
+  padding: 5px;
+  padding-right: 90px;
   height: 40px;
   font-size: 30px;
   margin-right: 20px;
+  border-radius: 10px;
+  border: none;
 }
 
 button {
   margin: 20px 0;
-  padding: 6px 30px;
+  padding: 10px 60px;
   border: none;
-  border-radius: 5px;
-  background-color: rgb(206, 199, 194);
+  border-radius: 10px;
+  background-color: rgb(78, 44, 131);
   font-size: 25px;
   font-weight: 500;
-  color: rgb(22, 21, 21);
+  color: white;
   cursor: pointer;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 60px;
+}
+
+hr {
+  width: 1000px;
+}
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-family input {
+  width: 25px;
+}
+
+label {
+  font-size: 25px;
 }
