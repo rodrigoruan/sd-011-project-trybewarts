@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 .trybewarts-header-logo {
   width: 10%;
   padding: 20px 20px;
+=======
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+>>>>>>> 3d22cda8e21bf80531e054cecc6707d6e968e9bd
 }
