@@ -1,12 +1,25 @@
+body {
+  margin: 0px;
+}
+
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
 }
 
-/* acho que não vai precisar  */
-#trybewarts-header-title {
-  text-align: center; 
+.trybewarts-header-logo {
+  height: 70px;
+  /* max-width: 50px; */
+}
+
+.trybewarts-login {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  width: 600px;
 }
 
 #evaluation-form {
@@ -17,5 +30,4 @@ header {
 
 #trybewarts-forms-logo {
   height: 500px;
-  src: url(images/trybewarts-colored.svg);
 }
