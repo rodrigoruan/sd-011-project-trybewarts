@@ -10,6 +10,3 @@ loginSubmit.addEventListener('click', (event) => {
     alert('Login ou senha inválidos.');
   }
 });
-
-// tryber@teste.com
-// 123456
