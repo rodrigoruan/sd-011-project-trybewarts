@@ -19,6 +19,10 @@ main {
   align-self: center;
 }
 
+#textarea {
+  padding: 5px;
+}
+
 #counter {
   text-align: end;
   display: inline-block;
