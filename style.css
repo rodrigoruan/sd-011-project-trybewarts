@@ -48,6 +48,10 @@ main {
   height: 500px;
 }
 
-#evaluation-form {
-  display: inline-block;
+#input-name {
+  align-self: flex-start;
+}
+
+#input-lastname {
+  align-self: flex-end;
 }
