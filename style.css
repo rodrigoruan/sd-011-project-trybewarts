@@ -21,7 +21,7 @@ header {
 .logo {
   justify-items: center;
   width: 100px;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 .title {
@@ -48,3 +48,4 @@ header {
   flex: column nowrap;
   background-color: brown;
 }
+
