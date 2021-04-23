@@ -20,6 +20,8 @@ header {
 /* Requisito 5 */
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Requisito 5 e 6 */
@@ -38,13 +40,22 @@ main {
 .div {
   display: flex;
   flex-wrap: wrap;
+  width: 50%;
 }
 
+/* Requisito 19 */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(60, 64, 74);
   color: white;
-  height: 45px;
+  height: 40px;
+}
+
+.principal-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
