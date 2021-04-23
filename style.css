@@ -39,3 +39,8 @@ main {
 #label-radios {
   display: flex;
 }
+
+#agree {
+  display: flex;
+}
+
