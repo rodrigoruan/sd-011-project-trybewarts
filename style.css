@@ -114,3 +114,15 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+textarea {
+  resize: none;
+  height: 200px;
+  width: 100%;
+}
+
+#counter {
+  position: absolute;
+  left: 650px;
+  bottom: 380px;
+}
