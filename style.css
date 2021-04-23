@@ -1,4 +1,8 @@
 
+hr {
+  width: 100%;
+}
+
 main {
   display: flex;
 }
@@ -48,7 +52,7 @@ main ul {
 #label-family {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
 }
 
 #label-content {
@@ -62,7 +66,7 @@ main ul {
 }
 
 #checkbox-container label {
-  flex-basis: 30%;
+  flex-basis: 33%;
 }
 
 footer {
