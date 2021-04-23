@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="/style.css">
   <title>Trybe Warts</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo da escola Trybewarts">
@@ -37,20 +39,42 @@
           </select>
         </div>
       </div>
-
-      <label for="" id="label-family">Qual sua família?<br>
-        <input type="radio" id="Frontend" name="family" value="Frontend" checked>
-        <label for="Frontend">Frontend</label><br>
-
-        <input type="radio" id="Backend" name="family" value="Backend">
-        <label for="Backend">Backend</label><br>
-
-        <input type="radio" id="FullStack" name="family" value="FullStack">
-        <label for="FullStack">FullStack</label><br>
-      </label>
+      <div>
+        <label for="" id="label-family">Qual sua família?</label>
+        <label class="radio-inline" for="Frontend">
+          <input type="radio" id="Frontend" name="family" value="Frontend" checked>Frontend
+        </label>
+        <label class="radio-inline" for="Backend">
+          <input type="radio" id="Backend" name="family" value="Backend">Backend
+        </label>
+        <label class="radio-inline" for="FullStack">
+          <input type="radio" id="FullStack" name="family" value="FullStack">FullStack
+        </label>
+      </div>
+      <div>
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <label class="subject" for="HoFs">
+          <input type="checkbox" id="HoFs" name="content" value="HoFs" checked>HoFs
+        </label>
+        <label class="subject" for="Jest">
+          <input type="checkbox" id="Jest" name="content" value="Jest">Jest
+        </label>
+        <label class="subject" for="Promises">
+          <input type="checkbox" id="Promises" name="content" value="Promises">Promises
+        </label>
+        <label class="subject" for="React">
+          <input type="checkbox" id="React" name="content" value="React">React
+        </label>
+        <label class="subject" for="SQL">
+          <input type="checkbox" id="SQL" name="content" value="SQL">SQL
+        </label>
+        <label class="subject" for="Python">
+          <input type="checkbox" id="Python" name="content" value="Python">Python
+        </label>
+      </div>
 
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" srcset="">
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo trybewarts">
 
   </main>
   <footer>
@@ -58,4 +82,5 @@
   </footer>
   <script src="/script.js"></script>
 </body>
+
 </html>
