@@ -2,6 +2,11 @@
   display: flex;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 #label-content {
   display: flex;
   flex-direction: column;
@@ -12,6 +17,6 @@
   flex-flow: row wrap;
 }
 
-#checkbox-container div {
+#checkbox-container label {
   flex-basis: 30%;
 }
