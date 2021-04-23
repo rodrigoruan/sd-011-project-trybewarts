@@ -409,7 +409,6 @@ Pontos importantes:
 
   Pontos importantes:
   * Um elemento com o id `label-content` e o texto *"Qual conteúdo você está com mais vontade de aprender?"* deverá ser criado
-  * Os valores (`value`) dos campos são, respectivamente: *Higher Order Functions*, *Jest*, *Promises*, *React*, *SQL*, *Python*
   * Os valores (`value`) dos campos são, respectivamente: *HoFs*, *Jest*, *Promises*, *React*, *SQL*, *Python*
   * As classes (`class`) dos campos devem ser `subject`
   * Posicione as checkbox para ficar lado a lado
