@@ -6,6 +6,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -29,6 +34,14 @@ html {
 #trybewarts-forms-logo {
   height: 500px;
   max-width: 100%;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
