@@ -15,11 +15,14 @@
   float: right;
 }
 
+/* Estilização - Requisito 5 */
 main {
   display: flex;
 }
 
+/* Estilização - Requisito 5 e 6 */
 #evaluation-form {
   width: 675px;
   display: flex;
+  flex-direction: column;
 }
