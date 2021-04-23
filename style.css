@@ -1,37 +1,57 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-  display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
-.trybewarts-login {
+input {
+  border-radius: 4px;
+  padding: 5px 8px;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+button {
+  padding: 5px 8px;
+  background-color:rgba(84, 2, 192, 0.5);
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+.trybewarts-header-logo {
+  justify-content: left;
+  width: 80px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+.header form {
   display: flex;
 }
 
 main {
-  display: flex;
-}
-
-#evaluation-form {
-  display: flex;
-  width: 765px;
-  flex-direction: column;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
+  display:flex;
+  padding: 0 50px;
 }
 
 #secondBigContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .inputsNameLastname {
@@ -52,6 +72,14 @@ main {
   flex-direction: column;
 }
 
+.familyContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  width: 675px;
+}
 #label-content {
   display: flex;
   flex-direction: column;
@@ -64,10 +92,39 @@ main {
 
 .textarea {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding: 10px 0;
 }
 
 hr {
-  margin: 10px 0 10px 120px;
+  margin: 20px 0 10px 120px;
   width: 500px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  background-color:rgb(59, 57, 57);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer h4 {
+  color: white;
+}
+
+main form h2{
+  text-align: center;
+  margin: 15px 0;
+}
+
+main form button {
+  align-self:baseline;
+  width: 675px;
 }

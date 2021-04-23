@@ -11,3 +11,17 @@ function validateLogin() {
   });
 }
 validateLogin();
+
+
+const btnSubmit = document.getElementById('submit-btn');
+const checkBox = document.getElementById('agreement');
+btnSubmit.disabled = true;
+checkBox.onchange = function () {
+  if (checkBox.checked) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
+  }
+}
+
+
