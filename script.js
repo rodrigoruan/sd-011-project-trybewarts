@@ -5,10 +5,10 @@ const loginInput = document.getElementById('login');
 const passwordInput = document.getElementById('password');
 // Functions
 function login() {
-  if (loginInput.value !== 'tryber@teste.com' && passwordInput.value !== 123456) {
-    alert('Login ou senha inválidos.');
-  } else {
+  if (loginInput.value === 'tryber@teste.com' || passwordInput.value === '123456') {
     alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
   }
 }
 
