@@ -49,3 +49,7 @@ main {
 .container-form-check {
   display: flex;
 }
+
+.container-rate {
+  display: flex;
+}
