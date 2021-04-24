@@ -27,7 +27,12 @@
   display: flex;
 }
 
-.trybewarts-login input, button {
+.trybewarts-login input {
+  width: 150px;
+  margin: 5px;
+}
+
+.trybewarts-login button {
   width: 150px;
   margin: 5px;
 }
