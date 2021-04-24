@@ -48,8 +48,8 @@ main {
   font-size: 14px;
 }
 
-.main-form input[type='checkbox'] {
-  margin: 5px  10px;;
+.main-form input [ type = 'checkbox' ] {
+  margin: 5px  10px;
 }
 
 #trybewarts-forms-logo {
