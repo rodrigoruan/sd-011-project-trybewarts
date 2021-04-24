@@ -9,6 +9,8 @@ h2 {
 main {
   display: flex;
   justify-content: center;
+  line-height: 1.6em;
+  font-size: 1.3em;
 }
 
 .header {
@@ -44,6 +46,7 @@ main {
 
 main img {
   height: 500px;
+  margin: auto 50px;
 }
 
 #input-name {
