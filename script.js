@@ -27,7 +27,7 @@ function submitLogin() {
 }
 
 function deleteForms() {
-  while(form.firstChild) {
+  while (form.firstChild) {
     form.removeChild(form.firstChild);
   }
 }
