@@ -114,6 +114,8 @@ header {
 }
 
 footer {
+  display: flex;
+  flex: column wrap;
   color: black;
   width: 500%;
 }
