@@ -8,13 +8,13 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 
-.header div img {
+.header img {
   height: 70px;
-  margin: 10px 0;
 }
 
 .header h1 {
@@ -26,7 +26,7 @@
 }
 
 .header .trybewarts-login div {
-  padding-left: 10px;
+  padding-right: 15px;
 }
 
 .header .trybewarts-login div input {
@@ -70,24 +70,35 @@
 #main #evaluation-form #data {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
   justify-content: space-evenly;
+  max-width: 100%;
+}
+
+#main #evaluation-form label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  width: 230px;
+}
+
+#main #evaluation-form #label-select {
+  font-size: 1.2em;
 }
 
 #main #evaluation-form #data input {
   height: 40px;
+  font-size: 1.2em;
   border-radius: 5px;
   padding-left: 10px;
-  margin: 10px 5px;
-  width: 200px;
-}
-
-#main #evaluation-form label {
-  width: 200px;
-  align-content: center;
+  margin: 15px 2px;
+  flex-grow: 1;
 }
 
 #main #evaluation-form label #house {
-  justify-content: center;
-  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  flex-grow: 1;
+  background-color: white;
+  font-size: 1.2em;
 }

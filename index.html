@@ -11,16 +11,14 @@
 
 <body>
   <header class="header">
-    <div>
-      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-    </div>
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
     <form class="trybewarts-login" action=".">
       <div>
         <label for="login"></label>
-        <input type="text" name="login" id="login" value="" required placeholder="Login">
+        <input type="mail" name="login" id="login" value="" required placeholder="Login">
       </div>
       <div>
         <label for="password"></label>
@@ -34,7 +32,7 @@
   </header>
 
   <main id="main">
-    <form id="evaluation-form" action=".">
+    <form id="evaluation-form">
       <h2>Forms</h2>
 
       <section id="data">
@@ -50,7 +48,7 @@
           <input type="text" id="input-email" name="input-email" required placeholder="Email">
         </label>
 
-        </label><label for="house">Casa:
+        <label id="label-select" for="house">Casa:
           <select id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="Reactpuff-house">Reactpuff</option>
