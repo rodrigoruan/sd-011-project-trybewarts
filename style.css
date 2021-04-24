@@ -17,6 +17,7 @@ main {
 .header {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
   align-items: center;
 }
@@ -29,7 +30,6 @@ main {
 .trybewarts-login {
   display: flex;
   flex-grow: 0;
-  align-self: flex-start;
 }
 
 #trybewarts-header-title {
@@ -64,7 +64,7 @@ main {
   flex-direction: row;
 }
 
-#label-radio {
+#label-radio , #label-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
