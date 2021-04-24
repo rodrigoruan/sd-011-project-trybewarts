@@ -57,11 +57,13 @@ header {
 .trybewarts-form {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
 }
 
 .section-form {
   display: flex;
   flex: column wrap;
+  flex-grow: 2;
 }
 
 #trybewarts-forms-logo {
@@ -72,7 +74,11 @@ header {
 
 .image-section {
   display: flex;
-  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.image-section img {
+  display: flex;
 }
 
 .title-form {
