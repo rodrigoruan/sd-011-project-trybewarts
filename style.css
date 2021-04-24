@@ -62,3 +62,19 @@ header img {
   flex-direction: column;
   margin-top: 20px;
 }
+
+.text-ar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.inpt-radio {
+  margin-top: 15px;
+}
+
+.end-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
