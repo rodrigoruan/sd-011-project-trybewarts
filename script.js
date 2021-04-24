@@ -10,3 +10,17 @@ document.getElementById('loginButton').addEventListener('click', () => {
     alert('Login ou Senha invalidos.');
   }
 });
+
+let submitBtn = document.getElementById('submit-btn');
+submitBtn.disabled = true;
+
+let seConcorda = document.getElementById('agreement')
+seConcorda.addEventListener('click', (event) => {
+	if (submitBtn.disabled = false) {
+		submitBtn.disabled = true;		
+	}
+	submitBtn.disabled = false;	
+})
+
+
+
