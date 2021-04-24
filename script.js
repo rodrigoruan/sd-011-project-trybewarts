@@ -4,6 +4,8 @@ const loginPassword = document.getElementById('password-input');
 const labelRate = document.querySelector('.rate-label');
 const buttonSend = document.querySelector('#submit-btn');
 const checkboxTerms = document.querySelector('#agreement');
+const textAreaInput = document.querySelector('#textarea');
+const counterText = document.querySelector('#counter');
 
 loginButton.addEventListener('click', () => {
   if (loginInput.value !== 'tryber@teste.com' && loginPassword.value !== '123456') {
@@ -19,6 +21,12 @@ checkboxTerms.addEventListener('click', () => {
   } else {
     buttonSend.setAttribute('disabled', 'disabled');
   }
+});
+
+textAreaInput.addEventListener('input', () => {
+  let textCount = 500;
+  textCount -= (textAreaInput.value.length);
+  counterText.innerText = textCount;
 });
 
 function createRadio() {
