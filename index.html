@@ -47,17 +47,102 @@
           </select>
         </div>
 
+        <section>
+          <label id="label-family" for="family">
+            Qual sua família?
+          </label>
+
+          <div class="radio-btn-family">
+            <input type="radio" name="family" value="Frontend" id="family-front-end">
+
+            <label for="family-front-end">
+              Front End
+            </label>
+          </div>
+
+          <div class="radio-btn-family">
+            <input type="radio" name="family" value="Backend" id="family-back-end">
+
+            <label for="family-back-end">
+              Back End
+            </label>
+          </div>
+
+          <div class="radio-btn-family">
+            <input type="radio" name="family" value="FullStack" id="family-full-stack">
+
+            <label for="family-full-stack">
+              Full Stack
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <label id="label-content" for="checkbox-content">
+            Qual conteúdo você está com mais vontade de aprender?
+          </label>
+
+          <div id="subjects-container">
+            <div class="subject">
+              <input type="radio" name="family" value="HoFs" id="family-front-end">
+  
+              <label for="family-front-end">
+                Higher Order Functions
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="family" value="Jest" id="family-front-end">
+  
+              <label for="family-front-end">
+                Jest
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="family" value="Promises" id="family-front-end">
+  
+              <label for="family-front-end">
+                Promises
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="family" value="React" id="family-front-end">
+  
+              <label for="family-front-end">
+                React
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="family" value="SQL" id="family-back-end">
+  
+              <label for="family-back-end">
+                SQL
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="family" value="Python" id="family-full-stack">
+  
+              <label for="family-full-stack">
+                Python
+              </label>
+            </div>
+          </div>
+        </section>
+
         <div class='agreement'>
           <label for="agreement"id='label-infos'>Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="agreement" id="agreement">
         </div>
 
         <input type="submit" id="submit-btn" value="Enviar">
+
       </form>
     </div>
-    
-  <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
-
+    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
   </main>
 
   <script src="script.js"></script>
