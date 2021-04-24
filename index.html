@@ -24,7 +24,7 @@
       </div>
 
       <div class="control">
-        <button class="button" type="submit" onclick="click()">Logar</button>
+        <button class="button" type="button" onclick="clickLogin()">Logar</button>
       </div>
 
     </form>
@@ -144,18 +144,22 @@
           <div class="control">
             <label class="textarea" for="">Deixe seu comentário:</label>
             <textarea name="coment" id="text-coment" cols="40" rows="10" maxlength="500"></textarea>
+            <span id="counter"></span>
           </div>
     
           <div class="div-agreement">
             <label id="label-infos" for="agree">Você concorda com o uso das informações acima?</label>
-            <input type="checkbox" id="agreement" name="agree" value="" required> 
+            <input type="checkbox" id="agreement" name="agree" required> 
           </div>
           
           <div class="control">
-            <button class="button" id="submit-btn" type="submit" >Enviar</button>
+            <button class="button" id="submit-btn" type="submit" disabled >Enviar</button>
           </div>
         </fieldset>
-      </form>  
+      </form>
+      <section id="informacoes">
+        
+      </section>  
       <img src="images/trybewarts-colored.svg" alt="Logo Trybe wartz" id="trybewarts-forms-logo">
   </main>
   <footer>
