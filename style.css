@@ -1,14 +1,37 @@
+@font-face {
+  font-family: Magic School;
+  src: url('/fonts/MagicSchool.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Magic School, sans-serif;
 }
 
 .header {
   background-color: rgb(50, 167, 145);
   width: 100vw;
+  padding: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header img {
+  width: 2.25em;
+}
+
+.header h1 {
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+  letter-spacing: 0.05em;
+}
+
+.header input + :is( input, button ) {
+  margin-left: 5px;
 }
 
 .trybewarts-login {
@@ -45,4 +68,28 @@ main {
   position: absolute;
   bottom: 0;
   padding-bottom: 5px;
+}
+
+.input , .btn {
+  border: 0;
+  border-radius: 0.25em;
+  padding: 5px;
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+.trybewarts-login .btn {
+  padding: 5px 50px;
+}
+
+footer {
+  background-color: rgb(101, 101, 101);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: small;
+  letter-spacing: 0.05em;
 }
