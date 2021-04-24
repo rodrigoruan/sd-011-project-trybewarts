@@ -32,9 +32,9 @@
       <form id='evaluation-form'>
         <!-- Requisito 8 e 9 -->
         <div class='div-1'>
-          <input type='text' id='input-name' placeholder='Nome'>
-          <input type='text' id='input-lastname' placeholder='Sobrenome'>
-          <input type='text' id='input-email' placeholder='Email'>
+          <input type='text' id='input-name' placeholder='Nome' size='30'>
+          <input type='text' id='input-lastname' placeholder='Sobrenome' size='30'>
+          <input type='text' id='input-email' placeholder='Email' size='30'>
           <label>Casa:
             <select id='house'>
               <option id='gitnoria-house' text='Gitnória' value='Gitnória'>Gitnória</option>
@@ -48,29 +48,31 @@
         <div class='div-2'>
           <!-- requisito 12 -->
           <div class='div-column'>
-            <label id='label-family' for='family'>Qual sua família?</label> 
-            <label for='family'>Família Frontend</label> 
+            <label id='label-family' for='family'>Qual sua família?</label>
             <input type='radio' id='family' name='family'value="Frontend" required>
-            <label for='family'>Família Backend</label> 
+            <label for='family'>Família Frontend</label>
             <input type='radio' id='family' name='family' value="Backend" required>
-            <label for='family'>Família FullStack</label> 
+            <label for='family'>Família Backend</label>
             <input type='radio' id='family' name='family' value="FullStack" required>
+            <label for='family'>Família FullStack</label>
           </div>
           <!-- requisito 13 -->
           <div class='div-row'>
             <label id='label-content' for='label'>Qual conteúdo você está com mais vontade de aprender?</label>
-            <input class ='subject' type='checkbox' id='label' value="HoFs" required>
-            <label for='label'> HoFs</label> 
-            <input class ='subject' type='checkbox' id='label' value="Jest" required>
-            <label for='label'> Jest</label> 
-            <input class ='subject' type='checkbox' id='label' value="Promises" required>
-            <label for='label'>Promises</label> 
-            <input class ='subject' type='checkbox' id='label' value="React" required>
-            <label for='label'>Reacts</label> 
-            <input class ='subject' type='checkbox' id='label' value="SQL" required>
-            <label for='label'>SQL</label> 
-            <input class ='subject' type='checkbox' id='label' value="Python" required>
-            <label for='label'>Python</label> 
+            <div class='content-checkbox'>
+              <input class ='subject' type='checkbox' id='label' value="HoFs" required>
+              <label for='label'> HoFs</label> 
+              <input class ='subject' type='checkbox' id='label' value="Jest" required>
+              <label for='label'> Jest</label> 
+              <input class ='subject' type='checkbox' id='label' value="Promises" required>
+              <label for='label'>Promises</label> 
+              <input class ='subject' type='checkbox' id='label' value="React" required>
+              <label for='label'>Reacts</label> 
+              <input class ='subject' type='checkbox' id='label' value="SQL" required>
+              <label for='label'>SQL</label> 
+              <input class ='subject' type='checkbox' id='label' value="Python" required>
+              <label for='label'>Python</label> 
+            </div>
           </div>
         </div>
         <hr>
