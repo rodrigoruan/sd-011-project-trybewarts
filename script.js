@@ -22,3 +22,13 @@ textarea.addEventListener('keypress', (event) => {
     event.preventDefault();
   }
 });
+
+const submitBtn = document.querySelector('#submit-btn').disable = true;
+const agreement = document.querySelector('#agreement');
+agreement.addEventListener('submit', () => {
+    if (agreement.disable) {
+    submitBtn.disable = false;
+  } else {
+    submitBtn.disable = true;
+  }
+});
