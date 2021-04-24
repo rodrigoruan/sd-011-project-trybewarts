@@ -28,3 +28,23 @@
 .container-row {
   display: flex;
 }
+
+.caixa {
+  display: flex;
+}
+
+.caixa-lista {
+  padding: 2rem 0;
+  width: 50%;
+}
+
+.caixa-lista-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem 0;
+  justify-content: flex-start;
+}
+
+.caixa-lista-checkbox-list {
+  padding: .5rem .5rem;
+}
