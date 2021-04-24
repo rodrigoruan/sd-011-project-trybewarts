@@ -34,7 +34,7 @@ function createEvaluateRadios() { // cria os radios input na parte de nota.
 
 createEvaluateRadios();
 
-function enableSubmit () { // Faz o requisito 18 funcionar. Enable/disable submit.
+function enableSubmit() { // Faz o requisito 18 funcionar. Enable/disable submit.
   if (agreeCheckbox.checked) {
     submitBtn.disabled = false;
   } else {
