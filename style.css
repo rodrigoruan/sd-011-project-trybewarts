@@ -45,12 +45,14 @@ body {
 }
 
 main {
-  
+  display: flex;
+  flex-direction: column;
   
 }
 
 #evaluation-form {
- 
+  display: flex;
+  height: 675px;
 }
 
 #trybewarts-forms-logo {
