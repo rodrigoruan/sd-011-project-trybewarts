@@ -22,4 +22,18 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.family , .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate , .agree {
+  display: flex;
 }

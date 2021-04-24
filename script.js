@@ -16,3 +16,10 @@ function botaoLogar() {
   firstButton.onclick = loginTryber;
 }
 window.onload = botaoLogar;
+
+const agreeCheck = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
+
+agreeCheck.addEventListener('click', () => {
+  submitButton.removeAttribute('disabled');
+});
