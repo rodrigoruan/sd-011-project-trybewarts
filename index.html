@@ -151,8 +151,15 @@
           <input type="radio" name="10" value="10" />
           <label for="10">10</label>
         </fieldset>
+        <fieldset class="comentario-usuario">
         <label id="comentario" class="textarea">Deixe seu comentário:</label>
-        <textarea id="comentario" maxlength="500"></textarea>
+        <textarea id="comentario" maxlength="500"></textarea></fieldset>
+        <fieldset class="termo-responsabilidade">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+        </label>
+        <input type="checkbox" id="agreement"></fieldset>
+        <button id="submit-btn" type="submit">Enviar</button>
+
       </form>
       <img
         id="trybewarts-forms-logo"
@@ -160,6 +167,7 @@
         alt="Imagem Trybe warts"
       />
     </main>
+    <footer class="rodape">Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
 </html>
