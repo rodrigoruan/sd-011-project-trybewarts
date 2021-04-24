@@ -48,20 +48,21 @@ function enableSubmit() {
 }
 
 // contar caracteres
-function countCaracteres() {
-  const textArea = document.getElementById('textarea'); 
-  const getCounterElement = document.getElementById('counter');
-  
-  getCounterElement.innerText = 500;
-  textArea.addEventListener('keyup', () => {
-    
-    getCounterElement.innerText = (500 - textArea.value.length);
-  })
-}
+function countCharacters() {
+  const counter = document.getElementById('counter');
+  const textarea = document.getElementById('textarea');
+  let count = 500;
 
+  // Usei o 'keyup' pra poder pegar o valor a cada vez que for clicar numa tecla
+  textarea.addEventListener('keyup', () => {
+    // Aqui eu diminuí 500 que é o valor original pelo tamanho do que foi escrito na textarea
+    count = 500 - textarea.value.length;
+    counter.innerText = count;
+  });
+}
 
 window.onload = function start() {
   validateAccess();
   enableSubmit();
-  countCaracteres();
+  countCharacters();
 };
