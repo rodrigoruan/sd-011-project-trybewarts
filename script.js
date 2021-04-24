@@ -21,7 +21,5 @@ const agreeCheck = document.querySelector('#agreement');
 const submitButton = document.querySelector('#submit-btn');
 
 agreeCheck.addEventListener('click', () => {
-  if (agreeCheck.checked === true) {
-    submitButton.removeAttribute('disabled');
-  }
+  submitButton.removeAttribute('disabled');
 });
