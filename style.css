@@ -4,7 +4,6 @@
 }
 
 .logo {
-  justify-content: start;
 }
 
 header {
@@ -23,9 +22,8 @@ header {
 }
 
 .trybewarts-header-logo {
-  justify-items: flex-start;
+  display: flex;
   width: 100px;
-  padding: 10px;
 }
 
 .title {
