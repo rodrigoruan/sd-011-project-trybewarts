@@ -64,8 +64,14 @@ main {
   flex-direction: row;
 }
 
-#label-radio , #label-content , #label-rate {
+#label-rate {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+#div-radio , #label-content , #label-family {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }

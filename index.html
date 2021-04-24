@@ -34,34 +34,23 @@
           </select>
         </div>
         <form id="div-radio">
-          <label for="family" id="label-radio">Qual sua família? 
-            <label class="family-radio" for="Frontend">Frontend<input type="radio" id="Frontend" value="Frontend" name="family"></label>
-            <label class="family-radio" for="Backend">Backend<input type="radio" id="Backend" value="Backend" name="family"></label>
-            <label class="family-radio" for="FullStack">FullStack<input type="radio" id="FullStack" value="FullStack" name="family"></label>
+          <label id="label-family">Qual sua família? 
+            <input type="radio" value="Frontend"  name="family">Frontend
+            <input type="radio" value="Backend" name="family">Backend
+            <input type="radio" value="FullStack" name="family">FullStack
           </label>
-          <div>
+          <div id="oi">
             <label id="label-content">Qual conteúdo você está com mais vontade de aprender?
-              <label>Higher Order Functions
-                <input type="checkbox" class="subject" value="HoFs">
-              </label>
-              <label>Jest
-                <input value="Jest" type="checkbox" class="subject">
-              </label>
-              <label>Promises
-                <input value="Promises" type="checkbox" class="subject">
-              </label>
-              <label>React
-                <input value="React" type="checkbox" class="subject">
-              </label>
-              <label>SQL
-                <input value="SQL" type="checkbox" class="subject">
-              </label>
-              <label>Python
-                <input value="Python" type="checkbox" class="subject">
-              </label>
+              Higher Order Functions
+                <input type="checkbox" class="subject" value="HoFs">HoFs
+                <input value="Jest" type="checkbox" class="subject">Jest
+                <input value="Promises" type="checkbox" class="subject">Promises
+                <input value="React" type="checkbox" class="subject">React
+                <input value="SQL" type="checkbox" class="subject">SQL
+                <input value="Python" type="checkbox" class="subject">Python
             </label>
           </div>
-          <label id="label-rate">Como você avalia Trybewarts?
+          <label id="label-rate">Como você avalia a Trybewarts?
             <label>
               <input name="rate" value="1" type="radio">1
             </label>
@@ -93,6 +82,9 @@
               <input name="rate" value="10" type="radio">10
             </label>
           </label>
+          <textarea maxlength="500">
+            Deixe seu comentário:
+          </textarea>
         </form>
       </div>
     </form>
