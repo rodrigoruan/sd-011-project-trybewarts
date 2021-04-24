@@ -29,12 +29,12 @@ checkbox.addEventListener('click', () => {
   }
 });
 
-textarea.addEventListener('keyup', () => {
+textarea.addEventListener('keydown', () => {
   const countRemaining = document.querySelector('#counter');
   const textEntered = textarea.value.length;
   const counter = (500 - textEntered);
 
-  countRemaining.textContent = counter;
+  countRemaining.innerHTML = `${counter} caracteres`;
 });
 
 function subjectChecked() {
