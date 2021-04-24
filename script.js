@@ -15,6 +15,7 @@ const selectHouse = document.getElementById('house');
 const labelContent = document.getElementById('label-content');
 const labelRate = document.getElementById('label-rate');
 const labelInfos = document.getElementById('label-infos');
+const buttonSubmitEvaluation = document.getElementById('submit-btn');
 
 /* DOM Elements */
 const optionElement = document.createElement('option');
@@ -98,6 +99,14 @@ function createAgreementCheckbox() {
   labelInfos.appendChild(newCheckbox);
 }
 
+function toggleDisable(element) {
+  element.disabled = !element.disabled;
+}
+
+function agreementHandler() {
+  toggleDisable(buttonSubmitEvaluation);
+}
+
 function onLoad() {
   buttonSubmitLogin.addEventListener('click', validateLogin);
   createSelectHouseOptions();
@@ -105,6 +114,8 @@ function onLoad() {
   createFamilyRadioOptions();
   createRadioRate();
   createAgreementCheckbox();
+  const checkboxAgreement = document.getElementById('agreement');
+  checkboxAgreement.addEventListener('change', agreementHandler);
 }
 
 window.onload = onLoad;
