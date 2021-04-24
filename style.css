@@ -6,7 +6,7 @@
   background-color: rgb(50, 167, 145);
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
 }
 
@@ -16,6 +16,20 @@
   display: flex;
 }
 
+.login-menus {
+  width: 120px;
+  margin: 0 5px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+#loginButton {
+  background-color: #524383;
+  color: white;
+  border: none;
+}
+
 #trybewarts-header-title {
   align-self: center;
   color: white;
@@ -23,7 +37,7 @@
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #evaluation-form {
