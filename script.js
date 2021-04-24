@@ -1,3 +1,5 @@
+const main = document.getElementsByTagName('main')[0];
+
 const check = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
 
@@ -27,6 +29,60 @@ function submitLogin() {
 function deleteForms() {
   const form = document.getElementById('evaluation-form');
   form.parentNode.removeChild(form);
+}
+
+function createParagraphs(paragraphs) {
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+  paragraphs.appendChild(document.createElement('p'));
+}
+
+function appendFormsItens(formsItems) {
+  document.getElementsByTagName('p')[0].innerText = `Nome: ${formsItems[0]} ${formsItems[1]}`;
+  document.getElementsByTagName('p')[1].innerText = `Email: ${formsItems[2]}`;
+  document.getElementsByTagName('p')[2].innerText = `Casa: ${formsItems[3]}`;
+  document.getElementsByTagName('p')[3].innerText = `Família: ${formsItems[4]}`;
+  document.getElementsByTagName('p')[4].innerText = `Matérias: ${formsItems[5]}`;
+  document.getElementsByTagName('p')[5].innerText = `Avaliação: ${formsItems[6]}`;
+  document.getElementsByTagName('p')[6].innerText = `Observações: ${formsItems[7]}`;
+}
+function createParagraphsSection(formsItems) {
+  const paragraphs = document.createElement('section');
+  main.insertBefore(paragraphs, main.firstChild);
+  createParagraphs(paragraphs);
+  appendFormsItens(formsItems);
+}
+
+function makeSubjectsIntoString() {
+  const subjects = document.querySelectorAll('input[class=subject]:checked');
+  const subjectsAl = [];
+  for (let index = 0; index < subjects.length; index += 1) {
+    subjectsAl[index] = subjects[index].value;
+  }
+  return subjectsAl.toString();
+}
+
+function makeFormsVariables() {
+  return [
+    document.getElementById('input-name').value,
+    document.getElementById('input-lastname').value,
+    document.getElementById('input-email').value,
+    document.getElementById('house').value,
+    document.querySelector('input[name=family]:checked').value,
+    makeSubjectsIntoString(),
+    document.querySelector('input[name="rate"]:checked').value,
+    document.getElementById('textarea').value,
+  ];
+}
+function submitForms(event) {
+  event.preventDefault();
+  const formsItems = makeFormsVariables();
+  deleteForms();
+  createParagraphsSection(formsItems);
 }
 
 loginButton.addEventListener('click', submitLogin);
