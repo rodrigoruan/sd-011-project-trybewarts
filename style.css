@@ -5,7 +5,7 @@ body {
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -67,7 +67,7 @@ main h1 {
 #label-family {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 }
 
 hr {
