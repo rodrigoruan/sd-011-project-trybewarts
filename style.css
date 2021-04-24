@@ -139,3 +139,13 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+
+.radioAvaliator {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.radioAvaliator #label-rate {
+  display: flex;
+  align-self: center;
+}
