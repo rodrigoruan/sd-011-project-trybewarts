@@ -90,7 +90,7 @@ header {
 
 footer {
   display: flex;
-  flex: column wrap;
+  text-align: center;
   color: black;
   width: 500%;
 }
