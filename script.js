@@ -25,6 +25,8 @@ function makeOptionSelect(arrayCasas, classOrId) {
     } else if (newclassOrId.includes('#')) {
       newclassOrId = newclassOrId.slice(1);
       makeOption.id = newclassOrId;
+    } else {
+      alert('Especifique "." para classes e "#" para Id');
     }
     selectHouse.appendChild(makeOption);
   }
