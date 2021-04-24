@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: auto;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -75,4 +75,11 @@ main {
 
 .div-agreement {
   display: flex;
+}
+
+#informacoes {
+  display: none;
+  width: 675px;
+  height: 90vh;
+  background-color: pink;
 }
