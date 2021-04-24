@@ -15,6 +15,7 @@ const fields = {
   rate: 'Avaliação',
   comment: 'Observações',
 };
+const counter = 500;
 
 /* Variaveis do DOM */
 const inputLogin = document.querySelector('.trybewarts-login input[type="email"]');
@@ -26,12 +27,14 @@ const labelRate = document.getElementById('label-rate');
 const labelInfos = document.getElementById('label-infos');
 const buttonSubmitEvaluation = document.getElementById('submit-btn');
 const formEvaluation = document.getElementById('evaluation-form');
+const labelFamily = document.getElementById('label-family');
+const textarea = document.getElementById('textarea');
+const spanCounter = document.getElementById('counter');
 
 /* DOM Elements */
 const optionElement = document.createElement('option');
 const inputElement = document.createElement('input');
 const labelElement = document.createElement('label');
-const labelFamily = document.getElementById('label-family');
 const pElement = document.createElement('p');
 
 function validateLogin(event) {
@@ -142,6 +145,17 @@ function submitHandler(event) {
   }
 }
 
+function setSpanCounterLocation(parentWidth) {
+  spanCounter.setAttribute('style', `left: ${parentWidth - spanCounter.offsetWidth - 5}px;`);
+}
+
+function updateCounter(event) {
+  let charactersLeft = counter;
+  charactersLeft -= event.target.value.length;
+
+  spanCounter.innerText = charactersLeft;
+}
+
 function onLoad() {
   buttonSubmitLogin.addEventListener('click', validateLogin);
   createSelectHouseOptions();
@@ -152,6 +166,8 @@ function onLoad() {
   const checkboxAgreement = document.getElementById('agreement');
   checkboxAgreement.addEventListener('change', agreementHandler);
   buttonSubmitEvaluation.addEventListener('click', submitHandler);
+  setSpanCounterLocation(textarea.offsetWidth);
+  textarea.addEventListener('input', updateCounter);
 }
 
 window.onload = onLoad;

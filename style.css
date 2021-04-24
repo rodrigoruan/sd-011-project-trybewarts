@@ -32,3 +32,17 @@ main {
 .row {
   display: flex;
 }
+
+.textarea-control {
+  position: relative;
+}
+
+#textarea {
+  resize: none;
+}
+
+#counter {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5px;
+}
