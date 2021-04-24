@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.line {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
