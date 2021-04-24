@@ -148,3 +148,7 @@ main {
   left: 0;
   bottom: 0;
 }
+
+#counter {
+  margin-left: 400px;
+}

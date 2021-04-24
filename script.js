@@ -20,3 +20,13 @@ agreementCheck.addEventListener('click', () => {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+
+const counter = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+let tamanho = 500;
+textArea.addEventListener('keyup', () => {
+  // diminuir do counter o tamanho atual do textos
+  console.log(textArea.value);
+  tamanho = 500 - (textArea.value.length);
+  counter.innerHTML = tamanho;
+});
