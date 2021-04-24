@@ -21,3 +21,10 @@ getCheckBox.addEventListener('click', () => {
     getBtn.disabled = true;
   }
 });
+
+const getCounter = document.querySelector('#counter');
+const getTextArea = document.querySelector('#textarea');
+
+getTextArea.addEventListener('keyup', () => {
+  getCounter.innerHTML = getTextArea.maxLength - getTextArea.value.length;
+});
