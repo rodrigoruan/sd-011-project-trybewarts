@@ -4,6 +4,7 @@ const btnLogin = document.querySelector('#login');
 const btnSubmit = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
 const textarea = document.querySelector('#textarea');
+const iptName = document.querySelector('#input-name');
 
 btnLogin.addEventListener('click', () => {
   const userValue = user.value;
@@ -17,6 +18,11 @@ btnLogin.addEventListener('click', () => {
 
 checkBox.addEventListener('change', () => {
   btnSubmit.disabled = false;
+});
+
+btnSubmit.addEventListener('click', () => {
+  let auxName = iptName.value;
+  localStorage.setItem('nameIpt', auxName);
 });
 
 textarea.addEventListener('keyup', () => {
