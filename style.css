@@ -46,27 +46,22 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
+
   
 }
 
 #evaluation-form {
   display: flex;
-  height: 675px;
+  width: 675px;
+  flex-direction: column;
+  
 }
 
-#trybewarts-forms-logo {
+
+
+/* #trybewarts-forms-logo {
   height: 500px;
   
   
-}
+} */
 
-#input-name {
-  width: 50%;
-}
-
-#input-lastname {
-  width: 50%;
-  
-
-}
