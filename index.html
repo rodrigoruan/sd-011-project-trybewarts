@@ -12,9 +12,9 @@
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="">
-      <label for="login"><input id="login" placeholder="Login" type="email"></label>
-      <label for="password"><input id="password" placeholder="Senha" type="password"></label>
-      <button onclick="validateTryber()">Entrar</button>
+      <input id="login" placeholder="Login" type="email">
+      <input id="password" placeholder="Senha" type="password">
+      <button id="send-form">Entrar</button>
     </form>
   </header>
   <main>  
@@ -30,16 +30,42 @@
         <option id="pytherina-house" value="">Pytherina</option>
       </select>
       <br>
-      <label id="label-family">Qual sua família?</label><br>
-      <label for="front-radio">
-        <input id="front-radio" value="Frontend" name="family" type="radio">Frontend
-      </label><br>
-      <label for="back-radio">
-        <input id="back-radio" value="Backend" name="family" type="radio">Backend
-      </label><br>
-      <label for="fs-radio">
-        <input id="fs-radio" value="FullStack" name="family" type="radio">FullStack
-      </label>
+      <!-- Radio Button -->
+      <div id="radio-buttons">
+        <label id="label-family">Qual sua família?</label>
+        <label for="front-radio">
+          <input id="front-radio" value="Frontend" name="family" type="radio">Frontend
+        </label>
+        <label for="back-radio">
+          <input id="back-radio" value="Backend" name="family" type="radio">Backend
+        </label>
+        <label for="fs-radio">
+          <input id="fs-radio" value="FullStack" name="family" type="radio">FullStack
+        </label>
+      </div>
+      <!-- Checkbox -->
+      <div id="check-boxes">
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <label for=""><input value="HoFs" type="text"></label>
+        <label for=""><input value="Jest" type="text"></label>
+        <label for=""><input value="Promises" type="text"></label>
+        <label for=""><input value="React" type="text"></label>
+        <label for=""><input value="SQL" type="text"></label>
+        <label for=""><input value="Python" type="text"></label>
+      </div>
+      <!-- NPS -->
+      <div id="nps-box">
+        <label for=""><input type="radio" name="rate" value="1"></label>
+        <label for=""><input type="radio" name="rate" value="2"></label>
+        <label for=""><input type="radio" name="rate" value="3"></label>
+        <label for=""><input type="radio" name="rate" value="4"></label>
+        <label for=""><input type="radio" name="rate" value="5"></label>
+        <label for=""><input type="radio" name="rate" value="6"></label>
+        <label for=""><input type="radio" name="rate" value="7"></label>
+        <label for=""><input type="radio" name="rate" value="8"></label>
+        <label for=""><input type="radio" name="rate" value="9"></label>
+        <label for=""><input type="radio" name="rate" value="10"></label>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>

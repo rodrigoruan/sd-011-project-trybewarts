@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .header{
     display: flex;
     background-color:  rgb(50, 167, 145);
@@ -25,5 +27,13 @@ main{
     display: flex;
     width: 675px;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
+#house {
+     max-width: 300px;
+}
