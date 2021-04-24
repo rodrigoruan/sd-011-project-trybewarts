@@ -6,13 +6,14 @@
   background-color: rgb(50, 167, 145);
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
 }
 
 .trybewarts-login {
   align-self: center;
   border-radius: 3px;
+	display: flex;
 }
 
 #trybewarts-header-title {
@@ -35,3 +36,15 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#nomeSobrenome {
+  display: flex;
+}
+
+div input {
+  width: 50%;
+}
+div input label select {
+  width: 50%;
+}
+
