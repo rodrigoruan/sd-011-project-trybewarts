@@ -45,6 +45,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: aqua;
 }
 
 /* Requisito 10 e 11 */
@@ -53,17 +54,20 @@ main {
   flex-wrap: wrap;
   justify-content: stretch;
   flex: 1 1 0;
+  background-color: green;
 }
 
 .div-2 {
   display: flex;
   flex: 1 1 0;
+  background-color: yellow;
 }
 
 .div-column {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
+  background-color: red;
 }
 
 .div-row {
@@ -75,12 +79,14 @@ main {
 .content-checkbox {
   display: flex;
   flex-wrap: wrap;
+  background-color: green;
 }
 
 .div-3 {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
+  background-color: magenta;
 }
 
 #textarea {
@@ -91,7 +97,7 @@ hr {
   background-color: green;
   height: 3px;
   width: 100%;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .img-div {
