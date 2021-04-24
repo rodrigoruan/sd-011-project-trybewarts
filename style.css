@@ -20,7 +20,7 @@ header form {
 
 #trybewarts-header-title {
   color: white;
-  font-family: "Zen Dots", cursive;
+  font-family: Zen Dots, cursive;
 }
 
 main {
@@ -44,6 +44,7 @@ main img {
 #input-name {
   width: 45%;
 }
+
 #input-lastname {
   width: 45%;
 }

@@ -3,7 +3,6 @@ function CheckLogin() {
   const loginBtn = document.querySelector('#login-btn');
   const validLogin = 'tryber@teste.com';
   const validPw = '123456';
-  
   loginBtn.addEventListener('click', () => {
     const login = document.querySelector('#login').value;
     const password = document.querySelector('#password').value;
