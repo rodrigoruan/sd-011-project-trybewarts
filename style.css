@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -33,4 +38,11 @@
 
 #label-content {
   display: flex;
+}
+
+#footer {
+  background-color: grey;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
 }
