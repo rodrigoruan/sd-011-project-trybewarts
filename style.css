@@ -50,11 +50,11 @@ main {
 }
 
 .div-2 {
-
+  display: flex;
 }
 
 .div-3 {
-
+  display: flex;
 }
 
 #textarea {
