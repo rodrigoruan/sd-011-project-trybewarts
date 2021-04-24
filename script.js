@@ -1,6 +1,7 @@
-window.onload = function() {
-  document.getElementById('submit-btn').disabled = true;
-}
+window.onload = function onloadFunction() {
+  const submitBtn = document.getElementById('submit-btn');
+  submitBtn.disabled = true;
+};
 
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
@@ -18,14 +19,14 @@ function checkEmail() {
 loginButton.addEventListener('click', checkEmail);
 
 function checkBox() {
-  document.getElementById('agreement').onclick =  function(event) {
+  document.getElementById('agreement').onclick = function verifyChange() {
+    const submitBtn = document.getElementById('submit-btn');
     if (checkMark.checked) {
-      document.getElementById('submit-btn').disabled = false;
+      submitBtn.disabled = false;
+    } else {
+      submitBtn.disabled = true;
     }
-    else {
-      document.getElementById('submit-btn').disabled = true;
-    }
-  }
+  };
 }
 
 checkBox();
