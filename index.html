@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
@@ -12,31 +13,38 @@
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="" />
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
     <div class="form-container">
       <form class="trybewarts-login">
-        <input id="login" placeholder="Login" />
-        <input id="senha" placeholder="Senha" />
-        <button class="entrar">Entrar</button>
+        <input id="login" placeholder="Login" class="button" />
+        <input id="senha" placeholder="Senha" class="button"/>
+        <button id="entrar" class="button is-link">Entrar</button>
       </form>
     </div>
-  </header>
+  </header>  
+
   <main>
     <form id="evaluation-form">
+      <h2>Forms</h2>
       <div class="block-input">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" class="input">
+        <input id="input-lastname" type="text" placeholder="Sobrenome" class="input">
       </div>
       <div class="block-input">
-        <input id="input-email" type="text" placeholder="Email">
-        <input id="house" type="text">
+        <input id="input-email" type="text" placeholder="Email" class="input">
+        <div class="block-input select">
+          <label for="house">Casa:</label>
+          <select name="Residencia" id="house" class="select">
+            <option id="gitnoria-house" value="gitnoria-house">gitnoria-house</option>
+            <option id="reactpuff-house" value="reactpuff-house">reactpuff-house</option>
+            <option id="corvinode-house" value="corvinode-house">corvinode-house</option>
+            <option id="pytherina-house" value="pytherina-house">pytherina-house</option>
+          </select>
+        </div>
       </div>
-      <select name="Residencia" id="house">
-        <option id="gitnoria-house" value="gitnoria-house">gitnoria-house</option>
-        <option id="reactpuff-house" value="reactpuff-house">reactpuff-house</option>
-        <option id="corvinode-house" value="corvinode-house">corvinode-house</option>
-        <option id="pytherina-house" value="pytherina-house">pytherina-house</option>
-      </select>
+
+      <hr>
+      
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="block-input">
         <input class="subject" type="checkbox" value="HoFs">
@@ -50,6 +58,9 @@
       <input name="family" type="radio" value="Frontend">
       <input name="family" type="radio" value="Backend">
       <input name="family" type="radio" value="FullStack">
+
+      <hr>
+
       <div class="block-input">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value="1">

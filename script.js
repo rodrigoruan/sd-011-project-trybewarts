@@ -1,6 +1,6 @@
 const login = document.getElementById('login');
 const senha = document.getElementById('senha');
-const button = document.querySelector('.entrar');
+const button = document.querySelector('#entrar');
 const chkAcept = document.getElementById('agreement');
 const btnSubmt = document.getElementById('submit-btn');
 const counter = document.getElementById('counter');
@@ -22,12 +22,6 @@ chkAcept.addEventListener('click', (event) => {
   } else {
     btnSubmt.disabled = true;
   }
-});
-
-const name = document.getElementById('input-name');
-
-btnSubmt.addEventListener('click', () => {
-  name.value = 'Nome:';
 });
 
 contTextlength.addEventListener('input', (event) => {
