@@ -20,11 +20,9 @@ loginButton.addEventListener('click', () => {
 
 //
 agreementBox.addEventListener('change', () => {
-  if (this.checked) {
-    console.log('check');
+  if (agreementBox.checked) {
     sendFormBtn.removeAttribute('disabled')
   } else {
-    console.log('not checked')
     sendFormBtn.setAttribute('disabled', 'disabled');
   }
 })
