@@ -36,7 +36,6 @@ h1.trybewarts-header-title {
 #evaluation-form {
   display: flex;
   width: 675px;
-  background-color: yellow;
   flex-direction: column;
   padding: 10px 20px;
 }
