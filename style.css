@@ -40,8 +40,25 @@ main {
 }
 
 #conteudos-container {
-  background-color: red;
-  height: 55px;
+  background-color: wheat;
+  height: 70px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+#conteudos-container #conteudos-input {
+  background-color: whitesmoke;
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+}
+
+#avaliacao-container {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
 }
