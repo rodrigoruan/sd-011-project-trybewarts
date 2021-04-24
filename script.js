@@ -31,6 +31,24 @@ function validateAccess() {
   });
 }
 
+// valida checkbox termos
+function enableSubmit() {
+  const getSubmitButton = document.getElementById('submit-btn');
+  const getAgreementCheck = document.getElementById('agreement');
+
+  getSubmitButton.disabled = true;
+
+  getAgreementCheck.addEventListener('click', () => {
+    if (getAgreementCheck.checked === true) {
+      getSubmitButton.disabled = false;
+    } else {
+      getSubmitButton.disabled = true;
+    }
+  })
+}
+
+
 window.onload = function start() {
   validateAccess();
+  enableSubmit();
 };
