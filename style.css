@@ -197,3 +197,12 @@ body {
   font-weight: 600;
   font-size: larger;
 }
+
+#label-infos {
+  color: black;
+  font-size: larger;
+}
+
+.check-box {
+  margin: 10px 0;
+}
