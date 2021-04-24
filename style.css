@@ -16,7 +16,6 @@
 
 main {
   display: flex; /* Requisito 5.3 */
-  /* width: 800px; */
   width: 100%;
   border: 3px solid rgb(255, 38, 0); /* [Remover] */
   justify-content: space-between;
@@ -31,8 +30,5 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px; /* Requisito 7.3 */
-  align-self: flex-end; 
+  align-self: flex-end;
 }
-
-
-
