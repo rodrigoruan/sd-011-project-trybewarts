@@ -19,10 +19,16 @@ main {
   align-self: center;
 }
 
+#textarea {
+  padding: 5px;
+}
+
 #counter {
-  position: absolute;
-  top: 755px;
-  left: 755px;
+  text-align: end;
+  display: inline-block;
+  margin-top: -20px;
+  margin-right: 5px;
+  z-index: 1;
 }
 
 #evaluation-form {

@@ -2,7 +2,7 @@ const check = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
 
 const counter = document.getElementById('counter');
-const textarea = document.getElementById('textarea').nextElementSibling;
+const textarea = document.getElementById('textarea');
 
 const login = document.getElementById('login');
 const password = document.getElementById('password');
