@@ -112,10 +112,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
-#label-family input {
-}
-
 #label-rate {
   display: flex;
 }
