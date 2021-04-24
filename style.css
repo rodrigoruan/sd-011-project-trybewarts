@@ -8,12 +8,12 @@
   background-color: rgb(50, 167, 145);
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-title {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .trybewarts-header-logo {
