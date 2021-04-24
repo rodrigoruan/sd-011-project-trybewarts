@@ -3,27 +3,35 @@
   box-sizing: border-box;
 }
 
+/* requisito 1, 2 e 4 */
 .header {
   display: flex;
+  font-family: "Harry Potter", sans-serif;
+  font-size: 1.5em;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
   color: white;
+  padding: 10px 200px;
 }
 
+/* requisito 2 */
 .trybewarts-header-logo {
   width: 5%;
 }
 
+/* requisito 3 */
 .trybewarts-login {
   display: flex;
 }
 
+/* requisito 5 */
 #main-page {
   display: flex;
   flex-grow: row wrap;
 }
 
+/* requisito 5 e 6 */
 #evaluation-form {
   display: flex;
   justify-content: flex-start;
@@ -31,6 +39,7 @@
   width: 675px;
 }
 
+/* requisito 7 */
 #trybewarts-forms-logo {
   width: 20%;
 }
