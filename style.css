@@ -1,4 +1,9 @@
 
+/* Zerar margens */
+* {
+  margin: 0;
+}
+
 /* Estilização - Requisito 1 */
 .header {
   display: flex;
