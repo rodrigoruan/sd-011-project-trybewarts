@@ -10,3 +10,14 @@ function alertLogin() {
 }
 
 loginButton.addEventListener('click', alertLogin);
+
+const getBtn = document.querySelector('#submit-btn');
+const getCheckBox = document.querySelector('#agreement');
+
+getCheckBox.addEventListener('click', () => {
+  if (getCheckBox.checked) {
+    getBtn.disabled = false;
+  } else {
+    getBtn.disabled = true;
+  }
+});
