@@ -69,7 +69,7 @@ header {
 #trybewarts-forms-logo {
   display: flex;
   align-content: center;
-  height: 900px;
+  height: 800px;
 }
 
 .image-section {
@@ -97,7 +97,8 @@ header {
 footer {
   display: flex;
   flex: column wrap;
-  align-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
   text-align: center;
   color: black;
 }
