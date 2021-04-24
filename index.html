@@ -20,26 +20,36 @@
   </header>
 <main id="main">
   <form method="GET" id="evaluation-form">
-    <div>
+    <div class='row'>
+      <label for='input-name' class='inputs-nome'>Nome:</label>
       <input id= 'input-name' type="text" name="name" placeholder="Nome">
+      <label for='input-lastname' class='inputs-nome'>Sobrenome:</label>
       <input id= 'input-lastname' type="text" name="lastname" placeholder="Sobrenome">
     </div>
-    <div>
+    <div class='row'>
+      <label for='input-email'>E-mail:</label>
       <input id= 'input-email' type="email" name="email" placeholder="Email">
+      <label for='house'>Casa:</label>
       <select id='house'>
+        <option value=""></option>
         <option id= 'gitnoria-house' value="Gitnória">Gitnória</option>
         <option id='reactpuff-house' value="Reactpuff">Reactpuff</option>
         <option id='corvinode-house' value="Corvinode">Corvinode</option>
         <option id='pytherina-house' value="Pytherina">Pytherina</option>
       </select>
     </div>
-  </form>
+    <div class='column'>
+      <label for='family' id='label-family'>Qual sua família?</label>
+      <label><input type='radio' name='family' value='Frontend'>Frontend</label>
+      <label><input type='radio' name='family' value='Backend'>Backend</label>
+      <label><input type='radio' name='family' value='FullStack'>FullStack</label>
+    </div> 
+  </form> 
   <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
 </main>
+<footer id="rodape">
+  <p>"Direitos reservados à Trybewarts©"</p>
+</footer>
 </body>
 <script src="script.js"></script>
-<footer id="rodape">
-    <p>"Direitos reservados à Trybewarts©"</p>
-</footer>
 </html>
-
