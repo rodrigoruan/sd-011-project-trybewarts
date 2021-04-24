@@ -109,3 +109,8 @@ header {
   display: flex;
   flex-grow: 0;
 }
+
+footer {
+  color: black;
+  width: 500%;
+}
