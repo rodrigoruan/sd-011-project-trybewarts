@@ -31,7 +31,7 @@
       <!-- Form -->
       <form id='evaluation-form'>
         <!-- Requisito 8 e 9 -->
-        <div class='div'>
+        <div class='div-1'>
           <input type='text' id='input-name' placeholder='Nome'>
           <input type='text' id='input-lastname' placeholder='Sobrenome'>
           <input type='text' id='input-email' placeholder='Email'>
@@ -45,8 +45,8 @@
           </label>
         </div>
         <hr>
-        <!-- requisito 12 -->
-        <div class='div'>
+        <div class='div-2'>
+          <!-- requisito 12 -->
           <div class='div-column'>
             <label id='label-family' for='family'>Qual sua família?</label> 
             <label for='family'>Família Frontend</label> 
@@ -56,24 +56,67 @@
             <label for='family'>Família FullStack</label> 
             <input type='radio' id='family' name='family' value="FullStack" required>
           </div>
-          <div>
-            <!-- requisito 13 -->
-            <div class='div-row'>
-              <label id='label-content' for='label'>Qual conteúdo você está com mais vontade de aprender?</label>
-              <input class ='subject' type='checkbox' id='label' value="HoFs" required>
-              <label for='label'> HoFs</label> 
-              <input class ='subject' type='checkbox' id='label' value="Jest" required>
-              <label for='label'> Jest</label> 
-              <input class ='subject' type='checkbox' id='label' value="Promises" required>
-              <label for='label'>Promises</label> 
-              <input class ='subject' type='checkbox' id='label' value="React" required>
-              <label for='label'>Reacts</label> 
-              <input class ='subject' type='checkbox' id='label' value="SQL" required>
-              <label for='label'>SQL</label> 
-              <input class ='subject' type='checkbox' id='label' value="Python" required>
-              <label for='label'>Python</label> 
-            </div>
+          <!-- requisito 13 -->
+          <div class='div-row'>
+            <label id='label-content' for='label'>Qual conteúdo você está com mais vontade de aprender?</label>
+            <input class ='subject' type='checkbox' id='label' value="HoFs" required>
+            <label for='label'> HoFs</label> 
+            <input class ='subject' type='checkbox' id='label' value="Jest" required>
+            <label for='label'> Jest</label> 
+            <input class ='subject' type='checkbox' id='label' value="Promises" required>
+            <label for='label'>Promises</label> 
+            <input class ='subject' type='checkbox' id='label' value="React" required>
+            <label for='label'>Reacts</label> 
+            <input class ='subject' type='checkbox' id='label' value="SQL" required>
+            <label for='label'>SQL</label> 
+            <input class ='subject' type='checkbox' id='label' value="Python" required>
+            <label for='label'>Python</label> 
           </div>
+        </div>
+        <hr>
+        <div class='div-3'>
+          <div>
+            <!-- Requisito 14 -->
+            <label id='label-rate'>Como você avalia a Trybewarts?</label>
+            <label>
+              <input type='radio' name='rate' value='1'>1
+            </label>
+            <label>
+              <input type='radio' name='rate' value='2'>2
+            </label>
+            <label>
+              <input type='radio' name='rate' value='3'>3
+            </label>
+            <label>
+              <input type='radio' name='rate' value='4'>4
+            </label>
+            <label>
+              <input type='radio' name='rate' value='5'>5
+            </label>
+            <label>
+              <input type='radio' name='rate' value='6'>6
+            </label>
+            <label>
+              <input type='radio' name='rate' value='7'>7
+            </label>
+            <label>
+              <input type='radio' name='rate' value='8'>8
+            </label>
+            <label>
+              <input type='radio' name='rate' value='9'>9
+            </label>
+            <label>
+              <input type='radio' name='rate' value='10'>10
+            </label>
+          </div>
+          <!-- Requisito 15 -->
+          <label for='textarea' class='textarea'>Deixe seu comentário:</label>
+          <textarea id='textarea' maxlength='500'></textarea>
+          <!-- Requisito 16 -->
+          <label for='agreement' id='label-infos'>Você concorda com o uso das informações acima?</label>
+          <input type='checkbox' id='agreement'>
+          <!-- Requisito 17 -->
+          <button type='submit' id='submit-btn'>Enviar</button>
         </div>
       </form>
     </div>
