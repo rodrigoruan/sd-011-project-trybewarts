@@ -63,6 +63,12 @@
   font-size: 15px;
 }
 
+.caixa-avaliacao-items {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.3rem;
+}
+
 .caixa-comentario {
   display: flex;
   flex-direction: column;
