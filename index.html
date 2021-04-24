@@ -10,29 +10,34 @@
   <body>
     <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts" width="80">
-      <h1>Trybewarts</h1>
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
-        <label for="login">Login: </label>
+        <label for="login"></label>
           <input type="text" name="login" id="login" placeholder="Login" maxlength="25" required >
-        <label for="senha">Senha: </label>
+        <label for="senha"></label>
           <input type="text" id="senha" name="senha" placeholder="Senha" required>
-        <button class="logar" id="button" type="submit">Entrar</button>
+        <button class="botao-login" id="button" type="submit">Entrar</button>
       </form>
     </header>
     <main>
       <form id="evaluation-form">
         <h1 id="form-title">Forms</h1>
-        <br>                    
+        <br>
+      <div class="nome-completo"> 
+      <label for="input-name"></label>                    
         <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <label for="input-lastname"></label>  
+        <input type="text" id="input-lastname" placeholder="Sobrenome"></div>
+      <div class="email-casa">
+      <label for="input-email"></label>
         <input type="text" id="input-email" placeholder="Email">
-        <h3>Casa:</h3>
+        <h3 class="titulo-casa">Casa:</h3>
         <select id="house">          
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>        
+        </select></div>       
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Imagem Trybe warts">  
     </main>
