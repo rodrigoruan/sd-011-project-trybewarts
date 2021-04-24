@@ -24,6 +24,7 @@
   height: 40px;
   justify-content: space-between;
   width: 480px;
+  border-radius: 4px;
 }
 
 #input-login , #input-password {
@@ -68,7 +69,7 @@ main {
   flex-grow: 2;
 }
 
-#label-family , #label-content, .div-family, .div-checkbox {
+#label-family , #label-content , .div-family {
   display: flex;
   flex-direction: column;
   align-self: baseline;
@@ -83,4 +84,26 @@ footer {
   background-color: black;
   color: white;
   padding: 10px 0;
+}
+
+#div-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#checkbox-container label {
+  flex-basis: 33%;
+}
+
+.form-container {
+  display: flex;
+}
+
+main img {
+  height: 500px;
 }
