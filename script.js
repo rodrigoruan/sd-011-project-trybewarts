@@ -6,6 +6,7 @@ const inputs = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 const labels = ['Higher Order Functions', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 const families = ['Frontend', 'Backend', 'FullStack'];
 const rates = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const counter = 500;
 
 /* Variaveis do DOM */
 const inputLogin = document.querySelector('.trybewarts-login input[type="email"]');
@@ -16,12 +17,14 @@ const labelContent = document.getElementById('label-content');
 const labelRate = document.getElementById('label-rate');
 const labelInfos = document.getElementById('label-infos');
 const buttonSubmitEvaluation = document.getElementById('submit-btn');
+const labelFamily = document.getElementById('label-family');
+const textarea = document.getElementById('textarea');
+const spanCounter = document.getElementById('counter');
 
 /* DOM Elements */
 const optionElement = document.createElement('option');
 const inputElement = document.createElement('input');
 const labelElement = document.createElement('label');
-const labelFamily = document.getElementById('label-family');
 
 function validateLogin(event) {
   if (inputLogin.value === validEmail && inputPassword.value === validPassword) {
@@ -107,6 +110,17 @@ function agreementHandler() {
   toggleDisable(buttonSubmitEvaluation);
 }
 
+function setSpanCounterLocation(parentWidth) {
+  spanCounter.setAttribute('style', `left: ${parentWidth - spanCounter.offsetWidth - 5}px;`);
+}
+
+function updateCounter(event) {
+  let charactersLeft = counter;
+  charactersLeft -= event.target.value.length;
+
+  spanCounter.innerText = charactersLeft;
+}
+
 function onLoad() {
   buttonSubmitLogin.addEventListener('click', validateLogin);
   createSelectHouseOptions();
@@ -116,6 +130,8 @@ function onLoad() {
   createAgreementCheckbox();
   const checkboxAgreement = document.getElementById('agreement');
   checkboxAgreement.addEventListener('change', agreementHandler);
+  setSpanCounterLocation(textarea.offsetWidth);
+  textarea.addEventListener('input', updateCounter);
 }
 
 window.onload = onLoad;
