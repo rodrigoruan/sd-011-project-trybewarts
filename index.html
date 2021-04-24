@@ -40,20 +40,65 @@
           <div class="col">
             <input id="input-lastname" type="text" class="form-control" placeholder="Sobrenome" />
           </div>
-          <!-- FORM [E-MAIL E CASA] -->
-          <div class="row">
-            <div class="col">
-              <input id="input-email" type="text" class="form-control" placeholder="Email" />
-            </div>
-            <div id="houseDiv" class="form-group col">
-              <label id="houseLabel" for="house">Casa:</label>
-              <select name="house" id="house" class="form-control">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-              </select>
-            </div>
+        </div>
+        <!-- FORM [E-MAIL E CASA] -->
+        <div class="row">
+          <div class="col">
+            <input id="input-email" type="text" class="form-control" placeholder="Email" />
+          </div>
+          <div id="houseDiv" class="col">
+            <label id="houseLabel" for="house">Casa:</label>
+            <select name="house" id="house" class="form-control">
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </div>
+
+          <div class="separador"></div>
+          <!-- FORM [QUAL A SUA FAMÍLIA? & QUAL CONTEÚDO?] -->
+          <div id="familyAndContent" class="d-flex justify-content-between">
+            <fieldset class="form-group">
+              <div class="col">
+                <legend id="label-family" class="col-form-label">Qual sua família?</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="family" value="Frontend" />
+                  <label class="form-check-label" for="family"> FrontEnd</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="family" value="Backend" />
+                  <label class="form-check-label" for="family"> Backend</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="family" value="FullStack" />
+                  <label class="form-check-label" for="family"> FullStack</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <div class="col">
+                <legend id="label-content" id="label-family" class="col-form-label">
+                  Qual conteúdo você está com mais vontade <br />de aprender?
+                </legend>
+                <div class="col">
+                  <label for="HoFs">HoFs</label>
+                  <input type="checkbox" class="subject" name="HoFs" id="HoFs" value="HoFs" />
+                  <label for="Jest">Jest</label>
+                  <input type="checkbox" class="subject" name="Jest" id="Jest" value="Jest" />
+                  <label for="Promises">Promisses</label>
+                  <input type="checkbox" class="subject" name="Promisses" id="Promisses" value="Promises" />
+                </div>
+                <div class="col">
+                  <label for="React">React</label>
+                  <input type="checkbox" class="subject" name="React" id="React" value="React" />
+                  <label for="SQL">SQL</label>
+                  <input type="checkbox" class="subject" name="SQL" id="SQL" value="SQL" />
+                  <label for="Python">Python</label>
+                  <input type="checkbox" class="subject" name="Python" id="Python" value="Python" />
+                </div>
+              </div>
+            </fieldset>
           </div>
         </div>
       </form>
