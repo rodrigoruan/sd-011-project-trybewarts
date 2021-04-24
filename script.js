@@ -1,5 +1,7 @@
-const btnSubmit = document.querySelector('#btnSubmit'); // seletor botao logar
-const evaluateFieldDiv = document.querySelector('.evaluateField'); // seletor camp de avaliacao
+const btnSubmit = document.querySelector('#btnSubmit'); // seletor botao logar.
+const evaluateFieldDiv = document.querySelector('.evaluateField'); // seletor camp de avaliacao.
+const agreeCheckbox = document.querySelector('#agreement'); // checkbox do "concordo".
+const submitBtn = document.querySelector('#submit-btn'); // botao de submit.
 
 function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert adequado.
   event.preventDefault();
@@ -14,7 +16,7 @@ function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert 
 
 btnSubmit.addEventListener('click', submitLoginInfo);
 
-function createEvaluateRadios() {
+function createEvaluateRadios() { // cria os radios input na parte de nota.
   let n = 1;
   while (n < 11) {
     const radioToCreateLabel = document.createElement('label');
@@ -32,4 +34,12 @@ function createEvaluateRadios() {
 
 createEvaluateRadios();
 
-console.log(evaluateFieldDiv);
+function enableSubmit () { // Faz o requisito 18 funcionar. Enable/disable submit.
+  if (agreeCheckbox.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+
+agreeCheckbox.addEventListener('change', enableSubmit);
