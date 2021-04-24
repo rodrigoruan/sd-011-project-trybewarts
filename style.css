@@ -13,4 +13,5 @@ form {
 
 img {
   height: 500px;
+  align-self: flex-end;
 }
