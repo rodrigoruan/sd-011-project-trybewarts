@@ -8,67 +8,66 @@
     <title>Traybewarts</title>
 </head>
 <body>
-    <header class="header">
-        <img src="images/trybewarts-header-logo.svg" alt="trybewarts-header-logo" class="trybewarts-header-logo">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login">
-            <input type="email"placeholder= "Login" id="email">
-            <input type="number" placeholder="Senha" id="senha">
-            <button id="loginButton">Logar</button>
-        </form>
-    </header>
-    <main>
-        <div class="form">
-            <form id="evaluation-form">
-                <div id=nomeSobrenome>
-                    <input type="text" placeholder="Nome" id="input-name">
-                    <input type="text" id="input-lastname"
-                    placeholder="Sobrenome">
-                </div>
-                <div>
-                    <input type="email" id="input-email" placeholder="Email">
-                    <label>Casa
-                        <select name="casa" id="house">
-                            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                        </select>
-                    </label>
-                </div>
-            </form>
-            <div>
-            <label id="label-family">Qual sua família?
-                <br>
-                <input type="radio" value="Frontend">Familia Frontend</input>
-                <input type="radio" value="Backend">Familia Backend</input>
-                <input type="radio" value="FullStack">Familia FullStack</input>
-            </label>
-            </div>
-            <div>
-            <label>Qual conteúdo você está com mais vontade de aprender?
-                <br>
-                <input type="checkbox">
-            </label>
-        </div>
-                <label class="textarea" >
-                    Deixe seu comentário:
-                    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-                </label>
-                <label for="" id="label-infos">
-                    Você concorda com o uso das informações acima?
-                    <input type="checkbox" name="checkbox" id="agreement">               
-                </label>
-                <button type="submit" id="submit-btn" disabled>Enviar</button>
-            </form>
-        </div>
-        <div>
-            <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
-        </div>
-    </main>
-    <footer id="footer">
-        Direitos reservados à Trybewarts©
-    </footer>
+	<header class="header">
+		<img src="images/trybewarts-header-logo.svg" alt="trybewarts-header-logo" class="trybewarts-header-logo">
+		<h1 id="trybewarts-header-title">Trybewarts</h1>
+		<form class="trybewarts-login">
+				<input type="email"placeholder= "Login" id="email">
+				<input type="number" placeholder="Senha" id="senha">
+				<button id="loginButton">Logar</button>
+		</form>
+	</header>
+	<main>		
+		<form id="evaluation-form">
+			<div id=nomeSobrenome>
+					<input type="text" placeholder="Nome" id="input-name">
+					<input type="text" id="input-lastname"
+					placeholder="Sobrenome">
+			</div>
+			<div>
+				<input type="email" id="input-email" placeholder="Email">
+				<label>Casa
+					<select name="casa" id="house">
+							<option value="Gitnória" id="gitnoria-house">Gitnória</option>
+							<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+							<option value="Corvinode" id="corvinode-house">Corvinode</option>
+							<option value="Pytherina" id="pytherina-house">Pytherina</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label id="label-family">Qual sua família?
+					<br>
+					<input type="radio" value="Frontend">Familia Frontend</input>
+					<input type="radio" value="Backend">Familia Backend</input>
+					<input type="radio" value="FullStack">Familia FullStack</input>
+				</label>
+			</div>
+			<div>
+				<label>Qual conteúdo você está com mais vontade de aprender?
+					<br>
+					<input type="checkbox">
+				</label>
+				</div>
+					<label class="textarea" >
+							Deixe seu comentário:
+							<textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+					</label>
+					<label for="" id="label-infos">
+						Você concorda com o uso das informações acima?
+						<input type="checkbox" name="checkbox" id="agreement">               
+					</label>
+					<button type="submit" id="submit-btn" disabled>Enviar</button>					
+				</div>
+		</form>
+			<div>
+					<img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+			Direitos reservados à Trybewarts©
+	</footer>
 <script src='script.js'></script>
 </body>
 </html>
