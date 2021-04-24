@@ -28,7 +28,7 @@ main {
 
 .trybewarts-login {
   display: flex;
-  flex-grow: 0;
+  margin-left: auto;
 }
 
 #trybewarts-header-title {
@@ -45,4 +45,9 @@ main {
 #trybewarts-forms-logo {
   margin: auto;
   height: 500px;
+}
+
+.name-lastname , #input-email {
+  display: flex;
+  width: 340px;
 }

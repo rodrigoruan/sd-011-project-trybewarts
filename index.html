@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TrybeWarts</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
   <header class="header">
@@ -19,12 +19,22 @@
   </header>
   <main>
     <form id="evaluation-form">
-      <input id="input-name" placeholder="Nome">
-      <input id="input-lastname" placeholder="Sobrenome">
+      <div id="name-lastname">
+        <input id="input-name" placeholder="Nome">
+        <input id="input-lastname" placeholder="Sobrenome">
+      </div>
       <input id="input-email" placeholder="Email">
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </main>
+  <section>
+    <select id="house">
+      <option id="Gitnória" value="gitnoria-house"></option>
+      <option id="Reactpuff" value="reactpuff-house"></option>
+      <option id="Corvinode" value="corvinode-house"></option>
+      <option id="Pytherina" value="pytherina-house"></option>
+    </select>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
