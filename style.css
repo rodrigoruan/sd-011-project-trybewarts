@@ -2,6 +2,15 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -21,11 +30,6 @@ body {
 #trybewarts-header-title {
   color: white;
   font-family: Zen Dots, cursive;
-}
-
-main {
-  display: flex;
-  background-color: cornsilk;
 }
 
 #evaluation-form {
