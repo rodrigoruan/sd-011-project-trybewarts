@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Trybewarts</title>
 </head>
+
 <header class="header">
   <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
   <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -16,15 +17,20 @@
       <button id="login-button">Logar</button>
   </form>
 </header>
+
 <body>
+
   <main>
     <form action="" id="evaluation-form">
+     
       <div class="align-form">
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
+      
       <div class="align-form">
         <input id="input-email" type="text" placeholder="Email">
+       
         <label >Casa
           <select name="trybewarts-houses" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -34,8 +40,24 @@
           </select>
         </label>
       </div>
+      
+      <hr>
+
+      <label id="label-family">Qual sua família?</label>
+      <label>
+        <input name="family" type="radio" value="Frontend">
+        Família Frontend
+      </label>
+      <label>
+        <input name="family" type="radio" value="Backend">
+        Família Backend
+      </label>
+      <label>
+        <input name="family" type="radio" value="FullStack">
+        Família FullStack
+      </label>
     </form>
-    <img id="trybewarts-forms-logo" height="600px" src="images/trybewarts-colored.svg" alt="logo trybewarts">
+    <img id="trybewarts-forms-logo" height="500px" src="images/trybewarts-colored.svg" alt="logo trybewarts">
   </main>
 
   <script src="script.js"></script>

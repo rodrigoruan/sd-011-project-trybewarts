@@ -10,6 +10,11 @@
   align-items: center;
 }
 
+.header h1 {
+  font-size: 4em;
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
 }
@@ -30,4 +35,9 @@ main {
 
 .align-form input {
   width: 40%;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
 }
