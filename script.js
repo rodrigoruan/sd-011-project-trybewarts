@@ -9,3 +9,18 @@ buttonLogin.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+
+  const boxAgreement = document.getElementById('agreement');
+  const btnSend = document.getElementById('submit-btn')
+  
+  function SendButton() {
+    boxAgreement.addEventListener('click', () => {
+      if(btnSend.disabled) {
+        btnSend.disabled = false;
+      } else {
+        btnSend.disabled = true;
+      }
+    });
+  }
+  SendButton();
