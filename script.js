@@ -11,7 +11,7 @@ botao.addEventListener('click', () => {
   }
 });
 
-let checked = document.getElementById('agreement');
+const checked = document.getElementById('agreement');
 const enviar = document.getElementById('submit-btn');
 enviar.disabled = true;
 

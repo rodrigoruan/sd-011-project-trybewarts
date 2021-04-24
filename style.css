@@ -67,7 +67,7 @@ body main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  background-color: red;
+  background-color: rgb(110, 126, 123);
   flex-direction: column;
 }
 
