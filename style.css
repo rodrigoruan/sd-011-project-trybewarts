@@ -115,9 +115,5 @@ footer {
 
 #label-rate {
   display: flex;
-}
-
-.family-ask .control {
-  display: flex;
-  flex: column wrap;
+  flex-direction: column;
 }
