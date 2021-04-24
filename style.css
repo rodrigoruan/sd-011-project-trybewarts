@@ -58,4 +58,28 @@ main section img {
   body {
     margin: 0;
   }
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main section img {
+    height: 300px;
+    
+  }
+  .header  {    
+    justify-content: center;
+  }
+
+  .trybewarts-login {
+    display: none;
+  }
+
+  .trybewarts-header-logo{
+   height: 50px;
+  }
+
+  #trybewarts-logo {
+    height: max-content;
+  }
 }
