@@ -18,10 +18,10 @@ function checkLogin() {
 // Botão desabilitado: https://stackoverflow.com/questions/46917270/javascript-disable-button-until-all-fields-are-filled.
 function checkAgreement(event) {
   if (event.target.classList.contains('on')) {
-    event.target.classList.remove('on')
+    event.target.classList.remove('on');
     buttonSubmit.disabled = true;
   } else {
-    event.target.classList.add('on')
+    event.target.classList.add('on');
     buttonSubmit.disabled = false;
   }
 }
