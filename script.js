@@ -3,7 +3,7 @@ const loginButton = document.getElementById('login-button');
 // get agreement checkbox
 let agreementBox = document.getElementById('agreement');
 // get send form button
-let sendFormBtn = document.getElementById('bubmit-btn');
+let sendFormBtn = document.getElementById('submit-btn');
 
 //// Login Function
 loginButton.addEventListener('click', () => {
