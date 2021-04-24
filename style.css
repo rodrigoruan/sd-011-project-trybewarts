@@ -18,14 +18,12 @@
 
 .trybewarts-header-logo {
   display: flex;
-  align-items: flex-start;
   width: 5%;
   padding: 10px 0;
 }
 
 .trybewarts-login {
   display: flex;
-  align-items: flex-end;
 }
 
 .trybewarts-login input {
