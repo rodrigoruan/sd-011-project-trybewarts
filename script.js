@@ -47,7 +47,21 @@ function enableSubmit() {
   });
 }
 
+// contar caracteres
+function countCaracteres() {
+  const textArea = document.getElementById('textarea'); 
+  const getCounterElement = document.getElementById('counter');
+  
+  getCounterElement.innerText = 500;
+  textArea.addEventListener('keyup', () => {
+    
+    getCounterElement.innerText = (500 - textArea.value.length);
+  })
+}
+
+
 window.onload = function start() {
   validateAccess();
   enableSubmit();
+  countCaracteres();
 };
