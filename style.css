@@ -47,7 +47,17 @@ main {
   height: 500px;
 }
 
-.name-lastname , #input-email {
+#name-lastname {
   display: flex;
-  width: 340px;
+  flex-direction: column;
+  width: 100%;
+}
+
+#house , #input-email , #input-name , #input-lastname {
+  width: 50%;
+}
+
+#div-name , #div-house {
+  display: flex;
+  flex-direction: row;
 }
