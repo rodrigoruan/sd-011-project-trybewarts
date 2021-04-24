@@ -18,19 +18,34 @@
       </form>
   </header>
   <main>
-    <form id="evaluation-form">      
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
+    <form id="evaluation-form">
+      <div class="namesLogin">      
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div class="houseNames">
       <input type="email" id="input-email" placeholder="Email">
+      <select id="house">
+        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+      </select>
+      </div>
+      <label class="label-family"> Qual sua família?
+        <label for="male">
+        <input type="radio" id="frontendRadio" name="family" value="Frontend">
+        Frontend</label>
+        <label for="female">
+        <input type="radio" id="backendRadio" name="family" value="Backend">
+        Backend</label>
+        <label for="other">
+        <input type="radio" id="fullstackRadio" name="family" value="FullStack">
+        FullStack</label>
+      </label>  
     </form>
     <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
-    <select id="house">
-      <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-      <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-      <option value="Corvinode" id="corvinode-house">Corvinode</option>
-      <option value="Pytherina" id="pytherina-house">Pytherina</option>
-    </select>
-  </main>
+  </main> 
 
   <script src="script.js"></script>  
 </body>
