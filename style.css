@@ -63,6 +63,11 @@
   font-size: 16px;
 }
 
+.caixa-avaliacao-radio {
+  display: flex;
+  flex-direction: row;
+}
+
 .caixa-comentario {
   display: flex;
   flex-direction: column;
