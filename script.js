@@ -10,3 +10,16 @@ loginButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+/** Habilita botão de enviar ao clicar na checkbox */
+document.querySelector('#submit-btn').disabled = true;
+const agreeCheck = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+agreeCheck.addEventListener('change', () => {
+  if (agreeCheck.checked === false) {
+    submitBtn.disabled = true;
+  } else {
+    submitBtn.disabled = false;
+  }
+});
