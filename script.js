@@ -22,14 +22,13 @@ textArea.addEventListener('keyup', () => {
 const actBtn = document.getElementById('submit-btn');
 const checkCheck = document.querySelector('#agreement');
 
-function checkBtn(){
-
-  if(checkCheck.checked){
+function checkBtn() {
+  if (checkCheck.checked) {
     actBtn.classList.remove('inactive');
-    actBtn.disabled = false
+    actBtn.disabled = false;
   } else {
     actBtn.classList.add('inactive');
-    actBtn.disabled = true
+    actBtn.disabled = true;
   }
 }
 
