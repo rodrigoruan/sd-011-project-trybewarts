@@ -99,7 +99,6 @@ hr {
   width: 675px;
   min-width: 675px;
   max-width: 100%;
-  height: 100vh;
 }
 
 .form-section {
@@ -107,7 +106,7 @@ hr {
   margin: 20px 0;
 }
 
-#form-section-1 , #form-section-3 {
+#form-section-1 {
   flex-direction: column;
 }
 
@@ -165,6 +164,10 @@ hr {
 
 #label-content {
   flex-basis: 100%;
+}
+
+* + .form-check-container {
+  margin-left: 10px;
 }
 
 .content-checkbox {
