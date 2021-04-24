@@ -24,11 +24,11 @@ main {
   align-items: center;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.checkbox-container {
   display: flex;
 }
 
-.checkbox-container {
+#trybewarts-forms-logo {
+  height: 500px;
   display: flex;
 }
