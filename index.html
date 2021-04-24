@@ -14,7 +14,7 @@
     <form class="trybewarts-login" action="">
       <input id="login" placeholder="Login" type="email">
       <input id="password" placeholder="Senha" type="password">
-      <button id="send-form">Entrar</button>
+      <button id="login-button">Entrar</button>
     </form>
   </header>
   <main>  
@@ -62,12 +62,12 @@
       <!-- Checkbox -->
       <div id="check-boxes">
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <label for=""><input value="HoFs" type="text"></label>
-        <label for=""><input value="Jest" type="text"></label>
-        <label for=""><input value="Promises" type="text"></label>
-        <label for=""><input value="React" type="text"></label>
-        <label for=""><input value="SQL" type="text"></label>
-        <label for=""><input value="Python" type="text"></label>
+        <label for=""><input value="HoFs" type="checkbox">HoFs</label>
+        <label for=""><input value="Jest" type="checkbox">Jest</label>
+        <label for=""><input value="Promises" type="checkbox">Promises</label>
+        <label for=""><input value="React" type="checkbox">React</label>
+        <label for=""><input value="SQL" type="checkbox">SQL</label>
+        <label for=""><input value="Python" type="checkbox">Python</label>
       </div>
       <!-- NPS -->
       <div id="nps-box">
@@ -85,6 +85,10 @@
       <!-- Text Area -->
       <label for="">Deixe seu comentário:</label>
       <textarea name="" placeholder="" id="" maxlength="500" cols="30" rows="10"></textarea>
+      <!-- Agreement -->
+      <label for="" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="" id="agreement"></label>
+      <!-- Send Button -->
+      <button id="bubmit-btn" disabled>Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
