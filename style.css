@@ -1,6 +1,7 @@
 /* Zerar margens */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Estilização - Requisito 1 e 2 */
@@ -18,13 +19,13 @@
 
 /* Estilização - Requisito 2 */
 .trybewarts-header-logo {
-  width: 100px;
+  width: 60px;
 }
 
 /* Estilização - Requisito 5 */
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Estilização - Requisito 5 e 6 */
@@ -35,8 +36,9 @@ main {
 }
 
 /* Estilização - Requisito 7 */
-.trybewarts-forms-logo {
+#trybewarts-forms-logo {
   height: 500px;
+  display: flex;
 }
 
 #family {
@@ -47,4 +49,18 @@ main {
 #content {
   display: flex;
   flex-direction: column;
+}
+
+#selectors {
+  display: flex;
+}
+
+#areatext {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainbody {
+  display: flex;
+  justify-content: center;
 }
