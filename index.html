@@ -17,7 +17,7 @@
     <form action="" method="GET" class="trybewarts-login">
       <input type="text" name="login" placeholder="Login" id="email" />
       <input type="text" name="senha" placeholder="Senha" id="password" />
-      <button  id="button">Entrar</button>
+      <button id="button">Entrar</button>
     </form>
   </header>
   <main>
@@ -40,29 +40,46 @@
         <hr>
         <!-- Eu criei input do tipo radio para poder escolher qual das três familias vou pertencer -->
         <section>
-          <!-- Deixei a pergunta em um paragrafo por escolha mesmo -->
-          <p id='label-family' >Qual sua família?</p>
           <div>
-            <!-- decidi deixar cada input dentro de uma div para que poça ficar uma de baaixo da outra sem ter que usar css -->
+            <!-- Deixei a pergunta em uma label por escolha mesmo -->
+            <label id='label-family'>Qual sua família?</label>
             <div>
-              <input type="radio" name="family" id='Frontend' value="Frontend">
-              <label for="Frontend">Família Frontend</label>
+              <!-- decidi deixar cada input dentro de uma div para que poça ficar uma de baaixo da outra sem ter que usar css -->
+              <div>
+                <input type="radio" name="family" id='Frontend' value="Frontend">
+                <label for="Frontend">Família Frontend</label>
+              </div>
+              <div>
+                <input type="radio" name="family" id='Backend' value="Backend">
+                <label for="Backend">Família Backend</label>
+              </div>
+              <div>
+                <input type="radio" name="family" id='FullStack' value="FullStack">
+                <label for="FullStack">Família FullStack</label>
+              </div>
             </div>
+          </div>
+          <div>
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <div>
-              <input type="radio" name="family" id='Backend' value="Backend">
-              <label for="Backend">Família Backend</label>
-            </div>
-            <div>
-              <input type="radio" name="family" id='FullStack' value="FullStack">
-              <label for="FullStack">Família FullStack</label>
+              <div>
+                <label value='HoFs'><input type="checkbox"> HoFs</label>
+                <label value='Jest'><input type="checkbox" >Jest</label>
+                <label value='Promises'><input type="checkbox" >Promises</label>
+              </div>
+                <div>
+                <label value='React'><input type="checkbox" >React</label>
+                <label value='SQL'><input type="checkbox" >SQL</label>
+                <label value='Python'><input type="checkbox" >Python</label>
+              </div>
             </div>
           </div>
         </section>
-
       </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts-logo" id='trybewarts-forms-logo'>
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
