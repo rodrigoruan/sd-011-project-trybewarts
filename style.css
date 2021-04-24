@@ -17,6 +17,16 @@ main {
   max-height: 100%;
 }
 
+#preferences {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
