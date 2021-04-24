@@ -59,3 +59,7 @@ main {
   height: 100px;
   width: 100%;
 }
+
+.agreement {
+  display: flex;
+}
