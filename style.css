@@ -4,6 +4,11 @@
   justify-content: space-between;
 }
 
+.trybewarts-login {
+  display: flex;
+  align-content: center;
+}
+
 .trybewarts-header-logo {
   display: flex;
 }
