@@ -49,3 +49,7 @@ main {
   flex-direction: row;
 }
 
+.comentario {
+  display: flex;
+  flex-direction: column;
+}
