@@ -35,7 +35,11 @@ main {
   display: flex;
 }
 
-.label-family {
+.familyChoice {
   display: flex;
   flex-direction: column;
+}
+
+.wantedContent {
+  display: flex;
 }

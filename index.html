@@ -32,17 +32,49 @@
         <option value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
       </div>
-      <label class="label-family"> Qual sua família?
-        <label for="male">
+      <div class="familyChoice">
+        <label id="label-family"> Qual sua família?</label>
+        <label for="Frontend">
         <input type="radio" id="frontendRadio" name="family" value="Frontend">
         Frontend</label>
-        <label for="female">
+        <label for="Backend">
         <input type="radio" id="backendRadio" name="family" value="Backend">
         Backend</label>
-        <label for="other">
+        <label for="FullStack">
         <input type="radio" id="fullstackRadio" name="family" value="FullStack">
         FullStack</label>
-      </label>  
+      </div>
+      <label id="label-content"> Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="wantedContent">
+        <label for="HoFs">
+          <input type="checkbox" value="HoFs" class="subject">
+          HoFs
+        </label>
+        <label for="Jest">
+          <input type="checkbox" value="Jest" class="subject">
+          Jest
+        </label>
+        <label for="Promises">
+          <input type="checkbox" value="Promises" class="subject">
+          Promises
+        </label>
+        <label for="React">
+          <input type="checkbox" value="React" class="subject">
+          React
+        </label>
+        <label for="SQL">
+          <input type="checkbox" value="SQL" class="subject">
+          SQL
+        </label>
+        <label for="Python">
+          <input type="checkbox" value="Python" class="subject">
+          Python
+        </label>
+      </div>
+      <div class="evaluateField">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <!-- radios sendo criados por JS -->
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Logo da Escola Trybewarts" id="trybewarts-forms-logo">
   </main> 
