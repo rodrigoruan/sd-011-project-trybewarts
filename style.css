@@ -34,6 +34,6 @@ main {
   flex-direction: column;
 }
 
-.rate {
+.rate , .agree {
   display: flex;
 }
