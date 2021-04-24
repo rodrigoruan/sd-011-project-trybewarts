@@ -65,7 +65,7 @@ main section img {
   }
 
   .trybewarts-header-logo {
-    width: 7%;
+    width: 10%;
     margin: 5px 15px;
   }
 
@@ -73,20 +73,11 @@ main section img {
     display: none;
   }
 
-  #trybewarts-logo {
-    display: flex;
-    padding: 0 20px;
-    justify-content: center;
-    width: 100%;
-    border-top: 2px solid grey;
-  }
-
-  #trybewarts-forms-logo {
-    width: 100%;
-  }
-
-  #evaluation-form {
-    width: 100%;
+  input {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(50, 167, 145);
   }
 
   main {
@@ -95,6 +86,11 @@ main section img {
     padding: 0 20px;
     width: 100%;
     align-items: center;
+  }
+
+  #evaluation-form {
+    width: 100%;
+    border-bottom: 2px solid grey;
   }
 
   #evaluation-form-section {
@@ -111,15 +107,31 @@ main section img {
     border-bottom: 2px solid grey;
   }
 
+  #div-name-email-family input {
+    flex-basis: 49%;
+    flex-wrap: nowrap;
+  }
+
   #div-select {
     display: flex;
-    width: max-content;
+    margin: 2px 0;
   }
 
   #label-house {
     display: flex;
     margin-right: 5px;
     align-items: center;
+  }
+
+  #house {
+    display: flex;
+    align-self: center;
+    height: 27px;
+    background-color: white;
+    padding: 1px;
+    border: 1px solid rgb(50, 167, 145);
+    border-radius: 5px;
+    width: 154px;
   }
 
   #label-family-and-content {
@@ -130,18 +142,6 @@ main section img {
     margin-bottom: 10px;
     border-bottom: 2px solid grey;
     line-height: 25px;
-  }
-
-  input {
-    padding: 5px;
-    margin: 2px;
-    border-radius: 5px;
-    border: 1px solid rgb(50, 167, 145);
-  }
-
-  #div-name-email-family input {
-    flex-basis: 49%;
-    flex-wrap: nowrap;
   }
 
   #div-trybewarts-rate {
@@ -163,6 +163,12 @@ main section img {
     border-radius: 5px;
   }
 
+  #div-label-infos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+
   #submit-btn {
     margin: 10px auto;
     padding: 5px;
@@ -173,18 +179,15 @@ main section img {
     width: 20%;
   }
 
-  span {
+  #trybewarts-logo {
     display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    width: 100%;
   }
 
-  select {
-    display: flex;
-    align-self: center;
-    height: 27px;
-    background-color: white;
-    padding: 1px;
-    border: 1px solid rgb(50, 167, 145);
-    border-radius: 5px;
+  #trybewarts-forms-logo {
+    width: 100%;
   }
 
   footer {
