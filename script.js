@@ -17,11 +17,28 @@ btnLogin.addEventListener('click', LoginAlert);
 btnSub.disabled = true;
 
 function validateButton() {
-  if (btnCheck.checked === true) {
-    btnSub.disabled = false;
-  } else if (btnCheck.checked === false) {
+  if (btnCheck.checked === false) {
     btnSub.disabled = true;
+  } else {
+    btnSub.disabled = false;
   }
 }
 
 btnCheck.addEventListener('click', validateButton);
+
+// tentando desenrolar o requisito 21!
+// const forms = document.getElementById('evaluation-form');
+// const nameInput = document.getElementById('input-name');
+// const lastNameInput = document.getElementById('input-lastname');
+// const emailInput = document.getElementById('input-email');
+// const houseInput = document.getElementById('house');
+// const familyInput = document.getElementsByClassName('family');
+// const subjectInput = document.getElementsByClassName('subject');
+// const radioInput = document.getElementsByClassName('radioRate');
+// function createParagraphs(array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     const p = document.createElement('p');
+//     p.innerText = array[i];
+//     forms.appendChild(p);
+//   }
+// }
