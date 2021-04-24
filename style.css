@@ -97,10 +97,6 @@ main ul {
   align-items: center;
 }
 
-#left-container {
-  display: flex;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
 }

@@ -11,7 +11,7 @@ function CheckLogin() {
     if (login === validLogin && password === validPw) {
       alert('Olá, Tryber!');
     } else {
-      alert('Login ou senha inválidos');
+      alert('Login ou senha inválidos.');
     }
   });
 }
