@@ -20,11 +20,13 @@
 .trybewarts-header-logo {
   width: 5%;
   padding: 10px 0;
+  float: left;
 }
 
 .trybewarts-login {
   display: flex;
   justify-content: flex-end;
+  float: right;
 }
 
 .form-label {
