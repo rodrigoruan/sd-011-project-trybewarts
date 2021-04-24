@@ -23,7 +23,6 @@ formCheckBox.addEventListener('click', () => {
   }
 });
 
-
 const textArea = document.getElementById('textarea');
 const textCounter = document.getElementById('counter');
 
