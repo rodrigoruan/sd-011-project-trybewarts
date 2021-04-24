@@ -14,7 +14,7 @@ function validateLoginPassword() {
 btnLogin.addEventListener('click', validateLoginPassword);
 
 const textarea = document.querySelector('#textarea');
-textarea.addEventListener('keypress', function (event) {
+textarea.addEventListener('keypress', (event) => {
   const maxChar = 500;
   const charLength = textarea.value.length;
   console.log(charLength);
