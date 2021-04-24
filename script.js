@@ -12,6 +12,10 @@ loginButton.addEventListener('click', () => {
 });
 
 /** Habilita botão de enviar ao clicar na checkbox */
+/** Para realizar este requisito foi consultada a Documentação W3Schools acerca de como implementar
+ * argumento "disabled" utilizando DOM.
+ * Source: https://www.w3schools.com/jsref/prop_select_disabled.asp
+ */
 document.querySelector('#submit-btn').disabled = true;
 const agreeCheck = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
