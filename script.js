@@ -13,13 +13,23 @@ loginButton.addEventListener('click', () => {
   }
 });
 
+const agreementButton = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
-submitButton.disabled = true;
 
-submitButton.addEventListener('click', () => {
-  const checkBox = document.getElementById('agreement');
-  const checkBoxValue = checkBox.checked;  
-  
-  console.log(checkBoxValue);
-  alert("oi");
-})
+function disabledButton() {
+  submitButton.disabled = true;
+}
+
+disabledButton();
+
+agreementButton.addEventListener('click', () => {
+  const agreementStatus = agreementButton.checked;
+
+  if (agreementStatus === true) {
+    submitButton.disabled = false;
+  }
+
+  if (agreementStatus === false) {
+    disabledButton();
+  }
+});
