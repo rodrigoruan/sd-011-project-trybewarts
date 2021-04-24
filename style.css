@@ -100,10 +100,6 @@ footer {
   flex-basis: 33%;
 }
 
-#container-form {
-  display: flex;
-}
-
 main img {
   height: 500px;
 }
