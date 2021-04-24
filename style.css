@@ -4,9 +4,11 @@
   margin: 0;
 }
 
-/* Estilização - Requisito 1 */
+/* Estilização - Requisito 1 e 2*/
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
