@@ -41,10 +41,13 @@ const textHouse = document.createElement('p');
 const textFamilia = document.createElement('p');
 const textMateriasEscolhidas = document.createElement('p');
 const textRate = document.createElement('p');
-const textObservacao = document.createElement('p');
+const textObs = document.createElement('p');
 const materiasEscolhidas = [];
+const newForm = document.createElement('form');
+const main = document.getElementById('principal');
+
 buttonEnviar.addEventListener('click', () => {
-  const m = document.getElementById('principal'); const n = document.getElementById('input-name');
+  const n = document.getElementById('input-name');
   const form = document.getElementById('evaluation-form');
   const sobrenome = document.getElementById('input-lastname');
   const e = document.getElementById('input-email'); const house = document.getElementById('house');
@@ -57,9 +60,9 @@ buttonEnviar.addEventListener('click', () => {
   textEmail.innerText = `Email: ${e.value}`; textHouse.innerText = `Casa: ${house.value}`;
   textFamilia.innerText = `Família: ${familia}`; textRate.innerText = `Avaliação: ${nota}`;
   textMateriasEscolhidas.innerText = `Matérias: ${materiasEscolhidas}`;
-  textObservacao.innerText = `Observações: ${observacao.value}`;
-  form.remove(); m.appendChild(textNome); m.appendChild(textEmail);
-  m.appendChild(textHouse); m.appendChild(textFamilia);
-  m.appendChild(textMateriasEscolhidas); m.appendChild(textRate);
-  m.appendChild(textObservacao);
+  textObs.innerText = `Observações: ${observacao.value}`;
+  form.remove(); newForm.id = 'evaluation-form'; main.appendChild(newForm);
+  newForm.appendChild(textNome); newForm.appendChild(textEmail); newForm.appendChild(textObs);
+  newForm.appendChild(textHouse); newForm.appendChild(textFamilia);
+  newForm.appendChild(textMateriasEscolhidas); newForm.appendChild(textRate);
 });
