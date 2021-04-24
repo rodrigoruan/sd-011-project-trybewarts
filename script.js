@@ -1,6 +1,8 @@
 const formLogin = document.querySelector('.trybewarts-login');
 const inputEmail = document.querySelector('#login');
 const inputSenha = document.querySelector('#senha');
+const termos = document.querySelector('#agreement');
+const botaoEnvia = document.querySelector('#submit-btn');
 
 function verificaLogin(event) {
   event.preventDefault();
@@ -16,4 +18,13 @@ function verificaLogin(event) {
   }
 }
 
+function verificaTermos() {
+  if (termos.checked) {
+    botaoEnvia.disabled = false;
+  } else { botaoEnvia.disabled = true;}
+}
+
+verificaTermos();
+
+termos.addEventListener('click', verificaTermos);
 formLogin.addEventListener('submit', verificaLogin);
