@@ -38,8 +38,47 @@ function addEventCount() {
   textarea.addEventListener('keyup', countChars);
 }
 
+function replaceForm() {
+  const main = document.getElementById('main');
+  const form = document.getElementById('evaluation-form');
+  const img = document.getElementById('trybewarts-forms-logo');
+  const inputName = document.getElementById('input-name').value;
+  const inputLastName = document.getElementById('input-lastname').value;
+  const inputEmail = document.getElementById('input-email').value;
+  const inputHouse = document.getElementById('house').value;
+  const radioFamily = document.querySelector('input[name="family"]:checked').value;
+  const checkBoxSubject = document.querySelectorAll('input.subject:checked');
+
+  let getItensCheckBox = [];
+  for( let i = 0; i < checkBoxSubject.length; i += 1) {
+    if (checkBoxSubject[i].checked) {
+      getItensCheckBox.push(checkBoxSubject[i].value);
+    }
+  }
+
+  form.parentNode.removeChild(form);
+
+ // const creatForm = document.createElement('div');
+  const creatParagraph  = document.createElement('p');
+
+  // creatForm.id = 'evaluation-form';
+
+  creatParagraph.innerHTML = `Nome: ${inputHouse} ${radioFamily}`; 
+  // inputLastName.value = `${inputLastName}`;
+
+  main.appendChild(creatParagraph);
+  //  main.insertBefore(creatForm, img);
+  //  creatForm.appendChild(creatDiv);
+}
+
+function addEventBtnSubmit() {
+  const submitBtn = document.getElementById('submit-btn');
+  submitBtn.addEventListener('click', replaceForm);
+}
+
 window.onload = function load() {
   addEventCheckLogin();
   addEventDisableButton();
   addEventCount();
+  addEventBtnSubmit();
 };
