@@ -2,7 +2,6 @@ const buttonLogin = document.getElementById('button-login');
 const inputName = document.getElementById('input-login');
 const inputPassword = document.getElementById('input-password');
 const checkboxAgreement = document.getElementById('agreement');
-const buttonSubmit = document.getElementById('submit-btn');
 const userName = 'tryber@teste.com';
 const password = '123456';
 // let counter = document.getElementById('counter');
