@@ -94,13 +94,9 @@ form h2 {
 #label-content {
   display: flex;
   width: 60%;
-  flex-wrap: wrap
-}
-
-.subject {
-  ;
+  flex-wrap: wrap;
 }
 
 #subjects-conteiner {
-  display: flex;  
+  display: flex;
 }
