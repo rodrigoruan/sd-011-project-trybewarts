@@ -13,6 +13,8 @@ header {
 
 #trybewarts-header-title {
   display: flex;
+  align-self: center;
+  justify-content: center;
   justify-items: center;
   font-size: 35px;
   color: white;
