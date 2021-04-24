@@ -3,7 +3,7 @@
 const buttonLogin = document.getElementById('button-login');
 const loginInput = document.getElementById('login');
 const passwordInput = document.getElementById('password');
-// Function
+// Functions
 
 function login() {
   if (loginInput.value === 'tryber@teste.com' && passwordInput.value === '123456') {
