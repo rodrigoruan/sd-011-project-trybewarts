@@ -64,7 +64,7 @@ main {
   flex-direction: row;
 }
 
-#label-radio , #label-content {
+#label-radio , #label-content , #label-rate {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
