@@ -134,5 +134,8 @@ main {
   justify-content: center;
   background-color: rgb(53, 52, 52);
   color: white;
-  margin: 68px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
