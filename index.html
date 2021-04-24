@@ -39,7 +39,7 @@
         </div>
         <div class="email-select">
           <input type="email" name="" placeholder="Email" id="input-email" />
-          <select name="houses-trybewarts" id="house">
+          <select name="houses-trybewarts" class="subject" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -54,6 +54,7 @@
                 <input
                   type="radio"
                   name="family"
+                  class="subject"
                   value="Frontend"
                   id="family-frontend"
                 />
@@ -63,6 +64,7 @@
                 <input
                   type="radio"
                   name="family"
+                  class="subject"
                   value="Backend"
                   id="family-backend"
                 />
@@ -72,6 +74,7 @@
                 <input
                   type="radio"
                   name="family"
+                  class="subject"
                   value="FullStack"
                   id="family-fullstack"
                 />
@@ -84,33 +87,33 @@
               </p>
               <div class="labels">
                 <label>
-                  <input type="checkbox" name="" value="HoFs"/>
+                  <input type="checkbox" class="subject" name="Matérias" value="HoFs"/>
                   HoFs
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Jest" />
+                  <input type="checkbox" class="subject" name="Matérias" value="Jest" />
                   Jest
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Promises"/>
+                  <input type="checkbox" class="subject" name="Matérias" value="Promises"/>
                   Promises
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="React" />
+                  <input type="checkbox" class="subject" name="Matérias" value="React" />
                   React
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="SQL" />
+                  <input type="checkbox" class="subject" name="Matérias" value="SQL" />
                   SQL
                 </label>
                 <label>
-                  <input type="checkbox" name="" value="Python" />
+                  <input type="checkbox" class="subject" name="Matérias" value="Python" />
                   Python
                 </label>
               </div>
             </div>
           </div>
-          
+
           <div class="evaluator">
             <p id="label-rate">Como você avalia a Trybewarts?</p>
             <label class="label-trybewarts">
@@ -122,35 +125,35 @@
               2
             </label>
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="3" id="evaluator-rate3"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="3" id="evaluator-rate3"/>
               3
             </label>   
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="4" id="evaluator-rate4"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="4" id="evaluator-rate4"/>
               4
             </label>  
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="5" id="evaluator-rate5"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="5" id="evaluator-rate5"/>
               5
             </label>  
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="6" id="evaluator-rate6"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="6" id="evaluator-rate6"/>
               6
             </label>   
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="7" id="evaluator-rate7"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="7" id="evaluator-rate7"/>
               7
             </label>   
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="8" id="evaluator-rate8"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="8" id="evaluator-rate8"/>
               8
             </label>   
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="9" id="evaluator-rate9"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="9" id="evaluator-rate9"/>
               9
             </label>   
             <label class="label-trybewarts">
-              <input class="input-label-trybewarts" type="radio" name="rate" value="10" id="evaluator-rate10"/>
+              <input class="input-label-trybewarts subject" type="radio" name="rate" value="10" id="evaluator-rate10"/>
               10
             </label>
             
@@ -158,13 +161,14 @@
           <hr>
         </div>
         <label for="textArea" class="textarea">Deixe seu comentário:</label>
-        <textarea name="textArea-form" id="textarea" cols="30" maxlength="500" rows="10"></textarea>
+        <textarea name="Observações" id="textarea" cols="30" maxlength="500" rows="10"></textarea>
         <div id="counter">500</div>
         <div>
           <label id="label-infos" >
             Você concorda com o uso das informações acima?
             <input type="checkbox" name="agreement" id="agreement" required>
           </label>
+          <div class="subject"></div>
         </div>
         <button id="submit-btn" type="submit" disabled>Enviar</button>
       </form>

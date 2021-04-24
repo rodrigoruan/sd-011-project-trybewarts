@@ -29,3 +29,22 @@ counter.innerText = textArea.maxLength;
 textArea.addEventListener('keyup', () => {
   counter.innerText = textArea.maxLength - textArea.value.length;
 });
+
+const main = document.querySelector('.trybewarts-main');
+const forms = document.getElementById('evaluation-form');
+
+const buttom = document.querySelector('#trybewarts-login-submit');
+const subject = document.querySelector('.subject');
+
+function setInputDiv () {
+  let formData = new FormData(forms);
+  
+  for (let pair of Object.entries(formData)) {
+    const div = document.createElement('div');
+    div.className = 'subject';
+    div.innerHTML = `<span clss="left">${pair[0]}: ${pair[1]}</span>`;
+    subject.appendChild(div);
+  }
+}
+
+buttom.addEventListener('click' , setInputDiv);
