@@ -39,3 +39,7 @@ main {
 .block-input {
   display: flex;
 }
+
+.label-content {
+  flex-direction: column;
+}
