@@ -3,11 +3,11 @@ const loginButton = document.getElementById('login-button');
 // Dentro da funçao que é executada ao clicar no botão, deve-se verificar se o email.
 // que esta no input de email é igual a tryber@teste.com e senha igual a 123456.
 loginButton.addEventListener('click', () => {
-  if (document.getElementById('login').value === 'tryber@teste.com'
-    || document.getElementById('senha').value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
+  if (document.getElementById('login').value !== 'tryber@teste.com'
+    && document.getElementById('senha').value !== '123456') {
     alert('Login ou senha inválidos.');
+  } else {
+    alert('Olá, Tryber!');
   }
 });
 
@@ -21,4 +21,13 @@ agreementCheck.addEventListener('click', () => {
   }
 });
 
-//Cria contador de caracteres
+// contador
+const counter = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+let tamanho = 500;
+textArea.addEventListener('keyup', () => {
+  // diminuir do counter o tamanho atual do textos
+  console.log(textArea.value);
+  tamanho = 500 - (textArea.value.length);
+  counter.innerHTML = tamanho;
+});
