@@ -4,8 +4,8 @@ const inputPassword = document.getElementById('input-password');
 const checkboxAgreement = document.getElementById('agreement');
 const userName = 'tryber@teste.com';
 const password = '123456';
-// let counter = document.getElementById('counter');
-// const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
 const formElement = document.getElementById('evaluation-input');
 const formNameInput = document.getElementById('input-name');
 const formLastNameInput = document.getElementById('input-lastname');
@@ -27,48 +27,28 @@ function checkLogin() {
 function checkAgreement(event) {
   if (event.target.classList.contains('on')) {
     event.target.classList.remove('on');
-    buttonSubmit.disabled = true;
+    submitButton.disabled = true;
   } else {
     event.target.classList.add('on');
-    buttonSubmit.disabled = false;
+    submitButton.disabled = false;
   }
 }
 
-// function countChars(textarea) {
-
-//   textArea.innerHTML = 'Characters left: ' + (500 - this.value.length);
-//   eslint-disable-next-line no-undef
-//   const { length } = textarea;
-//   const charactersLeft = 500 - length;
-//   console.log(charactersLeft);
-//   counter.innerHTML = `Characters left: ${charactersLeft}`;
-//   let elemento = document.createElement('input');
-//   return ('placeholder' in elemento);
-
-//   const target = event.currentTarget;
-//   console.log(target);
-//   const maxLength = target.getAttribute('maxlength');
-//   const currentLength = target.value.length;
-
-//   if (currentLength >= maxLength) {
-//     return console.log('You have reached the maximum number of characters.');
-//   }
-
-//   console.log(`${maxLength - currentLength} chars left`);
-// }
-
-function sendForm() {
-
+// Ideia: https://stackoverflow.com/questions/14086398/count-textarea-characters
+function countChars(event) {
+  const { length } = event.target.value;
+  const charactersLeft = textArea.maxLength - length;
+  counter.innerText = charactersLeft;
 }
 
 window.onload = function opening() {
-  buttonSubmit.disabled = true;
+  counter.innerText = 500;
+  submitButton.disabled = true;
 };
 
 buttonLogin.addEventListener('click', checkLogin);
 checkboxAgreement.addEventListener('click', checkAgreement);
-buttonSubmit.addEventListener('click', sendForm);
-// textArea.addEventListener('input', countChars);
+textArea.addEventListener('keyup', countChars);
 
 function showValues() {
   const name = formNameInput.value;
