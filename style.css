@@ -56,6 +56,7 @@ header {
 
 .trybewarts-form {
   display: flex;
+  flex-direction: column;
 }
 
 .section-form {
@@ -78,7 +79,4 @@ header {
   padding: 3%;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
+
