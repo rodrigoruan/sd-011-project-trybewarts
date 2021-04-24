@@ -13,6 +13,7 @@
 
 .trybewarts-login {
   display: flex;
+  flex-direction: row;
 }
 
 main {
