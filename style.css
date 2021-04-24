@@ -13,7 +13,7 @@
 .trybewarts-login {
   align-self: center;
   border-radius: 3px;
-	display: flex;
+  display: flex;
 }
 
 #trybewarts-header-title {
@@ -48,3 +48,12 @@ div input label select {
   width: 50%;
 }
 
+footer {
+  background-color: #3c404a;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+}
