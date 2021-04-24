@@ -11,6 +11,11 @@
   background-color: rgb(50, 167, 145);
 }
 
+/* Estilização - Requisito 3 */
+.trybewarts-login {
+  display: flex;
+}
+
 /* Estilização - Requisito 2 */
 .trybewarts-header-logo {
   width: 100px;
