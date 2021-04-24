@@ -21,6 +21,6 @@ function checkAgreement() {
   } else {
     btnAgreement.setAttribute('disabled', '');
   }
-}
+} 
 
 checkboxAgreement.addEventListener('click', checkAgreement);
