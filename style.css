@@ -91,7 +91,6 @@ main {
 .coment-area {
   display: flex;
   flex-direction: column;
-  height: 200px;
 }
 
 textarea {
