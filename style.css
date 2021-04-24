@@ -16,6 +16,7 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: 0 30px;
 }
 
 .full-name {
@@ -62,4 +63,9 @@
 #subjects-container div {
   display: flex;
   margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
 }
