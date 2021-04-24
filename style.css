@@ -97,11 +97,8 @@ footer {
 
 .inline-family-section {
   display: flex;
-}
-
-.family-ask {
-  display: flex;
-  flex: column wrap;
+  align-items: baseline;
+  align-content: center;
 }
 
 .lesson-ask {
@@ -116,11 +113,6 @@ footer {
 #label-rate {
   display: flex;
   flex-direction: column;
-}
-
-.family-ask .control {
-  display: flex;
-  flex: column wrap;
 }
 
 .select {
