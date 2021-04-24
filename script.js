@@ -1,16 +1,14 @@
-// // get login input
-// let loginInput = document.getElementById('login');
-// // get password input
-// let passwordInput = document.getElementById('password');
+// // get submit button
+const sendForm = document.getElementById('send-form');
 
-function validateTryber () {
+sendForm.addEventListener('click', () => {
   // get login input
-  let loginInput = document.getElementById('login');
+  const loginInput = document.getElementById('login');
   // get password input
-  let passwordInput = document.getElementById('password');
+  const passwordInput = document.getElementById('password');
   if (loginInput.value !== 'tryber@teste.com' || passwordInput.value !== '123456') {
-    alert('Login ou senha inválidos.'); 
+    alert('Login ou senha inválidos.');
   } else {
-    alert('Olá, Tryber!')
+    alert('Olá, Tryber!');
   }
-}
+});

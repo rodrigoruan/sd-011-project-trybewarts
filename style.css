@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 .header{
     display: flex;
     background-color:  rgb(50, 167, 145);
@@ -24,7 +26,19 @@ main{
 #evaluation-form{
     width: 675px;
     display: flex;
-    /*flex-direction: column;*/
-    
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
+#house {
+     max-width: 300px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
