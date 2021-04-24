@@ -15,6 +15,10 @@ body {
   background-color: rgb(50, 167, 145);
 }
 
+main {
+  display: flex;
+}
+
 .trybewarts-header-logo {
   margin-right: auto;
   height: 50px;
@@ -30,4 +34,9 @@ body {
 
 #trybewarts-header-title {
   order: 1;
+}
+
+.evaluation-form {
+  display: flex;
+  width: 675px;
 }
