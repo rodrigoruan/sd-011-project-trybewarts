@@ -33,3 +33,8 @@ main {
 #evaluation-form #trybewarts-forms-logo {
   height: 500px;
 }
+
+#familia-container {
+  display: flex;
+  flex-direction: column;
+}
