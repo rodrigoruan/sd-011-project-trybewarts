@@ -55,7 +55,6 @@ body {
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-weight: 700;
   padding: 12px;
   margin: 5px;
 }
@@ -83,7 +82,6 @@ hr {
 
 .form-title {
   text-align: center;
-  margin: 40px 0 15px;
   font-size: 1.6em;
 }
 
@@ -91,6 +89,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px 0;
 }
 
 #evaluation-form {
@@ -119,7 +118,6 @@ hr {
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-weight: 700;
   padding: 12px;
   margin: 5px;
 }
@@ -166,10 +164,6 @@ hr {
   flex-basis: 100%;
 }
 
-* + .form-check-container {
-  margin-left: 10px;
-}
-
 .content-checkbox {
   flex-basis: 17%;
 }
@@ -183,11 +177,29 @@ hr {
   max-width: 100%;
 }
 
+* + .form-check-container {
+  margin-left: 10px;
+}
+
+#comment-box {
+  resize: none;
+}
+
+input[type="text"] , textarea {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+input::placeholder {
+  font-weight: 700;
+}
+
 .site-footer {
   display: flex;
   justify-content: center;
   background-color: rgb(75, 75, 75);
   color: white;
   font-weight: 700;
-  padding: 20px;
+  padding: 10px;
 }
