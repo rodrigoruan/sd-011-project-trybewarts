@@ -44,7 +44,7 @@ header input {
   padding: 10px 4px;
 }
 
-/* ---------------------------------------------------------------------- */
+/* -------------------------------Lima--------------------------------------- */
 body {
   display: flex;
   flex-direction: column;
@@ -83,4 +83,9 @@ form h2 {
 
 #input-email {
   width: 50%;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
 }
