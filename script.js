@@ -43,5 +43,19 @@ msgElement.addEventListener('input', (e) => {
   const maxLength = target.getAttribute('maxlength');
   const currentLength = target.value.length;
 
-  cntElement.innerHTML = `${currentLength}/${maxLength}`;
+  cntElement.innerHTML = `${maxLength - currentLength}`;
 });
+
+// const myForm = document.getElementById('evaluation-form');
+
+// myForm.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const formData = new FormData(e.target);
+//   const valueObject = {};
+//   for (const pair of formData.entries()) {
+//     console.log(pair);
+//     valueObject[pair[0]]
+//     valueObject[pair[0]] = pair[1];
+//   }
+//   console.log(valueObject);
+// });
