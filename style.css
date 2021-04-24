@@ -8,10 +8,12 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: rgb(50, 167, 145);
-  height: 40px;
+  height: 50px;
 }
 
 #trybewarts-header-title {
+  align-self: center;
+  align-content: center;
   color: white;
 }
 
@@ -48,7 +50,7 @@
 .page {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -66,26 +68,48 @@ main {
   height: 500px;
 }
 
-#duascolunas {
+.duascolunas {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.colunafamilia {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .checkboxes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 .primeiracolunacheck , .segundacolunacheck , .terceiracolunacheck {
-  display: flex;
-  flex-direction: column;
-}
-.familia , .content {
   display: flex;
   flex-direction: column;
 }
 
 .rate , .agree {
   display: flex;
+}
+
+.rate {
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(60, 64, 74);
+  height: 60px;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
