@@ -22,3 +22,12 @@ formCheckBox.addEventListener('click', () => {
     submitFormButton.disabled = true;
   }
 });
+
+
+const textArea = document.getElementById('textarea');
+const textCounter = document.getElementById('counter');
+
+textArea.addEventListener('input', () => {
+  const saveCharsNumber = textArea.value.length;
+  textCounter.innerText = 500 - saveCharsNumber;
+});
