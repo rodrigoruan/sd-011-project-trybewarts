@@ -11,4 +11,4 @@ function validateLoginPassword() {
     form1.value = '';
   }
 }
-btnLogin.addEventListener('click', validateLoginPassword)
+btnLogin.addEventListener('click', validateLoginPassword);
