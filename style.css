@@ -42,3 +42,9 @@ main{
     display: flex;
     flex-direction: column;
 } 
+
+#buttonsMoreCheckbox{
+    display: flex;
+    
+
+}
