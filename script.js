@@ -53,24 +53,30 @@ textarea.addEventListener('keyup', () => {
   counter.innerText = counterValue;
 });
 
-submit.addEventListener('click', (e) => {
-  e.preventDefault();
+const values = () => {
   const elementos = document.querySelectorAll('input.subject:checked');
   const finalValues = [];
   for (let i = 0; i < elementos.length; i += 1) {
     finalValues.push(elementos[i].value);
   }
   const contents = finalValues.map((c) => `${c},`).join(' ');
-  const arr = [
-    `Nome: ${nome.value} ${nome2.value}`, `Email: ${email.value}`,`Casa: ${casa.value}`,
+  return [
+    `Nome: ${nome.value} ${nome2.value}`,
+    `Email: ${email.value}`,
+    `Casa: ${casa.value}`,
     `Família: ${document.querySelector('input[name="family"]:checked').value}`,
-    `Matérias: ${contents}`, 
+    `Matérias: ${contents}`,
     `Avaliação: ${document.querySelector('input[name="rate"]:checked').value}`,
     `Observações: ${textarea.value}`,
   ];
+};
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const valores = values();
   for (let i = 0; i < 7; i += 1) {
     const div = document.createElement('div');
-    div.innerText = arr[i];
+    div.innerText = valores[i];
     form.appendChild(div);
   }
 });
