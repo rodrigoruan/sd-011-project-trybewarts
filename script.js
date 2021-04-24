@@ -11,3 +11,23 @@ function sendUser() {
 }
 
 loginButton.addEventListener('click', sendUser);
+
+const selectHouse = document.getElementById('house');
+function makeOptionSelect(arrayCasas, classOrId) {
+  for (let index = 0; index < arrayCasas.length; index += 1) {
+    const makeOption = document.createElement('option');
+    let newclassOrId = classOrId[index];
+    makeOption.value = arrayCasas[index];
+    makeOption.innerText = arrayCasas[index];
+    if (newclassOrId.includes('.')) {
+      newclassOrId = newclassOrId.slice(1);
+      makeOption.classList = newclassOrId;
+    } else if (newclassOrId.includes('#')) {
+      newclassOrId = newclassOrId.slice(1);
+      makeOption.id = newclassOrId;
+    }
+    selectHouse.appendChild(makeOption);
+  }
+}
+makeOptionSelect(['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'],
+  ['#gitnoria-house', '#reactpuff-house', '#corvinode-house', '#pytherina-house']);
