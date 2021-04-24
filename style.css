@@ -38,3 +38,10 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#conteudos-container {
+  background-color: brown;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+}
