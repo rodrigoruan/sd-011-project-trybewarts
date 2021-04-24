@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /Nota: 8/
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: /Haviam alguns erros pontuais no ReadMe do projeto mas a experiência de trabalhar em dupla e praticar resolução de conflitos foi boa. Plantões com Carol e Bernardo foram de grande ajuda./
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Alberto Candido e Raphael Padilha/
 
 ---
 
