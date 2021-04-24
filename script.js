@@ -39,3 +39,17 @@ function addEventListenerChecker() {
 }
 
 buttonLogin.addEventListener('click', addEventListenerChecker);
+
+// Função que verifica o status do checkbox e altera entre enable e disable o submit-btn
+const buttonStatus = document.querySelector('#submit-btn');
+const agreementStatus = document.querySelector('#agreement');
+function changeButtonStatus() {
+  console.log(agreementStatus.checked);
+  if (agreementStatus.checked === true) {
+    buttonStatus.disabled = false;
+  } else {
+    buttonStatus.disabled = true;
+  }
+}
+
+agreementStatus.addEventListener('click', changeButtonStatus);
