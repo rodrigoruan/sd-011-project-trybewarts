@@ -49,14 +49,41 @@ main {
 }
 
 #evaluation-form {
+  border: 5px solid green;
   padding-top: 20px;
   padding-left: 20px;
   display: flex;
   flex-flow: column nowrap;
   width: 675px;
+  flex-grow: 1;
 }
 
 #trybewarts-forms-logo {
   width: 100%;
+  max-width: 500px;
   height: 500px;
+  flex-shrink: 1;
+}
+
+.row {
+  padding-top: 10px;
+}
+
+#houseDiv {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#houseLabel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+#house {
+  width: 100%;
+  text-align: center;
 }
