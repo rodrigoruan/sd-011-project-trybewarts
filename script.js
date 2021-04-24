@@ -25,8 +25,8 @@ const contador = document.getElementById('counter');
 const textArea = document.getElementById('textarea');
 
 textArea.addEventListener('input', () => {
-  let limite = 500;
-  let caracteresDigitados = textArea.value.length; 
-  let caracteresRestantes = limite - caracteresDigitados;
+  const limite = 500;
+  const caracteresDigitados = textArea.value.length;
+  const caracteresRestantes = limite - caracteresDigitados;
   contador.innerText = caracteresRestantes.toString();
 });
