@@ -41,7 +41,8 @@
   align-items: flex-end;
 }
 
-main, .evaluation-form {
+main,
+.evaluation-form {
   display: flex;
 }
 
