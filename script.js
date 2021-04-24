@@ -1,3 +1,6 @@
+// Declara variáveis comuns para as diferentes funções
+const submitBtn = document.getElementById('submit-btn');
+
 // Login do usuário
 function CheckLogin() {
   const loginBtn = document.querySelector('#login-btn');
@@ -16,8 +19,6 @@ function CheckLogin() {
   });
 }
 
-const submitBtn = document.getElementById('submit-btn');
-
 // Ativa o botão
 function ActivateButton() {
   submitBtn.disabled = false;
@@ -32,7 +33,7 @@ function DeactivateButton() {
 function CheckAgreement() {
   const checkAgreement = document.getElementById('agreement');
   checkAgreement.addEventListener('change', () => {
-    if (CheckAgreement.checked) {
+    if (checkAgreement.checked) {
       ActivateButton();
     } else {
       DeactivateButton();
@@ -43,8 +44,6 @@ function CheckAgreement() {
 // Função que chama todas as funções do site
 function Onload() {
   CheckLogin();
-  // Seta o valor inicial do botão Enviar como desativado
-  submitBtn.disabled = true;
   CheckAgreement();
 }
 
