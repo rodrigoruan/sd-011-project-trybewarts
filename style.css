@@ -1,23 +1,29 @@
+<<<<<<< HEAD
 /* Estilização - Requisito 1 */
+=======
+/* Zerar margens */
+* {
+  margin: 0;
+}
+
+/* Estilização - Requisito 1 e 2 */
+>>>>>>> 69aa5919e4645abe714f0c07c9ef31954538c55b
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
 /* Estilização - Requisito 2 */
 .trybewarts-header-logo {
-  float: left;
-}
-
-/* Estilização - Requisito 7 */
-.trybewarts-forms-logo {
-  height: 500px;
-  /* float: right; */
+  width: 100px;
 }
 
 /* Estilização - Requisito 5 */
 main {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Estilização - Requisito 5 e 6 */
@@ -27,6 +33,7 @@ main {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 /* Requisito 10 */
 /* main #evaluation-form {
   flex-flow: row wrap;
@@ -42,18 +49,24 @@ main {
   flex-basis: 45%;
 }
 #input-email {
-  display: flex;
-  flex-basis: 45%;
-} */
+=======
+/* Estilização - Requisito 7 */
+.trybewarts-forms-logo {
+  height: 500px;
+}
 
-/* Estilização - Requisito 12 */
-/* main {
+#family {
+>>>>>>> 69aa5919e4645abe714f0c07c9ef31954538c55b
+  display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 } */
 
 #family {
   display: flex;
   flex-direction: column;
+=======
+>>>>>>> 69aa5919e4645abe714f0c07c9ef31954538c55b
 }
 
 #content {
