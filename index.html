@@ -15,22 +15,22 @@
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="" />
     <h1 id='trybewarts-header-title'>Trybewarts</h1>
     <form action="" method="GET" class="trybewarts-login">
-      <input type="text" name="login" placeholder="Login" id="email" />
-      <input type="text" name="senha" placeholder="Senha" id="password" />
+      <input type="text" name="login-email" placeholder="Login" id="email" />
+      <input type="text" name="password" placeholder="Senha" id="password" />
       <button id="button">Entrar</button>
     </form>
   </header>
   <main>
     <form action="" method="get" id='evaluation-form'>
       <div>
-        <input type="text" name="rate" value="" placeholder="Nome" id="input-name">
-        <input type="text" name="rate" value="" placeholder="Sobrenome" id="input-lastname">
+        <input type="text" name="name" value="" placeholder="Nome" id="input-name">
+        <input type="text" name="lastname" value="" placeholder="Sobrenome" id="input-lastname">
       </div>
       <!-- no  ex 11 pedia para deixar tanto o Email quanto as casas um ao lado do outro, por isso adicionei eles dentro de uma div. Assim, o display deixa de ser flex e consequentemente deixa os elementos um ao lado do outro -->
       <div>
-        <input type="text" name="rate" value="" placeholder="Email" id="input-email">
+        <input type="text" name="email" value="" placeholder="Email" id="input-email">
         <!-- É pedido que seja adicionado o id='house' no elemento que armazena as casas, porém já foi adicionado por um requisito anterior -->
-        <select name="rate" value="" id="house">
+        <select name="house" value="" id="house">
           <option value="Gitnória" id='gitnoria-house'>Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -66,32 +66,32 @@
               <!-- foi pedido que ficassem uma do lado da outra, por isso não coloquei as div's e que os input's ficassem dentro da label se não o lint não passava -->
               <!-- HoFs -->
               <label class="subject">
-                <input for="HoFs" id="HoFs" type="checkbox" value='HoFs'>
+                <input for="HoFs" name="HoFs" id="HoFs" type="checkbox" value='HoFs'>
                 HoFs
               </label>
               <!-- Jest -->
               <label class="subject">
-                <input for="Jest" id="Jest" type="checkbox" value='Jest'>
+                <input for="Jest" name="Jest" id="Jest" type="checkbox" value='Jest'>
                 Jest
               </label>
               <!-- Promises -->
               <label class="subject">
-                <input for="Promises" id="Promises" type="checkbox" value='Promises'>
+                <input for="Promises" name="Promises" id="Promises" type="checkbox" value='Promises'>
                 Promises
               </label>
               <!-- React -->
               <label class="subject">
-                <input for="React" id="React" type="checkbox" value='React'>
+                <input for="React" name="React" id="React" type="checkbox" value='React'>
                 React
               </label>
               <!-- SQL -->
               <label class="subject">
-                <input for="SQL" id="SQL" type="checkbox" value='SQL'>
+                <input for="SQL" name="SQL" id="SQL" type="checkbox" value='SQL'>
                 SQL
               </label>
               <!-- Python -->
               <label class="subject">
-                <input for="Python" id="Python" type="checkbox" value='Python'>
+                <input for="Python" name="Python" id="Python" type="checkbox" value='Python'>
                 Python</label>
             </div>  
           </div>
@@ -148,6 +148,7 @@
         <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" name="agreement" id="agreement">
       </div>
+      <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts-logo" id='trybewarts-forms-logo'>
   </main>
