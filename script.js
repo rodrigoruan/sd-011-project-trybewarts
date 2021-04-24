@@ -53,13 +53,13 @@ buttonEnviar.addEventListener('click', () => {
   const e = document.getElementById('input-email'); const house = document.getElementById('house');
   const familia = document.querySelector('input[name="family"]:checked').value;
   const materias = document.querySelectorAll('input[class="subject"]:checked');
-  for (let i = 0; i < materias.length; i += 1) { materiasEscolhidas.push(materias[i].value); }
+  for (let i = 0; i < materias.length; i += 1) { materiasEscolhidas.push(` ${materias[i].value}`); }
   const nota = document.querySelector('input[name="rate"]:checked').value;
   const observacao = document.getElementById('textarea');
   textNome.innerText = `Nome: ${n.value} ${sobrenome.value}`;
   textEmail.innerText = `Email: ${e.value}`; textHouse.innerText = `Casa: ${house.value}`;
   textFamilia.innerText = `Família: ${familia}`; textRate.innerText = `Avaliação: ${nota}`;
-  textMateriasEscolhidas.innerText = `Matérias: ${materiasEscolhidas}`;
+  textMateriasEscolhidas.innerText = `Matérias:${materiasEscolhidas}`;
   textObs.innerText = `Observações: ${observacao.value}`;
   form.remove(); newForm.id = 'evaluation-form'; main.appendChild(newForm);
   newForm.appendChild(textNome); newForm.appendChild(textEmail); newForm.appendChild(textObs);
