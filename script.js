@@ -1,14 +1,30 @@
 // // get submit button
-const sendForm = document.getElementById('send-form');
+const loginButton = document.getElementById('login-button');
+// get agreement checkbox
+let agreementBox = document.getElementById('agreement');
+// get send form button
+let sendFormBtn = document.getElementById('bubmit-btn');
 
-sendForm.addEventListener('click', () => {
+//// Login Function
+loginButton.addEventListener('click', () => {
   // get login input
   const loginInput = document.getElementById('login');
   // get password input
-  const passwordInput = document.getElementById('password');
+  let passwordInput = document.getElementById('password');
   if (loginInput.value !== 'tryber@teste.com' || passwordInput.value !== '123456') {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
   }
 });
+
+//
+agreementBox.addEventListener('change', () => {
+  if (this.checked) {
+    console.log('check');
+    sendFormBtn.removeAttribute('disabled')
+  } else {
+    console.log('not checked')
+    sendFormBtn.setAttribute('disabled', 'disabled');
+  }
+})
