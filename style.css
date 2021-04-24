@@ -107,3 +107,8 @@ main {
   height: 2px;
   background-color: grey;
 }
+
+#agreement-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
