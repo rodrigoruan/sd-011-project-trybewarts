@@ -68,7 +68,7 @@ main {
   flex-grow: 2;
 }
 
-#label-family , #label-content, .div-family {
+#label-family , #label-content, .div-family, .div-checkbox {
   display: flex;
   flex-direction: column;
   align-self: baseline;
