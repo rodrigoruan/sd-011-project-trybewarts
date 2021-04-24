@@ -16,15 +16,23 @@
 
 main {
   display: flex; /* Requisito 5.3 */
+  /* width: 800px; */
+  width: 100%;
+  border: 3px solid rgb(255, 38, 0); /* [Remover] */
+  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex; /* Requisito 5.3 */
-  width: 675 px; /* Requisito 5.4 */
+  min-width: 675px; /* Requisito 5.4 */
   flex-direction: column; /* Requisito 6 */
+  border: 3px solid black; /* [Remover] */
 }
 
 #trybewarts-forms-logo {
   height: 500px; /* Requisito 7.3 */
+  align-self: flex-end; 
 }
+
+
 
