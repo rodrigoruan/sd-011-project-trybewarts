@@ -26,14 +26,15 @@
     <form action="" method="GET" id="evaluation-form">
       
       <!-- 8.Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:' -->
+      <!-- 10. Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha -->
       <div id="line-one">
         <input type="text" placeholder="Nome" id="input-name">
         <input type="text" placeholder="Sobrenome" id="input-lastname">
       </div>
+
+      <!-- 11. Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha -->
         <div id="line-two">
         <input type="text" placeholder="Email" id="input-email">
-      
-
       <label for="house">Casa:</label>
       <select name="" id="house">
         <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -42,6 +43,27 @@
         <option value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
     </div>
+
+  <div>
+    <label for="" id="label-family">Qual sua família?
+    </div>
+
+      <div>
+      <label>Família Frontend</label>
+      <input type="radio" value="Frontend" name="family">
+    </div>
+
+      <div>
+      <label>Família Backend</label>
+        <input type="radio" value="Backend" name="family">
+      </div>
+
+      <div>
+        <label>Família FullStack</label>
+          <input type="radio" value="FullStack" name="family">
+        </div>
+      
+
       <div>
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <label>
