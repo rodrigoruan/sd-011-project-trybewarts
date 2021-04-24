@@ -29,7 +29,11 @@ main {
   height: 500px;
 }
 
-.family {
+.family, .content {
   display: flex;
   flex-direction: column;
 }
+
+/* .content {
+
+} */
