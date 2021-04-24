@@ -37,7 +37,19 @@ main {
   width: 40%;
 }
 
-#label-family {
+.selection {
+  display: flex;
+}
+
+.familys {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px;
 }
