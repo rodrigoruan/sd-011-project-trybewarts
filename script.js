@@ -1,6 +1,6 @@
 // Criar um addEventListener no botão LOGAR.
 const loginButton = document.getElementById('login-button');
-// Dentro da funço que é executada ao clicar no botão, deve-se verificar se o email.
+// Dentro da funçao que é executada ao clicar no botão, deve-se verificar se o email.
 // que esta no input de email é igual a tryber@teste.com e senha igual a 123456.
 loginButton.addEventListener('click', () => {
   if (document.getElementById('login').value === 'tryber@teste.com'
@@ -20,3 +20,5 @@ agreementCheck.addEventListener('click', () => {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+
+//Cria contador de caracteres

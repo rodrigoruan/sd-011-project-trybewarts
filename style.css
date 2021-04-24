@@ -134,8 +134,7 @@ main {
 }
 
 #label-house {
-  font-size: 20px;
-  align-items: baseline;
+  align-items: center;
 }
 
 #footer {
@@ -147,4 +146,9 @@ main {
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+#casa {
+  flex-direction: row;
+  justify-content: center;
 }
