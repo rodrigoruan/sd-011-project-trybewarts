@@ -3,6 +3,10 @@ const senha = document.getElementById('senha');
 const button = document.querySelector('.entrar');
 const chkAcept = document.getElementById('agreement');
 const btnSubmt = document.getElementById('submit-btn');
+const counter = document.getElementById('counter');
+const contTextlength = document.getElementById('textarea');
+const getmaxLength = contTextlength.maxLength;
+counter.innerText = getmaxLength;
 
 button.addEventListener('click', () => {
   if (login.value !== 'tryber@teste.com' || senha.value !== '123456') {
@@ -23,5 +27,10 @@ chkAcept.addEventListener('click', (event) => {
 const name = document.getElementById('input-name');
 
 btnSubmt.addEventListener('click', () => {
-  name.value = 'Alguem Aqui';
+  name.value = 'Nome:';
+});
+
+contTextlength.addEventListener('input', (event) => {
+  const value = event.target.value.length;
+  counter.innerText = getmaxLength - value;
 });
