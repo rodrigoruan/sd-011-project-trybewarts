@@ -119,5 +119,5 @@ footer {
 
 .family-ask .control {
   display: flex;
-  flex: column wrap
+  flex: column wrap;
 }
