@@ -41,6 +41,7 @@ header {
 .trybewarts-title {
   align-self: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* Section Center */
