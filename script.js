@@ -11,6 +11,7 @@ document.getElementById('loginButton').addEventListener('click', () => {
   }
 });
 
+// Requisito 18
 let submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
@@ -21,6 +22,21 @@ seConcorda.addEventListener('click', (event) => {
 	}
 	submitBtn.disabled = false;	
 })
+
+// Requisito 20
+// https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
+let textarea = document.getElementById('textarea');
+let counter = document.getElementById('counter');
+textarea.addEventListener('input', countLetters)
+
+function countLetters(event){
+  let target = event.target;
+  let maxLength = target.getAttribute('maxLength');
+  let currentLength = target.value.length;
+
+  counter.innerHTML = `${currentLength}/${maxLength}`;  
+}
+
 
 
 
