@@ -27,7 +27,7 @@ main {
   width: 675px;
 }
 
-#evaluation-input{
+#evaluation-input {
   display: flex;
   flex-direction: row;
 }
