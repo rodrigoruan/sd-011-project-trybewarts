@@ -9,3 +9,14 @@ submit.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const check = document.querySelector('#agreement');
+const enviar = document.querySelector('#submit-btn');
+
+check.addEventListener('click', () => {
+  if (check.checked === true) {
+    enviar.removeAttribute('disabled');
+  } else {
+    enviar.setAttribute('disabled', 'disabled');
+  }
+});
