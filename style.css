@@ -1,5 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  min-height: 100vh;
 }
 
 .header {
@@ -26,6 +29,7 @@ body {
 main {
   display: flex;
   justify-content: flex-start;
+  flex-grow: 1;
 }
 
 #evaluation-form {
@@ -86,4 +90,11 @@ aside {
 .subject {
   display: flex;
   flex-wrap: nowrap;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 50px;
+  text-align: center;
 }
