@@ -53,3 +53,11 @@ main {
   margin-left: 20px;
   padding: 10px;
 }
+
+.trybewarts-rate {
+  display: flex;
+}
+
+.trybewarts-rate input {
+  margin-left: 5px;
+}
