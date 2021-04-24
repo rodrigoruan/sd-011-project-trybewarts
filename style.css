@@ -50,7 +50,8 @@ header {
 /* Section Center */
 #evaluation-form {
   display: flex;
-  flex: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 675px;
 }
 
