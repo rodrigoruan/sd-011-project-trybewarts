@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
@@ -12,17 +13,19 @@
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="" />
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
     <div class="form-container">
       <form class="trybewarts-login">
-        <input id="login" placeholder="Login" />
-        <input id="senha" placeholder="Senha" />
-        <button class="entrar">Entrar</button>
+        <input id="login" placeholder="Login" class="button" />
+        <input id="senha" placeholder="Senha" class="button" />
+        <button id="entrar" class="button is-link">Entrar</button>
       </form>
     </div>
   </header>
+
   <main>
     <form id="evaluation-form">
+      <h2>Forms</h2>
       <div class="block-input">
         <input id="input-name" name="Nome" type="text" placeholder="Nome">
         <input id="input-lastname" name="sNome" type="text" placeholder="Sobrenome">
@@ -52,6 +55,7 @@
       <input name="family" type="radio" value="Frontend">
       <input name="family" type="radio" value="Backend">
       <input name="family" type="radio" value="FullStack">
+      <hr>
       <div class="block-input">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value="1">
