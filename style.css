@@ -57,3 +57,9 @@
   align-items: center;
   font-size: 15px;
 }
+
+.caixa-comentario {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
