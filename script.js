@@ -27,3 +27,11 @@ agreeCheck.addEventListener('change', () => {
     submitBtn.disabled = false;
   }
 });
+
+/** Código que resolve requisito 20 */
+const textArea = document.querySelector('#textarea');
+const displayCount = document.querySelector('#counter');
+
+textArea.addEventListener('keyup', () => {
+  displayCount.innerText = 500 - textArea.value.length;
+});
