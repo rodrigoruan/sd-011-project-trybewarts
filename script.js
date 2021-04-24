@@ -33,3 +33,13 @@ checkAgreement.addEventListener('change', () => {
     sendButton.disabled = false;
   }
 });
+
+const txtArea = document.getElementById('textarea');
+const txtCounter = document.getElementById('counter');
+txtCounter.innerText = 500;
+
+txtArea.addEventListener('keyup', () => {
+  const nowLength = txtArea.value.length;
+  // console.log(nowLength);
+  txtCounter.innerText = 500 - nowLength;
+});

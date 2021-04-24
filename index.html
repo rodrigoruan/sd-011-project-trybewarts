@@ -135,8 +135,15 @@
       </div>
 
       <div class="comments">
-        <label class="textarea">Deixe seu comentário:</label>
-        <textarea name="comment" cols="60" rows="10" maxlength="500"></textarea>
+        <div class="top-textarea">
+          <label class="textarea">Deixe seu comentário:</label>
+          <div id="text-counter"> 
+            <p>Restam:</p>
+            <p id="counter"></p>
+            <p>caracteres.</p>
+          </div> 
+        </div>
+        <textarea id="textarea" name="comment" cols="60" rows="9" maxlength="500"></textarea>
       </div>
 
       <div class="check-agreement">
