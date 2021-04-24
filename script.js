@@ -3,6 +3,10 @@ const inputEmail = document.querySelector('#login');
 const inputSenha = document.querySelector('#senha');
 const termos = document.querySelector('#agreement');
 const botaoEnvia = document.querySelector('#submit-btn');
+const textArea = document.querySelector('#comentario');
+const tamanhoTextoAtual = document.querySelector('#atual');
+
+console.log(tamanhoTextoAtual);
 
 function verificaLogin(event) {
   event.preventDefault();
@@ -26,5 +30,12 @@ function verificaTermos() {
 
 verificaTermos();
 
+function contaCaracteres() {
+  var atual = tamanhoTextoAtual.innerHTML;
+  atual = 500;
+  tamanhoTextoAtual.innerHTML = atual - textArea.value.length;
+}
+
+textArea.addEventListener('keyup', contaCaracteres);
 termos.addEventListener('click', verificaTermos);
 formLogin.addEventListener('submit', verificaLogin);
