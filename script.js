@@ -4,6 +4,10 @@ const loginButton = document.getElementById('login-button');
 let agreementBox = document.getElementById('agreement');
 // get send form button
 let sendFormBtn = document.getElementById('submit-btn');
+// get text area 
+let textAreaInput = document.getElementsByTagName('textarea');
+// get counter
+let textCounter = document.getElementById('counter');
 
 //// Login Function
 loginButton.addEventListener('click', () => {
@@ -18,11 +22,16 @@ loginButton.addEventListener('click', () => {
   }
 });
 
-//
+// Enable Send Form button
 agreementBox.addEventListener('change', () => {
   if (agreementBox.checked) {
     sendFormBtn.removeAttribute('disabled')
   } else {
     sendFormBtn.setAttribute('disabled', 'disabled');
   }
+})
+
+// Word Count
+textAreaInput[0].addEventListener('keyup', () => {
+  textCounter.innerText = 500 -  textAreaInput[0].value.length;
 })
