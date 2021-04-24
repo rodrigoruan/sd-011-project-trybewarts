@@ -78,3 +78,34 @@ header {
 .title-form {
   padding: 3%;
 }
+
+#inline-name-and-lastname {
+  display: flex;
+  flex: row wrap;
+}
+
+.input-name {
+  display: flex;
+  flex-grow: 1;
+}
+
+.input-lastname {
+  display: flex;
+  flex-grow: 1;
+}
+
+#inline-email-house {
+  display: flex;
+  flex-grow: 1;
+  flex: row wrap;
+}
+
+.input-email {
+  display: flex;
+  flex-grow: 1;
+}
+
+#house {
+  display: flex;
+  flex-grow: 0;
+}
