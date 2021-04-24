@@ -21,7 +21,7 @@ function verificaLogin(event) {
 function verificaTermos() {
   if (termos.checked) {
     botaoEnvia.disabled = false;
-  } else { botaoEnvia.disabled = true;}
+  } else { botaoEnvia.disabled = true; }
 }
 
 verificaTermos();
