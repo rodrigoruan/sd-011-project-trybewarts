@@ -96,7 +96,6 @@ header {
 
 #inline-email-house {
   display: flex;
-  flex-grow: 1;
   flex: row wrap;
 }
 
