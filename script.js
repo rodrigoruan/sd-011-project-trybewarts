@@ -4,10 +4,10 @@ const loginButton = document.getElementById('login-button');
 // que esta no input de email é igual a tryber@teste.com e senha igual a 123456.
 loginButton.addEventListener('click', () => {
   if (document.getElementById('login').value === 'tryber@teste.com'
-    && document.getElementById('senha').value === '123456') {
-    alert('Olá, Tryber!');
+    || document.getElementById('senha').value === '123456') {
+    alert("Olá, Tryber!");
   } else {
-    alert('Login ou senha inválidos.');
+    alert("Login ou senha inválidos.");
   }
 });
 
