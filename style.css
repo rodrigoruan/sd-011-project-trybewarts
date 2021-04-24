@@ -23,3 +23,12 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.textarea {
+  margin-top: 10px;
+}
+
+#checkbox-agreement {
+  display: flex;
+  margin-top: 10px;
+}
