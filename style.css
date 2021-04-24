@@ -52,18 +52,18 @@ body {
   font-size: 25px;
 }
 
-.trybewarts-main , .trybewarts-form {
+.trybewarts-main , #evaluation-form {
   display: flex;
 }
 
-.trybewarts-form {
+#evaluation-form {
   width: 675px;
   margin: 12px 0 0 20px;
   flex-direction: column;
 }
 
 .trybewarts-main {
-  justify-content: space-between;
+  height: 1000px;
 }
 
 #trybewarts-forms-logo {
@@ -109,7 +109,7 @@ body {
 }
 
 footer {
-  position: absolute;
+
   bottom: 0;
   width: 100%;
   text-align: center;

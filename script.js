@@ -33,18 +33,47 @@ textArea.addEventListener('keyup', () => {
 const main = document.querySelector('.trybewarts-main');
 const forms = document.getElementById('evaluation-form');
 
-const buttom = document.querySelector('#trybewarts-login-submit');
+const buttom = document.querySelector('#submit-btn');
 const subject = document.querySelector('.subject');
 
-function setInputDiv () {
-  let formData = new FormData(forms);
-  
-  for (let pair of Object.entries(formData)) {
-    const div = document.createElement('div');
-    div.className = 'subject';
-    div.innerHTML = `<span clss="left">${pair[0]}: ${pair[1]}</span>`;
-    subject.appendChild(div);
+
+
+function materiasChecked() {
+  const inputChecked = document.querySelectorAll('.subject:checked');
+  const inputValue = [];
+  for (let index = 0; index < inputChecked.length; index += 1) {
+    inputValue.push(` ${inputChecked[index].value}`);
   }
+  return inputValue;
+}
+
+
+function setInputDiv (event) {
+  const nameInput = document.getElementById('input-name');
+  const lastnameInput = document.getElementById('input-lastname');
+  const email = document.getElementById('input-email')
+  const casa = document.getElementById('house');
+  const obs = document.getElementById('textarea');
+  
+
+
+  const result = {
+    Nome : `${nameInput.value} ${lastnameInput.value}`,
+    Email: email.value,
+    Casa: casa.value,
+    Família: `${document.querySelector('input[name="family"]:checked').value}`,
+    Matérias: materiasChecked(),
+    Avaliação: document.querySelector('input[name="rate"]:checked').value,
+    Observações: obs.value
+  };
+  let formsPrint = '';
+  for(let index of Object.keys(result)){
+    formsPrint += `${index}: ${result[index]}`;
+    event.preventDefault();
+  }
+  console.log(formsPrint);
+  forms.innerHTML = formsPrint;
+  
 }
 
 buttom.addEventListener('click' , setInputDiv);
