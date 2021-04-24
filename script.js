@@ -11,6 +11,7 @@ const formLastNameInput = document.getElementById('input-lastname');
 const formEmailInput = document.getElementById('input-email');
 const formHouseInput = document.getElementById('house');
 const commentTextArea = document.getElementById('textarea');
+const submitButton = document.getElementById('submit-btn');
 
 function checkLogin() {
   const validationLogin = (inputName.value === userName && inputPassword.value === password);
@@ -50,7 +51,7 @@ function showValues() {
   const email = formEmailInput.value;
   const house = formHouseInput.value;
   const family = document.querySelector('input[name="family"]:checked').value;
-  const formElements = document.querySelectorAll('input.subject:checked');
+  const contentElements = document.querySelectorAll('input.subject:checked');
   const rate = document.querySelector('input[name="rate"]:checked').value;
   const comment = commentTextArea.value;
 
@@ -64,7 +65,7 @@ function showValues() {
 }
 
 function createTextElements() {
-  const values = readValues();
+  const values = showValues();
 
   const nameText = document.createElement('p');
   nameText.textContent = `Nome: ${values.name} ${values.lastName}`;
@@ -96,7 +97,6 @@ function submitForm(event) {
   for (let index = 0; index < elements.length; index += 1) {
     formElement.appendChild(elements[index]);
   }
-
 }
 
 submitButton.addEventListener('click', submitForm);
