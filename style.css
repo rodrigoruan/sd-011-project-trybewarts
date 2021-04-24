@@ -88,9 +88,10 @@ body {
 }
 
 .main__form {
-  margin-left: 180px;
+  width: 700px;
+  flex-direction: column;
+  margin-left: 120px;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .section__mainform--row {
@@ -205,4 +206,23 @@ body {
 
 .check-box {
   margin: 10px 0;
+}
+
+#submit-btn {
+  width: 650px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Eczar, serif;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+.hero-img {
+  /* position: absolute;
+  left: 1000px;
+  bottom: 200px; */
 }

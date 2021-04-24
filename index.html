@@ -38,7 +38,7 @@
     </header>
 
     <main class="main__form">
-      <form method="post" id="evaluation-form">
+      <form method="GET" id="evaluation-form">
         <section class="section__mainform--row">
           <div>
             <input type="text" placeholder="Nome" id="input-name">
@@ -141,8 +141,15 @@
           <input type="checkbox" name="agreement" id="agreement">
         </label>
       </section>
-      <img src="images/trybewarts-colored.svg" class="aside-image" id="trybewarts-forms-logo">
+      <section>
+        <button type="submit" id="submit-btn">Enviar</button>
+      </section>
     </main>
+
+    <section class="hero-img">
+      <img src="images/trybewarts-colored.svg" class="aside-image" id="trybewarts-forms-logo">
+    </section>
+    
     <script src="script.js"></script>
   </body>
 
