@@ -11,3 +11,4 @@ function sendUser() {
 }
 
 loginButton.addEventListener('click', sendUser);
+/* teste */
