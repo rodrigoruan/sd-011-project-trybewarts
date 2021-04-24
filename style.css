@@ -16,16 +16,21 @@ main {
   display: flex;
 }
 
-form {
+#evaluation-form input {
   display: flex;
-  width: 675px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #evaluation-form {
-  flex-direction: column;
+  flex-flow: column;
+  width: 675px;
 }
 
+#evaluation-input{
+  display: flex;
+  flex-direction: row;
+}
 img {
   height: 500px;
-  align-self: flex-end;
 }
