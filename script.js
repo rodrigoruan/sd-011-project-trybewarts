@@ -63,9 +63,9 @@ function makeSubjectsIntoString() {
   const subjects = document.querySelectorAll('input[class=subject]:checked');
   const subjectsAl = [];
   for (let index = 0; index < subjects.length; index += 1) {
-    subjectsAl[index] = subjects[index].value;
+    subjectsAl[index] = ` ${subjects[index].value}`;
   }
-  return subjectsAl.toString();
+  return subjectsAl.join();
 }
 
 function makeFormsVariables() {
