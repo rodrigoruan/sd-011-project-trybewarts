@@ -1,89 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <title>Trybewarts</title>
-</head>
-<body>
-  <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts logo"/>
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login">
-      <input id="login" type="email" placeholder="Login">
-      <input id="password" type="password" placeholder="Senha">
-      <button id="btnlogin">Logar</button>
-    </form>
-  </header>
-  <main>
-    <form id="evaluation-form">
-      <legend><h2>Forms</h2></legend>
-      <div id="name-box">
-        <label for="input-name"></label>
-        <input 
-        class="user-name"
-        type="text" 
-        id="input-name"
-        placeholder="Nome"
-        name="first-name"
-        required
-        />
-        
-        <label for="input-lastname"></label>
-        <input
-        class="user-name"
-        type="text" 
-        id="input-lastname"
-        placeholder="Sobrenome"
-        name="last-name"
-        required
-        />
-      </div>
-      
-      <div class="email-house">
-        <label for="my-email"></label>
-        <input 
-        type="email" 
-        id="input-email"
-        placeholder="Email"
-        name="my-email"
-        required
-        />
-        
-        <label for="house">Casa</label>
-        <select id="house">
-          <option>Choose an opition</option>
-          <option label="Gitnória" id="gitnoria-house"value="Gitnória"></option>
-          <option label="Reactpuff"id="reactpuff-house"value="Reactpuff"></option>
-          <option label="Corvinode"id="corvinode-house"value="Corvinode"></option>
-          <option label="Pytherina"id="pytherina-house"value="Pytherina"></option>
-        </select>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trybewarts</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="trybewarts-header-logo"
+        src="images/trybewarts-header-logo.svg"
+        alt="trybewarts logo"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login">
+        <input id="login" type="email" placeholder="Login" />
+        <input id="password" type="password" placeholder="Senha" />
+        <button id="btnlogin">Logar</button>
+      </form>
+    </header>
+    <main>
+      <form id="evaluation-form">
+        <legend><h2>Forms</h2></legend>
+        <div id="name-box">
+          <label for="input-name"></label>
+          <input
+            class="user-name"
+            type="text"
+            id="input-name"
+            placeholder="Nome"
+            name="first-name"
+            required
+          />
 
-      <hr>
-      
-      <label for="" id="label-family">Qual a sua família?
-        <label for="op1">
-          <input type="radio" name="family" id="op1" value="Frontend"> Família Frontend
-        </label>
-        <label for="op2">
-          <input type="radio" name="family" id="op2"value="Backend"> Família Backend
-        </label>
-        <label for="op3">
-          <input type="radio" name="family" id="op3"value="FullStack"> Família FullStack
-        </label>
-      </label>
-      
-      
-    </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
-  </main>
-  <script src="script.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-</body>
-  </html>
+          <label for="input-lastname"></label>
+          <input
+            class="user-name"
+            type="text"
+            id="input-lastname"
+            placeholder="Sobrenome"
+            name="last-name"
+            required
+          />
+        </div>
+
+        <div class="email-house">
+          <label for="my-email"></label>
+          <input
+            type="email"
+            id="input-email"
+            placeholder="Email"
+            name="my-email"
+            required
+          />
+
+          <label for="house"> Casa:</label>
+          <select id="house">
+            <option>Choose an opition</option>
+            <option
+              label="Gitnória"
+              id="gitnoria-house"
+              value="Gitnória"
+            ></option>
+            <option
+              label="Reactpuff"
+              id="reactpuff-house"
+              value="Reactpuff"
+            ></option>
+            <option
+              label="Corvinode"
+              id="corvinode-house"
+              value="Corvinode"
+            ></option>
+            <option
+              label="Pytherina"
+              id="pytherina-house"
+              value="Pytherina"
+            ></option>
+          </select>
+        </div>
+
+        <hr/>
+
+        <div id="subjects-conteiner">
+          <label id="label-family">Qual sua família?
+            <label for="op1">
+              <input type="radio" name="family" id="op1" value="Frontend" />
+              Família Frontend
+            </label>
+            <label for="op2">
+              <input type="radio" name="family" id="op2" value="Backend" />
+              Família Backend
+            </label>
+            <label for="op3">
+              <input type="radio" name="family" id="op3" value="FullStack" />
+              Família FullStack
+            </label>
+          </label>
+
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?
+            <label for="subject-1">
+              <input type="checkbox" value="HoFs" class="subject" id="subject-1"/>
+              HoFs
+            </label>
+            <label for="subject-2">
+              <input type="checkbox" value="Jest" class="subject" id="subject-2"/>
+              Jest
+            </label>
+            <label for="subject-3">
+              <input type="checkbox" value="Promises" class="subject" id="subject-3"/>
+              Promises
+            </label>
+            <label for="subject-4">
+              <input type="checkbox" value="React" class="subject" id="subject-4"/>
+              React
+            </label>
+            <label for="subject-5">
+              <input type="checkbox" value="SQL" class="subject" id="subject-5"/>
+              SQL
+            </label>
+            <label for="subject-6">
+              <input type="checkbox" value="Python" class="subject" id="subject-6"/>
+              Python
+            </label>
+          </label>
+        </div>
+      </form>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
+    </main>
+    <script src="script.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </body>
+</html>

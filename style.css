@@ -88,4 +88,19 @@ form h2 {
 #label-family {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+
+#label-content {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap
+}
+
+.subject {
+  ;
+}
+
+#subjects-conteiner {
+  display: flex;  
 }
