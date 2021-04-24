@@ -7,8 +7,6 @@
 body {
   display: flex;
   flex-direction: column;
-  
-  
 }
 
 main {
@@ -33,7 +31,6 @@ main {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  /* justify-content: center; */
 }
 
 #personal-info input {
@@ -59,7 +56,6 @@ footer {
   text-align: center;
   color: white;
   font-size: 8px;
- 
 }
 
 .trybewarts-login {
