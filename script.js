@@ -4,7 +4,7 @@ const inputSenha = document.querySelector('#senha');
 const termos = document.querySelector('#agreement');
 const botaoEnvia = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#comentario');
-const tamanhoTextoAtual = document.querySelector('#atual');
+const tamanhoTextoAtual = document.querySelector('#counter');
 
 console.log(tamanhoTextoAtual);
 
