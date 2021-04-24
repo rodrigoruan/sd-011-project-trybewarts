@@ -12,3 +12,13 @@ function validateLoginPassword() {
   }
 }
 btnLogin.addEventListener('click', validateLoginPassword);
+
+const textarea = document.querySelector('#textarea');
+textarea.addEventListener('keypress', function (event) {
+  const maxChar = 500;
+  const charLength = textarea.value.length;
+  console.log(charLength);
+  if (charLength > maxChar) {
+    event.preventDefault();
+  }
+});
