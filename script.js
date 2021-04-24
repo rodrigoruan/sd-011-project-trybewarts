@@ -10,17 +10,25 @@ buttonLogin.addEventListener('click', () => {
   }
 });
 
+const boxAgreement = document.getElementById('agreement');
+const btnSend = document.getElementById('submit-btn');
 
-  const boxAgreement = document.getElementById('agreement');
-  const btnSend = document.getElementById('submit-btn')
-  
-  function SendButton() {
-    boxAgreement.addEventListener('click', () => {
-      if(btnSend.disabled) {
-        btnSend.disabled = false;
-      } else {
-        btnSend.disabled = true;
-      }
-    });
-  }
-  SendButton();
+function SendButton() {
+  boxAgreement.addEventListener('click', () => {
+    if (btnSend.disabled) {
+      btnSend.disabled = false;
+    } else {
+      btnSend.disabled = true;
+    }
+  });
+}
+SendButton();
+
+const textField = document.getElementById('textarea');
+const counter = document.getElementById('counter'); 
+
+function counterText() {
+const comments = textField.value.length;
+counter.textContent = 500 - comments;
+}
+textField.addEventListener('keyup', counterText);
