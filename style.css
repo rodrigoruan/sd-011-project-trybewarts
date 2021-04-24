@@ -58,7 +58,7 @@ body {
 
 .trybewarts-form {
   width: 675px;
-  margin: 15px;
+  margin: 12px 0 0 20px;
   flex-direction: column;
 }
 
@@ -68,6 +68,7 @@ body {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: 0 auto;
 }
 
 .family-container {
@@ -83,6 +84,7 @@ body {
 
 .family-label-container {
   display: flex;
+  margin-bottom: 5px;
 }
 
 .labels {
@@ -90,6 +92,7 @@ body {
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .labels label {
@@ -98,6 +101,11 @@ body {
 
 .evaluator {
   display: flex;
+  margin-bottom: 5px;
+}
+
+.evaluator p {
+  font-size: 30px;
 }
 
 footer {
@@ -139,4 +147,12 @@ footer {
 #submit-btn:hover {
   font-size: 20px;
   background-color: royalblue;
+}
+
+.input-label-trybewarts {
+ margin-left: 2px;
+}
+
+.label-trybewarts {
+  margin-right: 3px;
 }
