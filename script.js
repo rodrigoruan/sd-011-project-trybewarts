@@ -19,3 +19,14 @@ checkEnable.addEventListener('click', () => {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+
+// 19
+const contador = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+
+textArea.addEventListener('input', () => {
+  let limite = 500;
+  let caracteresDigitados = textArea.value.length; 
+  let caracteresRestantes = limite - caracteresDigitados;
+  contador.innerText = caracteresRestantes.toString();
+});
