@@ -86,3 +86,9 @@ main {
   width: 100%;
   text-align: center;
 }
+
+.evaluation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
