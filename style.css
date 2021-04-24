@@ -14,9 +14,18 @@
   width: 50px;
 }
 
+.container {
+  justify-content: space-between;
+}
+
 .trybewarts-login {
   display: flex;
   align-items: center;
+}
+
+#login-button{
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 #nome-e-sobrenome {
