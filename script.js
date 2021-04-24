@@ -33,30 +33,52 @@ function caracteres() {
 
 comment.addEventListener('keyup', caracteres);
 
-function replaceForm() {
-  const name = document.getElementById('input-name').value;
-  const lastName = document.getElementById('input-lastname').value;
+function bunitinha() {
+  const content = document.getElementsByClassName('subject');
+  const gordinha = [];
+
+  for (let index = 0; index < content.length; index += 1) {
+    gordinha.push(`${content[index].value}`); 
+  }
+  return gordinha;
+}
+
+
+
+
+function replaceForm(event) {
+  const name = document.getElementById('input-name');
+  const lastName = document.getElementById('input-lastname');
   const email = document.getElementById('input-email');
   const house = document.getElementById('house');
-  const family = document.querySelector('input[name="family"]:checked').value;
-  const content = document.querySelectorAll('input[class="subject"]:checked');
-  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const family = document.querySelector('input[name="family"]:checked');  
+  const rate = document.querySelector('input[name="rate"]:checked');
   const form = document.getElementById('evaluation-form');
-  const divForm = document.createElement('div');
-  divForm.innerText += `Nome:${name}${lastName}\n`;
-  divForm.innerText += `Email:${email.value}\n`;
-  divForm.innerText += `Casa:${house.value}`;
-  divForm.innerText += `Família: ${family}`;
-  for (let index of content) {
-    const receberMaterias = receberMaterias + content[index].value;
+
+  const objetoLegal = {
+    Nome: `${name.value} ${lastName.value}`,
+    Email: `${email.value}`,
+    Casa: `${house.value}`,
+    Família: `${family.value}`,
+    Matérias: bunitinha(),
+    Avaliação: `${rate.value}`,
+    Observações: `${comment.value}`
   }
-  divForm.innerText += `Matérias: ${receberMaterias.toString()}`;
-  divForm.innerText += `Avaliação: ${rate}`;
-  divForm.innerText += `Observações: ${comment.value}`;
-  form.innerHTML = '';
-  form.appendChild(divForm);
-  console.log(content);
-  console.log(rate);
+
+  for (let index = 0; index < Object.keys(objetoLegal).length; index+=1) {
+    
+    
+    event.preventDefault();
+   
+
+    // form.innerHTML = '';
+    
+    // const divForm = document.createElement('p');
+    // divForm.innerText += `${Object.keys(objetoLegal)[index]} ${Object.values(objetoLegal)[index]}`
+    // form.appendChild(divForm);
+  }
+
+  console.log(objetoLegal);
 }
 
 submitButton.addEventListener('click', replaceForm);
