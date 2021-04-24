@@ -3,6 +3,7 @@ const password = document.querySelector('#password');
 const btnLogin = document.querySelector('#login');
 const btnSubmit = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
+const textarea = document.querySelector('#textarea');
 
 btnLogin.addEventListener('click', () => {
   const userValue = user.value;
@@ -16,4 +17,12 @@ btnLogin.addEventListener('click', () => {
 
 checkBox.addEventListener('change', () => {
   btnSubmit.disabled = false;
+});
+
+textarea.addEventListener('keyup', () => {
+  const countRemaining = document.querySelector('#counter');
+  const textEntered = textarea.value;
+  const counter = (500 - (textEntered.length));
+
+  countRemaining.textContent = counter;
 });
