@@ -1,3 +1,73 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#trybewarts-header-logo {
+  padding: 0px;
+  width: 80px;
+  padding: 10px;
+}
+
+header form {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: 'Zen Dots', cursive;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#input-continer {
+  display: flex;
+}
+
+main img {
+  height: 500px;
+}
+
+#input-name {
+  width: 45%;
+}
+#input-lastname {
+  width: 45%;
+}
+
+#input-email {
+  width: 45%;
+}
+
+main h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+#family-container {
+  display: flex;
+  width: 100%;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 hr {
   width: 100%;
 }
