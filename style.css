@@ -1,3 +1,136 @@
 label {
   display: block;
 }
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* requisito 1, 2 e 4 */
+.header {
+  display: flex;
+  font-size: 1.5em;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 150px;
+}
+
+/* requisito 2 */
+.trybewarts-header-logo {
+  width: 5%;
+}
+
+/* requisito 3 */
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-login input {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  height: 50px;
+  font-size: 0.8em;
+}
+
+#buttonLogin {
+  width: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(119, 119, 172);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+/* requisito 5 */
+#main-page {
+  display: flex;
+  flex-grow: row wrap;
+  justify-content: center;
+  padding: 200px;
+}
+
+/* requisito 5 e 6 */
+#evaluation-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 675px;
+}
+
+/* requisito 7 */
+#trybewarts-forms-logo {
+  width: 35%;
+}
+
+/* Requisito 10 */
+.align-items-forms {
+  display: flex;
+}
+
+#family-content {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#checkbox-input1 {
+  display: flex;
+  flex-direction: row;
+}
+#checkbox-input2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#rate {
+  display: flex;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgb(61, 60, 68);
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+#coment {
+  margin-top: 20px;
+}
+
+#top-form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  width: 675px;
+}
+
+.align-items-forms1 {
+  align-items: flex-start;
+}
+
+.align-items-forms2 {
+  width: 250px;
+  align-items: flex-end;
+}
+
+#submit-btn {
+  background-color: rgb(119, 119, 172);
+  width: 675px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#textarea {
+  resize: none;
+  width: 675px;
+  height: 100px;
+}
