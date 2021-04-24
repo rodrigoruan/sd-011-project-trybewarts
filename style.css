@@ -80,6 +80,12 @@ hr {
   width: 95%;
 }
 
+.form-title {
+  text-align: center;
+  margin: 40px 0 15px 0;
+  font-size: 1.6em;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
