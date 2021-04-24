@@ -2,13 +2,22 @@ const loginButton = document.getElementById('login-button');
 const loginInput = document.getElementById('login-input');
 const loginPassword = document.getElementById('password-input');
 const labelRate = document.querySelector('.rate-label');
+const buttonSend = document.querySelector('#submit-btn');
+const checkboxTerms = document.querySelector('#agreement');
 
 loginButton.addEventListener('click', () => {
-  // event.preventDefault();
   if (loginInput.value !== 'tryber@teste.com' && loginPassword.value !== '123456') {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
+  }
+});
+
+checkboxTerms.addEventListener('click', () => {
+  if (checkboxTerms.checked) {
+    buttonSend.removeAttribute('disabled');
+  } else {
+    buttonSend.setAttribute('disabled', 'disabled');
   }
 });
 
