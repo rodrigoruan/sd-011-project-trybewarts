@@ -25,10 +25,51 @@ checkboxAgreement.addEventListener('click', () => {
 });
 
 // Resolução do requisito 20
-
 const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
 textarea.addEventListener('input', () => {
   counter.innerHTML = textarea.maxLength - textarea.value.length;
 });
+
+// Requisito 21
+/*
+* Para a resolução desse requisito consultei a PR de Nicolas Pereira Silva
+* Link: https://github.com/tryber/sd-011-project-trybewarts/pull/95
+*/
+const inputName = document.querySelector('#input-name');
+const inputLastName = document.querySelector('#input-lastname');
+const evaluationForm = document.querySelector('#evaluation-form');
+const textAreaInput = document.querySelector('#textarea');
+const inputEmail = document.querySelector('#input-email');
+const house = document.querySelector('#house');
+function skillChecked() {
+  const skillSelected = document.querySelectorAll('.subject:checked');
+  const skill = [];
+  for (let index = 0; index < skillSelected.length; index += 1) {
+    skill.push(`${skillSelected[index].value}`);
+  }
+  return skill;
+}
+
+function submitForm(event) {
+  const data = {
+    Nome: `${inputName.value} ${inputLastName.value}`,
+    Email: `${inputEmail.value}`,
+    Casa: `${house.value}`,
+    Família: `${document.querySelector('input[name="family"]:checked').value}`,
+    Matérias: skillChecked(),
+    Avaliação: ` ${document.querySelector('input[name="rate"]:checked').value}`,
+    Observações: `${textAreaInput.value}`,
+  };
+  let y = '';
+  for (const x of Object.keys(data)) {
+    y += `${x}: ${data[x]}<br>`;
+    event.preventDefault();
+  }
+  evaluationForm.innerHTML = y;
+  event.preventDefault();
+}
+
+const btnToSubmit = document.querySelector('#submit-btn');
+btnToSubmit.addEventListener('click', submitForm);
