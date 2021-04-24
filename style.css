@@ -16,12 +16,13 @@
 
 .trybewarts-login {
   display: flex;
-  align-items: center;;
+  align-items: center;
 }
 
 #nome-e-sobrenome {
- padding-bottom: 10px;
- padding-top: 10px;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 h1 {
@@ -42,10 +43,6 @@ main {
   margin: 0 25px;
 }
 
-#nome-e-sobrenome {
-  display: flex;
-}
-
 #e-mail-e-casa {
   display: flex;
 }
@@ -58,7 +55,7 @@ main {
 #input-radio {
   display: flex;
   flex-direction: column;
-} 
+}
 
 #textarea {
   display: flex;
@@ -87,8 +84,7 @@ main {
 #techs {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
+  width: 8  0%;
 }
 
 #input-avaliador {
