@@ -32,6 +32,7 @@
      
       <div class="line-content">
         <input id='input-email' type="email" placeholder="Email">
+        Casa:
         <select name="house" id="house">
           <option id='gitnoria-house' value="Gitnória" type='text'>Gitnória</option>
           <option id='reactpuff-house' value="Reactpuff" type='text'>Reactpuff</option>
@@ -39,28 +40,39 @@
           <option id='pytherina-house' value="Pytherina" type='text'>Pytherina</option>
         </select>
       </div>
+      <hr>
      
       <div id='radio-check-container'>
         <div class="line-content" id='family-container'>
           <label id='label-family'> Qual sua família?
           </label>
-          <input type="radio" name="family" value="Frontend">Família Frontend
-          <input type="radio" name="family" value="Backend">Família Backend
-          <input type="radio" name="family" value="FullStack">Família FullStack
+          <label>
+            <input type="radio" name="family" value="Frontend">Família Frontend
+          </label>
+          <label>
+            <input type="radio" name="family" value="Backend">Família Backend
+          </label>
+          <label>
+            <input type="radio" name="family" value="FullStack">Família FullStack
+          </label>
         </div>
       
 
         <div class="line-content" id='subject-container'>
           <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?
           </label>
-          <input class='subject' type="checkbox" value='HoFs'>HoFs
-          <input class='subject' type="checkbox" value='Jest'>Jest
-          <input class='subject' type="checkbox" value='Promises'>Promises
-          <input class='subject' type="checkbox" value='React'>React
-          <input class='subject' type="checkbox" value='SQL'>SQL
-          <input class='subject' type="checkbox" value='Python'>Python
+          <div class='checkbox-options'>
+            <input class='subject' type="checkbox" value='HoFs'>HoFs
+            <input class='subject' type="checkbox" value='Jest'>Jest
+            <input class='subject' type="checkbox" value='Promises'>Promises
+            <input class='subject' type="checkbox" value='React'>React
+            <input class='subject' type="checkbox" value='SQL'>SQL
+            <input class='subject' type="checkbox" value='Python'>Python
+          </div>
         </div>
       </div>  
+
+      <hr>
 
       <div>
         <label id="label-rate">Como você avalia a Trybewarts?</label>
