@@ -21,6 +21,7 @@ agreementCheck.addEventListener('click', () => {
   }
 });
 
+// contador
 const counter = document.getElementById('counter');
 const textArea = document.getElementById('textarea');
 let tamanho = 500;
