@@ -112,6 +112,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 #label-rate {
   display: flex;
 }
