@@ -48,6 +48,10 @@ main {
   font-size: 14px;
 }
 
+.main-form input[type='checkbox'] {
+  margin: 5px  10px;;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -56,9 +60,16 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 15px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+}
+
+#label-family {
+  margin-bottom: 15px;
 }
