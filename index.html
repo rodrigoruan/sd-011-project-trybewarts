@@ -11,13 +11,6 @@
     <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts" width="80">
       <h1>Trybewarts</h1>
-      <form class="trybewarts-login">
-        <label for="login">Login: </label>
-          <input type="text" name="login" id="login" placeholder="Login" maxlength="25" required >
-        <label for="senha">Senha: </label>
-          <input type="text" id="senha" name="senha" placeholder="Senha" required>
-        <button class="logar" id="button" type="submit">Entrar</button>
-      </form>
     </header>
     <main>
       <form id="evaluation-form">
@@ -34,7 +27,7 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
         <div id="label-family">
-          <h3>Qual sua família?</h3>
+          <label>Qual sua família?</label><br>
           <input type="radio" name="family" value="Frontend">
           <label for="Frontend">Familia Frontend</label><br>
           <input type="radio" name="family" value="Backend">
@@ -42,8 +35,9 @@
           <input type="radio" name="family" value="FullStack">
           <label for="Fullstack">Familia FullStack</label><br>
         </div>
+        <br>
         <div id="label-content">
-          <h3>Qual conteúdo você está com mais vontade de aprender?</h3>
+          <label>Qual conteúdo você está com mais vontade de aprender?</label><br>
           <input type="checkbox" class="subject" name="Higher Order Functions" value="HoFs">
           <label for="Hofs">HoFs</label>
           <input type="checkbox" class="subject" name="Jest" value="Jest">
@@ -57,8 +51,9 @@
           <input type="checkbox" class="subject" name="Python" value="Python">
           <label for="Python">Python</label>
         </div>
+        <br>
         <div id="label-rate">
-          <h3>Como você avalia a Trybewarts?</h3>
+          <label>Como você avalia a Trybewarts?</label>
           <label for="1">1</label>
           <input type="radio" name="1" value="1">
           <label for="2">2</label>
