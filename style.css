@@ -41,7 +41,7 @@ main {
   flex: 60%;
 }
 
-.checkbox-control-wrapper label:not(:first-child) {
+.checkbox-control-wrapper label:not( :first-child ) {
   flex: 33%;
 }
 
