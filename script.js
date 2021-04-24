@@ -24,9 +24,17 @@ function submitLogin() {
   }
 }
 
+function deleteForms() {
+  const form = document.getElementById('evaluation-form');
+  form.parentNode.removeChild(form);
+}
+
 loginButton.addEventListener('click', submitLogin);
 
 textarea.addEventListener('keyup', counterEvent);
+
 check.addEventListener('change', checkTerms);
 
-checkTerms();
+submit.addEventListener('click', submitForms);
+
+window.onload = checkTerms;
