@@ -5,6 +5,25 @@
 }
 
 .trybewarts-login {
-display: flex;
-align-self: center;
+  display: flex;
+  align-self: center;
+}
+
+#trybewarts-header-title {
+  align-self: center;
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
