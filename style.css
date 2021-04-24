@@ -98,3 +98,12 @@ footer {
 .inline-family-section {
   display: flex;
 }
+
+#label-rate {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#radios {
+  display: flex;
+}
