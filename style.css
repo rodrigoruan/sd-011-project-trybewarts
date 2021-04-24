@@ -34,6 +34,8 @@
 }
 
 .caixa-lista {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 0;
   width: 50%;
 }
@@ -47,4 +49,11 @@
 
 .caixa-lista-checkbox-list {
   padding: 0.5rem;
+}
+
+.caixa-avaliacao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
 }
