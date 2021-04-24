@@ -26,6 +26,7 @@
       <div id="name-box">
         <label for="input-name"></label>
         <input 
+        class="user-name"
         type="text" 
         id="input-name"
         placeholder="Nome"
@@ -35,6 +36,7 @@
         
         <label for="input-lastname"></label>
         <input
+        class="user-name"
         type="text" 
         id="input-lastname"
         placeholder="Sobrenome"
@@ -43,23 +45,25 @@
         />
       </div>
       
-      <label for="my-email"></label>
-      <input 
-      type="email" 
-      id="input-email"
-      placeholder="Email"
-      name="my-email"
-      required
-      />
-      
-      <label for="house">Casa</label>
-      <select id="house">
-        <option>Choose an opition</option>
-        <option label="Gitnória" id="gitnoria-house"value="Gitnória"></option>
-        <option label="Reactpuff"id="reactpuff-house"value="Reactpuff"></option>
-        <option label="Corvinode"id="corvinode-house"value="Corvinode"></option>
-        <option label="Pytherina"id="pytherina-house"value="Pytherina"></option>
-      </select>
+      <div class="email-house">
+        <label for="my-email"></label>
+        <input 
+        type="email" 
+        id="input-email"
+        placeholder="Email"
+        name="my-email"
+        required
+        />
+        
+        <label for="house">Casa</label>
+        <select id="house">
+          <option>Choose an opition</option>
+          <option label="Gitnória" id="gitnoria-house"value="Gitnória"></option>
+          <option label="Reactpuff"id="reactpuff-house"value="Reactpuff"></option>
+          <option label="Corvinode"id="corvinode-house"value="Corvinode"></option>
+          <option label="Pytherina"id="pytherina-house"value="Pytherina"></option>
+        </select>
+      </div>
       
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">

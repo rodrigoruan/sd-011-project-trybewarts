@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  
-  /* font-family: Comic Neue; */
 }
 
 .header {
@@ -75,10 +73,14 @@ form h2 {
   display: flex;
 }
 
-#input-name {
+.user-name {
   width: 50%;
 }
 
-#input-lastname {
+.email-house {
+  display: flex;
+}
+
+#input-email {
   width: 50%;
 }
