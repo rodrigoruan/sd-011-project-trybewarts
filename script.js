@@ -11,3 +11,12 @@ function verifyLogin() {
 }
 
 loginBtn.addEventListener('click', verifyLogin);
+
+const btnAgreement = document.getElementById('agreement');
+
+function addProperty() {
+  const submitBtn = document.getElementById('submit-btn');
+  submitBtn.removeAttribute('disabled');
+}
+
+btnAgreement.addEventListener('click', addProperty);
