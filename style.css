@@ -56,23 +56,29 @@ header {
 
 .trybewarts-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
 }
 
 .section-form {
   display: flex;
   flex: column wrap;
+  flex-grow: 2;
 }
 
 #trybewarts-forms-logo {
   display: flex;
-  height: 500px;
-  flex-grow: 1;
+  align-content: center;
+  height: 800px;
 }
 
 .image-section {
   display: flex;
-  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.image-section img {
+  display: flex;
 }
 
 .title-form {
@@ -90,9 +96,11 @@ header {
 
 footer {
   display: flex;
+  flex: column wrap;
+  align-content: flex-end;
+  align-items: flex-end;
   text-align: center;
   color: black;
-  width: 500%;
 }
 
 .inline-family-section {
@@ -152,4 +160,17 @@ footer {
 
 #label-infos {
   padding: 2%;
+}
+
+.title-forms {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.title-cotainer {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  padding: 80px 80px 40px 0;
 }
