@@ -41,10 +41,10 @@
 .caixa-lista-checkbox {
   display: flex;
   flex-wrap: wrap;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   justify-content: flex-start;
 }
 
 .caixa-lista-checkbox-list {
-  padding: .5rem .5rem;
+  padding: 0.5rem;
 }
