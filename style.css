@@ -95,11 +95,11 @@ textarea {
   resize: none;
 }
 
-/** 
-  Usei 'position:absolute' pro parágrafo conseguir aparecer em cima da textarea
-  Usei 'aling-self:flex-end' pra conseguir por ele no canto direito, já que o flex-direction da div ta como column
-  As margins foi só pra deixar no lugar que nem ta na foto de exemplo
-**/
+/** Usei 'position:absolute' pro parágrafo conseguir aparecer em cima da textarea
+    Usei 'align-self:flex-end' pra conseguir por ele no canto direito
+      align-self pq o flex-direction da div ta como column
+    As margins foi só pra deixar no lugar que nem ta na foto de exemplo **/
+
 #counter {
   position: absolute;
   align-self: flex-end;
