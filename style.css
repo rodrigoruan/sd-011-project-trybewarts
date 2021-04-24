@@ -100,7 +100,7 @@ footer {
   flex-basis: 33%;
 }
 
-.form-container {
+#container-form {
   display: flex;
 }
 
