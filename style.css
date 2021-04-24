@@ -10,7 +10,6 @@ header {
 }
 
 #trybewarts-header-logo {
-  padding: 0px;
   width: 80px;
   padding: 10px;
 }
@@ -21,7 +20,7 @@ header form {
 
 #trybewarts-header-title {
   color: white;
-  font-family: 'Zen Dots', cursive;
+  font-family: "Zen Dots", cursive;
 }
 
 main {
@@ -66,21 +65,11 @@ main h1 {
 #label-family {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 hr {
   width: 100%;
-}
-
-main {
-  display: flex;
-}
-
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 675px;
 }
 
 .div-form {
@@ -116,12 +105,6 @@ main ul {
 
 #family-content-container {
   display: flex;
-}
-
-#label-family {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
 }
 
 #label-content {
