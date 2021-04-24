@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-#login-submit {
+#login-submit , #submit-btn {
   width: 70px;
   padding: 6px;
   margin: 5px;
@@ -46,7 +46,9 @@
   line-height: 20px;
   cursor: pointer;
 }
-
+#submit-btn {
+  width: 100%;
+}
 .page {
   display: flex;
   flex-direction: row;
@@ -95,6 +97,10 @@ main {
 .primeiracolunacheck , .segundacolunacheck , .terceiracolunacheck {
   display: flex;
   flex-direction: column;
+}
+
+#textarea {
+  width: 100%;
 }
 
 .rate , .agree {
