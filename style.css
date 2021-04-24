@@ -8,11 +8,23 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  height: 100px;
+}
+
+.header input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 5px;
 }
 
 .header h1 {
   font-size: 3em;
   color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 .header img {
@@ -25,6 +37,7 @@
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
@@ -35,6 +48,8 @@ main {
 
 .align-form {
   display: flex;
+  padding: 5px;
+  margin: 5px;
 }
 
 .align-form input {
@@ -55,7 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .trybewarts-rate {
@@ -70,4 +85,35 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+}
+
+#evaluation-form input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1;
+  margin: 0 5px;
+}
+
+.send-button {
+  padding: 10px;
+}
+
+#submit-btn {
+  padding: 10px;
+  background: rgb(50, 167, 145);
+  color: white;
+  border-style: outset;
+  border-color: rgb(50, 167, 145);
+  height: 39px;
+  width: 89px;
+  text-shadow: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
