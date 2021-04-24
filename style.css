@@ -16,22 +16,33 @@ main {
   align-content: flex-start;
 }
 
-#input-name , #input-lastname , #input-email {
+#input-name , #input-lastname , #input-email , .select-control-wrapper {
   flex: 50%;
 }
 
 .select-control-wrapper {
   display: flex;
-  flex: 50%;
-}
-
-.radio-control-wrapper {
-   display: flex;
-   flex-direction: column;
 }
 
 .select-control-wrapper select {
   flex-grow: 1;
+}
+
+.radio-control-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+}
+
+.checkbox-control-wrapper {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 60%;
+}
+
+.checkbox-control-wrapper label:not(:first-child) {
+  flex: 33%;
 }
 
 #evaluation-form label {
@@ -44,13 +55,14 @@ main {
 }
 
 .trybewarts-login {
+  display: flex;
   gap: 6px;
 }
 
 .trybewarts-login * {
   border-radius: 2px;
   border: 1px solid grey;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .trybewarts-login input {
@@ -73,8 +85,4 @@ main {
 
 .header img {
   height: 100%;
-}
-
-.trybewarts-login {
-  display: flex;
 }
