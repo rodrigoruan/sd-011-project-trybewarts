@@ -62,3 +62,9 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
+#footer {
+    background-color: rgb(44, 36, 36);
+    color: white;
+    text-align: center;
+}
