@@ -105,12 +105,13 @@ hr {
   margin: 20px 0;
 }
 
-#form-section-1 {
+#form-section-1, #form-section-3 {
   flex-direction: column;
 }
 
 .form-section-row {
   display: flex;
+  align-items: center;
 }
 
 .input-text {
@@ -127,6 +128,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 5px;
 }
 
 .label-text {
@@ -193,6 +195,10 @@ input[type="text"] , textarea {
 
 input::placeholder {
   font-weight: 700;
+}
+
+#label-infos {
+  margin-right: 10px;
 }
 
 .site-footer {
