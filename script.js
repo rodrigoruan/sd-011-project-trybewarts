@@ -14,6 +14,7 @@ const buttonSubmitLogin = document.getElementById('submitLogin');
 const selectHouse = document.getElementById('house');
 const labelContent = document.getElementById('label-content');
 const labelRate = document.getElementById('label-rate');
+const labelInfos = document.getElementById('label-infos');
 
 /* DOM Elements */
 const optionElement = document.createElement('option');
@@ -89,12 +90,21 @@ function createRadioRate() {
   });
 }
 
+function createAgreementCheckbox() {
+  const newCheckbox = inputElement.cloneNode();
+  newCheckbox.id = 'agreement';
+  newCheckbox.name = 'agreement';
+  newCheckbox.setAttribute('type', 'checkbox');
+  labelInfos.appendChild(newCheckbox);
+}
+
 function onLoad() {
   buttonSubmitLogin.addEventListener('click', validateLogin);
   createSelectHouseOptions();
   createCheckbox();
   createFamilyRadioOptions();
   createRadioRate();
+  createAgreementCheckbox();
 }
 
 window.onload = onLoad;
