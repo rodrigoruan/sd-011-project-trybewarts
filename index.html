@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <script type="text/javascript" src="script.js" async ></script>
 <header class="header">
 
 <div class="logo">
@@ -23,19 +24,23 @@
     <form class="trybewarts-login">
       <div class="control">
         <input id="login" class="input" type="text" placeholder="Login">
+      </div>
+      <div class="control">
         <input id="pass" class="input" type="password" placeholder="Senha">
+      </div>
+      <div class="control">
         <button id="submit-button" class="button is-info" type="submit">Login</button>
       </div>
     </form>
 
 </header>
 
-<h1 class="title is-1 title-form">Forms</h1>
 
+<h1 class="title is-1 title-form">Forms</h1>
 <section class="section-form">
   <main class="trybewarts-form">
     <form id="evaluation-form">
-      <div id="inline-name-and-lastname">
+      <div class="inline-name-and-lastname">
         <div class="control">
           <input id="input-name" class="input" type="text" placeholder="Nome">
         </div>
@@ -43,7 +48,7 @@
           <input id="input-lastname" class="input" type="password" placeholder="Sobrenome">
         </div>
       </div>
-      <div id="inline-email-house" >
+      <div class="inline-houses-and-email-section">
         <div class="control">
           <input id="input-email" class="input" type="password" placeholder="Email">
         </div>
@@ -54,6 +59,7 @@
               <option id="reactpuff-house" value="">Reactpuff</option>
               <option id="corvinode-house" value="">Corvinode</option>
               <option id="pytherina-house" value="">Pytherina</option>
+            </select>
           </div>
         </div>
       </div>
@@ -95,6 +101,7 @@
         </label>
       </label>
       </div>
+      <hr>
     </form>
   </main>
   <div class="image-section">
@@ -102,12 +109,5 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="content">
-    <p>Direitos reservados à Trybewarts©</p>
-  </div>
-</footer>
-
-<script type="text/javascript" src="script.js" async ></script>
 </body>
 </html>

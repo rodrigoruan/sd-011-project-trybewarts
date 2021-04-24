@@ -79,33 +79,12 @@ header {
   padding: 3%;
 }
 
-#inline-name-and-lastname {
+.inline-name-and-lastname {
   display: flex;
   flex: row wrap;
 }
 
-.input-name {
-  display: flex;
-}
-
-.input-lastname {
-  display: flex;
-}
-
-#inline-email-house {
-  display: flex;
-  flex: row wrap;
-}
-
-.input-email {
-  display: flex;
-}
-
-#house {
-  display: flex;
-}
-
-#houses-size {
+.inline-houses-and-email-section {
   display: flex;
 }
 
@@ -115,4 +94,3 @@ footer {
   color: black;
   width: 500%;
 }
-
