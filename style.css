@@ -14,7 +14,7 @@
 
 .trybewarts-header-logo {
   width: 5%;
-  padding: 10px 0;  
+  padding: 10px 0;
 }
 
 .trybewarts-login {
@@ -33,9 +33,7 @@
   width: 90%;
 }
 
-.btn {
+#btn-login {
   display: flex;
-  width: 20%;
-  height: 35%;
   align-self: center;
 }
