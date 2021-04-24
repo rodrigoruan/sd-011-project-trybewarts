@@ -13,3 +13,13 @@
   display: flex;
   align-items: center;
 }
+
+main {
+  display: flex; /* Requisito 5.3 */
+}
+
+#evaluation-form {
+  display: flex; /* Requisito 5.3 */
+  width: 675px; /* Requisito 5.4 */
+  flex-direction: column; /* Requisito 6 */
+}
