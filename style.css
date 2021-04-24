@@ -22,8 +22,7 @@ main {
 }
 
 #evaluation-input {
-  display: flex;
-  flex-direction: row;
+  flex-flow: row;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
