@@ -41,3 +41,11 @@ body {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#rodape {
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
