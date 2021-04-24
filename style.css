@@ -53,3 +53,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+footer {
+  text-align: center;
+  background-color: rgb(50, 167, 145);
+}
