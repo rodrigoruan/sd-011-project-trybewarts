@@ -24,8 +24,8 @@ main{
 }
 
 #evaluation-form{
-    display: flex;
     width: 675px;
+    display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -36,4 +36,9 @@ main{
 
 #house {
      max-width: 300px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
 }
