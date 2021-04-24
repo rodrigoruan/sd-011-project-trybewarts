@@ -11,3 +11,15 @@ function loginCheck() {
   }
 }
 submit.addEventListener('click', loginCheck);
+
+// Resolução do requisito 18
+const btnSubmit = document.querySelector('#submit-btn');
+const checkboxAgreement = document.querySelector('#agreement');
+
+checkboxAgreement.addEventListener('click', () => {
+  if (checkboxAgreement.checked === true) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.setAttribute('disabled', 'disabled');
+  }
+});
