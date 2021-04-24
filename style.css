@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
 }
 
-header {
+.header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-around;
@@ -14,7 +14,7 @@ header {
   padding: 10px;
 }
 
-header form {
+.header form {
   display: flex;
 }
 
