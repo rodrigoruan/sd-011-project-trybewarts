@@ -50,6 +50,14 @@ main {
   justify-content: space-around;
 }
 
+#contador {
+  display: flex;
+}
+
+#counter {
+  padding: 0 5px;
+}
+
 body {
   display: flex;
   flex-direction: column;

@@ -98,6 +98,53 @@
       </label>
       <!-- REQUISITO 17 - BOTÃO SUBMIT -->
       <button type="submit" id="submit-btn" disabled>Enviar</button>
+        <label>
+          <input type="checkbox" class="subject" value="HoFs">HoFs
+        </label>
+        <label>
+          <input type="checkbox" class="subject" value="Jest">Jest
+        </label>
+        <label>
+          <input type="checkbox" class="subject" value="Promises">Promises
+        </label>
+        <label>
+          <input type="checkbox" class="subject" value="React">React
+        </label>
+        <label>
+          <input type="checkbox" class="subject" value="SQL">SQL
+        </label>
+        <label>
+          <input type="checkbox" class="subject" value="Python">Python
+        </label>
+        <!-- REQUISITO 14 - RATE BUTTONS -->
+        <div>
+          <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
+            1<input type="radio" name="rate" value="1">
+            2<input type="radio" name="rate" value="2">
+            3<input type="radio" name="rate" value="3">
+            4<input type="radio" name="rate" value="4">
+            5<input type="radio" name="rate" value="5">
+            6<input type="radio" name="rate" value="6">
+            7<input type="radio" name="rate" value="7">
+            8<input type="radio" name="rate" value="8">
+            9<input type="radio" name="rate" value="9">
+            10<input type="radio" name="rate" value="10">
+        </div>
+        <!-- REQUISITO 15 - TEXTAREA -->
+        <label class="textarea">Deixe seu comentário:
+          <textarea name="Comentarios" cols="30" rows="10" maxlength="500" id="textarea"></textarea>
+        </label>
+        <div id="contador">
+          Você ainda possui
+          <a id="counter">500</a>
+          caracteres para comentario.
+        </div>
+        <!-- REQUISITO 16 - checkbox -->
+        <label id="label-infos">Você concorda com o uso das informações acima?
+          <input type="checkbox" id="agreement">
+        </label>
+        <!-- REQUISITO 17 - BOTÃO SUBMIT -->
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="Logo das casas Trybe">
   </main>
