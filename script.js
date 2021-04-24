@@ -3,7 +3,7 @@ const loginButton = document.getElementById('login-button');
 // get agreement checkbox
 let agreementBox = document.getElementById('agreement');
 // get send form button
-let sendFormBtn = document.getElementById('bubmit-btn');
+let sendFormBtn = document.getElementById('submit-btn');
 
 //// Login Function
 loginButton.addEventListener('click', () => {
@@ -20,11 +20,9 @@ loginButton.addEventListener('click', () => {
 
 //
 agreementBox.addEventListener('change', () => {
-  if (this.checked) {
-    console.log('check');
+  if (agreementBox.checked) {
     sendFormBtn.removeAttribute('disabled')
   } else {
-    console.log('not checked')
     sendFormBtn.setAttribute('disabled', 'disabled');
   }
-})
+}) 
