@@ -29,7 +29,6 @@ btnLogin.addEventListener('click', () => {
 const checkAgreement = document.getElementById('agreement');
 
 checkAgreement.addEventListener('change', () => {
-  console.log(checkAgreement.value);
   if (checkAgreement) {
     sendButton.disabled = false;
   }
