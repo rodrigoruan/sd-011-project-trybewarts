@@ -42,14 +42,12 @@ function materiasChecked() {
   return inputValue;
 }
 
-
-function setInputDiv (event) {
-  const nameInput = document.getElementById('input-name');
-  const lastnameInput = document.getElementById('input-lastname');
-  const email = document.getElementById('input-email')
-  const casa = document.getElementById('house');
-  const obs = document.getElementById('textarea');
-
+const nameInput = document.getElementById('input-name');
+const lastnameInput = document.getElementById('input-lastname');
+const email = document.getElementById('input-email');
+const casa = document.getElementById('house');
+const obs = document.getElementById('textarea');
+function setInputDiv(event) {
   const result = {
     Nome: `${nameInput.value} ${lastnameInput.value}`,
     Email: email.value,
@@ -60,7 +58,7 @@ function setInputDiv (event) {
     Observações: obs.value,
   };
   let formsPrint = '';
-  for (const index of Object.keys(result)){
+  for (const index of Object.keys(result)) {
     formsPrint += `${index}: ${result[index]}`;
     event.preventDefault();
   }
@@ -68,4 +66,4 @@ function setInputDiv (event) {
   forms.innerHTML = formsPrint;
 }
 
-buttom.addEventListener('click' , setInputDiv);
+buttom.addEventListener('click', setInputDiv);
