@@ -9,15 +9,16 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-        alt="logo trybewarts"
-        width="80"
-      />
+      <div id="imagem-logo-header">
+        <img
+          class="trybewarts-header-logo"
+          src="images/trybewarts-header-logo.svg"
+          alt="logo trybewarts"
+          width="80"
+        />
+      </div>
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
-        <label for="login"></label>
         <input
           type="text"
           name="login"
@@ -26,7 +27,6 @@
           maxlength="25"
           required
         />
-        <label for="senha"></label>
         <input
           type="text"
           id="senha"
@@ -152,12 +152,15 @@
           <label for="10">10</label>
         </fieldset>
         <fieldset class="comentario-usuario">
-        <label id="comentario" class="textarea">Deixe seu comentário:</label>
-        <textarea id="comentario" maxlength="500"></textarea></fieldset>
+          <label id="comentario" class="textarea">Deixe seu comentário:</label>
+          <textarea id="comentario" maxlength="500"></textarea>
+        </fieldset>
         <fieldset class="termo-responsabilidade">
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-        </label>
-        <input type="checkbox" id="agreement"></fieldset>
+          <label for="agreement" id="label-infos"
+            >Você concorda com o uso das informações acima?
+          </label>
+          <input type="checkbox" id="agreement" />
+        </fieldset>
         <button id="submit-btn" type="submit">Enviar</button>
       </form>
       <img
