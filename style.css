@@ -29,6 +29,10 @@ main section img {
   height: 500px;
 }
 
+#label-family-and-content {
+  display: flex;
+}
+
 #div-label-family {
   display: flex;
   flex-direction: column;
@@ -52,115 +56,11 @@ main section img {
 @media screen and ( max-width : 600px ) {
 
   .header {
-    justify-content: center;
-    color: white;
-  }
-
-  .trybewarts-header-logo {
-    width: 10%;
-  }
-
-  .trybewarts-login {
-    display: none;
-  }
-
-  #trybewarts-logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-top: 1px solid grey;
-  }
-
-  #trybewarts-forms-logo {
-    width: 100%;
-  }
-
-  #evaluation-form {
-    width: 100%;
-  }
-
-  main {
-    flex-direction: column;
-    align-content: center;
-    width: 100%;
-    align-items: center;
-  }
-
-  #evaluation-form-section {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 20px;
-  }
-
-  #div-name-email-family {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid grey;
-  }
-
-  #label-house {
-    display: flex;
-    align-items: center;
-  }
-
-  #label-family-and-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid grey;
-  }
-
-  input {
-    padding: 2px;
-    margin: 2px;
-  }
-
-  #div-name-email-family input {
-    flex-basis: 49%;
-    flex-wrap: nowrap;
-  }
-
-  #div-trybewarts-rate {
-    display: flex;
-    padding-bottom: 10px;
-  }
-
-  #textarea {
-    width: 500px;
-    height: 150px;
-    resize: none;
-  }
-
-  #submit-btn {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 5px;
-    background-color: purple;
-    border: 2px solid purple;
-    border-radius: 5px;
-    color: white;
-    width: 20%;
-  }
-
-  select {
-    padding: 1px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(94, 93, 93);
-    color: white;
-    padding: 5px;
+    justify-content: space-evenly;
   }
   main {
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
   main section img {
     height: 300px;
