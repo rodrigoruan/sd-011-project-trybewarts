@@ -6,14 +6,11 @@ const submit = document.querySelector('#submit-btn');
 const agree = document.querySelector('#agreement');
 const counter = document.querySelector('#counter');
 const textarea = document.querySelector('#textarea');
-// const clear = document.querySelector('.clear');
-// const inputName = document.querySelector('#input-name');
-// const inputName2 = document.querySelector('#input-lastname');
-// const email = document.querySelector('#input-email');
-// const casa = document.querySelector('#house');
-// const family = document.querySelector('input[name="family"]:checked');
-// const materias = document.querySelectorAll('[class="subject"]:checked');
-// const avaliation = document.querySelector('input[name="rate"]:checked');
+const form = document.getElementById('evaluation-form');
+const nome = document.querySelector('#input-name');
+const nome2 = document.querySelector('#input-lastname');
+const email = document.querySelector('#input-email');
+const casa = document.querySelector('#house');
 
 for (let index = 1; index <= 10; index += 1) {
   const label = document.createElement('label');
@@ -56,27 +53,47 @@ textarea.addEventListener('keyup', () => {
   counter.innerText = counterValue;
 });
 
-// function nome() {
-//   return `Nome: ${inputName.value} ${inputName2.value}`;
-// }
+const forms = () => {
+  const nameText = nome.value;
+  const lastName = nome2.value;
+  const emailText = email.value;
+  const casaText = casa.value;
+  const familia = document.querySelector('input[name="family"]:checked').value;
+  const elementos = document.querySelectorAll('input.subject:checked');
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const text = textarea.value;
+  const finalValues = [];
+  for (let i = 0; i < elementos.length; i += 1) {
+    finalValues.push(elementos[i].value);
+  }
+  const contents = finalValues.map((c) => `${c},`).join(' ');
+  return [nameText, lastName, emailText, casaText, familia, contents, rate, text];
+};
 
-// function showEmail() {
-//   return `Email: ${email.value}`;
-// }
+const createDivs = () => {
+  const values = forms();
+  const nomeTexto = document.createElement('div');
+  const emailTexto = document.createElement('div');
+  const casaTexto = document.createElement('div');
+  const familiaTexto = document.createElement('div');
+  const skills = document.createElement('div');
+  const rateText = document.createElement('div');
+  const areaTexto = document.createElement('div');
+  nomeTexto.innerText = `Nome: ${values[0]} ${values[1]}`;
+  emailTexto.innerText = `Email: ${values[2]}`;
+  casaTexto.innerText = `Casa: ${values[3]}`;
+  familiaTexto.innerText = `Família: ${values[4]}`;
+  skills.innerText = `Matérias: ${values[5]}`;
+  rateText.innerText = `Avaliação: ${values[6]}`;
+  areaTexto.innerText = `Observações: ${values[7]}`;
 
-// function showHouse() {
-//   return `Casa: ${casa.value}`;
-// }
+  return [nomeTexto, emailTexto, casaTexto, familiaTexto, skills, rateText, areaTexto];
+};
 
-// function showFamily() {
-//   return `Família: ${family.value}`;
-// }
-
-// function showMaterias() {
-//   return `Matérias: ${materias.value}`
-// }
-
-// submit.addEventListener('click', () => {
-//   clear.innerHTML = `<p>${nome()}</p><p>${showEmail()}</p>${showHouse()}
-//   <br>`;
-// });
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const divs = createDivs();
+  for (let i = 0; i < divs.length; i += 1) {
+    form.appendChild(divs[i]);
+  }
+});
