@@ -94,12 +94,43 @@ body {
   display: flex;
 }
 
-.form-section-1 , .form-section-3 {
+#form-section-1 , #form-section-3 {
   flex-direction: column;
 }
 
 .form-section-row {
   display: flex;
+}
+
+.input-text {
+  flex-basis: 45%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  padding: 12px;
+  margin: 5px;
+}
+
+.label-container {
+  flex-basis: 46.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-text {
+  font-size: 1.3em;
+}
+
+#house {
+  flex-basis: 85%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  padding: 12px;
+  margin: 5px;
 }
 
 .logo-container {
