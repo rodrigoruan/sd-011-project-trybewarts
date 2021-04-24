@@ -8,6 +8,7 @@ const iptName = document.querySelector('#input-name');
 const iptLastname = document.querySelector('#input-lastname');
 const sltHouse = document.querySelector('#house');
 const evalForm = document.querySelector('#evaluation-form');
+const iptEmail = document.querySelector('#input-email');
 
 btnLogin.addEventListener('click', () => {
   const userValue = user.value;
@@ -50,7 +51,7 @@ function subjectChecked() {
 btnSubmit.addEventListener('click', (event) => {
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
-    Email: `${user.value}`,
+    Email: `${iptEmail.value}`,
     Casa: `${sltHouse.value}`,
     Família: `${document.querySelector('input[name="family"]:checked').value}`,
     Matérias: subjectChecked(),
