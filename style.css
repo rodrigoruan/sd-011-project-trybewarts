@@ -22,9 +22,9 @@ main{
 }
 
 #evaluation-form{
-    display: flex;
     width: 675px;
-    flex-direction: column;
+    display: flex;
+    /*flex-direction: column;*/
     
 }
 

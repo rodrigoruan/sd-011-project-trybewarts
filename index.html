@@ -19,9 +19,31 @@
   </header>
   <main>  
     <form id="evaluation-form" action="">
-      <label for=""><input placeholder="Nome" id="input-name" type="text"></label>
-      <label for=""><input placeholder="Sobrenome" id="input-lastname" type="text"></label>
-      <br>
+      <div>
+        <label for=""><input placeholder="Nome" id="input-name" type="text"></label>
+        <label for=""><input placeholder="Sobrenome" id="input-lastname" type="text"></label>
+      </div>
+      <div>
+        <label for=""><input placeholder="Email" id="input-email" type="text"></label>       
+        <select name="" id="house">
+          <option id="gitnoria-house" value="">Gitnória</option>
+          <option id="reactpuff-house" value="">Reactpuff</option>
+          <option id="corvinode-house" value="">Corvinode</option>
+          <option id="pytherina-house" value="">Pytherina</option>
+        </select>
+        <div id="label-family">
+          Qual sua família?
+          <label for="front-radio">
+            <input id="front-radio" value="Frontend" name="family" type="radio">Frontend
+          </label><br>
+           <label for="back-radio">
+            <input id="back-radio" value="Backend" name="family" type="radio">Backend
+          </label><br>
+          <label for="fs-radio">
+            <input id="fs-radio" value="FullStack" name="family" type="radio">FullStack
+          </label>
+        </div>
+      </div>
       <label for=""><input placeholder="Email" id="input-email" type="text"></label>       
       <select name="" id="house">
         <option id="gitnoria-house" value="">Gitnória</option>
@@ -30,7 +52,7 @@
         <option id="pytherina-house" value="">Pytherina</option>
       </select>
       <div id="label-family">
-        Qual sua família?<br>
+        Qual sua família?
         <label for="front-radio">
           <input id="front-radio" value="Frontend" name="family" type="radio">Frontend
         </label><br>
