@@ -28,7 +28,8 @@ main {
 
 .trybewarts-login {
   display: flex;
-  margin-left: auto;
+  flex-grow: 0;
+  align-self: flex-start;
 }
 
 #trybewarts-header-title {
@@ -57,7 +58,14 @@ main {
   width: 50%;
 }
 
-#div-name , #div-house {
+#div-name , #div-house , .family-radio {
+  margin: 3px;
   display: flex;
   flex-direction: row;
+}
+
+#label-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
