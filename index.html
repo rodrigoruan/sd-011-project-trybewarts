@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+  
     <title>Document</title>
 </head>
 <body>
     <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-    <form class="trybewarts-login">
+
+    <form action = "" class="trybewarts-login">
       <div>
-        <input type="email" name="" id="" placeholder="Login">
+        <input type="email" name="" id="email-login" placeholder="Login">
+        <input type="password" name="" id="password-login" placeholder="Senha">
       </div>
+      <!-- <div> // Dentro dessa DIV dar erro no cypress.
+        <input type="password" name="" id="password-login" placeholder="Senha">
+      </div> -->
       <div>
-        <input type="password" name="" id="" placeholder="Senha">
-      </div>
-      <div>
-        <button type="submit">Logar</button>
+        <button type="submit" id= "btnLogar">Logar</button>
       </div>
     </form>
   </header>
+  <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
