@@ -16,12 +16,6 @@ main {
   display: flex;
 }
 
-#evaluation-form input {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
 #evaluation-form {
   flex-flow: column;
   width: 675px;
@@ -30,7 +24,19 @@ main {
 #evaluation-input {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-img {
+
+#evaluation-input input {
+  width: 40%;
+  margin: 3px;
+}
+
+#evaluation-input select {
+  width: 37%;
+}
+
+#trybewarts-forms-logo {
   height: 500px;
 }
