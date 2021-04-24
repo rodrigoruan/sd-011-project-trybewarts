@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  display: column;
-}
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -50,6 +46,14 @@ main {
 #label-family {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  align-content: space-around;
 }
 
 .input-radio {
@@ -59,10 +63,11 @@ main {
 
 .subject {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  padding: 50px;
 }
 
-.inputs {
+.checks {
   display: flex;
   flex-direction: row;
 }
