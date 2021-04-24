@@ -1,10 +1,17 @@
-.trybewarts-login{
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.trybewarts-login {
   display: flex;
 }
 
 #trybewarts-header-title {
   align-self: center;
 }
+
 main {
   display: flex;
 }
