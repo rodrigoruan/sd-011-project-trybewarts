@@ -77,3 +77,8 @@ header {
 .title-form {
   padding: 3%;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
