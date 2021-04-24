@@ -43,4 +43,20 @@
 
 .trybewarts-header-logo {
   width: 60px;
+  justify-content: flex-start;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+.aside img {
+  height: 500px;
 }
