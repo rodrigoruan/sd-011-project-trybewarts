@@ -19,7 +19,38 @@
    </div>
 
       <main>
-        <form id="evaluation-form"></form>
+        <form id="evaluation-form">
+          <div class="names">
+            <label for="input-name">
+              <input type="text" id="input-name" placeholder="Nome">Nome:
+            </label>
+    
+            <label for="input-lastname">
+              <input type="text" id="input-lastname" placeholder="Sobrenome">Sobrenome:
+            </label>
+          </div>
+
+          <div class="adresses">
+            <label for="input-email">
+              <input type="text" id="input-email" placeholder="Email">Email:
+            </label>
+      
+            <label for="house">Casa</label>
+            <select name="Casa" id="house">
+              <option value="" id="gitnoria-house">Gitnória</option>
+              <option value="" id="reactpuff-house">Reactpuffe</option>
+              <option value="" id="corvinode-house">Corvinodee</option>
+              <option value="" id="pytherina-house">Pytherinae</option>
+            </select>
+    
+            <div class="family">
+              <label for="" id="label-family">Qual sua família?</label>
+              <input type="radio" name="family" value="Frontend">Frontend
+              <input type="radio" name="family" value="Backend">Backend
+              <input type="radio" name="family" value="FullStack">FullStack
+            </div>
+          </div>
+        </form>
 
         <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
       </main>
