@@ -24,27 +24,29 @@
   <main>
     <form id="evaluation-form">
       <div class="block-input">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" name="Nome" type="text" placeholder="Nome">
+        <input id="input-lastname" name="sNome" type="text" placeholder="Sobrenome">
       </div>
       <div class="block-input">
-        <input id="input-email" type="text" placeholder="Email">
-        <input id="house" type="text">
+        <input id="input-email" name="Email" type="text" placeholder="Email">
+        <div class="block-input">
+          <label type="text" placeholder="Casa">Casa</label>
+          <select name="Casa" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
       </div>
-      <select name="Residencia" id="house">
-        <option id="gitnoria-house" value="gitnoria-house">gitnoria-house</option>
-        <option id="reactpuff-house" value="reactpuff-house">reactpuff-house</option>
-        <option id="corvinode-house" value="corvinode-house">corvinode-house</option>
-        <option id="pytherina-house" value="pytherina-house">pytherina-house</option>
-      </select>
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="block-input">
-        <input class="subject" type="checkbox" value="HoFs">
-        <input class="subject" type="checkbox" value="Jest">
-        <input class="subject" type="checkbox" value="Promises">
-        <input class="subject" type="checkbox" value="React">
-        <input class="subject" type="checkbox" value="SQL">
-        <input class="subject" type="checkbox" value="Python">
+        <input class="subject" name="Materias" type="checkbox" value="HoFs">
+        <input class="subject" name="Materias" type="checkbox" value="Jest">
+        <input class="subject" name="Materias" type="checkbox" value="Promises">
+        <input class="subject" name="Materias" type="checkbox" value="React">
+        <input class="subject" name="Materias" type="checkbox" value="SQL">
+        <input class="subject" name="Materias" type="checkbox" value="Python">
       </div>
       <label id="label-family">Qual sua família?</label>
       <input name="family" type="radio" value="Frontend">
@@ -64,16 +66,17 @@
         <input type="radio" name="rate" value="10">
       </div>
       <label class="textarea">Deixe seu comentário:</label>
-      <textarea class="digtText" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea class="digtText" name="Observações" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       <span id="counter"></span>
       <label id="label-infos">Você concorda com o uso das informações acima?</label>
       <input type="checkbox" id="agreement">
       <button id="submit-btn" type="submit" disabled>Enviar</button>
+      <section id="formClose">
+      </section>
     </form>
     <div class="block-logo">
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
     </div>
-
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
