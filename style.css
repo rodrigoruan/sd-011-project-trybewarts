@@ -13,9 +13,19 @@
 }
 
 .trybewarts-header-logo {
-  height: 100px;
+  height: 50px;
 }
 
 .trybewarts-login {
   display: flex;
+}
+
+#main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
 }
