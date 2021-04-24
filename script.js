@@ -30,13 +30,8 @@ textArea.addEventListener('keyup', () => {
   counter.innerText = textArea.maxLength - textArea.value.length;
 });
 
-const main = document.querySelector('.trybewarts-main');
 const forms = document.getElementById('evaluation-form');
-
 const buttom = document.querySelector('#submit-btn');
-const subject = document.querySelector('.subject');
-
-
 
 function materiasChecked() {
   const inputChecked = document.querySelectorAll('.subject:checked');
@@ -54,26 +49,23 @@ function setInputDiv (event) {
   const email = document.getElementById('input-email')
   const casa = document.getElementById('house');
   const obs = document.getElementById('textarea');
-  
-
 
   const result = {
-    Nome : `${nameInput.value} ${lastnameInput.value}`,
+    Nome: `${nameInput.value} ${lastnameInput.value}`,
     Email: email.value,
     Casa: casa.value,
     Família: `${document.querySelector('input[name="family"]:checked').value}`,
     Matérias: materiasChecked(),
     Avaliação: document.querySelector('input[name="rate"]:checked').value,
-    Observações: obs.value
+    Observações: obs.value,
   };
   let formsPrint = '';
-  for(let index of Object.keys(result)){
+  for (const index of Object.keys(result)){
     formsPrint += `${index}: ${result[index]}`;
     event.preventDefault();
   }
   console.log(formsPrint);
   forms.innerHTML = formsPrint;
-  
 }
 
 buttom.addEventListener('click' , setInputDiv);
