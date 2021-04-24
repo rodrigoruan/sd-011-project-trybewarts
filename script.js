@@ -53,16 +53,42 @@ function countCharacters() {
   const textarea = document.getElementById('textarea');
   let count = 500;
 
-  // Usei o 'keyup' pra poder pegar o valor a cada vez que for clicar numa tecla
   textarea.addEventListener('keyup', () => {
-    // Aqui eu diminuí 500 que é o valor original pelo tamanho do que foi escrito na textarea
     count = 500 - textarea.value.length;
+
     counter.innerText = count;
   });
 }
+
+// remove formulário
+function cleanFormChilds() {
+  const getForm = document.getElementById('evaluation-form'); 
+
+  getForm.innerHTML = '';
+}
+
+// altera elementos do formulário
+function changeFormChilds() {
+  const getSubmitButton = document.getElementById('submit-btn');
+
+  getSubmitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    cleanFormChilds()
+  });
+}
+
+// cria informação do campo nome
+function returnNameValue() {
+  const nameInput = document.getElementById('input-name');
+  const nameValue = nameInput.value;
+
+  return nameValue;
+}
+
 
 window.onload = function start() {
   validateAccess();
   enableSubmit();
   countCharacters();
-};
+  changeFormChilds();
+}
