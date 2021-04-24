@@ -55,7 +55,31 @@ main section img {
 
 @media screen and ( max-width : 600px ) {
 
-  body {
-    margin: 0;
+  .header {
+    justify-content: space-evenly;
   }
+
+  .trybewarts-header-logo {
+    width: 10%;
+  }
+
+  .trybewarts-login {
+    display: none;
+  }
+
+  #trybewarts-logo {
+    width: max-content;
+  }
+
+  #evaluation-form {
+    width: max-content;
+  }
+
+  main {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
 }
