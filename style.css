@@ -46,9 +46,11 @@
   line-height: 20px;
   cursor: pointer;
 }
+
 #submit-btn {
   width: 100%;
 }
+
 .page {
   display: flex;
   flex-direction: row;
