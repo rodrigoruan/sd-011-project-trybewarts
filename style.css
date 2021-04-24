@@ -1,6 +1,7 @@
 label {
   display: block;
 }
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -66,11 +67,6 @@ label {
   width: 35%;
 }
 
-/* Requisito 10 */
-.align-items-forms {
-  display: flex;
-}
-
 #family-content {
   display: flex;
   margin-top: 20px;
@@ -81,6 +77,7 @@ label {
   display: flex;
   flex-direction: row;
 }
+
 #checkbox-input2 {
   display: flex;
   flex-direction: row;
@@ -109,16 +106,17 @@ footer {
   flex-direction: row;
   margin-bottom: 25px;
   width: 675px;
+  justify-content: space-between;
 }
 
-.align-items-forms1 {
+/* .align-items-forms1 {
+  display: flex;
   align-items: flex-start;
-}
+} */
 
-.align-items-forms2 {
-  width: 250px;
-  align-items: flex-end;
-}
+/* .align-items-forms2 {
+  display: flex;
+} */
 
 #submit-btn {
   background-color: rgb(119, 119, 172);

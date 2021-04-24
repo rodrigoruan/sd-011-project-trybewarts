@@ -14,8 +14,6 @@ buttonLogin.addEventListener('click', () => {
 const agreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 
-agreement.addEventListener('change', checkboxChecked);
-
 function checkboxChecked() {
   if (agreement.checked === true) {
     submitBtn.disabled = false;
@@ -24,3 +22,4 @@ function checkboxChecked() {
   }
   //   submitBtn.disabled = !agreement.checked;
 }
+agreement.addEventListener('change', checkboxChecked);
