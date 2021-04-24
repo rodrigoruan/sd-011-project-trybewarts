@@ -1,4 +1,4 @@
-const loginButton = document.querySelector('#button-login');
+const loginButton = document.querySelector('#login-button');
 
 loginButton.addEventListener('click', () => {
   const trybewartsLogin = document.forms['trybewarts-login'];
