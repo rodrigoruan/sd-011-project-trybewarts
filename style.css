@@ -32,7 +32,7 @@ h1 {
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -55,10 +55,10 @@ main {
   flex-direction: column;
 }
 
-.input-radio {
+#input-radio {
   display: flex;
   flex-direction: column;
-}
+} 
 
 #textarea {
   display: flex;
@@ -68,21 +68,20 @@ main {
 #checkboxs {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
 }
 
 #container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 5%;
 }
 
 .subject {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #techs {
@@ -93,7 +92,7 @@ main {
 }
 
 #input-avaliador {
-  margin-top: 30px;
+  margin-top: 5%;
 }
 
 #textarea {
