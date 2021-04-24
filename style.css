@@ -48,11 +48,7 @@
 
 main {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-around;
-=======
   justify-content: space-between;
->>>>>>> 30bb219f86f30c5541ecd94227be1b6caf904fc9
 }
 
 #evaluation-form {
