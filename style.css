@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.trybewarts-header-title {
+  display: flex;
+  justify-content: center;
+}
+
 .trybewarts-header-logo {
   width: 5%;
   padding: 10px 0;
