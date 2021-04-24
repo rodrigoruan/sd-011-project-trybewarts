@@ -1,5 +1,3 @@
-const main = document.getElementsByTagName('main')[0];
-
 const check = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
 
@@ -9,6 +7,8 @@ const textarea = document.getElementById('textarea');
 const login = document.getElementById('login');
 const password = document.getElementById('password');
 const loginButton = document.getElementById('login-button');
+
+const form = document.getElementById('evaluation-form');
 
 function checkTerms() {
   submit.disabled = !check.checked;
@@ -27,8 +27,9 @@ function submitLogin() {
 }
 
 function deleteForms() {
-  const form = document.getElementById('evaluation-form');
-  form.parentNode.removeChild(form);
+  while(form.firstChild) {
+    form.removeChild(form.firstChild);
+  }
 }
 
 function createParagraphs(paragraphs) {
@@ -50,9 +51,10 @@ function appendFormsItens(formsItems) {
   document.getElementsByTagName('p')[5].innerText = `Avaliação: ${formsItems[6]}`;
   document.getElementsByTagName('p')[6].innerText = `Observações: ${formsItems[7]}`;
 }
+
 function createParagraphsSection(formsItems) {
   const paragraphs = document.createElement('section');
-  main.insertBefore(paragraphs, main.firstChild);
+  form.insertBefore(paragraphs, form.firstChild);
   createParagraphs(paragraphs);
   appendFormsItens(formsItems);
 }
