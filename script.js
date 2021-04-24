@@ -31,7 +31,7 @@ function verificaTermos() {
 verificaTermos();
 
 function contaCaracteres() {
-  var atual = tamanhoTextoAtual.innerHTML;
+  let atual = tamanhoTextoAtual.innerHTML;
   atual = 500;
   tamanhoTextoAtual.innerHTML = atual - textArea.value.length;
 }
