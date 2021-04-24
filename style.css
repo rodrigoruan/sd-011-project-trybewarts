@@ -106,5 +106,9 @@ header {
 
 #house {
   display: flex;
-  flex-grow: 0;
+}
+
+#houses-size {
+  display: flex;
+  flex-grow: 1;
 }
