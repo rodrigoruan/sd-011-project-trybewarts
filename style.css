@@ -43,7 +43,3 @@ main {
 .label-content {
   flex-direction: column;
 }
-
-#subject-container {
-  display: flex;
-}
