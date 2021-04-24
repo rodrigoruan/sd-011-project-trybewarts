@@ -36,6 +36,8 @@ function contaCaracteres() {
   tamanhoTextoAtual.innerHTML = atual - textArea.value.length;
 }
 
+contaCaracteres();
+
 textArea.addEventListener('keyup', contaCaracteres);
 termos.addEventListener('click', verificaTermos);
 formLogin.addEventListener('submit', verificaLogin);
