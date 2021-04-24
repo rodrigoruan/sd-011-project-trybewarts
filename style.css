@@ -45,3 +45,16 @@ header form {
   display: flex;
   flex-direction: column;
 }
+
+.to-learn {
+  display: flex;
+  flex-direction: column;
+}
+
+#textFormat {
+  margin:0;
+  padding: 0;
+  border: none;
+  max-height: none;
+  min-height: 0;
+}
