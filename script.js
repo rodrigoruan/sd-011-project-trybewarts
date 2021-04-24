@@ -5,9 +5,9 @@ const loginButton = document.getElementById('login-button');
 loginButton.addEventListener('click', () => {
   if (document.getElementById('login').value === 'tryber@teste.com'
     || document.getElementById('senha').value === '123456') {
-    alert("Olá, Tryber!");
+    alert('Olá, Tryber!');
   } else {
-    alert("Login ou senha inválidos.");
+    alert('Login ou senha inválidos.');
   }
 });
 
