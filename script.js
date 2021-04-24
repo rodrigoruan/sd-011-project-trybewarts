@@ -23,26 +23,25 @@ check.addEventListener('click', () => {
   cadButton.toggleAttribute('disabled');
 });
 
-<<<<<<< HEAD
 // Requisito 21
 
 const fullname = document.getElementById('fullname');
 const saveEmail = document.getElementById('save-email');
 const house = document.getElementById('house-selected');
-const family = document.getElementById('family-selected')
+const family = document.getElementById('family-selected');
 const marked = document.getElementById('marked');
 const rate = document.getElementById('evaluation');
 const observation = document.getElementById('observation');
 const submit = document.getElementById('submit-btn');
 const name = document.getElementById('input-name');
-const subname = document.getElementById('input-lastname')
+const subname = document.getElementById('input-lastname');
 const email = document.getElementById('input-email');
 const casas = document.getElementById('house');
 const familia = document.getElementsByName('family');
 const nota = document.getElementsByName('rate');
 const textarea = document.getElementById('area-texto');
 const checkbox = document.getElementsByName('conteudo');
-const form = document.querySelector('#evaluation-form');;
+const form = document.querySelector('#evaluation-form');
 
 submit.addEventListener('click', (event) => {
   event.preventDefault();
@@ -53,28 +52,28 @@ submit.addEventListener('click', (event) => {
 
   familia.forEach(radio => {
     if (radio.checked) {
-      family.innerText = `Família: ${radio.value}`
+      family.innerText = `Família: ${radio.value}`;
     }
-  })
+  });
 
-  let result = ''
+  let result = '';
   checkbox.forEach(checkbox => {
     if (checkbox.checked) {
-    result += ` ${checkbox.value}`
+      result += ` ${checkbox.value}`;
     }
     marked.innerText = `Matérias: ${result}`;
-  })
+  });
 
   nota.forEach(radio => {
     if (radio.checked) {
       rate.innerText = `Avaliação: ${radio.value}`;
     }
-  })
+  });
   observation.innerText = `Observações: ${textarea.value}`;
 
   form.innerText = '';
-})
-=======
+});
+
 // Requisito 20
 
 const textArea = document.getElementById('textarea');
@@ -85,4 +84,3 @@ textArea.addEventListener('keyup', () => {
   const x = 500 - textArea.value.length;
   countText.innerText = x;
 });
->>>>>>> 4e87e72de8886021d9db2f0e14d68693fa060122
