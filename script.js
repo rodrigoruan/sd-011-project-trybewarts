@@ -12,3 +12,19 @@ function alerta() {
   });
 }
 alerta();
+
+function submitForm() {
+  const getCheckbox = document.getElementById('agreement');
+  const getButtonSubmit = document.querySelector('#submit-btn');
+  getButtonSubmit.disabled = true;
+
+  getCheckbox.addEventListener('click', () => {
+    if (getCheckbox.checked) {
+      getButtonSubmit.disabled = false;
+    } else {
+      getButtonSubmit.disabled = true;
+    }
+  });
+}
+
+submitForm();
