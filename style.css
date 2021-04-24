@@ -63,13 +63,27 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
+  width: 380px;
+
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 aside {
   display: flex;
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+.subject {
+  display: flex;
+  flex-wrap: nowrap;
 }
