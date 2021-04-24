@@ -155,3 +155,7 @@ footer {
   display: flex;
   align-self: center;
 }
+
+#label-infos {
+  padding: 2%;
+}
