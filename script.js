@@ -44,9 +44,8 @@ function enableSubmit() {
     } else {
       getSubmitButton.disabled = true;
     }
-  })
+  });
 }
-
 
 window.onload = function start() {
   validateAccess();

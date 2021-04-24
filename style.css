@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 .header {
@@ -29,7 +29,7 @@ img {
   margin-right: 5px;
 }
 
-h1.trybewarts-header-title {
+.trybewarts-header-title {
   color: white;
 }
 
@@ -58,14 +58,13 @@ main {
 .family-wrapper {
   display: flex;
   flex-direction: column;
-  line-height: 40px
+  line-height: 40px;
 }
 
 .content-wrapper {
   line-height: 40px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 .content-first-row {
@@ -95,6 +94,3 @@ main {
 textarea {
   resize: none;
 }
-
-
-
