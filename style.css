@@ -20,6 +20,11 @@ main {
 
 #evaluation-form {
   display: flex; /* Requisito 5.3 */
-  width: 675px; /* Requisito 5.4 */
+  width: 675 px; /* Requisito 5.4 */
   flex-direction: column; /* Requisito 6 */
 }
+
+#trybewarts-forms-logo {
+  height: 500px; /* Requisito 7.3 */
+}
+
