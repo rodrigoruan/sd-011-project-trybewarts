@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-size: 15px;
+  font-family: Emilys Candy, cursive;
 }
 
 body {
@@ -39,6 +40,10 @@ input {
   border: none;
 }
 
+input::placeholder {
+  padding-left: 15px;
+}
+
 button {
   margin: 20px 0;
   padding: 10px 60px;
@@ -51,6 +56,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgb(102, 48, 189);
+}
+
 .inactive {
   pointer-events: none;
   opacity: 0.6;
@@ -59,6 +68,9 @@ button {
 #trybewarts-header-title {
   color: white;
   font-size: 35px;
+  font-weight: 500;
+  font-family: Noto serif, serif;
+  letter-spacing: 5px;
 }
 
 hr {
@@ -70,7 +82,6 @@ hr {
   margin-bottom: 15px;
   width: 700px;
 }
-
 
 main {
   display: flex;
@@ -194,6 +205,11 @@ textarea {
   margin-right: 20px;
   border-radius: 5px;
   border: 1px solid rgb(78, 44, 131);
+}
+
+textarea::placeholder {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .textarea-content {

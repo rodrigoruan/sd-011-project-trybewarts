@@ -1,5 +1,7 @@
 const btnLogin = document.querySelector('#logar');
 const textArea = document.querySelector('#textarea');
+const actBtn = document.getElementById('submit-btn');
+const checkCheck = document.querySelector('#agreement');
 
 btnLogin.addEventListener('click', () => {
   const loginInput = document.querySelector('#loginInput').value;
@@ -18,9 +20,6 @@ textArea.addEventListener('keyup', () => {
 
   counter.innerText = 500 - inputLength;
 });
-
-const actBtn = document.getElementById('submit-btn');
-const checkCheck = document.querySelector('#agreement');
 
 function checkBtn() {
   if (checkCheck.checked) {
