@@ -108,13 +108,14 @@ footer {
   display: flex;
 }
 
-.family-options {
+#label-family {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+
+#label-family input {
 }
 
 #label-rate {
   display: flex;
-  flex-wrap: nowrap;
 }
