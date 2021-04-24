@@ -6,6 +6,15 @@ const inputs = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 const labels = ['Higher Order Functions', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 const families = ['Frontend', 'Backend', 'FullStack'];
 const rates = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
+const fields = {
+  name: 'Nome',
+  email: 'Email',
+  house: 'Casa',
+  family: 'Família',
+  subjects: 'Matérias',
+  rate: 'Avaliação',
+  comment: 'Observações',
+};
 
 /* Variaveis do DOM */
 const inputLogin = document.querySelector('.trybewarts-login input[type="email"]');
@@ -16,12 +25,14 @@ const labelContent = document.getElementById('label-content');
 const labelRate = document.getElementById('label-rate');
 const labelInfos = document.getElementById('label-infos');
 const buttonSubmitEvaluation = document.getElementById('submit-btn');
+const formEvaluation = document.getElementById('evaluation-form');
 
 /* DOM Elements */
 const optionElement = document.createElement('option');
 const inputElement = document.createElement('input');
 const labelElement = document.createElement('label');
 const labelFamily = document.getElementById('label-family');
+const pElement = document.createElement('p');
 
 function validateLogin(event) {
   if (inputLogin.value === validEmail && inputPassword.value === validPassword) {
@@ -54,6 +65,8 @@ function createCheckbox() {
 
     newCheckbox.value = input;
     newCheckbox.setAttribute('type', 'checkbox');
+    newCheckbox.classList.add('subject');
+    newCheckbox.setAttribute('name', 'subjects');
 
     newLabel.appendChild(newCheckbox);
     newLabel.appendChild(document.createTextNode(labels[index]));
@@ -94,7 +107,6 @@ function createRadioRate() {
 function createAgreementCheckbox() {
   const newCheckbox = inputElement.cloneNode();
   newCheckbox.id = 'agreement';
-  newCheckbox.name = 'agreement';
   newCheckbox.setAttribute('type', 'checkbox');
   labelInfos.appendChild(newCheckbox);
 }
@@ -107,6 +119,29 @@ function agreementHandler() {
   toggleDisable(buttonSubmitEvaluation);
 }
 
+function setParagraphText(newP, field, formData) {
+  if (field === 'name') {
+    newP.innerText = `${fields[field]}: ${formData.get(field)} ${formData.get('lastname')}`;
+  } else if (field === 'subjects') {
+    newP.innerText = `${fields[field]}: ${formData.getAll(field).toString().replace(/,/g, ', ')}`;
+  } else {
+    newP.innerText = `${fields[field]}: ${formData.get(field)}`;
+  }
+}
+
+function submitHandler(event) {
+  event.preventDefault();
+  const formData = new FormData(formEvaluation);
+  formEvaluation.innerHTML = '';
+  for (const field in fields) {
+    if (Object.prototype.hasOwnProperty.call(fields, field)) {
+      const newP = pElement.cloneNode();
+      setParagraphText(newP, field, formData);
+      formEvaluation.appendChild(newP);
+    }
+  }
+}
+
 function onLoad() {
   buttonSubmitLogin.addEventListener('click', validateLogin);
   createSelectHouseOptions();
@@ -116,6 +151,7 @@ function onLoad() {
   createAgreementCheckbox();
   const checkboxAgreement = document.getElementById('agreement');
   checkboxAgreement.addEventListener('change', agreementHandler);
+  buttonSubmitEvaluation.addEventListener('click', submitHandler);
 }
 
 window.onload = onLoad;
