@@ -19,3 +19,9 @@ chkAcept.addEventListener('click', (event) => {
     btnSubmt.disabled = true;
   }
 });
+
+const name = document.getElementById('input-name');
+
+btnSubmt.addEventListener('click', () => {
+  name.value = 'Alguem Aqui';
+});
