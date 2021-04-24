@@ -22,3 +22,54 @@ const cadButton = document.getElementById('submit-btn');
 check.addEventListener('click', () => {
   cadButton.toggleAttribute('disabled');
 });
+
+// Requisito 21
+
+const fullname = document.getElementById('fullname');
+const saveEmail = document.getElementById('save-email');
+const house = document.getElementById('house-selected');
+const family = document.getElementById('family-selected')
+const marked = document.getElementById('marked');
+const rate = document.getElementById('evaluation');
+const observation = document.getElementById('observation');
+const submit = document.getElementById('submit-btn');
+const name = document.getElementById('input-name');
+const subname = document.getElementById('input-lastname')
+const email = document.getElementById('input-email');
+const casas = document.getElementById('house');
+const familia = document.getElementsByName('family');
+const nota = document.getElementsByName('rate');
+const textarea = document.getElementById('area-texto');
+const checkbox = document.getElementsByName('conteudo');
+const form = document.querySelector('#evaluation-form');;
+
+submit.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  fullname.innerText = `Nome: ${name.value} ${subname.value}`;
+  saveEmail.innerText = `Email: ${email.value}`;
+  house.innerText = `Casa: ${casas.value}`;
+
+  familia.forEach(radio => {
+    if (radio.checked) {
+      family.innerText = `Família: ${radio.value}`
+    }
+  })
+
+  let result = ''
+  checkbox.forEach(checkbox => {
+    if (checkbox.checked) {
+    result += ` ${checkbox.value}`
+    }
+    marked.innerText = `Matérias: ${result}`;
+  })
+
+  nota.forEach(radio => {
+    if (radio.checked) {
+      rate.innerText = `Avaliação: ${radio.value}`;
+    }
+  })
+  observation.innerText = `Observações: ${textarea.value}`;
+
+  form.innerText = '';
+})
