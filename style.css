@@ -12,7 +12,7 @@
 /* Estilização - Requisito 7 */
 .trybewarts-forms-logo {
   height: 500px;
-  float: right;
+  /* float: right; */
 }
 
 /* Estilização - Requisito 5 */
@@ -28,27 +28,35 @@ main {
 }
 
 /* Requisito 10 */
-main #evaluation-form {
+/* main #evaluation-form {
   flex-flow: row wrap;
-}
+} */
 
 /* Requisito 11 */
-#input-name {
+/* #input-name {
   display: flex;
   flex-basis: 45%;
 }
-
 #input-lastname {
   display: flex;
   flex-basis: 45%;
 }
-
 #input-email {
   display: flex;
   flex-basis: 45%;
-}
+} */
 
 /* Estilização - Requisito 12 */
-main {
+/* main {
+  flex-direction: column;
+} */
+
+#family {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
   flex-direction: column;
 }
