@@ -86,12 +86,10 @@ header {
 
 .input-name {
   display: flex;
-  flex-grow: 1;
 }
 
 .input-lastname {
   display: flex;
-  flex-grow: 1;
 }
 
 #inline-email-house {
@@ -101,7 +99,6 @@ header {
 
 .input-email {
   display: flex;
-  flex-grow: 1;
 }
 
 #house {
@@ -110,7 +107,6 @@ header {
 
 #houses-size {
   display: flex;
-  flex-grow: 1;
 }
 
 footer {
@@ -119,3 +115,4 @@ footer {
   color: black;
   width: 500%;
 }
+
