@@ -15,10 +15,12 @@
   display: flex;
   flex-direction: row;
 }
+
 .page {
   display: flex;
   flex-direction: row;
 }
+
 main {
   display: flex;
 }
