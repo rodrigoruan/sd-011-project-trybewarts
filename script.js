@@ -1,4 +1,4 @@
-// Requisito 3 
+// Requisito 3
 const buttonLogin = document.getElementById('buttonLogin');
 buttonLogin.addEventListener('click', () => {
   const login = document.getElementById('login');
