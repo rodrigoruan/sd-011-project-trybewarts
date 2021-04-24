@@ -94,3 +94,7 @@ footer {
   color: black;
   width: 500%;
 }
+
+.inline-family-section {
+  display: flex;
+}
