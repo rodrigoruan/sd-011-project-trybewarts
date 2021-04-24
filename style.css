@@ -124,3 +124,22 @@ body {
   border-radius: 7px;
   background-color: white;
 }
+
+.section__mainform--thirdrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: black;
+}
+
+#label-family {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  color: black;
+}
+
+.strong {
+  font-weight: 900;
+}
