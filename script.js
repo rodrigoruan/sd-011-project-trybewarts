@@ -33,30 +33,33 @@ function caracteres() {
 
 comment.addEventListener('keyup', caracteres);
 
+function getCheckedContent(content) {
+  const checkedContent = [];
+  for (let index = 0; index < content.length; index += 1) {
+    if (content[index].checked) {
+      checkedContent.push(content[index].value);
+    }
+  }
+  const checkedContentString = checkedContent.join(', ');
+  return checkedContentString;
+}
+
 function replaceForm() {
   const name = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
-  const email = document.getElementById('input-email');
-  const house = document.getElementById('house');
+  const email = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
   const family = document.querySelector('input[name="family"]:checked').value;
-  const content = document.querySelectorAll('input[class="subject"]:checked');
+  const content = document.querySelectorAll('.subject');
   const rate = document.querySelector('input[name="rate"]:checked').value;
   const form = document.getElementById('evaluation-form');
-  const divForm = document.createElement('div');
-  divForm.innerText += `Nome:${name}${lastName}\n`;
-  divForm.innerText += `Email:${email.value}\n`;
-  divForm.innerText += `Casa:${house.value}`;
-  divForm.innerText += `Família: ${family}`;
-  for (let index of content) {
-    const receberMaterias = receberMaterias + content[index].value;
-  }
-  divForm.innerText += `Matérias: ${receberMaterias.toString()}`;
-  divForm.innerText += `Avaliação: ${rate}`;
-  divForm.innerText += `Observações: ${comment.value}`;
-  form.innerHTML = '';
-  form.appendChild(divForm);
-  console.log(content);
-  console.log(rate);
+  form.innerHTML = `Nome: ${name} ${lastName}<br>`;
+  form.innerHTML += `Email: ${email}<br>`;
+  form.innerHTML += `Casa: ${house}<br>`;
+  form.innerHTML += `Família: ${family}<br>`;
+  form.innerHTML += `Matérias: ${getCheckedContent(content)}<br>`;
+  form.innerHTML += `Avaliação: ${rate}<br>`;
+  form.innerHTML += `Observações: ${comment.value}<br>`;
 }
 
 submitButton.addEventListener('click', replaceForm);
