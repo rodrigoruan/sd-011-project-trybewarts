@@ -47,7 +47,19 @@ function enableSubmit() {
   });
 }
 
+function countCharacters() {
+  const counter = document.getElementById('counter');
+  const textarea = document.getElementById('comment');
+  let count = 500;
+
+  textarea.addEventListener('keyup', () => {
+    count = 500 - textarea.value.length;
+    counter.innerText = count;
+  });
+}
+
 window.onload = function start() {
   validateAccess();
   enableSubmit();
+  countCharacters();
 };
