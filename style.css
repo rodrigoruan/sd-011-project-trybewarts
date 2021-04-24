@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-color: rgb(50, 167, 145); 
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-login {
@@ -53,8 +53,6 @@ body {
   border-radius: 6px;
   border: 1px solid blueviolet;
   background-color: blueviolet;
-
-  
 }
 
 #trybewarts-header-title {
