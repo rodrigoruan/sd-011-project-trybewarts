@@ -18,8 +18,24 @@ main {
 
 #evaluation-form {
   display: flex;
+  flex-flow: column;
   width: 675px;
   flex-direction: column;
+}
+
+#evaluation-input {
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#evaluation-input input {
+  width: 40%;
+  margin: 3px;
+}
+
+#evaluation-input select {
+  width: 37%;
 }
 
 #trybewarts-forms-logo {
