@@ -9,3 +9,13 @@ buttonEnviar.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+// 18
+const checkEnable = document.getElementById('agreement');
+checkEnable.addEventListener('click', () => {
+  if (checkEnable.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+});
