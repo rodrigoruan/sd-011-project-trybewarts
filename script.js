@@ -19,6 +19,8 @@ btnSub.disabled = true;
 function validateButton() {
   if (btnCheck.checked === true) {
     btnSub.disabled = false;
+  } else if (btnCheck.checked === false) {
+    btnSub.disabled = true;
   }
 }
 
