@@ -23,3 +23,12 @@ checkboxAgreement.addEventListener('click', () => {
     btnSubmit.setAttribute('disabled', 'disabled');
   }
 });
+
+// Resolução do requisito 20
+
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+
+textarea.addEventListener('input', () => {
+  counter.innerHTML = textarea.maxLength - textarea.value.length;
+});
