@@ -68,7 +68,7 @@ main {
   flex-grow: 2;
 }
 
-#label-family , #label-content {
+#label-family , #label-content, .div-family {
   display: flex;
   flex-direction: column;
   align-self: baseline;
