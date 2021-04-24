@@ -12,3 +12,14 @@ loginButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+const submitButton = document.getElementById('submit-btn');
+submitButton.disabled = true;
+
+submitButton.addEventListener('click', () => {
+  const checkBox = document.getElementById('agreement');
+  const checkBoxValue = checkBox.checked;  
+  
+  console.log(checkBoxValue);
+  alert("oi");
+})
