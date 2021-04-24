@@ -163,11 +163,24 @@ body {
   color: black;
 }
 
-hr.solid {
-  border-top: 1px solid rgb(0, 0, 0);
+.hr.solid {
+  border-top: 1px solid black;
   width: 95%;
 }
 
 .hr__padding {
   margin-top: 20px;
+}
+
+.label-style {
+  color: black;
+}
+
+#label-rate {
+  font-size: larger;
+  font-weight: 900;
+}
+
+.section__mainform--fourthrow {
+  text-align: center;
 }
