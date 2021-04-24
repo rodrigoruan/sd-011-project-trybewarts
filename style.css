@@ -41,11 +41,11 @@
   align-items: flex-end;
 }
 
-.evaluation-form,
 main {
   display: flex;
 }
 
-.evaluation-form {
+#evaluation-form {
+  display: flex;
   width: 675px;
 }
