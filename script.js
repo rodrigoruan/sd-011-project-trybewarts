@@ -13,12 +13,13 @@ const buttonLogin = document.querySelector('.btn-login');
 buttonLogin.addEventListener('click', login);
 
 const agreement = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
 
 agreement.addEventListener('change', () => {
   if (agreement.checked) {
-    document.getElementById('submit-btn').disabled = false;
+    submitButton.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitButton.disabled = true;
   }
 });
 
@@ -31,3 +32,31 @@ function caracteres() {
 }
 
 comment.addEventListener('keyup', caracteres);
+
+function replaceForm() {
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const email = document.getElementById('input-email');
+  const house = document.getElementById('house');
+  const family = document.querySelector('input[name="family"]:checked').value;
+  const content = document.querySelectorAll('input[class="subject"]:checked');
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const form = document.getElementById('evaluation-form');
+  const divForm = document.createElement('div');
+  divForm.innerText += `Nome:${name}${lastName}\n`;
+  divForm.innerText += `Email:${email.value}\n`;
+  divForm.innerText += `Casa:${house.value}`;
+  divForm.innerText += `Família: ${family}`;
+  for (let index of content) {
+    const receberMaterias = receberMaterias + content[index].value;
+  }
+  divForm.innerText += `Matérias: ${receberMaterias.toString()}`;
+  divForm.innerText += `Avaliação: ${rate}`;
+  divForm.innerText += `Observações: ${comment.value}`;
+  form.innerHTML = '';
+  form.appendChild(divForm);
+  console.log(content);
+  console.log(rate);
+}
+
+submitButton.addEventListener('click', replaceForm);
