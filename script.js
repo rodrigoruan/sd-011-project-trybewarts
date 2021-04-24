@@ -53,3 +53,16 @@ function changeButtonStatus() {
 }
 
 agreementStatus.addEventListener('click', changeButtonStatus);
+
+// Função que utiliza o evento Input para ser acionada e assim verificar o length do textArea e com isso fazer a conta do valor e mostrar na tela
+const textareaElement = document.querySelector('#textarea');
+
+function textareaLengthChecker(event) {
+  const target = event.currentTarget;
+  const maxLength = target.getAttribute('maxlength');
+  const currentLength = target.value.length;
+  const counterElement = document.querySelector('#counter');
+  counterElement.innerText = maxLength - currentLength;
+}
+
+textareaElement.addEventListener('input', textareaLengthChecker);

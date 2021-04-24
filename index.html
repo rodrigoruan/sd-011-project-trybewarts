@@ -141,8 +141,12 @@
           </label>
         </section>
       </div>
-      <label for="textarea-input" class="textarea">Deixe seu comentário:</label>
-      <textarea name="textarea" id="textarea-input" cols="30" rows="10" maxlength="500"></textarea>
+      <!-- Div criada para poder usar flexbox e assim deixar o label e o p em lados opostos -->
+      <div id="textarea-header">
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <p id="counter">500</p>
+      </div>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       <!-- Div para encapsular o label e checkbox que são relacionados e por um ao lado pelo flex -->
       <div id="checkbox-agreement">
         <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>

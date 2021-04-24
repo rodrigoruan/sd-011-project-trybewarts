@@ -25,10 +25,19 @@ main {
 }
 
 .textarea {
-  margin-top: 10px;
+  flex-basis: 90%;
 }
 
 #checkbox-agreement {
   display: flex;
   margin-top: 10px;
+}
+
+#textarea-header {
+  display: flex;
+  align-items: center;
+}
+
+#counter {
+  align-self: center;
 }
