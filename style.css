@@ -8,25 +8,86 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.trybewarts-header-logo {
+.header div img {
+  height: 70px;
+  margin: 10px 0;
+}
+
+.header h1 {
+  color: white;
+}
+
+.header .trybewarts-login {
   display: flex;
+}
+
+.header .trybewarts-login div {
+  padding-left: 10px;
+}
+
+.header .trybewarts-login div input {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.header .trybewarts-login #btn-input {
+  height: 30px;
+  width: 150px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: rgb(78, 44, 131);
+  color: white;
 }
 
 #main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  background-color: rgb(239, 239, 239);
+  text-align: center;
 }
 
-#main #evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
+#main h2 {
+  padding: 20px 0;
+  font-size: 2em;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#main #evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#main #evaluation-form #data {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+#main #evaluation-form #data input {
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 10px 5px;
+  width: 200px;
+}
+
+#main #evaluation-form label {
+  width: 200px;
+  align-content: center;
+}
+
+#main #evaluation-form label #house {
+  justify-content: center;
+  align-items: center;
 }
