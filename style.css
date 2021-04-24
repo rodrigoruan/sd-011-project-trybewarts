@@ -38,6 +38,7 @@ header input {
   border-width: 1px;
   padding: 10px 4px;
 }
+
 /* ---------------------------------------------------------------------- */
 body {
   display: flex;
@@ -56,11 +57,9 @@ main {
 }
 
 form h2 {
-  text-align:center
+  text-align: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
-
-
