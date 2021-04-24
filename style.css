@@ -16,6 +16,16 @@
   flex-direction: row;
 }
 
+#login-submit {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #503A83;
+  font-size: 17px;
+  border: none;
+  cursor: pointer
+}
+
 .page {
   display: flex;
   flex-direction: row;
