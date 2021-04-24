@@ -21,3 +21,13 @@ agreement.addEventListener('change', () => {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+
+const comment = document.getElementById('textarea');
+
+function caracteres() {
+  const count = document.getElementById('counter');
+  const commentLength = comment.value.length;
+  count.innerText = 500 - commentLength;
+}
+
+comment.addEventListener('keyup', caracteres);
