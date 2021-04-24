@@ -40,6 +40,11 @@
   width: 50%;
 }
 
+.caixa-lista-itens {
+  display: flex;
+  flex-direction: column;
+}
+
 .caixa-lista-checkbox {
   display: flex;
   flex-wrap: wrap;
