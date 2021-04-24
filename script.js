@@ -20,6 +20,7 @@ checkBox.addEventListener('change', () => {
   btnSubmit.disabled = false;
 });
 
+// Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 btnSubmit.addEventListener('click', () => {
   let auxName = iptName.value;
   localStorage.setItem('nameIpt', auxName);
