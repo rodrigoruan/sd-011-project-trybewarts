@@ -11,3 +11,14 @@ function validation() {
 }
 
 submitButton.addEventListener('click', validation);
+
+function submit() {
+  const agreement = document.getElementById('agreement');
+  if (agreement.checked) {
+    document.getElementById('submit-btn').style.display = 'flex';
+  } else {
+    document.getElementById('submit-btn').style.display = 'none';
+  }
+}
+
+submit();
