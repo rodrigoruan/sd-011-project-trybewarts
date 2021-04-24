@@ -11,5 +11,13 @@ function verificaDados() {
     }
   });
 }
-
 verificaDados();
+
+function caracteresTextArea() {
+  const textArea = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+  textArea.addEventListener('keyup', () => {
+    counter.innerText = 500 - (textArea.value.length);
+  });
+}
+caracteresTextArea();
