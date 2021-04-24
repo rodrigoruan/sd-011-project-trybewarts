@@ -58,3 +58,8 @@ footer {
   text-align: center;
   background-color: rgb(50, 167, 145);
 }
+
+#counter {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -33,3 +33,15 @@ agreementButton.addEventListener('click', () => {
     disabledButton();
   }
 });
+
+const msgElement = document.getElementById('textarea');
+const cntElement = document.getElementById('counter');
+
+msgElement.addEventListener('input', (e) => {
+  const { target } = e;
+
+  const maxLength = target.getAttribute('maxlength');
+  const currentLength = target.value.length;
+
+  cntElement.innerHTML = `${currentLength}/${maxLength}`;
+});
