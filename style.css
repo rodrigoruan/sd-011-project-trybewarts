@@ -3,9 +3,12 @@
   padding: 0;
 }
 
-#content {
+.content-column {
   display: flex;
   margin-left: 50px;
+}
+.content-row {
+  display: flex;
 }
 
 #evaluation-form {
