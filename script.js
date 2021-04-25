@@ -26,5 +26,5 @@ submitLoginBtn.addEventListener('click', verifiedValues);
 agreementCheckbox.addEventListener('change', toggleFormSubmitButtonState);
 
 commentBox.onkeyup = function () {
-  document.getElementById('counter').innerHTML = 'Caracteres disponiveis: ' + (500 - this.value.length);
+  document.getElementById('counter').innerHTML = 'Caracteres disponiveis: ' + (500 - commentBox.value.length);
 }
