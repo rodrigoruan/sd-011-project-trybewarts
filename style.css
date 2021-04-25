@@ -12,6 +12,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: rgb(234, 237, 240);
+}
 
 main {
   display: flex;
@@ -25,6 +28,7 @@ main {
   flex-direction: column;
   width: 675px;
   flex-basis: 675px;
+  border-radius: 5px;
   border: green solid;
 }
 
@@ -35,7 +39,54 @@ main {
   max-width: 500px;
 }
 
+#input-name {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+#input-lastname {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+#input-email {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+select {
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+#label-casa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: gray;
+  margin-left: 6px;
+}
+
 .form-style {
-  padding-top: 10px;
+  display: flex;
+}
+
+.form-select {
   display: flex;
 }
