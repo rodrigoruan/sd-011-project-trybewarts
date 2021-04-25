@@ -1,6 +1,6 @@
 const loginButton = document.querySelector('#login-button');
 const checkValue = document.getElementById('agreement');
-const comment = document.querySelector('#comment');
+const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 counter.innerText = 500;
 
@@ -33,7 +33,7 @@ function agreement() {
   });
 });
 
-comment.addEventListener('keyup', () => {
-  const current = comment.value.split('').length;
+textarea.addEventListener('keyup', () => {
+  const current = textarea.value.split('').length;
   counter.innerText = 500 - current;
 });
