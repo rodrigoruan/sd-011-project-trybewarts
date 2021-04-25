@@ -19,9 +19,9 @@ btnSubmit.disabled = true;
 function checkLogin() {
   const insertedEmail = email.value;
   const insertedPassword = password.value;
-  const emailFormat = /trybe@teste.com/.test(insertedEmail);
-  const passwordFormat = /123456/.test(insertedPassword);
-  if (!emailFormat || !passwordFormat) {
+  const emailFormat = 'tryber@teste.com';
+  const passwordFormat = '123456';
+  if ((insertedEmail !== emailFormat) || (insertedPassword !== passwordFormat)) {
     email.value = '';
     password.value = '';
     alert('Login ou senha inválidos.');
