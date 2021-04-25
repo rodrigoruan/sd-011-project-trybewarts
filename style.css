@@ -48,16 +48,6 @@ main {
   height: 500px;
 }
 
-#evaluation-form #input-name {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-#input-lastname {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
 #trybeAvalia {
   display: flex;
 }
