@@ -44,8 +44,9 @@ function CheckAgreement() {
 // Faz o contador da textarea contar
 function CharacterLimit() {
   const counter = document.querySelector('textarea').value.length;
-  const maxLength = document.getElementById('textarea').maxLength;
+  const textArea = document.getElementById('textarea');
   const pCounter = document.getElementById('counter');
+  const maxLength = textArea.maxLength;
   pCounter.innerHTML = maxLength - counter;
 }
 
@@ -53,6 +54,7 @@ function CharacterLimit() {
 function Onload() {
   CheckLogin();
   CheckAgreement();
+  CharacterLimit();
 }
 
 // Ao carregar toda a página, chama a função responsável por todas as funções
