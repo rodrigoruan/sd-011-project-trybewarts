@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu-btn.css">
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts - Júlio Mota e Victor Faria</title>
 </head>
@@ -11,14 +12,17 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Trybewarts header logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <div>
-      <form action="" method="get" class="trybewarts-login">
-        <div id="login-div">
-          <input id="login-value" type="text" name="login" placeholder="Login">
-          <input id="password-value" type="password" name="password" placeholder="Senha">
-          <button id="login">Logar</button>
-        </div>
-      </form>
+    
+    <form action="" method="get" class="trybewarts-login">
+      <div id="login-div">
+        <input id="login-value" type="text" name="login" placeholder="Login">
+        <input id="password-value" type="password" name="password" placeholder="Senha">
+        <button id="login">Logar</button>
+      </div>
+    </form>
+    
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
   </header>
 
@@ -118,5 +122,6 @@
   </footer>
 
   <script src="./script.js"></script>
+  <script src="./menu-btn.js"></script>
 </body>
 </html>
