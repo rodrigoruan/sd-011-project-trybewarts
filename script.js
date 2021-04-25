@@ -51,10 +51,7 @@ function calcTextArea() { // conta os catacteres restantes.
   if (total <= quant) {
     const resto = quant - total;
     document.getElementById('counter').innerHTML = resto;
-  } else {
-    document.getElementById('textarea').value = valor.substr(0, quant);
   }
 }
 
 textAreaComment.addEventListener('keyup', calcTextArea);
-
