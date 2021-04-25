@@ -1,3 +1,5 @@
+const formLogin = document.getElementsByClassName('trybewarts-login');
+
 function validar() {
   const nome = document.getElementById('nome-login');
   const pass = document.getElementById('pass-login');
@@ -8,3 +10,5 @@ function validar() {
     alert('Login ou senha inválidos');
   }
 }
+
+formLogin.addEventListener('submit', validar);
