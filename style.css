@@ -35,3 +35,7 @@ main {
   width: 675px;
   flex-basis: 675px;
 }
+
+.row {
+  padding-top: 10px;
+}
