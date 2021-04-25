@@ -7,6 +7,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  color: bisque;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -55,12 +56,22 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding: 2px;
+  padding: 10px;
 }
 
 .column {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  padding: 2px;
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(50, 167, 145);
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+  border-radius: 10px;
 }
