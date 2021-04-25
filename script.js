@@ -1,13 +1,16 @@
 // req 3 alerta ao logar
-/* const emailLogin = document.getElementById("email").innerText.value;
-const passwordLogin = document.getElementById("senha").innerText.value;
-const buttonEmail = document.getElementById("Login");
+const login = document.getElementById("login");
+const password = document.getElementById("senha");
+const buttonEmail = document.getElementById("enterButton");
 
-function checkInput() {
- if (emailLogin === ("tryber@teste.com") && passwordLogin === ("123456") {
-  alert('Login ou senha inválidos.');
- }else {
-  alert('Olá, Tryber!');
- }
-}
-addEventListener.buttonEmail(click, checkInput); */
+function loginTrybewarts() {
+  const emailTest = 'tryber@teste.com';
+  const passwordTest = '123456';
+    if (login.value === emailTest && password.value === passwordTest) {
+      alert('Olá, Tryber!');
+    } else {
+      alert('Login ou senha inválidos.');
+    }
+  }
+
+buttonEmail.addEventListener('click', loginTrybewarts);
