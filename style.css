@@ -5,6 +5,11 @@
   font-family: Arial, sans-serif;
 }
 
+#agreement {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .header {
   height: 65px;
   display: flex;
@@ -18,7 +23,7 @@
   height: 100%;
 }
 
-main {
+main , #label-infos{
   display: flex;
 }
 
