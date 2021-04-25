@@ -1,6 +1,7 @@
 const submitLoginBtn = document.getElementById('header-submit');
 const agreementCheckbox = document.getElementById('agreement');
 const formSubmitButton = document.getElementById('submit-btn');
+const commentBox = document.getElementById('comment-box');
 
 function toggleFormSubmitButtonState() {
   if (agreementCheckbox.checked) {
@@ -23,3 +24,7 @@ function verifiedValues() {
 
 submitLoginBtn.addEventListener('click', verifiedValues);
 agreementCheckbox.addEventListener('change', toggleFormSubmitButtonState);
+
+commentBox.onkeyup = function () {
+  document.getElementById('counter').innerHTML = 'Caracteres disponiveis: ' + (500 - this.value.length);
+}
