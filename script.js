@@ -25,17 +25,11 @@ function checkboxChecked() {
 agreement.addEventListener('change', checkboxChecked);
 
 // requisito 20 - contador de caracteres
-// Refêrencia para resolução do problema
-// https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
-// const textArea = document.getElementById('textarea');
-function limiteTextArea(textArea) {
-  const quant = 500;
-  const total = textArea.length;
-  if (total <= quant) {
-    const resto = quant - total;
-    document.getElementById('counter').innerHTML = resto;
-  } else {
-    document.getElementById('textarea').value = textArea.substr(0, quant);
-  }
+// Refêrencia para resolução do problema, tivemos ajuda do Julio Filizzola.
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+counter.innerText = textArea.maxLength;
+function textAreaFunction() {
+  counter.innerText = textArea.maxLength - textArea.value.length;
 }
-limiteTextArea();
+textArea.addEventListener('keyup', textAreaFunction);
