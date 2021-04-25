@@ -14,7 +14,7 @@
 
 body {
   background-color: rgb(235, 235, 235);
-  font-family : Times, serif;
+  font-family: Times, serif;
 }
 
 .trybewarts-login {
@@ -83,7 +83,6 @@ div input {
   width: 1%;
   font-size: 1em;
 }
-
 
 #house {
   padding: 1.5%;
