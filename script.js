@@ -33,7 +33,7 @@ checkbox.addEventListener('click', () => {
 });
 
 // textare characters counter
-// References 
+// References
 // Tutorial for Textarea's Counter: http://www.mattmorgante.com/technology/textarea-remaining-characters-javascript
 // Template Literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 textarea.addEventListener('keydown', () => {
@@ -45,7 +45,7 @@ textarea.addEventListener('keydown', () => {
 });
 
 // get all checked form's elements
-// References 
+// References
 // Checked: https://www.w3schools.com/jsref/prop_checkbox_checked.asp
 function subjectChecked() {
   const ckdSubject = document.querySelectorAll('.subject:checked');
