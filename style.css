@@ -38,9 +38,24 @@ label {
   padding: 10px 0;
 }
 
+/* #container-family {
+  display: flex;
+  flex-direction: column;
+} */
+
 #comment {
   resize: none;
 }
+
+/* #container-house {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subject {
+  flex-basis: 50%;
+} */
 
 #container-rate {
   display: flex;
