@@ -6,12 +6,12 @@
 }
 
 .trybewarts-header-logo {
-  left: 0;
+  justify-content: left;
   width: 50px;
 }
 
 .trybewarts-login {
-  text-align: right;
+  justify-content: right;
   display: flex;
 }
 
