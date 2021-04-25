@@ -16,19 +16,20 @@ let submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
 let seConcorda = document.getElementById('agreement')
-seConcorda.addEventListener('click', (event) => {
-	if (submitBtn.disabled = false) {
-		submitBtn.disabled = true;		
-	}
-	submitBtn.disabled = false;	
+seConcorda.addEventListener('click', () => {
+	if (seConcorda.checked) {
+		submitBtn.disabled = false;		
+	} else {
+	submitBtn.disabled = true;	
+  }
 })
 
 // Requisito 20
 // https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
 let textarea = document.getElementById('textarea');
 let counter = document.getElementById('counter');
-textarea.addEventListener('input', countLetters)
 
+textarea.addEventListener('input', countLetters)
 function countLetters(event){
   let target = event.target;
   let maxLength = target.getAttribute('maxLength');
