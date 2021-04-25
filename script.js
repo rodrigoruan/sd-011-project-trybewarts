@@ -14,13 +14,13 @@ document.getElementById('loginButton').addEventListener('click', () => {
 // Requisito 18
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
-
 const seConcorda = document.getElementById('agreement');
 seConcorda.addEventListener('click', () => {
-  if (!submitBtn.disabled) {
+  if (seConcorda.checked) {
+    submitBtn.disabled = false;
+  } else {
     submitBtn.disabled = true;
   }
-  submitBtn.disabled = false;
 });
 
 // Requisito 20
