@@ -3,6 +3,8 @@ const login = document.getElementById('login');
 const password = document.getElementById('password');
 const agreement = document.getElementById('agreement');
 const formSubmit = document.getElementById('submit-btn');
+const textArea = document.getElementById('comment-text');
+const counter = document.getElementById('counter');
 
 function submitForm() {
   const standardLogin = 'tryber@teste.com';
@@ -22,5 +24,13 @@ function enableSubmission() {
   }
 }
 
+function charCounter() {
+  let charsLeft = 500;
+  const typedString = textArea.value.toString();
+  charsLeft -= typedString.length;
+  counter.innerText = charsLeft;
+}
+
 submit.addEventListener('click', submitForm);
 agreement.addEventListener('click', enableSubmission);
+textArea.addEventListener('keyup', charCounter);

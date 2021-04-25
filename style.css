@@ -196,7 +196,13 @@ footer {
 #comments textarea {
   height: 130px;
   resize: none;
+  padding: 10px;
+  font-size: 1em;
   background-color: aliceblue;
+}
+
+#counter {
+  align-self: flex-end;
 }
 
 #submission {
