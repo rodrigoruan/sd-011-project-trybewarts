@@ -46,6 +46,7 @@ footer {
 #trybewarts-header-title {
   font-size: 2.5em;
   color: aliceblue;
+  align-self: flex-start;
 }
 
 .trybewarts-login {
@@ -77,24 +78,45 @@ footer {
 
 #evaluation-form {
   display: flex;
-  min-width: 675px;
+  flex-basis: 675px;
   flex-direction: column;
   background-color: aqua;
   align-items: center;
-  padding: 20px 30px;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 #personal-info {
-  background-color: red;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  width: 100%;
 }
 
-#personal-info input {
-  flex: 48% 0;
-  height: 1.8em;
-  margin: 0 5px;
+.input-field {
+  width: 48%;
+  height: 40px;
+  margin: 1%;
+  border-radius: 4px;
+  padding: 0 5px;
+  background-color: aliceblue;
+}
+
+.select-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3em;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.select-field select {
+  width: 80%;
+  height: 100%;
+  font-size: 1em;
+  border-radius: 4px;
+  background-color: aliceblue;
 }
 
 #preferences {
