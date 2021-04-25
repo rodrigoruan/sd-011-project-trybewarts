@@ -31,5 +31,14 @@ main {
 /* Requisito 12 */
 div {
   display: flex;
+  flex-direction: column;
 }
 
+div-column {
+  /* flex-direction: column; */
+  width: 40%;
+}
+.div-row {
+  /* flex-direction: row; */
+  width: 65%;
+}
