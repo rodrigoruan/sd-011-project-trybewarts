@@ -33,3 +33,27 @@ function makeOptionSelect(arrayCasas, classOrId) {
 }
 makeOptionSelect(['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'],
   ['#gitnoria-house', '#reactpuff-house', '#corvinode-house', '#pytherina-house']);
+
+  
+  function makeRateOptions(quantidadeDeOpcoes, tipoOpcoes, nomeOpcoes, typeOfOptons) {
+  for(let index = 1; index <= quantidadeDeOpcoes; index += 1) {
+    let criaOpcoes = document.createElement(tipoOpcoes);
+    criaOpcoes.type = typeOfOptons;
+    criaOpcoes.name = nomeOpcoes;
+    criaOpcoes.value = index;
+    criaOpcoes.innerText = 'socorro';
+    return criaOpcoes;
+  }
+} 
+makeRateOptions(10, 'input', 'rate', 'radio');
+
+function makeLabel(quantidadeDeOpcoes) {
+  for(let index = 1; index <= quantidadeDeOpcoes; index += 1){
+    let labels = document.createElement('label');
+    labels.innerHTML = index;
+    const rateSection = document.getElementById('rateSection');
+    labels.appendChild(makeRateOptions(10, 'input', 'rate', 'radio'));
+    rateSection.appendChild(labels);
+  }
+}
+makeLabel(10);

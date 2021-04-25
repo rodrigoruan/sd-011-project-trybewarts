@@ -66,3 +66,12 @@ main {
 display: flex;
 justify-content:flex-start;
 }
+
+#label-content {
+  display: flex;
+}
+
+#learningContent {
+  display: flex;
+  flex-direction: column;
+}
