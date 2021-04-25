@@ -199,3 +199,10 @@ hr {
 .footer {
   display: flex;
 }
+
+/* @equisito 20 */
+#counter {
+  text-align: right;
+  margin-top: 3px;
+  font-size: 12px;
+}
