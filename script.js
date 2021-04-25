@@ -11,3 +11,11 @@ function loginAlert() {
   });
 }
 loginAlert();
+
+const checkEnable = document.getElementById('agreement');
+checkEnable.addEventListener('click', () => {
+  const inputbutton = document.getElementById('submit-btn');
+  if (checkEnable.checked) {
+    return inputbutton.removeAttribute('disabled');
+  }
+});
