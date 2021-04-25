@@ -12,25 +12,16 @@ function validateLogin() {
 const loginButton = document.querySelector('#button-header');
 loginButton.addEventListener('click', validateLogin);
 
-
-//Referência: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/keypress_event
-
-
 const textarea = document.getElementById('textarea');
-let maxContador = textarea.getAttribute('maxlength')
+const maxContador = textarea.getAttribute('maxlength');
 
-let counter = document.getElementById('counter');
+const counter = document.getElementById('counter');
 counter.innerText = textarea.getAttribute('maxlength');
 
-
-
-function contaCaracteries() {  
-   
-  let campo = textarea.value.length;
-  let restante = maxContador - campo
- 
+function contaCaracteries() {
+  const campo = textarea.value.length;
+  const restante = maxContador - campo;
   counter.innerHTML = restante;
-
 }
 
 textarea.addEventListener('keyup', contaCaracteries);
