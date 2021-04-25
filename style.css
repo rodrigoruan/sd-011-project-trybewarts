@@ -35,6 +35,10 @@ header {
   padding: 10px 0;
 }
 
+.evaluation-rate {
+  display: flex;
+}
+
 .header form {
   display: flex;
 }
