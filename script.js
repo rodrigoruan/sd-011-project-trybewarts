@@ -12,7 +12,7 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
-document.getElementById("submit-btn").disabled = true;
+document.getElementById('submit-btn').disabled = true;
 function ocultButton() {
   document.getElementById('submit-btn').disabled = false;
 }
