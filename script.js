@@ -14,3 +14,15 @@ function loginTrybewarts() {
   }
 
 buttonEmail.addEventListener('click', loginTrybewarts);
+
+const agreementChecked = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+function check() {
+  if (agreementChecked.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+agreementChecked.addEventListener('change', check);
