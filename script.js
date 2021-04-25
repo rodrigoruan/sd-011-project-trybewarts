@@ -35,13 +35,3 @@ const displayCount = document.querySelector('#counter');
 textArea.addEventListener('keyup', () => {
   displayCount.innerText = 500 - textArea.value.length;
 });
-
-/** Código que resolve requisito 21 */
-const log = [
-  'Nome:',
-  'Email:',
-  'Casa:',
-  'Familia:',
-  'Matérias:',
-  'Avaliação:',
-  'Observações:'];
