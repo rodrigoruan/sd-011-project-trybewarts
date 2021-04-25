@@ -155,3 +155,7 @@ main button {
   width: 100%;
 }
 
+#counter {
+  text-align: end;
+  margin-top: 0;
+}

@@ -41,6 +41,14 @@ function CheckAgreement() {
   });
 }
 
+// Faz o contador da textarea contar
+function CharacterLimit() {
+  const counter = document.querySelector('textarea').value.length;
+  const maxLength = document.getElementById('textarea').maxLength;
+  const pCounter = document.getElementById('counter');
+  pCounter.innerHTML = maxLength - counter;
+}
+
 // Função que chama todas as funções do site
 function Onload() {
   CheckLogin();

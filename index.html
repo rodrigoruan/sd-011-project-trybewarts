@@ -78,7 +78,7 @@
       <hr>
       <div>
         <div class="evaluation-rate">
-          <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
           <label><input type="radio" name="rate" value="1">1</label>
           <label><input type="radio" name="rate" value="2">2</label>
           <label><input type="radio" name="rate" value="3">3</label>
@@ -92,9 +92,9 @@
         </div>
         <br>
         <label class="textarea">Deixe seu comentário: <br>
-          <textarea name="" id=""  rows="5" cols="50" maxlength="500"></textarea>
+          <textarea id="textarea"  rows="5" cols="50" maxlength="500" onkeyup="CharacterLimit()"></textarea>
         </label>
-        <br>
+        <p id="counter">500</p>
         <label id="label-infos">
           <input type="checkbox" id="agreement">Você concorda com o uso das informações acima?
         </label>
