@@ -46,7 +46,7 @@ function CharacterLimit() {
   const counter = document.querySelector('textarea').value.length;
   const textArea = document.getElementById('textarea');
   const pCounter = document.getElementById('counter');
-  const maxLength = textArea.maxLength;
+  const {maxLength} = textArea.maxLength;
   pCounter.innerHTML = maxLength - counter;
 }
 
