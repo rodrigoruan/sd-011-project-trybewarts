@@ -6,7 +6,6 @@ const counterText = document.getElementById('counter');
 const main = document.querySelector('main');
 const evaluationForm = document.querySelector('#evaluation-form');
 
-
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
   const passwordValue = document.getElementById('password-value').value;
@@ -28,10 +27,7 @@ function checkAgreement() {
 }
 
 function counter() {
-  const textLength = textArea.value.length;
-  const initialText = 500;
-  const difference = initialText - textLength;
-  counterText.innerText = difference;
+  counterText.innerText = 500 - textArea.value.length;
 }
 
 function getForm() {
@@ -41,33 +37,31 @@ function getForm() {
   for (let key of formValues) {
     result.push(key);
   }
-  
   return result;
 }
 
-function createResult() {
-  const newForm = document.querySelector('#evaluation-form');
-  const result = getForm();
-  const formUpdated = new FormData(newForm);
-  const resultContainer = document.querySelector('.result-container');
-  for (let index of result) {
-    const value = document.createElement('p');
-    value.innerText = `${index[0]}: ${index[1]}`;
-
-    formUpdated.set(value, Text);
+function removeFormInputs() {
+  for (const index = 0; index < evaluationForm.children.length;) {
+    evaluationForm.removeChild(evaluationForm.firstChild);    
   }
 }
 
-function removeFormInputs() {
-  for (let index = 0; index < evaluationForm.children.length;) {
-    evaluationForm.removeChild(evaluationForm.firstChild);    
+function createResult() {
+  const formAnswer = getForm();
+  removeFormInputs();
+  const firstValue = document.createElement('p');
+  firstValue.innerText= `${formAnswer[0][0]}: ${formAnswer[0][1]} ${formAnswer[1][1]}`;
+  evaluationForm.appendChild(firstValue);
+  for (let index = 2; index < formAnswer.length - 1; index += 1) {
+    const value = document.createElement('p');
+    value.innerText = `${formAnswer[index][0]}: ${formAnswer[index][1]}`;
+    evaluationForm.appendChild(value);
   }
 }
 
 function submitForm(event) {
   event.preventDefault();
   createResult();
-  removeFormInputs();
 }
 
 function addEventListeners() {
