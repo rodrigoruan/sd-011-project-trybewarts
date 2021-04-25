@@ -51,10 +51,6 @@ body {
   align-items: center;
 }
 
-main {
-  display: flex;
-}
-
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -69,16 +65,8 @@ form h2 {
   height: 500px;
 }
 
-#name-box {
-  display: flex;
-}
-
 .user-name {
   width: 50%;
-}
-
-.email-house {
-  display: flex;
 }
 
 #input-email {
@@ -88,15 +76,14 @@ form h2 {
 #label-family {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  
 }
 
-#label-content {
+.row {
   display: flex;
-  width: 60%;
-  flex-flow: column wrap;
 }
 
-#subjects-conteiner {
+.column {
   display: flex;
+  flex-direction: column;
 }

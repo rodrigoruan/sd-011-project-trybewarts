@@ -30,10 +30,10 @@
         <button id="btnlogin">Logar</button>
       </form>
     </header>
-    <main>
+    <main class="row">
       <form action="" method="GET" id="evaluation-form">
         <legend><h2>Forms</h2></legend>
-        <div id="name-box">
+        <div class="row">
           <label for="input-name"></label>
           <input
             class="user-name"
@@ -55,7 +55,7 @@
           />
         </div>
 
-        <div class="email-house">
+        <div class="row">
           <label for="my-email"></label>
           <input
             type="email"
@@ -93,8 +93,8 @@
 
         <hr />
 
-        <div id="subjects-conteiner">
-          <label id="label-family"
+        <div class="row" id="subjects-conteiner">
+          <label id="label-family" 
             >Qual sua família?
             <label for="op1">
               <input type="radio" name="family" id="op1" value="Frontend" />
@@ -110,7 +110,7 @@
             </label>
           </label>
 
-          <label for="" id="label-content"
+          <label for="" id="label-content" class="column"
             >Qual conteúdo você está com mais vontade de aprender?
             <div>
               <label for="subject-1">
@@ -175,6 +175,22 @@
         </div>
 
         <hr/>
+
+        <label for="" id="label-rate"
+        >Como você avalia a Trybewarts?
+        <input type="radio" class="rate"value="1">1
+        <input type="radio" class="rate"value="2">2
+        <input type="radio" class="rate"value="3">3
+        <input type="radio" class="rate"value="4">4
+        <input type="radio" class="rate"value="5">5
+        <input type="radio" class="rate"value="6">6
+        <input type="radio" class="rate"value="7">7
+        <input type="radio" class="rate"value="8">8
+        <input type="radio" class="rate"value="9">9
+        <input type="radio" class="rate"value="10">10
+
+
+        </label>
 
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
