@@ -21,3 +21,14 @@ text.addEventListener('input', (originEvent) => {
   const currentLength = originEvent.target.value.length;
   counter.innerText = 500 - currentLength;
 });
+
+const agreementBox = document.querySelector('#agreement');
+const submitFormButton = document.querySelector('#submit-btn');
+
+agreementBox.addEventListener('input', () => {
+  if (agreementBox.checked) {
+    submitFormButton.removeAttribute('disabled');
+  } else {
+    submitFormButton.setAttribute('disabled', '_self');
+  }
+});
