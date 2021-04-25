@@ -89,9 +89,15 @@ main {
 }
 
 .section2 {
+  width: 675px;
+  padding: 10px;
+
   display: flex;
   justify-content: space-between;
+}
 
+.section2 input {
+  margin: 10px;
 }
 
 .radioDiv {
@@ -111,7 +117,7 @@ main {
 }
 
 .section4 input {
-  margin-left: 5px ;
+  margin-left: 4px ;
 }
 
 .section05 {
