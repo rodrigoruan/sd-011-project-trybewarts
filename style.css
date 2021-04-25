@@ -58,8 +58,7 @@ main {
   display: flex;
   width: 675px;
   margin: 0 20px;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   align-items: center;
 }
 
