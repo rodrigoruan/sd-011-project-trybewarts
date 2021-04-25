@@ -6,6 +6,9 @@ window.onload = function onloadFunction() {
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const loginButton = document.querySelector('#login-button');
+const emailNav = document.querySelector('#email-nav');
+const passwordNav = document.querySelector('#password-nav');
+const loginButtonNav = document.querySelector('#login-button-nav');
 const checkMark = document.getElementById('agreement');
 const textArea = document.getElementById('textarea');
 const contChar = document.getElementById('counter');
@@ -20,6 +23,16 @@ function checkEmail() {
 }
 
 loginButton.addEventListener('click', checkEmail);
+
+function checkEmailNav() {
+  if (emailNav.value === 'tryber@teste.com' && passwordNav.value === '123456') {
+    window.alert('Olá, Tryber!');
+  } else {
+    window.alert('Login ou senha inválidos.');
+  }
+}
+
+loginButtonNav.addEventListener('click', checkEmailNav);
 
 function checkBox() {
   document.getElementById('agreement').onclick = function verifyChange() {
