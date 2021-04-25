@@ -25,11 +25,11 @@
   <main id="content">
     <div class=content>
       <h1>Forms</h1>
-      <form method="get" id="evaluation-form">
+      <form method="GET" id="evaluation-form">
       
-        <div class='full-name'>
+        <div class="full-name">
           <label for="name"></label>
-          <input type="text" id='input-name' name='name' placeholder="Nome">
+          <input type="text" id="input-name" name="name" placeholder="Nome">
           <label for="last-name"></label>
           <input type="text" id='input-lastname' name='last-name' placeholder="Sobrenome">
         </div>
@@ -85,6 +85,62 @@
         <section>
           <label id="label-content" for="checkbox-content">
             Qual conteúdo você está com mais vontade de aprender?
+          </label>
+
+          <div id="subjects-container">
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="HoFs" id="checkbox-content-hofs">
+  
+              <label for="checkbox-content-hofs">
+                Higher Order Functions
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="Jest" id="checkbox-content-jest">
+  
+              <label for="checkbox-content-jest">
+                Jest
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="Promises" id="checkbox-content-promises">
+  
+              <label for="checkbox-content-promises">
+                Promises
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="React" id="checkbox-content-react">
+  
+              <label for="checkbox-content-react">
+                React
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="SQL" id="checkbox-content-sql">
+  
+              <label for="checkbox-content-sql">
+                SQL
+              </label>
+            </div>
+  
+            <div class="subject">
+              <input type="radio" name="checkbox-content" value="Python" id="checkbox-content-python">
+  
+              <label for="checkbox-content-python">
+                Python
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <label id="label-rate" for="checkbox-content">
+            Como você avalia a Trybewarts?
           </label>
 
           <div id="subjects-container">
