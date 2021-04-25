@@ -1,5 +1,8 @@
 const loginButton = document.querySelector('#login-button');
 const checkValue = document.getElementById('agreement');
+const comment = document.querySelector('#comment');
+const counter = document.querySelector('#counter');
+counter.innerText = 500;
 
 function loginValidation() {
   const trybewartsLogin = document.forms['trybewarts-login'];
@@ -28,4 +31,8 @@ function agreement() {
       agreement();
     }
   });
+});
+
+comment.addEventListener('keyup', () => {
+  counter.innerText -= 1;
 });

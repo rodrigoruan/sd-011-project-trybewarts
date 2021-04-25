@@ -220,12 +220,17 @@
             </div>
         </section>
 
-        <label class="textarea" for="comment">
-          Deixe seu comentário:
-        </label>
+        <section id="textarea-container">
+          <label class="textarea" for="comment">
+            Deixe seu comentário:
+          </label>
+  
+          <textarea name="comment" id="comment" cols="30" maxlength="500" rows="10"></textarea>
+          <div>
+            <p id="counter"></p>  
+          </div>
+        </section>
 
-        <textarea name="comment" id="comment" cols="30" maxlength="500" rows="10"></textarea>
-        
         <div class="agreement">
           <label for="agreement"id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="agreement" id="agreement" required>
