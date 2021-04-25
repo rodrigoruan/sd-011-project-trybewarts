@@ -12,13 +12,10 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
-function submit() {
-  const agreement = document.getElementById('agreement');
-  if (agreement.checked) {
-    document.getElementById('submit-btn').style.display = 'flex';
-  } else {
-    document.getElementById('submit-btn').style.display = 'none';
-  }
+function ocultButton() {
+  document.getElementById('submit-btn').classList.toggle('desOcult');
 }
 
-submit();
+const agreement = document.getElementById('agreement');
+
+agreement.addEventListener('click', ocultButton);
