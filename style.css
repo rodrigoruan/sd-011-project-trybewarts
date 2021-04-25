@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-size: 1em;
+  min-width: 1368px;
 }
 
 h2 {
@@ -46,7 +47,7 @@ header {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 675px;
+  min-width: 675px;
 }
 
 #input-continer {
@@ -75,15 +76,16 @@ main h1 {
   padding: 40px;
 }
 
-#family-container {
+.family-container {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 70%;
 }
 
 #label-family {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 }
 
 hr {
@@ -122,16 +124,20 @@ main ul {
 }
 
 #label-content {
+  
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-container {
   display: flex;
   flex-direction: column;
 }
 
-#checkbox-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#checkbox-container label {
+.content-container label {
   flex-basis: 33%;
 }
 
