@@ -68,7 +68,6 @@ main {
 
 div input {
   width: 45%;
-  margin-right: 2px;
   border-radius: 10px;
   padding: 1.5%;
   margin: 0.5%;
@@ -88,8 +87,6 @@ div input {
   background-color: white;
   border-width: 0;
   width: 37%;
-  
-  
 }
 
 hr {
@@ -102,13 +99,13 @@ hr {
   display: flex;
 }
 
-.label-family{
-width: 50%;
+.label-family {
+  width: 50%;
 }
 
 .family {
-  width: 20px ;
-  margin: 10px 0 0 0;
+  width: 20px;
+  margin: 10px 0 0;
 }
 
 .label-content {
@@ -122,12 +119,11 @@ width: 50%;
   flex-wrap: wrap;
   width: 60%;
 }
+
 .content {
-  width: 20px ;
-  margin: 10px 0 0 0;
+  width: 20px;
+  margin: 10px 0 0;
 }
-
-
 
 /* parte do gustavo */
 div input label select {
