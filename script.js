@@ -34,8 +34,8 @@ getTextArea.addEventListener('keyup', () => {
 function tryMateriais() {
   const getMaterials = document.querySelectorAll('.subject:checked');
   const newArr = [];
-  for (let i = 0; i < getMaterials.length; i += 1) {
-    newArr.push(`${getMaterials[i].value}`);
+  for (let index = 0; index < getMaterials.length; index += 1) {
+    newArr.push(`${getMaterials[index].value}`);
   }
   return newArr.join(', ');
 }
@@ -51,8 +51,8 @@ function putInForm(event) {
     Observações: `${getObs.value}`,
   };
   let contentOfForm = '';
-  for (const i of Object.keys(arr)) {
-    contentOfForm += `${i}: ${arr[i]}<br>`;
+  for (const index of Object.keys(arr)) {
+    contentOfForm += `${index}: ${arr[index]}<br>`;
   }
   getForm.innerHTML = contentOfForm;
   event.preventDefault();
