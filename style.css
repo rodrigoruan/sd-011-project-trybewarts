@@ -75,11 +75,9 @@ hr {
 
 #rate-container {
   display: flex;
-
 }
 
 #label-rate {
   display: flex;
   flex-direction: row;
-
 }
