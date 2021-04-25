@@ -29,6 +29,8 @@
 
 #input-login , #input-password {
   width: 180px;
+  border-radius: 8px;
+  border-style: none;
 }
 
 main {
