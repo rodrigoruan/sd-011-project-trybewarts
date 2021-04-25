@@ -49,7 +49,7 @@ function skillChecked() {
   for (let index = 0; index < skillSelected.length; index += 1) {
     skill.push(`${skillSelected[index].value}`);
   }
-  return skill;
+  return skill.join(', ');
 }
 
 function submitForm(event) {
