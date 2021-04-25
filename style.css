@@ -168,12 +168,16 @@ footer {
   align-items: flex-end;
 }
 
-footer p {
+.footerend p {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
   background-color: gray;
   color: black;
+}
+
+.radiobox:hover {
+  cursor: pointer;
 }
 
 .title-cotainer {
