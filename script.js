@@ -11,4 +11,5 @@ function validar() {
   }
 }
 
+// but n tá funcionando
 formLogin.addEventListener('submit', validar);
