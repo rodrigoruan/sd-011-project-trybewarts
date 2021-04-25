@@ -2,6 +2,7 @@ const btnSubmit = document.querySelector('#btnSubmit'); // seletor botao logar.
 const evaluateFieldDiv = document.querySelector('.evaluateField'); // seletor camp de avaliacao.
 const agreeCheckbox = document.querySelector('#agreement'); // checkbox do "concordo"
 const submitBtn = document.querySelector('#submit-btn'); // botao de submit.
+const textAreaComment = document.querySelector('#textarea');
 
 function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert adequado.
   event.preventDefault();
@@ -44,9 +45,9 @@ function enableSubmit() { // Faz o requisito 18 funcionar. Enable/disable submit
 
 agreeCheckbox.addEventListener('change', enableSubmit);
 
-function textarea(valor) { // conta os catacteres restantes.
+function calcTextArea() { // conta os catacteres restantes.
   const quant = 500;
-  const total = valor.length;
+  const total = textAreaComment.value.length;
   if (total <= quant) {
     const resto = quant - total;
     document.getElementById('counter').innerHTML = resto;
@@ -54,3 +55,6 @@ function textarea(valor) { // conta os catacteres restantes.
     document.getElementById('textarea').value = valor.substr(0, quant);
   }
 }
+
+textAreaComment.addEventListener('keyup', calcTextArea);
+
