@@ -1,3 +1,4 @@
+// variables
 const user = document.querySelector('#user');
 const password = document.querySelector('#password');
 const btnLogin = document.querySelector('#login');
@@ -10,6 +11,7 @@ const sltHouse = document.querySelector('#house');
 const evalForm = document.querySelector('#evaluation-form');
 const iptEmail = document.querySelector('#input-email');
 
+// username and email validation
 btnLogin.addEventListener('click', () => {
   const userValue = user.value;
   const passwordValue = password.value;
@@ -21,6 +23,7 @@ btnLogin.addEventListener('click', () => {
   }
 });
 
+// submit button initial state
 checkbox.addEventListener('click', () => {
   if (checkbox.checked === false) {
     btnSubmit.disabled = true;
@@ -29,6 +32,10 @@ checkbox.addEventListener('click', () => {
   }
 });
 
+// textare characters counter
+// References 
+// Tutorial for Textarea's Counter: http://www.mattmorgante.com/technology/textarea-remaining-characters-javascript
+// Template Literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 textarea.addEventListener('keydown', () => {
   const countRemaining = document.querySelector('#counter');
   const textEntered = textarea.value.length;
@@ -37,17 +44,25 @@ textarea.addEventListener('keydown', () => {
   countRemaining.innerHTML = `${counter} caracteres`;
 });
 
+// get all checked form's elements
+// References 
+// Checked: https://www.w3schools.com/jsref/prop_checkbox_checked.asp
 function subjectChecked() {
   const ckdSubject = document.querySelectorAll('.subject:checked');
   const SubjectList = [];
 
   for (let index = 0; index < ckdSubject.length; index += 1) {
-    SubjectList.push(` ${ckdSubject[index].value}`);
+    SubjectList.push(`${ckdSubject[index].value}`);
   }
 
   return SubjectList;
 }
 
+// get all form's values
+// References
+// Objects: https://www.w3schools.com/js/js_objects.asp
+// Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+// Prevent Default (used to prevent blank or empty values): https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 btnSubmit.addEventListener('click', (event) => {
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
@@ -61,8 +76,8 @@ btnSubmit.addEventListener('click', (event) => {
 
   let lists = '';
 
-  for (const x of Object.keys(allInputs)) {
-    lists += `${x}: ${allInputs[x]}<br>`;
+  for (const index of Object.keys(allInputs)) {
+    lists += `${index}: ${allInputs[index]}<br>`;
 
     event.preventDefault();
   }
