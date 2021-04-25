@@ -12,8 +12,9 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
+document.getElementById("submit-btn").disabled = true;
 function ocultButton() {
-  document.getElementById('submit-btn').classList.toggle('desOcult');
+  document.getElementById('submit-btn').disabled = false;
 }
 
 const agreement = document.getElementById('agreement');
