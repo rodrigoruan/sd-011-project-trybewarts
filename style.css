@@ -108,6 +108,29 @@ main {
   text-align: left;
 }
 
+.section05 {
+  height: 40px;
+  width: 675px;
+}
+.section05 button {
+  background-color: rgb(80, 59, 131);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.trybewarts-login button {
+  background-color: rgb(80, 59, 131);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
 
 hr {
   margin: 5px;
