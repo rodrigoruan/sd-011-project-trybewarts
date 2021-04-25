@@ -125,10 +125,8 @@ main section img {
   }
 
   #nav-menu-login {
-    display: fixed;
     position: fixed;
-    margin-left: 25%;
-    margin-right: 0;
+    margin-left: 100%;
     height: 100%;
     width: 75%;
     background-image: linear-gradient(140deg, rgb(50, 167, 145), lightseagreen, purple);

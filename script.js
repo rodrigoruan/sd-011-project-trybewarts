@@ -9,6 +9,7 @@ const loginButton = document.querySelector('#login-button');
 const checkMark = document.getElementById('agreement');
 const textArea = document.getElementById('textarea');
 const contChar = document.getElementById('counter');
+const menuBtn = document.querySelector('#checkbox-menu');
 
 function checkEmail() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -161,3 +162,20 @@ function createFormElement() {
 }
 
 document.querySelector('#submit-btn').addEventListener('click', createFormElement);
+
+// botao menu interativo
+
+function showMenu() {
+  const menuBtnChecked = document.querySelector('#checkbox-menu').checked;
+  const menuNav = document.querySelector('#nav-menu-login');
+
+  if (menuBtnChecked === true) {
+    menuNav.style.transform = 'translateX(-100%)';
+    menuNav.style.transition = 'all .5s linear';
+  } else {
+    menuNav.style.transform = 'translateX(100%)';
+    menuNav.style.transition = 'all .5s linear';
+  }
+}
+
+menuBtn.addEventListener('click', showMenu);
