@@ -28,7 +28,7 @@
 }
 
 #input-login , #input-password {
-  width: 180px;
+  width: 150px;
   border-radius: 8px;
   border-style: none;
 }
@@ -103,4 +103,20 @@ footer {
 
 main img {
   height: 500px;
+}
+
+#button-login {
+  border-style: none;
+  border-radius: 8px;
+  height: 40px;
+  width: 50px;
+  background-color: rgb(80, 25, 112);
+  color: white;
+}
+
+#submit-btn {
+  background-color: rgb(80, 25, 112);
+  color: white;
+  border-radius: 5px;
+  border-style: none;
 }
