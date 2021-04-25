@@ -2,7 +2,15 @@ const btnSubmit = document.querySelector('#btnSubmit'); // seletor botao logar.
 const evaluateFieldDiv = document.querySelector('.evaluateField'); // seletor camp de avaliacao.
 const agreeCheckbox = document.querySelector('#agreement'); // checkbox do "concordo"
 const submitBtn = document.querySelector('#submit-btn'); // botao de submit.
-const textAreaComment = document.querySelector('#textarea');
+const textAreaComment = document.querySelector('#textarea'); // area dos comentários.
+const allForm = document.getElementById('evaluation-form'); // formulario inteiro.
+let userFirstName = document.getElementById('input-name').value; // primeiro nome
+let userLastName = document.getElementById('input-lastname').value; // segundo nome
+let userEmail = document.getElementById('input-email').value; // email
+let userHouse = document.getElementById('house').value; // casa
+let userFamily = allForm.elements.namedItem('family').value; // familia
+let allCheckBoxes = document.getElementsByClassName('subject'); // pega as checkbox
+
 
 function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert adequado.
   event.preventDefault();
@@ -55,3 +63,51 @@ function calcTextArea() { // conta os catacteres restantes.
 }
 
 textAreaComment.addEventListener('keyup', calcTextArea);
+
+// Variaveis e funcoes que constroi o perfil após clicar em enviar.
+
+function getUserSubjects() {
+  prefSubjects = [];
+  for (checkbox of allCheckBoxes) {
+    if (checkbox.checked) {
+      console.log(checkbox.value)
+      prefSubjects.push(' ' + checkbox.value);
+    }
+  }
+  return prefSubjects;
+}
+
+
+function getVariablesValues() {
+  userFirstName = document.getElementById('input-name').value; // primeiro nome
+  userLastName = document.getElementById('input-lastname').value; // segundo nome
+  userEmail = document.getElementById('input-email').value; // email
+  userHouse = document.getElementById('house').value; // casa
+  userFamily = allForm.elements.namedItem('family').value; // familia
+}
+
+function constructProfile(event) {
+  event.preventDefault();
+  getVariablesValues();
+  getUserSubjects()
+  let userRate = allForm.elements.namedItem('rate').value; // nota para a escola
+  let markedSubjects = getUserSubjects();
+  linebreak = document.createElement("br");
+  allForm.innerHTML = '';
+  console.log(allForm.innerHTML);
+  allForm.innerHTML += 'Nome: ' +  userFirstName + ' ' +  userLastName;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Email: ' + userEmail;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Casa: ' + userHouse;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Família: ' + userFamily;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Matérias: ' + markedSubjects;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Avaliação: ' + userRate;
+  allForm.appendChild(linebreak);
+  allForm.innerHTML += 'Observações: ' + textAreaComment.value;
+}
+
+submitBtn.addEventListener ('click',constructProfile);
