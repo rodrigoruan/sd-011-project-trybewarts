@@ -68,3 +68,12 @@ main {
 .label-content {
   flex-direction: column;
 }
+
+#subject-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#subject-container div {
+  width: 30%;
+}
