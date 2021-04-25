@@ -63,6 +63,125 @@ main section img {
     background-color: whitesmoke;
   }
 
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    order: 2;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    opacity: 0;
+  }
+
+  header div label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 30px;
+  }
+
+  span {
+    display: flex;
+  }
+
+  header div label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 40px;
+    background: white;
+    transition: 0.25s ease-in-out;
+  }
+
+  header div label span:nth-child( 1 ) {
+    top: 0;
+  }
+
+  header div label span:nth-child( 2 ) {
+    top: 10px;
+  }
+
+  header div label span:nth-child( 3 ) {
+    top: 20px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child( 1 ) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+
+  #checkbox-menu:checked + label span:nth-child( 2 ) {
+    opacity: 0;
+  }
+
+  #checkbox-menu:checked + label span:nth-child( 3 ) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  #nav-menu-login {
+    display: fixed;
+    position: fixed;
+    margin-left: 25%;
+    margin-right: 0;
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(140deg, rgb(50, 167, 145), lightseagreen, purple);
+  }
+
+  #nav-menu-login div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-menu-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  input {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid rgb(50, 167, 145);
+  }
+
+  #div-name-email-family input {
+    flex-basis: 49%;
+    flex-wrap: nowrap;
+  }
+
+  #nav-menu-login form input {
+    width: 80%;
+    margin: 5px 0;
+  }
+
+  #nav-menu-login form button {
+    width: 100px;
+    margin: 5px 0;
+    background-color: purple;
+    border: 2px solid purple;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .trybewarts-header-logo {
+    width: 7%;
+    margin: 5px 15px;
+  }
+
+  #nav-menu-login .trybewarts-header-logo {
+    width: 40%;
+  }
+
   .header {
     justify-content: center;
     color: white;
@@ -76,11 +195,6 @@ main section img {
     flex-grow: 3;
     justify-content: center;
     align-items: center;
-  }
-  
-  .trybewarts-header-logo {
-    width: 7%;
-    margin: 5px 15px;
   }
 
   .trybewarts-login {
@@ -146,18 +260,6 @@ main section img {
     line-height: 25px;
   }
 
-  input {
-    padding: 5px;
-    margin: 2px;
-    border-radius: 5px;
-    border: 1px solid rgb(50, 167, 145);
-  }
-
-  #div-name-email-family input {
-    flex-basis: 49%;
-    flex-wrap: nowrap;
-  }
-
   #div-trybewarts-rate {
     display: flex;
     flex-wrap: wrap;
@@ -187,10 +289,6 @@ main section img {
     width: 20%;
   }
 
-  span {
-    display: flex;
-  }
-
   select {
     display: flex;
     align-self: center;
@@ -208,59 +306,11 @@ main section img {
     color: white;
     padding: 6px;
   }
+}
 
-  .container {
-    display: flex;
-    height: 100%;
-    align-items: flex-start;  
-    justify-content: center;
-    
-  }
-  
-  #checkbox-menu {
-    position: absolute;
-    opacity: 0;
-  }
+@media screen and ( min-width : 601px ) {
 
-  header div label {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 25px;
-    width: 30px;
-  }
-  
-  header div label span {
-    position: absolute;
-    display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 40px;
-    background: white;
-    transition: 0.25s ease-in-out;
-  }
-
-  header div label span:nth-child(1) {
-    top: 0;
-  }
-
-  header div label span:nth-child(2) {
-    top: 10px;
-  }
-  header div label span:nth-child(3) {
-    top: 20px;
-  }
-
-  #checkbox-menu:checked + label span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: 8px;
-  }
-  #checkbox-menu:checked + label span:nth-child(2) {
-    opacity: 0;
-  }
-
-  #checkbox-menu:checked + label span:nth-child(3) {
-    transform: rotate(45deg);
-    top: 8px;
+  #nav-menu-login {
+    display: none;
   }
 }
