@@ -1,4 +1,14 @@
 const submitLoginBtn = document.getElementById('header-submit');
+const agreementCheckbox = document.getElementById('agreement');
+const formSubmitButton = document.getElementById('submit-btn');
+
+function toggleFormSubmitButtonState() {
+  if (agreementCheckbox.checked) {
+    formSubmitButton.disabled = false;
+  } else {
+    formSubmitButton.disabled = true;
+  }
+}
 
 function verifiedValues() {
   const loginValue = document.getElementById('login').value;
@@ -12,3 +22,4 @@ function verifiedValues() {
 }
 
 submitLoginBtn.addEventListener('click', verifiedValues);
+agreementCheckbox.addEventListener('change', toggleFormSubmitButtonState);

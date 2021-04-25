@@ -209,6 +209,12 @@ input::placeholder {
   background-color: #4E2C83;
   color: white;
   font-weight: 700;
+  cursor: pointer;
+}
+
+#submit-btn:disabled {
+  opacity: 0.8;
+  cursor: default;
 }
 
 .site-footer {
