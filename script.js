@@ -1,7 +1,7 @@
-let buttonLogin = document.getElementById('logar');
+const buttonLogin = document.getElementById('logar');
 function validate() {
-  let fnome = document.getElementById('login');
-  let fsenha = document.getElementById('senha');
+  const fnome = document.getElementById('login');
+  const fsenha = document.getElementById('senha');
 
   if (fnome.value === 'tryber@teste.com' && fsenha.value === '123456') {
     alert('Olá, Tryber!');
