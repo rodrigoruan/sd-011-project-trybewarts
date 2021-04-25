@@ -25,6 +25,10 @@ function verifiedValues() {
 submitLoginBtn.addEventListener('click', verifiedValues);
 agreementCheckbox.addEventListener('change', toggleFormSubmitButtonState);
 
-commentBox.onkeyup = function () {
-  document.getElementById('counter').innerHTML = 'Caracteres disponiveis: ' + (500 - commentBox.value.length);
+const counterDiv = document.getElementById('counter');
+
+function counterCaracteres() {
+  counterDiv.innerHTML = `Caracteres disponiveis: ${500 - commentBox.value.length}`;
 }
+
+commentBox.onkeyup = counterCaracteres;
