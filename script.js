@@ -5,15 +5,7 @@ const textArea = document.getElementById('textarea');
 const counterText = document.getElementById('counter');
 const main = document.querySelector('main');
 const evaluationForm = document.querySelector('#evaluation-form');
-const labelsResumo = ['Nome',
-  'Sobrenome',
-  'Email',
-  'Casa',
-  'Família',
-  'HardSkill',
-  'Avaliação',
-  'Comentário',
-  'Concorda'];
+const resultContainer = document.querySelector('.result-container');
 
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
@@ -49,13 +41,28 @@ function getForm() {
   for (let key of formValues) {
     result.push(key);
   }
-  console.log(result);
+  
   return result;
+}
+
+function createResult() {
+  const result = getForm();
+
+  for (let index of result) {
+    const label = document.createElement('label');
+    const value = document.createElement('p');
+
+    label.innerText = index[0];
+    value.innerText = index[1];
+
+    resultContainer.appendChild(label);
+    resultContainer.appendChild(value);
+  }
 }
 
 function submitForm(event) {
   event.preventDefault();
-  getForm();
+  createResult();
   main.removeChild(evaluationForm);
 }
 
