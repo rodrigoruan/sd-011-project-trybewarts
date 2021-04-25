@@ -52,7 +52,7 @@ body {
 
 .input-login {
   width: 150px;
-  height: 40px;
+  height: 35px;
   border-radius: 8px;
   border: none;
   padding: 12px;
@@ -61,7 +61,7 @@ body {
 
 #header-submit {
   width: 150px;
-  height: 40px;
+  height: 35px;
   border-radius: 8px;
   border: none;
   margin: 5px;
@@ -73,7 +73,7 @@ body {
 
 #trybewarts-header-title {
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 hr {
@@ -199,6 +199,16 @@ input::placeholder {
 
 #label-infos {
   margin-right: 10px;
+}
+
+#submit-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #4E2C83;
+  color: white;
+  font-weight: 700;
 }
 
 .site-footer {

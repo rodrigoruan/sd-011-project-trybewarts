@@ -1,5 +1,3 @@
-console.log('VQV');
-
 const submitLoginBtn = document.getElementById('header-submit');
 
 function verifiedValues() {
