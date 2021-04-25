@@ -84,3 +84,9 @@ header img {
   justify-content: center;
   margin-top: 50px;
 }
+
+.formTexto {
+  display: none;
+  width: 675px;
+  flex-direction: column;
+}
