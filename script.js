@@ -47,11 +47,12 @@ agreeCheckbox.addEventListener('change', enableSubmit);
 function textarea(valor) { // conta os catacteres restantes.
   const quant = 500;
   const total = valor.length;
-  if(total <= quant) {
-      const resto = quant-total;
-      document.getElementById('counter').innerHTML = resto;
-  }else{
-    document.getElementById('textarea').value = valor.substr(0,quant);
+  if (total <= quant) {
+    const resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
+  } else {
+    document.getElementById('textarea').value = valor.substr(0, quant);
   }
 }
+
 textarea();
