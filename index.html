@@ -40,10 +40,10 @@
 
           <label for="casa">Casa</label>
           <select name="casa" id="house">
-            <option value="gitnoria-house">Gitnória</option>
-            <option value="reactpuff-house">Reactpuff</option>
-            <option value="corvinode-house">Corvinode</option>
-            <option value="pytherina-house">Pytherina</option>
+            <option name="gitnoria-house" value="gitnoria-house">Gitnória</option>
+            <option name="reactpuff-house" value="reactpuff-house">Reactpuff</option>
+            <option name="corvinode-house" value="corvinode-house">Corvinode</option>
+            <option name="pytherina-house" value="pytherina-house">Pytherina</option>
           </select>
         </div>
 
@@ -224,6 +224,12 @@
               </label>
             </div>
         </section>
+
+        <label class="textarea" for="comment">
+          Deixe seu comentário.
+        </label>
+
+        <textarea name="comment" id="comment" cols="30" maxlength="500" rows="10"></textarea>
         
         <input type="submit" id="submit-btn" value="Enviar" disabled>
       </form>
