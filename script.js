@@ -31,4 +31,4 @@ function counterCaracteres() {
   counterDiv.innerHTML = `Caracteres disponiveis: ${500 - commentBox.value.length}`;
 }
 
-commentBox.onkeyup = counterCaracteres;
+commentBox.oninput = counterCaracteres;
