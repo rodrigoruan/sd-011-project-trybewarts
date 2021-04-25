@@ -54,5 +54,3 @@ function textarea(valor) { // conta os catacteres restantes.
     document.getElementById('textarea').value = valor.substr(0, quant);
   }
 }
-
-textarea();
