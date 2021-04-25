@@ -14,13 +14,12 @@ function validateLoginPassword() {
 btnLogin.addEventListener('click', validateLoginPassword);
 
 const textarea = document.querySelector('#textarea');
-textarea.addEventListener('keypress', (event) => {
+const counter = document.querySelector('#counter');
+textarea.addEventListener('input', () => {
   const maxChar = 500;
   const charLength = textarea.value.length;
-  console.log(charLength);
-  if (charLength > maxChar) {
-    event.preventDefault();
-  }
+  const currentChar = maxChar - charLength;
+  counter.textContent = currentChar.toString();
 });
 
 const agreement = document.querySelector('#agreement');
