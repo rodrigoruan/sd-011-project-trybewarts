@@ -24,8 +24,9 @@
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin 0 50px;
+  margin: 0 50px;
 }
+
 main {
   display: flex;
   flex-flow: row nowrap;
