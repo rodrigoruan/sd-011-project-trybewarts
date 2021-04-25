@@ -29,13 +29,18 @@ seConcorda.addEventListener('click', () => {
 let textarea = document.getElementById('textarea');
 let counter = document.getElementById('counter');
 
-textarea.addEventListener('input', countLetters)
-function countLetters(event){
+textarea.addEventListener('input', countLetters);
+function countLetters(event){  
   let target = event.target;
   let maxLength = target.getAttribute('maxLength');
   let currentLength = target.value.length;
+  let numShowing = maxLength - currentLength;
 
-  counter.innerHTML = `${currentLength}/${maxLength}`;  
+  if(textarea.value.length === 0) {
+    counter.innerHTML = `${maxLength}`;
+  } else {
+    counter.innerHTML = `${numShowing}`;  
+  }
 }
 
 
