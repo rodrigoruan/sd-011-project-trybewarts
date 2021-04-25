@@ -26,3 +26,11 @@ function disableEnableButton() {
   });
 }
 disableEnableButton();
+
+const textAreaId = document.getElementById('textarea');
+const characters = document.getElementById('counter');
+function counterCharacter() {
+  const textAreaLength = textAreaId.value.length;
+  characters.textContent = 500 - textAreaLength;
+}
+textAreaId.addEventListener('keyup', counterCharacter);
