@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -13,7 +18,6 @@
 
 #trybewarts-header-title {
   color: white;
-  display: flex;
   padding: 20px;
 }
 
@@ -25,7 +29,7 @@
 .trybewarts-login input {
   border-radius: 5px;
   border: none;
-  width: 100px;
+  width: 150px;
   height: 45px;
   padding: 0 15px;
   margin-right: 15px;
@@ -35,7 +39,7 @@
   background-color: rgb(80, 59, 131);
   color: white;
   border: none;
-  width: 100px;
+  width: 150px;
   height: 45px;
   padding: 0 15px;
   border-radius: 5px;
@@ -43,7 +47,6 @@
 
 .trybewarts-header-logo {
   width: 60px;
-  justify-content: flex-start;
 }
 
 main {
@@ -54,7 +57,31 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-direction: column;
+  margin: 0 20px;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.section01 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section01 input {
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  height: 45px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+
+#house {
+  border: none;
+  background-color: white;
+  width: 150px;
+  height: 45px;
+  border-radius: 5px;
 }
 
 .aside img {
@@ -63,4 +90,15 @@ main {
 
 .section2 {
   display: flex;
+  justify-content: space-between;
+
+}
+
+.radioDiv {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.checkboxDiv {
+  text-align: left;
 }
