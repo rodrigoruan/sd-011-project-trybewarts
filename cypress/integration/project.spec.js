@@ -65,254 +65,254 @@ describe('Trybewarts', () => {
   });
 
 
-  // describe('1 - Crie uma barra verde na parte superior da página', () => {
-  //   it('Esta barra deve possuir a classe `header`', () => {
-  //     cy.get(TOP_BAR_SELECTOR).should('exist');
-  //   });
+  describe('1 - Crie uma barra verde na parte superior da página', () => {
+    it('Esta barra deve possuir a classe `header`', () => {
+      cy.get(TOP_BAR_SELECTOR).should('exist');
+    });
 
-  //   it('A classe `header` deve determinar que o elemento é um flex container', () => {
-  //     cy.get(TOP_BAR_SELECTOR).should('have.css', 'display', 'flex');
-  //   });
+    it('A classe `header` deve determinar que o elemento é um flex container', () => {
+      cy.get(TOP_BAR_SELECTOR).should('have.css', 'display', 'flex');
+    });
 
-  //   it('A classe header deve possuir a propriedade `background-color: rgb(50, 167, 145)`', () => {
-  //     cy.get(TOP_BAR_SELECTOR).should('have.css', 'background-color', 'rgb(50, 167, 145)');
-  //   });
-  // });
+    it('A classe header deve possuir a propriedade `background-color: rgb(50, 167, 145)`', () => {
+      cy.get(TOP_BAR_SELECTOR).should('have.css', 'background-color', 'rgb(50, 167, 145)');
+    });
+  });
 
-  // describe('2 - Adicione o logotipo da Trybewarts com a classe `trybewarts-header-logo` no canto esquerdo da barra superior', () => {
-  //   it('Deve existir um elemento img com a classe `trybewarts-header-logo`', () => {
-  //     cy.get(TRYBEWARTS_LOGO_SELECTOR).should('exist');
-  //   });
+  describe('2 - Adicione o logotipo da Trybewarts com a classe `trybewarts-header-logo` no canto esquerdo da barra superior', () => {
+    it('Deve existir um elemento img com a classe `trybewarts-header-logo`', () => {
+      cy.get(TRYBEWARTS_LOGO_SELECTOR).should('exist');
+    });
 
-  //   it('O logotipo deve estar alinhado à esquerda dentro da barra verde', () => {
-  //     cy.get(TRYBEWARTS_LOGO_SELECTOR).should('be.leftAligned', TOP_BAR_SELECTOR);
-  //   });
+    it('O logotipo deve estar alinhado à esquerda dentro da barra verde', () => {
+      cy.get(TRYBEWARTS_LOGO_SELECTOR).should('be.leftAligned', TOP_BAR_SELECTOR);
+    });
 
-  //   it('O atributo src do logotipo deve apontar para images/trybewarts-header-logo.svg', () => {
-  //     cy.get(TRYBEWARTS_LOGO_SELECTOR).should('have.attr', 'src').should('equal', 'images/trybewarts-header-logo.svg');
-  //   });
-  // });
+    it('O atributo src do logotipo deve apontar para images/trybewarts-header-logo.svg', () => {
+      cy.get(TRYBEWARTS_LOGO_SELECTOR).should('have.attr', 'src').should('equal', 'images/trybewarts-header-logo.svg');
+    });
+  });
 
-  // describe('3 - Acrescente um formulário de autenticação no canto direito da barra superior contendo os inputs de login, de senha e um botão de entrar', () => {
-  //   it('Existe um formulário com a classe trybewarts-login', () => {
-  //     cy.get(TRYBEWARTS_LOGIN_FORM_SELECTOR).should('exist');
-  //   });
+  describe('3 - Acrescente um formulário de autenticação no canto direito da barra superior contendo os inputs de login, de senha e um botão de entrar', () => {
+    it('Existe um formulário com a classe trybewarts-login', () => {
+      cy.get(TRYBEWARTS_LOGIN_FORM_SELECTOR).should('exist');
+    });
 
-  //   it('O formulário deve estar alinhado à direita dentro da barra verde', () => {
-  //     cy.get(TOP_BAR_SELECTOR).should('have.css', 'justify-content', 'space-between');
-  //   });
+    it('O formulário deve estar alinhado à direita dentro da barra verde', () => {
+      cy.get(TOP_BAR_SELECTOR).should('have.css', 'justify-content', 'space-between');
+    });
 
-  //   it('Existem dois inputs e um botão dentro do formulário', () => {
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input`).should(($input) => {
-  //       expect($input).to.have.length(2);
-  //     });
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).should('exist');
-  //   });
+    it('Existem dois inputs e um botão dentro do formulário', () => {
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input`).should(($input) => {
+        expect($input).to.have.length(2);
+      });
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).should('exist');
+    });
 
-  //   it('Os inputs deverão conter placeholders com as palavras "Login" e "Senha", respectivamente', () => {
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input`).should(($input) => {
-  //       expect($input[0].placeholder).to.match(/Login/);
-  //       expect($input[1].placeholder).to.match(/Senha/);
-  //     });
-  //   });
+    it('Os inputs deverão conter placeholders com as palavras "Login" e "Senha", respectivamente', () => {
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input`).should(($input) => {
+        expect($input[0].placeholder).to.match(/Login/);
+        expect($input[1].placeholder).to.match(/Senha/);
+      });
+    });
 
-  //   it('O formulário deve ser um flex container', () => {
-  //     cy.get(TRYBEWARTS_LOGIN_FORM_SELECTOR).should('have.css', 'display', 'flex');
-  //   });
+    it('O formulário deve ser um flex container', () => {
+      cy.get(TRYBEWARTS_LOGIN_FORM_SELECTOR).should('have.css', 'display', 'flex');
+    });
 
-  //   it('Ao clicar no botão com login ou senha inválidos, emite um alerta contendo o texto "Login ou senha inválidos."', () => {
-  //     const stub = cy.stub()
-  //     cy.on('window:alert', stub);
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).click()
-  //       .then(() => {
-  //         expect(stub.getCall(0)).to.be.calledWith('Login ou senha inválidos.')
-  //       })
-  //   });
+    it('Ao clicar no botão com login ou senha inválidos, emite um alerta contendo o texto "Login ou senha inválidos."', () => {
+      const stub = cy.stub()
+      cy.on('window:alert', stub);
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).click()
+        .then(() => {
+          expect(stub.getCall(0)).to.be.calledWith('Login ou senha inválidos.')
+        })
+    });
 
-  //   it('Ao clicar no botão com login ou senha válidos, emite um alerta contendo o texto "Olá, Tryber!"', () => {
-  //     const stub = cy.stub()
-  //     cy.on('window:alert', stub);
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input:nth-child(1)`).type('tryber@teste.com');
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input:nth-child(2)`).type('123456');
-  //     cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).click()
-  //       .then(() => {
-  //         expect(stub.getCall(0)).to.be.calledWith('Olá, Tryber!')
-  //       })
-  //   });
-  // });
+    it('Ao clicar no botão com login ou senha válidos, emite um alerta contendo o texto "Olá, Tryber!"', () => {
+      const stub = cy.stub()
+      cy.on('window:alert', stub);
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input:nth-child(1)`).type('tryber@teste.com');
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} input:nth-child(2)`).type('123456');
+      cy.get(`${TRYBEWARTS_LOGIN_FORM_SELECTOR} button`).click()
+        .then(() => {
+          expect(stub.getCall(0)).to.be.calledWith('Olá, Tryber!')
+        })
+    });
+  });
 
-  // describe("4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header'", () => {
-  //   it('Deve existir um elemento h1 com o id trybewarts-header-title', () => {
-  //     cy.get(TRYBEWARTS_HEADER_TITLE).should('exist');
-  //   });
+  describe("4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header'", () => {
+    it('Deve existir um elemento h1 com o id trybewarts-header-title', () => {
+      cy.get(TRYBEWARTS_HEADER_TITLE).should('exist');
+    });
 
-  //   it('O elemento deve possuir o texto "Trybewarts"', () => {
-  //     cy.get(TRYBEWARTS_HEADER_TITLE).should('have.text', 'Trybewarts');
-  //   });
+    it('O elemento deve possuir o texto "Trybewarts"', () => {
+      cy.get(TRYBEWARTS_HEADER_TITLE).should('have.text', 'Trybewarts');
+    });
 
-  //   it('O header deve ter exatamente três elementos filhos', () => {
-  //     cy.get(TOP_BAR_SELECTOR).children().should('have.length', 3)
-  //   });
+    it('O header deve ter exatamente três elementos filhos', () => {
+      cy.get(TOP_BAR_SELECTOR).children().should('have.length', 3)
+    });
 
-  //   it('O filho do meio deve ser o título', () => {
-  //     cy.get(TOP_BAR_SELECTOR).children().eq(1).should('match', TRYBEWARTS_HEADER_TITLE);
+    it('O filho do meio deve ser o título', () => {
+      cy.get(TOP_BAR_SELECTOR).children().eq(1).should('match', TRYBEWARTS_HEADER_TITLE);
 
-  //   });
-  // });
+    });
+  });
 
-  // describe('5 - Adicione um formulário no corpo da página, posicionado ao lado esquerdo', () => {
-  //   it('Deve existir um formulário com o id `evaluation-form`', () => {
-  //     cy.get(EVALUATION_FORM).should('exist');
-  //   });
+  describe('5 - Adicione um formulário no corpo da página, posicionado ao lado esquerdo', () => {
+    it('Deve existir um formulário com o id `evaluation-form`', () => {
+      cy.get(EVALUATION_FORM).should('exist');
+    });
 
-  //   it('O formulário deve estar inserido na tag `main` do HTML', () => {
-  //     cy.get('main').children().eq(0).should('match', EVALUATION_FORM);
-  //   });
+    it('O formulário deve estar inserido na tag `main` do HTML', () => {
+      cy.get('main').children().eq(0).should('match', EVALUATION_FORM);
+    });
 
-  //   it('Tanto o formulário quanto o `main` devem ser flex containers', () => {
-  //     cy.get('main').should('have.css', 'display', 'flex');
-  //     cy.get(EVALUATION_FORM).should('have.css', 'display', 'flex');
-  //   });
+    it('Tanto o formulário quanto o `main` devem ser flex containers', () => {
+      cy.get('main').should('have.css', 'display', 'flex');
+      cy.get(EVALUATION_FORM).should('have.css', 'display', 'flex');
+    });
 
-  //   it('O formulário deve ter uma largura de 675px', () => {
-  //     cy.get(EVALUATION_FORM).should('have.css', 'width', '675px');
-  //   });
-  // });
+    it('O formulário deve ter uma largura de 675px', () => {
+      cy.get(EVALUATION_FORM).should('have.css', 'width', '675px');
+    });
+  });
 
-  // describe('6 - Crie um id para o formulário do requisito 5', () => {
-  //   it('Esse id deverá se chamar `evaluation-form`', () => {
-  //     cy.get('#evaluation-form').should('exist');
-  //   });
+  describe('6 - Crie um id para o formulário do requisito 5', () => {
+    it('Esse id deverá se chamar `evaluation-form`', () => {
+      cy.get('#evaluation-form').should('exist');
+    });
 
-  //   it('Esse id deverá possuir a propriedade `display: flex`', () => {
-  //     cy.get('#evaluation-form')
-  //       .should('have.css', 'display', 'flex');
-  //   });
+    it('Esse id deverá possuir a propriedade `display: flex`', () => {
+      cy.get('#evaluation-form')
+        .should('have.css', 'display', 'flex');
+    });
 
-  //   it('Alinhe o eixo principal dessa classe para ser o eixo vertical', () => {
-  //     cy.get('#evaluation-form').should('have.css', 'flex-direction', 'column');
-  //   });
-  // });
+    it('Alinhe o eixo principal dessa classe para ser o eixo vertical', () => {
+      cy.get('#evaluation-form').should('have.css', 'flex-direction', 'column');
+    });
+  });
 
-  // describe('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
-  //   it('Deve possuir o id trybewarts-forms-logo', () => {
-  //     cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('exist');
-  //   });
+  describe('7 - Adicione a logo da Trybewarts no lado direito da página', () => {
+    it('Deve possuir o id trybewarts-forms-logo', () => {
+      cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('exist');
+    });
 
-  //   it('O atributo `src` do logotipo deve apontar para `images/trybewarts-colored.svg`', () => {
-  //     cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('have.attr', 'src').should('equal', 'images/trybewarts-colored.svg');
-  //   });
-  // });
+    it('O atributo `src` do logotipo deve apontar para `images/trybewarts-colored.svg`', () => {
+      cy.get(TRYBEWARTS_LOGO_FORMS_SELECTOR).should('have.attr', 'src').should('equal', 'images/trybewarts-colored.svg');
+    });
+  });
 
-  // describe("8 - Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:'", () => {
-  //   it('Inputs de Nome, Sobrenome e Email deverão ser criados', () => {
-  //     cy.get(USER_NAME_INPUT_SELECTOR).should('exist');
-  //     cy.get(USER_LASTNAME_INPUT_SELECTOR).should('exist');
-  //     cy.get(USER_EMAIL_INPUT_SELECTOR).should('exist');
-  //   });
+  describe("8 - Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:'", () => {
+    it('Inputs de Nome, Sobrenome e Email deverão ser criados', () => {
+      cy.get(USER_NAME_INPUT_SELECTOR).should('exist');
+      cy.get(USER_LASTNAME_INPUT_SELECTOR).should('exist');
+      cy.get(USER_EMAIL_INPUT_SELECTOR).should('exist');
+    });
 
-  //   it('Os inputs deverão conter um placeholder com Nome, Sobrenome e Email em seus respectivos campos', () => {
-  //     cy.get(USER_NAME_INPUT_SELECTOR)
-  //       .should('have.attr', 'placeholder', 'Nome');
-  //     cy.get(USER_LASTNAME_INPUT_SELECTOR)
-  //       .should('have.attr', 'placeholder', 'Sobrenome');
-  //     cy.get(USER_EMAIL_INPUT_SELECTOR)
-  //       .should('have.attr', 'placeholder', 'Email');
-  //   });
-  // });
+    it('Os inputs deverão conter um placeholder com Nome, Sobrenome e Email em seus respectivos campos', () => {
+      cy.get(USER_NAME_INPUT_SELECTOR)
+        .should('have.attr', 'placeholder', 'Nome');
+      cy.get(USER_LASTNAME_INPUT_SELECTOR)
+        .should('have.attr', 'placeholder', 'Sobrenome');
+      cy.get(USER_EMAIL_INPUT_SELECTOR)
+        .should('have.attr', 'placeholder', 'Email');
+    });
+  });
 
-  // describe("9 - Crie um select 'Casa' contendo quatro options", () => {
-  //   it('Deverá conter a opção `Gitnória`', () => {
-  //     cy.get("#gitnoria-house").should('exist');
-  //   });
-  //   it('Deverá conter a opção `Reactpuff`', () => {
-  //     cy.get("#reactpuff-house").should('exist');
-  //   });
-  //   it('Deverá conter a opção ``Corvinode``', () => {
-  //     cy.get("#corvinode-house").should('exist');
-  //   });
-  //   it('Deverá conter a opção ``Pytherina``', () => {
-  //     cy.get("#pytherina-house").should('exist');
-  //   })
-  // });
+  describe("9 - Crie um select 'Casa' contendo quatro options", () => {
+    it('Deverá conter a opção `Gitnória`', () => {
+      cy.get("#gitnoria-house").should('exist');
+    });
+    it('Deverá conter a opção `Reactpuff`', () => {
+      cy.get("#reactpuff-house").should('exist');
+    });
+    it('Deverá conter a opção ``Corvinode``', () => {
+      cy.get("#corvinode-house").should('exist');
+    });
+    it('Deverá conter a opção ``Pytherina``', () => {
+      cy.get("#pytherina-house").should('exist');
+    })
+  });
 
-  // describe("10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha", () => {
-  //   it('Os campos de Nome e Sobrenome devem estar lado a lado', () => {
-  //     cy.get(USER_NAME_INPUT_SELECTOR)
-  //     cy.get(USER_LASTNAME_INPUT_SELECTOR)
-  //     checkIsRightOf(USER_NAME_INPUT_SELECTOR, USER_LASTNAME_INPUT_SELECTOR)
-  //   });
-  // });
+  describe("10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha", () => {
+    it('Os campos de Nome e Sobrenome devem estar lado a lado', () => {
+      cy.get(USER_NAME_INPUT_SELECTOR)
+      cy.get(USER_LASTNAME_INPUT_SELECTOR)
+      checkIsRightOf(USER_NAME_INPUT_SELECTOR, USER_LASTNAME_INPUT_SELECTOR)
+    });
+  });
 
-  // describe("11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha", () => {
-  //   it('Os campos de Email e Casa devem estar lado a lado', () => {
-  //     checkIsRightOf('#input-email', '#house');
-  //   });
-  // });
+  describe("11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha", () => {
+    it('Os campos de Email e Casa devem estar lado a lado', () => {
+      checkIsRightOf('#input-email', '#house');
+    });
+  });
 
-  // describe("12 - Crie um campo de entrada para qual família a pessoa estudante se identifica", () => {
-  //   it('Um elemento com o id "label-family" e o texto "Qual sua família?" deverá ser criado', () => {
-  //     cy.get('#label-family').contains(LABEL_FAMILY_TEXT);
-  //   });
+  describe("12 - Crie um campo de entrada para qual família a pessoa estudante se identifica", () => {
+    it('Um elemento com o id "label-family" e o texto "Qual sua família?" deverá ser criado', () => {
+      cy.get('#label-family').contains(LABEL_FAMILY_TEXT);
+    });
 
-  //   it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - Frontend', () => {
-  //     cy.get('input[value="Frontend"]').should('exist');
-  //   });
-  //   it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - Backend', () => {
-  //     cy.get('input[value="Backend"]').should('exist');
-  //   });
-  //   it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - FullStack', () => {
-  //     cy.get('input[value="FullStack"]').should('exist');
-  //   });
+    it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - Frontend', () => {
+      cy.get('input[value="Frontend"]').should('exist');
+    });
+    it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - Backend', () => {
+      cy.get('input[value="Backend"]').should('exist');
+    });
+    it('O campo deve ser formado por três radio buttons com os valores "Frontend", "Backend" e "FullStack" - FullStack', () => {
+      cy.get('input[value="FullStack"]').should('exist');
+    });
 
-  //   it('Os radio buttons devem ter o atributo name com o valor "family"', () => {
-  //     cy.get('input[name="family"]').then((arr) => expect(arr.length).to.equal(3));
-  //   });
+    it('Os radio buttons devem ter o atributo name com o valor "family"', () => {
+      cy.get('input[name="family"]').then((arr) => expect(arr.length).to.equal(3));
+    });
 
-  //   it('Posicione os radio buttons para ficar abaixo um do outro', () => {
-  //     checkIsBelowOf('input[value="Frontend"]', 'input[value="Backend"]');
-  //     checkIsBelowOf('input[value="Backend"]', 'input[value="FullStack"]');
-  //   });
+    it('Posicione os radio buttons para ficar abaixo um do outro', () => {
+      checkIsBelowOf('input[value="Frontend"]', 'input[value="Backend"]');
+      checkIsBelowOf('input[value="Backend"]', 'input[value="FullStack"]');
+    });
 
-  //   it('Posicione os radio buttons abaixo do label', () => {
-  //     checkIsBelowOf('#label-family', 'input[value="Frontend"]');
-  //   });
-  // });
+    it('Posicione os radio buttons abaixo do label', () => {
+      checkIsBelowOf('#label-family', 'input[value="Frontend"]');
+    });
+  });
 
-  // describe("13 - Crie campos de entrada do tipo 'checkbox' contendo seis opções", () => {
+  describe("13 - Crie campos de entrada do tipo 'checkbox' contendo seis opções", () => {
 
-  //   it('Um elemento com o id "label-content" e o texto "Qual conteúdo você está com mais vontade de aprender?" deverá ser criado', () => {
-  //     cy.get('#label-content').contains(LABEL_CONTENT_TEXT);
-  //   });
+    it('Um elemento com o id "label-content" e o texto "Qual conteúdo você está com mais vontade de aprender?" deverá ser criado', () => {
+      cy.get('#label-content').contains(LABEL_CONTENT_TEXT);
+    });
 
-  //   it('Campo HoFs', () => {
-  //     cy.get('input[value="HoFs"]').should('exist');
-  //   });
+    it('Campo HoFs', () => {
+      cy.get('input[value="HoFs"]').should('exist');
+    });
 
-  //   it('Campo Jest', () => {
-  //     cy.get('input[value="Jest"]').should('exist');
-  //   });
+    it('Campo Jest', () => {
+      cy.get('input[value="Jest"]').should('exist');
+    });
 
-  //   it('Campo Promises', () => {
-  //     cy.get('input[value="Promises"]').should('exist');
-  //   });
+    it('Campo Promises', () => {
+      cy.get('input[value="Promises"]').should('exist');
+    });
 
-  //   it('Campo React', () => {
-  //     cy.get('input[value="React"]').should('exist');
-  //   });
+    it('Campo React', () => {
+      cy.get('input[value="React"]').should('exist');
+    });
 
-  //   it('Campo SQL', () => {
-  //     cy.get('input[value="SQL"]').should('exist');
-  //   });
+    it('Campo SQL', () => {
+      cy.get('input[value="SQL"]').should('exist');
+    });
 
-  //   it('Campo Python', () => {
-  //     cy.get('input[value="Python"]').should('exist');
-  //   });
+    it('Campo Python', () => {
+      cy.get('input[value="Python"]').should('exist');
+    });
 
-  //   it('Posicione os checkbox abaixo do label', () => {
-  //     checkIsBelowOf('#label-content', 'input[value="HoFs"]');
-  //   });
-  // });
+    it('Posicione os checkbox abaixo do label', () => {
+      checkIsBelowOf('#label-content', 'input[value="HoFs"]');
+    });
+  });
 
   describe("14 - Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts", () => {
     it('Um elemento com o id label-rate e o texto "Como você avalia a Trybewarts?" deverá ser criado', () => {
