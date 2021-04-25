@@ -67,11 +67,6 @@ label {
   width: 35%;
 }
 
-/* Requisito 10 */
-.align-items-forms {
-  display: flex;
-}
-
 #family-content {
   display: flex;
   margin-top: 20px;
@@ -111,8 +106,10 @@ footer {
   flex-direction: column;
   margin-bottom: 25px;
   width: 675px;
+  justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .align-items-forms1 {
   display: flex;
 }
@@ -120,6 +117,16 @@ footer {
 .align-items-forms2 {
   display: flex;
 }
+=======
+/* .align-items-forms1 {
+  display: flex;
+  align-items: flex-start;
+} */
+
+/* .align-items-forms2 {
+  display: flex;
+} */
+>>>>>>> 1fe0d9d051e613c5024d5035d2396f0614a4635c
 
 #submit-btn {
   background-color: rgb(119, 119, 172);

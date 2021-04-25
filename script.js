@@ -23,6 +23,7 @@ function checkboxChecked() {
   //   submitBtn.disabled = !agreement.checked;
 }
 agreement.addEventListener('change', checkboxChecked);
+<<<<<<< HEAD
 
 //requisito 20 - contador de caracteres
 // Refêrencia para resolução do problema
@@ -38,3 +39,5 @@ function limite_textarea (textArea) {
       document.getElementById('textarea').value = textArea.substr(0,quant);
   }
 }
+=======
+>>>>>>> 1fe0d9d051e613c5024d5035d2396f0614a4635c
