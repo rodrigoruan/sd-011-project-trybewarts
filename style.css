@@ -17,6 +17,18 @@
   text-align: center;
 }
 
+#login {
+  color: blue;
+}
+
+#senha {
+  color: green;
+}
+
+#logar {
+  color: red;
+}
+
 .column {
   display: flex;
   flex-direction: column;
