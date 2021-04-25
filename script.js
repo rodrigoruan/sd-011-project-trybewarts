@@ -34,5 +34,6 @@ function agreement() {
 });
 
 comment.addEventListener('keyup', () => {
-  counter.innerText -= 1;
+  const current = comment.value.split('').length;
+  counter.innerText = 500 - current;
 });
