@@ -1,17 +1,68 @@
-const loginUser = document.querySelector('.login');
-const passUser = document.querySelector('.senha');
-const loginBtn = document.querySelector('.acesso');
+const inputLogin = document.getElementById('login');
+const inputSenha = document.getElementById('senha');
+const buttonEntrar = document.getElementById('enviar');
 
-loginBtn.addEventListener('click', () => {
-  const loginVal = loginUser.value;
-  const senhaVal = passUser.value;
-
-  if (loginVal.value !== 'tryber@betrybe.com' || senhaVal.value !== '123456') {
+buttonEntrar.addEventListener('click', () => {
+  if (inputLogin.value !== 'tryber@teste.com' || inputSenha.value !== '123456') {
     alert('Login ou senha inválidos.');
-  } else if (loginVal.value === 'tryber@betrybe.com' && senhaVal.value === '123456') {
-    alert('');
+  } else {
+    alert('Olá, Tryber!');
   }
 });
 
-const title = document.getElementById('trybewarts-header-title');
-title.innerText = 'Trybewarts';
+// 18
+const checkEnable = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
+checkEnable.addEventListener('click', () => {
+  if (checkEnable.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
+
+// 19
+const contador = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+
+textArea.addEventListener('input', () => {
+  const limite = 500;
+  const text = textArea.value;
+  const caracteresDigitados = text.length;
+  const caracteresRestantes = limite - caracteresDigitados;
+  contador.innerText = caracteresRestantes.toString();
+});
+
+// 21 nome,sobrenome
+const buttonEnviar = document.getElementById('submit-btn');
+const textNome = document.createElement('p');
+const textEmail = document.createElement('p');
+const textHouse = document.createElement('p');
+const textFamilia = document.createElement('p');
+const textMateriasEscolhidas = document.createElement('p');
+const textRate = document.createElement('p');
+const textObs = document.createElement('p');
+const materiasEscolhidas = [];
+const newForm = document.createElement('form');
+const main = document.getElementById('principal');
+
+buttonEnviar.addEventListener('click', () => {
+  const n = document.getElementById('input-name');
+  const form = document.getElementById('evaluation-form');
+  const sobrenome = document.getElementById('input-lastname');
+  const e = document.getElementById('input-email'); const house = document.getElementById('house');
+  const familia = document.querySelector('input[name="family"]:checked').value;
+  const materias = document.querySelectorAll('input[class="subject"]:checked');
+  for (let i = 0; i < materias.length; i += 1) { materiasEscolhidas.push(` ${materias[i].value}`); }
+  const nota = document.querySelector('input[name="rate"]:checked').value;
+  const observacao = document.getElementById('textarea');
+  textNome.innerText = `Nome: ${n.value} ${sobrenome.value}`;
+  textEmail.innerText = `Email: ${e.value}`; textHouse.innerText = `Casa: ${house.value}`;
+  textFamilia.innerText = `Família: ${familia}`; textRate.innerText = `Avaliação: ${nota}`;
+  textMateriasEscolhidas.innerText = `Matérias:${materiasEscolhidas}`;
+  textObs.innerText = `Observações: ${observacao.value}`;
+  form.remove(); newForm.id = 'evaluation-form'; main.appendChild(newForm);
+  newForm.appendChild(textNome); newForm.appendChild(textEmail); newForm.appendChild(textObs);
+  newForm.appendChild(textHouse); newForm.appendChild(textFamilia);
+  newForm.appendChild(textMateriasEscolhidas); newForm.appendChild(textRate);
+});
