@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -8,6 +9,7 @@ header {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  font-size: 40px;
 }
 
 header form {
@@ -57,4 +59,15 @@ header form {
   border: none;
   max-height: none;
   min-height: 0;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+}
+
+header form .input {
+  width: 150px;
+  margin-right: 8px;
 }
