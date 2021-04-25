@@ -25,14 +25,14 @@ seConcorda.addEventListener('click', () => {
 
 // Requisito 20
 // https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
-let textarea = document.getElementById('textarea');
-let counter = document.getElementById('counter');
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 counter.innerHTML = '500';
 
-textarea.addEventListener('input', countLetters);
-function countLetters(){  
+function countLetters() {
   const comments = textarea.value.length;
   const maxLength = textarea.getAttribute('maxLength');
   const currentLength = maxLength - comments;
   counter.innerHTML = currentLength;
 }
+textarea.addEventListener('input', countLetters);
