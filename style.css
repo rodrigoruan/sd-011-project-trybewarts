@@ -75,3 +75,13 @@ footer {
   text-align: center;
   margin: 20px;
 }
+
+.rate-content-container {
+  display: flex;
+}
+
+#rates-container {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
