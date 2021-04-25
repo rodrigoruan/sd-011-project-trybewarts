@@ -5,6 +5,7 @@ const passwordInput = document.querySelector('.trybewarts-login input:nth-of-typ
 const loginButton = document.querySelector('.trybewarts-login button:nth-of-type(1)');
 const forms = document.querySelector('#evaluation-form');
 const submitButton = document.querySelector('#submit-btn');
+const agreementCheckbox = document.querySelector('#agreement');
 
 loginButton.addEventListener('click', () => {
   if (loginInput.value === defaultLogin && passwordInput.value === defaultPassword) {
@@ -16,9 +17,6 @@ loginButton.addEventListener('click', () => {
 
 /* Unable/ disable checkbox */
 function disableEnableButton() {
-  const submitButton = document.querySelector('#submit-btn');
-  const agreementCheckbox = document.querySelector('#agreement');
-
   agreementCheckbox.addEventListener('click', () => {
     if (submitButton.disabled) {
       submitButton.disabled = false;
@@ -42,4 +40,4 @@ submitButton.addEventListener('click', () => {
   for (const item of formsData.entries()) {
     console.log(item);
   }
-})
+});
