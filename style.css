@@ -350,7 +350,7 @@ main section img {
     height: 70px;
     flex-basis: 0;
     flex-grow: 2;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .header h1 {
@@ -381,7 +381,7 @@ main section img {
     padding: 5px;
   }
 
-  #input-name , #input-lastname , #input-email, #div-select{
+  #input-name , #input-lastname , #input-email , #div-select {
     display: flex;
     flex-grow: 1;
     flex-basis: 49%;
@@ -427,7 +427,7 @@ main section img {
     flex-direction: column;
   }
 
-  .textarea , #textarea , p , #div-label-infos{
+  .textarea , #textarea , p , #div-label-infos {
     padding: 5px;
   }
 
@@ -454,6 +454,7 @@ main section img {
     color: white;
     background-color: rgb(57, 62, 73);
   }
+
   .header-section {
     display: flex;
   }
