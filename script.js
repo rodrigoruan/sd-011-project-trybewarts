@@ -37,3 +37,64 @@ function countLetters() {
 }
 
 textarea.addEventListener('input', countLetters);
+
+// Requisito 21
+function formInfos(event) {
+  const main = document.getElementsByTagName('main');
+  const form = document.getElementById('evaluation-form');
+  const name = document.getElementById('input-name').value;
+  const lastname = document.getElementById('input-lastname').value;
+  const email = document.getElementById('input-email').value;
+  const casa = document.getElementById('house').value;
+  const observacao = document.getElementById('textarea').value;     
+
+  event.preventDefault();
+  form.innerHTML = '';   
+
+  form.innerHTML = `Nome: ${name} ${lastname}<br>
+  Email: ${email}<br>
+  Casa: ${casa}<br>
+  Família: ${checkedFamily()}<br>
+  Matérias: ${checkedContent()}<br>
+  Avaliação: ${checkedAvaliacao()}<br>
+  Observações: ${observacao}`;  
+}
+
+const family = document.querySelectorAll('.family');
+function checkedFamily() {
+  let familyChecked = '';
+  for (let index = 0; index < family.length; index += 1) {    
+    if(family[index].checked) {
+      familyChecked += family[index].value;
+    }
+  }
+
+  return familyChecked;
+}
+
+const materias = document.querySelectorAll('.content');
+function checkedContent() {
+  let contentChecked = [];
+  for (let index = 0; index < materias.length; index += 1) {
+    if (materias[index].checked) {
+      contentChecked.push(materias[index].value);
+    }
+  }
+  let joinContent = contentChecked.join(', ');
+  
+  return joinContent;
+}
+
+const avaliacao = document.querySelectorAll('.rate');
+function checkedAvaliacao() {
+  let avaliacaoChecked = '';
+  for (let index = 0; index < avaliacao.length; index += 1) {
+    if (avaliacao[index].checked) {
+      avaliacaoChecked += avaliacao[index].value;
+    }
+  }
+
+  return avaliacaoChecked;
+}
+
+submitBtn.addEventListener('click', formInfos);
