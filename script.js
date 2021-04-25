@@ -12,17 +12,16 @@ document.getElementById('loginButton').addEventListener('click', () => {
 });
 
 // Requisito 18
-let submitBtn = document.getElementById('submit-btn');
+const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
-
-let seConcorda = document.getElementById('agreement')
+const seConcorda = document.getElementById('agreement');
 seConcorda.addEventListener('click', () => {
-	if (seConcorda.checked) {
-		submitBtn.disabled = false;		
-	} else {
-	submitBtn.disabled = true;	
+  if (seConcorda.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
   }
-})
+});
 
 // Requisito 20
 // https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
@@ -42,7 +41,5 @@ function countLetters(event){
     counter.innerHTML = `${numShowing}`;  
   }
 }
-
-
 
 
