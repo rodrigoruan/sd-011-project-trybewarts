@@ -2,6 +2,11 @@ const submitLoginBtn = document.getElementById('header-submit');
 const agreementCheckbox = document.getElementById('agreement');
 const formSubmitButton = document.getElementById('submit-btn');
 const commentBox = document.getElementById('textarea');
+const counterDiv = document.getElementById('counter');
+
+function counterCaracteres() {
+  counterDiv.innerHTML = `Caracteres disponiveis: ${500 - commentBox.value.length}`;
+}
 
 function toggleFormSubmitButtonState() {
   if (agreementCheckbox.checked) {
@@ -24,11 +29,4 @@ function verifiedValues() {
 
 submitLoginBtn.addEventListener('click', verifiedValues);
 agreementCheckbox.addEventListener('change', toggleFormSubmitButtonState);
-
-const counterDiv = document.getElementById('counter');
-
-function counterCaracteres() {
-  counterDiv.innerHTML = `Caracteres disponiveis: ${500 - commentBox.value.length}`;
-}
-
 commentBox.oninput = counterCaracteres;
