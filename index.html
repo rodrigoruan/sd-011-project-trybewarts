@@ -21,28 +21,42 @@
         <div class="page">
           <main>
               <form id="evaluation-form">
-                <div class="names">
-                  <label for="input-name">
-                    <input type="text" id="input-name" placeholder="Nome">
-                  </label>
-                  <label for="input-lastname">
-                    <input type="text" id="input-lastname" placeholder="Sobrenome">
-                  </label>
+                <div class="inputs-inicio">
+                  <div class="names">
+                    <div class="coluna-name-email">
+                      <label for="input-name">
+                        <input type="text" id="input-name" placeholder="Nome">
+                      </label>
+                    </div>
+                    <div class="coluna-lastname-casa">
+                      <label for="input-lastname">
+                        <input type="text" id="input-lastname" placeholder="Sobrenome">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="adresses">
+                    <div class="coluna-name-email">
+                      <label for="input-email">
+                        <input type="text" id="input-email" placeholder="Email">
+                      </label>
+                    </div>
+                    <div class="coluna-lastname-casa">
+                      <label for="house">Casa</label>
+                      <select name="Casa" id="house">
+                        <option value="" id="gitnoria-house">Gitnória</option>
+                        <option value="" id="reactpuff-house">Reactpuffe</option>
+                        <option value="" id="corvinode-house">Corvinodee</option>
+                        <option value="" id="pytherina-house">Pytherinae</option>
+                      </select>
+                    </div>
                 </div>
-                <div class="adresses">
-                  <label for="input-email">
-                    <input type="text" id="input-email" placeholder="Email">
-                  </label>
-                  <label for="house">Casa</label>
-                  <select name="Casa" id="house">
-                    <option value="" id="gitnoria-house">Gitnória</option>
-                    <option value="" id="reactpuff-house">Reactpuffe</option>
-                    <option value="" id="corvinode-house">Corvinodee</option>
-                    <option value="" id="pytherina-house">Pytherinae</option>
-                  </select>
+
+
+
+                </div>
                   <div class="duascolunas">
                     <div class="family">
-                      <label for="" id="label-family">Qual sua família?</label><br>
+                      <label for="" id="label-family">Qual sua família?</label>
                      
                         <div class="colunafamilia">
                           <input type="radio" name="family" value="Frontend">Frontend
@@ -54,17 +68,17 @@
                   
       
                     <div class="content">
-                    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <label for="" id="label-content">Qual conteúdo você está com mais vontade<br> de aprender?</label>
                     <div class="checkboxes">
-                      <div class="primeiracolunacheck">
+                      <div class="primeiralinhacheck">
                         <input type="checkbox" value="HoFs">HoFs
                         <input type="checkbox" value="Jest">Jest
-                      </div>
-                      <div class="segundacolunacheck">
+                      
+                      
                         <input type="checkbox" value="Promises">Promises
-                        <input type="checkbox" value="React">React
                       </div>
-                      <div class="terceiracolunacheck">
+                      <div class="segundalinhacheck">
+                        <input type="checkbox" value="React">React     
                         <input type="checkbox" value="SQL">SQL
                         <input type="checkbox" value="Python">Python
                       </div>
@@ -103,7 +117,8 @@
                   <label for="">10
                     <input type="radio" name="rate" value="10">
                   </label>
-              </div>
+                </div>
+
               <label for="textarea" class="textarea">Deixe seu comentário:<br></label>
               <textarea name="" id="textarea" cols="20" rows="10" minlength="0" maxlength="500"></textarea>
               <span id="counter"></span>
