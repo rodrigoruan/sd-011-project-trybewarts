@@ -103,7 +103,6 @@ function saveRate(answersList) {
 function saveComment(answersList) {
   const comment = document.getElementById('textarea').value;
   answersList.push(`Observações: ${comment}`);
-  printForm(answersList);
 }
 
 function saveForms() {
@@ -115,6 +114,7 @@ function saveForms() {
   saveSubject(answersList);
   saveRate(answersList);
   saveComment(answersList);
+  printForm(answersList);
 }
 
 function addEventSaveForms() {

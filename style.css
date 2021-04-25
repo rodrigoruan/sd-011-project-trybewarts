@@ -33,33 +33,40 @@ main {
   height: 500px;
 }
 
-label {
-  display: block;
-  padding: 10px 0;
+#family-subject {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100px;
 }
 
-/* #container-family {
+#container-family {
   display: flex;
   flex-direction: column;
-} */
+}
+
+#container-subject {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100px;
+}
+
+#container-inside-subject {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#container-inside-subject label {
+  flex-basis: 30%;
+}
 
 #comment {
   resize: none;
 }
 
-/* #container-house {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.subject {
-  flex-basis: 50%;
-} */
-
 #container-rate {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 #container-comment {
