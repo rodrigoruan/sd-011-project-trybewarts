@@ -98,7 +98,6 @@ function returnFamilyValue() {
   returnFamily.innerText = `Família: ${checkFamily}`;
 
   getFormDiv.appendChild(returnFamily);
-
 }
 
 // cria parágrafo com matérias
