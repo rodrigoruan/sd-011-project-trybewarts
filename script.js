@@ -21,7 +21,6 @@ function changeBtnStatus(event) {
   }
   return (submitBtn.setAttribute('disabled', true));
 }
-
 checkbox.addEventListener('change', changeBtnStatus);
 
 // requisito 20
