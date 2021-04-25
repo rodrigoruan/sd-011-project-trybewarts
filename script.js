@@ -26,3 +26,5 @@ function check() {
   }
 }
 agreementChecked.addEventListener('change', check);
+
+//Terminado
