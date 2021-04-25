@@ -12,13 +12,8 @@
   height: 50px;
 }
 
-.trybewarts-header-logo {
-  padding: 3px;
-}
-
 #trybewarts-header-title {
   align-self: center;
-  align-content: center;
   color: white;
   font-family: Metamorphous, cursive;
 }
