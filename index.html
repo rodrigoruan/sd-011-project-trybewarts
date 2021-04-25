@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="" />
-    <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
+    <h1 class="title is-2" id="trybewarts-header-title">Trybewarts</h1>
     <div class="form-container">
       <form class="trybewarts-login">
         <input id="login" placeholder="Login" class="button" />
@@ -143,8 +143,10 @@
       <label class="textarea" rows="1" id="textarea-label">Deixe seu comentário:</label>
       <textarea class="digtText" name="Observações" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       <span id="counter"></span>
-      <label id="label-infos">Você concorda com o uso das informações acima?</label>
-      <input type="checkbox" id="agreement">
+      <div class="block-input">
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement">
+      </div>
       <button id="submit-btn" type="submit" disabled class="button is-link">Enviar</button>
       
       <section id="formClose">
@@ -155,7 +157,7 @@
     <div class="block-logo">
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
     </div>
-    
+
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>

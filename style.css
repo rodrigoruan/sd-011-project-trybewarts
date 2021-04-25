@@ -69,6 +69,7 @@ main {
 
 .block-input {
   display: flex;
+  align-items: center;
 }
 
 .label-content {
@@ -91,4 +92,11 @@ section {
 
 #family-container {
   padding-top: 15px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: rgb(85, 85, 85);
 }
