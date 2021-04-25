@@ -51,7 +51,6 @@ body {
 
 main {
   display: flex;
-  /* espaço muito grande */
   justify-content: space-between;
 }
 
@@ -60,7 +59,7 @@ main {
   width: 400px;
   margin: 0 20px;
   flex-wrap: wrap;
-  align-items: center; 
+  align-items: center;
 }
 
 #evaluation-form input {
