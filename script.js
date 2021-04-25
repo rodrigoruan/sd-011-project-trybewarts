@@ -64,7 +64,7 @@ function subjects() {
   const subjectsValues = document.querySelectorAll('input[class="subject"]:checked');
   const arrSubjectsValues = [];
   for (let index = 0; index < subjectsValues.length; index += 1) {
-    arrSubjectsValues.push(`${subjectsValues[index].value}`);
+    arrSubjectsValues.push(` ${subjectsValues[index].value}`);
   }
   return arrSubjectsValues.join(', ');
 }
@@ -102,7 +102,7 @@ function formDataElements() {
   const familyP = newElement();
   familyP.innerText = `Família: ${formValues.familyVal}`;
   const subjectsP = newElement();
-  subjectsP.innerText = `Matérias: ${formValues.strSubjectsVal}`;
+  subjectsP.innerText = `Matérias: ${formValues.subjectsVal}`;
   const rateP = newElement();
   rateP.innerText = `Avaliação: ${formValues.rateVal}`;
   const commentP = newElement();
