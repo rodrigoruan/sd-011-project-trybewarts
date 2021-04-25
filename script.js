@@ -24,18 +24,18 @@ function checkboxChecked() {
 }
 agreement.addEventListener('change', checkboxChecked);
 
-//requisito 20 - contador de caracteres
+// requisito 20 - contador de caracteres
 // Refêrencia para resolução do problema
 // https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
-let textArea = document.getElementById('textarea').value;
-function limite_textarea (textArea) {
-  quant = 500;
-  total = textArea.length;
-  if(total <= quant) {
-      resto = quant - total;
-      document.getElementById('counter').innerHTML = resto;
+// const textArea = document.getElementById('textarea');
+function limiteTextArea(textArea) {
+  const quant = 500;
+  const total = textArea.length;
+  if (total <= quant) {
+    const resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
   } else {
-      document.getElementById('textarea').value = textArea.substr(0,quant);
+    document.getElementById('textarea').value = textArea.substr(0, quant);
   }
 }
-
+limiteTextArea();
