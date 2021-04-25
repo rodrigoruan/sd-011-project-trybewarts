@@ -59,7 +59,7 @@ function setInputDiv(event) {
   };
   let formsPrint = '';
   for (const index of Object.keys(result)) {
-    formsPrint += `${index}: ${result[index]}`;
+    formsPrint += `${index}: ${result[index]} <br>`;
     event.preventDefault();
   }
   console.log(formsPrint);
