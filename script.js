@@ -11,3 +11,18 @@ loginButton.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+/* Unable/ disable checkbox */
+function disableEnableButton() {
+  const submitButton = document.querySelector('#submit-btn');
+  const agreementCheckbox = document.querySelector('#agreement');
+
+  agreementCheckbox.addEventListener('click', () => {
+    if (submitButton.disabled) {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  });
+}
+disableEnableButton();

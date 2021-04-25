@@ -98,3 +98,11 @@ main , #label-infos {
   color: aliceblue;
   border-radius: 10%;
 }
+
+footer {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
