@@ -29,7 +29,7 @@ const textarea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 counter.innerHTML = '500';
 
-function countLetters() {  
+function countLetters() {
   const comments = textarea.value.length;
   const maxLength = textarea.getAttribute('maxLength');
   const currentLength = maxLength - comments;
