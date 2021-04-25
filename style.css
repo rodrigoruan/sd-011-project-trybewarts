@@ -144,7 +144,7 @@ footer {
 
 #submit-btn:hover {
   font-size: 20px;
-  background-color: royalblue;;
+  background-color: royalblue;
 }
 
 .input-label-trybewarts {
@@ -155,7 +155,7 @@ footer {
   margin-right: 3px;
 }
 
-@media screen and ( max-width: 800px ) {
+@media screen and ( max-width : 800px ) {
 
   .trybewarts-main {
     flex-direction: column-reverse;
@@ -180,7 +180,7 @@ footer {
     border-radius: 8px;
     flex-wrap: wrap;
   }
-  
+
   .trybewarts-login button {
     height: 35px;
     width: 80px;
