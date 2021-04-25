@@ -45,7 +45,7 @@ footer {
 
 #trybewarts-header-title {
   font-size: 2.5em;
-  color: #fcf3f3;
+  color: aliceblue;
 }
 
 .trybewarts-login {
@@ -64,9 +64,15 @@ footer {
 #submit-button {
   padding: 5px;
   border-radius: 4px;
-  background-color: rgb(223, 245, 240);
+  min-width: 80px;
+  background-color: rgb(119, 8, 163);
+  color: aliceblue;
   box-shadow: none;
   border: 2px solid black;
+}
+
+#submit-button:hover {
+  background-color: green;
 }
 
 #evaluation-form {
