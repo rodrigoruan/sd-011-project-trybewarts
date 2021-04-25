@@ -37,7 +37,7 @@ main {
   display: flex;
 }
 
-.family-col {
+.form-col {
   flex-direction: column;
 }
 
