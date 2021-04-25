@@ -1,4 +1,4 @@
-// -Declaração de constantes
+// Declaração de constantes
 const buttonLogin = document.querySelector('#button');
 
 function errorAlert() {
