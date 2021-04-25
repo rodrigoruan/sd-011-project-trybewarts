@@ -1,10 +1,13 @@
 const loginButton = document.getElementById('login');
-const submitButton = document.querySelector('#submit-btn');
-const agreementCheck = document.querySelector('#agreement');
+const evaluationForm = document.querySelector('#evaluation-form');
+const inputName = document.querySelector('#input-name');
+const inputLastName = document.querySelector('#input-lastname');
+const inputEmail = document.querySelector('#input-email');
+const radioHouse = document.querySelector('#house');
 const textArea = document.getElementById('textarea');
 const counterText = document.getElementById('counter');
-const main = document.querySelector('main');
-const evaluationForm = document.querySelector('#evaluation-form');
+const agreementCheck = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
 
 function checkForLogin() {
   const loginValue = document.getElementById('login-value').value;
@@ -30,33 +33,39 @@ function counter() {
   counterText.innerText = 500 - textArea.value.length;
 }
 
-function getForm() {
-  const form = document.querySelector('#evaluation-form');
-  const formValues = new FormData(form);
-  const result = [];
-  for (let key of formValues) {
-    result.push(key);
+function getCheckedSubjects() {
+  const checkedElements = document.querySelectorAll('.subject:checked');
+  const elementsList = [];
+
+  for (let index = 0; index < checkedElements.length; index += 1) {
+    elementsList.push(` ${checkedElements[index].value}`);
   }
-  return result;
+
+  return elementsList;
 }
 
-function removeFormInputs() {
-  for (const index = 0; index < evaluationForm.children.length;) {
-    evaluationForm.removeChild(evaluationForm.firstChild);    
+function getForm() {
+  const formObject = {
+    Nome: `${inputName.value} ${inputLastName.value}`,
+    Email: `${inputEmail.value}`,
+    Casa: `${radioHouse.value}`,
+    Família: `${document.querySelector('input[name="family"]:checked').value}`,
+    Matérias: getCheckedSubjects(),
+    Avaliação: `${document.querySelector('input[name="rate"]:checked').value}`,
+    Observações: `${textArea.value}`,
+  };
+
+  let answer = '';
+
+  for (const key of Object.keys(formObject)) {
+    answer += `${key}: ${formObject[key]}<br>`;
   }
+
+  return answer;
 }
 
 function createResult() {
-  const formAnswer = getForm();
-  removeFormInputs();
-  const firstValue = document.createElement('p');
-  firstValue.innerText= `${formAnswer[0][0]}: ${formAnswer[0][1]} ${formAnswer[1][1]}`;
-  evaluationForm.appendChild(firstValue);
-  for (let index = 2; index < formAnswer.length - 1; index += 1) {
-    const value = document.createElement('p');
-    value.innerText = `${formAnswer[index][0]}: ${formAnswer[index][1]}`;
-    evaluationForm.appendChild(value);
-  }
+  evaluationForm.innerHTML = getForm();
 }
 
 function submitForm(event) {
