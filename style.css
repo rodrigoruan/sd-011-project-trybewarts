@@ -6,21 +6,25 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
-  flex-flow: wrap;
   align-items: center;
+}
+
+#form-title {
+  font-size: x-large;
+  padding: 13px;
 }
 
 .trybewarts-header-logo {
   height: 50px;
   width: 50px;
-  text-align: left;
+  /* text-align: left;
   justify-content: start;
-  align-self: flex-start;
+  align-self: flex-start; */
 }
 
 #trybewarts-header-title {
   order: 1;
+  color: white;
 }
 
 .trybewarts-login {
@@ -50,4 +54,10 @@ main {
 
 #trybeAvalia {
   display: flex;
+}
+
+.footer {
+  display: flex;
+  background-color: gray;
+  justify-content: center;
 }
