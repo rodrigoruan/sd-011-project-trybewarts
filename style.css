@@ -60,3 +60,7 @@ main {
 .aside img {
   height: 500px;
 }
+
+.section2 {
+  display: flex;
+}
