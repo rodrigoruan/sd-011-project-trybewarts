@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(243, 243, 243);
-  font-family: 'New Rocker', cursive;
+  font-family: New Rocker, cursive;
 }
 
 .header {
@@ -64,7 +64,7 @@ main {
 
 #trybewarts-forms-logo {
   width: 500px;
-  padding: 25px 25px;
+  padding: 25px;
 }
 
 .block-input {
@@ -97,6 +97,7 @@ section {
 footer {
   text-align: center;
   color: white;
+  margin-top: 15px;
   padding: 10px;
   background-color: rgb(85, 85, 85);
 }
