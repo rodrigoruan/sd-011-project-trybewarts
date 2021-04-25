@@ -44,3 +44,8 @@ main {
 .row {
   padding-top: 10px;
 }
+
+.fullname {
+  display: flex;
+  flex-direction: row;
+}
