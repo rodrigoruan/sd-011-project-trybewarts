@@ -77,7 +77,8 @@
       </div>
       <div class="commentSection">
         <label class='textarea'>Deixe seu comentário:</label>
-        <textarea maxlength="500"></textarea>
+        <span id="counter">500</span> Restantes <br>
+        <textarea id onkeyup="textarea(this.value)" id="textarea"></textarea>        
       </div>
       <div class="agreementDiv">
         <label for="agreement" id='label-infos'>Você concorda com o uso das informações acima?</label>

@@ -43,3 +43,14 @@ function enableSubmit() { // Faz o requisito 18 funcionar. Enable/disable submit
 }
 
 agreeCheckbox.addEventListener('change', enableSubmit);
+
+function textarea(valor) { // conta os catacteres restantes.
+  quant = 500;
+  total = valor.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('counter').innerHTML = resto;
+  } else {
+      document.getElementById('textarea').value = valor.substr(0,quant);
+  }
+}
