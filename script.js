@@ -36,11 +36,11 @@ checkAgreement.addEventListener('change', () => {
 
 const txtArea = document.getElementById('textarea');
 const txtCounter = document.getElementById('counter');
-txtCounter.innerText = 500;
+txtCounter.innerText = txtArea.getAttribute('maxLength');
 
 txtArea.addEventListener('keyup', () => {
   const nowLength = txtArea.value.length;
-  txtCounter.innerText = 500 - nowLength;
+  txtCounter.innerText = txtArea.getAttribute('maxLength') - nowLength;
 });
 
 const nome = document.getElementById('input-name');
