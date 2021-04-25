@@ -25,7 +25,7 @@
   <main id="content">
     <div class="content">
       <h1>Forms</h1>
-      <form method="GET" action="" id="evaluation-form">
+      <form method="GET" id="evaluation-form">
       
         <div class="full-name">
           <label for="name"></label>
@@ -40,11 +40,16 @@
 
           <label for="casa">Casa</label>
           <select name="casa" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            <option value="gitnoria-house">Gitnória</option>
+            <option value="reactpuff-house">Reactpuff</option>
+            <option value="corvinode-house">Corvinode</option>
+            <option value="pytherina-house">Pytherina</option>
           </select>
+        </div>
+
+        <div class="agreement">
+          <label for="agreement"id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement" required>
         </div>
 
         <section>
@@ -137,105 +142,96 @@
           <label id="label-rate" for="rate-content">
             Como você avalia a Trybewarts?
           </label>
-
+        
           <div id="rates-container">
             <div class="rate">
               <input type="radio" name="rate-content" value="1" id="rate-1">
-  
+        
               <label for="rate-1">
                 1
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="2" id="rate-2">
-  
+        
               <label for="rate-2">
                 2
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="3" id="rate-3">
-  
+        
               <label for="rate-3">
                 3
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="4" id="rate-4">
-  
+        
               <label for="rate-4">
                 4
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="5" id="rate-5">
-  
+        
               <label for="rate-5">
                 5
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="6" id="rate-6">
-  
+        
               <label for="rate-6">
                 6
               </label>
             </div>
-
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="7" id="rate-7">
-  
+        
               <label for="rate-7">
                 7
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="8" id="rate-8">
-  
+        
               <label for="rate-8">
                 8
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="9" id="rate-9">
-  
+        
               <label for="rate-9">
                 9
               </label>
             </div>
-  
+        
             <div class="rate">
               <input type="radio" name="rate-content" value="10" id="rate-10">
-  
+        
               <label for="rate-10">
                 10
               </label>
             </div>
-          </div>
         </section>
-
-        <div class='agreement'>
-          <label for="agreement"id='label-infos'>Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" name="agreement" id="agreement">
-        </div>
-
-        <button type="submit" id='submit-btn' disabled>Enviar</button>
-
+        
+        <input type="submit" id="submit-btn" value="Enviar" disabled>
       </form>
     </div>
+    
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
-  </main>
 
-  <footer>
-    Direitos reservados à Trybewarts©
-  </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
