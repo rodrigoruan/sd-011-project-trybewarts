@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
   height: 80px;
-}
+  }
 
 .header h1 {
   color: white;
@@ -67,10 +67,12 @@ form h2 {
 
 .user-name {
   width: 50%;
+  margin-right: 10px;
 }
 
 #input-email {
   width: 50%;
+  margin-right: 10px;
 }
 
 #label-family {
@@ -86,4 +88,8 @@ form h2 {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+#house {
+  width: 50%;
 }
