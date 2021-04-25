@@ -367,6 +367,7 @@ main section img {
   main {
     justify-content: center;
     padding: 0 100px;
+    height: 90vh;
   }
 
   #evaluation-form-section {
@@ -461,7 +462,6 @@ main section img {
 
   .trybewarts-header-logo {
     width: 55px;
-    margin: 15px;
   }
 
   .header .trybewarts-login {
