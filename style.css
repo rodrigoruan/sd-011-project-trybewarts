@@ -68,7 +68,6 @@ main {
 #forms-h2 {
   display: flex;
   justify-content: center;
-  
 }
 
 #trybewarts-forms-logo {
@@ -107,6 +106,7 @@ main {
 
 select {
   padding: 10px;
+  width: 195px;
   background-color: white;
   color: gray;
   border: none;
