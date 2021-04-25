@@ -35,3 +35,21 @@ agreementBox.addEventListener('change', () => {
 textAreaInput[0].addEventListener('keyup', () => {
   textCounter.innerText = 500 -  textAreaInput[0].value.length;
 })
+
+
+//// TESTES DO ULTIMO ITEM BONUS
+let testando = document.getElementsByTagName('input')
+let testandoArray = [];
+
+for (let key of testando) {
+  if (key.type === 'radio')
+  testandoArray.push(key);
+}
+
+console.log(testandoArray);
+
+if (testandoArray[0].type === 'radio' && !testandoArray[0].checked || testandoArray[0].type === 'checkbox' && !testandoArray[0].checked) {
+  console.log('NAUM TA MARCADO');
+} else if (testandoArray[1].checked) {
+  console.log('TA MARCADO')
+}
