@@ -24,11 +24,13 @@ main {
   align-items: center;
 }
 
-.checkbox-container {
-  display: flex;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
 }
+
+.checkbox-container {
+  display: flex;
+}
+
+
