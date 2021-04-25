@@ -87,3 +87,21 @@ main {
 .aside img {
   height: 500px;
 }
+
+.section2 {
+  display: flex;
+  justify-content:space-evenly;
+
+}
+
+.radioDiv {
+  text-align: left;
+  padding-right: 40px;
+  padding-top: 25px;
+}
+
+.checkboxDiv {
+  text-align: left;
+  padding-top: 25px;
+  
+}
