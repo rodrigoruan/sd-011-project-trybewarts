@@ -11,9 +11,9 @@
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="logo da trybewarts" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" method="GET">
+    <form class="trybewarts-login" action="" method="GET" enctype="multipart/form-data">
       <input id="login" type="text" placeholder="Login" name="user" required autocomplete="off" autofocus>
-      <input id="password" type="text" placeholder="Senha" name="password" required>
+      <input id="password" type="password" placeholder="Senha" name="password" required>
       <button class="button" id="button">Logar</button>
     </form>
   </header>
@@ -34,7 +34,7 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </section>
-      
+
       <section class="section02">
         <label for="family" id="label-family">Qual sua família?</label>
         <br>
