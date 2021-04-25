@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
@@ -20,13 +27,11 @@ main {
   display: flex;
   flex-flow: column;
   width: 675px;
-  flex-direction: column;
 }
 
 #evaluation-input {
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: flex;
+  flex-flow: wrap;
 }
 
 #evaluation-input input {
@@ -40,9 +45,24 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-  order: 5;
+  background-color: red;
 }
 
 .house {
   height: 20px;
+}
+
+#label-family {
+}
+
+#familySection {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+
+}
+
+#familyForm {
+display: flex;
+justify-content:flex-start;
 }
