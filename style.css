@@ -123,10 +123,6 @@ main ul {
   display: flex;
 }
 
-#label-content {
-  
-}
-
 .content-container {
   display: flex;
   flex-wrap: wrap;
