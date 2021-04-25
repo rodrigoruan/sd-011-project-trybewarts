@@ -45,13 +45,18 @@ function counter() {
 function getForm() {
   const form = document.querySelector('#evaluation-form');
   const formValues = new FormData(form);
-  console.log(formValues.get());
+  const result = [];
+  for (let key of formValues) {
+    result.push(key);
+  }
+  console.log(result);
+  return result;
 }
 
 function submitForm(event) {
   event.preventDefault();
-  main.removeChild(evaluationForm);
   getForm();
+  main.removeChild(evaluationForm);
 }
 
 function addEventListeners() {
