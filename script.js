@@ -8,7 +8,9 @@ const inputLastName = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const selectHouse = document.querySelector('#house');
 const textareaComment = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
 const rateContainer = document.querySelector('#rate-container');
+const textArea = document.querySelector('textarea');
 const checkAgreement = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
 btnSubmit.disabled = true;
@@ -17,8 +19,8 @@ btnSubmit.disabled = true;
 function checkLogin() {
   const insertedEmail = email.value;
   const insertedPassword = password.value;
-  const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(insertedEmail);
-  const passwordFormat = /^[0-9.]+$/.test(insertedPassword);
+  const emailFormat = /trybe@teste.com/.test(insertedEmail);
+  const passwordFormat = /123456/.test(insertedPassword);
   if (!emailFormat || !passwordFormat) {
     email.value = '';
     password.value = '';
@@ -47,6 +49,15 @@ function createRateRadios() {
 
 createRateRadios();
 
+// Contador de palavras do textarea
+function wordCounter() {
+  const nWords = textArea.value.length;
+  counter.innerText = 500 - nWords;
+}
+
+textArea.addEventListener('keyup', wordCounter);
+
+// Desabilitar Botão Enviar
 function disableSubmitButton() {
   checkAgreement.addEventListener('click', () => {
     if (!checkAgreement.checked) {
@@ -59,6 +70,7 @@ function disableSubmitButton() {
 
 disableSubmitButton();
 
+// Ler Valores do Formulário
 function readingValues() {
   const formName = `${inputName.value} ${inputLastName.value}`;
   const formEmail = inputEmail.value;
@@ -75,6 +87,7 @@ function readingValues() {
   return [formName, formEmail, formHouse, formFamily, formSubjects, formRate, formComment];
 }
 
+// Substituir formulário por paragrafos
 function createPargraphs() {
   const values = readingValues();
   const strings = ['Nome:', 'Email:', 'Casa:', 'Família:',
@@ -89,6 +102,7 @@ function createPargraphs() {
   }
 }
 
+// Adcionando função no botão enviar
 function submitButton() {
   btnSubmit.addEventListener('click', (event) => {
     event.preventDefault();

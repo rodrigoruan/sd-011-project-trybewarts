@@ -14,13 +14,9 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
     <div class="login-container">
       <form class="trybewarts-login" method="GET">
-        <label>
-          <label for="email">Login:</label>
-            <input type="text" placeholder="Login" name="email" id="input-login-email">
-          <label>Senha:</label>
-            <input type="password" placeholder="Senha" id="input-login-password">
-            <button type="submit" id="loginButton">Entrar</button>
-        </label>
+        <input type="text" placeholder="Login" name="email" id="input-login-email">
+        <input type="password" placeholder="Senha" id="input-login-password">
+        <button type="text" id="loginButton">Login</button>
       </form>
     </div>
   </header>
@@ -74,6 +70,7 @@
       <div class="form-line">
         <label class="textarea" for="">Deixe seu comentário:</label>
         <textarea id="textarea" name="comentario" cols="30" rows="10" maxlength="500"></textarea>
+        <p id="counter">500</p>
       </div>
       <!-- Concorda? -->
       <div class="form-line">
