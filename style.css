@@ -90,8 +90,7 @@ main {
 
 .section2 {
   display: flex;
-  justify-content:space-evenly;
-
+  justify-content: space-evenly;
 }
 
 .radioDiv {
@@ -103,5 +102,4 @@ main {
 .checkboxDiv {
   text-align: left;
   padding-top: 25px;
-  
 }
