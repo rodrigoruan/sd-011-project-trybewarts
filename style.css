@@ -69,7 +69,7 @@ hr {
 #label-content-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   width: 200px;
 }
 
