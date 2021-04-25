@@ -68,8 +68,7 @@ hr {
 
 #label-content-container {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   width: 200px;
 }
 
