@@ -10,4 +10,28 @@
 header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 150px;
+}
+
+.trybewarts-header-logo {
+  justify-content: left;
+  width: 80px;
+  height: 80px;
+}
+
+.trybewarts-login {
+  justify-content: right;
+  display: flex;
+}
+
+#nome-login {
+  border: black 1px solid;
+  margin-right: 10px;
+}
+
+#pass-login {
+  border: black 1px solid;
+  margin-right: 10px;
 }
