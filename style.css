@@ -48,3 +48,35 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+hr {
+  width: 300px;
+  margin-left: 80px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+#parent-label {
+  display: flex;
+  height: 145px;
+}
+
+#label-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+}
+
+#rate-container {
+  display: flex;
+}
+
+#label-rate {
+  display: flex;
+  flex-direction: row;
+}
