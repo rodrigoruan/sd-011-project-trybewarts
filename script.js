@@ -26,3 +26,18 @@ function contaCaracteries() {
 
 textarea.addEventListener('keyup', contaCaracteries);
 textarea.addEventListener('keydown', contaCaracteries);
+
+const agreement = document.getElementById('agreement');
+const formButton = document.getElementById('submit-btn');
+
+/**
+ * Ref: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked
+ */
+function enableButton() {
+  if (agreement.checked) {
+    formButton.disabled = false;
+  } else {
+    formButton.disabled = true;
+  }
+}
+agreement.addEventListener('change', enableButton);
