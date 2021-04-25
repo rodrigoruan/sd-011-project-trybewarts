@@ -206,3 +206,10 @@ hr {
   width: 100%;
   bottom: 0;
 }
+
+/* @equisito 20 */
+#counter {
+  text-align: right;
+  margin-top: 3px;
+  font-size: 12px;
+}

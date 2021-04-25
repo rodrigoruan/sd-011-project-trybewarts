@@ -25,7 +25,14 @@ function changeBtnStatus(event) {
 checkbox.addEventListener('change', changeBtnStatus);
 
 // requisito 20
-// function counterCharacters (){}
-// id='textarea'
+// */fonte:https://www.youtube.com/watch?v=X-LVkU95jLU*/
+const textArea = document.getElementById('textarea');
+const remaniningCharacters = document.querySelector('#counter');
+const maxCharacters = 500;
+function counterCharacters() {
+  const characters = maxCharacters - (textArea.value.length);
+  remaniningCharacters.textContent = characters;
+}
+textArea.addEventListener('input', counterCharacters);
 
 // requisito 21
