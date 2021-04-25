@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /8/
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: /Ótima oportunidade de praticar habilidades relacionadas a Soft Skills e também de trabalhar usando o GitHub resolvendo conflitos. Plantões com Carol e Bernardo ajudaram muito./
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Raphael Padilha e Alberto Candido/
 
 ---
 
