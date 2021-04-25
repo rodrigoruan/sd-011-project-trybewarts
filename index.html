@@ -53,28 +53,26 @@
     <!-- Linhas ivaldo 52 a 102 -->
 <main>
     <form id="evaluation-form" action="">
-        <div class="form-row">
-            <div class="form-column">
-                <input id="input-name" type="text" placeholder="Nome">
-            </div>
-            <div class="column">
-                <input id="input-lastname" type="text" placeholder="Sobrenome">
-            </div>
-        </div>
-    
-        <div class="form-column">
-          <input id="input-email" type="text" placeholder="Email">
-        </div>          
+      <div class="form-style">
+          <div>
+              <input id="input-name" type="text" placeholder="Nome">
+          </div>
+          <div>
+              <input id="input-lastname" type="text" placeholder="Sobrenome">
+          </div>
+      </div>
+
+      <div class="form-select">
+        <input id="input-email" type="text" placeholder="Email">
+        <label for="house">Casa</label>
+        <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </div>
         
-        <div id="select-div">
-            <label for="house">Casa</label>
-            <select name="house" id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
-        </div>
         
     </form>
     <div id="trybewarts-forms-logo">

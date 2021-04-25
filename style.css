@@ -15,15 +15,15 @@
 
 main {
   display: flex;
-  /*flex-flow: row nowrap;
-  justify-content: center;*/
+  /*flex-flow: row nowrap;*/
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
+  flex-direction: column;
   width: 675px;
   flex-basis: 675px;
-  flex-flow: column nowrap;
   border: black solid;
 }
 
@@ -33,7 +33,7 @@ main {
   max-width: 500px;
 }
 
-.form-row {
+.form-style {
   padding-top: 10px;
   display: flex;
 }
