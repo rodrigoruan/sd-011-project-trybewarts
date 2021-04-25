@@ -198,4 +198,11 @@ hr {
 /* Requisito 19 */
 .footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
 }
