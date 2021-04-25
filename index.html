@@ -21,56 +21,82 @@
 	</header>
 	<main>		
 		<form id="evaluation-form">
-			<div id=nomeSobrenome>
-					<input type="text" placeholder="Nome" id="input-name">
-					<input type="text" id="input-lastname"
-					placeholder="Sobrenome">
-			</div>
-			<div>
-				<input type="email" id="input-email" placeholder="Email">
-				<label>Casa
-					<select name="casa" id="house">
-							<option value="Gitnória" id="gitnoria-house">Gitnória</option>
-							<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-							<option value="Corvinode" id="corvinode-house">Corvinode</option>
-							<option value="Pytherina" id="pytherina-house">Pytherina</option>
-					</select>
+            <section id="forms-part-1">
+                <div id=nomeSobrenome>
+                        <input type="text" placeholder="Nome" id="input-name" >
+                        <input type="text" id="input-lastname"
+                        placeholder="Sobrenome">
+                </div>
+                <div>
+                    <input type="email" id="input-email" placeholder="Email">
+                    <label id="label-house">Casa</label>
+                        <select name="casa" id="house">
+                                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                        </select>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="forms-part-2">
+                <div class="label-family">
+                    <label id="label-family">Qual sua família?
+                    </label>
+                        <div>
+                        <input type="radio" value="Frontend" name="family" class="family">Familia Frontend</input>
+                        </div>
+                        <div>
+                        <input type="radio" value="Backend" name="family" class="family">Familia Backend</input>
+                        </div>
+                        <div>
+                        <input type="radio" value="FullStack" name="family" class="family" >Familia FullStack</input>
+                        </div>
+                </div>
+                <div class= "label-content">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                        <div>
+                            <input type="checkbox" value="HoFs" class="content">HoFs
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Jest" class="content">Jest
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Promises" class="content">Promises
+                        </div>
+                        <div>
+                            <input type="checkbox" value="React" class="content">React
+                        </div>
+                        <div>
+                            <input type="checkbox" value="SQL" class="content">SQL
+                        </div>
+                        <div>
+                            <input type="checkbox" value="Python" class="content">Python
+                        </div>
+                </div>
+            </section>
+            <hr>
+            <div>
+				<label class="textarea" > Deixe seu comentário:
+                    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
 				</label>
-			</div>
-			<div>
-				<label id="label-family">Qual sua família?
-					<br>
-					<input type="radio" value="Frontend">Familia Frontend</input>
-					<input type="radio" value="Backend">Familia Backend</input>
-					<input type="radio" value="FullStack">Familia FullStack</input>
-				</label>
-			</div>
-			<div>
-				<label>Qual conteúdo você está com mais vontade de aprender?
-					<br>
-					<input type="checkbox">
-				</label>
-				</div>
-					<label class="textarea" >
-						Deixe seu comentário:
-					</label>
-					<textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-					<span id="counter"></span>
-					<label for="" id="label-infos">
+                <span id="counter"></span>
+				<label for="" id="label-infos">
 						Você concorda com o uso das informações acima?
 						<input type="checkbox" name="checkbox" id="agreement">               
-					</label>
-					<button type="submit" id="submit-btn" disabled>Enviar</button>					
-				</div>
-		</form>
-			<div>
-					<img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
+				</label>
+				<button type="submit" id="submit-btn" disabled>Enviar</button>					
 			</div>
+		</form>
+		<div class="forms-logo">
+				<img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
 		</div>
+		
 	</main>
 	<footer id="footer">
 			Direitos reservados à Trybewarts©
 	</footer>
-<script src='script.js'></script>
+    <script src='script.js'></script>
 </body>
 </html>

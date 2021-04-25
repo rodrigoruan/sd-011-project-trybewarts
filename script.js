@@ -12,31 +12,27 @@ document.getElementById('loginButton').addEventListener('click', () => {
 });
 
 // Requisito 18
-let submitBtn = document.getElementById('submit-btn');
+const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
-let seConcorda = document.getElementById('agreement')
-seConcorda.addEventListener('click', (event) => {
-	if (submitBtn.disabled = false) {
-		submitBtn.disabled = true;		
-	}
-	submitBtn.disabled = false;	
-})
+const seConcorda = document.getElementById('agreement');
+seConcorda.addEventListener('click', () => {
+  if (!submitBtn.disabled) {
+    submitBtn.disabled = true;
+  }
+  submitBtn.disabled = false;
+});
 
 // Requisito 20
 // https://htmldom.dev/count-the-number-of-characters-of-a-textarea/
-let textarea = document.getElementById('textarea');
-let counter = document.getElementById('counter');
-textarea.addEventListener('input', countLetters)
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
-function countLetters(event){
-  let target = event.target;
-  let maxLength = target.getAttribute('maxLength');
-  let currentLength = target.value.length;
-
-  counter.innerHTML = `${currentLength}/${maxLength}`;  
+function countLetters(event) {
+  const eventTarget = event.target;
+  const maxLength = eventTarget.getAttribute('maxLength');
+  const currentLength = eventTarget.value.length;
+  counter.innerHTML = `${currentLength}/${maxLength}`;
 }
 
-
-
-
+textarea.addEventListener('input', countLetters);
