@@ -10,3 +10,15 @@ loginButton.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const checkValue = document.getElementById('agreement');
+
+function agreement() {
+  if (checkValue.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+}
+
+checkValue.addEventListener('click', agreement);

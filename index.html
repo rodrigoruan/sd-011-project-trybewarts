@@ -25,7 +25,7 @@
   <main id="content">
     <div class=content>
       <h1>Forms</h1>
-      <form method="GET" id="evaluation-form">
+      <form method="GET" action="" id="evaluation-form">
       
         <div class="full-name">
           <label for="name"></label>
@@ -40,16 +40,11 @@
 
           <label for="casa">Casa</label>
           <select name="casa" id="house">
-            <option value="gitnoria-house">Gitnória</option>
-            <option value="reactpuff-house">Reactpuff</option>
-            <option value="corvinode-house">Corvinode</option>
-            <option value="pytherina-house">Pytherina</option>
+            <option value='Gitnória' id="gitnoria-house">Gitnória</option>
+            <option value='Reactpuff' id="reactpuff-house">Reactpuff</option>
+            <option value='Corvinode' id="corvinode-house">Corvinode</option>
+            <option value='Pytherina' id="pytherina-house">Pytherina</option>
           </select>
-        </div>
-
-        <div class='agreement'>
-          <label for="agreement"id='label-infos'>Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" name="agreement" id="agreement" required>
         </div>
 
         <section>
@@ -180,7 +175,7 @@
               <input type="radio" name="family" value="SQL" id="family-back-end">
   
               <label for="family-back-end">
-                SQL
+                SQL%
               </label>
             </div>
   
@@ -194,13 +189,21 @@
           </div>
         </section>
 
-        <input type="submit" id="submit-btn" value="Enviar" disabled>
+        <div class='agreement'>
+          <label for="agreement"id='label-infos'>Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement">
+        </div>
+
+        <button type="submit" id='submit-btn' disabled>Enviar</button>
+
       </form>
     </div>
-    
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
-
   </main>
+
+  <footer>
+    Direitos reservados à Trybewarts©
+  </footer>
 
   <script src="script.js"></script>
 </body>
