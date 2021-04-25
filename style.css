@@ -108,6 +108,7 @@ footer {
 }
 
 @media screen and ( max-width : 917px ) {
+
   .modal {
     position: fixed;
     top: 0;
@@ -115,9 +116,9 @@ footer {
     bottom: 0;
     left: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
@@ -134,8 +135,8 @@ footer {
     position: relative;
     margin: 10% auto;
     padding: 15px 20px;
-    background: #fff;
-    border: 6px solid rgba(0,0,0,0.2);
+    background: white;
+    border: 6px solid rgba(0, 0, 0, 0.2);
     text-align: center;
   }
 
@@ -143,15 +144,15 @@ footer {
     width: 100%;
   }
 
-  .modal a:nth-of-type(2) {
+  .modal a:nth-of-type( 2 ) {
     width: 100%;
     padding: 5px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 900;
     text-decoration: none;
-    background-color: rgb(20,96,198);
+    background-color: rgb(20, 96, 198);
     border-radius: 10px;
-    color: #fff;
+    color: white;
   }
 
   .fechar {
@@ -162,10 +163,10 @@ footer {
     text-align: center;
     line-height: 30px;
     margin-top: 5px;
-    background: rgb(20,96,198);
+    background: rgb(20, 96, 198);
     border-radius: 10px;
     font-size: 16px;
-    color: #fff;
+    color: white;
   }
 
   .header {
@@ -239,13 +240,15 @@ footer {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and ( max-width : 992px ) {
+
   .menu-btn {
     display: flex;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and ( min-width : 992px ) {
+
   .header {
     padding: 15px 40px;
   }
@@ -304,10 +307,6 @@ footer {
 
   #submit-btn:hover {
     opacity: 100%;
-  }
-
-  #submit-btn:active {
-    transform: scale(0.98);
   }
 
   #submit-btn:active {
