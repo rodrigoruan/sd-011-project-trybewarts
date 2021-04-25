@@ -47,13 +47,11 @@ body {
   font-size: 15px;
   border-radius: 8px;
   border: green solid 2px;
- 
 }
 
 .trybewarts-login button:hover {
   font-size: 25px;
   background-color: red;
-  transition: .5s;
 }
 
 .trybewarts-main , #evaluation-form {
@@ -146,8 +144,7 @@ footer {
 
 #submit-btn:hover {
   font-size: 20px;
-  background-color: royalblue;
-  transition: .5s;
+  background-color: royalblue;;
 }
 
 .input-label-trybewarts {
@@ -158,7 +155,7 @@ footer {
   margin-right: 3px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and ( max-width: 800px ) {
 
   .trybewarts-main {
     flex-direction: column-reverse;
@@ -194,10 +191,9 @@ footer {
 
   #evaluation-form {
     max-width: 500px;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    flex-direction: column;
+    flex-flow: column wrap;
   }
 
   #house , .name-input input , #input-email {
@@ -207,7 +203,7 @@ footer {
     border-radius: 5px;
   }
 
-  fieldset, .evaluator , textarea {
+  fieldset , .evaluator , textarea {
     margin: 5px;
   }
 
