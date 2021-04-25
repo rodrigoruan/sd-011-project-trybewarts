@@ -14,7 +14,7 @@
 .trybewarts-header-logo {
   float: left;
   width: 50px;
-  padding: 5px 100px;
+  height: 90%;
 }
 
 .trybewarts-login {
@@ -24,7 +24,7 @@
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin: 0 50px;
+  margin: 0 800px;
 }
 
 main {
