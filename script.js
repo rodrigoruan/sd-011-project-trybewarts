@@ -9,8 +9,7 @@ let userLastName = document.getElementById('input-lastname').value; // segundo n
 let userEmail = document.getElementById('input-email').value; // email
 let userHouse = document.getElementById('house').value; // casa
 let userFamily = allForm.elements.namedItem('family').value; // familia
-let allCheckBoxes = document.getElementsByClassName('subject'); // pega as checkbox
-
+const allCheckBoxes = document.getElementsByClassName('subject'); // pega as checkbox
 
 function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert adequado.
   event.preventDefault();
@@ -65,18 +64,15 @@ function calcTextArea() { // conta os catacteres restantes.
 textAreaComment.addEventListener('keyup', calcTextArea);
 
 // Variaveis e funcoes que constroi o perfil após clicar em enviar.
-
 function getUserSubjects() {
-  prefSubjects = [];
-  for (checkbox of allCheckBoxes) {
+  const prefSubjects = [];
+  for (const checkbox of allCheckBoxes) {
     if (checkbox.checked) {
-      console.log(checkbox.value)
-      prefSubjects.push(' ' + checkbox.value);
+      prefSubjects.push(` ${checkbox.value}`);
     }
   }
   return prefSubjects;
 }
-
 
 function getVariablesValues() {
   userFirstName = document.getElementById('input-name').value; // primeiro nome
@@ -89,25 +85,18 @@ function getVariablesValues() {
 function constructProfile(event) {
   event.preventDefault();
   getVariablesValues();
-  getUserSubjects()
-  let userRate = allForm.elements.namedItem('rate').value; // nota para a escola
-  let markedSubjects = getUserSubjects();
-  linebreak = document.createElement("br");
+  getUserSubjects();
+  const userRate = allForm.elements.namedItem('rate').value; // nota para a escola
+  const markedSubjects = getUserSubjects();
   allForm.innerHTML = '';
   console.log(allForm.innerHTML);
-  allForm.innerHTML += 'Nome: ' +  userFirstName + ' ' +  userLastName;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Email: ' + userEmail;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Casa: ' + userHouse;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Família: ' + userFamily;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Matérias: ' + markedSubjects;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Avaliação: ' + userRate;
-  allForm.appendChild(linebreak);
-  allForm.innerHTML += 'Observações: ' + textAreaComment.value;
+  allForm.innerHTML += `Nome: ${userFirstName} ${userLastName} <br>`;
+  allForm.innerHTML += `Email: ${userEmail} <br>`;
+  allForm.innerHTML += `Casa: ${userHouse} <br>`;
+  allForm.innerHTML += `Família: ${userFamily} <br>`;
+  allForm.innerHTML += `Matérias: ${markedSubjects} <br>`;
+  allForm.innerHTML += `Avaliação: ${userRate} <br>`;
+  allForm.innerHTML += `Observações: ${textAreaComment.value}`;
 }
 
-submitBtn.addEventListener ('click',constructProfile);
+submitBtn.addEventListener('click', constructProfile);
