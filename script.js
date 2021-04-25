@@ -1,6 +1,10 @@
 const loginButton = document.querySelector('#login-button');
+const checkValue = document.getElementById('agreement');
+const comment = document.querySelector('#comment');
+const counter = document.querySelector('#counter');
+counter.innerText = 500;
 
-loginButton.addEventListener('click', () => {
+function loginValidation() {
   const trybewartsLogin = document.forms['trybewarts-login'];
   const user = trybewartsLogin.user.value;
   const password = trybewartsLogin.password.value;
@@ -9,9 +13,7 @@ loginButton.addEventListener('click', () => {
   } else {
     alert('Login ou senha inválidos.');
   }
-});
-
-const checkValue = document.getElementById('agreement');
+}
 
 function agreement() {
   if (checkValue.checked) {
@@ -21,4 +23,16 @@ function agreement() {
   }
 }
 
-checkValue.addEventListener('click', agreement);
+[loginButton, checkValue].forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item === loginButton) {
+      loginValidation();
+    } else if (item === checkValue) {
+      agreement();
+    }
+  });
+});
+
+comment.addEventListener('keyup', () => {
+  counter.innerText -= 1;
+});
