@@ -1,5 +1,4 @@
 function validar() {
- const formLogin = document.getElementById('login');
  const nome = document.getElementById('nome-login');
  const pass = document.getElementById('pass-login');
 
