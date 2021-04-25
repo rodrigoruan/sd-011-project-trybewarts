@@ -1,6 +1,6 @@
 const btnSubmit = document.querySelector('#btnSubmit'); // seletor botao logar.
 const evaluateFieldDiv = document.querySelector('.evaluateField'); // seletor camp de avaliacao.
-const agreeCheckbox = document.querySelector('#agreement'); // checkbox do "concordo".
+const agreeCheckbox = document.querySelector('#agreement'); // checkbox do "concordo"
 const submitBtn = document.querySelector('#submit-btn'); // botao de submit.
 
 function submitLoginInfo(event) { // Funcao que valida o login, e exibe o alert adequado.
