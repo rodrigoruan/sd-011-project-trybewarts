@@ -13,15 +13,18 @@
   padding: 0;
 }
 
-#evaluation-form {
-  display: flex;
-  flex-basis: 675px;
-  border: black solid;
-}
-
 main {
   display: flex;
-  flex-direction: column;
+  /*flex-flow: row nowrap;
+  justify-content: center;*/
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-basis: 675px;
+  flex-flow: column nowrap;
+  border: black solid;
 }
 
 #trybewarts-forms-logo {
@@ -29,6 +32,8 @@ main {
   width: 100%;
   max-width: 500px;
 }
-#gitnoria-house {
-  
+
+.form-row {
+  padding-top: 10px;
+  display: flex;
 }
