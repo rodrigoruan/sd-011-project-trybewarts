@@ -3,66 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
 }
-
 .container {
   display: none;
 }
-
 .trybewarts-login {
   display: flex;
 }
-
 #div-select {
   display: inline-block;
 }
-
 main {
   display: flex;
 }
-
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
 }
-
 main section img {
   height: 500px;
 }
-
 #div-label-family {
   display: flex;
   flex-direction: column;
 }
-
 #div-label-content {
   display: flex;
   flex-direction: column;
 }
-
 #label-content-input {
   display: flex;
   flex-wrap: wrap;
 }
-
 #label-content-input label {
   flex-grow: 1;
   flex-basis: 30%;
 }
-
 @media screen and ( max-width : 600px ) {
-
   body {
     background-color: whitesmoke;
   }
-
   .container {
     display: flex;
     height: min-content;
@@ -71,12 +57,10 @@ main section img {
     align-self: center;
     margin-right: 15px;
   }
-
   #checkbox-menu {
     position: absolute;
     opacity: 0;
   }
-
   .container label {
     cursor: pointer;
     position: relative;
@@ -84,11 +68,9 @@ main section img {
     height: 25px;
     width: 30px;
   }
-
   span {
     display: flex;
   }
-
   .container label span {
     position: absolute;
     display: block;
@@ -98,37 +80,29 @@ main section img {
     background: white;
     transition: 0.25s ease-in-out;
   }
-
   .container label span:nth-child( 1 ) {
     top: 0;
   }
-
   .container label span:nth-child( 2 ) {
     top: 10px;
   }
-
   .container label span:nth-child( 3 ) {
     top: 20px;
   }
-
   #div-textarea span {
     margin-left: 5px;
   }
-
   #checkbox-menu:checked + label span:nth-child( 1 ) {
     transform: rotate(-45deg);
     top: 8px;
   }
-
   #checkbox-menu:checked + label span:nth-child( 2 ) {
     opacity: 0;
   }
-
   #checkbox-menu:checked + label span:nth-child( 3 ) {
     transform: rotate(45deg);
     top: 8px;
   }
-
   #nav-menu-login {
     position: fixed;
     margin-left: 100%;
@@ -136,25 +110,21 @@ main section img {
     width: 75%;
     background-image: linear-gradient(140deg, rgb(50, 167, 145), lightseagreen, purple);
   }
-
   #nav-menu-login div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   #nav-menu-login form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-
   .header-section {
     display: flex;
     background-color: rgb(50, 167, 145);
   }
-
   #div-checkbox-menu {
     display: flex;
     height: 50px;
@@ -163,24 +133,20 @@ main section img {
     flex-basis: 0;
     flex-grow: 0;
   }
-
   input {
     padding: 5px;
     margin: 2px;
     border-radius: 5px;
     border: 1px solid rgb(50, 167, 145);
   }
-
   #div-name-email-family input {
     flex-basis: 49%;
     flex-wrap: nowrap;
   }
-
   #nav-menu-login form input {
     width: 80%;
     margin: 5px 0;
   }
-
   #nav-menu-login form button {
     width: 100px;
     margin: 5px 0;
@@ -189,16 +155,13 @@ main section img {
     border-radius: 8px;
     color: white;
   }
-
   .trybewarts-header-logo {
     width: 35px;
     margin: 5px 15px;
   }
-
   #nav-menu-login .trybewarts-header-logo-nav {
     width: 40%;
   }
-
   .header {
     justify-content: center;
     color: white;
@@ -207,7 +170,6 @@ main section img {
     flex-basis: 0;
     flex-grow: 2;
   }
-
   .header .logo {
     display: flex;
     width: min-content;
@@ -216,11 +178,9 @@ main section img {
     justify-content: center;
     align-items: center;
   }
-
   .trybewarts-login {
     display: none;
   }
-
   #trybewarts-logo {
     display: flex;
     padding: 0 20px;
@@ -228,15 +188,12 @@ main section img {
     width: 100%;
     border-top: 2px solid grey;
   }
-
   #trybewarts-forms-logo {
     width: 100%;
   }
-
   #evaluation-form {
     width: 100%;
   }
-
   main {
     flex-direction: column;
     align-content: center;
@@ -244,13 +201,11 @@ main section img {
     width: 100%;
     align-items: center;
   }
-
   #evaluation-form-section {
     display: flex;
     flex-direction: column;
     padding: 5px 0;
   }
-
   #div-name-email-family {
     display: flex;
     flex-wrap: wrap;
@@ -258,18 +213,15 @@ main section img {
     margin-bottom: 10px;
     border-bottom: 2px solid grey;
   }
-
   #div-select {
     display: flex;
     width: max-content;
   }
-
   #label-house {
     display: flex;
     margin-right: 5px;
     align-items: center;
   }
-
   #label-family-and-content {
     display: flex;
     justify-content: space-between;
@@ -279,23 +231,19 @@ main section img {
     border-bottom: 2px solid grey;
     line-height: 25px;
   }
-
   #div-trybewarts-rate {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     padding-bottom: 10px;
   }
-
   #label-rate {
     margin-right: 5px;
   }
-
   #div-textarea p {
     display: flex;
     margin-bottom: 10px;
   }
-
   #textarea {
     width: 100%;
     height: 150px;
@@ -303,7 +251,6 @@ main section img {
     border: 1px solid rgb(50, 167, 145);
     border-radius: 5px;
   }
-
   #submit-btn {
     margin: 10px auto;
     padding: 5px;
@@ -313,7 +260,6 @@ main section img {
     color: white;
     width: 20%;
   }
-
   select {
     display: flex;
     align-self: center;
@@ -323,7 +269,6 @@ main section img {
     border: 1px solid rgb(50, 167, 145);
     border-radius: 5px;
   }
-
   footer {
     display: flex;
     justify-content: center;
@@ -332,13 +277,14 @@ main section img {
     padding: 6px;
   }
 }
-
 @media screen and ( min-width : 601px ) {
+  body {
+    background-color: rgb(239, 239, 239);
+  }
 
   #nav-menu-login {
     display: none;
   }
-
   .header {
     display: flex;
     color: white;
@@ -346,41 +292,115 @@ main section img {
     height: 70px;
     flex-basis: 0;
     flex-grow: 2;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .header h1 {
     font-size: 2.5em;
   }
-
   input {
     padding: 5px;
     margin: 2px;
     border-radius: 5px;
     border: 1px solid rgb(50, 167, 145);
   }
+  main {
+    justify-content: center;
+    padding: 0 100px;
+    height: 90vh;
+  }
+  #evaluation-form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #div-name-email-family {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(175, 176, 176);
+    padding: 5px;
+  }
+
+  #input-name , #input-lastname , #input-email , #div-select {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 49%;
+  }
+  #label-house {
+    display: flex;
+    align-self: center;
+  }
+  #house {
+    display: flex;
+    width: 90%;
+    height: 27px;
+    align-self: center;
+    border: 1px solid rgb(50, 167, 145);
+    border-radius: 5px;
+    background-color: white;
+  }
+  #label-family-and-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(175, 176, 176);
+    padding: 5px;
+  }
+  #div-label-family {
+    margin-right: 15px;
+  }
+  #div-label-family label {
+    width: max-content;
+  }
+  #div-trybewarts-rate {
+    padding: 5px;
+  }
+  #div-textarea {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .textarea , #textarea , p , #div-label-infos {
+    padding: 5px;
+  }
+
+  #textarea {
+    display: flex;
+    width: 675px;
+    height: 94px;
+    resize: none;
+  }
+  #submit-btn {
+    background-color: rgb(77, 40, 132);
+    border: 2px solid rgb(77, 40, 132);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 30%;
+    align-self: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(57, 62, 73);
+  }
 
   .header-section {
     display: flex;
   }
-
   .trybewarts-header-logo {
     width: 55px;
-    margin: 15px;
   }
-
   .header .trybewarts-login {
     display: flex;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
   }
-
   .header input {
     border-radius: 8px;
     height: 21px;
   }
-
   .header #login-button {
     width: 100px;
     margin: 5px 10px;
@@ -389,5 +409,4 @@ main section img {
     border-radius: 8px;
     color: white;
   }
-
 }
