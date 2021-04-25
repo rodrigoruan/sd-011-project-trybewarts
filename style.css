@@ -64,7 +64,6 @@ main {
 #input-radio {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 #textarea {
