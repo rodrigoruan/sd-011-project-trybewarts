@@ -49,3 +49,8 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+.email-house {
+  display: flex;
+  flex-direction: row;
+}
