@@ -2,6 +2,7 @@ const submit = document.getElementById('submit-button');
 const login = document.getElementById('login');
 const password = document.getElementById('password');
 const agreement = document.getElementById('agreement');
+const formSubmit = document.getElementById('submit-btn');
 
 function submitForm() {
   const standardLogin = 'tryber@teste.com';
@@ -14,7 +15,6 @@ function submitForm() {
 }
 
 function enableSubmission() {
-  const formSubmit = document.getElementById('submit-btn');
   if (agreement.checked) {
     formSubmit.disabled = false;
   } else {
