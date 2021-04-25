@@ -52,6 +52,7 @@ body {
 main {
   display: flex;
   justify-content: space-between;
+
   /* testar outras propriedades do justify contente */
 }
 
@@ -92,7 +93,6 @@ main {
 .section2 {
   width: 675px;
   padding: 10px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -118,7 +118,7 @@ main {
 }
 
 .section4 input {
-  margin-left: 4px ;
+  margin-left: 4px;
 }
 
 .section05 {
