@@ -128,7 +128,7 @@ main {
 }
 
 #label-content , #label-family {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .checkboxes {
@@ -140,7 +140,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: space-around
+  align-items: space-around;
 }
 
 #textarea {
@@ -154,6 +154,7 @@ main {
 .textarea {
   padding: 10px;
 }
+
 .rate , .agree {
   display: flex;
   padding: 10px;
@@ -178,7 +179,3 @@ footer {
   align-items: center;
 }
 
-.linha-horizontal {
-  width: 675px;
-  border: 1px solid black;
-}
