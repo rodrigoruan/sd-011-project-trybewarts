@@ -27,35 +27,27 @@
     <main id="main-page">
       <form id="evaluation-form" action="">
         <div id="top-form">
+
           <div class="align-items-forms1">
             <label for="name"></label>
             <input id="input-name" type="text" name="name" placeholder="Nome" />
 
             <label for="lastname"></label>
-            <input
-              id="input-lastname"
-              type="text"
-              name="lastname"
-              placeholder="Sobrenome"
-            />
+            <input id="input-lastname" type="text" name="lastname" placeholder="Sobrenome"/>
           </div>
 
           <div class="align-items-forms2">
             <label for="email"></label>
-            <input
-              id="input-email"
-              type="text"
-              name="email"
-              placeholder="Email"
-            />
+            <input id="input-email" type="text" name="email" placeholder="Email"/>
 
-            <label for="house">Casa</label>
-            <select name="house" id="house">
-              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
+            <label for="house">Casa
+              <select name="house" id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </label>
           </div>
         </div>
 
@@ -63,7 +55,7 @@
 
         <div id="family-content">
           <div id="family">
-            <label id="label-family">Qual a sua família?</label>
+            <label id="label-family">Qual sua família?</label>
 
             <label>
               <input type="radio" name="family" value="Frontend" />Família
@@ -116,8 +108,8 @@
 
         <div id="coment">
           <label class="textarea">Deixe seu comentário:</label>
-
-          <textarea id="textarea" maxlength="500" placeholder="500"></textarea>
+          <span id="counter">500</span> Restantes <br>
+          <textarea id="textarea" onkeyup="limite_textarea(this.value)" maxlength="500"></textarea>
 
           <label id="label-infos"
             >Você concorda com o uso das informações acima?

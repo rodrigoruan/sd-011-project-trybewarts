@@ -14,8 +14,6 @@ buttonLogin.addEventListener('click', () => {
 const agreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 
-agreement.addEventListener('change', checkboxChecked);
-
 function checkboxChecked() {
   if (agreement.checked === true) {
     submitBtn.disabled = false;
@@ -23,4 +21,20 @@ function checkboxChecked() {
     submitBtn.disabled = true;
   }
   //   submitBtn.disabled = !agreement.checked;
+}
+agreement.addEventListener('change', checkboxChecked);
+
+//requisito 20 - contador de caracteres
+// Refêrencia para resolução do problema
+// https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
+let textArea = document.getElementById('textarea').value;
+function limite_textarea (textArea) {
+  quant = 500;
+  total = textArea.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('counter').innerHTML = resto;
+  } else {
+      document.getElementById('textarea').value = textArea.substr(0,quant);
+  }
 }

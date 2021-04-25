@@ -1,6 +1,7 @@
 label {
   display: block;
 }
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -81,6 +82,7 @@ label {
   display: flex;
   flex-direction: row;
 }
+
 #checkbox-input2 {
   display: flex;
   flex-direction: row;
@@ -106,18 +108,17 @@ footer {
 
 #top-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 25px;
   width: 675px;
 }
 
 .align-items-forms1 {
-  align-items: flex-start;
+  display: flex;
 }
 
 .align-items-forms2 {
-  width: 250px;
-  align-items: flex-end;
+  display: flex;
 }
 
 #submit-btn {
