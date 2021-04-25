@@ -22,10 +22,10 @@
     </form>
   </header>
 
-  <main id="content">
-    <div class="content">
-      <h1>Forms</h1>
-      <form method="GET" id="evaluation-form">
+<main class='content-row'>
+  <form id="evaluation-form" method="GET" action="" >
+      <div class='content-column'>
+        <h1>Forms</h1>
       
         <div class="full-name">
           <label for="name"></label>
@@ -40,16 +40,11 @@
 
           <label for="casa">Casa</label>
           <select name="casa" id="house">
-            <option name="gitnoria-house" value="gitnoria-house">Gitnória</option>
-            <option name="reactpuff-house" value="reactpuff-house">Reactpuff</option>
-            <option name="corvinode-house" value="corvinode-house">Corvinode</option>
-            <option name="pytherina-house" value="pytherina-house">Pytherina</option>
+            <option value="Gitnória" name="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" name="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" name="corvinode-house">Corvinode</option>
+            <option value="Pytherina" name="pytherina-house">Pytherina</option>
           </select>
-        </div>
-
-        <div class="agreement">
-          <label for="agreement"id="label-infos">Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" name="agreement" id="agreement" required>
         </div>
 
         <section>
@@ -237,8 +232,16 @@
     
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
 
-  </main>
+        <div class="agreement">
+          <label for="agreement"id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement" required>
+        </div>
 
+        <button type="submit" id='submit-btn' disabled>Enviar</button>
+
+      </div>
+  </form> <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo">
+</main>
   <script src="script.js"></script>
 </body>
 </html>
