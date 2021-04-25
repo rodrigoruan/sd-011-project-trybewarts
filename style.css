@@ -105,7 +105,7 @@ hr {
   margin: 20px 0;
 }
 
-#form-section-1, #form-section-3 {
+#form-section-1 , #form-section-3 {
   flex-direction: column;
 }
 
@@ -187,7 +187,7 @@ hr {
   resize: none;
 }
 
-input[type="text"] , textarea {
+textarea {
   border-radius: 8px;
   border: none;
   padding: 10px;
@@ -206,7 +206,7 @@ input::placeholder {
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  background-color: #4E2C83;
+  background-color: rgb(77, 43, 130);
   color: white;
   font-weight: 700;
   cursor: pointer;
