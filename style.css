@@ -52,9 +52,8 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
   padding: 20px;
-  border: blue solid;
+  border: red solid;
 }
 
 #evaluation-form {
@@ -63,7 +62,13 @@ main {
   width: 675px;
   flex-basis: 675px;
   border-radius: 5px;
-  border: green solid;
+  border: red solid;
+}
+
+#forms-h2 {
+  display: flex;
+  justify-content: center;
+  
 }
 
 #trybewarts-forms-logo {
@@ -101,6 +106,7 @@ main {
 }
 
 select {
+  padding: 10px;
   background-color: white;
   color: gray;
   border: none;
@@ -114,7 +120,7 @@ select {
   flex-direction: column;
   justify-content: center;
   color: gray;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 
 .form-style {
@@ -123,4 +129,9 @@ select {
 
 .form-select {
   display: flex;
+}
+
+#textarea {
+  display: flex;
+  width: 675px;
 }
