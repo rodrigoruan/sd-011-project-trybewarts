@@ -23,3 +23,11 @@ const submitButton = document.querySelector('#submit-btn');
 agreeCheck.addEventListener('click', () => {
   submitButton.removeAttribute('disabled');
 });
+
+const textAreaLength = document.getElementById('textarea');
+const maxLength = textAreaLength.getAttribute('maxlength');
+const contador = document.getElementById('counter');
+contador.innerHTML = maxLength;
+document.getElementById('textarea').onkeyup = function counterTextArea() {
+  document.getElementById('counter').innerHTML = (500 - this.value.length);
+};
