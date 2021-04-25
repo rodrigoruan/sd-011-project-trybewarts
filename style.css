@@ -9,21 +9,12 @@ header {
   background-color: rgb(50, 167, 145);
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-}
-
-.div-content {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  width: 75%;
-  max-width: 1200px;
 }
 
-.div-content h1 {
+header h1 {
   color: white;
 }
 
@@ -37,7 +28,7 @@ header {
   justify-content: center;
 }
 
-.div-content input {
+header input {
   border: 0;
   border-radius: 5px;
   outline: 0;
@@ -47,7 +38,7 @@ header {
   margin: 0 5px;
 }
 
-.div-content button {
+header button {
   color: white;
   background-color: rgb(78, 44, 131);
   height: 30px;
@@ -147,6 +138,7 @@ main {
   width: 100%;
   display: flex;
   flex: 0 1 0;
+  line-height: 30px;
 }
 
 .div-column {
@@ -175,6 +167,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 0 1 0;
+  line-height: 30px;
 }
 
 #textarea {
