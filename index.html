@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 		<!-- Latest compiled and minified CSS
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Traybewarts</title> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <title>Traybewarts</title>
 </head>
 <body>
 	<header class="header">
@@ -82,18 +82,39 @@
                 </div>
             </section>
             <hr>
-            <div>
-					<label class="textarea" >
-						Deixe seu comentário:
-					</label>
-					<textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>					
-					<span id="counter"></span>
-					<label for="" id="label-infos">
-						Você concorda com o uso das informações acima?
-						<input type="checkbox" name="checkbox" id="agreement">               
-				</label>
-				<button type="submit" id="submit-btn" disabled>Enviar</button>			
-            </div>
+            <section id="forms-part-3">
+                <div id= "level-satisfaction">
+                    <label for="" id="label-rate">
+                        Como você avalia a Trybewarts?
+                    </label>
+                    <input type="radio" value="1" name="rate" class="rate">1</input>
+                    <input type="radio" value="2" name="rate" class="rate">2</input>
+                    <input type="radio" value="3" name="rate" class="rate">3</input>
+                    <input type="radio" value="4" name="rate" class="rate">4</input>
+                    <input type="radio" value="5" name="rate" class="rate">5</input>
+                    <input type="radio" value="6" name="rate" class="rate">6</input>
+                    <input type="radio" value="7" name="rate" class="rate">7</input>
+                    <input type="radio" value="8" name="rate" class="rate">8</input>
+                    <input type="radio" value="9" name="rate" class="rate">9</input>
+                    <input type="radio" value="10" name="rate" class="rate">10</input>
+                </div>
+                <div id="comment">
+                    <label class="textarea" >
+                        Deixe seu comentário:
+                    </label>
+                    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>					
+                        <span id="counter"></span>
+                </div>
+                <div id="use-information">        
+                        <label for="agreement" id="label-infos"> 
+                            Você concorda com o uso das informações acima?
+                        </label>
+                        <input type="checkbox" name="checkbox" id="agreement">         
+                </div>
+                <div id="submit-button" >      
+                    <button type="submit" id="submit-btn" disabled>Enviar</button>
+                </div>			
+            </section>
 		</form>
 		<div class="forms-logo">
 				<img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
