@@ -19,3 +19,13 @@ checkEnable.addEventListener('click', () => {
     return inputbutton.removeAttribute('disabled');
   }
 });
+
+const counter = document.querySelector('#counter');
+counter.addEventListener('keypress', event => {
+  const inputlength = counter.value.length;
+  const maxlength = counter.getAttribute('maxlength').value;
+  if (inputlength >= maxlength) {
+    event.preventDefault();
+    console.log('Caracteres digitados: ' + inputlength);
+  }
+});
