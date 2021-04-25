@@ -113,7 +113,7 @@ function changeFormChilds() {
     event.preventDefault();
     returnNameValue();
     returnEmailHouseValue();
-    returnFamilyContentValue()
+    returnFamilyValue()
   });
 }
 
