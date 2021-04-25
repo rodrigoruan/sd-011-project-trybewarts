@@ -78,8 +78,6 @@ function info() {
 
 enviar.addEventListener('click', (Event) => {
   Mudarestado();
-  
   Event.preventDefault();
-
   info();
 });
