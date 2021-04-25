@@ -54,16 +54,17 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin-left: 100px;
 }
 
-#evaluation-form h2 {
+#evaluation-form h1 {
   text-align: center;
-  font-size: large;
   padding: 40px 0;
 }
 
 #trybewarts-forms-logo {
   width: 500px;
+  padding: 25px 25px;
 }
 
 .block-input {
