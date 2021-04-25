@@ -1,7 +1,7 @@
 const submitLoginBtn = document.getElementById('header-submit');
 const agreementCheckbox = document.getElementById('agreement');
 const formSubmitButton = document.getElementById('submit-btn');
-const commentBox = document.getElementById('comment-box');
+const commentBox = document.getElementById('textarea');
 
 function toggleFormSubmitButtonState() {
   if (agreementCheckbox.checked) {
