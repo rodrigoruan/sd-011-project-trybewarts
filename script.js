@@ -41,7 +41,7 @@ textarea.addEventListener('input', countLetters);
 // Requisito 21
 const family = document.querySelectorAll('.family');
 function checkedFamily() {
-  const familyChecked = '';
+  let familyChecked = '';
   for (let index = 0; index < family.length; index += 1) {
     if (family[index].checked) {
       familyChecked += family[index].value;
@@ -60,13 +60,12 @@ function checkedContent() {
     }
   }
   const joinContent = contentChecked.join(', ');
-  
   return joinContent;
 }
 
 const avaliacao = document.querySelectorAll('.rate');
 function checkedAvaliacao() {
-  const avaliacaoChecked = '';
+  let avaliacaoChecked = '';
   for (let index = 0; index < avaliacao.length; index += 1) {
     if (avaliacao[index].checked) {
       avaliacaoChecked += avaliacao[index].value;
@@ -95,6 +94,5 @@ function formInfos(event) {
   Avaliação: ${checkedAvaliacao()}<br>
   Observações: ${observacao}`;
 }
-
 
 submitBtn.addEventListener('click', formInfos);
