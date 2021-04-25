@@ -34,6 +34,7 @@
 
       <div class="email-house-container">
         <input id="input-email" placeholder="Email" name="Email">
+        <label for="house">Casa: </label>
         <select id="house" name="Casa">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -41,51 +42,53 @@
           <option id="pytherina-house" value="Pytherina">Phyterina</option>
         </select>
       </div>
+      <hr>
+      <div class="family-content-container">
+        <div class="family">
+          <label id="label-family">Qual sua família?</label>
+          <label for="radio-frontend">
+            <input type="radio" id="radio-frontend" value="Frontend" name="family">
+            Família Frontend
+          </label>
+          <label for="radio-backend">
+            <input type="radio" id="radio-backend" value="Backend" name="family">
+            Família Backend
+          </label>
+          <label for="radio-fullstack">
+            <input type="radio" id="radio-fullstack" value="FullStack" name="family">
+            Família FullStack
+          </label>
+        </div>
 
-      <label id="label-family">Qual sua família?</label>
-      <div class="family">
-        <label for="radio-frontend">
-          <input type="radio" id="radio-frontend" value="Frontend" name="family">
-          Família Frontend
-        </label>
-        <label for="radio-backend">
-          <input type="radio" id="radio-backend" value="Backend" name="family">
-          Família Backend
-        </label>
-        <label for="radio-fullstack">
-          <input type="radio" id="radio-fullstack" value="FullStack" name="family">
-          Família FullStack
-        </label>
+        <div class="content">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label for="checkbox-hofs">
+            <input type="checkbox" class="subject" id="checkbox-hofs" value="HoFs" name="HardSkills">
+            HoFs
+          </label>
+          <label for="checkbox-jest">
+            <input type="checkbox" class="subject" id="checkbox-jest" value="Jest" name="HardSkills">
+            Jest
+          </label>
+          <label for="checkbox-promises">
+            <input type="checkbox" class="subject" id="checkbox-promises" value="Promises" name="HardSkills">
+            Promises
+          </label>
+          <label for="checkbox-react">
+            <input type="checkbox" class="subject" id="checkbox-react" value="React" name="HardSkills">
+            React
+          </label>
+          <label for="checkbox-sql">
+            <input type="checkbox" class="subject" id="checkbox-sql" value="SQL" name="HardSkills">
+            SQL
+          </label>
+          <label for="checkbox-python">
+            <input type="checkbox" class="subject" id="checkbox-python" value="Python" name="HardSkills">
+            Python
+          </label>
+        </div>
       </div>
-
-      <div class="content">
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <label for="checkbox-hofs">
-          <input type="checkbox" class="subject" id="checkbox-hofs" value="HoFs" name="HardSkills">
-          HoFs
-        </label>
-        <label for="checkbox-jest">
-          <input type="checkbox" class="subject" id="checkbox-jest" value="Jest" name="HardSkills">
-          Jest
-        </label>
-        <label for="checkbox-promises">
-          <input type="checkbox" class="subject" id="checkbox-promises" value="Promises" name="HardSkills">
-          Promises
-        </label>
-        <label for="checkbox-react">
-          <input type="checkbox" class="subject" id="checkbox-react" value="React" name="HardSkills">
-          React
-        </label>
-        <label for="checkbox-sql">
-          <input type="checkbox" class="subject" id="checkbox-sql" value="SQL" name="HardSkills">
-          SQL
-        </label>
-        <label for="checkbox-python">
-          <input type="checkbox" class="subject" id="checkbox-python" value="Python" name="HardSkills">
-          Python
-        </label>
-      </div>
-
+      <hr>
       <div class="rate-container">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <label for="radio-rate1"><input type="radio" id="radio-rate1" value="1" name="rate">1</label>
