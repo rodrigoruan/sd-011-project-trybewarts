@@ -26,6 +26,7 @@ function checkAgreement() {
   }
   if (checked) {
     submitButton.disabled = false;
+    submitButton.classList.remove('btn-disabled');
   }
 }
 
