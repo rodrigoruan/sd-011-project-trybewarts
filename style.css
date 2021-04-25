@@ -15,6 +15,10 @@ body {
   line-height: 2em;
 }
 
+.break-text {
+  word-break: break-all;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;

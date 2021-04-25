@@ -14,7 +14,7 @@
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <div class="form-container">
-          <form class="trybewarts-login" name="trybewartsLogin" action="">
+          <form class="trybewarts-login">
             <input class="input-login" id="login" type="text" name="login" placeholder="Login">
             <input class="input-login" id="password" type="password" name="senha" placeholder="Senha" autocomplete>
             <button type="submit" id="header-submit">Logar</button>
@@ -31,15 +31,15 @@
           <!-- Form - Seção 1 -->
           <div class="form-section-row test">
             <!-- Nome e Sobrenome -->
-            <input type="text" id="input-name" class="input-text" placeholder="Nome">
-            <input type="text" id="input-lastname" class="input-text" placeholder="Sobrenome">
+            <input type="text" name="firstName" id="input-name" class="input-text" placeholder="Nome">
+            <input type="text" name="lastName"  id="input-lastname" class="input-text" placeholder="Sobrenome">
           </div>
           <div class="form-section-row">
             <!-- E-mail e Casa -->
-            <input type="text" id="input-email" class="input-text" placeholder="Email">
+            <input type="email" name="email"  id="input-email" class="input-text" placeholder="Email">
             <label class="label-container">
               <span class="label-text">Casa:</span>
-              <select name="" id="house">
+              <select name="house" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -72,27 +72,27 @@
           <div class="label-content-container">
             <legend id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>
             <div class="content-checkbox">
-              <input type="checkbox" value="HoFs" id="hofs-input" class="subject">
+              <input type="checkbox" name="subject" value="HoFs" id="hofs-input" class="subject">
               <label for="hofs-input">HoFs</label>
             </div>
             <div class="content-checkbox">
-              <input type="checkbox" value="Jest" id="jest-input" class="subject">
+              <input type="checkbox" name="subject" value="Jest" id="jest-input" class="subject">
               <label for="jest-input">Jest</label>
             </div>
             <div class="content-checkbox2">
-              <input type="checkbox" value="Promises" id="promises-input" class="subject">
+              <input type="checkbox" name="subject" value="Promises" id="promises-input" class="subject">
               <label for="promises-input">Promises</label>
             </div>
             <div class="content-checkbox">
-              <input type="checkbox" value="React" id="react-input" class="subject">
+              <input type="checkbox" name="subject" value="React" id="react-input" class="subject">
               <label for="react-input">React</label>
             </div>
             <div class="content-checkbox">
-              <input type="checkbox" value="SQL" id="sql-input" class="subject">
+              <input type="checkbox" name="subject" value="SQL" id="sql-input" class="subject">
               <label for="sql-input">SQL</label>
             </div>
             <div class="content-checkbox2">
-              <input type="checkbox" value="Python" id="python-input" class="subject">
+              <input type="checkbox" name="subject" value="Python" id="python-input" class="subject">
               <label for="python-input">Python</label>
             </div>
           </div>
@@ -147,14 +147,14 @@
           </div>
           <!-- Textarea - Comentário -->
           <label for="comment-box" class="textarea">Deixe seu comentário:</label>
-          <textarea name="comment-box" id="textarea" rows="8" maxlength="500"></textarea>
+          <textarea name="commentBox" id="textarea" rows="8" maxlength="500"></textarea>
           <div id="counter">
             <span>Caracteres disponíveis: 500</span>
           </div>
           <!-- Checkbox - Agreement -->
           <div class="form-section-row">
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-            <input type="checkbox" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement">
           </div>
         </div>
         <button type="submit" id="submit-btn" disabled>Enviar</button>
