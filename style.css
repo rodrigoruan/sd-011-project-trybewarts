@@ -44,21 +44,6 @@ header input {
   padding: 10px 4px;
 }
 
-.forms-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.forms-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.padding {
-  padding-left: 1em;
-  margin-left: 0.8em;
-}
-
 /* -------------------------------Lima--------------------------------------- */
 body {
   display: flex;
