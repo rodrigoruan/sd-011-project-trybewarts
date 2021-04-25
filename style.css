@@ -102,3 +102,15 @@ main {
 .checkboxDiv {
   text-align: left;
 }
+
+section.section4 {
+  width: 675px;
+  text-align: left;
+}
+
+
+hr 
+{
+  margin: 5px;
+  width: 100%;
+}
