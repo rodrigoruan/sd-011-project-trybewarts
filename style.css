@@ -111,6 +111,10 @@ main section img {
     top: 20px;
   }
 
+  #div-textarea span {
+    margin-left: 5px;
+  }
+
   #checkbox-menu:checked + label span:nth-child( 1 ) {
     transform: rotate(-45deg);
     top: 8px;
@@ -146,12 +150,18 @@ main section img {
     padding: 20px;
   }
 
-  #section-checkbox-menu {
+  .header-section {
     display: flex;
-    position: absolute;
+    background-color: rgb(50, 167, 145);
+  }
+
+  #div-checkbox-menu {
+    display: flex;
     height: 50px;
     width: 100%;
-    justify-content: flex-end;
+    order: 2;
+    flex-basis: 0;
+    flex-grow: 0;
   }
 
   input {
@@ -181,7 +191,7 @@ main section img {
   }
 
   .trybewarts-header-logo {
-    width: 7%;
+    width: 35px;
     margin: 5px 15px;
   }
 
@@ -193,6 +203,9 @@ main section img {
     justify-content: center;
     color: white;
     padding: 0 20px;
+    height: 50px;
+    flex-basis: 0;
+    flex-grow: 2;
   }
 
   .header .logo {
@@ -276,6 +289,11 @@ main section img {
 
   #label-rate {
     margin-right: 5px;
+  }
+
+  #div-textarea p {
+    display: flex;
+    margin-bottom: 10px;
   }
 
   #textarea {
