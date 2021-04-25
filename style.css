@@ -58,6 +58,8 @@ main , #label-infos {
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
+  justify-self: self-end;
 }
 
 .radio-control-wrapper {
@@ -82,4 +84,17 @@ main , #label-infos {
 
 .trybewarts-login button {
   padding: 6px 20px;
+}
+
+#label-infos {
+  width: 400px;
+}
+
+#submit-btn {
+  width: 80px;
+  height: 30px;
+  display: block;
+  background-color: rgb(50, 167, 145);
+  color: aliceblue;
+  border-radius: 10%;
 }
