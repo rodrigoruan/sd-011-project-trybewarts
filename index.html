@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>TrybeWarts</title>
 </head>
 <body>
   <div class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 id="trybewarts-header-title">TrybeWarts</h1>
     <form class="trybewarts-login">
       <input id="email" placeholder="Login">
       <input id="senha" placeholder="Senha">
@@ -20,49 +22,56 @@
 
         <div class="page">
           <main>
-              <form id="evaluation-form">
+              <form id="evaluation-form"><h2 id="title-forms">Forms</h2>
                 <div class="inputs-inicio">
                   <div class="names">
-                    <div class="coluna-name-email">
+        
                       <label for="input-name">
                         <input type="text" id="input-name" placeholder="Nome">
                       </label>
-                    </div>
-                    <div class="coluna-lastname-casa">
+                    
+                  
                       <label for="input-lastname">
                         <input type="text" id="input-lastname" placeholder="Sobrenome">
                       </label>
-                    </div>
                   </div>
-                  <div class="adresses">
-                    <div class="coluna-name-email">
-                      <label for="input-email">
-                        <input type="text" id="input-email" placeholder="Email">
-                      </label>
-                    </div>
-                    <div class="coluna-lastname-casa">
-                      <label for="house">Casa</label>
-                      <select name="Casa" id="house">
-                        <option value="" id="gitnoria-house">Gitnória</option>
-                        <option value="" id="reactpuff-house">Reactpuffe</option>
-                        <option value="" id="corvinode-house">Corvinodee</option>
-                        <option value="" id="pytherina-house">Pytherinae</option>
-                      </select>
-                    </div>
                 </div>
+<div class="inputs-adresses">
+  
+                    <div class="adresses">
+  
+                        <label for="input-email">
+                          <input type="text" id="input-email" placeholder="Email">
+                        </label>
+  
+  
+                        <label for="house">Casa:</label>
+                        <select name="Casa" id="house">
+                          <option value="" id="gitnoria-house">Gitnória</option>
+                          <option value="" id="reactpuff-house">Reactpuffe</option>
+                          <option value="" id="corvinode-house">Corvinodee</option>
+                          <option value="" id="pytherina-house">Pytherinae</option>
+                        </select>
+  
+                    </div>
+</div>
+                
 
-
-
-                </div>
+<div id="linha-horizontal"></div>
+                
                   <div class="duascolunas">
                     <div class="family">
+                      <div class="colunafamilia">
                       <label for="" id="label-family">Qual sua família?</label>
                      
-                        <div class="colunafamilia">
-                          <input type="radio" name="family" value="Frontend">Frontend
-                          <input type="radio" name="family" value="Backend">Backend
-                          <input type="radio" name="family" value="FullStack">FullStack
-                        </div>
+                        
+                          
+                            <input id="frontend" type="radio" name="family" value="Frontend">Frontend
+                            <input id ="backend" type="radio" name="family" value="Backend">Backend
+                            <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
+                        
+
+                      </div>
                     
                       </div>
                   
@@ -85,6 +94,9 @@
                     </div>
                     </div>
                   </div>
+
+                  <div id="linha-horizontal"></div>
+
                 <div class="rate">
                   <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
                   <label for="">1
