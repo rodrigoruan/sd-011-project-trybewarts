@@ -1,4 +1,6 @@
 const buttonLogin = document.getElementById('buttonLogin');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 buttonLogin.addEventListener('click', () => {
   const inputEmail = document.getElementById('loginEmail').value;
@@ -21,4 +23,8 @@ checkbox.addEventListener('click', () => {
   } else {
     submit.disabled = false;
   }
+});
+
+textArea.addEventListener('keyup', () => {
+  counter.innerHTML = 500 - textArea.value.length;
 });
