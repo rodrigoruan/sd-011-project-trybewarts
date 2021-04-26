@@ -18,8 +18,14 @@
 }
 
 .trybewarts-login {
-  align-items: center;
   display: flex;
+  flex-flow: row nowrap;
+  align-self: center;
+}
+
+#submit-button {
+  width: 100px;
+  margin-left: 20px;
 }
 
 #trybewarts-forms-logo {
