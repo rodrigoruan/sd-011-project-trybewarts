@@ -13,11 +13,12 @@ loginButton.addEventListener('click', () => {
 
 // Criar constante que recebe o botao Submit
 const agreementCheck = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
 agreementCheck.addEventListener('click', () => {
   if (document.getElementById('agreement').checked === true) {
-    document.getElementById('submit-btn').disabled = false;
+    submitButton.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitButton.disabled = true;
   }
 });
 
@@ -26,43 +27,31 @@ const counter = document.getElementById('counter');
 const textArea = document.getElementById('textarea');
 let tamanho = 500;
 textArea.addEventListener('keyup', () => {
-  // Diminuir do counter o tamanho atual do textos
+// Diminuir do counter o tamanho atual do textos
   tamanho = 500 - (textArea.value.length);
   counter.innerHTML = tamanho;
 });
 
-const submitButton = document.getElementById('submit-btn');
 submitButton.addEventListener('click', () => {
-// pegar dados e colocar em variáveis
-let name = document.getElementById('input-name').value;
-let lastName = document.getElementById('input-lastname').value;
-let email = document.getElementById('input-email').value;
-let casa = document.getElementById('house').value;
-let familia = document.querySelector('input[name="family"]:checked').value;
-let materia = document.querySelector('input[name="materia"]:checked').value;
-let avalia = document.querySelector('input[name="rate"]:checked').value;
-let obs = document.getElementById('textarea').value;
-
-// guardar no local storage rs
-localStorage.setItem('name', name);
-localStorage.setItem('lastname', lastName);
-localStorage.setItem('email', email);
-localStorage.setItem('house', casa);
-localStorage.setItem('familia', familia);
-localStorage.setItem('materia', materia);
-localStorage.setItem('avalia', avalia);
-localStorage.setItem('obs', obs);
-
+  // guardar no local storage rs
+  localStorage.setItem('name', document.getElementById('input-name').value);
+  localStorage.setItem('lastname', document.getElementById('input-lastname').value);
+  localStorage.setItem('email', document.getElementById('input-email').value);
+  localStorage.setItem('house', document.getElementById('house').value);
+  localStorage.setItem('familia', document.querySelector('input[name="family"]:checked').value);
+  localStorage.setItem('materia', document.querySelector('input[name="materia"]:checked').value);
+  localStorage.setItem('avalia', document.querySelector('input[name="rate"]:checked').value);
+  localStorage.setItem('obs', document.getElementById('textarea').value);
 });
 // exibir nos campos o conteúdo coletado?
 window.onload = () => {
   // colocando nos campos o que guardou em variáveis
-document.getElementById('input-name').value = localStorage.getItem('name');
-document.getElementById('input-lastname').value = localStorage.getItem('lastname');
-document.getElementById('input-email').value = localStorage.getItem('email');
-document.getElementById('house').value = localStorage.getItem('house');
-document.querySelector('input[value='+localStorage.getItem('familia')+']').checked = true;
-document.querySelector('input[value='+localStorage.getItem('materia')+']').checked = true;
-document.querySelector('input[value="'+localStorage.getItem('avalia')+'"]').checked = true;
-document.getElementById('textarea').innerHTML = localStorage.getItem('obs');
-}
+  document.getElementById('input-name').value = localStorage.getItem('name');
+  document.getElementById('input-lastname').value = localStorage.getItem('lastname');
+  document.getElementById('input-email').value = localStorage.getItem('email');
+  document.getElementById('house').value = localStorage.getItem('house');
+  document.querySelector(`input[value=${localStorage.getItem('familia')}]`).checked = true;
+  document.querySelector(`input[value=${localStorage.getItem('materia')}]`).checked = true;
+  document.querySelector(`input[value=${localStorage.getItem('avalia')}]`).checked = true;
+  document.getElementById('textarea').innerHTML = localStorage.getItem('obs');
+};
