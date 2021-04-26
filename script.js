@@ -24,4 +24,4 @@ function agree() {
   }
 }
 
-checkBoxAgree.addEventListener('click', agree); 
+checkBoxAgree.addEventListener('click', agree);
