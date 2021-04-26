@@ -53,7 +53,7 @@ submitButton.addEventListener('click', () => {
   const avalia = document.querySelector('input[name="rate"]:checked').value;
   const obs = document.getElementById('textarea').value;
 
-  document.querySelector('#labelNome').innerHTML = `Nome: ${name} ${lastname}`;
+  document.querySelector('#labelNome').innerHTML = `Nome: ${name}`` ${lastname}`;
   document.querySelector('#labelEmail').innerHTML = `Email: ${email}`;
   document.querySelector('#labelCasa').innerHTML = `Casa: ${house}`;
   document.querySelector('#labelFamilia').innerHTML = `Família: ${familia}`;
