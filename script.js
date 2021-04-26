@@ -61,8 +61,7 @@ function countCharacters() {
 }
 
 // cria parágrafo com nome e sobrenome
-function returnNameValue() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returnNameValue(getFormDiv) {
   const fullNameDiv = document.querySelector('.first-row');
   const nameInput = document.getElementById('input-name');
   const lastNameInput = document.getElementById('input-lastname');
@@ -74,8 +73,7 @@ function returnNameValue() {
 }
 
 // cria parágrafo com email e casa selecionada
-function returnEmailHouseValue() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returnEmailHouseValue(getFormDiv) {
   const emailHouseDiv = document.querySelector('.second-row');
   const emailInput = document.getElementById('input-email');
   const houseInput = document.getElementById('house');
@@ -90,10 +88,9 @@ function returnEmailHouseValue() {
 }
 
 // cria parágrafo com família
-function returnFamilyValue() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returnFamilyValue(getFormDiv) {
   const getFamilyWrapper = document.querySelector('.family-wrapper');
-  const checkFamily = document.querySelector("input[type='radio'][name='family']:checked").value;
+  const checkFamily = document.querySelector('input[type=radio][name=family]:checked').value;
   const returnFamily = document.createElement('p');
   returnFamily.innerText = `Família: ${checkFamily}`;
 
@@ -113,25 +110,23 @@ function checkedContents(array) {
 }
 
 // cria parágrafo com matérias
-function returunContentValues() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returunContentValues(getFormDiv) {
   const getContentWrapper = document.querySelector('.content-wrapper');
   const getRadioCheckWrapper = document.querySelector('.radio-check-wrapper');
   const checkContent = document.getElementsByClassName('subject');
   const checkedValues = document.createElement('p');
 
-  checkedValues.innerText = `Matérias: ${checkedContents(checkContent)}`
+  checkedValues.innerText = `Matérias: ${checkedContents(checkContent)}`;
   getFormDiv.appendChild(checkedValues);
   getContentWrapper.parentNode.removeChild(getContentWrapper);
   getRadioCheckWrapper.parentNode.removeChild(getRadioCheckWrapper);
 }
 
 // cria parágrafo com o valor da avaliação
-function returnCsatValue() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returnCsatValue(getFormDiv) {
   const getCsatDiv = document.querySelector('.csat');
-  const checkCsat = document.querySelector("input[type='radio'][name='rate']:checked").value;
-  const returnCsat= document.createElement('p');
+  const checkCsat = document.querySelector('input[type=radio][name=rate]:checked').value;
+  const returnCsat = document.createElement('p');
   returnCsat.innerText = `Avaliação: ${checkCsat}`;
 
   getFormDiv.appendChild(returnCsat);
@@ -139,21 +134,19 @@ function returnCsatValue() {
 }
 
 // cria parágrafo com o valor do comentário
-function returnCommentValue() {
-  const getFormDiv = document.getElementById('evaluation-form');
+function returnCommentValue(getFormDiv) {
   const getCommentValue = document.getElementById('textarea').value;
   const getCommentDiv = document.querySelector('.comment-area');
-  const returnCommentValue = document.createElement('p');
+  const commentValue = document.createElement('p');
 
-  returnCommentValue.innerText = `Observações: ${getCommentValue}`;
-  getFormDiv.appendChild(returnCommentValue);
+  commentValue.innerText = `Observações: ${getCommentValue}`;
+  getFormDiv.appendChild(commentValue);
   getCommentDiv.parentNode.removeChild(getCommentDiv);
 }
 
 // retira checkbox termos de uso e botão enviar
-function removeAgreementSubmit() {
+function removeAgreementSubmit(getSubmitButton) {
   const getAgreementCheck = document.querySelector('.agreement-check');
-  const getSubmitButton = document.getElementById('submit-btn');
 
   getAgreementCheck.parentNode.removeChild(getAgreementCheck);
   getSubmitButton.parentNode.removeChild(getSubmitButton);
@@ -162,17 +155,17 @@ function removeAgreementSubmit() {
 // altera elementos do formulário
 function changeFormChilds() {
   const getSubmitButton = document.getElementById('submit-btn');
-
+  const getFormDiv = document.getElementById('evaluation-form');
 
   getSubmitButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    returnNameValue();
-    returnEmailHouseValue();
-    returnFamilyValue()
-    returunContentValues();
-    returnCsatValue();
-    returnCommentValue();
-    removeAgreementSubmit();
+    event.preventDefault(getFormDiv);
+    returnNameValue(getFormDiv);
+    returnEmailHouseValue(getFormDiv);
+    returnFamilyValue(getFormDiv);
+    returunContentValues(getFormDiv);
+    returnCsatValue(getFormDiv);
+    returnCommentValue(getFormDiv);
+    removeAgreementSubmit(getSubmitButton);
   });
 }
 
@@ -181,4 +174,4 @@ window.onload = function start() {
   enableSubmit();
   countCharacters();
   changeFormChilds();
-}
+};
