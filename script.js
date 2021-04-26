@@ -9,13 +9,13 @@ function handleLogin() {
   }
 }
 
-function handleAgreement() {
-  const agreeElement = document.getElementById('agreement');
+function handleAgreement(event) {
+  const agreeElement = event.target
   const buttonSubmit = document.getElementById('submit-btn');
   if (agreeElement.checked === true) {
-    buttonSubmit.disabled = false
+    buttonSubmit.disabled = false;
   } else {
-    buttonSubmit.disabled = true
+    buttonSubmit.disabled = true;
   }
 }
 
