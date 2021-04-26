@@ -21,3 +21,13 @@ function caracteresTextArea() {
   });
 }
 caracteresTextArea();
+
+function habilitaEnvio() {
+  const checkbox = document.getElementById('agreement');
+  checkbox.addEventListener('change', () => {
+    const btnEnvia = document.getElementById('submit-btn');
+    btnEnvia.removeAttribute('disabled');
+  });
+}
+
+habilitaEnvio();
