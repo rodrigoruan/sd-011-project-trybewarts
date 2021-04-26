@@ -1,10 +1,11 @@
-const loginButton = document.querySelector('#login-button');
+const loginInput = document.getElementById('id');
+const senhaInput = document.getElementById('password');
+const button = document.getElementById('submit-button');
 
-loginButton.addEventListener('click', () => {
-  const trybewartsLogin = document.forms['trybewarts-login'];
-  const user = trybewartsLogin.user.value;
-  const password = trybewartsLogin.password.value;
-  if (user === 'tryber@teste.com' && password === '123456') {
+
+
+button.addEventListener('click', () => {
+  if (loginInput.value === 'tryber@teste.com' && senhaInput.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
