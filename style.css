@@ -23,6 +23,9 @@ header form {
 
 .main-content {
   display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #evaluation-form {
@@ -64,10 +67,40 @@ header form {
 header img {
   width: 60px;
   height: 60px;
-  margin: 25px;
+  /* margin: 25px; */
 }
 
 header form .input {
   width: 150px;
   margin-right: 8px;
+}
+
+.main-content form .field {
+  margin: 10px;
+}
+
+#counter {
+  margin-top: -20px;
+  margin-right: 16px;
+  font-weight: bold;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+#textarea {
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+#text-area-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate-label {
+  padding: 10px;
+}
+
+.to-learn {
+  padding: 10px;
 }

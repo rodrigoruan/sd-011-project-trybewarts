@@ -24,7 +24,7 @@ function createRadio() {
     newRadio.classList.add('score');
     labelRate.appendChild(newRadio);
     labelRate.appendChild(textRadio);
-    textRadio.innerText = index;
+    textRadio.innerText = ` ${index} `;
   }
 }
 
