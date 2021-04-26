@@ -1,7 +1,6 @@
 function handleLogin() {
   const loginText = document.getElementById('login').value;
   const passwordText = document.getElementById('senha').value;
-  // fazer um if que verifica se o login é tryber@test.com e senha 123456
   if ((loginText === 'tryber@teste.com') && (passwordText === '123456')) {
     alert('Olá, Tryber!');
   } else {
@@ -26,9 +25,18 @@ function countCaracter() {
   countRemaining.textContent = counter;
 }
 
+function handleChanges() {
+  const nameElement = document.getElementById('input-name');
+  const nameFilled = nameElement.value;
+  const divFlex = nameElement.parentNode;
+  divFlex.innerHTML = `Nome: ${nameFilled}`;
+}
+
 const button = document.getElementById('botao');
 button.addEventListener('click', handleLogin);
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('change', handleAgreement);
 const textAreaElement = document.getElementById('text-area');
 textAreaElement.addEventListener('keyup', countCaracter);
+const submitButton = document.getElementById('submit-btn');
+submitButton.addEventListener('click', handleChanges);
