@@ -111,6 +111,10 @@
   flex-direction: row;
 }
 
+.caixa-avaliacao-radio label {
+  padding: 0 0.3rem;
+}
+
 .caixa-comentario {
   display: flex;
   flex-direction: column;
