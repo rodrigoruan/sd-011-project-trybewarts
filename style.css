@@ -34,7 +34,6 @@
 .column {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .line {
@@ -53,7 +52,6 @@ body {
 main {
   display: flex;
   padding: 20px;
-  border: red solid;
 }
 
 #evaluation-form {
@@ -62,7 +60,6 @@ main {
   width: 675px;
   flex-basis: 675px;
   border-radius: 5px;
-  border: red solid;
 }
 
 #forms-h2 {
@@ -125,14 +122,58 @@ select {
 
 .form-style {
   display: flex;
+  justify-content: space-between;
 }
 
 .form-select {
   display: flex;
+  justify-content: space-between;
+}
+
+.border-box {
+  border-top: 3px gainsboro groove;
+  padding: 10px 0;
+}
+
+.spaced-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.spaced-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding-box-inside {
+  padding-top: 10px;
 }
 
 #textarea {
-  display: flex;
-  width: 675px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
 }
 
+.padding-box-bottom {
+  padding-bottom: 5px;
+}
+
+#footer-format {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: grey;
+  color: white;
+}
+
+#submit-btn {
+  padding: 5px;
+  width: 100%;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px;
+}
