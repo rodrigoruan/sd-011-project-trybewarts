@@ -70,11 +70,17 @@
             <div class="control">
               <label id="label-family">Qual sua família?</label>
               <div class="radio-buttons">
-                <input type="radio" value="Frontend" name="family">Frontend
+                <label class="radiobox">
+                  <input type="radio" value="Frontend" name="family">Frontend
+                </label>
                 <br>
-                <input type="radio" value="Backend" name="family">Backend
+                <label class="radiobox">
+                  <input type="radio" value="Backend" name="family">Backend
+                </label>
                 <br>
-                <input type="radio" value="FullStack" name="family">FullStack
+                <label class="radiobox">
+                  <input type="radio" value="FullStack" name="family">FullStack
+                </label>
               </div>
             </div>
            
@@ -171,13 +177,14 @@
       <hr>
       <label class="label">Deixe seu comentário:</label>
       <label class="textarea is-hidden">Deixe seu comentário:</label>
-      <textarea id="textarea" class="textarea" placeholder="Deixe seu comentário" maxlength="500"> </textarea> <span id="cont"></span> 
+      <textarea id="textarea" class="textarea" placeholder="Deixe seu comentário" maxlength="500"> </textarea> 
+      <span id="counter"></span> 
       <label class="checkbox" id="label-infos">
         Você concorda com o uso das informações acima? 
         <input type="checkbox" id="agreement" required>
        </label>
        <div class="control">
-        <button  type="submit" id="submit-btn" class="button is-primary submit-btn">Enviar</button>
+        <button  type="submit" id="submit-btn" class="button is-primary">Enviar</button>
       </div>
     </form>
   </main>
@@ -185,7 +192,7 @@
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </div>
 </section>
-<footer>
+<footer class="footerend">
   <p>Direitos reservados à Trybewarts©</p>
 </footer>
 </body>

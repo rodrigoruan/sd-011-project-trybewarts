@@ -12,8 +12,9 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
+document.getElementById('submit-btn').disabled = true;
 function ocultButton() {
-  document.getElementById('submit-btn').classList.toggle('desOcult');
+  document.getElementById('submit-btn').disabled = false;
 }
 
 const agreement = document.getElementById('agreement');
@@ -22,12 +23,11 @@ agreement.addEventListener('click', ocultButton);
 
 const textArea = document.getElementById('textarea');
 
-function limTextArea(valor) {
-  let max = 500;
-  let total = valor.length;
-  let resto = max - total;
-  document.getElementById('cont').innerHTML = resto;
+function conText() {
+let max = 500;
+let total = textArea.value.length;
+let resto = max - total;
+document.getElementById('counter').innerHTML = resto;
 }
 
-limTextArea(textArea.value);
-
+textArea.addEventListener('keypress', conText);
