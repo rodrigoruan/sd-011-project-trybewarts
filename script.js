@@ -30,4 +30,4 @@ function conText() {
   document.getElementById('counter').innerHTML = resto;
 }
 
-textArea.addEventListener('keypress', conText);
+textArea.addEventListener('keyup', conText);
