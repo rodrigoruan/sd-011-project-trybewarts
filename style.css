@@ -9,7 +9,7 @@ body {
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 }
 
@@ -18,7 +18,7 @@ body {
   height: 80px;
 }
 
-#tryberwarts-header-tittle {
+#trybewarts-header-tittle {
   color: white;
 }
 
