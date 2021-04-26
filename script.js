@@ -19,7 +19,16 @@ function handleAgreement(event) {
   }
 }
 
+function countCaracter() {
+  const textEntered = document.getElementById('text-area').value;
+  const counter = (500 - textEntered.length);
+  const countRemaining = document.getElementById('charactersRemaining');
+  countRemaining.textContent = counter;
+}
+
 const button = document.getElementById('botao');
 button.addEventListener('click', handleLogin);
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('change', handleAgreement);
+const textAreaElement = document.getElementById('text-area');
+textAreaElement.addEventListener('keyup', countCaracter);
