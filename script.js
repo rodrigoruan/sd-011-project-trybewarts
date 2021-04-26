@@ -20,12 +20,8 @@ checkEnable.addEventListener('click', () => {
   }
 });
 
-const counter = document.querySelector('#counter');
-counter.addEventListener('keypress', event => {
-  const inputlength = counter.value.length;
-  const maxlength = counter.getAttribute('maxlength').value;
-  if (inputlength >= maxlength) {
-    event.preventDefault();
-    console.log('Caracteres digitados: ' + inputlength);
-  }
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+textArea.addEventListener('keyup', () => {
+  counter.innerText = 500 - textArea.value.length;
 });
