@@ -24,3 +24,13 @@ agree.addEventListener('change', (e) => {
     submitButton.disabled = false;
   }
 });
+
+// adds text area counter
+function addCounter() {
+  const textArea = document.getElementById('textarea');
+  textArea.addEventListener('keyup', (e) => {
+    const counter = document.getElementById('counter');
+    counter.innerHTML = `${500 - e.target.value.length} caracteres restantes`;
+  });
+}
+addCounter();
