@@ -20,8 +20,6 @@ textarea.addEventListener('keyup', () => {
   counter.innerText = counterValue;
 });
 
-// Submit desabilitado
-
 const fsubmitButton = document.getElementById('submit-btn');
 const fagree = document.getElementById('agreement');
 
