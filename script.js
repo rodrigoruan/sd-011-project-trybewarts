@@ -34,11 +34,11 @@ agreement.addEventListener('click', enableButton);
 /*------------------------------------------------------------*/
 
 const evaluationForm = document.querySelector('#evaluation-form');
-const submitButton = document.querySelector('#submit-btn')
+const submitButton = document.querySelector('#submit-btn');
 const inputName = document.querySelector('#input-name');
 const inputLastName = document.querySelector('#input-lastname');
-const inputEmail = document.querySelector('#input-email');
-const selectedHouse = document.querySelector('#house');
+// const inputEmail = document.querySelector('#input-email');
+// const selectedHouse = document.querySelector('#house');
 //const selectedFamily = document.querySelector('#label-family');
 
 
