@@ -98,10 +98,15 @@ form h2 {
 #form-pt2 {
   display: flex;
   align-items: baseline;
+  justify-items: flex-end;
 }
 
-#family-container {
-  padding: 0 6%;
-  line-height: 1.6
+#check-container1 , #check-container2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 
+.subject {
+  width: 30%;
+}
