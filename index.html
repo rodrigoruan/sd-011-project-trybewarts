@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Trybewarts</title>
   </head>
   <body>
@@ -30,10 +31,10 @@
         <button id="btnlogin">Logar</button>
       </form>
     </header>
-    <main class="row">
+    <main class="row1">
       <form action="" method="GET" id="evaluation-form" class="column1">
         <legend><h2>Forms</h2></legend>
-        <div class="row">
+        <div class="row1">
           <label for="input-name"></label>
           <input class="user-name" type="text" id="input-name" placeholder="Nome" name="first-name" required/>
 
@@ -41,7 +42,7 @@
           <input class="user-name" type="text" id="input-lastname" placeholder="Sobrenome" name="last-name" required/>
         </div>
 
-        <div class="row">
+        <div class="row1">
           <label for="my-email"></label>
           <input type="email" id="input-email" placeholder="Email" name="my-email" required/>
 
@@ -55,9 +56,9 @@
           </select>
         </div>
 
-        <hr />
+        <hr/>
 
-        <div id="form-pt2" class="row">
+        <div id="form-pt2" class="row1">
           <div class="column1" id="family-container">
             <label id="label-family"><strong>Qual sua família?</strong></label>
             <div>
@@ -75,12 +76,11 @@
               <label for="op3">Família FullStack</label>
             </div>
           </div>
-
           <div id="subjects-container">
             <label for="" id="label-content">
               <strong>Qual conteúdo você está com mais vontade de aprender?</strong>
             </label>
-            <div id="check-container1" class="row">
+            <div id="check-container1" class="row1">
               <div class="subject">
                 <input type="checkbox" value="HoFs" id="subject-1"/>
                 <label for="subject-1">HoFs</label>
@@ -97,7 +97,7 @@
               </div>
               
             </div>
-            <div id="check-container2" class="row">
+            <div id="check-container2" class="row1">
               <div class="subject">
                 <input type="checkbox" value="React" id="subject-4"/>
                 <label for="subject-4">React</label>
@@ -118,25 +118,71 @@
 
         <hr />
 
-    <!--     <label for="" id="label-rate"
-          >Como você avalia a Trybewarts?
-          <input type="radio" name="rate" class="rate" value="1" />1
-          <input type="radio" name="rate" class="rate" value="2" />2
-          <input type="radio" name="rate" class="rate" value="3" />3
-          <input type="radio" name="rate" class="rate" value="4" />4
-          <input type="radio" name="rate" class="rate" value="5" />5
-          <input type="radio" name="rate" class="rate" value="6" />6
-          <input type="radio" name="rate" class="rate" value="7" />7
-          <input type="radio" name="rate" class="rate" value="8" />8
-          <input type="radio" name="rate" class="rate" value="9" />9
-          <input type="radio" name="rate" class="rate" value="10" />10
-        </label>
+        <div class="control">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <label class="radio">
+            <input type="radio" name="rate" value="1">
+            1
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="2">
+            2
+          </label>
+          <label class="radio">
+            3
+            <input type="radio" name="rate" value="3">
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="4">
+            4
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="5">
+            5
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="6">
+            6
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="7">
+            7
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="8">
+            8
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="9">
+            9
+          </label>
+          <label class="radio">
+            <input type="radio" name="rate" value="10">
+            10
+          </label>
+        </div>
 
-        <label for="coment" class=""><h3>Deixe seu comentário:</h3></label>
-        <textarea id="coment" rows="10" maxlength="500"></textarea> -->
+        <div id="container-textarea">
+          <form id="messageForm">
+            <label class="textarea" for="">Deixe seu comentário:</label>
+            <textarea name="" id="textarea" cols="30" rows="4" maxlength="500"></textarea>
+            <div id="counter">500</div>
+          </form>
+          <label id="label-infos" class="checkbox">
+            <input id="agreement" type="checkbox">
+            Você concorda com o uso das <a href="#">informações acima?</a>
+          </label>
+          <button type="submit" id="submit-btn" class="button is-fullwidth">Enviar</button>
+        </div>
+        
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
     </main>
+    <br><br>
+    <footer class="container-footer">
+      <p class="container-copyright">Direitos reservados à Trybewarts©</p>
+    </footer>
+
     <script src="script.js"></script>
     <script
       defer
