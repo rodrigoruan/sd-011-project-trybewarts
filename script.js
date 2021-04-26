@@ -19,5 +19,5 @@ function counter() {
 
 // eventLissiners
 
-commentTextarea.addEventListener('keydown', counter);
+commentTextarea.addEventListener('keyup', counter);
 button.addEventListener('click', validateLogin);
