@@ -55,6 +55,15 @@ body {
   background-color: blueviolet;
 }
 
+#submit-btn {
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
+}
+
 #trybewarts-header-title {
   align-self: center;
   color: white;
@@ -67,7 +76,7 @@ body main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  background-color: rgb(110, 126, 124);
+  background-color:aliceblue;
   flex-direction: column;
 }
 
@@ -90,7 +99,7 @@ body main {
 }
 
 #input-email {
-  padding: 1px 15px;
+  padding: 15px 17px;
   margin: 1px 20px;
   border-radius: 6px;
 }
