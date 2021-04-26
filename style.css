@@ -52,6 +52,8 @@ body {
 main {
   display: flex;
   justify-content: space-between;
+
+  /* testar outras propriedades do justify contente */
 }
 
 #evaluation-form {
@@ -89,8 +91,14 @@ main {
 }
 
 .section2 {
+  width: 675px;
+  padding: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.section2 input {
+  margin: 10px;
 }
 
 .radioDiv {
@@ -109,7 +117,33 @@ main {
   justify-content: space-between;
 }
 
-.section03 label {
-  background-color: blueviolet;
+.section4 {
+  width: 675px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
 
+.section4 input {
+  margin-left: 4px;
+}
+
+.section05 {
+  height: 40px;
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section05 button {
+  background-color: rgb(80, 59, 131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+hr {
+  margin: 5px;
+  width: 100%;
 }
