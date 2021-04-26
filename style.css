@@ -83,7 +83,7 @@ footer {
 
 #evaluation-form {
   display: flex;
-  flex-basis: 675px;
+  width: 675px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;

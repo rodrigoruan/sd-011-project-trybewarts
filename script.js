@@ -3,7 +3,7 @@ const login = document.getElementById('login');
 const password = document.getElementById('password');
 const agreement = document.getElementById('agreement');
 const formSubmit = document.getElementById('submit-btn');
-const textArea = document.getElementById('comment-text');
+const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
 function submitForm() {
