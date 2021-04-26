@@ -26,4 +26,3 @@ function agree() {
 
 checkBoxAgree.addEventListener('click', agree);
 
-//olas
