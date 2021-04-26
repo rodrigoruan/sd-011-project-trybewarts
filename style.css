@@ -160,7 +160,7 @@ form h2 {
 
 #form-pt2 {
   align-items: baseline;
-  justify-items: flex-end;
+  justify-content: space-evenly;
 }
 
 #check-container1 , #check-container2 {
@@ -169,5 +169,5 @@ form h2 {
 }
 
 .subject {
-  width: 30%;
+  width: 33%;
 }
