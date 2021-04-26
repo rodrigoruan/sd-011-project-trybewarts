@@ -95,4 +95,5 @@ footer {
 #textarea {
   width: 500px;
   height: 70px;
+  resize: none;
 }
