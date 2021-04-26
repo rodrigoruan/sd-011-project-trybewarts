@@ -26,3 +26,4 @@ agreementBox.addEventListener('change', () => {
     sendFormBtn.setAttribute('disabled', 'disabled');
   }
 }) 
+
