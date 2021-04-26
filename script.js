@@ -30,7 +30,6 @@ btnlogin.addEventListener('click', authentication);
 submitBtn.disabled = true;
 
 function getValues() {
-
   const fname = document.getElementById('input-name').value;
   const lname = document.getElementById('input-lastname').value;
   const email = document.getElementById('input-email').value;
@@ -40,7 +39,7 @@ function getValues() {
   const family = document.querySelector('input[name="family"]:checked').value;
   const rating = document.querySelector('input[name="rate"]:checked').value;
   const valuesLearn = [];
-  
+
   for (let i = 0; i < contentLearn.length; i += 1) {
     valuesLearn[i] = contentLearn[i].value;
   }
@@ -51,7 +50,6 @@ function getValues() {
 }
 
 function createForms() {
-  
   const saveValues = getValues();
 
   const savedfullName = document.createElement('p');
@@ -83,16 +81,16 @@ function submitForms(e) {
   const elements = createForms();
   const one = document.getElementById('container-fullname');
   const two = document.getElementById('container-email-house');
-  const three = document.getElementById('subjects-conteiner');
-  const four = document.getElementById('container-rating');
-  const five = document.getElementById('container-textarea');
+  const three = document.getElementById('container-rating');
+  const four = document.getElementById('container-textarea');
   const partition = document.getElementById('second-partition');
+  const familyContent = document.getElementById('form-pt2');
   one.remove();
   two.remove();
   three.remove();
   four.remove();
-  five.remove();
   partition.remove();
+  familyContent.remove();
   for (let i = 0; i < elements.length; i += 1) {
     forms.appendChild(elements[i]);
   }
