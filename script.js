@@ -131,4 +131,5 @@ buttonSend.addEventListener('click', (event) => {
   formsContent.innerHTML += `${sixthRow}<br>`;
   const sevnRow = getFeedback();
   formsContent.innerHTML += `${sevnRow}<br>`;
+  formsContent.classList.add('form-formating');
 });
