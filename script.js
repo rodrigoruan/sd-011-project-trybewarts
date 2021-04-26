@@ -47,6 +47,7 @@ function CheckAgreement() {
   });
 }
 
+
 // Faz o contador da textarea contar
 function CharacterLimit() {
   const counter = document.querySelector('textarea').value.length;
@@ -55,15 +56,53 @@ function CharacterLimit() {
   pCounter.innerHTML = tMaxLength - counter;
 }
 
+// Ao clicar no botão enviar, preenche as informações que o usuário completou
 function FillInputs() {
+  const familySelected = GetFamilySelected();
+  const subjectsSelected = GetSubjectsSelected();
+  const userEvaluation = GetUserEvaluation()
   const form = document.getElementsByTagName('form')[1];
+  
   form.innerHTML = '';
   form.innerHTML += `Nome: ${inputName.value} ${inputLastN.value} <br>`;
   form.innerHTML += `Email: ${inputEmail.value} <br>`;
   form.innerHTML += `Casa: ${house.value} <br>`;
-  form.innerHTML += `Família: <br>`;
-  console.log(document.querySelector('input[class="family"]:checked'));
+  form.innerHTML += `Família: ${familySelected} <br>`;
+  form.innerHTML += `Matérias: ${subjectsSelected} <br>`;
+  form.innerHTML += `Avaliação: ${userEvaluation} <br>`;
+  form.innerHTML += `Observações: ${textArea.value}`
+}
 
+// Busca o valor de familia selecionada
+function GetFamilySelected() {
+  const family = document.getElementsByName('family');
+  for(let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      return family[index].value;
+    }
+  }
+}
+
+// Busca o valor de matéria selecionadas
+function GetSubjectsSelected() {
+  const subjects = document.getElementsByClassName('subject');
+  let subjectsSelected = '';
+  for (let index = 0; index < subjects.length; index += 1) {
+    if (subjects[index].checked) {
+      subjectsSelected += `${subjects[index].value} `;
+    }
+  }
+  return subjectsSelected
+}
+
+// Busca o resultado da avaliação do usuário
+function GetUserEvaluation() {
+  const evaluation = document.getElementsByName('rate');
+  for (let index = 0; index < evaluation.length; index += 1) {
+    if (evaluation[index].checked) {
+      return evaluation[index].value;
+    }
+  }
 }
 
 // Função que chama todas as funções do site
