@@ -24,8 +24,8 @@ agreement.addEventListener('click', ocultButton);
 const textArea = document.getElementById('textarea');
 
 function conText() {
-  let max = 500;
-  let total = textArea.value.length;
+  const max = 500;
+  const total = textArea.value.length;
   const resto = max - total;
   document.getElementById('counter').innerHTML = resto;
 }
