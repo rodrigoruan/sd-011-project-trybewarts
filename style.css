@@ -44,12 +44,20 @@ body {
 
 main {
   display: flex;
+  margin: 20px 10px 20px 30px;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  align-content: space-between;
+}
+
+#evaluation-form > p {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
 }
 
 #trybewarts-forms-logo {
@@ -59,26 +67,68 @@ main {
 .inputs {
   background-color: white;
   border: none;
+  border-radius: 5px;
+  padding: 10px;
   margin: 5px;
+  width: 250px;
+}
+
+#house {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 205px;
 }
 
 .conteiner-II {
   display: flex;
+  align-content: center;
+  padding: 20px;
 }
 
 #family-conteiner {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+.subject {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+hr {
+  width: 100%;
+}
+
+.radios {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #textarea {
   resize: none;
+  border-radius: 5px;
+  border-color: rgb(91, 0, 134);
 }
 
 footer {
-  background-color: gray;
+  background-color: rgb(61, 62, 75);
   color: white;
   text-align: center;
-  height: 26px;
-  padding: 4px;
+  font-size: large;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+#submit-btn {
+  background-color: rgb(91, 0, 134);
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
 }
