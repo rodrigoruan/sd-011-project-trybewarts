@@ -8,10 +8,11 @@ body {
 }
 
 .header {
+  width: 100%;
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  padding: 12px;
+  padding: 5px;
   align-items: center;
 }
 
@@ -45,29 +46,27 @@ body {
   width: 80px;
   font-size: 15px;
   border-radius: 8px;
-  background-color: red;
+  border: green solid 2px;
 }
 
 .trybewarts-login button:hover {
   font-size: 25px;
+  background-color: red;
 }
 
-.trybewarts-main , .trybewarts-form {
+.trybewarts-main , #evaluation-form {
   display: flex;
 }
 
-.trybewarts-form {
+#evaluation-form {
   width: 675px;
-  margin: 15px;
+  margin: 12px 0 0 20px;
   flex-direction: column;
-}
-
-.trybewarts-main {
-  justify-content: space-between;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: 0 auto;
 }
 
 .family-container {
@@ -83,6 +82,7 @@ body {
 
 .family-label-container {
   display: flex;
+  margin-bottom: 5px;
 }
 
 .labels {
@@ -90,6 +90,7 @@ body {
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .labels label {
@@ -98,10 +99,14 @@ body {
 
 .evaluator {
   display: flex;
+  margin-bottom: 5px;
+}
+
+.evaluator p {
+  font-size: 30px;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -125,6 +130,7 @@ footer {
 
 #input-email:hover , .name-input input:hover {
   background-color: wheat;
+
 }
 
 #submit-btn {
@@ -139,4 +145,71 @@ footer {
 #submit-btn:hover {
   font-size: 20px;
   background-color: royalblue;
+}
+
+.input-label-trybewarts {
+  margin-left: 2px;
+}
+
+.label-trybewarts {
+  margin-right: 3px;
+}
+
+@media screen and ( max-width : 800px ) {
+
+  .trybewarts-main {
+    flex-direction: column-reverse;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #trybewarts-forms-logo {
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .trybewarts-login input {
+    margin: 12px;
+    height: 30px;
+    display: flex;
+    border-radius: 8px;
+    flex-wrap: wrap;
+  }
+
+  .trybewarts-login button {
+    height: 35px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: red;
+  }
+
+  #evaluation-form {
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    flex-flow: column wrap;
+  }
+
+  #house , .name-input input , #input-email {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  fieldset , .evaluator , textarea {
+    margin: 5px;
+  }
+
+  .labels {
+    margin: 0;
+    padding: 0;
+  }
+
 }

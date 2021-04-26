@@ -14,7 +14,7 @@ loginSubmit.addEventListener('click', (event) => {
 const submitBtn = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
 
-agreement.addEventListener('click', (event) => {
+agreement.addEventListener('click', () => {
   if (agreement.checked) {
     submitBtn.disabled = false;
   } else {
@@ -30,31 +30,40 @@ textArea.addEventListener('keyup', () => {
   counter.innerText = textArea.maxLength - textArea.value.length;
 });
 
-const trybewartsMain = document.querySelector('.trybewarts-main');
+const forms = document.getElementById('evaluation-form');
+const buttom = document.querySelector('#submit-btn');
 
-const infos = [];
-
-infos[0] = document.createElement('div');
-infos[0].innerText = 'Nome: ';
-infos[1] = document.createElement('div');
-infos[1].innerText = 'Email: ';
-infos[2] = document.createElement('div');
-infos[2].innerText = 'Casa: ';
-infos[3] = document.createElement('div');
-infos[3].innerText = 'Família: ';
-infos[4] = document.createElement('div');
-infos[4].innerText = 'Matérias: ';
-infos[5] = document.createElement('div');
-infos[5].innerText = 'Avaliação: ';
-infos[6] = document.createElement('div');
-infos[6].innerText = 'Observações: ';
-
-const evaluationForm = document.getElementById('evaluation-form');
-
-submitBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  trybewartsMain.innerHtml = '';
-  for (let index of evaluationForm) {
-    console.log(index);
+function materiasChecked() {
+  const inputChecked = document.querySelectorAll('.subject:checked');
+  const inputValue = [];
+  for (let index = 0; index < inputChecked.length; index += 1) {
+    inputValue.push(` ${inputChecked[index].value}`);
   }
-});
+  return inputValue;
+}
+
+const nameInput = document.getElementById('input-name');
+const lastnameInput = document.getElementById('input-lastname');
+const email = document.getElementById('input-email');
+const casa = document.getElementById('house');
+const obs = document.getElementById('textarea');
+function setInputDiv(event) {
+  const result = {
+    Nome: `${nameInput.value} ${lastnameInput.value}`,
+    Email: email.value,
+    Casa: casa.value,
+    Família: `${document.querySelector('input[name="family"]:checked').value}`,
+    Matérias: materiasChecked(),
+    Avaliação: document.querySelector('input[name="rate"]:checked').value,
+    Observações: obs.value,
+  };
+  let formsPrint = '';
+  for (const index of Object.keys(result)) {
+    formsPrint += `${index}: ${result[index]} <br>`;
+    event.preventDefault();
+  }
+  console.log(formsPrint);
+  forms.innerHTML = formsPrint;
+}
+
+buttom.addEventListener('click', setInputDiv);
