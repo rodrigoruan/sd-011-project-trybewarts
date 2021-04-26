@@ -22,6 +22,7 @@ checkEnable.addEventListener('click', () => {
 
 const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
+const maxlength = textArea.getAttribute('maxlength');
 textArea.addEventListener('keyup', () => {
-  counter.innerText = 500 - textArea.value.length;
+  counter.innerText = maxlength - textArea.value.length;
 });

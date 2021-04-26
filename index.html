@@ -37,6 +37,7 @@
             </select>
           </label>
         </div>
+        <div class='row'>
         <div class='column'>
           <label for='family' id='label-family'>Qual sua família?</label>
           <label><input type='radio' name='family' value='Frontend'> Frontend</label>
@@ -44,15 +45,16 @@
           <label><input type='radio' name='family' value='FullStack'> FullStack</label>
         </div> 
         <div class='column'>
-          <label for='subject' id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
-          <div class='row'>
-            <label>HoFs <input class='subject' type='checkbox' name='content' value='HoFs'></label>
-            <label>Jest <input class='subject' type='checkbox' name='content' value='Jest'></label>
-            <label>Promises <input class='subject' type='checkbox' name='content' value='Promises'></label>
-            <label>React <input class='subject' type='checkbox' name='content' value='React'></label>
-            <label>SQL <input class='subject' type='checkbox' name='content' value='SQL'></label>
-            <label>Python <input class='subject' type='checkbox' name='content' value='Python'></label>
+          <label for='content' id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class='row content' >
+            <label><input class='subject' type='checkbox' name='content' value='HoFs'> HoFs</label>
+            <label><input class='subject' type='checkbox' name='content' value='Jest'> Jest</label>
+            <label><input class='subject' type='checkbox' name='content' value='Promises'> Promises</label>
+            <label><input class='subject' type='checkbox' name='content' value='React'> React</label>
+            <label><input class='subject' type='checkbox' name='content' value='SQL'> SQL</label>
+            <label><input class='subject' type='checkbox' name='content' value='Python'> Python</label>
           </div>
+        </div>
         </div>
         <div class='row'>
           <label for='rate' id='label-rate'>Como você avalia a Trybewarts?</label>
@@ -68,7 +70,7 @@
           <label>10 <input type='radio' name='rate' value='10'></label>
         </div>
         <label class='textarea'>Deixe seu comentário:</label>
-        <textarea type='text' id='textarea' data-ls-module='charCounter' maxlength='500'></textarea>
+        <textarea type='text' id='textarea' maxlength='500'></textarea>
         <span id="counter">500</span>
         <div class='row'>
         <label id='label-infos'>Você concorda com o uso das informações acima? <input id='agreement' type='checkbox' required></label>
