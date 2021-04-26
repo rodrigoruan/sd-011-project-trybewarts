@@ -12,13 +12,16 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
-document.getElementById('submit-btn').disabled = true;
 function ocultButton() {
-  document.getElementById('submit-btn').disabled = false;
+  if (agreement.checked === true) {
+    document.getElementById('submit-btn').disabled = false;
+  } 
+  if (agreement.checked === false) {
+    document.getElementById('submit-btn').disabled = true;
+  }
 }
 
 const agreement = document.getElementById('agreement');
-
 agreement.addEventListener('click', ocultButton);
 
 const textArea = document.getElementById('textarea');
