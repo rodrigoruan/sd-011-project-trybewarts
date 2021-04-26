@@ -1,12 +1,23 @@
-.header {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  justify-content: space-around;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
   display: flex;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  flex-direction: column;
 }
 
 .trybewarts-header-logo {
@@ -20,6 +31,8 @@ main {
 
 .trybewarts-login {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -28,32 +41,39 @@ main {
   flex: 1 1 auto;
   width: 675px;
   min-width: 50%;
-  margin: 10px auto;
-  padding: 10px 20px;
+  margin: 5px 25px;
+}
+
+#user {
+  margin: 10px 0;
+  text-align: center;
 }
 
 .btn-login {
-  color: #FFF;
-  background-color: #0c865e;
+  color: white;
+  background-color: rgb(12, 134, 94);
   font-size: 1rem;
   border-radius: 5px;
   width: 50%;
   border: none;
   cursor: pointer;
+  padding: 14px;
+  margin: 3px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select {
-  width: 80%;
-  background: rgba(255,255,255,0.1);
-  background-color: #e8eeef;
-  color: #5c6164;
+input[ type = 'text' ] , input[ type = 'password' ] , input[ type = 'email' ] , select {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: rgb(232, 238, 239);
+  color: rgb(92, 97, 100);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   padding: 11px;
+  margin: 5px;
+}
+
+input[ type = 'radio' ] , input[ type = 'checkbox' ] {
   margin: 5px;
 }
 
@@ -64,18 +84,20 @@ select {
 #family-subject {
   display: flex;
   flex-flow: column wrap;
-  height: 100px;
+  margin: 10px;
 }
 
 #container-family {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 #container-subject {
   display: flex;
   flex-flow: column wrap;
-  height: 100px;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
 #container-inside-subject {
@@ -85,27 +107,31 @@ select {
 
 #container-inside-subject label {
   flex-basis: 30%;
+  margin: 2px;
 }
 
 #container-rate {
   display: flex;
+  flex-flow: row;
   align-items: center;
-  margin: 15px 0;
+  margin: 15px 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 #container-comment {
   position: relative;
-  max-width: 535px;
+  margin-top: 15px;
 }
 
 #textarea {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   font-size: 1rem;
   padding: 15px;
-  width: 95%;
-  background-color: #e8eeef;
-  color: #5c6164;
+  width: 96%;
+  background-color: rgb(232, 238, 239);
+  color: rgb(92, 97, 100);
   margin: 5px;
   resize: none;
 }
@@ -113,7 +139,7 @@ select {
 #counter {
   position: absolute;
   bottom: 10px;
-  right: 1px;
+  right: 30px;
 }
 
 #container-agreement {
@@ -121,8 +147,8 @@ select {
 }
 
 #submit-btn {
-  color: #FFF;
-  background-color: #0c865e;
+  color: white;
+  background-color: rgb(12, 134, 94);
   font-size: 1rem;
   border-radius: 5px;
   width: 65px;
@@ -131,16 +157,57 @@ select {
   cursor: pointer;
 }
 
-@media screen and (min-width: 992px) {
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
-    width: 42%;
+#submit-btn:disabled {
+  color: rgb(44, 44, 44);
+  background-color: rgb(180, 180, 180);
+}
+
+footer {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  bottom: 1px;
+  background-color: rgb(232, 238, 239);
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and ( min-width : 992px ) {
+
+  .header {
+    justify-content: space-around;
+    flex-direction: row;
   }
+
+  .trybewarts-login {
+    flex-wrap: nowrap;
+  }
+
+  input[ type = 'text' ] , input[ type = 'password' ] , input[ type = 'email' ] , select {
+    width: 47%;
+  }
+
   #trybewarts-forms-logo {
     display: flex;
-    flex: 1 1 auto;
     height: 500px;
+    align-self: center;
+  }
+
+  #family-subject {
+    flex-flow: row;
+  }
+
+  #container-family {
+    margin-right: 20px;
+  }
+
+  #container-rate {
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+  }
+
+  footer {
+    position: fixed;
   }
 }
