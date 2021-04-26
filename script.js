@@ -3,6 +3,8 @@ const login = document.getElementById('login');
 const password = document.getElementById('password');
 const commentTextarea = document.getElementById('textarea');
 const commentCounter = document.getElementById('counter');
+const check = document.getElementById('agreement');
+const subButton = document.getElementById('submit-btn');
 
 function validateLogin() {
   if (login.value + password.value !== 'tryber@teste.com123456') {
@@ -16,6 +18,10 @@ function counter() {
   const commentLength = commentTextarea.value.length;
   commentCounter.textContent = 500 - commentLength;
 }
+
+check.addEventListener('click', () => {
+  subButton.toggleAttribute('disabled');
+});
 
 // eventLissiners
 
