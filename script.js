@@ -24,10 +24,10 @@ agreement.addEventListener('click', ocultButton);
 const textArea = document.getElementById('textarea');
 
 function conText() {
-let max = 500;
-let total = textArea.value.length;
-let resto = max - total;
-document.getElementById('counter').innerHTML = resto;
+  let max = 500;
+  let total = textArea.value.length;
+  const resto = max - total;
+  document.getElementById('counter').innerHTML = resto;
 }
 
 textArea.addEventListener('keypress', conText);
