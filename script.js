@@ -67,7 +67,7 @@ function substituiDados(event) {
     if (allInputs[index].className === 'subject' && allInputs[index].checked) {
       subjectList.push(allInputs[index].value);
       subject.innerHTML = `Matérias: ${subjectList}`;
-      newForm.appendChild(subject);
+     
     }*/
     if (allInputs[index].name === 'rate' && allInputs[index].checked) {
       const rate = document.createElement('div');
