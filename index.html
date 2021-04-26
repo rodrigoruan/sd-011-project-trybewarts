@@ -8,19 +8,80 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-    <form class="trybewarts-login">
-      <div>
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <div class="div-login">
+      <form class="trybewarts-login">
         <input type="email" name="" id="" placeholder="Login">
-      </div>
-      <div>
+        <br>
         <input type="password" name="" id="" placeholder="Senha">
-      </div>
-      <div>
+        <br>
         <button type="submit">Logar</button>
-      </div>
-    </form>
+        
+        <!-- A partir daqui esboços de outros requisitos -->
+        
+        <!-- Requisito 9 -->
+        <label for="">Casa:
+          <select name="" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+
+        <!-- Requisito 12 -->
+        <label for="" id="label-family">Qual sua família?
+          <input type="radio" name="family" value="Frontend">Frontend
+          <input type="radio" name="family" value="Backend">Backend
+          <input type="radio" name="family" value="FullStack">Fullstack
+        </label>
+
+        <!-- Requisito 13 -->
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+          <input type="checkbox" name="" class="subject" value="HoFs">HoFs
+          <input type="checkbox" name="" class="subject" value="Jest">Jest
+          <input type="checkbox" name="" class="subject" value="Promises">Promises
+          <input type="checkbox" name="" class="subject" value="React">React
+          <input type="checkbox" name="" class="subject" value="SQL">SQL
+          <input type="checkbox" name="" class="subject" value="Python">Python
+        </label>
+
+        <!-- Requisito 14 -->
+        <label for="" id="label-rate">Como você avalia a Trybewarts?"
+          <input type="radio" name="rate" id="" value="1">1
+          <input type="radio" name="rate" id="" value="2">2
+          <input type="radio" name="rate" id="" value="3">3
+          <input type="radio" name="rate" id="" value="4">4
+          <input type="radio" name="rate" id="" value="5">5
+          <input type="radio" name="rate" id="" value="6">6
+          <input type="radio" name="rate" id="" value="7">7
+          <input type="radio" name="rate" id="" value="8">8
+          <input type="radio" name="rate" id="" value="9">9
+          <input type="radio" name="rate" id="" value="10">10
+        </label>
+        
+        <!-- Requisito 15 -->
+        <label for="" class="textarea">Deixe seu comentário:
+          <textarea name="" id="" maxlength="500" cols="30" rows="10"></textarea>
+        </label>
+
+        <!-- Requisito 16 -->
+        <label for="" id="label-infos">Você concorda com o uso das informações acima?
+          <input type="checkbox" name="" id="agreement" action="btn18">
+        </label>
+
+        <!-- Requisito 17 -->
+        <button type="submit" id="submit-btn">Enviar</button>
+
+        <!-- Requisito 18 -> acredito dê certo no CSS com um #submit-btn {:before {disabeld;}:after{algum action=""}} -->
+
+      </form>
+    </div>  
   </header>
+
+  <!-- Requisito 19 -->
+  <footer>Direitos reservados à Trybewarts©</footer>
 </body>
 </html>

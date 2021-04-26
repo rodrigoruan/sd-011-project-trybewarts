@@ -12,4 +12,16 @@
 .trybewarts-login {
   display: flex;
   align-items: center;
+  margin-right: 50px;
+}
+
+.div-login {
+  display: flex;
+  align-items: center;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
