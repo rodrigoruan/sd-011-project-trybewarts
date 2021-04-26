@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Linhas eduardo 10 a 50 -->    
+    <!-- Linhas eduardo 10 a 50 -->
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Small logo Trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -44,66 +44,48 @@
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Linhas ivaldo 52 a 102 -->
 <main>
-    <form id="evaluation-form" action="" method="GET">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
-        <input id="input-email" type="text" placeholder="Email">
-    </form>
-    <div id="trybewarts-forms-logo">
-        <img src="images/trybewarts-colored.svg" alt="">
+    <form id="evaluation-form" action="">
+      <h2 id="forms-h2">Forms</h2>
+      <div class="form-style">
+          <div>
+              <input class="form-style" id="input-name" type="text" placeholder="Nome" size="30">
+          </div>
+          <div>
+              <input class="form-style" id="input-lastname" type="text" placeholder="Sobrenome" size="30">
+          </div>
+      </div>
+
+      <div class="form-select">
+        <input class="form-style" id="input-email" type="text" placeholder="Email" size="30">
+        <label id="label-casa" for="house">Casa</label>
+        <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </div>
+
+      </form>
+    <div>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </div>
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -157,11 +139,21 @@
 
   <div class="column">
     <label class="textarea" for="">Deixe seu comentário:</label>
-    <textarea maxlength="500"></textarea>
+    <textarea id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+    <span id="counter">500</span>
+  </div>
+  <div class="agreement">
+    <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+    <input type="checkbox" id="agreement" name="label-infos" value="Concorda">
+  </div>
+  <div class="submitButton">
+    <form method="get" action="">
+        <button type="submit" id="submit-btn">Enviar</button>
+    </form>
   </div>
 
   <footer class="line">Direitos reservados à Trybewarts©</footer>    
     <!-- Fim de código separado -->
     <script src="script.js"></script>
 </body>
-</html>
+</html> 

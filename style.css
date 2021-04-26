@@ -34,6 +34,7 @@
 .column {
   display: flex;
   flex-direction: column;
+  background-color: red;
 }
 
 .line {
@@ -45,13 +46,17 @@
   padding: 0;
 }
 
-#evaluation-form {
+body {
+  background-color: rgb(234, 237, 240);
+}
+
+main {
   display: flex;
   padding: 20px;
   border: red solid;
 }
 
-main {
+#evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
@@ -66,6 +71,7 @@ main {
 }
 
 #trybewarts-forms-logo {
+  display: flex;
   height: 500px;
   width: 100%;
   max-width: 500px;
@@ -129,3 +135,4 @@ select {
   display: flex;
   width: 675px;
 }
+
