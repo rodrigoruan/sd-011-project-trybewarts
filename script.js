@@ -39,3 +39,29 @@ function conText(event) {
 }
 
 textArea.addEventListener('keyup', conText);
+
+const submitMainForm = document.getElementById('submit-btn');
+
+const trybewartsForm = document.getElementsByClassName('trybewarts-form')[0];
+const mainform = document.getElementById('evaluation-form');
+const name = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const eMail = document.querySelector('#input-email');
+const house = document.getElementById('house');
+const family = document.querySelector('input[name="family"]:checked');
+const avaliations = document.querySelector('#textarea');
+
+const infos1 = (event) => {
+  event.preventDefault();  
+  trybewartsForm.removeChild(mainform);
+  const infosMain = document.createElement('p');
+  trybewartsForm.appendChild(infosMain);
+  infosMain.innerText = (`Dados recebidos:
+  Nome: ${name.value}
+  Sobrenome: ${lastName.value}
+  E-mail: ${eMail.value}
+  Casa: ${house.value}
+  Observações: ${avaliations.value}`);
+}
+
+submitMainForm.addEventListener('click', infos1);
