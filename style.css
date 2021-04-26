@@ -103,3 +103,13 @@ main {
   text-align: left;
   padding-top: 25px;
 }
+
+.section03 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section03 label {
+  background-color: blueviolet;
+
+}
