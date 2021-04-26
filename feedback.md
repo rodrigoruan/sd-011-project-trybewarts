@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 10
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Foi muito bom ter uma primeira experiência trabalhando em dupla com github. Apareceram menos conflitos do que imaginamos
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Júlio Mota e Victor Faria
 
 ---
 
