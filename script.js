@@ -19,3 +19,15 @@ function ocultButton() {
 const agreement = document.getElementById('agreement');
 
 agreement.addEventListener('click', ocultButton);
+
+const textArea = document.getElementById('textarea');
+
+function limTextArea(valor) {
+  let max = 500;
+  let total = valor.length;
+  let resto = max - total;
+  document.getElementById('cont').innerHTML = resto;
+}
+
+limTextArea(textArea.value);
+

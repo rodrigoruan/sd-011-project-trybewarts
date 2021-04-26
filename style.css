@@ -182,3 +182,7 @@ footer {
 .desOcult {
   display: flex;
 }
+
+.cont {
+  border-style: solid;
+}
