@@ -88,6 +88,5 @@ function createRadios() {
     labelRate.appendChild(label);
     label.appendChild(input);
   }
-
 }
 createRadios();
