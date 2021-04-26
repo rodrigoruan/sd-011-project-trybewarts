@@ -14,18 +14,51 @@
   width: 50px;
 }
 
-.container {
-  justify-content: space-between;
+#trybewarts-header-title {
+  font-family: 'Lumos', arial;
+  padding-top: 10px;
+  color: black;
 }
 
 .trybewarts-login {
   display: flex;
+  margin: 10px 30px;
   align-items: center;
+}
+
+.container {
+  justify-content: space-between;
+}
+
+#login {
+  border-radius: 10px;
+  margin: 0px 5px;
+  height: 25px;
+  border: solid white;
+  font-family: 'Lumos', arial;
+  font-size: 15px;
+}
+
+#senha {
+  border-radius: 10px;
+  margin: 0px 5px;
+  height: 25px;
+  border: solid white;
+  font-family: 'Lumos', arial;
+  font-size: 15px;
 }
 
 #login-button {
   padding-left: 2px;
   padding-right: 2px;
+  border-radius: 10px;
+  margin: 0px 5px;
+  border: solid #483D8B;
+  width: 70px;
+  background-color: #483D8B;
+  color: white;
+  font-family: 'Lumos', arial;
+  font-size: 20px;
 }
 
 #nome-e-sobrenome {
