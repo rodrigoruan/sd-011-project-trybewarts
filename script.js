@@ -130,7 +130,12 @@ formAluno.addEventListener('submit', (event) => {
   pegaAvaliacao();
   pegaComentario();
 
-  formAluno.innerHTML = '';
+  for(let index = 1; index < formAluno.children.length; index += 1) {
+    formAluno.children[index].innerHTML = '';
+  }
+  
+  //formAluno.innerHTML = '';
+  console.log(formAluno);
 });
 
 textArea.addEventListener('keyup', contaCaracteres);
