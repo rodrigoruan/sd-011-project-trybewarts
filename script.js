@@ -1,9 +1,11 @@
 // Variables
-// const header = document.querySelector('header');
+
 const buttonLogin = document.getElementById('button-login');
 const loginInput = document.getElementById('login');
 const passwordInput = document.getElementById('password');
-// const labelRate = document.getElementById('label-rate');
+const buttonSubmit = document.getElementById('submit-btn');
+const checkBox = document.getElementById('agreement');
+const evaluationForm = document.getElementById('evaluation-form');
 // Functions
 
 function login() {
@@ -14,4 +16,7 @@ function login() {
   }
 }
 
-buttonLogin.addEventListener('click', login);
+// buttonLogin.addEventListener('click', (e) => {
+//   let formdata = new FormData(evaluationForm)
+// });
+// buttonSubmit.addEventListener('click', submitButton);
