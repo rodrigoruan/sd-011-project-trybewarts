@@ -14,12 +14,14 @@ submitButton.addEventListener('click', validation);
 
 const agreement = document.getElementById('agreement');
 
+const submitMainForm = document.getElementById('submit-btn');
+
 function ocultButton() {
   if (agreement.checked === true) {
-    document.getElementById('submit-btn').disabled = false;
+    submitMainForm.disabled = false;
   }
   if (agreement.checked === false) {
-    document.getElementById('submit-btn').disabled = true;
+    submitMainForm.disabled = true;
   }
 }
 
@@ -39,8 +41,6 @@ function conText(event) {
 }
 
 textArea.addEventListener('keyup', conText);
-
-const submitMainForm = document.getElementById('submit-btn');
 
 const trybewartsForm = document.getElementsByClassName('trybewarts-form')[0];
 const mainform = document.getElementById('evaluation-form');
