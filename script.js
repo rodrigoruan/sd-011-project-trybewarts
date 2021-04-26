@@ -26,5 +26,15 @@ function submitForm() {
     }
   });
 }
-
 submitForm();
+
+function textCounter() {
+  const textArea = document.getElementById('textarea');
+  const getCounter = document.getElementById('counter');
+
+  textArea.addEventListener('keyup', () => {
+    const numMax = 500;
+    getCounter.innerText = numMax - textArea.value.length;
+  });
+}
+textCounter();
