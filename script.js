@@ -38,47 +38,91 @@ function addEventCount() {
   textarea.addEventListener('keyup', countChars);
 }
 
-function replaceForm() {
-  const main = document.getElementById('main');
-  const form = document.getElementById('evaluation-form');
-  const img = document.getElementById('trybewarts-forms-logo');
-  const inputName = document.getElementById('input-name').value;
-  const inputLastName = document.getElementById('input-lastname').value;
-  const inputEmail = document.getElementById('input-email').value;
-  const inputHouse = document.getElementById('house').value;
-  const radioFamily = document.querySelector('input[name="family"]:checked').value;
-  const checkBoxSubject = document.querySelectorAll('input.subject:checked');
-
-  let getItensCheckBox = [];
-  for( let i = 0; i < checkBoxSubject.length; i += 1) {
-    if (checkBoxSubject[i].checked) {
-      getItensCheckBox.push(checkBoxSubject[i].value);
-    }
+function removeChilds(parent) {
+  for (let index = parent.children.length - 1; index >= 0; index -= 1) {
+    parent.removeChild(parent.lastElementChild);
   }
-
-  form.parentNode.removeChild(form);
-
- // const creatForm = document.createElement('div');
-  const creatParagraph  = document.createElement('p');
-
-  // creatForm.id = 'evaluation-form';
-
-  creatParagraph.innerHTML = `Nome: ${inputHouse} ${radioFamily}`; 
-  // inputLastName.value = `${inputLastName}`;
-
-  main.appendChild(creatParagraph);
-  //  main.insertBefore(creatForm, img);
-  //  creatForm.appendChild(creatDiv);
 }
 
-function addEventBtnSubmit() {
-  const submitBtn = document.getElementById('submit-btn');
-  submitBtn.addEventListener('click', replaceForm);
+function printForm(answersList) {
+  const form = document.getElementById('evaluation-form');
+  removeChilds(form);
+  for (let secondindex = 0; secondindex < answersList.length; secondindex += 1) {
+    const element = document.createElement('p');
+    element.innerText = answersList[secondindex];
+    form.appendChild(element);
+  }
+}
+
+function saveName(answersList) {
+  const name = document.getElementById('input-name').value;
+  const lastname = document.getElementById('input-lastname').value;
+  answersList.push(`Nome: ${name} ${lastname}`);
+}
+
+function saveEmail(answersList) {
+  const email = document.getElementById('input-email').value;
+  answersList.push(`Email: ${email}`);
+}
+
+function saveHouse(answersList) {
+  const house = document.getElementById('house').value;
+  answersList.push(`Casa: ${house}`);
+}
+
+function saveFamily(answersList) {
+  const family = document.getElementsByName('family');
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      answersList.push(`Família: ${family[index].value}`);
+    }
+  }
+}
+function saveSubject(answersList) {
+  const subject = [];
+  const checkbox = document.getElementsByName('content');
+  for (let index = 0; index < checkbox.length; index += 1) {
+    if (checkbox[index].checked) {
+      subject.push(` ${checkbox[index].value}`);
+    }
+  }
+  answersList.push(`Matérias:${subject}`);
+}
+
+function saveRate(answersList) {
+  const rate = document.getElementsByName('rate');
+  for (let index = 0; index < rate.length; index += 1) {
+    if (rate[index].checked) {
+      answersList.push(`Avaliação: ${rate[index].value}`);
+    }
+  }
+}
+
+function saveComment(answersList) {
+  const comment = document.getElementById('textarea').value;
+  answersList.push(`Observações: ${comment}`);
+}
+
+function saveForms() {
+  const answersList = [];
+  saveName(answersList);
+  saveEmail(answersList);
+  saveHouse(answersList);
+  saveFamily(answersList);
+  saveSubject(answersList);
+  saveRate(answersList);
+  saveComment(answersList);
+  printForm(answersList);
+}
+
+function addEventSaveForms() {
+  const button = document.getElementById('submit-btn');
+  button.addEventListener('click', saveForms);
 }
 
 window.onload = function load() {
   addEventCheckLogin();
   addEventDisableButton();
   addEventCount();
-  addEventBtnSubmit();
+  addEventSaveForms();
 };
