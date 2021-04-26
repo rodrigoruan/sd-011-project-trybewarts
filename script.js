@@ -12,6 +12,8 @@ function validation() {
 
 submitButton.addEventListener('click', validation);
 
+const agreement = document.getElementById('agreement');
+
 function ocultButton() {
   if (agreement.checked === true) {
     document.getElementById('submit-btn').disabled = false;
@@ -21,7 +23,6 @@ function ocultButton() {
   }
 }
 
-const agreement = document.getElementById('agreement');
 agreement.addEventListener('click', ocultButton);
 
 const textArea = document.getElementById('textarea');
