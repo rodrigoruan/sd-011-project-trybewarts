@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /8/
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: /Wilquer: Os tamanhos eram muito travados, impossibilitando manusear de forma satisfatória na estética do site. Vinicius: O projeto deveria deixar claro que a utilização dos inputs deveria ser com label. Alguns requisitos ofuscam o real objetivo a ser feito, como por exemplo na questão 21, onde várias pessoas ficaram com dúvidas./
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Wilquer Figueiredo e Francisco Vinicius Gouveia/
 
 ---
 
