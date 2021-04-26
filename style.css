@@ -53,6 +53,7 @@ main {
 }
 
 #label-family {
+  font-size: 20px;
 }
 
 #familySection {
@@ -63,8 +64,8 @@ main {
 }
 
 #familyForm {
-display: flex;
-justify-content:flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 #label-content {

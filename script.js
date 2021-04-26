@@ -34,26 +34,17 @@ function makeOptionSelect(arrayCasas, classOrId) {
 makeOptionSelect(['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'],
   ['#gitnoria-house', '#reactpuff-house', '#corvinode-house', '#pytherina-house']);
 
-  
-  function makeRateOptions(quantidadeDeOpcoes, tipoOpcoes, nomeOpcoes, typeOfOptons) {
-  for(let index = 1; index <= quantidadeDeOpcoes; index += 1) {
-    let criaOpcoes = document.createElement(tipoOpcoes);
+function makeRateOptions(quantidadeDeOpcoes, tipoOpcoes, nomeOpcoes, typeOfOptons) {
+  for (let index = 1; index <= quantidadeDeOpcoes; index += 1) {
+    const criaOpcoes = document.createElement(tipoOpcoes);
+    const criaLabels = document.createElement('label');
+    const rateSection = document.getElementById('rateSection');
+    criaOpcoes.value = index;
     criaOpcoes.type = typeOfOptons;
     criaOpcoes.name = nomeOpcoes;
-    criaOpcoes.value = index;
-    criaOpcoes.innerText = 'socorro';
-    return criaOpcoes;
-  }
-} 
-makeRateOptions(10, 'input', 'rate', 'radio');
-
-function makeLabel(quantidadeDeOpcoes) {
-  for(let index = 1; index <= quantidadeDeOpcoes; index += 1){
-    let labels = document.createElement('label');
-    labels.innerHTML = index;
-    const rateSection = document.getElementById('rateSection');
-    labels.appendChild(makeRateOptions(10, 'input', 'rate', 'radio'));
-    rateSection.appendChild(labels);
+    criaLabels.innerHTML = index;
+    rateSection.appendChild(criaOpcoes);
+    rateSection.appendChild(criaLabels);
   }
 }
-makeLabel(10);
+makeRateOptions(10, 'input', 'rate', 'radio');
