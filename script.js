@@ -23,11 +23,15 @@ agreement.addEventListener('click', ocultButton);
 
 const textArea = document.getElementById('textarea');
 
-function conText() {
+function conText(event) {
   const max = 500;
   const total = textArea.value.length;
-  const resto = max - total;
-  document.getElementById('counter').innerHTML = resto;
+  if (max >= total) {
+    const resto = max - total;
+    document.getElementById('counter').innerHTML = resto;
+  } else {
+    event.preventDefault();
+  }
 }
 
 textArea.addEventListener('keyup', conText);
