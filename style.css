@@ -15,7 +15,7 @@
 }
 
 #trybewarts-header-title {
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   padding-top: 10px;
   color: black;
 }
@@ -28,19 +28,19 @@
 
 #login {
   border-radius: 10px;
-  margin: 0px 5px;
+  margin: 5px;
   height: 25px;
   border: solid white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 15px;
 }
 
 #senha {
   border-radius: 10px;
-  margin: 0px 5px;
+  margin: 5px;
   height: 25px;
   border: solid white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 15px;
 }
 
@@ -48,12 +48,12 @@
   padding-left: 2px;
   padding-right: 2px;
   border-radius: 10px;
-  margin: 0px 5px;
-  border: solid #483D8B;
+  margin: 5px;
+  border: solid darkslateblue;
   width: 70px;
-  background-color: #483D8B;
+  background-color: darkslateblue;
   color: white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 20px;
 }
 
@@ -102,6 +102,10 @@ main {
   margin-top: 15px;
 }
 
+#label-family {
+
+width: 80px;
+}
 span {
   display: flex;
   flex-direction: column;
