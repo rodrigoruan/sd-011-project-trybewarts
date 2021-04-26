@@ -12,3 +12,15 @@ function login() {
   }
 }
 buttonInput.addEventListener('click', login);
+
+const checkBtn = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+function check() {
+  if (checkBtn.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+checkBtn.addEventListener('click', check);
