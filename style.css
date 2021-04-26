@@ -67,7 +67,7 @@ body main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  background-color: red;
+  background-color: rgb(110, 126, 123);
   flex-direction: column;
 }
 
@@ -162,4 +162,10 @@ body main {
 .opçoes-conteudo {
   display: flex;
   flex-direction: column;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
