@@ -10,7 +10,7 @@ function handleLogin() {
 }
 
 function handleAgreement(event) {
-  const agreeElement = event.target
+  const agreeElement = event.target;
   const buttonSubmit = document.getElementById('submit-btn');
   if (agreeElement.checked === true) {
     buttonSubmit.disabled = false;
