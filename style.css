@@ -97,12 +97,11 @@ form h2 {
 
 #form-pt2 {
   display: flex;
+  align-items: baseline;
 }
 
 #family-container {
-  display: flex;
-  flex-direction: column;
   padding: 0 6%;
   line-height: 1.6
-  
 }
+
