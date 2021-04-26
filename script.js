@@ -15,7 +15,6 @@ function login() {
     alert('Login ou senha inválidos.');
   }
 }
-
 buttonLogin.addEventListener('click', login);
 
 // agreement type checkbox
