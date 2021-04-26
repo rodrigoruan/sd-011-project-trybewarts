@@ -31,4 +31,5 @@ function counterText() {
   const comments = textField.value.length;
   counter.textContent = 500 - comments;
 }
+
 textField.addEventListener('keyup', counterText);
