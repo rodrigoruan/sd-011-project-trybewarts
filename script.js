@@ -41,7 +41,7 @@ textarea.addEventListener('keydown', () => {
   const textEntered = textarea.value.length;
   const counter = (500 - textEntered);
 
-  countRemaining.innerHTML = `${counter} caracteres`;
+  countRemaining.innerText = counter + ' caracteres';
 });
 
 // get all checked form's elements
