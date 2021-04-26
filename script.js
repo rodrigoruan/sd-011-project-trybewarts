@@ -80,6 +80,7 @@ function GetUserEvaluation() {
   for (let index = 0; index < evaluation.length; index += 1) {
     if (evaluation[index].checked) {
       return evaluation[index].value;
+      
     }
   }
 }
@@ -98,6 +99,7 @@ function FillInputs() {
   form.innerHTML += `Matérias: ${subjectsSelected} <br>`;
   form.innerHTML += `Avaliação: ${userEvaluation} <br>`;
   form.innerHTML += `Observações: ${textArea.value}`;
+  
 }
 
 // Função que chama todas as funções do site
