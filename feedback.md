@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /Nota 9./
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: /Nossa experiência com o projeto foi muito boa, a única reclamação que eu tenho é uma inconsistência no enunciado do requisito 13 e a falta de clareza do enunciado do requisito 21. Talvez a parte do mobile pudesse ser um requisito bônus, mas tirando isso não tenho muito pra reclamar./
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Kaio Henrique Pereira Santos e Arthur Hermann/
 
 ---
 
