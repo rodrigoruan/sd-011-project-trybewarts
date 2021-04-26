@@ -8,6 +8,18 @@ function handleLogin() {
     alert('Login ou senha inválidos.');
   }
 }
-const button = document.getElementById('botao');
 
+function handleAgreement() {
+  const agreeElement = document.getElementById('agreement');
+  const buttonSubmit = document.getElementById('submit-btn');
+  if (agreeElement.checked === true) {
+    buttonSubmit.disabled = false
+  } else {
+    buttonSubmit.disabled = true
+  }
+}
+
+const button = document.getElementById('botao');
 button.addEventListener('click', handleLogin);
+const agreement = document.getElementById('agreement');
+agreement.addEventListener('change', handleAgreement);
