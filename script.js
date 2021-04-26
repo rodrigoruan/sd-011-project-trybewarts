@@ -60,7 +60,6 @@ function countCharacters() {
   });
 }
 
-
 // cria parágrafo com nome e sobrenome
 function returnNameValue() {
   const getFormDiv = document.getElementById('evaluation-form');
@@ -68,7 +67,7 @@ function returnNameValue() {
   const nameInput = document.getElementById('input-name');
   const lastNameInput = document.getElementById('input-lastname');
   const fullName = document.createElement('p');
-  fullName.innerText =  `Nome: ${nameInput.value} ${lastNameInput.value}`;
+  fullName.innerText = `Nome: ${nameInput.value} ${lastNameInput.value}`;
 
   getFormDiv.appendChild(fullName);
   fullNameDiv.parentNode.removeChild(fullNameDiv);
@@ -81,7 +80,7 @@ function returnEmailHouseValue() {
   const emailInput = document.getElementById('input-email');
   const houseInput = document.getElementById('house');
   const email = document.createElement('p');
-  email.innerText =  `Email: ${emailInput.value}`;
+  email.innerText = `Email: ${emailInput.value}`;
   const house = document.createElement('p');
   house.innerText = `Casa: ${houseInput.value}`;
 
@@ -93,26 +92,87 @@ function returnEmailHouseValue() {
 // cria parágrafo com família
 function returnFamilyValue() {
   const getFormDiv = document.getElementById('evaluation-form');
+  const getFamilyWrapper = document.querySelector('.family-wrapper');
   const checkFamily = document.querySelector("input[type='radio'][name='family']:checked").value;
   const returnFamily = document.createElement('p');
   returnFamily.innerText = `Família: ${checkFamily}`;
 
   getFormDiv.appendChild(returnFamily);
+  getFamilyWrapper.parentNode.removeChild(getFamilyWrapper);
+}
+
+// function verifica checked contents
+function checkedContents(array) {
+  const checksArray = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index].checked === true) {
+      checksArray.push(` ${array[index].value}`);
+    }
+  }
+  return checksArray.toString();
 }
 
 // cria parágrafo com matérias
+function returunContentValues() {
+  const getFormDiv = document.getElementById('evaluation-form');
+  const getContentWrapper = document.querySelector('.content-wrapper');
+  const getRadioCheckWrapper = document.querySelector('.radio-check-wrapper');
+  const checkContent = document.getElementsByClassName('subject');
+  const checkedValues = document.createElement('p');
 
+  checkedValues.innerText = `Matérias: ${checkedContents(checkContent)}`
+  getFormDiv.appendChild(checkedValues);
+  getContentWrapper.parentNode.removeChild(getContentWrapper);
+  getRadioCheckWrapper.parentNode.removeChild(getRadioCheckWrapper);
+}
+
+// cria parágrafo com o valor da avaliação
+function returnCsatValue() {
+  const getFormDiv = document.getElementById('evaluation-form');
+  const getCsatDiv = document.querySelector('.csat');
+  const checkCsat = document.querySelector("input[type='radio'][name='rate']:checked").value;
+  const returnCsat= document.createElement('p');
+  returnCsat.innerText = `Avaliação: ${checkCsat}`;
+
+  getFormDiv.appendChild(returnCsat);
+  getCsatDiv.parentNode.removeChild(getCsatDiv);
+}
+
+// cria parágrafo com o valor do comentário
+function returnCommentValue() {
+  const getFormDiv = document.getElementById('evaluation-form');
+  const getCommentValue = document.getElementById('textarea').value;
+  const getCommentDiv = document.querySelector('.comment-area');
+  const returnCommentValue = document.createElement('p');
+
+  returnCommentValue.innerText = `Observações: ${getCommentValue}`;
+  getFormDiv.appendChild(returnCommentValue);
+  getCommentDiv.parentNode.removeChild(getCommentDiv);
+}
+
+// retira checkbox termos de uso e botão enviar
+function removeAgreementSubmit() {
+  const getAgreementCheck = document.querySelector('.agreement-check');
+  const getSubmitButton = document.getElementById('submit-btn');
+
+  getAgreementCheck.parentNode.removeChild(getAgreementCheck);
+  getSubmitButton.parentNode.removeChild(getSubmitButton);
+}
 
 // altera elementos do formulário
 function changeFormChilds() {
   const getSubmitButton = document.getElementById('submit-btn');
-  
+
 
   getSubmitButton.addEventListener('click', (event) => {
     event.preventDefault();
     returnNameValue();
     returnEmailHouseValue();
     returnFamilyValue()
+    returunContentValues();
+    returnCsatValue();
+    returnCommentValue();
+    removeAgreementSubmit();
   });
 }
 

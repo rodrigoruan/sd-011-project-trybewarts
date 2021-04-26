@@ -87,7 +87,7 @@ main {
   justify-content: space-around;
 }
 
-.coment-area {
+.comment-area {
   display: flex;
   flex-direction: column;
 }
