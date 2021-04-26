@@ -25,11 +25,16 @@ function countCaracter() {
   countRemaining.textContent = counter;
 }
 
-function handleChanges() {
+function handleChangeFullName() {
   const nameElement = document.getElementById('input-name');
-  const nameFilled = nameElement.value;
+  const nameFilled = document.getElementById('input-name').value;
+  const lastNameFilled = document.getElementById('input-lastname').value;
   const divFlex = nameElement.parentNode;
-  divFlex.innerHTML = `Nome: ${nameFilled}`;
+  divFlex.innerHTML = `Nome: ${nameFilled} ${lastNameFilled}`;
+}
+
+function handleChanges() {
+  handleChangeFullName();
 }
 
 const button = document.getElementById('botao');
