@@ -22,7 +22,7 @@ hr {
   align-items: center;
   width: 100%;
   height: 80px;
-  }
+}
 
 .header h1 {
   color: white;
@@ -120,15 +120,14 @@ main {
   justify-content: center;
 }
 
-#evaluation-form{
+#evaluation-form {
   width: 675px;
-  min-width:675px ;
+  min-width: 675px;
 }
-
 
 form h2 {
   text-align: center;
-  font-size: xxX-large;
+  font-size: xx-large;
   font-weight: bolder;
 }
 
