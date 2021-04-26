@@ -25,7 +25,7 @@
   display: flex;
 }
 
-.header .trybewarts-login  input {
+.header .trybewarts-login input {
   height: 30px;
   width: 150px;
   padding-left: 10px;
@@ -41,7 +41,6 @@
   background-color: rgb(78, 44, 131);
   color: white;
   margin-right: 15px;
-
 }
 
 #main {
@@ -106,7 +105,7 @@ hr {
   border: 0.5px rgb(192, 188, 188) solid;
 }
 
- #main section {
+#main section {
   display: flex;
   justify-content: space-between;
 }
