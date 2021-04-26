@@ -17,7 +17,7 @@ const agreement = document.getElementById('agreement');
 function ocultButton() {
   if (agreement.checked === true) {
     document.getElementById('submit-btn').disabled = false;
-  } 
+  }
   if (agreement.checked === false) {
     document.getElementById('submit-btn').disabled = true;
   }
