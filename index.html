@@ -14,9 +14,9 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
     <div class="login-container">
       <form class="trybewarts-login" method="GET">
-        <input type="text" placeholder="Login" name="email" id="input-login-email">
-        <input type="password" placeholder="Senha" id="input-login-password">
-        <button type="text" id="loginButton">Login</button>
+        <input type="text" placeholder="Login" name="email" id="input-login-email" class="style-input">
+        <input type="password" placeholder="Senha" id="input-login-password" class="style-input">
+        <button type="text" id="loginButton" class="style-button">Login</button>
       </form>
     </div>
   </header>
@@ -24,13 +24,13 @@
     <form id="evaluation-form" action="" method="get">
       <!-- Nome e Sobrenome -->
       <div class="form-line">
-        <input id="input-name" type="text" name="nome" placeholder="Nome">
-        <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
+        <input id="input-name" class="style-input" type="text" name="nome" placeholder="Nome">
+        <input id="input-lastname" class="style-input" type="text" name="sobrenome" placeholder="Sobrenome">
       </div>
       <!-- Email e Casa -->
       <div class="form-line">
-        <input id="input-email" type="text" name="email" placeholder="Email">
-        <select name="casa" id="house">
+        <input id="input-email" class="style-input" type="text" name="email" placeholder="Email">
+        <select id="house" class="style-input" name="casa">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
           <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -41,13 +41,13 @@
       <div class="form-col form-line">
         <label id="label-family" for="">Qual sua família?</label>
         <div class="form-line">
-          <input type="radio" name="family" value="Frontend">Frontend
+          <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend">Frontend</label>
         </div>
         <div class="form-line">
-          <input type="radio" name="family" value="Backend">Backend
+          <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Backend</label>
         </div>
         <div class="form-line">
-          <input type="radio" name="family" value="FullStack">FullStack
+          <label for="fullstack"><input id="fullstack" type="radio" name="family" value="FullStack">FullStack</label>
         </div>
       </div>
       <!-- Conteúdos -->
@@ -79,7 +79,7 @@
       </div>
       <!-- Botão Enviar -->
       <div class="form-line">
-        <button type="submit" id="submit-btn">Enviar</button>
+        <button type="submit" id="submit-btn" class="style-button">Enviar</button>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
