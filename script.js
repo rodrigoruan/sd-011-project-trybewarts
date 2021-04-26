@@ -36,3 +36,6 @@ function countLetters() {
   counter.innerHTML = currentLength;
 }
 textarea.addEventListener('input', countLetters);
+
+/* Requisito 21 */
+
