@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,6 +6,43 @@
 }
 
 .header {
+  height: 100px;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+  height: 80px;
+}
+
+#tryberwarts-header-tittle {
+  color: white;
+}
+
+.trybewarts-login {
+  height: 20px;
+  width: 440px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#login, #senha{
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
