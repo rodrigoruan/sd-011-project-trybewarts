@@ -1,13 +1,13 @@
+* {
+  font-family: fantasy, Cinzel;
+}
+
 body {
   margin: 0;
   width: auto;
   height: auto;
 }
 
-* {
-  font-family: fantasy, Cinzel;
-  overflow: hidden;
-}
 
 input {
   border-radius: 10px;
@@ -30,8 +30,7 @@ input {
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
@@ -43,7 +42,7 @@ input {
 #evaluation-form {
   display: flex;
   height: 550px;
-  width: 500px;
+  width: 675px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -153,7 +152,6 @@ footer {
   text-align: center;
   align-items: center;
   margin-bottom: 20px;
-  background-color: blueviolet;
 }
 
 .comment {
