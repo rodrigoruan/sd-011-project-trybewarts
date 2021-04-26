@@ -99,7 +99,7 @@ function createTextElements() {
 function submitForm(event) {
   event.preventDefault();
   const elements = createTextElements();
-  console.log(elements)
+  console.log(elements);
   for (let index = 0; index < elements.length; index += 1) {
     formElement.appendChild(elements[index]);
   }
