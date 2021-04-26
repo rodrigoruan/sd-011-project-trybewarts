@@ -3,7 +3,7 @@
 
 ---
 
-**É muito importante receber este feedback, para que possamos melhorar a qualidade do conteúdo oferecido às pessoas estudantes.**
+O projeto foi muito bom, acredito que somente a complexidade poderia ser um pouco maior.
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+9.0
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+Gostamos muito da experencia de passar pelos apertos dos conflitos e resolver eles, acredito que o projeto poderia ter uma complexidade maior, levando em conta que foi relativamente rápido para construir o projeto.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+Júlio Mota e Víctor Faria
 
 ---
 
