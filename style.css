@@ -76,6 +76,14 @@ main {
   align-self: baseline;
 }
 
+.div-family , #container-form , .padding-container {
+  padding: 10px 0;
+}
+
+.div-family label {
+  padding: 3px 0;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -99,6 +107,7 @@ footer {
 
 #checkbox-container label {
   flex-basis: 33%;
+  padding: 3px 0;
 }
 
 main img {
