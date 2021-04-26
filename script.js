@@ -25,10 +25,10 @@ function SendButton() {
 SendButton();
 
 const textField = document.getElementById('textarea');
-const counter = document.getElementById('counter'); 
+const counter = document.getElementById('counter');
 
 function counterText() {
-const comments = textField.value.length;
-counter.textContent = 500 - comments;
+  const comments = textField.value.length;
+  counter.textContent = 500 - comments;
 }
 textField.addEventListener('keyup', counterText);
