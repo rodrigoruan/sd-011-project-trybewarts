@@ -109,7 +109,6 @@ main {
 
 span {
   display: flex;
-  flex-direction: column;
   flex-flow: column wrap;
   flex-grow: 1;
 }
@@ -197,7 +196,7 @@ span {
 
 #input-form {
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
   margin-bottom: 10px;
 }
 
@@ -215,4 +214,7 @@ span {
   font-size: 15px;
   border-radius: 15px;
   text-align: center;
+   background-color: darkslateblue;
+  color: white;
+  font-family: Lumos, sans-serif;
 }
