@@ -38,6 +38,6 @@ const inputLastName = document.querySelector('#input-lastname');
 
 function fillOutForms(event) {
   event.preventDefault();
-  evaluationForm.innerHTML = `Nome: ${inputName.value} ${inputLastName.value}`;   
+  evaluationForm.innerHTML = `Nome: ${inputName.value} ${inputLastName.value}`; 
 }
 submitButton.addEventListener('click', fillOutForms);
