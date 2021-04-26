@@ -29,3 +29,32 @@ counter.innerText = textArea.maxLength;
 textArea.addEventListener('keyup', () => {
   counter.innerText = textArea.maxLength - textArea.value.length;
 });
+
+const trybewartsMain = document.querySelector('.trybewarts-main');
+
+const infos = [];
+
+infos[0] = document.createElement('div');
+infos[0].innerText = 'Nome: ';
+infos[1] = document.createElement('div');
+infos[1].innerText = 'Email: ';
+infos[2] = document.createElement('div');
+infos[2].innerText = 'Casa: ';
+infos[3] = document.createElement('div');
+infos[3].innerText = 'Família: ';
+infos[4] = document.createElement('div');
+infos[4].innerText = 'Matérias: ';
+infos[5] = document.createElement('div');
+infos[5].innerText = 'Avaliação: ';
+infos[6] = document.createElement('div');
+infos[6].innerText = 'Observações: ';
+
+const evaluationForm = document.getElementById('evaluation-form');
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  trybewartsMain.innerHtml = '';
+  for (let index of evaluationForm) {
+    console.log(index);
+  }
+});
