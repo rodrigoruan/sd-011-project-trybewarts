@@ -14,7 +14,7 @@ function validateLogin() {
   }
 }
 
-function counter() {
+function countering() {
   const commentLength = commentTextarea.value.length;
   commentCounter.textContent = 500 - commentLength;
 }
@@ -25,5 +25,5 @@ check.addEventListener('click', () => {
 
 // eventLissiners
 
-commentTextarea.addEventListener('keyup', counter);
+commentTextarea.addEventListener('keyup', countering);
 button.addEventListener('click', validateLogin);
