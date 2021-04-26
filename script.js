@@ -34,7 +34,7 @@ agree.addEventListener('change', (e) => {
   }
 });
 
-// adds text area counter
+// adds text area counters
 function addCounter() {
   const textArea = document.getElementById('textarea');
   textArea.addEventListener('keyup', (e) => {
