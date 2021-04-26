@@ -4,9 +4,6 @@ const inputName = document.querySelector('#input-name');
 const inputLastN = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const house = document.querySelector('#house');
-
-const subject = document.querySelectorAll('.subject').checked;
-const evaluatorRate = document.querySelectorAll('#label-rate').checked;
 const textArea = document.querySelector('#textarea');
 
 // Login do usuário
@@ -47,7 +44,6 @@ function CheckAgreement() {
   });
 }
 
-
 // Faz o contador da textarea contar
 function CharacterLimit() {
   const counter = document.querySelector('textarea').value.length;
@@ -56,27 +52,10 @@ function CharacterLimit() {
   pCounter.innerHTML = tMaxLength - counter;
 }
 
-// Ao clicar no botão enviar, preenche as informações que o usuário completou
-function FillInputs() {
-  const familySelected = GetFamilySelected();
-  const subjectsSelected = GetSubjectsSelected();
-  const userEvaluation = GetUserEvaluation()
-  const form = document.getElementsByTagName('form')[1];
-  
-  form.innerHTML = '';
-  form.innerHTML += `Nome: ${inputName.value} ${inputLastN.value} <br>`;
-  form.innerHTML += `Email: ${inputEmail.value} <br>`;
-  form.innerHTML += `Casa: ${house.value} <br>`;
-  form.innerHTML += `Família: ${familySelected} <br>`;
-  form.innerHTML += `Matérias: ${subjectsSelected} <br>`;
-  form.innerHTML += `Avaliação: ${userEvaluation} <br>`;
-  form.innerHTML += `Observações: ${textArea.value}`
-}
-
 // Busca o valor de familia selecionada
 function GetFamilySelected() {
   const family = document.getElementsByName('family');
-  for(let index = 0; index < family.length; index += 1) {
+  for (let index = 0; index < family.length; index += 1) {
     if (family[index].checked) {
       return family[index].value;
     }
@@ -89,10 +68,10 @@ function GetSubjectsSelected() {
   let subjectsSelected = '';
   for (let index = 0; index < subjects.length; index += 1) {
     if (subjects[index].checked) {
-      subjectsSelected += `${subjects[index].value} `;
+      subjectsSelected += `${subjects[index].value}, `;
     }
   }
-  return subjectsSelected
+  return subjectsSelected;
 }
 
 // Busca o resultado da avaliação do usuário
@@ -105,11 +84,28 @@ function GetUserEvaluation() {
   }
 }
 
+// Ao clicar no botão enviar, preenche as informações que o usuário completou
+function FillInputs() {
+  const familySelected = GetFamilySelected();
+  const subjectsSelected = GetSubjectsSelected();
+  const userEvaluation = GetUserEvaluation();
+  const form = document.getElementsByTagName('form')[1];
+  form.innerHTML = '';
+  form.innerHTML += `Nome: ${inputName.value} ${inputLastN.value} <br>`;
+  form.innerHTML += `Email: ${inputEmail.value} <br>`;
+  form.innerHTML += `Casa: ${house.value} <br>`;
+  form.innerHTML += `Família: ${familySelected} <br>`;
+  form.innerHTML += `Matérias: ${subjectsSelected} <br>`;
+  form.innerHTML += `Avaliação: ${userEvaluation} <br>`;
+  form.innerHTML += `Observações: ${textArea.value}`;
+}
+
 // Função que chama todas as funções do site
 function Onload() {
   CheckLogin();
-  CheckAgreement();
   CharacterLimit();
+  submitBtn.addEventListener('click', FillInputs);
+  CheckAgreement();
 }
 
 // Ao carregar toda a página, chama a função responsável por todas as funções

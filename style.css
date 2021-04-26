@@ -52,6 +52,8 @@ header {
   display: flex;
   flex-direction: column;
   min-width: 675px;
+  max-width: 750px;
+  
 }
 
 #input-continer {
@@ -159,3 +161,4 @@ main button {
   text-align: end;
   margin-top: 0;
 }
+
