@@ -22,7 +22,7 @@ function handleAgreement(event) {
 function countCaracter() {
   const textEntered = document.getElementById('text-area').value;
   const counter = (500 - textEntered.length);
-  const countRemaining = document.getElementById('charactersRemaining');
+  const countRemaining = document.getElementById('counter');
   countRemaining.textContent = counter;
 }
 
