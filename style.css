@@ -207,8 +207,9 @@ span {
   text-align: center;
 }
 
-form #evaluation-form {
+#evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  justify-content: center;
 }
