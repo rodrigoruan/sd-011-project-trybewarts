@@ -44,10 +44,8 @@ function materias(escolhas) {
 }
 
 submitButton.addEventListener('click', () => {
-  // guardar no local storage rs
   const name = document.getElementById('input-name').value;
   const lastname = document.getElementById('input-lastname').value;
-  const nomeCompleto = name + lastname;
   const email = document.getElementById('input-email').value;
   const house = document.getElementById('house').value;
   const familia = document.querySelector('input[name="family"]:checked').value;
@@ -55,7 +53,7 @@ submitButton.addEventListener('click', () => {
   const avalia = document.querySelector('input[name="rate"]:checked').value;
   const obs = document.getElementById('textarea').value;
 
-  document.querySelector('#labelNome').innerHTML = `Nome: ${nomeCompleto}`;
+  document.querySelector('#labelNome').innerHTML = `Nome: ${name} ${lastname}`;
   document.querySelector('#labelEmail').innerHTML = `Email: ${email}`;
   document.querySelector('#labelCasa').innerHTML = `Casa: ${house}`;
   document.querySelector('#labelFamilia').innerHTML = `Família: ${familia}`;
