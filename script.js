@@ -23,5 +23,3 @@ const button = document.getElementById('botao');
 button.addEventListener('click', handleLogin);
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('change', handleAgreement);
-const textAreaElement = document.getElementById('text-area');
-textAreaElement.addEventListener('keyup', handleCountCaracter);
