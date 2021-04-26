@@ -13,7 +13,10 @@
   <header class="header">
     <img class="trybewarts-header-logo corner" src="images/trybewarts-header-logo.svg" alt="">
 
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <div class="mage">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <p>Seja um mago da programação</p>
+    </div>
 
     <form action="" method="GET" class="trybewarts-login corner">
       <input type="email" name="" id="login" placeholder="Login">
@@ -24,6 +27,7 @@
 
   <main>
     <form id="evaluation-form">
+      <h2 class="title-id">Preencha o Formulário</h2>
       <div>
         <input placeholder="Nome" id="input-name" type="text" name="nome">
         <input placeholder="Sobrenome" id="input-lastname" type="text" name="sobrenome">
@@ -40,7 +44,7 @@
       </div>
       <hr>
       <div class="family-input">
-        <label id="label-family" for="family">Qual sua família?</label>
+        <label id="label-family" for="family">1. Qual sua família?</label>
         <div>
           <input value="Frontend" type="radio" name="family" id="frontend">
           <label for="frontend">Família Frontend</label>
@@ -56,7 +60,7 @@
       </div>
 
       <div id="conteudos">
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <label id="label-content">2. Qual conteúdo você está com mais vontade de aprender?</label>
         <div>
           <input type="checkbox" class="subject" value="HoFs" name="conteudo" id="hofs">
           <label for="hofs">HoFs</label>
@@ -129,7 +133,7 @@
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
 
-  <footer>Direitos reservados à Trybewarts©</footer>
+  <footer class="footer">Direitos reservados à Trybewarts©</footer>
 </body>
 <script src="script.js"></script>
 

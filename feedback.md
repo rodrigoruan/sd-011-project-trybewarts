@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 10
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Foi muito legal desenvolver esse formulário. Alguns requisitos foram bem desafiadores e sereviram bem para praticarmos mais a lógica em Javascript.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Luiz Fernando Rodrigues e Gabriel Menin
 
 ---
 
