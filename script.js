@@ -20,3 +20,12 @@ function addProperty() {
 }
 
 btnAgreement.addEventListener('click', addProperty);
+
+const comentArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+comentArea.addEventListener('input', () => {
+  let wordCount = 500;
+  wordCount -= (comentArea.value.length);
+  counter.innerText = wordCount;
+});

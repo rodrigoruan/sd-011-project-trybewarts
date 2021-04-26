@@ -74,11 +74,8 @@ body {
   margin-right: auto;
 }
 
-.main__form , #evaluation-form {
-  display: flex;
-}
-
 #evaluation-form {
+  display: flex;
   width: 675px;
   flex-direction: column;
 }
@@ -88,8 +85,8 @@ body {
 }
 
 .main__form {
-  width: 700px;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   margin-left: 120px;
   justify-content: flex-start;
 }
@@ -199,6 +196,16 @@ body {
   font-size: larger;
 }
 
+#textarea {
+  color: black;
+  font-size: large;
+}
+
+#counter {
+  color: black;
+  align-self: flex-end;
+}
+
 #label-infos {
   color: black;
   font-size: larger;
@@ -221,8 +228,14 @@ body {
   color: white;
 }
 
-/* .hero-img {
-  position: absolute;
-  left: 1000px;
-  bottom: 200px;
-} */
+.hero-img {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
