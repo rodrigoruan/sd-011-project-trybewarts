@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -5,20 +10,40 @@
   height: 70px;
 }
 
-.conteudo {
-  display: flex;
-  justify-content: space-around;
-  padding: 4rem 0;
+.trybewarts-header-logo {
+  padding: 0.5rem 1rem;
+}
+
+#trybewarts-header-title {
+  padding: 1rem;
 }
 
 .trybewarts-login {
   display: flex;
+  padding: 1rem;
+  width: 33%;
+  justify-content: space-between;
+}
+
+#login , #senha , #enviar {
+  padding: 0.3rem;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+  background-color: rgb(168, 156, 156);
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  padding: 2rem 1.5rem;
+  background-color: rgb(235, 225, 225);
+  border: 1px solid rgb(29, 28, 28);
+  border-radius: 0.5rem;
 }
 
 #trybewarts-forms-logo {
