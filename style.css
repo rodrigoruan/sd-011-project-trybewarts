@@ -75,3 +75,8 @@ main {
   flex-direction: column;
   align-content: center;
 }
+
+#rate-container {
+  display: flex;
+  flex-direction: row;
+}

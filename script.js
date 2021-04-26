@@ -11,6 +11,7 @@ const inputEmail = document.getElementById('input-email');
 const inputHouse = document.getElementById('house');
 const inputTextArea = document.getElementById('textarea');
 const forms = document.getElementById('evaluation-form');
+const labelRate = document.getElementById('rate-container');
 // const labelRate = document.getElementById('label-rate');
 // Functions
 
@@ -73,3 +74,20 @@ submitButton.addEventListener('click', (e) => {
   forms.innerHTML = inputForm;
   e.preventDefault();
 });
+
+// creates Radios
+function createRadios() {
+  const rates = 10;
+  for (let i = 1; i <= rates; i += 1) {
+    const input = document.createElement('input');
+    const label = document.createElement('label');
+    input.type = 'radio';
+    input.name = 'rate';
+    input.value = i;
+    label.innerText = i;
+    labelRate.appendChild(label);
+    label.appendChild(input);
+  }
+
+}
+createRadios();
