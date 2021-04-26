@@ -11,3 +11,11 @@ function validate() {
 }
 
 buttonLogin.addEventListener('click', validate);
+
+const counter = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
+
+textarea.addEventListener('keyup', () => {
+  const counterValue = 500 - textarea.value.length;
+  counter.innerText = counterValue;
+});
