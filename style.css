@@ -97,3 +97,19 @@ footer {
   height: 70px;
   resize: none;
 }
+
+#submit-btn {
+  width: 500px;
+  margin-top: 10px;
+}
+
+.firstBorder {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid black;
+}
+
+.secondBorder {
+  padding: 10px 0px;
+  border-top: 1px solid black;
+}
