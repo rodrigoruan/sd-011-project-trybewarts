@@ -77,8 +77,10 @@ main {
 }
 
 #container {
+  display: flex;
   justify-content: space-around;
   align-items: baseline;
+  flex-direction: row;
 }
 
 #evaluation-form {
@@ -97,19 +99,19 @@ main {
   flex-direction: row;
   width: 80px;
   height: 90px;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   flex-grow: 1;
   margin-top: 15px;
 }
 
 #label-family {
-
-width: 80px;
+  width: 80px;
 }
+
 span {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   flex-grow: 1;
 }
 
@@ -125,14 +127,8 @@ span {
   flex-direction: row;
   width: 400px;
   height: 150px;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: space-around;
-}
-
-#container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
 }
 
 .subject {
@@ -147,7 +143,7 @@ span {
   flex-direction: row;
   width: 250px;
   height: 90px;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   flex-grow: 1;
 }
 
@@ -219,11 +215,11 @@ span {
 
 #submit-btn {
   flex-basis: 72%;
-  background-color: #483D8B;
-  font-family: 'Lumos', arial;
+  background-color: rgb(72, 61, 139);
+  font-family: Lumos, arial;
   font-size: 15px;
   border-radius: 15px;
-  border: solid #483D8B;
+  border: solid rgb(72, 61, 139);
   color: white;
   text-align: center;
 }
