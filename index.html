@@ -10,47 +10,43 @@
 </head>
 <body>
     <header class="header">
+
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-      <form action = "" class="trybewarts-login">
-        <div>
-          <input type="email" name="" id="email-login" placeholder="Login">
-          <input type="password" name="" id="password-login" placeholder="Senha">
-        </div>
-      <!-- <div> // Dentro dessa DIV dar erro no cypress.
-        <input type="password" name="" id="password-login" placeholder="Senha">
-      </div> -->
-        <div>
-          <button type="submit" id= "btnLogar">Logar</button>
-        </div>
-      </form>
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+      
     </header>
     <main> <!-- Requisito 5.2 -->
-      <form action="" id="evaluation-form"> <!-- Requisito 5.1 -->
-        <input id="input-name" type="text" placeholder="Nome"> <!-- Requisito 8 -->  
-        <input id="input-lastname" type="text" placeholder="Sobrenome"> <!-- Requisito 8 -->
-        <input id="input-email" type="email" placeholder="Email"> <!-- Requisito 8 -->        
+     
       </form>
 
-      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt=""> <!-- Requisito 7.1 e 7.2 -->
+     
 
     </main>
 
   <!-- lll -->
-  
-  <script type='text/javascript' src='script.js'></script>
-
 
   <header class="header">
+
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form action = "" class="trybewarts-login">
+      <div>
+        <input type="email" name="" id="email-login" placeholder="Login">
+        <input type="password" name="" id="password-login" placeholder="Senha">
+      </div>
+      <div>
+        <button type="submit" id= "btnLogar">Logar</button>
+      </div>
+    </form>
+  </header>
     <div class="div-login">
-      <form class="trybewarts-login">
-        <input type="email" name="" id="" placeholder="Login">
-        <br>
-        <input type="password" name="" id="" placeholder="Senha">
-        <br>
-        <button type="submit">Logar</button>
-        
+        <form action="" id="evaluation-form"> <!-- Requisito 5.1 -->
+          <input id="input-name" type="text" placeholder="Nome"> <!-- Requisito 8 -->  
+          <input id="input-lastname" type="text" placeholder="Sobrenome"> <!-- Requisito 8 -->
+          <input id="input-email" type="email" placeholder="Email"> <!-- Requisito 8 -->        
+              
         <!-- A partir daqui esboços de outros requisitos -->
         
         <!-- Requisito 9 -->
@@ -110,10 +106,13 @@
         <!-- Requisito 18 -> acredito dê certo no CSS com um #submit-btn {:before {disabeld;}:after{algum action=""}} -->
 
       </form>
+
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt=""> <!-- Requisito 7.1 e 7.2 -->
     </div>  
-  </header>
+
 
   <!-- Requisito 19 -->
   <footer>Direitos reservados à Trybewarts©</footer>
+  <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
