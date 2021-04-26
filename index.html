@@ -93,88 +93,48 @@
 
         <hr />
 
-        <div class="row" id="subjects-conteiner">
-          <label id="label-family"
-            >Qual sua família?
+        <div id="form-pt2">
+          <div class="column" id="family-container">
+            <label id="label-family">Qual sua família?</label>
             <label for="op1">
-              <input type="radio" name="family" id="op1" value="Frontend" />
+              <input type="radio" class="family-option" name="family" id="op1" value="Frontend"/>
               Família Frontend
             </label>
             <label for="op2">
-              <input type="radio" name="family" id="op2" value="Backend" />
+              <input type="radio" class="family-option" name="family" id="op2" value="Backend"/>
               Família Backend
             </label>
             <label for="op3">
-              <input type="radio" name="family" id="op3" value="FullStack" />
+              <input type="radio" class="family-option" name="family" id="op3" value="FullStack" />
               Família FullStack
-            </label>
           </label>
 
-          <div>
-            <div>
-              <label for="" id="label-content" class="column">Qual conteúdo você está com mais vontade de aprender?</label>
+          </div>
+          <div id="subjects-conteiner">
+            <label for="" id="label-content" class="column">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div id="check-conteiner1">
+              <label for="subject-1"></label>
+              <input type="checkbox" value="HoFs" class="subject" id="subject-1"/>
+              HoFs
+              <label for="subject-2"></label>
+              <input type="checkbox" value="Jest" class="subject" id="subject-2"/>
+              Jest
+              <label for="subject-3"></label>
+              <input type="checkbox" value="Promises" class="subject" id="subject-3"/>
+              Promises
             </div>
-            <div id="test">
-              <label for="subject-1">
-                <input
-                  type="checkbox"
-                  value="HoFs"
-                  class="subject"
-                  id="subject-1"
-                />
-                HoFs
-              </label>
-              <label for="subject-2">
-                <input
-                  type="checkbox"
-                  value="Jest"
-                  class="subject"
-                  id="subject-2"
-                />
-                Jest
-              </label>
-              <label for="subject-3">
-                <input
-                  type="checkbox"
-                  value="Promises"
-                  class="subject"
-                  id="subject-3"
-                />
-                Promises
-              </label>
+            <div id="check-conteiner2">
+              <label for="subject-4"></label>
+              <input type="checkbox" value="React" class="subject" id="subject-4"/>
+              React
+              <label for="subject-5"></label>
+              <input type="checkbox" value="SQL" class="subject" id="subject-5"/>
+              SQL
+              <label for="subject-6"></label>
+              <input type="checkbox" value="Python" class="subject" id="subject-6"/>
+              Python
             </div>
           </div>
-
-            <div>
-              <label for="subject-4">
-                <input
-                  type="checkbox"
-                  value="React"
-                  class="subject"
-                  id="subject-4"
-                />
-                React
-              </label>
-              <label for="subject-5">
-                <input
-                  type="checkbox"
-                  value="SQL"
-                  class="subject"
-                  id="subject-5"
-                />
-                SQL
-              </label>
-              <label for="subject-6">
-                <input
-                  type="checkbox"
-                  value="Python"
-                  class="subject"
-                  id="subject-6"
-                />
-                Python
-              </label>
-            </div>
-          
         </div>
 
         <hr />

@@ -51,6 +51,11 @@ body {
   align-items: center;
 }
 
+main {
+  width: 80%;
+  justify-content: center;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -59,6 +64,8 @@ body {
 
 form h2 {
   text-align: center;
+  font-size: xxX-large;
+  font-weight: bolder;
 }
 
 #trybewarts-forms-logo {
@@ -75,12 +82,6 @@ form h2 {
   margin-right: 10px;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
-  
-}
-
 .row {
   display: flex;
 }
@@ -92,4 +93,16 @@ form h2 {
 
 #house {
   width: 50%;
+}
+
+#form-pt2 {
+  display: flex;
+}
+
+#family-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6%;
+  line-height: 1.6
+  
 }
