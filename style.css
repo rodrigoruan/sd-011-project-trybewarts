@@ -13,53 +13,45 @@
 .trybewarts-login {
   justify-content: right;
   display: flex;
-  }
+}
 
 #trybewarts-header-title {
   text-align: center;
 }
 
 #login {
-  margin-left: 20px;
-  margin-right: 20px;
   width: 135px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 10px;
   padding-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   border-color: white;
   border-width: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Times New Roman, Times, serif;
 }
 
 #senha {
-  margin-left: 20px;
-  margin-right: 20px;
   width: 135px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 10px;
   padding-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   border-color: white;
   border-width: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Times New Roman, Times, serif;
 }
 
 #logar {
   color: white;
-  margin-right: 100px;
   width: 150px;
-  font-weight: bold;
+  font-weight: 700;
   background-color: rebeccapurple;
   border-radius: 10px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 100px 10px 0;
   border-color: rebeccapurple;
   border-width: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Times New Roman, Times, serif;
 }
 
 .column {
@@ -201,10 +193,6 @@ select {
   color: white;
 }
 
-#submit-btn:disabled {
-  background-color: grey;
-}
-
 #submit-btn {
   padding: 5px;
   width: 100%;
@@ -213,8 +201,12 @@ select {
   border-radius: 5px;
   border-color: rebeccapurple;
   border-width: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+#submit-btn:disabled {
+  background-color: grey;
 }
