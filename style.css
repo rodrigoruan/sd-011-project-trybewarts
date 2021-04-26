@@ -35,7 +35,6 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding-left: 70px;
   width: 675px;
 }
@@ -47,7 +46,6 @@ main {
 h3 {
   display: flex;
   justify-content: center;
-  width: 100vh;
 }
 
 #label-family {
