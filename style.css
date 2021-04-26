@@ -91,3 +91,8 @@ footer {
   padding-left: 20px;
   margin-left: 20px;
 }
+
+#textarea {
+  width: 500px;
+  height: 70px;
+}
