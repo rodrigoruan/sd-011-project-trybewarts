@@ -83,6 +83,7 @@ main {
   width: 675px;
   flex-basis: 675px;
   border-radius: 5px;
+  margin-left: 10%;
 }
 
 #forms-h2 {
