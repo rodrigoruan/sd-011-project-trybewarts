@@ -1,13 +1,12 @@
-const loginInput = document.getElementById('id');
-const senhaInput = document.getElementById('password');
-const button = document.getElementById('submit-button');
-textAreaValue.addEventListener('input', () => {
-  limitTextArea(textAreaValue.value);
-});
-button.addEventListener('click', () => {
-  if (loginInput.value === 'tryber@teste.com' && senhaInput.value === '123456') {
+const login = document.getElementById('login-input');
+const password = document.getElementById('password-input');
+const button = document.getElementById('login-button');
+
+function loginInput() {
+  if (login.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
   }
-});
+}
+
