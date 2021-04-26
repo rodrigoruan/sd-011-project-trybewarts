@@ -1,9 +1,9 @@
 const checkBox = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
-const textArea = document.querySelector('#text-coment');
+const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 const mainForm = document.querySelector('#evaluation-form');
-const formInformations = document.querySelector('#informacoes');
+const fieldsetInformations = document.querySelector('#field-set');
 
 function clickLogin() {
   const email = event.path[2][0].value;
@@ -21,18 +21,29 @@ checkBox.addEventListener("change", () => {
 
 
 textArea.addEventListener('keyup', () => {
-  counter.innerText = textArea.value.length.toString();
+  counter.innerText = 500 - textArea.value.length;
 })
 
 
 btnSubmit.addEventListener('click', (event) => {
-  mainForm.style.display = 'none';
+
+  const fieldName = ([primeiraLetra, ...resto]) => {
+    return primeiraLetra.toUpperCase() + resto.join('').toLowerCase();
+  }
+  fieldsetInformations.style.display = 'none';
   event.preventDefault();
+
   const target = event.path[3];
   for (let index = 1; index < event.path.length; index += 1) {
-    const inputText = document.createElement('input');
-    formInformations.appendChild(inputText);
-    inputText.value = target[index].value;
+    const pText = document.createElement('p');
+    mainForm.appendChild(pText);
+    if (target[index].name === 'nome') {
+      pText.innerText = ` ${fieldName(target[index].name)}: ${target[index].value} ${target[index + 1].value}`;
+      index += 1;
+    } else {
+      console.log(target[index].value)
+      pText.innerText = ` ${fieldName(target[index].name)}: ${target[index].value}`;
+    }
   }
-  formInformations.style.display = 'block';
+  mainForm.style.display = 'block';
 })
