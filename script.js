@@ -1,4 +1,4 @@
-// validar login
+// função para validar login
 function validateEmail() {
   const emailInput = document.getElementById('login');
 
@@ -152,7 +152,7 @@ function removeAgreementSubmit(getSubmitButton) {
   getSubmitButton.parentNode.removeChild(getSubmitButton);
 }
 
-// altera elementos do formulário
+// altera elementos do formulário.
 function changeFormChilds() {
   const getSubmitButton = document.getElementById('submit-btn');
   const getFormDiv = document.getElementById('evaluation-form');
