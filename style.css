@@ -64,21 +64,18 @@ h3 {
   width: 17vh;
 }
 
+main {
+  display: flex;
+}
+
 .row {
   display: flex;
   flex-direction: row;
-  width: 380px;
-
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
-}
-
-aside {
-  display: flex;
 }
 
 .checkbox {
@@ -87,14 +84,14 @@ aside {
   width: 220px;
 }
 
-.subject {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 footer {
   background-color: black;
   color: white;
   height: 50px;
   text-align: center;
+}
+
+.padding {
+  padding-left: 20px;
+  margin-left: 20px;
 }
