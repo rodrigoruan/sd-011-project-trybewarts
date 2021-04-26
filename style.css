@@ -7,6 +7,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
+  justify-content: space-between;
 }
 
 #form-title {
@@ -16,17 +17,16 @@
 
 .trybewarts-header-logo {
   height: 50px;
-  width: 50px;
+  align-self: flex-start;
+  margin: 0;
 }
 
 #trybewarts-header-title {
-  order: 1;
   color: white;
 }
 
 .trybewarts-login {
   display: flex;
-  order: 2;
 }
 
 #loginButton {
