@@ -19,17 +19,9 @@ function login() {
 buttonLogin.addEventListener('click', login);
 
 // agreement type checkbox
+submitButton.disabled = true;
 agree.addEventListener('change', (e) => {
-  if (e.target.classList.contains('checked')) {
-    e.target.classList.remove('checked');
-  } else {
-    e.target.classList.add('checked');
-  }
-});
-
-// submit form button
-submitButton.addEventListener('click', (e) => {
-  if (!agree.classList.contains('checked')) {
-    e.preventDefault();
+  if (e.target.checked) {
+    submitButton.disabled = false;
   }
 });
