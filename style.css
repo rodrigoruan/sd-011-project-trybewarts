@@ -102,12 +102,15 @@ footer {
 }
 
 .firstBorder {
-  margin: 10px 0px;
-  padding: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid black;
 }
 
 .secondBorder {
-  padding: 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-top: 1px solid black;
 }
