@@ -13,22 +13,53 @@
 .trybewarts-login {
   justify-content: right;
   display: flex;
-}
+  }
 
 #trybewarts-header-title {
   text-align: center;
 }
 
 #login {
-  color: blue;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 135px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: white;
+  border-width: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #senha {
-  color: green;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 135px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: white;
+  border-width: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #logar {
-  color: red;
+  color: white;
+  margin-right: 100px;
+  width: 150px;
+  font-weight: bold;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: rebeccapurple;
+  border-width: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .column {
@@ -170,10 +201,20 @@ select {
   color: white;
 }
 
+#submit-btn:disabled {
+  background-color: grey;
+}
+
 #submit-btn {
   padding: 5px;
   width: 100%;
   background-color: rebeccapurple;
   color: white;
   border-radius: 5px;
+  border-color: rebeccapurple;
+  border-width: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

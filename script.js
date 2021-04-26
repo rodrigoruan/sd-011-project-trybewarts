@@ -19,3 +19,18 @@ textarea.addEventListener('keyup', () => {
   const counterValue = 500 - textarea.value.length;
   counter.innerText = counterValue;
 });
+
+//Submit desabilitado
+
+const fsubmitButton = document.getElementById('submit-btn');
+const fagree = document.getElementById('agreement');
+
+fsubmitButton.disabled = true;
+
+fagree.addEventListener('change', (e) => {
+  if (e.target.checked) {
+    fsubmitButton.disabled = false;
+  } else {
+    fsubmitButton.disabled = true;
+  }
+});
