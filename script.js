@@ -46,16 +46,36 @@ msgElement.addEventListener('input', (e) => {
   cntElement.innerHTML = `${maxLength - currentLength}`;
 });
 
-// const myForm = document.getElementById('evaluation-form');
+const myForm = document.getElementById('evaluation-form');
 
-// myForm.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   const formData = new FormData(e.target);
-//   const valueObject = {};
-//   for (const pair of formData.entries()) {
-//     console.log(pair);
-//     valueObject[pair[0]]
-//     valueObject[pair[0]] = pair[1];
-//   }
-//   console.log(valueObject);
-// });
+function removeForm() {
+  for (let i = 0; i < 10; i += 1) {
+    myForm.lastElementChild.remove();
+  }
+}
+
+let frase = '';
+
+myForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const valueObject = [];
+  for (const pair of formData.entries()) {
+    valueObject.push(pair[1]);
+  }
+
+  removeForm();
+
+  for (let j = 5; j < valueObject.length - 2; j += 1) {
+    frase += valueObject[j];
+    if (j < valueObject.length - 3) { frase += ', '; }
+  }
+
+  myForm.innerText = `Nome: ${valueObject[0]} ${valueObject[1]}
+  Email: ${valueObject[2]}
+  Casa: ${valueObject[3]}
+  Família: ${valueObject[4]}
+  Matérias: ${frase}
+  Avaliação: ${valueObject[valueObject.length - 2]}
+  Observações: ${valueObject[valueObject.length - 1]}`;
+});
