@@ -1,8 +1,9 @@
 const buttonLogin = document.getElementById('button-login');
 const inputLogin = document.getElementById('email');
 const inputSenha = document.getElementById('senha');
-const buttonForm = document.getElementById('submit-btn').disabled = true;
+const buttonForm = document.getElementById('submit-btn');
 const agreementSelect = document.getElementById('agreement');
+buttonForm.disabled = true;
 
 function validLogin() {
   if (inputLogin.value === 'tryber@teste.com' && inputSenha.value === '123456') {
@@ -17,14 +18,18 @@ function login() {
 }
 
 function validForm() {
-  // if (agreementSelect.value === 'on') {
-  //   buttonForm.disabled=true;
-  //   console.log(agreementSelect.value);
-  // } else {
-  //   buttonForm.disabled=false;
-  //   console.log(agreementSelect.value);
-  // }
+  if (agreementSelect.checked === true) {
+    buttonForm.disabled = false;
+    console.log(agreementSelect.checked);
+  } else {
+    buttonForm.disabled = true;
+    console.log(agreementSelect.checked);
+  }
+}
+
+function ableClick() {
+  agreementSelect.addEventListener('click', validForm);
 }
 
 login();
-validForm();
+ableClick();
