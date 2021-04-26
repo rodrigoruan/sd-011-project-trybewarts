@@ -44,14 +44,14 @@ submitButton.addEventListener('click', () => {
   localStorage.setItem('obs', document.getElementById('textarea').value);
 });
 // exibir nos campos o conteúdo coletado?
-window.onload = () => {
-  // colocando nos campos o que guardou em variáveis
-  document.getElementById('input-name').value = localStorage.getItem('name');
-  document.getElementById('input-lastname').value = localStorage.getItem('lastname');
-  document.getElementById('input-email').value = localStorage.getItem('email');
-  document.getElementById('house').value = localStorage.getItem('house');
-  document.querySelector(`input[value=${localStorage.getItem('familia')}]`).checked = true;
-  document.querySelector(`input[value=${localStorage.getItem('materia')}]`).checked = true;
-  document.querySelector(`input[value=${localStorage.getItem('avalia')}]`).checked = true;
-  document.getElementById('textarea').innerHTML = localStorage.getItem('obs');
-};
+// window.onload = () => {
+//   // colocando nos campos o que guardou em variáveis
+//   document.getElementById('input-name').value = localStorage.getItem('name');
+//   document.getElementById('input-lastname').value = localStorage.getItem('lastname');
+//   document.getElementById('input-email').value = localStorage.getItem('email');
+//   document.getElementById('house').value = localStorage.getItem('house');
+//   document.querySelector(`input[value=${localStorage.getItem('familia')}]`).checked = true;
+//   document.querySelector(`input[value=${localStorage.getItem('materia')}]`).checked = true;
+//   document.querySelector(`input[value="${localStorage.getItem('avalia')}"]`).checked = true;
+//   document.getElementById('textarea').value = localStorage.getItem('obs');
+// };
