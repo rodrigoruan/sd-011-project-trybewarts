@@ -96,10 +96,9 @@ main {
 
 #input-radio {
   display: flex;
-  flex-direction: row;
   width: 80px;
   height: 90px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   flex-grow: 1;
   margin-top: 15px;
 }
@@ -111,7 +110,7 @@ main {
 span {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   flex-grow: 1;
 }
 
@@ -124,10 +123,9 @@ span {
 
 #checkboxs {
   display: flex;
-  flex-direction: row;
   width: 400px;
   height: 150px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
@@ -140,10 +138,9 @@ span {
 
 #techs {
   display: flex;
-  flex-direction: row;
   width: 250px;
   height: 90px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   flex-grow: 1;
 }
 
@@ -200,8 +197,7 @@ span {
 
 #input-form {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-flow:row wrap;
   margin-bottom: 10px;
 }
 
@@ -216,11 +212,7 @@ span {
 
 #submit-btn {
   flex-basis: 72%;
-  background-color:darkslateblue;
-  font-family: "Lumos", arial;
   font-size: 15px;
   border-radius: 15px;
-  border: soliddarkslateblue;
-  color: white;
   text-align: center;
 }
