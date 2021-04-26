@@ -60,3 +60,13 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+.rate-content-group {
+  display: flex;
+}
+
+#rates-group {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
