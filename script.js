@@ -5,32 +5,29 @@ const counter = document.querySelector('#counter');
 const mainForm = document.querySelector('#evaluation-form');
 const formInformations = document.querySelector('#informacoes');
 
-<<<<<<< HEAD
-// function validateLogin() {
-//   const loginButton = document.getElementById('login-button');
-//   loginButton.addEventListener('submit', clickLogin);
-// }
-=======
 function clickLogin() {
   const email = event.path[2][0].value;
   const password = event.path[2][1].value;
->>>>>>> cb922d39837c453e360c12f3f261804e810898b4
 
-  email === 'tryber@teste.com' && password === '123456'
-    ? window.alert('Olá, Tryber!')
-    : window.alert('Login ou senha inválidos.');
-};
+  // email === 'tryber@teste.com' && password === '123456'
+  //   ? window.alert('Olá, Tryber!')
+  //   : window.alert('Login ou senha inválidos.');
+
+  if (email === 'tryber@teste.com' && password === '123456') {
+    window.alert('Olá, Tryber!');
+  } else {
+    window.alert('Login ou senha inválidos.');
+  }
+}
 
 checkBox.addEventListener("change", () => {
   checkBox.checked ? btnSubmit.disabled = false
     : btnSubmit.disabled = true;
-})
-
+});
 
 textArea.addEventListener('keyup', () => {
   counter.innerText = textArea.value.length.toString();
-})
-
+});
 
 btnSubmit.addEventListener('click', (event) => {
   mainForm.style.display = 'none';
@@ -42,4 +39,4 @@ btnSubmit.addEventListener('click', (event) => {
     inputText.value = target[index].value;
   }
   formInformations.style.display = 'block';
-})
+});
