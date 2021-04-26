@@ -31,7 +31,7 @@ function createRadio() {
 createRadio();
 const scoreInput = document.querySelectorAll('.score');
 
-// Observações Textarea
+// Observações da Textarea
 
 loginButton.addEventListener('click', () => {
   if (loginInput.value !== 'tryber@teste.com' && loginPassword.value !== '123456') {
