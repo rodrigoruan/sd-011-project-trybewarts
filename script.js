@@ -5,12 +5,16 @@ const counter = document.querySelector('#counter');
 const mainForm = document.querySelector('#evaluation-form');
 const fieldsetInformations = document.querySelector('#field-set');
 
-function clickLogin() {
-  const email = event.path[2][0].value;
-  const password = event.path[2][1].value;
+let loginField = document.querySelector('.trybewarts-login input:nth-child(1)');
 
-  email === 'tryber@teste.com' && password === '123456'
-    ? window.alert('Olá, Tryber!')
+function clickLogin() {
+  const eventPath = event.path;
+  console.log(eventPath)
+  const email = eventPath[1][0].value;
+  const password = eventPath[1][1].value;
+
+  email === 'tryber@teste.com' || password === '123456'
+    ? window.alert("Olá, Tryber!")
     : window.alert('Login ou senha inválidos.');
 };
 
