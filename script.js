@@ -5,6 +5,7 @@ const agreement = document.getElementById('agreement');
 const formSubmit = document.getElementById('submit-btn');
 const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
+const evaluationForm = document.getElementById('evaluation-form');
 
 function submitForm() {
   const standardLogin = 'tryber@teste.com';
@@ -31,6 +32,28 @@ function charCounter() {
   counter.innerText = charsLeft;
 }
 
+function createResume() {
+  const inputData = new FormData(evaluationForm);
+  const resume = document.createElement('div');
+  resume.id = 'resume';
+  resume.className = 'section';
+  for (const [key, value] of inputData) {
+    const singleField = document.createElement('p');
+    singleField.className = 'container';
+    singleField.innerText = `${key}: ${value}`;
+    resume.appendChild(singleField);
+  }
+  return resume;
+}
+
+function submitForms(event) {
+  event.preventDefault();
+  const report = createResume();
+  evaluationForm.innerHTML = '';
+  evaluationForm.appendChild(report);
+}
+
 submit.addEventListener('click', submitForm);
 agreement.addEventListener('click', enableSubmission);
 textArea.addEventListener('keyup', charCounter);
+formSubmit.addEventListener('click', submitForms);
