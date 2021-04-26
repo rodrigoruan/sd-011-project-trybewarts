@@ -53,11 +53,6 @@ h3 {
   flex-direction: column;
 }
 
-.radios {
-  display: flex;
-  flex-direction: column;
-}
-
 #house {
   width: 17vh;
 }
