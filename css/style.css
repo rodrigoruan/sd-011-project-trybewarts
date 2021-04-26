@@ -56,8 +56,23 @@ body {
 
 main {
   flex-grow: 1;
+  display: flex;
 }
 
 footer {
   background-color: red;
+}
+
+.divContainer {
+  margin: 0 auto;
+}
+
+#evaluation-form {
+  width: 675px;
+  max-height: 117px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  flex-direction: column;
+  text-align: center;
 }
