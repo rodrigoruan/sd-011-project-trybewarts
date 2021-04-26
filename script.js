@@ -32,26 +32,34 @@ textArea.addEventListener('keyup', () => {
   counter.innerHTML = tamanho;
 });
 
+function materias(escolhas) {
+  let retorno = '';
+  escolhas.forEach((element) => {
+    if (retorno !== '') {
+      retorno += ', ';
+    }
+    retorno += element.value;
+  });
+  return retorno;
+}
+
 submitButton.addEventListener('click', () => {
   // guardar no local storage rs
-  localStorage.setItem('name', document.getElementById('input-name').value);
-  localStorage.setItem('lastname', document.getElementById('input-lastname').value);
-  localStorage.setItem('email', document.getElementById('input-email').value);
-  localStorage.setItem('house', document.getElementById('house').value);
-  localStorage.setItem('familia', document.querySelector('input[name="family"]:checked').value);
-  localStorage.setItem('materia', document.querySelector('input[name="materia"]:checked').value);
-  localStorage.setItem('avalia', document.querySelector('input[name="rate"]:checked').value);
-  localStorage.setItem('obs', document.getElementById('textarea').value);
+  const name = document.getElementById('input-name').value;
+  const lastname = document.getElementById('input-lastname').value;
+  const nomeCompleto = name + lastname;
+  const email = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
+  const familia = document.querySelector('input[name="family"]:checked').value;
+  const materia = materias();
+  const avalia = document.querySelector('input[name="rate"]:checked').value;
+  const obs = document.getElementById('textarea').value;
+
+  document.querySelector('#labelNome').innerHTML = `Nome: ${nomeCompleto}`;
+  document.querySelector('#labelEmail').innerHTML = `Email: ${email}`;
+  document.querySelector('#labelCasa').innerHTML = `Casa: ${house}`;
+  document.querySelector('#labelFamilia').innerHTML = `Família: ${familia}`;
+  document.querySelector('#labelMaterias').innerHTML = `Matérias: ${materia}`;
+  document.querySelector('#labelAvaliacao').innerHTML = `Avaliação: ${avalia}`;
+  document.querySelector('#labelObs').innerHTML = `Observações: ${obs}`;
 });
-// exibir nos campos o conteúdo coletado?
-// window.onload = () => {
-//   // colocando nos campos o que guardou em variáveis
-//   document.getElementById('input-name').value = localStorage.getItem('name');
-//   document.getElementById('input-lastname').value = localStorage.getItem('lastname');
-//   document.getElementById('input-email').value = localStorage.getItem('email');
-//   document.getElementById('house').value = localStorage.getItem('house');
-//   document.querySelector(`input[value=${localStorage.getItem('familia')}]`).checked = true;
-//   document.querySelector(`input[value=${localStorage.getItem('materia')}]`).checked = true;
-//   document.querySelector(`input[value="${localStorage.getItem('avalia')}"]`).checked = true;
-//   document.getElementById('textarea').value = localStorage.getItem('obs');
-// };

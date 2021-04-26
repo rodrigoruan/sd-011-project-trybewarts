@@ -26,10 +26,6 @@
   align-items: center;
 }
 
-.container {
-  justify-content: space-between;
-}
-
 #login {
   border-radius: 10px;
   margin: 0px 5px;
@@ -76,6 +72,13 @@ h1 {
 main {
   display: flex;
   justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#container {
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 #evaluation-form {
@@ -89,26 +92,37 @@ main {
   display: flex;
 }
 
-#label-content {
-  display: flex;
-  flex-direction: column;
-}
-
 #input-radio {
   display: flex;
+  flex-direction: row;
+  width: 80px;
+  height: 90px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-top: 15px;
+}
+
+span {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 #textarea {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 10px;
+  flex-grow: 1;
 }
 
 #checkboxs {
   display: flex;
-  flex-direction: column;
-  width: 80%;
+  flex-direction: row;
+  width: 400px;
+  height: 150px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #container {
@@ -127,11 +141,10 @@ main {
 #techs {
   display: flex;
   flex-direction: row;
-  width: 8  0%;
-}
-
-#input-avaliador {
-  margin-top: 5%;
+  width: 250px;
+  height: 90px;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 #input-name {
@@ -183,4 +196,30 @@ main {
 
 #counter {
   margin-left: 400px;
+}
+
+#input-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+#agreement {
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+#label-infos {
+  flex-direction: row;
+}
+
+#submit-btn {
+  flex-basis: 72%;
+  background-color: #483D8B;
+  font-family: 'Lumos', arial;
+  font-size: 15px;
+  border-radius: 15px;
+  border: solid #483D8B;
+  color: white;
+  text-align: center;
 }
