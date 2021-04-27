@@ -36,7 +36,7 @@ main {
 
 #evaluation-form {
   display: flex; /* Requisito 5.3 */
-  min-width: 675px; /* Requisito 5.4 */
+  width: 675px; /* Requisito 5.4 */
   flex-direction: column; /* Requisito 6 */
   border: 3px solid black; /* [Remover] */
 }
