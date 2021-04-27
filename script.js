@@ -34,14 +34,14 @@ function counterCharacters() {
 textArea.addEventListener('input', counterCharacters);
 
 // requisito 21
+const form = document.getElementById('evaluation-form');
 function buildTextDiv1(fName, lName, email, house) {
-  const pNome = document.createElement('p')
+  const pNome = document.createElement('p');
   pNome.innerText = `Nome: ${fName} ${lName}`;
   const pEmail = document.createElement('p');
   pEmail.innerText = `Email: ${email}`;
   const pHouse = document.createElement('p');
   pHouse.innerText = `Casa: ${house}`;
-  const form = document.getElementById('evaluation-form');
   form.insertBefore(pHouse, form.firstChild);
   form.insertBefore(pEmail, form.firstChild);
   form.insertBefore(pNome, form.firstChild);
@@ -59,7 +59,6 @@ function buildTextDiv2(selectedFamily, subjectChecks) {
   pFamily.innerText = `Família: ${selectedFamily}`;
   const pSubject = document.createElement('p');
   pSubject.innerText = `Matérias: ${subjectChecks}`;
-  const form = document.getElementById('evaluation-form');
   form.insertBefore(pSubject, form.firstChild);
   form.insertBefore(pFamily, form.firstChild);
 }
@@ -84,7 +83,6 @@ function biuldTextDiv3(rateValue, notes) {
   pRate.innerText = `Avaliação: ${rateValue}`;
   const pNotes = document.createElement('p');
   pNotes.innerText = `Observações: ${notes}`;
-  const form = document.getElementById('evaluation-form');
   form.insertBefore(pNotes, form.firstChild);
   form.insertBefore(pRate, form.firstChild);
 }
