@@ -51,28 +51,31 @@ console.log(family.length);
 
 function getFamily() {
   for (let index = 0; index < family.length; index += 1) {
-    if (family[index].checked);
-    return family[index].value;
+    if (family[index].checked) {
+      return family[index].value;
+    }
   }
 }
 
 function getSubject() {
   for (let index = 0; index < subject.length; index += 1) {
-    if (subject[index].checked);
-    return subject[index].value;
+    if (subject[index].checked) {
+      return subject[index].value;
+    }
   }
 }
 
 function getScore() {
   for (let index = 0; index < score.length; index += 1) {
-    if (score[index].checked);
-    return score[index].value;
+    if (score[index].checked) {
+      return score[index].value;
+    }
   }
 }
 
 function getDataForm(e) {
   e.preventDefault();
-  let object = {
+  const object = {
     name: `Nome: ${fName.value} ${lName.value}`,
     email: `Email: ${eMail.value}`,
     house: `Casa: ${house.value}`,
@@ -82,15 +85,15 @@ function getDataForm(e) {
     observations: `Observações: ${observations.value}`,
   };
 
-  const keys = Object.keys(object);
-  for (let key in object) {
-    const paramForm = document.createElement('p');
-    paramForm.innerText = object[key];
-    formFilled.appendChild(paramForm);
+  const formFilled = document.querySelector('#form-filled');
+
+  for (const key in object) {
+    if (object[key] !== 0) {
+      const paramForm = document.createElement('p');
+      paramForm.innerText = object[key];
+      formFilled.appendChild(paramForm);
+    }
   }
 }
 
 submitBtn.addEventListener('click', getDataForm);
-
-const formFilled = document.querySelector('#form-filled');
-
