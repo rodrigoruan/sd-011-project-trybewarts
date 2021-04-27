@@ -35,14 +35,21 @@ function counterCharacter() {
 }
 textAreaId.addEventListener('keyup', counterCharacter);
 
+// I'm about to lose my sanity so everything down here just
+// became pure spaghetti-gambiarra code. In advance I would
+// like to apologize to God and to everyone who comes to see
+// these abominations.
+// Sincerely, Diego.
 function renderFormsData(userInfo, technologies) {
   const dataLabel = ['Nome', 'Email', 'Casa', 'Família', 'Matérias', 'Avaliação', 'Observações'];
   const listElement = document.createElement('ul');
-  for (let i = 0; i < 6; i += 1) {
+  const temp = userInfo[userInfo.length - 1];
+  userInfo[userInfo.length - 1] = technologies.join(', ');
+  userInfo.push(temp);
+  console.log(userInfo);
+  for (let i = 0; i < 7; i += 1) {
     const li = document.createElement('li');
-    if (i === 4) {
-      li.innerText = `${dataLabel[i]}: ${technologies.join(', ')}`;
-    } else li.innerText = `${dataLabel[i]}: ${(userInfo[i] || 'Empty').trim()}`;
+    li.innerText = `${dataLabel[i]}: ${userInfo[i] || 'Empty'}`;
     listElement.appendChild(li);
   }
   forms.appendChild(listElement);
