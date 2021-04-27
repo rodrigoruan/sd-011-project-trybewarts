@@ -22,7 +22,7 @@ loginButton.addEventListener('click', () => {
   }
 });
 
-// Enable Send Form button
+// Enable Send Form button!
 agreementBox.addEventListener('change', () => {
   if (agreementBox.checked) {
     sendFormBtn.removeAttribute('disabled')
