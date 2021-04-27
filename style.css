@@ -25,7 +25,6 @@ header h1 {
 /* requisito 3 */
 .trybewarts-login {
   display: flex;
-  justify-content: center;
 }
 
 header input {
@@ -61,7 +60,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: calc( 100vh - 110px );
   width: 100%;
   max-width: 1366px;
 }
@@ -119,7 +117,6 @@ main {
 
 .div-1 label {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   width: 49.4%;
   margin: 1% 0 0 0.6%;
@@ -171,7 +168,7 @@ main {
 }
 
 #textarea {
-  resize: none;
+  resize: none;                 
 }
 
 /* Requisito 20 */
