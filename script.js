@@ -63,7 +63,7 @@ evaluationForm.addEventListener('submit', (evt) => {
       materiasArray.push(document.getElementsByClassName('subject')[index].value);
     }
   }
-  materias = materiasArray.join(',');
+  materias = materiasArray.join(', ');
   const textoForm = formataDados(materias);
   // Apagar formulário ao recarregar página
   for (let i = 0; i < 5; i += 1) {
