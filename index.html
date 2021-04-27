@@ -18,31 +18,31 @@
         </form>
     </header>
     <main>
-        <form id="evaluation-form">
+        <form id="evaluation-form" method="GET">
             <div>
-            <input id="input-name" type="text" placeholder="Nome">
-            <input id="input-lastname" type="text" placeholder="Sobrenome">
-            <input id="input-email" type="text" placeholder="Email">
+            <input name="Nome" id="input-name" type="text" placeholder="Nome">
+            <input name="Sobrenome" id="input-lastname" type="text" placeholder="Sobrenome">
+            <input name="Email" id="input-email" type="text" placeholder="Email">
             <select id="house">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                <option name="Casa" value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option name="Casa" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option name="Casa" value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option name="Casa" value="Pytherina" id="pytherina-house">Pytherina</option>
             </select>
             </div>
-            <br><hr><br>
+            <br><hr>
             <label id="label-family">Qual sua família?</label>
             <label for="front"><input type="radio" name="family" value="Frontend" id="front">Frontend</label>
             <label for="back"><input type="radio" name="family" value="Backend" id="back">Backend</label>
             <label for="full"><input type="radio" name="family" value="FullStack" id="full">FullStack</label>
-            <br><br>
+            <br>
             <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label for="hofs"><input type="checkbox" value="HoFs" id="hofs">HoFs</label>
-            <label for="jest"><input type="checkbox" value="Jest" id="jest">Jest</label>
-            <label for="promises"><input type="checkbox" value="Promises" id="promises">Promises</label>
-            <label for="react"><input type="checkbox" value="React" id="react">React</label>
-            <label for="sql"><input type="checkbox" value="SQL" id="sql">SQL</label>
-            <label for="python"><input type="checkbox" value="Python" id="python">Python</label>
+            <label for="hofs"><input type="checkbox" name="Matérias" value="HoFs" id="hofs" class="subject">HoFs</label>
+            <label for="jest"><input type="checkbox" name="Matérias" value="Jest" id="jest" class="subject">Jest</label>
+            <label for="promises"><input type="checkbox" name="Matérias" value="Promises" id="promises" class="subject">Promises</label>
+            <label for="react"><input type="checkbox" name="Matérias" value="React" id="react" class="subject">React</label>
+            <label for="sql"><input type="checkbox" name="Matérias" value="SQL" id="sql" class="subject">SQL</label>
+            <label for="python"><input type="checkbox" name="Matérias" value="Python" id="python" class="subject">Python</label>
 
             <div>
                 <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
@@ -57,9 +57,12 @@
                   <input type="radio" name="rate" id="rate" value="9">9
                   <input type="radio" name="rate" id="rate" value="10">10
             </div>
-
+            
             <label for="textarea" class="textarea">Deixe seu comentário:</label>
-            <textarea name="text" id="textarea" maxlength="500" placeholder="500"></textarea>
+            <textarea name="text" id="textarea" maxlength="500"></textarea>
+            <div class="counter">
+                <span id="counter">500</span>
+            </div>
 
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
               <input type="checkbox" name="agree" id="agreement">
