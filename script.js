@@ -64,7 +64,7 @@ textarea.addEventListener('input', () => {
 // Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 // Prevent Default (used to prevent blank or empty values): https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 btnSubmit.addEventListener('click', (event) => {
-  const rawFormData = new FormData(evaluationForm);
+  const rawFormData = new FormData(evalForm);
   const value = rawFormData.getAll('subject');
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
