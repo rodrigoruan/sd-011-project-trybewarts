@@ -32,16 +32,16 @@ checkbox.addEventListener('click', () => {
   }
 });
 
-// textare characters counter
+// textarea characters counter
 // References
 // Tutorial for Textarea's Counter: http://www.mattmorgante.com/technology/textarea-remaining-characters-javascript
 // Template Literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-textarea.addEventListener('keydown', () => {
-  const countRemaining = document.querySelector('#counter');
-  const textEntered = textarea.value.length;
-  const counter = (500 - textEntered);
+// getAttribute: https://developer.mozilla.org/pt-BR/docs/Web/API/element/getAttribute
+textarea.addEventListener('input', () => {
+  const counter = document.querySelector('#counter');
+  const maxlength = textarea.getAttribute('maxlength');
 
-  countRemaining.innerText = `${counter} caracteres`;
+  counter.innerHTML = maxlength - textarea.value.length;
 });
 
 // get all checked form's elements
@@ -52,7 +52,8 @@ function subjectChecked() {
   const SubjectList = [];
 
   for (let index = 0; index < ckdSubject.length; index += 1) {
-    SubjectList.push(`${ckdSubject[index].value}`);
+    // The space is necessary to separete the values
+    SubjectList.push(` ${ckdSubject[index].value}`);
   }
 
   return SubjectList;
@@ -63,7 +64,7 @@ function subjectChecked() {
 // Objects: https://www.w3schools.com/js/js_objects.asp
 // Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 // Prevent Default (used to prevent blank or empty values): https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
-btnSubmit.addEventListener('click', (event) => {
+evalForm.addEventListener('submit', (event) => {
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
     Email: `${iptEmail.value}`,
