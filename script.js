@@ -1,19 +1,3 @@
-const loginButton = document.querySelector('#login-button');
-const checkValue = document.getElementById('agreement');
-const submitBtn = document.querySelector('#submit-btn');
-
-[loginButton, checkValue, submitBtn].forEach((item) => {
-  item.addEventListener('click', (event) => {
-    if (item === loginButton) {
-      loginValidation();
-    } else if (item === checkValue) {
-      agreement();
-    } else if (item === submitBtn) {
-      getDataForm(event);
-    }
-  });
-});
-
 function loginValidation() {
   const trybewartsLogin = document.forms['trybewarts-login'];
   const user = trybewartsLogin.user.value;
@@ -25,11 +9,43 @@ function loginValidation() {
   }
 }
 
+const checkValue = document.getElementById('agreement');
+
 function agreement() {
   if (checkValue.checked) {
     document.getElementById('submit-btn').disabled = false;
   } else {
     document.getElementById('submit-btn').disabled = true;
+  }
+}
+
+const family = document.getElementsByName('family');
+
+function getFamily() {
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      return family[index].value;
+    }
+  }
+}
+
+const subject = document.getElementsByName('checkbox-content');
+
+function getSubject() {
+  for (let index = 0; index < subject.length; index += 1) {
+    if (subject[index].checked) {
+      return subject[index].value;
+    }
+  }
+}
+
+const score = document.getElementsByName('rate');
+
+function getScore() {
+  for (let index = 0; index < score.length; index += 1) {
+    if (score[index].checked) {
+      return score[index].value;
+    }
   }
 }
 
@@ -64,35 +80,20 @@ function getDataForm(event) {
   }
 }
 
-const family = document.getElementsByName('family');
+const loginButton = document.querySelector('#login-button');
+const submitBtn = document.querySelector('#submit-btn');
 
-function getFamily() {
-  for (let index = 0; index < family.length; index += 1) {
-    if (family[index].checked) {
-      return family[index].value;
+[loginButton, checkValue, submitBtn].forEach((item) => {
+  item.addEventListener('click', (event) => {
+    if (item === loginButton) {
+      loginValidation();
+    } else if (item === checkValue) {
+      agreement();
+    } else if (item === submitBtn) {
+      getDataForm(event);
     }
-  }
-}
-
-const subject = document.getElementsByName('checkbox-content');
-
-function getSubject() {
-  for (let index = 0; index < subject.length; index += 1) {
-    if (subject[index].checked) {
-      return subject[index].value;
-    }
-  }
-}
-
-const score = document.getElementsByName('rate');
-
-function getScore() {
-  for (let index = 0; index < score.length; index += 1) {
-    if (score[index].checked) {
-      return score[index].value;
-    }
-  }
-}
+  });
+});
 
 const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
