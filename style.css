@@ -26,6 +26,19 @@ body {
   font-size: 1.5em;
 }
 
+.textareaCounter{
+  display: flex;
+  width: fit-content;
+}
+
+#counter{ 
+  position: relative;
+  align-self: flex-end;
+  z-index: 1;
+  right: 30px;
+  color: rgb(153, 153, 153);
+}
+
 .trybewarts-header-logo {
   width: 50px;
   height: 50px;
@@ -47,26 +60,17 @@ body {
     display: none;
   }
 
-  #trybewarts-forms-logo {
-    float: initial;
-    z-index: 1;
-    position: absolute;
-  }
-
   fieldset {
     width: 400px;
     margin: 0 auto;
     padding: 5px;
   }
 
-
   #evaluation-form {
-    /* background-image: url(/images/trybewarts-colored.svg); */
-   
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(/images/trybewarts-colored.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 400px;
   }
 
-  #evaluation-form 
 }

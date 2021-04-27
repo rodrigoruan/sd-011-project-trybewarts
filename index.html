@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Projeto Trybewarts</title>
 </head>
 <body>
@@ -133,13 +133,15 @@
         </div>
     
       <!-- Text Area contador e termos de uso -->
-      <label class="textarea" for="textarea">Deixe seu comentário:</label>
-      <textarea name="" id="textarea" maxlength="500" rows="10"></textarea>
-      <div id="counter">500</div>
-      <label id="label-infos">
-        Você concorda com o uso das informações acima?
-        <input type="checkbox" name="" id="agreement">
-      </label>
+  <div class="textareaCounter">   
+    <label class="textarea" for="textarea">Deixe seu comentário:</label>
+    <textarea name="" id="textarea" cols="30" maxlength="500" rows="10"></textarea>
+    <div id="counter">500</div>
+  </div>
+    <label id="label-infos">
+      Você concorda com o uso das informações acima?
+      <input type="checkbox" name="" id="agreement">
+    </label>
 
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
