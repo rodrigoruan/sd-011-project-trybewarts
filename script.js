@@ -48,6 +48,7 @@ const name = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const eMail = document.querySelector('#input-email');
 const house = document.getElementById('house');
+const family = document.querySelector('input[name="family"]:checked');
 const avaliations = document.querySelector('#textarea');
 
 const infos1 = (event) => {
@@ -60,6 +61,7 @@ const infos1 = (event) => {
   Sobrenome: ${lastName.value}
   E-mail: ${eMail.value}
   Casa: ${house.value}
+  Família: ${family.value}
   Observações: ${avaliations.value}`);
 };
 
