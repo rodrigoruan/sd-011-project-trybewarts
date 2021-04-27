@@ -53,6 +53,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  padding: 15px 75px;
 }
 
 .main-form input {
@@ -62,7 +63,7 @@ main {
 }
 
 .main-form input [ type = 'checkbox' ] {
-  margin: 5px  10px;
+  margin-left: 15px;
 }
 
 #trybewarts-forms-logo {
@@ -73,7 +74,20 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 15px;
+  padding: 10px;
+}
+
+.check {
+  justify-content: space-around;
+}
+
+.py {
+  padding: 10px 0;
+}
+
+.row label {
+  align-self: center;
+  padding-right: 5px;
 }
 
 .column {
@@ -87,17 +101,24 @@ main {
   margin-bottom: 15px;
 }
 
-#submit-btn {
-  background: linear-gradient(120deg, rgba(132,218,187),rgba(3,123,94), rgba(143,119,179), rgba(65,25,127));
-  color: white;
-  border-radius: 5px;
+#counter {
+  display: flex;
+  margin-top: -10px;
+  justify-content: flex-end;
 }
 
-footer p {  
-  background-color: #3C404A;
-  color: white;
-  height: 30px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;     
+.btn {
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+textarea {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 5px 0;
+  text-align: center;
+  background-color: rgb(38, 39, 43);
 }
