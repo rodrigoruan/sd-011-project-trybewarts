@@ -24,3 +24,11 @@ function check() {
   }
 }
 checkBtn.addEventListener('click', check);
+
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+
+textArea.addEventListener('input', () => {
+  const caracteres = textArea.value.length;
+  counter.innerHTML = textArea.maxLength - caracteres;
+});
