@@ -35,7 +35,7 @@ function getSubject() {
   let checkedSubjects = '';
   for (let index = 0; index < subject.length; index += 1) {
     if (subject[index].checked) {
-      checkedSubjects = `${checkedSubjects} ${subject[index].value}`;
+      checkedSubjects = `${checkedSubjects}, ${subject[index].value}`;
     }
   }
   return checkedSubjects;
