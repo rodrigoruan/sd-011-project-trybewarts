@@ -34,6 +34,7 @@ textArea.addEventListener("keyup", () => {
   counter.innerHTML = tamanho;
 });
 
+<<<<<<< HEAD
 // guardar variáveis (dados do formulário)
 // Apagar formulário ao recarregar página
 // Imprimir informações guardadas no formulário
@@ -73,3 +74,34 @@ function removeForm() {
     evaluationForm.lastElementChild.remove();
   }
 }
+=======
+function materias(escolhas) {
+  let retorno = '';
+  escolhas.forEach((element) => {
+    if (retorno !== '') {
+      retorno += ', ';
+    }
+    retorno += element.value;
+  });
+  return retorno;
+}
+
+submitButton.addEventListener('click', () => {
+  const name = document.getElementById('input-name').value;
+  const lastname = document.getElementById('input-lastname').value;
+  const email = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
+  const familia = document.querySelector('input[name="family"]:checked').value;
+  const materia = materias();
+  const avalia = document.querySelector('input[name="rate"]:checked').value;
+  const obs = document.getElementById('textarea').value;
+
+  document.querySelector('#labelNome').innerHTML = `Nome: ${name}`` ${lastname}`;
+  document.querySelector('#labelEmail').innerHTML = `Email: ${email}`;
+  document.querySelector('#labelCasa').innerHTML = `Casa: ${house}`;
+  document.querySelector('#labelFamilia').innerHTML = `Família: ${familia}`;
+  document.querySelector('#labelMaterias').innerHTML = `Matérias: ${materia}`;
+  document.querySelector('#labelAvaliacao').innerHTML = `Avaliação: ${avalia}`;
+  document.querySelector('#labelObs').innerHTML = `Observações: ${obs}`;
+});
+>>>>>>> 3bab44424fd3b62764bb0944ec20ffe7ae0879a3

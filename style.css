@@ -15,7 +15,7 @@
 }
 
 #trybewarts-header-title {
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   padding-top: 10px;
   color: black;
 }
@@ -26,25 +26,21 @@
   align-items: center;
 }
 
-.container {
-  justify-content: space-between;
-}
-
 #login {
   border-radius: 10px;
-  margin: 0px 5px;
+  margin: 5px;
   height: 25px;
   border: solid white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 15px;
 }
 
 #senha {
   border-radius: 10px;
-  margin: 0px 5px;
+  margin: 5px;
   height: 25px;
   border: solid white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 15px;
 }
 
@@ -52,12 +48,12 @@
   padding-left: 2px;
   padding-right: 2px;
   border-radius: 10px;
-  margin: 0px 5px;
-  border: solid #483D8B;
+  margin: 5px;
+  border: solid darkslateblue;
   width: 70px;
-  background-color: #483D8B;
+  background-color: darkslateblue;
   color: white;
-  font-family: 'Lumos', arial;
+  font-family: Lumos, sans-serif;
   font-size: 20px;
 }
 
@@ -78,43 +74,49 @@ main {
   justify-content: space-around;
 }
 
-#evaluation-form {
-  width: 675px;
+#container {
   display: flex;
-  flex-direction: column;
-  margin: 0 25px;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-direction: row;
 }
 
 #e-mail-e-casa {
   display: flex;
 }
 
-#label-content {
-  display: flex;
-  flex-direction: column;
-}
-
 #input-radio {
   display: flex;
-  flex-direction: column;
+  width: 80px;
+  height: 90px;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  margin-top: 15px;
+}
+
+#label-family {
+  width: 80px;
+}
+
+span {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
 }
 
 #textarea {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 10px;
+  flex-grow: 1;
 }
 
 #checkboxs {
   display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-
-#container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
+  width: 400px;
+  height: 150px;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .subject {
@@ -126,12 +128,10 @@ main {
 
 #techs {
   display: flex;
-  flex-direction: row;
-  width: 8  0%;
-}
-
-#input-avaliador {
-  margin-top: 5%;
+  width: 250px;
+  height: 90px;
+  flex-flow: row wrap;
+  flex-grow: 1;
 }
 
 #input-name {
@@ -183,4 +183,33 @@ main {
 
 #counter {
   margin-left: 400px;
+}
+
+#input-form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+#agreement {
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+#label-infos {
+  flex-direction: row;
+}
+
+#submit-btn {
+  flex-basis: 72%;
+  font-size: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  justify-content: center;
 }
