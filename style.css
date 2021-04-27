@@ -41,6 +41,12 @@ main {
   border: 3px solid black; /* [Remover] */
 }
 
+#evaluation-form div:nth-of-type( 3 ) {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+}
+
 #trybewarts-forms-logo {
   height: 500px; /* Requisito 7.3 */
   align-self: flex-end;
