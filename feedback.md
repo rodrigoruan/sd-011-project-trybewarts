@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 8
 
 ---
 
@@ -19,11 +19,16 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Tivemos a percepção de ser um projeto pouco desafiador - ainda mais sendo em dupla. Acreditamos que poderiam haver mais desafios em relação a lógica de programação. 
+Além disto, identificamos alguns pontos durantes os desafios, que seguem abaixo:
+- Requisito 13: informação duplicada em relação a propriedade 'value';
+- Requisito 21 - Informação pouco objetiva de como realizar a tarefa - o cypress dava margem para resultados diferentes: Poderiam ser apagadas todas as informações e adicionar as substitutas OU somente adicionar as novas informações.
+
+Sobre as percepções positivas: aprendemos a trabalhar de forma simultânea e assincrona com GitHub e sedimentamos este aprendizado.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Laura Gusmão e Oryange Strifezze
 
 ---
 
