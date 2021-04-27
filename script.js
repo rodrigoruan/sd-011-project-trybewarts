@@ -38,7 +38,7 @@ textAreaInput[0].addEventListener('keyup', () => {
 
 
 //// TESTES DO ULTIMO ITEM BONUS
-let testando = document.getElementsByTagName('input')
+/* let testando = document.getElementsByTagName('input')
 let testandoArray = [];
 
 for (let key of testando) {
@@ -53,3 +53,67 @@ if (testandoArray[0].type === 'radio' && !testandoArray[0].checked || testandoAr
 } else if (testandoArray[1].checked) {
   console.log('TA MARCADO')
 }
+ */
+
+function verifyfamily() {
+  const family = document.getElementsByName('family');
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked) {
+      const checkFamily = family[index].value;
+      return checkFamily;
+    }
+  }
+}
+
+function options(){
+  const option = document.getElementsByClassName('option');
+  const array = [];
+  let string = '';
+  for (let index = 0; index < option; index +=1){
+    if (option[index].checked){
+      array.push(` ${option[index].value}`);
+    }
+  }
+  string = string + array.toString();
+  return string;
+
+}  
+
+function verifyRate(){
+  const rate = document.getElementsByName('rate');
+  for (let index = 0; index < rate.length; index +=1){
+    if (rete[index].checked) {
+      const checkRate = rate[index].value;
+      return checkRate;
+    }
+  }
+
+}
+
+sendFormBtn.addEventListener('click', () => {
+  const forms = document.getElementById('evaluation-form');
+  const name = document.getElementById('input-name');
+  const lastName = document.getElementById('input-lastname');
+  const email = document.getElementById('input-email');
+  const house = document.getElementById('house');
+  const family = checkFamily();
+  const contents = checkContent();
+  const rate = checkRate();
+  const obs = textArea;
+
+
+
+  const array2 = [name.value, lastName.value, email.value, house.value, family.value, contents, rate, obs.value];
+  const item = ['Nome: ', 'Email: ', 'Casa: ', 'Família: ', 'Matérias:', 'Avaliação: ', 'Observações: '];
+
+  for (let index = 0; index < array2.length; index +=1){
+    if(index === 0) {
+      forms.innerText = `${item[index]} ${array2[index]}`;
+    }
+  }
+});
+
+
+
+
+
