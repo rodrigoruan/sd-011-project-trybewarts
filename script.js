@@ -83,6 +83,10 @@ function getDataForm(event) {
   createTexts(formObject, formFilled);
 }
 
+//function clearOlderForm() {
+//
+//}
+//
 const loginButton = document.querySelector('#login-button');
 const submitBtn = document.querySelector('#submit-btn');
 
@@ -94,6 +98,7 @@ const submitBtn = document.querySelector('#submit-btn');
       agreement();
     } else if (item === submitBtn) {
       getDataForm(event);
+  //    clearOlderForm();
     }
   });
 });
