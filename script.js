@@ -49,15 +49,26 @@ function getScore() {
   }
 }
 
+function createTexts(object, parent) {
+  for (const key in object) {
+    if (object[key] !== 0) {
+      const paramForm = document.createElement('p');
+      paramForm.innerText = object[key];
+      parent.appendChild(paramForm);
+    }
+  }
+}
+
 const fName = document.querySelector('#input-name');
 const lName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const observations = document.querySelector('#textarea');
+const mainForm = document.querySelector('#evaluation-form');
 
 function getDataForm(event) {
   event.preventDefault();
-  const object = {
+  const formObject = {
     name: `Nome: ${fName.value} ${lName.value}`,
     email: `Email: ${email.value}`,
     house: `Casa: ${house.value}`,
@@ -66,18 +77,10 @@ function getDataForm(event) {
     score: `Avaliação: ${getScore()}`,
     observations: `Observações: ${observations.value}`,
   };
-  const mainForm = document.querySelector('#evaluation-form');
   const formFilled = document.createElement('div');
   formFilled.id = 'form-filled';
   mainForm.appendChild(formFilled);
-
-  for (const key in object) {
-    if (object[key] !== 0) {
-      const paramForm = document.createElement('p');
-      paramForm.innerText = object[key];
-      formFilled.appendChild(paramForm);
-    }
-  }
+  createTexts(formObject, formFilled); 
 }
 
 const loginButton = document.querySelector('#login-button');
