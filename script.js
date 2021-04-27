@@ -42,3 +42,11 @@ btnCheck.addEventListener('click', validateButton);
 //     forms.appendChild(p);
 //   }
 // }
+
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('keyup', () => {
+  const paragrafo = document.querySelector('#counter');
+  let caracteresDisponiveis = 0;
+  caracteresDisponiveis = 500 - textArea.value.length;
+  paragrafo.innerText = caracteresDisponiveis;
+});
