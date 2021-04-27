@@ -63,11 +63,34 @@ footer {
   background-color: red;
 }
 
-.divContainer {
-  margin: 0 auto;
-}
 
-#evaluation-form {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ .divContainer {
+  margin: 0 auto;
+} 
+
+ #evaluation-form {
   width: 675px;
   max-height: 117px;
   display: flex;
@@ -75,4 +98,27 @@ footer {
   margin-left: 50px;
   flex-direction: column;
   text-align: center;
+} 
+
+.inputForm {
+  height: 40px;
+  border-radius: 12px;
+  padding: 6px 16px;
+  width: 220px;
+  margin-bottom: 2px;
 }
+
+.inputForm2 {
+  height: 40px;
+  border-radius: 12px;
+  padding: 6px 16px;
+  width: 200px;
+}
+
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+
+
