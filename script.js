@@ -17,6 +17,7 @@ const checkBtn = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 
 function check() {
+<<<<<<< HEAD
   var status = submitBtn.disabled;
 
   if (checkBtn.checked == false) {
@@ -29,3 +30,12 @@ function check() {
 }
 
 submitBtn.addEventListener('click', check);
+=======
+  if (checkBtn.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+checkBtn.addEventListener('click', check);
+>>>>>>> 95cecc0f967096d8fbcfabae34377bd3b43ff9fb
