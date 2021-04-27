@@ -18,18 +18,69 @@
         </form>
     </header>
     <main id=main>
+     
+
         <form action="" id="evaluation-form">
+            <h1>Forms</h1>
+        <div id="nome_sobrenome">
             <input id="input-name" placeholder="Nome" type="text">
             <input id="input-lastname" placeholder="Sobrenome" type="text">
+        </div>
+       
+        <div id="email_casa">
             <input id="input-email" placeholder="Email" type="email">
-            Qual a sua família?
+            Casa:
             <select name="" id="house">
-            
             <option id="gitnoria-house" value="">Gitnória</option>
             <option id="reactpuff-house" value="">Reactpuff</option>
             <option id="corvinode-house" value="">Corvinode</option>
             <option id="pytherina-house" value="">Pytherina</option>
-        </select>
+            </select>
+        </div>
+        ---------------------------------------------------------------------
+        <!-- Requisito 12-->
+        <div id="family">
+            <label id="label-family">
+                Qual sua família? <br>
+               
+            </label>
+            <input type="radio" id="frontend" name="family" value="Frontend">
+            <label for="Frontend">Família Frontend</label><br>
+            <input type="radio" id="backend" name="family" value="Backend">
+            <label for="Backend">Família Backend</label><br>
+            <input type="radio" id="fullstack" name="family" value="FullStack">
+            <label for="FullStack">Família FullStack</label> 
+        </div>
+        <!--Requisito 13-->
+        <div id="aprende">
+            
+        <label for="" id="label-content">
+            Qual conteúdo você está com mais vontade de aprender?
+           
+        </label>
+        <div>
+            <input type="checkbox" id="hofs" value="HoFs">
+            <label for="HoFs">HoFs</label>
+        
+            <input type="checkbox" id="jest" value="Jest">
+            <label for="Jest">Jest</label>
+        
+            <input type="checkbox" id="promises" value="Promises">
+            <label for="Promises">Promises</label>
+        </div>
+        <div>
+            <input type="checkbox" id="react" value="React">
+            <label for="React">React</label>
+            <input type="checkbox" id="sql" value="SQL">
+            <label for="SQL">Sql</label>
+            <input type="checkbox" id="python" value="Python">
+            <label for="Python">Python</label>
+        </div>   
+        </div>
+        ---------------------------------------------------------------------
+        <!-- Requisito 14-->
+
+        
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="TrybeWarts Emblema">
     </main>
