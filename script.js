@@ -53,7 +53,7 @@ function checkedValues(elem) {
 
 function createrElement(elem, fieldName) {
   const pText = document.createElement('p');
-  pText.className = `${fieldName.toLowerCase()}`
+  pText.className = `${fieldName.toLowerCase()}`;
   pText.innerText = `${fieldName}: `;
 
   if (elem.length > 0) {
@@ -73,7 +73,6 @@ btnSubmit.addEventListener('click', (event) => {
   fieldsetInformations.style.display = 'none';
   for (const fieldName of Object.keys(fields)) {
     const fieldValue = fields[`${fieldName}`];
-    console.log(fieldName, fieldValue.nodeName, fieldValue)
     createrElement(fieldValue, fieldName);
   }
   mainForm.style.display = 'block';
