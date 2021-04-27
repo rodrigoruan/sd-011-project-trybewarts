@@ -28,7 +28,7 @@ Sobre as percepções positivas: aprendemos a trabalhar de forma simultânea e a
 
 ---
 
-**Pessoas integrantes da dupla**: Laura Gusmão e Oryange Strifezze
+**Pessoas integrantes da dupla**: Laura Gusmão e Oryange Strifezze.
 
 ---
 
