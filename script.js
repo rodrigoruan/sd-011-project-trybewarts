@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 const elementLogin = document.getElementById('login');
-const elementSenha = document.getElementById('senha');
+const elementSenha = document.getElementById('password');
 const elementButtonLogin = document.getElementById('button-login');
 
 function erroLoginFunction() {
