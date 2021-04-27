@@ -32,11 +32,13 @@ function getFamily() {
 const subject = document.getElementsByName('checkbox-content');
 
 function getSubject() {
+  let checkedSubjects = '';
   for (let index = 0; index < subject.length; index += 1) {
     if (subject[index].checked) {
-      return subject[index].value;
+      checkedSubjects = `${checkedSubjects} ${subject[index].value}`;
     }
   }
+  return checkedSubjects;
 }
 
 const score = document.getElementsByName('rate');
