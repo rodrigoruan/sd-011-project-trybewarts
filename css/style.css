@@ -105,3 +105,16 @@ footer {
   padding: 10px;
   margin-left: -1012px;
 }
+
+.skill-choice {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  height: 75px;
+  margin-left: 25px;
+  flex-basis: 255px;
+}
+
+.choice-container {
+  display: flex;
+}
