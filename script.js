@@ -41,7 +41,6 @@ function getInfoDiv1() {
   const house = document.getElementById('house').value;
 }
 function getInfoDiv2() {
-
   // identificando a familia
   const family = document.getElementsByClassName('family');
   const familyArray = Array.from(family);
@@ -55,7 +54,6 @@ function getInfoDiv2() {
   subjectChecks = subjectChecks.map((elemento) => elemento.value);
 }
 function getInfoDiv3() {
-
   // identificando a nota
   const rate = document.getElementsByClassName('rate');
   const rateArray = Array.from(rate);
@@ -71,4 +69,4 @@ function changeForms(event) {
   getInfoDiv2();
   getInfoDiv3();
 }
-submitBtn.addEventListener('click', changeForms)
+submitBtn.addEventListener('click', changeForms);
