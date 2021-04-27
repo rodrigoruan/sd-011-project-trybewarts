@@ -126,3 +126,18 @@ footer {
   margin-top: 290px;
   margin-left: -1015px;
 }
+
+.divTexto {
+  display: flex;
+  width: 550px;
+  height: 50px;
+  margin-left: -450px;
+  margin-top: 320px;
+}
+
+#textarea {
+  margin-top: 25px;
+  margin-left: -180px;
+  height: 55px;
+  width: 500px;
+}
