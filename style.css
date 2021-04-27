@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Yusei Magic, sans-serif;
 }
 
 .header {
@@ -15,26 +16,32 @@
 .trybewarts-header-logo {
   width: 80px;
   height: 80px;
+  padding-left: 100px;
 }
 
 #trybewarts-header-title {
+  font-size: 50px;
   color: white;
+  text-align: center;
 }
 
 .trybewarts-login {
   display: flex;
   flex-flow: column wrap;
+  padding-right: 100px;
 }
 
 main {
   padding: 20px;
   display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  border-radius: 10px;
 }
 
 #trybewarts-forms-logo {
@@ -57,4 +64,11 @@ main {
 
 #textarea {
   resize: none;
+}
+
+footer {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
 }
