@@ -11,7 +11,6 @@
 	<header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    	<!-- Requisito 3 -->
       <form class="trybewarts-login row">
         <input class="form-control col" id="login-input" type="text" placeholder="Login" />
         <input class="form-control col" id="password-input" type="text" placeholder="Senha" />
@@ -22,7 +21,6 @@
   <main>
     <form id="evaluation-form">
       <div class="row">
-        <!-- FORM [nome, sobrenome e e-mail] -->
         <div class="fullname">
           <div class="col">
             <input id="input-name" type="text" class="form-control" placeholder="Nome" />
@@ -138,6 +136,12 @@
           </div>
         </div>
       </section>
+      
+      <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" maxlength="500" rows="8"></textarea>
+        <div class="counter">
+          <span id="counter"></span>
+        </div>
     </form>
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>

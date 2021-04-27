@@ -11,3 +11,18 @@ function loginInput() {
 }
 
 button.addEventListener('click', loginInput);
+
+const textarea = document.getElementById('textarea');
+const maxlength = textarea.getAttribute('maxlength');
+const counter = document.getElementById('counter');
+counter.innerText = maxlength;
+
+function countCharacter() {
+  const campo = textarea.value.length;
+  const restante = maxlength - campo;
+
+  counter.innerHTML = restante;
+}
+
+textarea.addEventListener('keyup', countCharacter);
+textarea.addEventListener('keydown', countCharacter);
