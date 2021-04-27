@@ -50,9 +50,9 @@ function renderFormsData() {
     `${getEls('#input-name')[0].value} ${getEls('#input-lastname')[0].value}`,
     getEls('#input-email')[0].value,
     getEls('#house')[0].value,
-    getEls('input[name="family"]')[0].value,
+    getEls('input[name="family"]:checked')[0].value,
     [...getEls('.subject:checked')].map((v) => v.value).join(', '),
-    getEls('input[name="rate"]')[0].value,
+    getEls('input[name="rate"]:checked')[0].value,
     getEls('textarea')[0].value,
   ];
   const listElement = document.createElement('ul');
@@ -72,14 +72,12 @@ function renderFormsData() {
   // const temp = user[user.length - 1];
   // user[user.length - 1] = joinedTechies;
   // user.push(temp);
-  // console.log(user);
   // const listElement = document.createElement('ul');
   // dataLabel.forEach((label, i) => {
   //   const li = document.createElement('li');
   //   li.innerText = `${label}: ${user[i]}`
   //   listElement.appendChild(li);
   // })
-  // forms.appendChild(listElement);
 }
 
 submitButton.addEventListener('click', renderFormsData);

@@ -52,8 +52,12 @@ main , #label-infos {
   gap: 10px 10px;
 }
 
-#evaluation-form > * > * {
+#evaluation-form > * > :not( label ) {
   flex: 1;
+}
+
+#label-rate {
+  margin-right: auto;
 }
 
 .trybewarts-login input {
