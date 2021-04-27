@@ -63,7 +63,7 @@ function submitForms(event) {
   event.preventDefault();
   const report = createPrintData();
   evaluationForm.innerHTML = '';
-  evaluationForm.appendChild(report);
+  evaluationForm.innerHTML = report.innerHTML;
 }
 
 submit.addEventListener('click', submitForm);
