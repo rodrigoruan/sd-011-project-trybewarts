@@ -141,3 +141,21 @@ footer {
   height: 55px;
   width: 500px;
 }
+
+#submit-btn {
+  justify-content: center;
+  padding: 5px;
+}
+
+.divAgree {
+  display: flex;
+  margin-top: 410px;
+  margin-left: -565px;
+}
+
+#label-infos > button {
+  display: flex;
+  background: purple;
+  margin-top: 20px;
+  width: 500px;
+} 
