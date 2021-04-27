@@ -62,6 +62,24 @@ function renderFormsData() {
     listElement.appendChild(li);
   });
   forms.appendChild(listElement);
+  // const formsData = [...new FormData(forms).entries()];
+  // const [user, techies] = formsData.reduce((acc, [field, value]) => {
+  //   if (field === 'lastname') acc[0][0] += ` ${value}`;
+  //   else acc[field === 'technology' ? 1 : 0].push(value);
+  //   return acc;
+  // }, [[],[]]);
+  // const joinedTechies = techies.join(', ');
+  // const temp = user[user.length - 1];
+  // user[user.length - 1] = joinedTechies;
+  // user.push(temp);
+  // console.log(user);
+  // const listElement = document.createElement('ul');
+  // dataLabel.forEach((label, i) => {
+  //   const li = document.createElement('li');
+  //   li.innerText = `${label}: ${user[i]}`
+  //   listElement.appendChild(li);
+  // })
+  // forms.appendChild(listElement);
 }
 
 submitButton.addEventListener('click', renderFormsData);
