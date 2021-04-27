@@ -252,7 +252,7 @@ footer {
 }
 
 #rate-form .radio {
-  height: 0.01px;
+  height: 1px;
 }
 
 #rate-form .radio:checked + .radio-label {
