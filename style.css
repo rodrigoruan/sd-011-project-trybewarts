@@ -70,3 +70,8 @@ main {
   justify-content: space-around;
   flex-grow: 1;
 }
+
+#agreement-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
