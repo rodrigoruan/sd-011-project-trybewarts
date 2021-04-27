@@ -118,3 +118,11 @@ footer {
 .choice-container {
   display: flex;
 }
+
+.trybewarts {
+  display: flex;
+  max-width: 550px;
+  height: 25px;
+  margin-top: 290px;
+  margin-left: -1015px;
+}
