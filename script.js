@@ -83,10 +83,11 @@ function getDataForm(event) {
   createTexts(formObject, formFilled);
 }
 
-//function clearOlderForm() {
-//
-//}
-//
+function clearOlderForm() {
+  const contentColumn = document.querySelector('.content-column');
+  mainForm.removeChild(contentColumn);
+}
+
 const loginButton = document.querySelector('#login-button');
 const submitBtn = document.querySelector('#submit-btn');
 
@@ -98,7 +99,7 @@ const submitBtn = document.querySelector('#submit-btn');
       agreement();
     } else if (item === submitBtn) {
       getDataForm(event);
-  //    clearOlderForm();
+      clearOlderForm();
     }
   });
 });
