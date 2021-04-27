@@ -10,4 +10,4 @@ function erroLoginFunction() {
   }
 }
 
-elementButtonLogin.addEventListener('click', erroLoginFunction);]
+elementButtonLogin.addEventListener('click', erroLoginFunction);
