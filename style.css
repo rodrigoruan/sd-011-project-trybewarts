@@ -15,8 +15,8 @@
   justify-content: flex-start;
 }
 
-.title-container{
-display: flex;
-flex: auto;
-justify-content:center;
+.title-container {
+  display: flex;
+  flex: auto;
+  justify-content: center;
 }
