@@ -35,9 +35,27 @@ function counterCharacter() {
 }
 textAreaId.addEventListener('keyup', counterCharacter);
 
-submitButton.addEventListener('click', () => {
-  const formsData = new FormData(forms);
-  for (const item of formsData.entries()) {
-    console.log(item);
+function renderFormsData(userInfo, technologies) {
+  const dataLabel = ['Nome', 'Email', 'Casa', 'Família', 'Matérias', 'Avaliação', 'Observações'];
+  const listElement = document.createElement('ul');
+  for (let i = 0; i < 6; i += 1) {
+    const li = document.createElement('li');
+    if (i === 4) {
+      li.innerText = `${dataLabel[i]}: ${technologies.join(', ')}`;
+    } else li.innerText = `${dataLabel[i]}: ${(userInfo[i] || 'Empty').trim()}`;
+    listElement.appendChild(li);
   }
-});
+  forms.appendChild(listElement);
+}
+
+function parseFormsData() {
+  const formsData = new FormData(forms);
+  const [userInfo, technologies] = [...formsData.entries()].reduce((acc, [field, value]) => {
+    if (field === 'lastname') acc[0][0] += ` ${value}`;
+    else acc[field === 'technology' ? 1 : 0].push(value);
+    return acc;
+  }, [[], []]);
+  renderFormsData(userInfo, technologies);
+}
+
+submitButton.addEventListener('click', parseFormsData);

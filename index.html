@@ -49,15 +49,15 @@
             id="input-email"
             name="email"
           />
-          <label for="house"
-            >Casa
+          <div class="select-wrapper">
+            <label for="house">Casa </label>
             <select name="sel" id="house" value="">
               <option id="gitnoria-house" value="gitnoria">Gitnória</option>
               <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
               <option id="corvinode-house" value="corvinode">Corvinode</option>
               <option id="pytherina-house" value="pytherina">Pytherina</option>
             </select>
-          </label>
+          </div>
         </div>
 
         <!-- Radio and Checkbox Container -->
@@ -66,7 +66,7 @@
           <div class="radio-control-wrapper">
             <label for="" id="label-family">Qual sua família?</label>
             <label>
-              <input type="radio" name="family" value="Frontend" />
+              <input type="radio" name="family" value="Frontend" checked />
               Família Frontend
             </label>
             <label>
@@ -85,27 +85,57 @@
               >Qual conteúdo você está com mais vontade de aprender?</label
             >
             <label>
-              <input type="checkbox" value="HoFs" name="technology" />
+              <input
+                type="checkbox"
+                value="HoFs"
+                name="technology"
+                class="subject"
+              />
               HoFs
             </label>
             <label>
-              <input type="checkbox" value="Jest" name="technology" />
+              <input
+                type="checkbox"
+                value="Jest"
+                name="technology"
+                class="subject"
+              />
               Jest
             </label>
             <label>
-              <input type="checkbox" value="Promises" name="technology" />
+              <input
+                type="checkbox"
+                value="Promises"
+                name="technology"
+                class="subject"
+              />
               Promises
             </label>
             <label>
-              <input type="checkbox" value="React" name="technology" />
+              <input
+                type="checkbox"
+                value="React"
+                name="technology"
+                class="subject"
+              />
               React
             </label>
             <label>
-              <input type="checkbox" value="SQL" name="technology" />
+              <input
+                type="checkbox"
+                value="SQL"
+                name="technology"
+                class="subject"
+              />
               SQL
             </label>
             <label>
-              <input type="checkbox" value="Python" name="technology" />
+              <input
+                type="checkbox"
+                value="Python"
+                name="technology"
+                class="subject"
+              />
               Python
             </label>
           </div>
@@ -116,7 +146,7 @@
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
 
           <label>
-            <input type="radio" value="1" name="rate" /> 1
+            <input type="radio" value="1" name="rate" checked /> 1
             <input type="radio" value="2" name="rate" /> 2
             <input type="radio" value="3" name="rate" /> 3
             <input type="radio" value="4" name="rate" /> 4
@@ -138,7 +168,7 @@
         ></textarea>
         <p id="counter">500</p>
 
-        <!--Agree checkbox-->
+        <!--Agree Checkbox Container-->
         <label id="label-infos"
           >Você concorda com o uso das informações acima?
           <input type="checkbox" id="agreement" />
