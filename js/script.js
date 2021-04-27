@@ -15,3 +15,14 @@ function validateLogin(e) {
 }
 
 loginForm.addEventListener('submit', validateLogin);
+
+const button = document.getElementById('agreement');
+const sendButton = document.getElementById('submit-btn');
+
+button.addEventListener('click', () => {
+  if (button.checked === true) {
+    sendButton.disabled = false;
+  } else if (button.checked === false) {
+    sendButton.disabled = true;
+  }
+});
