@@ -60,7 +60,9 @@ main {
 }
 
 footer {
-  background-color: red;
+  text-align: center;
+  padding: 8px;
+  background-color: dimgray;
 }
 
 .divContainer {
