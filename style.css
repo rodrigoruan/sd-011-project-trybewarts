@@ -44,7 +44,12 @@ main {
 #evaluation-form div:nth-of-type( 3 ) {
   display: flex;
   flex-direction: column;
-  background-color: brown;
+  background-color: brown; /* [Remover] */
+}
+
+#evaluation-form div:nth-of-type( 5 ) {
+  display: flex;
+  background-color: rgb(69, 42, 165); /* [Remover] */
 }
 
 #trybewarts-forms-logo {
