@@ -31,11 +31,11 @@ checkbox.addEventListener('click', () => {
     submit.disabled = false;
   }
 });
-
+// diminiur a contagem de caracteres
 textArea.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textArea.value.length;
 });
-
+// 21
 submit.addEventListener('click', (event) => {
   event.preventDefault();
   const family = document.querySelector('input[name="family"]:checked').value;

@@ -111,6 +111,9 @@ main {
   font-size: 14px;
   padding: 5px 0;
   margin: 10px 0;
+  color: white;
+  border-radius: 5px;
+  background: linear-gradient(120deg, rgba(132,218,187),rgba(3,123,94), rgba(143,119,179), rgba(65,25,127));
 }
 
 textarea {
@@ -120,5 +123,7 @@ textarea {
 footer {
   padding: 5px 0;
   text-align: center;
-  background-color: rgb(38, 39, 43);
+  background-color: #3C404A;
+  color: white;
+  height: 30px;
 }
