@@ -47,15 +47,29 @@ textarea.addEventListener('input', () => {
 // get all checked form's elements
 // References
 // Checked: https://www.w3schools.com/jsref/prop_checkbox_checked.asp
-// function subjectChecked() {
-//   const ckdSubject = document.querySelectorAll('.subject:checked');
-//   const SubjectList = [];
+function subjectChecked() {
+  const ckdSubject = document.querySelectorAll('.subject:checked');
+  const SubjectList = [];
 
-//   for (let index = 0; index < ckdSubject.length; index += 1) {
-//     SubjectList.push(ckdSubject[index].value);
+  for (let index = 0; index < ckdSubject.length; index += 1) {
+    SubjectList.push(ckdSubject[index].value);
+  }
+
+  return SubjectList;
+}
+
+// function getFormData() {
+//   const rawFormData = new FormData(evaluationForm);
+
+//   for (const key of rawFormData.keys()) {
+//     const value = rawFormData.getAll(key);
+
+//     if (key !== 'subject') {
+//       [formData[key]] = value;
+//     } else {
+//       formData[key] = value;
+//     }
 //   }
-
-//   return SubjectList;
 // }
 
 // get all form's values
@@ -63,16 +77,15 @@ textarea.addEventListener('input', () => {
 // Objects: https://www.w3schools.com/js/js_objects.asp
 // Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 // Prevent Default (used to prevent blank or empty values): https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
-btnSubmit.addEventListener('click', (event) => {
-  const rawFormData = new FormData(evalForm);
-  const value = rawFormData.getAll('subject');
+evalForm.addEventListener('submit', (event) => {
+  getFormData();
+
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
     Email: `${iptEmail.value}`,
     Casa: `${sltHouse.value}`,
     Família: `${document.querySelector('input[name="family"]:checked').value}`,
-    // Matérias: subjectChecked(),
-    Matérias: `${value.subject.join(', ')}`,
+    Matérias: subjectChecked(),
     Avaliação: `${document.querySelector('input[name="rate"]:checked').value}`,
     Observações: `${textarea.value}`,
   };
