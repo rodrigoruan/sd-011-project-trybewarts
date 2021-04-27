@@ -32,23 +32,36 @@ function charCounter() {
   counter.innerText = charsLeft;
 }
 
-function createResume() {
-  const inputData = new FormData(evaluationForm);
-  const resume = document.createElement('div');
-  resume.id = 'resume';
-  resume.className = 'section';
-  for (const [key, value] of inputData) {
-    const singleField = document.createElement('p');
-    singleField.className = 'container';
-    singleField.innerText = `${key}: ${value}`;
-    resume.appendChild(singleField);
+function createObjectToPrint(formData) {
+  const objectToPrint = {
+    Nome: `${formData.get('name')} ${formData.get('lastname')}`,
+    Email: `${formData.get('email')}`,
+    Casa: `${formData.get('house')}`,
+    Família: `${formData.get('family')}`,
+    Matérias: `${formData.getAll('subject').toString()}`,
+    Avaliação: `${formData.get('rate')}`,
+    Observações: `${formData.get('comment-text')}`,
+  };
+  return objectToPrint;
+}
+
+function createPrintData() {
+  const inputData = createObjectToPrint(new FormData(evaluationForm));
+  console.log(inputData);
+  const dataToPrint = document.createElement('div');
+  dataToPrint.id = 'dataToPrint';
+  dataToPrint.className = 'section';
+  for (const [key, value] of Object.entries(inputData)) {
+    const paragraph = document.createElement('p');
+    paragraph.innerText = `${key}: ${value}`;
+    dataToPrint.appendChild(paragraph);
   }
-  return resume;
+  return dataToPrint;
 }
 
 function submitForms(event) {
   event.preventDefault();
-  const report = createResume();
+  const report = createPrintData();
   evaluationForm.innerHTML = '';
   evaluationForm.appendChild(report);
 }
