@@ -17,20 +17,6 @@ const checkBtn = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 
 function check() {
-<<<<<<< HEAD
-  var status = submitBtn.disabled;
-
-  if (checkBtn.checked == false) {
-    submitBtn.disabled = true;
-    console.log('esta ok');
-  } else if (checkBtn.checked == true) {
-    submitBtn.disabled = false;
-    console.log('false');
-  }
-}
-
-submitBtn.addEventListener('click', check);
-=======
   if (checkBtn.checked) {
     submitBtn.disabled = false;
   } else {
@@ -38,4 +24,9 @@ submitBtn.addEventListener('click', check);
   }
 }
 checkBtn.addEventListener('click', check);
->>>>>>> 95cecc0f967096d8fbcfabae34377bd3b43ff9fb
+
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+textArea.addEventListener('input', () => {
+  counter.innerHTML = textArea.maxlength - textArea.value.length
+});
