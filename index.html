@@ -45,17 +45,16 @@
           <div>
             <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           </div>
-          <div>
-            <label for=""><input value="HoFs" type="checkbox">HoFs</label>
-            <label for=""><input value="Jest" type="checkbox">Jest</label>
-            <label for=""><input value="Promises" type="checkbox">Promises</label>
-            <label for=""><input value="React" type="checkbox">React</label>
-            <label for=""><input value="SQL" type="checkbox">SQL</label>
-            <label for=""><input value="Python" type="checkbox">Python</label>
+          <div id="conteudo">
+            <label for=""><input class="option" value="HoFs" type="checkbox">HoFs</label>
+            <label for=""><input class="option" value="Jest" type="checkbox">Jest</label>
+            <label for=""><input class="option" value="Promises" type="checkbox">Promises</label>
+            <label for=""><input class="option" value="React" type="checkbox">React</label>
+            <label for=""><input class="option" value="SQL" type="checkbox">SQL</label>
+            <label for=""><input class="option" value="Python" type="checkbox">Python</label>
           </div>
         </div>
       </div>
-
       <!-- NPS -->
       <div id="nps-box">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
@@ -72,7 +71,8 @@
       </div>
       <!-- Text Area -->
       <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea name="" placeholder="" id="" maxlength="500" cols="30" rows="10"></textarea>
+      <textarea name="" placeholder="" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+      <p id="counter">500</p>
       <!-- Agreement -->
       <label for="" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="" id="agreement"></label>
       <!-- Send Button -->
@@ -83,4 +83,4 @@
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
 </body>
-</html
+</html>
