@@ -56,12 +56,14 @@ function formataDados(materias) {
 const evaluationForm = document.forms.namedItem('evaluation-form');
 evaluationForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
+  const materiasArray = [];
   let materias = '';
   for (let index = 0; index < 6; index += 1) {
     if (document.getElementsByClassName('subject')[index].checked) { // if verifica se checked do elemento atual da lista de elementos que possuem a classe (subject) está ativa ou seja, true // se for então
-      materias += ` ${document.getElementsByClassName('subject')[index].value}  `;
+      materiasArray.push(document.getElementsByClassName('subject')[index].value);
     }
   }
+  materias = materiasArray.join(',');
   const textoForm = formataDados(materias);
   // Apagar formulário ao recarregar página
   for (let i = 0; i < 5; i += 1) {
