@@ -34,7 +34,9 @@ const subject = document.getElementsByName('checkbox-content');
 function getSubject() {
   let checkedSubjects = '';
   for (let index = 0; index < subject.length; index += 1) {
-    if (subject[index].checked) {
+    if (subject[index].checked && checkedSubjects === '') {
+      checkedSubjects = `${subject[index].value}`;
+    } else if (subject[index].checked) {
       checkedSubjects = `${checkedSubjects}, ${subject[index].value}`;
     }
   }
