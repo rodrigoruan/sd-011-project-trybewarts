@@ -1,4 +1,14 @@
-header {
+.header {
   background-color: rgb(50, 167, 145);
   display: flex;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+}
+
+.trybewarts-header-logo {
+  justify-content: flex-start;
 }
