@@ -11,9 +11,9 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  
+  
+  
 }
 
 .trybewarts-header-logo {
@@ -26,13 +26,18 @@ header {
 }
 
 .trybewarts-login {
-  height: 20px;
-  width: 440px;
+  height: 30px;
+  width: 150px;
   display: flex;
   justify-content: flex-end;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: rgb(78, 44, 131);
+  color: white;
+  margin-right: 15px;
 }
 
-#login, #senha{
+#login , #senha {
   margin: 0 10px;
 }
 
@@ -50,12 +55,3 @@ main {
   height: 500px;
 }
 
-.trybewarts-login {
-  height: 30px;
-  width: 150px;
-  padding-left: 10px;
-  border-radius: 5px;
-  background-color: rgb(78, 44, 131);
-  color: white;
-  margin-right: 15px;
-}
