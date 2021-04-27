@@ -36,18 +36,17 @@ header {
   margin-right: 10px;
 }
 
-#main{
+#main {
   display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   width: 300px;
 }
-
