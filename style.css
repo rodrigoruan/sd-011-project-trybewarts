@@ -332,6 +332,7 @@ main section img {
     border-radius: 5px;
     color: white;
     width: 20%;
+    opacity: 50%;
   }
 
   select {
@@ -444,7 +445,7 @@ main section img {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px solid rgb(175, 176, 176);
-    padding: 15px;
+    padding: 15px 0;
   }
 
   #input-name , #input-lastname , #input-email , #div-select {
@@ -473,7 +474,7 @@ main section img {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgb(175, 176, 176);
-    padding: 15px;
+    padding: 15px 0;
   }
 
   #div-label-family {
@@ -490,7 +491,7 @@ main section img {
   }
 
   #div-trybewarts-rate {
-    padding: 15px 5px 5px;
+    padding: 15px 0;
   }
 
   #div-textarea {
@@ -499,14 +500,14 @@ main section img {
     flex-direction: column;
   }
 
-  .textarea , #textarea , p , #div-label-infos {
-    padding: 15px;
+  .textarea , p , #div-label-infos {
+    padding: 15px 0;
   }
 
   #textarea {
     display: flex;
     width: 675px;
-    height: 94px;
+    height: 110px;
     resize: none;
   }
 
@@ -518,10 +519,12 @@ main section img {
     color: white;
     width: 30%;
     align-self: center;
+    opacity: 50%;
   }
 
   #trybewarts-logo {
     display: flex;
+    align-self: center;
     order: 2;
   }
 

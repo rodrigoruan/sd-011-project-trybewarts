@@ -39,8 +39,10 @@ function checkBox() {
     const submitBtn = document.getElementById('submit-btn');
     if (checkMark.checked) {
       submitBtn.disabled = false;
+      submitBtn.style.opacity = '100%'
     } else {
       submitBtn.disabled = true;
+      submitBtn.style.opacity = '50%'
     }
   };
 }
