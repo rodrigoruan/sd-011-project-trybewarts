@@ -38,7 +38,7 @@ function createObjectToPrint(formData) {
     Email: `${formData.get('email')}`,
     Casa: `${formData.get('house')}`,
     Família: `${formData.get('family')}`,
-    Matérias: `${formData.getAll('subject').toString()}`,
+    Matérias: `${formData.getAll('subject').join(', ')}`,
     Avaliação: `${formData.get('rate')}`,
     Observações: `${formData.get('comment-text')}`,
   };
