@@ -40,25 +40,39 @@ main {
 }
 
 #label-family {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
-.input-family {
+#label-family ~ input {
   display: block;
+}
+
+#label-content {
+  display: block;
+}
+
+#label-content ~ input {
+  display: inline;
 }
 
 #label-rate {
   display: inline;
 }
 
-.div-agreement {
-  display: flex;
+#label-rate ~ input {
+  display: inline;
 }
 
-#informacoes {
-  display: none;
-  width: 675px;
-  height: 90vh;
-  background-color: pink;
+#feedback {
+  display: block;
+}
+
+#label-infos {
+  display: inline;
+}
+
+#submit-btn {
+  display: block;
+  margin: 10px auto;
+  width: 30%;
 }
