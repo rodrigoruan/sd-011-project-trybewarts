@@ -31,7 +31,7 @@ main {
   width: 100%;
   border: 3px solid rgb(255, 38, 0); /* [Remover] */
   justify-content: space-between;
-  align-items: center; /* estava no .div-login do Matheus*/
+  align-items: center; /* estava no .div-login do Matheus */
 }
 
 #evaluation-form {
