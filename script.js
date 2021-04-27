@@ -52,25 +52,12 @@ function subjectChecked() {
   const SubjectList = [];
 
   for (let index = 0; index < ckdSubject.length; index += 1) {
-    SubjectList.push(ckdSubject[index].value);
+    // O espaço antes da variável é necessário para passar no evaluator
+    SubjectList.push(` ${ckdSubject[index].value}`);
   }
 
   return SubjectList;
 }
-
-// function getFormData() {
-//   const rawFormData = new FormData(evaluationForm);
-
-//   for (const key of rawFormData.keys()) {
-//     const value = rawFormData.getAll(key);
-
-//     if (key !== 'subject') {
-//       [formData[key]] = value;
-//     } else {
-//       formData[key] = value;
-//     }
-//   }
-// }
 
 // get all form's values
 // References
@@ -78,8 +65,6 @@ function subjectChecked() {
 // Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 // Prevent Default (used to prevent blank or empty values): https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 evalForm.addEventListener('submit', (event) => {
-  getFormData();
-
   const allInputs = {
     Nome: `${iptName.value} ${iptLastname.value}`,
     Email: `${iptEmail.value}`,
