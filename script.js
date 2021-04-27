@@ -1,5 +1,20 @@
 function start() {
-  function validaLogin() {
+  function validaEnviar() { // Requisito 18
+    const btnEnviar = document.getElementById('submit-btn');
+    btnEnviar.disabled = true;
+    const agree = document.getElementById('agreement');
+    agree.checked = false;
+
+    agree.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        btnEnviar.disabled = false;
+      } else {
+        btnEnviar.disabled = true;
+      }
+    });
+  }
+
+  function validaLogin() { // Requisito 3.6
     const inputEmail = document.querySelector('#email-login');
     const inputSenha = document.querySelector('#password-login');
     // let formLogin = document.getElementsByClassName('trybewarts-login')[0]; // Também Funciona
@@ -13,5 +28,6 @@ function start() {
     });
   }
   validaLogin();
+  validaEnviar();
 }
 window.onload = start;
