@@ -32,16 +32,15 @@ checkbox.addEventListener('click', () => {
   }
 });
 
-// textare characters counter
+// textarea characters counter
 // References
 // Tutorial for Textarea's Counter: http://www.mattmorgante.com/technology/textarea-remaining-characters-javascript
 // Template Literals: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-textarea.addEventListener('keydown', () => {
-  const countRemaining = document.querySelector('#counter');
-  const textEntered = textarea.value.length;
-  const counter = (500 - textEntered);
+textarea.addEventListener('input', () => {
+  const counter = document.querySelector('#counter');
+  const maxlength = textarea.getAttribute('maxlength');
 
-  countRemaining.innerHTML = `${counter} caracteres`;
+  counter.innerHTML = maxlength - textarea.value.length;
 });
 
 // get all checked form's elements
@@ -52,7 +51,7 @@ function subjectChecked() {
   const SubjectList = [];
 
   for (let index = 0; index < ckdSubject.length; index += 1) {
-    SubjectList.push(`${ckdSubject[index].value}`);
+    SubjectList.push(ckdSubject[index].value);
   }
 
   return SubjectList;
