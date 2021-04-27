@@ -33,57 +33,89 @@ function habilitaEnvio() {
 }
 habilitaEnvio();
 
-function substituiDados(event) {
-  event.preventDefault();
-  const newForm = document.createElement('form');
-  newForm.id = 'evaluation-form';
-  mainContainer.appendChild(newForm);
-
+function nameData() {
   const inputName = document.getElementById('input-name').value;
   const inputLastName = document.getElementById('input-lastname').value;
   const name = document.createElement('div');
   name.innerHTML = `Nome: ${inputName} ${inputLastName}`;
-  newForm.appendChild(name);
+  return name;
+}
 
+function emailData() {
   const inputEmail = document.getElementById('input-email').value;
   const email = document.createElement('div');
   email.innerHTML = `Email: ${inputEmail}`;
-  newForm.appendChild(email);
+  return email;
+}
 
+function houseData() {
   const inputHouse = document.getElementById('house').value;
   const house = document.createElement('div');
   house.innerHTML = `Casa: ${inputHouse}`;
-  newForm.appendChild(house);
+  return house;
+}
 
-  const allInputs = document.querySelectorAll('input');
-  for (let index = 0; index < allInputs.length; index += 1) {
-    if (allInputs[index].type === 'radio' && allInputs[index].name === 'family' && allInputs[index].checked) {
-      const family = document.createElement('div');
-      family.innerHTML = `Família: ${allInputs[index].value}`;
-      newForm.appendChild(family);
-    }
-    /*const subject = document.createElement('div');
-    let subjectList = [];
-    if (allInputs[index].className === 'subject' && allInputs[index].checked) {
-      subjectList.push(allInputs[index].value);
-      subject.innerHTML = `Matérias: ${subjectList}`;
-     
-    }*/
-    if (allInputs[index].name === 'rate' && allInputs[index].checked) {
-      const rate = document.createElement('div');
-      rate.innerHTML = `Avaliação: ${allInputs[index].value}`;
-      newForm.appendChild(rate);
+function familyData() {
+  const input = document.querySelectorAll('input');
+  const family = document.createElement('div');
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index].type === 'radio' && input[index].name === 'family' && input[index].checked) {
+      family.innerHTML = `Família: ${input[index].value}`;
     }
   }
+  return family;
+}
+
+function subjectData() {
+  const checkOptions = document.getElementsByClassName('subject');
+  const subjects = document.createElement('div');
+  const subjectsIndex = [];
+  for (let index = 0; index < checkOptions.length; index += 1) {
+    if (checkOptions[index].checked) {
+      subjectsIndex.push(checkOptions[index].value);
+    }
+  }
+  subjects.innerHTML = `Matérias: ${subjectsIndex.join(', ')}`;
+  return subjects;
+}
+
+function rateData() {
+  const allInputs = document.querySelectorAll('input');
+  const rate = document.createElement('div');
+  for (let index = 0; index < allInputs.length; index += 1) {
+    if (allInputs[index].name === 'rate' && allInputs[index].checked) {
+      rate.innerHTML = `Avaliação: ${allInputs[index].value}`;
+    }
+  }
+  return rate;
+}
+
+function observationData() {
   const comments = document.createElement('div');
   const commentsInput = document.getElementById('textarea').value;
   comments.innerHTML = `Observações: ${commentsInput}`;
-  newForm.appendChild(comments);
+  return comments;
+}
 
-
-
-
+function renderedData(event) {
+  event.preventDefault();
+  const newForm = document.createElement('form');
+  newForm.id = 'evaluation-form';
+  const name = nameData();
+  newForm.appendChild(name);
+  const email = emailData();
+  newForm.appendChild(email);
+  const house = houseData();
+  newForm.appendChild(house);
+  const family = familyData();
+  newForm.appendChild(family);
+  const subject = subjectData();
+  newForm.appendChild(subject);
+  const rate = rateData();
+  newForm.appendChild(rate);
+  const observation = observationData();
+  newForm.appendChild(observation);
   mainContainer.replaceChild(newForm, formData);
 }
 
-btnEnvia.addEventListener('click', substituiDados);
+btnEnvia.addEventListener('click', renderedData);
