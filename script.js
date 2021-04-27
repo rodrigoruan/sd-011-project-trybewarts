@@ -80,7 +80,7 @@ function getDataForm(event) {
   const formFilled = document.createElement('div');
   formFilled.id = 'form-filled';
   mainForm.appendChild(formFilled);
-  createTexts(formObject, formFilled); 
+  createTexts(formObject, formFilled);
 }
 
 const loginButton = document.querySelector('#login-button');
