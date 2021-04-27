@@ -12,3 +12,20 @@ function login() {
   }
 }
 buttonInput.addEventListener('click', login);
+
+const checkBtn = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+function check() {
+  var status = submitBtn.disabled;
+
+  if (checkBtn.checked == false) {
+    submitBtn.disabled = true;
+    console.log('esta ok');
+  } else if (checkBtn.checked == true) {
+    submitBtn.disabled = false;
+    console.log('false');
+  }
+}
+
+submitBtn.addEventListener('click', check);
