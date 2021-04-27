@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
     </form>
   </header>
 
-  <main id="main">
+  <main id="main-form">
     <form action="" method="GET" id="evaluation-form">
       
       <!-- 8.Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:' -->
@@ -49,43 +49,43 @@
     </div>
 
       <div>
-      <label>Família Frontend</label>
-      <input type="radio" value="Frontend" name="family">
+      <label for="frontend">Família Frontend</label>
+      <input type="radio" id="frontend" value="Frontend" name="family">
     </div>
 
       <div>
-      <label>Família Backend</label>
-        <input type="radio" value="Backend" name="family">
+      <label for="backend">Família Backend</label>
+        <input type="radio" id="backend" value="Backend" name="family">
       </div>
 
       <div>
-        <label>Família FullStack</label>
-          <input type="radio" value="FullStack" name="family">
+        <label for="fullstack">Família FullStack</label>
+          <input type="radio" id="fullstack" value="FullStack" name="family">
         </div>
         
       <div id="techs">
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         
-        <div>
+        <div id="conteudo1">
         <label for="HoFs">HoFs</label>
-          <input type="checkbox" id="HoFs" value="HoFs">
+          <input type="checkbox" id="HoFs" value="HoFs" class="subject">
         
         <label for="Jest">Jest</label>
-          <input type="checkbox" id="Jest" value="Jest">
+          <input type="checkbox" id="Jest" value="Jest" class="subject">
   
         <label for="Promises">Promises</label>
-          <input type="checkbox" id="Promises" value="Promises">
+          <input type="checkbox" id="Promises" value="Promises" class="subject">
         </div>
 
-        <div>
+        <div id="conteudo2">
         <label for="React">React</label>
-          <input type="checkbox" id="React" value="React">
+          <input type="checkbox" id="React" value="React" class="subject">
   
         <label for="SQL">SQL</label>
-          <input type="checkbox" id="SQL" value="SQL">
+          <input type="checkbox" id="SQL" value="SQL" class="subject">
   
         <label for="Python">Python</label>
-          <input type="checkbox" id="Python" value="Python">
+          <input type="checkbox" id="Python" value="Python" class="subject">
       </div>
     </div>
 
