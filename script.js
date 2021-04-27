@@ -38,3 +38,37 @@ function textCounter() {
   });
 }
 textCounter();
+
+
+
+let object = {
+  Nome: document.getElementById('input-name').value,
+  Sobrenome: document.getElementById('input-lastname').value,
+  Email: document.getElementById('input-email').value,
+  Casa: document.getElementById('house').value,
+  Familia: document.getElementById('familia').value,
+  Matérias: document.getElementById('label-content').value,
+  Avaliação: document.getElementById('label-rate').value,
+  Observações: document.getElementById('textarea').value
+};
+
+
+const getButton = document.getElementById('submit-btn');
+
+getButton.addEventListener('click', () => {
+  const getMain = document.querySelector('main');
+  const creatDiv = document.createElement('div');
+  getMain.appendChild(creatDiv);
+  const getForm = document.getElementById('evaluation-form');
+
+  for (let index = 0; index < object.length; index += 1) {
+
+  }
+  // getForm.remove();
+});
+
+let test = {
+  Nome: 'Trybe',
+  Sobrenome: 'Xablau',
+};
+console.log(Object.values(test));
