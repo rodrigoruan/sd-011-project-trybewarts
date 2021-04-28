@@ -112,40 +112,24 @@ function observation() {
   return getDiv7;
 }
 
-function copyDatas() {
-  sendBtn.addEventListener('click', (event) => {
+function copyDatas(event) {
     event.preventDefault();
-
     const newestForm = document.createElement('form');
     newestForm.id = 'evaluation-form';
-
     const getDiv1 = nameAndLast();
     newestForm.appendChild(getDiv1);
-  
     const getDiv2 = emails();
     newestForm.appendChild(getDiv2);
-
     const getDiv3 = houses();
     newestForm.appendChild(getDiv3);
-
     const getDiv4 = families();
     newestForm.appendChild(getDiv4);
-
     const getDiv5 = familyBox();
     newestForm.appendChild(getDiv5);
-
     const getDiv6 = getRate();
     newestForm.appendChild(getDiv6);
-
     const getDiv7 = observation();
     newestForm.appendChild(getDiv7);
-
     mainForm.replaceChild(newestForm, forms);
-  });
 }
-copyDatas();
-
-
-function submitData(e) {
-  e.preventDefault
-}
+sendBtn.addEventListener('click', copyDatas);
