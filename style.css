@@ -5,7 +5,6 @@
 
 body {
   max-width: 1366;
-  max-height: 768;
   font-size: 25px;
 }
 
@@ -14,8 +13,12 @@ body {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  /* padding: 6px; */
+  padding: 6px;
   align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
 }
 
 .header h1 {
@@ -26,31 +29,25 @@ body {
   font-size: 1.5em;
 }
 
-.textareaCounter{
+.textareaCounter {
   display: flex;
   width: fit-content;
 }
 
-#counter{ 
-  position: relative;
-  align-self: flex-end;
-  z-index: 1;
-  right: 30px;
-  color: rgb(153, 153, 153);
-}
 
 .trybewarts-header-logo {
   width: 50px;
   height: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and ( max-width : 600px ) {
+  
   body {
     width: 600px;
     font-size: 15px;
   }
 
-  .header{
+  .header {
     flex-direction: column;
     width: 100%;
     margin: 0;
@@ -60,6 +57,14 @@ body {
     display: none;
   }
 
+  #counter { 
+    position: relative;
+    align-self: flex-end;
+    z-index: 1;
+    right: 30px;
+    color: rgb(153, 153, 153);
+  }
+  
   fieldset {
     width: 400px;
     margin: 0 auto;
@@ -67,7 +72,9 @@ body {
   }
 
   #evaluation-form {
-    background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(/images/trybewarts-colored.svg);
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8) ,
+    rgba(255, 255, 255, 0.8))
+    , url(/images/trybewarts-colored.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 400px;
