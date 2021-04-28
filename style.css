@@ -53,3 +53,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+#trybewarts-header-title {
+  color: bisque;
+}
+
+#submit-btn {
+  padding: 15px;
+  background-color: rgb(50, 167, 145);
+}
+
+#submit {
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
+  background-color: cornflowerblue;
+  margin-right: 13px;
+}
+
+#loginHeader {
+  margin-right: 3px;
+}
