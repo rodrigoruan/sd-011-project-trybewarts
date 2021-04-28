@@ -33,4 +33,8 @@ function contador() {
   counter.innerText = 500 - textLen;
 }
 
+<<<<<<< HEAD
 textArea.addEventListener('keyup', contador);
+=======
+textArea.addEventListener('keyup', contador);
+>>>>>>> 400fce22502db12c2751694619de1eac7ea0755f
