@@ -101,8 +101,7 @@ sendFormBtn.addEventListener('click', (e) => {
   for (let key in formResultKeys) {
     let newFormInfo = document.createElement('p');
     formsOutput.appendChild(newFormInfo).innerText = `${formResultKeys[key]}: ${formResult[formResultKeys[key]]}`;
-    // console.log(`${formResultKeys[key]}: ${formResult[formResultKeys[key]]}`);
   }
-  // document.getElementById('evaluation-form')[0].style.display = 'none';
 })
+
 
