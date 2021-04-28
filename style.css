@@ -33,8 +33,70 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  padding: 30px;
+  font-size: 1.1em;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#stackFamilyDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#middleSectionForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contentLearningDiv {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  padding: 8px;
+}
+
+#check-info {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.setMarginInput {
+  margin: 7px;
+}
+
+#label-infos {
+  padding-right: 10px;
+}
+
+.textarea {
+  padding: 10px 0;
+}
+
+#submit-btn {
+  background-color: rgb(60, 5, 109);
+  color: white;
+  padding: 9px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+#form-nome-sobrenome {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
