@@ -44,3 +44,12 @@ main {
 .margin {
   margin-top: 3px;
 }
+
+footer {
+  background-color: grey;
+  color: wheat;
+  padding: 15px;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+}
