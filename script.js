@@ -22,3 +22,12 @@ requiredBtn.addEventListener('click', () => {
     disabledBtn.disabled = true;
   }
 });
+
+const getText = document.getElementById('textarea');
+const getCounter = document.getElementById('counter');
+
+getCounter.innerText = getText.maxLength;
+
+getText.addEventListener('keyup', () => {
+  getCounter.innerText = getText.maxLength - getText.value.length;
+});
