@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
@@ -77,10 +77,9 @@
        <label><input type="radio" value="10" name="rate" class="radioRate">10</label>
 
       </div>
-      
-      <label class="textarea">Deixe seu comentário:
-        <textarea style="resize: none" id="textarea" placeholder="500" maxlength="500"></textarea>
-        <p id="counter">500</p>
+<!-- essa classe 'textarea' do label esta dando conflito com o Bulma -->
+      <label class="textareas">Deixe seu comentário:
+        <textarea style="resize: none" class="textarea" placeholder="500" maxlength="500"></textarea>
       </label>
 
        
