@@ -31,7 +31,7 @@ agreementBox.addEventListener('change', () => {
   }
 });
 
-// Word Count!
+// Word Count!!
 textAreaInput[0].addEventListener('keyup', () => {
   textCounter.innerText = 500 - textAreaInput[0].value.length;
 });
