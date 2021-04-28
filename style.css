@@ -81,3 +81,91 @@ body {
   }
 
 }
+
+@media screen and ( min-width : 800px ) {
+  
+  .header {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .trybewarts-login {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .trybewarts-login input {
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .labels {
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .evaluator{
+    display: flex;
+  }
+
+  .trybewarts-login button {
+    height: 30px;
+    align-self: center;
+    width: 50px;
+    background-color: blue;
+    border: white solid 1px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .trybewarts-login button:hover {
+    background-color: red;
+    color: black;
+    border: black solid 1px;
+  }
+
+  #counter {
+    position: relative;
+    align-self: flex-end;
+    z-index: 1;
+    right: 45px;
+    color: rgb(153, 153, 153);
+  }
+
+  #trybewarts-forms-logo {
+    width: 500px;
+    height: 500px;
+  }
+
+  .trybewarts-main , #evaluation-form {
+    display: flex;
+  }
+
+  .family-container ,
+  .label-trybewarts {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  #evaluation-form {
+    width: 675px;
+    flex-direction: column;
+  }
+
+  .family-matter {
+    display: flex;
+  }
+
+  fieldset {
+    width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+}
