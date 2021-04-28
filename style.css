@@ -14,7 +14,7 @@
 #trybewarts-header-title {
   padding: 1rem;
   color: white;
-  font-family: 'Orelega One', cursive,
+  font-family: Orelega One, cursive;
 }
 
 .trybewarts-login {
