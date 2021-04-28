@@ -27,19 +27,8 @@ checkBtn.addEventListener('click', check);
 
 const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
-// counter.innerHTML = '500';
-
-// textArea.addEventListener('input', () => {
-//   const maxLength = textArea.maxLength;
-//   const caracteres = textarea.value.length;
-//   const lengthCurrent = maxLength - caracteres;
-
-//   counter.innerHTML = lengthCurrent;
-
-// });
 
 textArea.addEventListener('input', () => {
-  // const maxLength = textArea.maxLength;
   const caracteres = textArea.value.length;
   counter.innerHTML = textArea.maxLength - caracteres;
 });

@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto TrybeWars</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="logo da trybewarts" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -17,10 +19,11 @@
       <button class="button" id="button">Logar</button>
     </form>
   </header>
-
   <main>
     <form action="" id="evaluation-form" method="GET">
+      <span class="title">
       <h2>Forms</h2>
+    </span>
       <section class="section01">
         <input type="text" name="name" id="input-name" placeholder="Nome" required autocomplete="off" autofocus>
         <input type="text" name="surname" id="input-lastname" placeholder="Sobrenome" required autocomplete="off" autofocus>
@@ -36,6 +39,7 @@
       </section>
       <br>
       <hr>
+      
       <section class="section2">
           <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
           <input type="radio" name="rate" value="1" id="1">
@@ -59,6 +63,7 @@
           <input type="radio" name="rate" value="10" id="10">
           <label for="10">10</label>
       </section>
+      
       <section class="comment">
         <label for="text" class="textarea">Deixe seu comentário:</label>
         <textarea name="text" id="textarea" cols="30" rows="10" maxlength="500"></textarea>

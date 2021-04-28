@@ -5,11 +5,12 @@
 
 body {
   background-color: rgb(233, 233, 233);
+  font-family: Acme, serif;
   text-align: center;
 }
 
 .header {
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(49, 167, 145);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,14 +37,16 @@ body {
 }
 
 .trybewarts-login button {
-  background-color: rgb(80, 59, 131);
+  background-color: rgb(78, 44, 131);
   color: white;
   border: none;
   width: 150px;
   height: 45px;
   padding: 0 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
+
 
 .trybewarts-header-logo {
   width: 60px;
@@ -51,9 +54,16 @@ body {
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   /* testar outras propriedades do justify contente */
+}
+
+.title {
+  width: 675px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -75,7 +85,8 @@ main {
   width: 250px;
   height: 45px;
   padding: 0 15px;
-  margin-right: 15px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 #house {
@@ -88,6 +99,7 @@ main {
 
 .aside img {
   height: 500px;
+  margin-left: 50px;
 }
 
 .section2 {
@@ -117,6 +129,7 @@ main {
   justify-content: space-between;
 }
 
+
 .section4 {
   width: 675px;
   text-align: left;
@@ -141,9 +154,29 @@ main {
   border: none;
   border-radius: 5px;
   height: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+  transition-duration: 0.2s;
 }
 
 hr {
   margin: 5px;
   width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
