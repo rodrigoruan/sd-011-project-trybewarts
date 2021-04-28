@@ -35,3 +35,8 @@
 .aside {
   display: flex;
 }
+
+footer {
+  width: 100%;
+  background-color: rgb(50, 167, 145);
+}
