@@ -53,24 +53,28 @@ function createName() {
   const fullName = `Nome: ${nome.value} ${sobrenome.value}`;
   nameParag.innerText = fullName;
 }
+
 function createEmail() {
   const email = document.getElementById('input-email').value;
   const emailParag = document.createElement('p');
   creatDiv.appendChild(emailParag);
   emailParag.innerText = `Email: ${email}`;
 }
+
 function createHouse() {
   const casa = document.getElementById('house').value;
   const casaParag = document.createElement('p');
   creatDiv.appendChild(casaParag);
   casaParag.innerText = `Casa: ${casa}`;
 }
+
 function createFamily() {
   const family = document.querySelector('[name=family]:checked').value;
   const familyParag = document.createElement('p');
   creatDiv.appendChild(familyParag);
   familyParag.innerText = `Família: ${family}`;
 }
+
 function createMaterials() {
   const materias = document.querySelectorAll('[class="subject"]:checked');
   const materiaSelected = [];
@@ -81,18 +85,21 @@ function createMaterials() {
   creatDiv.appendChild(materiasParag);
   materiasParag.innerText = `Matérias: ${materiaSelected}`;
 }
+
 function createEvaluation() {
   const avaliacao = document.querySelector('[name=rate]:checked').value;
   const avaliacaoParag = document.createElement('p');
   creatDiv.appendChild(avaliacaoParag);
   avaliacaoParag.innerText = `Avaliação: ${avaliacao}`;
 }
+
 function createObs() {
   const observacoes = document.getElementById('textarea').value;
   const obsParag = document.createElement('p');
   creatDiv.appendChild(obsParag);
   obsParag.innerText = `Observações: ${observacoes}`;
 }
+
 getButton.addEventListener('click', () => {
   createName();
   createEmail();
