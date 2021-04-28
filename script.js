@@ -1,7 +1,4 @@
-// Criar um addEventListener no botão LOGAR.
 const loginButton = document.getElementById('login-button');
-// Dentro da funçao que é executada ao clicar no botão, deve-se verificar se o email.
-// que esta no input de email é igual a tryber@teste.com e senha igual a 123456.
 loginButton.addEventListener('click', () => {
   if (
     document.getElementById('login').value !== 'tryber@teste.com'
@@ -13,7 +10,6 @@ loginButton.addEventListener('click', () => {
   }
 });
 
-// Criar constante que recebe o botao Submit
 const agreementCheck = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
 agreementCheck.addEventListener('click', () => {
@@ -24,17 +20,14 @@ agreementCheck.addEventListener('click', () => {
   }
 });
 
-// Contador
 const counter = document.getElementById('counter');
 const textArea = document.getElementById('textarea');
 let tamanho = 500;
 textArea.addEventListener('keyup', () => {
-  // Diminuir do counter o tamanho atual do textos
   tamanho = 500 - textArea.value.length;
   counter.innerHTML = tamanho;
 });
 
-// guardar dados do formulário
 function formataDados(materias) {
   const nome = document.getElementById('input-name').value;
   const sobrenome = document.getElementById('input-lastname').value;
@@ -52,7 +45,6 @@ function formataDados(materias) {
   Observações: ${observacoes}`;
 }
 
-// Imprimir informações guardadas no formulário
 const evaluationForm = document.forms.namedItem('evaluation-form');
 evaluationForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
@@ -65,10 +57,8 @@ evaluationForm.addEventListener('submit', (evt) => {
   }
   materias = materiasArray.join(', ');
   const textoForm = formataDados(materias);
-  // Apagar formulário ao recarregar página
   for (let i = 0; i < 5; i += 1) {
     evaluationForm.lastElementChild.remove();
   }
-
   evaluationForm.innerHTML = textoForm;
 });
