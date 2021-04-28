@@ -6,6 +6,7 @@
 body {
   background-color: rgb(233, 233, 233);
   text-align: center;
+  font-family: Acme, serif;
 }
 
 .header {
@@ -52,8 +53,6 @@ body {
 main {
   display: flex;
   justify-content: space-between;
-
-  /* testar outras propriedades do justify contente */
 }
 
 #evaluation-form {
