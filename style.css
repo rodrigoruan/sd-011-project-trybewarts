@@ -78,6 +78,11 @@ body {
   display: flex;
   width: 675px;
   flex-direction: column;
+  color: black;
+}
+
+.margin-top {
+  margin-top: 200px;
 }
 
 .aside-image {
@@ -87,7 +92,7 @@ body {
 .main__form {
   display: flex;
   flex-direction: row;
-  margin-left: 120px;
+  margin-left: 60px;
   justify-content: flex-start;
 }
 
@@ -96,8 +101,7 @@ body {
   flex-direction: column;
   padding: 10px;
   justify-content: space-around;
-  border-bottom: 1px solid rgb(204, 203, 203);
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .teste {
@@ -230,6 +234,8 @@ body {
 
 .hero-img {
   display: flex;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 
 .footer {
@@ -239,3 +245,12 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
+/* #fire-text {
+  font-family: “Open Sans”, sans-serif;
+  color: #f5f5f5;
+  text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px
+  #F90, 0px -20px 40px #C33;
+  font-size: 100px;
+  background-color: black;
+} */
