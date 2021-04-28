@@ -1,38 +1,43 @@
-const loginInput = document.getElementById('id');
-const senhaInput = document.getElementById('password');
-const button = document.getElementById('submit-button');
-const checkBox = document.getElementById('agreement');
-const textAreaValue = document.getElementById('textarea');
-const spanCount = document.getElementById('counter');
+const btnLogin = document.querySelector('#btn-login');
 
-function limitTextArea(valor) {
-  const quantidade = 500;
-  const total = valor.length;
-  console.log(total);
-  if (total <= quantidade) {
-    const rest = quantidade - total;
-    spanCount.innerHTML = rest;
+function validateLoginPassword() {
+  const form1 = document.querySelector('.trybewarts-login');
+  const login = document.querySelector('#inputEmail1');
+  const password = document.querySelector('#inputPassword1');
+  if (login.value !== 'tryber@teste.com' && password.value !== '123456') {
+    alert('Login ou senha inválidos.');
   } else {
-    textAreaValue.value = valor.substr(0, quantidade);
+    alert('Olá, Tryber!');
+    form1.value = '';
   }
 }
+btnLogin.addEventListener('click', validateLoginPassword);
 
-textAreaValue.addEventListener('input', () => {
-  limitTextArea(textAreaValue.value);
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+textarea.addEventListener('input', () => {
+  const maxChar = 500;
+  const charLength = textarea.value.length;
+  const currentChar = maxChar - charLength;
+  counter.textContent = currentChar.toString();
 });
 
-button.addEventListener('click', () => {
-  if (loginInput.value === 'tryber@teste.com' && senhaInput.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos.');
-  }
-});
-
-checkBox.addEventListener('click', () => {
-  const submitBtn = document.getElementById('submit-btn');
-  if (checkBox.checked) {
-    console.log(checkBox.checked);
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+function enableButton() {
+  if (agreement !== undefined) {
     submitBtn.removeAttribute('disabled');
   }
-});
+}
+agreement.addEventListener('click', enableButton);
+
+const evaluationForm = document.querySelector('#evaluation-form');
+const submitButton = document.querySelector('#submit-btn');
+const inputName = document.querySelector('#input-name');
+const inputLastName = document.querySelector('#input-lastname');
+
+function fillOutForms(event) {
+  event.preventDefault();
+  evaluationForm.innerHTML = `Nome: ${inputName.value} ${inputLastName.value}`;
+}
+submitButton.addEventListener('click', fillOutForms);
