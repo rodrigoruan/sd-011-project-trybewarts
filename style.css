@@ -7,6 +7,14 @@ label {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
+input[type='text'] {
+  width: 100%;
+}
+
 /* requisito 1, 2 e 4 */
 .header {
   display: flex;
@@ -71,16 +79,25 @@ label {
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
+  justify-content: space-around;
 }
 
-#checkbox-input1 {
+#family {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
-#checkbox-input2 {
+#checkbox-input {
   display: flex;
   flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 8px;
+}
+
+#checkbox-input > * {
+  flex: 1;
 }
 
 #rate {
@@ -106,15 +123,27 @@ footer {
   flex-direction: column;
   margin-bottom: 25px;
   width: 675px;
-  justify-content: space-between;
+  row-gap: 8px;
 }
 
-.align-items-forms1 {
+.align-items-forms {
   display: flex;
+  justify-content: center;
+  column-gap: 8px;
 }
 
-.align-items-forms2 {
+.align-items-forms > * {
+  flex: 1;
+}
+
+.full-width-select-field {
   display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.full-width-select-field select {
+  flex: 1;
 }
 
 #submit-btn {
@@ -130,4 +159,14 @@ footer {
   resize: none;
   width: 675px;
   height: 100px;
+}
+
+.form-content {
+  width: 675px;
+  border: solid 1px rgb(44, 44, 44);
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  line-height: 1.5;
 }

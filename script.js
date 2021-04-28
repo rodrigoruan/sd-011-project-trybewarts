@@ -33,3 +33,28 @@ function textAreaFunction() {
   counter.innerText = textArea.maxLength - textArea.value.length;
 }
 textArea.addEventListener('keyup', textAreaFunction);
+
+// requisito 21
+const name = document.getElementById('input-name').value;
+const lastName = document.getElementById('input-lastname').value;
+const email = document.getElementById('input-email').value;
+const house = document.getElementById('house').value;
+const family = document.getElementById('family').value;
+const content = document.getElementById('content').value;
+const rate = document.getElementById('rate').value;
+const obs = document.getElementById('textarea').value;
+
+const formsPai = document.getElementById('evaluation-form');
+const elementP = document.createElement('p');
+
+elementP.classList.add('form-content');
+
+formsPai.appendChild(elementP);
+
+elementP.innerHTML = `Nome: ${name} ${lastName}<br/>
+Email: ${email}<br/>
+Casa: ${house}<br/>
+Família: ${family}<br/>
+Matérias: ${content}<br/>
+Avaliação: ${rate}<br/>
+Observações: ${obs}`;

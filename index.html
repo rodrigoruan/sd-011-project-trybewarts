@@ -27,27 +27,56 @@
     <main id="main-page">
       <form id="evaluation-form" action="">
         <div id="top-form">
+          <div class="align-items-forms">
+            <div>
+              <label class="hidden" for="name"></label>
+              <input
+                id="input-name"
+                type="text"
+                name="name"
+                placeholder="Nome"
+              />
+            </div>
 
-          <div class="align-items-forms1">
-            <label for="name"></label>
-            <input id="input-name" type="text" name="name" placeholder="Nome" />
-
-            <label for="lastname"></label>
-            <input id="input-lastname" type="text" name="lastname" placeholder="Sobrenome"/>
+            <div>
+              <label class="hidden" for="lastname"></label>
+              <input
+                id="input-lastname"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+              />
+            </div>
           </div>
 
-          <div class="align-items-forms2">
-            <label for="email"></label>
-            <input id="input-email" type="text" name="email" placeholder="Email"/>
+          <div class="align-items-forms">
+            <div>
+              <label class="hidden" for="email"></label>
+              <input
+                id="input-email"
+                type="text"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
 
-            <label for="house">Casa
-              <select name="house" id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-              </select>
-            </label>
+            <div>
+              <label for="house" class="full-width-select-field">
+                Casa
+                <select name="house" id="house">
+                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                  <option id="reactpuff-house" value="Reactpuff">
+                    Reactpuff
+                  </option>
+                  <option id="corvinode-house" value="Corvinode">
+                    Corvinode
+                  </option>
+                  <option id="pytherina-house" value="Pytherina">
+                    Pytherina
+                  </option>
+                </select>
+              </label>
+            </div>
           </div>
         </div>
 
@@ -77,15 +106,47 @@
             <label id="label-content"
               >Qual conteúdo você está com mais vontade de aprender?</label
             >
-            <div id="checkbox-input1">
-              <label><input type="checkbox" value="HoFs" />HoFs</label>
-              <label><input type="checkbox" value="Jest" />Jest</label>
-              <label><input type="checkbox" value="Promises" />Promises</label>
+            <div id="checkbox-input">
+              <label
+                ><input
+                  class="subject"
+                  type="checkbox"
+                  value="HoFs"
+                />HoFs</label
+              >
+              <label
+                ><input
+                  class="subject"
+                  type="checkbox"
+                  value="Jest"
+                />Jest</label
+              >
+              <label
+                ><input
+                  class="subject"
+                  type="checkbox"
+                  value="Promises"
+                />Promises</label
+              >
             </div>
-            <div id="checkbox-input2">
-              <label><input type="checkbox" value="React" />React</label>
-              <label><input type="checkbox" value="SQL" />SQL</label>
-              <label><input type="checkbox" value="Python" />Python</label>
+            <div id="checkbox-input">
+              <label
+                ><input
+                  class="subject"
+                  type="checkbox"
+                  value="React"
+                />React</label
+              >
+              <label
+                ><input class="subject" type="checkbox" value="SQL" />SQL</label
+              >
+              <label
+                ><input
+                  class="subject"
+                  type="checkbox"
+                  value="Python"
+                />Python</label
+              >
             </div>
           </div>
         </div>
@@ -108,7 +169,7 @@
 
         <div id="coment">
           <label class="textarea">Deixe seu comentário:</label>
-          <span id="counter">500</span> Restantes <br>
+          <span id="counter">500</span> Restantes <br />
           <textarea id="textarea" maxlength="500"></textarea>
 
           <label id="label-infos"
