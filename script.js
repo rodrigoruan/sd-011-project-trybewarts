@@ -32,9 +32,9 @@ const nameInput = document.getElementById('input-name');
 const lastNameInput = document.getElementById('input-lastname');
 const emailInput = document.getElementById('input-email');
 const houseInput = document.getElementById('house');
-// const familyInput = document.getElementsByClassName('family');
-// const subjectInput = document.getElementsByClassName('subject');
-// const radioInput = document.getElementsByClassName('radioRate');
+const familyInput = document.getElementsByClassName('family');
+const subjectInput = document.getElementsByClassName('subject');
+const radioInput = document.getElementsByClassName('radioRate');
 // function createParagraphs(array) {
 // for (let i = 0; i < array.length; i += 1) {
 // const p = document.createElement('p');
@@ -51,14 +51,48 @@ textArea.addEventListener('keyup', () => {
   paragrafo.innerText = caracteresDisponiveis;
 });
 
+const subject = () => {
+  let array = [];
+  for (let i = 0; i < subjectInput.length; i++) {
+    if (subjectInput[i].checked === true) {
+      array.push(subjectInput[i].value);
+    }
+  }
+return array;
+}
+  
+  const rate = () => { 
+  for (let i = 0; i < radioInput.length; i += 1) {
+    if (radioInput[i].checked === true) {
+    return radioInput[i];
+    }
+  }
+}
+
+const family = () => { 
+  for (let i = 0; i < familyInput.length; i += 1) {
+    if (familyInput[i].checked === true) {
+    return familyInput[i];
+    }
+  }
+}
+
 const values = [];
 
 btnSub.addEventListener('click', (event) => {
+  const checkedFunction = family();
+  const subjects = subject();
+  const rated = rate();
+
   const list = {
     Nome: nameInput.value,
     Sobrenome: lastNameInput.value,
     Email: emailInput.value,
     Casa: houseInput.value,
+    Família: checkedFunction.value,
+    Matérias: subjects,
+    Avaliação: rated.value,
+    Observações: textArea.value,
   };
 
   event.preventDefault();
