@@ -104,5 +104,9 @@ function changeForms(event) {
   getInfoDiv1();
   const divForms = document.querySelector('.div-form');
   divForms.style.display = 'none';
+  form.style.justifyContent = 'center';
+  form.style.alignItems = 'center';
+  form.style.lineHeight = '30px';
+  form.style.fontSize = '22px';
 }
 submitBtn.addEventListener('click', changeForms);
