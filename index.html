@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Trybewarts</title>
@@ -64,83 +64,86 @@
             </select>
           </div>
         </div>
-        <div class="select-family">
-          <label id="label-family">Qual sua família?</label>
-          <div>
-            <input
-              type="radio"
-              name="family"
-              id="frontend-family"
-              value="Frontend"
-            />
-            <label for="frontend-family">Frontend</label>
+
+        <div id="family-subjects-container">
+          <div class="select-family">
+            <label id="label-family">Qual sua família?</label>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                id="frontend-family"
+                value="Frontend"
+              />
+              <label for="frontend-family">Frontend</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                id="backend-family"
+                value="Backend"
+              />
+              <label for="backend-family">Backend</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="family"
+                id="fullstack-family"
+                value="FullStack"
+              />
+              <label for="fullstack-family">FullStack</label>
+            </div>
           </div>
-          <div>
+          <div id="subjects">
+            <label id="label-content" for="subs"
+              >Qual conteúdo você está com mais vontade de aprender?</label
+            >
+            <br />
+
             <input
-              type="radio"
-              name="family"
-              id="backend-family"
-              value="Backend"
-            />
-            <label for="backend-family">Backend</label>
-          </div>
-          <div>
+              type="checkbox"
+              class="subject"
+              name="subs"
+              value="HoFs"
+            /><span>HoFs</span>
+
             <input
-              type="radio"
-              name="family"
-              id="fullstack-family"
-              value="FullStack"
-            />
-            <label for="fullstack-family">FullStack</label>
+              type="checkbox"
+              class="subject"
+              name="subs"
+              value="Jest"
+            /><span>Jest</span>
+
+            <input
+              type="checkbox"
+              class="subject"
+              name="subs"
+              value="Promises"
+            /><span>Promises</span>
+
+            <input
+              type="checkbox"
+              class="subject"
+              name="subs"
+              value="React"
+            /><span>React</span>
+
+            <input
+              type="checkbox"
+              class="subject"
+              name="subs"
+              value="SQL"
+            /><span>SQL</span>
+
+            <input
+              type="checkbox"
+              class="subject"
+              name="house"
+              value="Python"
+            /><span>Python</span>
           </div>
-        </div>
-        <div id="subjects">
-          <label id="label-content" for="subs"
-            >Qual conteúdo você está com mais vontade de aprender?</label
-          >
-          <br />
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="subs"
-            value="HoFs"
-          /><span>HoFs</span>
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="subs"
-            value="Jest"
-          /><span>Jest</span>
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="subs"
-            value="Promises"
-          /><span>Promises</span>
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="subs"
-            value="React"
-          /><span>React</span>
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="subs"
-            value="SQL"
-          /><span>SQL</span>
-
-          <input
-            type="checkbox"
-            class="subject"
-            name="house"
-            value="Python"
-          /><span>Python</span>
         </div>
         <div id="rates">
           <label id="label-rate" for="rate"
@@ -177,6 +180,7 @@
             >10</span
           >
         </div>
+
         <div class="textarea">
           <label class="textarea" for="textarea">Deixe seu comentário:</label>
           <textarea
@@ -187,8 +191,7 @@
             rows="5"
           ></textarea>
         </div>
-        <div id="counter">500
-        </div>
+        <div id="counter">500</div>
         <div class="agreement">
           <label id="label-infos" for="agreement"
             >"Você concorda com o uso das informações acima?"</label
@@ -201,9 +204,11 @@
           /><span>Concordo</span>
         </div>
         <div class="enviar">
+          <!-- prettier-ignore -->
           <button type="submit" id="submit-btn" value="Submit" disabled>Enviar</button>
         </div>
       </form>
+
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
     </main>
     <footer>
