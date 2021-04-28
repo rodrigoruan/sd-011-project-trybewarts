@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 9
 
 ---
 
@@ -19,11 +19,21 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: 
+
+1. O número de requisitos pode ser reduzido, existe muita redundância. Por exemplo os 4 primeiros requisitos porderiam ser reduzidos em dois:
+  1.1. Criar o input de usuário, senha e buttom
+  1.2. Criar um header com logo à esquerda, texto no centro, formulário de autenticação à direita e fundo com a cor RGB específicada.
+
+2. A explicação do requisito 21 está confusa. A exigência da classe="subject" poderia ter sido colocado no requisito 13, por exemplo. Também acredito que o objetivo do requisito não ficou claro com a explicação, eu só consegui realizar ele observando o erro que acontecia ao rodar o avaliador localmente.
+
+3. Acredito que o requisito opcional 23 (desenvolvimento da versão mobile) deveria ser, no mínimo, um requisito bônus, e não um requisito opcional, pois o desenvolvimento de uma Media Query faz parte do conteúdo do bloco e não foi cobrado como requisito nesse projeto.
+
+Fora essas sugestões o projeto está sensacional! A experiência de fazer um trabalho em dupla, resolvendo conflitos e problemas foi muito interessante.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Alysson Sene, Samuel Melo.
 
 ---
 
