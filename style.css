@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+#trybewarts-header-title {
+  font-family: 'Orelega One', cursive, 'sans-serif'; 
+}
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
