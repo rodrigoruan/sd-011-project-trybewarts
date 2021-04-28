@@ -32,3 +32,20 @@ function checkBtn() {
 }
 
 checkAgree.addEventListener('click', checkBtn);
+
+const txtArea = document.getElementById('textarea');
+
+function verificar() {
+  const info = document.getElementById('counter');
+  const limite = 500;
+  const qtdcaracteres = this.value.length;
+  const restantes = limite - qtdcaracteres;
+  if (restantes < 1) {
+    this.value = this.value.slice(0, limite);
+    info.innerHTML = 0;
+    return info;
+  }
+  info.innerText = restantes;
+}
+
+txtArea.addEventListener('keyup', verificar);
