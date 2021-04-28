@@ -34,37 +34,30 @@ function textAreaFunction() {
 }
 textArea.addEventListener('keyup', textAreaFunction);
 
-// Requisito 21 
-const form = document.getElementById('evaluation-form')
-const resultForms = document.querySelector('.result-form');
+// Requisito 21
+// const form = document.getElementById('evaluation-form');
+// const resultForms = document.querySelector('.result-form');
 
 function checkForm(event) {
   event.preventDefault();
-
-  const inputName = document.querySelector('#input-name').value;
-  const lastName = document.querySelector('#input-lastname').value;
-  const email = document.querySelector('#input-email').value;
-  const house = document.querySelector('#house').value;
-  const family = document.querySelector('#family-content').value;
-  const content = document.querySelector('#content').value;
-  const rate = document.querySelector('#rate').value;
-  const coment = document.querySelector('#textarea').value;
-
-  // Name
-  const paragraph = document.createElement('p');
-  paragraph.innerText = inputName;
-  resultForms.appendChild(paragraph);
-
-  // Sobre-Nome
-  const paragraph1 = document.createElement('p');
-  paragraph1.innerText = lastName;
-  resultForms.appendChild(paragraph1);
-  
-
-  // Email
-  const paragraph2 = document.createElement('p');
-  paragraph2.innerText = email;
-  resultForms.appendChild(paragraph2);
-
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const email = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
+  const family = document.getElementById('family').value;
+  const content = document.getElementById('content').value;
+  const rate = document.getElementById('rate').value;
+  const obs = document.getElementById('textarea').value;
+  const formsPai = document.getElementById('evaluation-form');
+  const elementP = document.createElement('p');
+  elementP.classList.add('form-content');
+  formsPai.appendChild(elementP);
+  elementP.innerHTML = `Nome: ${name} ${lastName}<br/>
+  Email: ${email}<br/>
+  Casa: ${house}<br/>
+  Família: ${family}<br/>
+  Matérias: ${content}<br/>
+  Avaliação: ${rate}<br/>
+  Observações: ${obs}`;
 }
 submitBtn.addEventListener('click', checkForm);
