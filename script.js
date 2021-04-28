@@ -26,8 +26,7 @@ const validateButton = () => {
 
 btnCheck.addEventListener('click', validateButton);
 
-// tentando desenrolar o requisito 21!
-// const forms = document.getElementById('evaluation-form');
+const evaluationForms = document.getElementById('evaluation-form');
 const nameInput = document.getElementById('input-name');
 const lastNameInput = document.getElementById('input-lastname');
 const emailInput = document.getElementById('input-email');
@@ -35,15 +34,8 @@ const houseInput = document.getElementById('house');
 const familyInput = document.getElementsByClassName('family');
 const subjectInput = document.getElementsByClassName('subject');
 const radioInput = document.getElementsByClassName('radioRate');
-// function createParagraphs(array) {
-// for (let i = 0; i < array.length; i += 1) {
-// const p = document.createElement('p');
-// p.innerText = array[i];
-// forms.appendChild(p);
-// }
-// }
-
 const textArea = document.querySelector('#textarea');
+
 textArea.addEventListener('keyup', () => {
   const paragrafo = document.querySelector('#counter');
   let caracteresDisponiveis = 0;
@@ -52,51 +44,58 @@ textArea.addEventListener('keyup', () => {
 });
 
 const subject = () => {
-  let array = [];
-  for (let i = 0; i < subjectInput.length; i++) {
+  const array = [];
+  for (let i = 0; i < subjectInput.length; i += 1) {
     if (subjectInput[i].checked === true) {
       array.push(subjectInput[i].value);
     }
   }
-return array;
-}
-  
-  const rate = () => { 
+  return array.join(', ');
+};
+
+const rate = () => {
   for (let i = 0; i < radioInput.length; i += 1) {
     if (radioInput[i].checked === true) {
-    return radioInput[i];
+      return radioInput[i];
     }
   }
-}
+};
 
-const family = () => { 
+const family = () => {
   for (let i = 0; i < familyInput.length; i += 1) {
     if (familyInput[i].checked === true) {
-    return familyInput[i];
+      return familyInput[i];
     }
   }
-}
+};
 
-const values = [];
+const makeP = (list) => {
+  for (let i = 0; i < list.length; i += 1) {
+    const p = document.createElement('p');
+    p.innerText = list[i];
+    evaluationForms.appendChild(p);
+    const first = evaluationForms.firstChild;
+    evaluationForms.insertBefore(first, p);
+  }
+};
 
 btnSub.addEventListener('click', (event) => {
-  const checkedFunction = family();
+  const checked = family();
   const subjects = subject();
   const rated = rate();
 
-  const list = {
-    Nome: nameInput.value,
-    Sobrenome: lastNameInput.value,
-    Email: emailInput.value,
-    Casa: houseInput.value,
-    Família: checkedFunction.value,
-    Matérias: subjects,
-    Avaliação: rated.value,
-    Observações: textArea.value,
-  };
-
   event.preventDefault();
-  values.push(list);
-  document.forms[1].reset();
-  console.log(values);
+
+  document.querySelector('.divResult').style.display = 'none';
+
+  const list = [
+    `Nome: ${nameInput.value} ${lastNameInput.value}`,
+    `Email: ${emailInput.value}`,
+    `Casa: ${houseInput.value}`,
+    `Família: ${checked.value}`,
+    `Matérias: ${subjects}`,
+    `Avaliação: ${rated.value}`,
+    `Observações: ${textArea.value}`,
+  ];
+  makeP(list);
 });
