@@ -24,3 +24,11 @@ function createRadios() {
 }
 
 createRadios();
+
+const checkAgree = document.getElementById('agreement');
+const subtBtn = document.getElementById('submit-btn');
+function checkBtn() {
+  subtBtn.disabled = false;
+}
+
+checkAgree.addEventListener('click', checkBtn);
