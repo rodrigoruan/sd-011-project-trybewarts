@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 9
 
 ---
 
@@ -19,11 +19,14 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Esse projeto foi maravilhoso, foi o primeiro onde exercitamos o trabalho em equipe, nos forçou a aprender como corrigir erros e conflitos que até então ainda eram idéias abstratas. Tivemos também que aprender conceitos novos por conta própria (menu hamburguer), etc.
+Alguns pontos negativos do projeto foi a quantidade de requisitos que na maioria eram básicos e poderiam estar mais agrupados. Por exemplo, os primeiros 5 requisitos poderiam estar agrupados em apenas 2 requisitos. 
+A versão mobile por exemplo podia deixar de ser um requisito opcional e passar a ser um requisitos bônus.
+
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Alysson Sene, Samuel Melo
 
 ---
 
