@@ -8,6 +8,32 @@ body {
   font-size: 25px;
 }
 
+.trybewarts-main , #evaluation-form {
+  display: flex;
+}
+
+
+.name-input input, .email-select input {
+  width: 200px;
+  height: 40px;
+  margin: 2px;
+}
+
+.name-input input:hover , .email-select input:hover {
+  background-color: blanchedalmond;
+}
+
+.email-select select {
+  width: 200px;
+  height: 40px;
+  margin-left: 2px;
+}
+
+.textareaCounter {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -15,6 +41,19 @@ body {
   justify-content: space-between;
   padding: 6px;
   align-items: center;
+}
+
+#submit-btn {
+  width: 200px;
+  height: 40px;
+  background-color: cornsilk;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+#submit-btn button:hover {
+  background-color: darkgreen;
+  color: white;
 }
 
 .trybewarts-login {
@@ -34,17 +73,30 @@ body {
   width: fit-content;
 }
 
-
 .trybewarts-header-logo {
   width: 50px;
   height: 50px;
 }
 
+footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: gray;
+}
+
 @media screen and ( max-width : 600px ) {
   
   body {
-    width: 600px;
-    font-size: 15px;
+   font-size: 15px;
+  }
+ 
+  .trybewarts-main , #evaluation-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #evaluation-form {
+    justify-content: center;
   }
 
   .header {
@@ -66,9 +118,22 @@ body {
   }
   
   fieldset {
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     padding: 5px;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+  }
+
+  .evaluator {
+    text-align: center;
+  }
+
+  #label-infos {
+    display: flex;
+    justify-content: center;
   }
 
   #evaluation-form {
@@ -78,6 +143,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 400px;
+  }
+
+  .textareaCounter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label-infos {
+    margin: 0 auto;
   }
 
 }
@@ -101,15 +176,17 @@ body {
     border-radius: 5px;
   }
 
+  .name-input input, .email-select input {
+    width: 200px;
+    height: 40px;
+    margin: 2px;
+  }
+
   .labels {
     height: 250px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
-
-  .evaluator{
-    display: flex;
   }
 
   .trybewarts-login button {
@@ -139,10 +216,6 @@ body {
   #trybewarts-forms-logo {
     width: 500px;
     height: 500px;
-  }
-
-  .trybewarts-main , #evaluation-form {
-    display: flex;
   }
 
   .family-container ,
