@@ -38,7 +38,7 @@ main {
 }
 
 #evaluation-form p {
-  margin: 0px;
+  margin: 0;
   padding: 5px;
 }
 
@@ -543,6 +543,6 @@ main section img {
     display: flex;
     justify-content: center;
     color: white;
-    background-color: rgb(57, 62, 73);  
+    background-color: rgb(57, 62, 73);
   }
 }
