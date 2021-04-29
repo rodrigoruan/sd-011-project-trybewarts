@@ -30,11 +30,11 @@
     <form id="evaluation-form">
       <section id="main-fields">
         <fieldset class="name-fields">
-          <input type="text" name="name" placeholder="Nome" id="input-name">
-          <input type="text" placeholder="Sobrenome" id="input-lastname">
+          <input type="text" name="firstname" placeholder="Nome" id="input-name">
+          <input type="text" name="lastname" placeholder="Sobrenome" id="input-lastname">
         </fieldset>
         <fieldset class="email-and-house-fields">
-          <input type="text" name="name" placeholder="Email" id="input-email">
+          <input type="email" name="email" placeholder="Email" id="input-email">
           <div class="house-select">
             <label for="house">Casa: </label>
             <select name="house" id="house"  placeholder="Gitnóia">
@@ -59,12 +59,12 @@
       
         <fieldset class="skill-choice">
           <legend id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>
-          <label><div><input class="subject" value="HoFs" type="checkbox">HOFs</div></label> 
-          <label><div><input class="subject" value="Jest" type="checkbox">Jest</div></label>
-          <label><div><input class="subject" value="Promises" type="checkbox">Promises</div></label>
-          <label><div><input class="subject" value="React" type="checkbox">React</div></label>
-          <label><div><input class="subject" value="SQL" type="checkbox">SQL</div></label>
-          <label><div><input class="subject" value="Python" type="checkbox">Python</div></label>
+          <label><div><input class="subject" value="HoFs" type="checkbox" name="skill">HOFs</div></label> 
+          <label><div><input class="subject" value="Jest" type="checkbox" name="skill">Jest</div></label>
+          <label><div><input class="subject" value="Promises" type="checkbox" name="skill">Promises</div></label>
+          <label><div><input class="subject" value="React" type="checkbox" name="skill">React</div></label>
+          <label><div><input class="subject" value="SQL" type="checkbox" name="skill">SQL</div></label>
+          <label><div><input class="subject" value="Python" type="checkbox" name="skill">Python</div></label>
         </fieldset> 
       </section>
 
@@ -88,7 +88,7 @@
         <fieldset class="commentary-container">
           <label class="textarea" for="user-commentary">Deixe seu comentário:</label>
           <div class="rating-commentary">
-            <textarea id="textarea" maxlength='500'></textarea>
+            <textarea id="textarea" maxlength='500' name="commentary"></textarea>
             <span id="counter">500</span>
           </div>
         </fieldset>
@@ -101,10 +101,24 @@
           <button type="submit" disabled="disabled" id="submit-btn" name="botao">Enviar</button>
         </div>
       </section>
+
+      <aside id="form-answer">
+        <h1>Nome: <span id="answer-name">João Corça</span></h1>
+        <p>Email: <span id="answer-email">João Corça</span></p>
+        <p>Casa: <span id="answer-house">João Corça</span></p>
+        <p>Família: <span id="answer-family">João Corça</span></p>
+        <p>Matérias: <span id="answer-skill">João Corça</span></p>
+        <p>Avaliação: <span id="answer-rate">João Corça</span></p>
+        <p>Observações: <span id="answer-commentary">João Corça</span></p>
+        <button type="button" id="close-modal">Wingardium reactiossa!</button>
+      </aside>
+
+      <aside id="backdrop"></aside>
     </form>
 
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </main>
+
 
   <footer>
     <p>Direitos reservados à Trybewarts©"</p>
