@@ -26,3 +26,16 @@ agreementCheck.addEventListener('click', () => {
     sendButton.disabled = true;
   }
 });
+
+const characterCounter = document.getElementById('counter');
+const userCommentaryInput = document.getElementById('textarea');
+const maxLength = 500;
+
+function updateCharacterCount() {
+  console.log(userCommentaryInput.value);
+  const charsLeft = maxLength - userCommentaryInput.value.length;
+  characterCounter.innerText = charsLeft;
+}
+
+userCommentaryInput.addEventListener('keyup', updateCharacterCount);
+userCommentaryInput.addEventListener('change', updateCharacterCount);
