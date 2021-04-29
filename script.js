@@ -48,21 +48,27 @@ const name = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const eMail = document.querySelector('#input-email');
 const house = document.getElementById('house');
-const family = document.querySelector('input[name="family"]:checked');
 const avaliations = document.querySelector('#textarea');
+const hardSkills = document.getElementsByClassName('subject');
+
 
 const infos1 = (event) => {
   event.preventDefault();
-  trybewartsForm.removeChild(mainform);
+  const family = document.querySelector('input[name=family]:checked');
+  const rate = document.querySelector('input[name=rate]:checked');
+  let hardSkillsList = [];
+  for (let index = 0; index < hardSkills.length; index += 1) {
+  if (hardSkills[index].checked === true) {
+    hardSkillsList.push(hardSkills[index].value);
+    }
+  }
   const infosMain = document.createElement('p');
   trybewartsForm.appendChild(infosMain);
-  infosMain.innerText = (`Dados recebidos:
-  Nome: ${name.value}
-  Sobrenome: ${lastName.value}
-  E-mail: ${eMail.value}
-  Casa: ${house.value}
-  Família: ${family.value}
+  infosMain.innerText = (`Dados recebidos: Nome: ${name.value} - Sobrenome: ${lastName.value}
+  E-mail: ${eMail.value} - Casa: ${house.value} - Família: ${family.value}
+  Matéria: ${hardSkillsList} - Avaliação: ${rate.value} -
   Observações: ${avaliations.value}`);
+  trybewartsForm.removeChild(mainform);
 };
 
 submitMainForm.addEventListener('click', infos1);
