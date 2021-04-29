@@ -31,6 +31,10 @@
   letter-spacing: 3px;
 }
 
+label input {
+  margin: 5px;
+}
+
 .header form input {
   margin: 7px;
   width: 160px;
@@ -79,6 +83,8 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #trybewarts-forms-logo {
@@ -105,19 +111,32 @@
 .radios {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.subject {
+  margin: 5px;
 }
 
 .learn-content {
   display: flex;
   flex-direction: column;
+  width: 400px;
 }
 
 .conteudo {
   display: flex;
+  justify-content: space-between;
+}
+
+.radioRate {
+  margin: 5px;
 }
 
 .conteudo div {
-  padding: 0 30px;
+  padding: 5px;
 }
 
 footer {
@@ -162,4 +181,28 @@ hr {
   border-style: inset;
   border-width: 1px;
   background-color: rgb(60, 65, 65);
+
+}
+
+p {
+  width: 500px;
+  font-size: 20px;
+  padding-top: 70px;
+  height: 50px;
+  text-align: center;
+  font-family: Benne, serif;
+}
+
+#submit-btn {
+  width: 670px;
+  background-color: indigo;
+  color: white;
+  height: 35px;
+  border-radius: 8px;
+}
+
+#counter {
+  text-align: end;
+  width: 675px;
+  float: right;
 }

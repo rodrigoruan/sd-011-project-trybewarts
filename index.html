@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
@@ -24,8 +24,9 @@
 
   <main class="main-container">
     <form id="evaluation-form" action="">
+      <div class="divResult">
       <div>
-        <p class="title">Forms</p>
+        <h3 class="title">Forms</h3>
       </div>
       <div class="div-nome">
         <input class="input" id="input-name" type="text" placeholder="Nome">
@@ -46,19 +47,23 @@
       <div class="conteudo">
       <div class="radios">
         <label id="label-family">Qual sua família?</label>
-        <label><input type="radio" name="family" value="Frontend" class="family">Frontend</label>
-        <label><input type="radio" name="family" value="Backend" class="family">Backend</label>
-        <label><input type="radio" name="family" value="FullStack" class="family">FullStack</label>
+        <label><input type="radio" name="family" value="Frontend" class="family">Família Frontend</label>
+        <label><input type="radio" name="family" value="Backend" class="family">Família Backend</label>
+        <label><input type="radio" name="family" value="FullStack" class="family">Família FullStack</label>
       </div>
       
       <div class="learn-content">
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <label><input class="subject" type="checkbox" value="HoFs">Higher Order Functions</label>
+        <div>
+        <label><input class="subject" type="checkbox" value="HoFs">HoFs</label>
         <label><input class="subject" type="checkbox" value="Jest">Jest</label>
         <label><input class="subject" type="checkbox" value="Promises">Promises</label>
+      </div>
+      <div>
         <label><input class="subject" type="checkbox" value="React">React</label>
         <label><input class="subject" type="checkbox" value="SQL">SQL</label>
         <label><input class="subject" type="checkbox" value="Python">Python</label>
+      </div>
       </div>
     </div>
 <hr>
@@ -82,9 +87,7 @@
         <textarea id="textarea" style="resize: none" class="textarea" placeholder="500" maxlength="500"></textarea>
         <p id="counter">500</p>
       </label>
-
-       
-
+      
         <label id="label-infos">Você concorda com o uso das informações acima?
         <input id="agreement" type="checkbox">
       </label>
@@ -92,7 +95,7 @@
       <button id="submit-btn" type="submit">Enviar</button>
 
     </form>
-
+  </div>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo Trybewarts">
     
   </main>
