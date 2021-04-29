@@ -59,7 +59,7 @@ const infos1 = (event) => {
   for (let index = 0; index < hardSkills.length; index += 1) {
     if (hardSkills[index].checked === true) {
       hardSkillsList.push(hardSkills[index].value);
-     }
+    }
   }
   const infosMain = document.createElement('p');
   trybewartsForm.appendChild(infosMain);
