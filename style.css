@@ -1,14 +1,38 @@
+@font-face {
+  font-family: Magic School;
+  src: url('/fonts/MagicSchool.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Magic School, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(240, 241, 228);
 }
 
 .header {
   background-color: rgb(50, 167, 145);
   width: 100vw;
+  padding: 5px 5em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 2.25em;
+}
+
+.header input + :is( input, button ) {
+  margin-left: 5px;
 }
 
 .trybewarts-login {
@@ -20,6 +44,7 @@ main {
   background-color: rgb(240, 241, 228);
   padding: 5px 5em;
   align-items: center;
+  justify-content: center;
 }
 
 main h1 {
@@ -27,11 +52,18 @@ main h1 {
   font-size: large;
 }
 
+.header h1 {
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+  letter-spacing: 0.05em;
+}
+
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
-  align-items:  center;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -50,10 +82,12 @@ main h1 {
 
 .textarea-control {
   position: relative;
+  width: 100%;
 }
 
 #textarea {
   resize: none;
+  width: 100%;
 }
 
 #counter {
@@ -63,7 +97,7 @@ main h1 {
 }
 
 
-#input-name, #input-lastname, #input-email, #house {
+#input-name , #input-lastname , #input-email , #house {
   height: 35px;
   border-radius: 5px;
   margin: 5px;
@@ -87,8 +121,7 @@ main h1 {
 
 .familia-conteudo {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -105,12 +138,16 @@ main h1 {
   height: 50%;
 }
 
-.familia-conteudo > div > div > label {
-  width: calc(100%/3);
-}
-
 .familia-conteudo label {
   margin: 10px 0;
+}
+
+.row-rate label {
+  width: fit-content;
+}
+
+.familia-conteudo > div > div > label {
+  width: calc(100% / 3);
 }
 
 .familia-conteudo > div:last-of-type {
@@ -122,26 +159,14 @@ main h1 {
   justify-content: space-between;
 }
 
-.row-rate label {
-  width: fit-content;
-}
-
 .textarea {
   align-self: flex-start;
   margin-top: 10px;
 }
 
-.textarea-control {
-  width: 100%;
- } 
- 
-#textarea {
-  width: 100%;
-} 
-
 #label-infos {
-align-self: flex-start;
-margin: 10px 0;
+  align-self: flex-start;
+  margin: 10px 0;
 }
 
 #submit-btn {
@@ -152,10 +177,10 @@ margin: 10px 0;
   border-radius: 5px;
 }
 
-hr{
-  border-color:#aaa;
-  box-sizing:border-box;
-  width:100%;
+hr {
+  border-color: rgb(170, 170, 170);
+  box-sizing: border-box;
+  width: 100%;
   margin: 15px 0;
 }
 
@@ -164,4 +189,28 @@ hr{
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
+}
+
+.input , .btn {
+  border: 0;
+  border-radius: 0.25em;
+  padding: 5px;
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+.trybewarts-login .btn {
+  padding: 5px 50px;
+}
+
+footer {
+  background-color: rgb(101, 101, 101);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: small;
+  letter-spacing: 0.05em;
 }
