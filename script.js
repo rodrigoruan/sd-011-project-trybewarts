@@ -51,16 +51,15 @@ const house = document.getElementById('house');
 const avaliations = document.querySelector('#textarea');
 const hardSkills = document.getElementsByClassName('subject');
 
-
 const infos1 = (event) => {
   event.preventDefault();
   const family = document.querySelector('input[name=family]:checked');
   const rate = document.querySelector('input[name=rate]:checked');
-  let hardSkillsList = [];
+  const hardSkillsList = [];
   for (let index = 0; index < hardSkills.length; index += 1) {
-  if (hardSkills[index].checked === true) {
-    hardSkillsList.push(hardSkills[index].value);
-    }
+    if (hardSkills[index].checked === true) {
+      hardSkillsList.push(hardSkills[index].value);
+     }
   }
   const infosMain = document.createElement('p');
   trybewartsForm.appendChild(infosMain);
