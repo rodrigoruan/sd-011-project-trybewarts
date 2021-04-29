@@ -63,9 +63,12 @@ const infos1 = (event) => {
   }
   const infosMain = document.createElement('p');
   trybewartsForm.appendChild(infosMain);
-  infosMain.innerText = (`Dados recebidos: Nome: ${name.value} - Sobrenome: ${lastName.value}
-  E-mail: ${eMail.value} - Casa: ${house.value} - Família: ${family.value}
-  Matéria: ${hardSkillsList} - Avaliação: ${rate.value} -
+  infosMain.innerText = (`Dados recebidos: Nome: ${name.value} ${lastName.value}
+  E-mail: ${eMail.value}
+  Casa: ${house.value}
+  Família: ${family.value}
+  Matéria: ${hardSkillsList}
+  Avaliação: ${rate.value} -
   Observações: ${avaliations.value}`);
   trybewartsForm.removeChild(mainform);
 };
