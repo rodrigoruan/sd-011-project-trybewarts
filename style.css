@@ -17,12 +17,21 @@
 
 main {
   display: flex;
+  background-color: rgb(240, 241, 228);
+  padding: 5px 5em;
+  align-items: center;
+}
+
+main h1 {
+  margin: 15px 0;
+  font-size: large;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
+  align-items:  center;
 }
 
 #trybewarts-forms-logo {
@@ -31,6 +40,12 @@ main {
 
 .row {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.row > * {
+  width: 50%;
 }
 
 .textarea-control {
@@ -45,4 +60,108 @@ main {
   position: absolute;
   bottom: 0;
   padding-bottom: 5px;
+}
+
+
+#input-name, #input-lastname, #input-email, #house {
+  height: 35px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: white;
+  border: none;
+}
+
+.flex {
+  display: flex;
+  margin-left: 5px;
+}
+
+.flex > h2 {
+  font-size: 1em;
+  align-self: center;
+}
+
+.flex > #house {
+  width: 100%;
+}
+
+.familia-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.familia-conteudo > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.familia-conteudo > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.familia-conteudo > div > div > label {
+  width: calc(100%/3);
+}
+
+.familia-conteudo label {
+  margin: 10px 0;
+}
+
+.familia-conteudo > div:last-of-type {
+  height: 100%;
+}
+
+.row-rate {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row-rate label {
+  width: fit-content;
+}
+
+.textarea {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.textarea-control {
+  width: 100%;
+ } 
+ 
+#textarea {
+  width: 100%;
+} 
+
+#label-infos {
+align-self: flex-start;
+margin: 10px 0;
+}
+
+#submit-btn {
+  color: white;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(73, 0, 141);
+  border-radius: 5px;
+}
+
+hr{
+  border-color:#aaa;
+  box-sizing:border-box;
+  width:100%;
+  margin: 15px 0;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
 }

@@ -3,7 +3,7 @@ const validEmail = 'tryber@teste.com';
 const validPassword = '123456';
 const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
 const inputs = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
-const labels = ['Higher Order Functions', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+const labels = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 const families = ['Frontend', 'Backend', 'FullStack'];
 const rates = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 const fields = {
@@ -36,6 +36,7 @@ const optionElement = document.createElement('option');
 const inputElement = document.createElement('input');
 const labelElement = document.createElement('label');
 const pElement = document.createElement('p');
+const divElement = document.createElement('div');
 
 function validateLogin(event) {
   if (inputLogin.value === validEmail && inputPassword.value === validPassword) {
@@ -62,7 +63,8 @@ function createSelectHouseOptions() {
 }
 
 function createCheckbox() {
-  inputs.reverse().forEach((input, index) => {
+  const newDiv = divElement.cloneNode();
+  inputs.forEach((input, index) => {
     const newCheckbox = inputElement.cloneNode();
     const newLabel = labelElement.cloneNode();
 
@@ -73,8 +75,9 @@ function createCheckbox() {
 
     newLabel.appendChild(newCheckbox);
     newLabel.appendChild(document.createTextNode(labels[index]));
-    labelContent.insertAdjacentElement('afterend', newLabel);
+    newDiv.appendChild(newLabel);
   });
+  labelContent.insertAdjacentElement('afterend', newDiv);
 }
 
 function createFamilyRadioOptions() {

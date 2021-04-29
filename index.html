@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Trybewarts</title>
-</head>
-<body>
-  <header class="header">
-    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" method="GET">
-      <input name="login" type="email" placeholder="Login">
-      <input name="senha" type="password" placeholder="Senha">
-      <button id="submitLogin" type="submit">Logar</button>
-    </form>
-  </header>
-  <main>
-    <form action="" id="evaluation-form">
-     <div class="row"> 
-       <input type="text" name="name" id="input-name" placeholder="Nome">
-       <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
-    </div>
-    <div class="row">
-      <input type="email" name="email" id="input-email" placeholder="Email">
-      <select name="house" id="house"></select>
-    </div>
-    <label id="label-family">
-      Qual sua família?
-    </label>
-    <label for="" id="label-content">
-      Qual conteúdo você está com mais vontade de aprender?
-    </label>
-    <div class="row">
-    <label for="" id="label-rate">
-       Como você avalia a Trybewarts?
-    </label>
-    </div>
-    <label for="textarea" class="textarea">
-      Deixe seu comentário:
-    </label>
-    <div class="textarea-control">
-      <textarea name="comment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <span id="counter">500</span>
-    </div>
-    <label for="" id="label-infos">
-      Você concorda com o uso das informações acima?
-    </label>
-    <button type="submit" id="submit-btn" disabled>Enviar</button>
-    </form>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-  </main>
-  <footer>Direitos reservados à Trybewarts©</footer>
-  
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trybewarts</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="images/trybewarts-header-logo.svg"
+        alt=""
+        class="trybewarts-header-logo"
+      />
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login" action="" method="GET">
+        <input name="login" type="email" placeholder="Login" />
+        <input name="senha" type="password" placeholder="Senha" />
+        <button id="submitLogin" type="submit">Logar</button>
+      </form>
+    </header>
+    <main>
+      <form action="" id="evaluation-form">
+        <h1>Forms</h1>
+        <div class="row">
+          <input type="text" name="name" id="input-name" placeholder="Nome" />
+          <input
+            type="text"
+            name="lastname"
+            id="input-lastname"
+            placeholder="Sobrenome"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="email"
+            name="email"
+            id="input-email"
+            placeholder="Email"
+          />
+
+          <span class="flex">
+            <h2>Casa:</h2>
+            <select name="house" id="house"></select>
+          </span>
+        </div>
+        <hr />
+        <div class="familia-conteudo">
+          <div>
+            <label id="label-family"> Qual sua família? </label>
+          </div>
+          <div>
+            <label for="" id="label-content">
+               <p>Qual conteúdo você está com mais vontade </p> 
+               <p>de aprender?</p> 
+            </label>
+          </div>
+        </div>
+        <hr />
+        <div class="row row-rate">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+        </div>
+        <label for="textarea" class="textarea"> Deixe seu comentário: </label>
+        <div class="textarea-control">
+          <textarea
+            name="comment"
+            id="textarea"
+            cols="30"
+            rows="10"
+            maxlength="500"
+          ></textarea>
+          <span id="counter">500</span>
+        </div>
+        <label for="" id="label-infos">
+          Você concorda com o uso das informações acima?
+        </label>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </form>
+      <img
+        src="images/trybewarts-colored.svg"
+        alt=""
+        id="trybewarts-forms-logo"
+      />
+    </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
