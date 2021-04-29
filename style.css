@@ -7,7 +7,6 @@ body {
   background-color: rgb(233, 233, 233);
   font-family: Acme, serif;
   text-align: center;
-  font-family: Acme, serif;
 }
 
 .header {
@@ -46,7 +45,7 @@ body {
   padding: 0 15px;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .trybewarts-header-logo {
@@ -58,12 +57,12 @@ main {
   justify-content: center;
 }
 
-@media (max-width: 1024px){
+@media ( max-width : 1024px ) {
+
   main {
     display: block;
   }
 }
-
 
 #evaluation-form {
   display: flex;
@@ -139,20 +138,20 @@ main {
   position: relative;
 }
 
-.comment label{
+.comment label {
   text-align: left;
   padding: 1rem 0;
 }
 
-#textarea{
+#textarea {
   height: 5rem;
   border-radius: 4px;
   background: none;
-  border: 1px solid #503b83;
+  border: 1px solid rgb(80, 59, 131);
   resize: none;
   box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
   padding: 1rem;
-  color: #503b83;
+  color: rgb(80, 59, 131);
   outline: none;
 }
 
@@ -198,7 +197,7 @@ button:hover {
   height: 40px;
   cursor: pointer;
   font-size: 1.2rem;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .aside img {
