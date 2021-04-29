@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Raleway, sans-serif;
+  background-color: rgb(239, 239, 239);
   min-height: 100vh;
 }
 
@@ -24,6 +25,10 @@ body {
   align-items: center;
   color: white;
   font-size: 2.5rem;
+}
+
+section > * {
+  margin-bottom: 12px;
 }
 
 .trybewarts-login {
@@ -48,117 +53,201 @@ body {
   border: none;
   color: white;
   background-color: rgb(78, 44, 131);
-}
-
-.trybewarts-login > button:hover , .trybewarts-login > button:focus {
-  filter: drop-shadow(0 0 8px rgba(78, 44, 131, 0.4));
+  cursor: pointer;
 }
 
 main {
   flex-grow: 1;
   display: flex;
-}
-
-footer {
-  text-align: center;
-  padding: 8px;
-  background-color: dimgray;
-}
-
-.divContainer {
-  margin: 0 auto;
-}
-
-#evaluation-form {
-  width: 675px;
-  max-height: 117px;
-  display: flex;
-  margin-top: 50px;
-  margin-left: 50px;
-  flex-direction: column;
-  text-align: center;
-}
-
-.inputForm {
-  height: 40px;
-  border-radius: 12px;
-  padding: 6px 16px;
-  width: 220px;
-  margin-bottom: 2px;
-}
-
-.inputForm2 {
-  height: 40px;
-  border-radius: 12px;
-  padding: 6px 16px;
-  width: 200px;
+  padding: 36px 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(190, 190, 190);
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 675px;
+}
+
+fieldset {
+  border: none;
+}
+
+#main-fields input {
+  border-radius: 12px;
+  padding: 12px 18px;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1) inset;
+}
+
+.name-fields {
+  display: flex;
+  gap: 12px;
+}
+
+.email-and-house-fields {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-fields > * , .email-and-house-fields > * {
+  width: 50%;
+}
+
+.house-select {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.house-select > select {
+  flex-grow: 1;
+  padding: 4px 8px;
+}
+
+.family-and-skill-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
 .family-choice {
-  flex-basis: auto;
-  flex-flow: wrap column;
-  width: 175px;
-  margin-top: 190px;
-  max-height: 100px;
-  padding: 10px;
-  margin-left: -1012px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 45%;
+  gap: 4px;
+}
+
+.family-choice > legend {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
 }
 
 .skill-choice {
   display: flex;
-  flex-direction: column;
-  margin-top: 200px;
-  height: 75px;
-  margin-left: 25px;
-  flex-basis: 255px;
+  flex-flow: row wrap;
 }
 
-.choice-container {
+.skill-choice > legend {
+  flex-basis: 100%;
+}
+
+.skill-choice > label {
+  flex-basis: 33%;
   display: flex;
-}
-
-.trybewarts {
-  display: flex;
-  max-width: 550px;
-  height: 25px;
-  margin-top: 290px;
-  margin-left: -1015px;
-}
-
-.divTexto {
-  display: flex;
-  width: 550px;
-  height: 50px;
-  margin-left: -450px;
-  margin-top: 320px;
-}
-
-#textarea {
-  margin-top: 25px;
-  margin-left: -180px;
-  height: 55px;
-  width: 500px;
-}
-
-#submit-btn {
   justify-content: center;
-  padding: 5px;
-  border-radius: 5px;
+  align-items: center;
 }
 
-.divAgree {
+.rating {
   display: flex;
-  margin-top: 100px;
-  margin-left: -505px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-#label-infos > button {
+.rating > label {
   display: flex;
-  background: purple;
-  margin-top: 20px;
-  width: 500px;
+  align-items: center;
+  gap: 2px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.commentary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-commentary {
+  text-align: start;
+  position: relative;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15) inset;
+  padding: 10px;
+  height: 100px;
+}
+
+.rating-commentary > textarea {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  resize: none;
+}
+
+.rating-commentary > textarea:active , .rating-commentary > textarea:focus {
+  outline: none;
+}
+
+.rating-commentary > span {
+  position: absolute;
+  user-select: none;
+  right: 8px;
+  bottom: 8px;
+}
+
+.agreement-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.agreement-container > div {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.agreement-container > button {
+  background-color: rgb(78, 44, 131);
+  padding: 8px 0;
+  border-radius: 8px;
+  color: white;
+}
+
+.agreement-container > button:disabled {
+  background-color: rgb(56, 31, 97);
+  color: grey;
+}
+
+#evaluation-form > * {
+  margin-bottom: 16px;
+  width: 85%;
+}
+
+#evaluation-form > *:last-child {
+  margin-bottom: 0;
+}
+
+.skill-choice > label > div {
+  display: flex;
+  gap: 8px;
+  width: 60%;
+}
+
+.trybewarts-login > button:hover , .trybewarts-login > button:focus {
+  filter: drop-shadow(0 0 8px rgba(78, 44, 131, 0.4));
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: rgb(60, 64, 74);
+  color: white;
 }
