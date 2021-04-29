@@ -48,3 +48,16 @@ function makeRateOptions(quantidadeDeOpcoes, tipoOpcoes, nomeOpcoes, typeOfOpton
   }
 }
 makeRateOptions(10, 'input', 'rate', 'radio');
+
+const confirmButton = document.getElementById('submit-btn');
+const checkboxSubmit = document.getElementById('agreement');
+
+function checkSubmit() {
+  if (checkboxSubmit.checked === true) {
+    confirmButton.disabled = false;
+  } else {
+    confirmButton.disabled = true;
+  }
+}
+
+checkboxSubmit.addEventListener('click', checkSubmit);
