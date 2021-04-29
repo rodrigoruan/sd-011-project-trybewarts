@@ -50,8 +50,10 @@ const eMail = document.querySelector('#input-email');
 const house = document.getElementById('house');
 const avaliations = document.querySelector('#textarea');
 const hardSkills = document.getElementsByClassName('subject');
+const infosMain = document.createElement('p');
 
-const infos1 = (event) => { event.preventDefault();
+const infos1 = (event) => {
+  event.preventDefault();
   const family = document.querySelector('input[name=family]:checked');
   const rate = document.querySelector('input[name=rate]:checked');
   const hardSkillsList = [];
@@ -60,14 +62,13 @@ const infos1 = (event) => { event.preventDefault();
       hardSkillsList.push(hardSkills[index].value);
     }
   }
-  const infosMain = document.createElement('p');
   trybewartsForm.appendChild(infosMain);
   infosMain.innerText = (`Nome: ${name.value} ${lastName.value}
   E-mail: ${eMail.value}
   Casa: ${house.value}
   Família: ${family.value}
   Matéria: ${hardSkillsList}
-  Avaliação: ${rate.value} -
+  Avaliação: ${rate.value}
   Observações: ${avaliations.value}`);
   trybewartsForm.removeChild(mainform);
 };
