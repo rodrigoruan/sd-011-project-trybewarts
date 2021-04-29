@@ -56,9 +56,9 @@ function handleFamily() {
 
 function handleSubject() {
   const subjectElementSelected = document.getElementsByName('materia');
-  let subjectsSelected = [];
+  const subjectsSelected = [];
   for (let i = 0; i < subjectElementSelected.length; i += 1) {
-    if (subjectElementSelected[i].checked === true ) {
+    if (subjectElementSelected[i].checked === true) {
       subjectsSelected.push(subjectElementSelected[i].value);
     }
   }
