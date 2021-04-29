@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -24,6 +28,10 @@
   display: flex;
   margin: 10px 30px;
   align-items: center;
+}
+
+#trybewarts-forms-logo {
+  margin-top: 80px;
 }
 
 #login {
@@ -79,10 +87,12 @@ main {
   justify-content: space-around;
   align-items: baseline;
   flex-direction: row;
+  margin-top: 50px;
 }
 
 #e-mail-e-casa {
   display: flex;
+  margin-top: 30px;
 }
 
 #input-radio {
@@ -109,6 +119,7 @@ span {
   flex-direction: column;
   margin-top: 10px;
   flex-grow: 1;
+  border: solid 1px darkslateblue;
 }
 
 #checkboxs {
@@ -140,6 +151,7 @@ span {
   padding-bottom: 10px;
   margin-right: 20px;
   border-radius: 5px;
+  width: 250px;
 }
 
 #input-lastname {
@@ -148,6 +160,7 @@ span {
   padding-bottom: 10px;
   margin-right: 20px;
   border-radius: 5px;
+  width: 250px;
 }
 
 #input-email {
@@ -156,6 +169,7 @@ span {
   padding-bottom: 10px;
   margin-right: 20px;
   border-radius: 5px;
+  width: 250px;
 }
 
 #house {
@@ -164,6 +178,8 @@ span {
   padding-bottom: 10px;
   margin-right: 20px;
   border-radius: 5px;
+  font-family: Lumos, sans-serif;
+  font-size: 15px;
 }
 
 #label-house {
@@ -179,6 +195,9 @@ span {
   position: fixed;
   left: 0;
   bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15pt;
 }
 
 #counter {
@@ -194,10 +213,14 @@ span {
 #agreement {
   flex-direction: row;
   margin-left: 10px;
+  margin-top: 22px;
 }
 
 #label-infos {
   flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 55px;
 }
 
 #submit-btn {
@@ -205,11 +228,20 @@ span {
   font-size: 15px;
   border-radius: 15px;
   text-align: center;
+  height: 40px;
+  background-color: darkslateblue;
+  color: white;
 }
 
 #evaluation-form {
+  margin-top: 100px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   width: 675px;
   justify-content: center;
+}
+
+#comentario {
+  margin-top: 50px;
 }
