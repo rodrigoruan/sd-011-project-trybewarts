@@ -132,9 +132,11 @@ footer {
   column-gap: 8px;
 }
 
+/*
 .align-items-forms > * {
   flex: 1;
 }
+*/
 
 .full-width-select-field {
   display: flex;

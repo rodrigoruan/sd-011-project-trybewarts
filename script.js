@@ -44,7 +44,7 @@ function contentValue() {
   for (let index = 0; index < content.length; index += 1) {
     myValue.push(content[index].value);
   }
-  return myValue.join(", ");
+  return myValue.join(', ');
 }
 
 function checkForm(event) {
@@ -60,6 +60,11 @@ function checkForm(event) {
   const elementP = document.createElement('p');
   elementP.classList.add('form-content');
   formsPai.appendChild(elementP);
-  elementP.innerHTML = `Nome: ${name} ${lastName}<br/> Email: ${email}<br/> Casa: ${house}<br/> Família: ${family}<br/> Matérias: ${contentValue()}<br/> Avaliação: ${rate}<br/> Observações: ${obs}`;
+  elementP.innerHTML = `Nome: ${name} ${lastName}<br/> Email: ${email}<br/> 
+  Casa: ${house}<br/>
+  Família: ${family}<br/> 
+  Matérias: ${contentValue()}<br/>
+  Avaliação: ${rate}<br/>
+  Observações: ${obs}`;
 }
 submitBtn.addEventListener('click', checkForm);
