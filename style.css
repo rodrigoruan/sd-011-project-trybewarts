@@ -26,20 +26,42 @@ textarea {
 #button-login {
   padding: 5px 10px;
   border-radius: 20px;
-  background-color: rgb(153, 170, 187);
+  background-color: rgb(78, 45, 131);
   border: none;
   width: 150px;
   color: white;
   font-weight: 800;
+  transition: 0.3s;
 }
 
 #button-login:active {
   transform: scale(0.9);
+  transition: 0.3s;
+}
+
+#submit-btn {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(78, 45, 131);
+  border: none;
+  color: white;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+#submit-btn:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+#submit-btn:disabled {
+  display: none;
+  transition: 0.3s;
 }
 
 .header-container {
   display: flex;
-  height: 100px;
+  height: 10vh;
   background-color: rgb(50, 167, 145);
 }
 
@@ -75,6 +97,8 @@ main {
   width: 1400px;
   margin: 50px auto;
   justify-content: space-between;
+  line-height: 30px;
+  height: 70vh;
 }
 
 #trybewarts-forms-logo {
@@ -107,22 +131,43 @@ main {
 
 .container-select {
   display: flex;
-  width: 100%;
+  padding: 10px;
 }
 
 .container-family {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.container-label {
+  width: 50%;
+}
+
+.label {
+  width: 250px;
 }
 
 .container-info {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding: 5px;
+}
+
+.label-info {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+
+.label-info p {
+  margin-right: 10px;
 }
 
 .footer-container {
   background-color: rgb(50, 167, 145);
+  padding: 10px;
 }
 
 .footer {

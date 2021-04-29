@@ -58,34 +58,37 @@
           </div>
           <div class="container-label">
             <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
-            <label>
-              <input type="checkbox" name="content" value="HoFs" class="subject">
-              HoFs
-            </label>
-            <label>
-              <input type="checkbox" name="content" value="Jest" class="subject">
-              Jest
-            </label>
-            <label>
-              <input type="checkbox" name="content" value="Promises" class="subject">
-              Promises
-            </label>
-            <label>
-              <input type="checkbox" name="content" value="React" class="subject">
-              React
-            </label>
-            <label>
-              <input type="checkbox" name="content" value="SQL" class="subject">
-              SQL
-            </label>
-            <label>
-              <input type="checkbox" name="content" value="Python" class="subject">
-              Python
-            </label>
+            <div class="label">
+              <label>
+                <input type="checkbox" name="content" value="HoFs" class="subject">
+                HoFs
+              </label>
+              <label>
+                <input type="checkbox" name="content" value="Jest" class="subject">
+                Jest
+              </label>
+              <label>
+                <input type="checkbox" name="content" value="Promises" class="subject">
+                Promises
+              </label>
+              <label>
+                <input type="checkbox" name="content" value="React" class="subject">
+                React
+              </label>
+              <label>
+                <input type="checkbox" name="content" value="SQL" class="subject">
+                SQL
+              </label>
+              <label>
+                <input type="checkbox" name="content" value="Python" class="subject">
+                Python
+              </label>
+            </div>
           </div>
         </div>
         <div class="container-info">
-          <p id="label-rate">Como você avalia a Trybewarts?</p>
+          <div class="label-info">
+            <p id="label-rate">Como você avalia a Trybewarts?</p>
             <label>
               <input type="radio" value="1" name="rate">
               1
@@ -126,14 +129,15 @@
               <input type="radio" value="10" name="rate">
               10
             </label>
-            <label class="textarea">
-              Deixe seu comentário:
-              <textarea name="textarea" id="textarea" cols="100" rows="10" maxlength="500"></textarea>
-            </label>
-            <label id="label-infos">
-              Você concorda com o uso das informações acima?
-              <input type="checkbox" id="agreement" name="agreement" required>
-            </label>
+          </div>
+          <label class="textarea">
+            Deixe seu comentário:
+            <textarea name="textarea" id="textarea" cols="100" rows="10" maxlength="500"></textarea>
+          </label>
+          <label id="label-infos">
+            Você concorda com o uso das informações acima?
+            <input type="checkbox" id="agreement" name="agreement" required>
+          </label>
         </div>
         <button type="submit" id="submit-btn">Enviar</button>
       </form>
