@@ -34,7 +34,7 @@ agreementBox.addEventListener('input', () => {
   }
 });
 
-// Pegando informações preenchidas
+// Pegando informações preenchidas para criar textos
 const allText = document.querySelector('#evaluation-form');
 const theName = document.querySelector('#input-name');
 const theSurname = document.querySelector('#input-lastname');
