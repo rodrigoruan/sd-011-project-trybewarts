@@ -14,12 +14,14 @@ submitButton.addEventListener('click', validation);
 
 const agreement = document.getElementById('agreement');
 
+const submitMainForm = document.getElementById('submit-btn');
+
 function ocultButton() {
   if (agreement.checked === true) {
-    document.getElementById('submit-btn').disabled = false;
+    submitMainForm.disabled = false;
   }
   if (agreement.checked === false) {
-    document.getElementById('submit-btn').disabled = true;
+    submitMainForm.disabled = true;
   }
 }
 
@@ -39,3 +41,36 @@ function conText(event) {
 }
 
 textArea.addEventListener('keyup', conText);
+
+const trybewartsForm = document.getElementsByClassName('trybewarts-form')[0];
+const mainform = document.getElementById('evaluation-form');
+const name = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const eMail = document.querySelector('#input-email');
+const house = document.getElementById('house');
+const avaliations = document.querySelector('#textarea');
+const hardSkills = document.getElementsByClassName('subject');
+const infosMain = document.createElement('p');
+
+const infos1 = (event) => {
+  event.preventDefault();
+  const family = document.querySelector('input[name=family]:checked');
+  const rate = document.querySelector('input[name=rate]:checked');
+  const hardSkillsList = [];
+  for (let index = 0; index < hardSkills.length; index += 1) {
+    if (hardSkills[index].checked === true) {
+      hardSkillsList.push(hardSkills[index].value);
+    }
+  }
+  trybewartsForm.appendChild(infosMain);
+  infosMain.innerText = (`Nome: ${name.value} ${lastName.value}
+  E-mail: ${eMail.value}
+  Casa: ${house.value}
+  Família: ${family.value}
+  Matéria: ${hardSkillsList}
+  Avaliação: ${rate.value}
+  Observações: ${avaliations.value}`);
+  trybewartsForm.removeChild(mainform);
+};
+
+submitMainForm.addEventListener('click', infos1);
