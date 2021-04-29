@@ -23,3 +23,12 @@ function verifyAgreement() {
 }
 
 checkbox.addEventListener('click', verifyAgreement);
+
+const counter = document.getElementById('counter');
+const textArea = document.querySelector('#textarea');
+counter.innerText = 500;
+
+function countingLetters() {
+  counter.innerText = 500 - textArea.value.length;
+}
+textArea.addEventListener('input', countingLetters);
