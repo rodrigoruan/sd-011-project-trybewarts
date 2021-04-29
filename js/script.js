@@ -16,13 +16,13 @@ function validateLogin(e) {
 
 loginForm.addEventListener('submit', validateLogin);
 
-const button = document.getElementById('agreement');
+const agreementCheck = document.getElementById('agreement');
 const sendButton = document.getElementById('submit-btn');
 
-button.addEventListener('click', () => {
-  if (button.checked === true) {
+agreementCheck.addEventListener('click', () => {
+  if (agreementCheck.checked) {
     sendButton.disabled = false;
-  } else if (button.checked === false) {
+  } else {
     sendButton.disabled = true;
   }
 });
