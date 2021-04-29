@@ -1,5 +1,6 @@
 const formValidate = document.querySelector('.trybewarts-login');
 const validateLogin = document.getElementById('loginButton');
+const evaluationForms = document.getElementById('evaluation-form');
 
 validateLogin.addEventListener('click', (event) => {
   event.preventDefault();
