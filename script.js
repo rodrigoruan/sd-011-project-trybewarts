@@ -16,15 +16,13 @@ btnLogin.addEventListener('click', LoginAlert);
 
 btnSub.disabled = true;
 
-const validateButton = () => {
+btnCheck.addEventListener('click', () => {
   if (btnCheck.checked === false) {
     btnSub.disabled = true;
   } else {
     btnSub.disabled = false;
   }
-};
-
-btnCheck.addEventListener('click', validateButton);
+});
 
 const evaluationForms = document.getElementById('evaluation-form');
 const nameInput = document.getElementById('input-name');
@@ -35,15 +33,15 @@ const familyInput = document.getElementsByClassName('family');
 const subjectInput = document.getElementsByClassName('subject');
 const radioInput = document.getElementsByClassName('radioRate');
 const textArea = document.querySelector('#textarea');
+const counterWord = document.querySelector('#counter');
 
 textArea.addEventListener('keyup', () => {
-  const paragrafo = document.querySelector('#counter');
-  let caracteresDisponiveis = 0;
-  caracteresDisponiveis = 500 - textArea.value.length;
-  paragrafo.innerText = caracteresDisponiveis;
+  let characters = 0;
+  characters = 500 - textArea.value.length;
+  counterWord.innerText = characters;
 });
 
-const subject = () => {
+const subjectCheck = () => {
   const array = [];
   for (let i = 0; i < subjectInput.length; i += 1) {
     if (subjectInput[i].checked === true) {
@@ -53,7 +51,7 @@ const subject = () => {
   return array.join(', ');
 };
 
-const rate = () => {
+const rateCheck = () => {
   for (let i = 0; i < radioInput.length; i += 1) {
     if (radioInput[i].checked === true) {
       return radioInput[i];
@@ -61,7 +59,7 @@ const rate = () => {
   }
 };
 
-const family = () => {
+const familyCheck = () => {
   for (let i = 0; i < familyInput.length; i += 1) {
     if (familyInput[i].checked === true) {
       return familyInput[i];
@@ -69,7 +67,7 @@ const family = () => {
   }
 };
 
-const makeP = (list) => {
+const makeParagraphs = (list) => {
   for (let i = 0; i < list.length; i += 1) {
     const p = document.createElement('p');
     p.innerText = list[i];
@@ -80,9 +78,9 @@ const makeP = (list) => {
 };
 
 btnSub.addEventListener('click', (event) => {
-  const checked = family();
-  const subjects = subject();
-  const rated = rate();
+  const checked = familyCheck();
+  const subjects = subjectCheck();
+  const rated = rateCheck();
 
   event.preventDefault();
 
@@ -97,5 +95,5 @@ btnSub.addEventListener('click', (event) => {
     `Avaliação: ${rated.value}`,
     `Observações: ${textArea.value}`,
   ];
-  makeP(list);
+  makeParagraphs(list);
 });
