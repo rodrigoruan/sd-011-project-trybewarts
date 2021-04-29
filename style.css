@@ -5,6 +5,7 @@
 
 body {
   background-color: rgb(233, 233, 233);
+  font-family: Acme, serif;
   text-align: center;
   font-family: Acme, serif;
 }
@@ -37,13 +38,15 @@ body {
 }
 
 .trybewarts-login button {
-  background-color: rgb(80, 59, 131);
+  background-color: rgb(78, 44, 131);
   color: white;
   border: none;
-  width: 150px;
+  width: 100px;
   height: 45px;
   padding: 0 15px;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 .trybewarts-header-logo {
@@ -52,8 +55,15 @@ body {
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+
+@media (max-width: 1024px){
+  main {
+    display: block;
+  }
+}
+
 
 #evaluation-form {
   display: flex;
@@ -63,18 +73,26 @@ main {
   align-items: center;
 }
 
-.section01 {
+.title {
+  width: 675px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.forms-inputs {
   display: flex;
   flex-wrap: wrap;
 }
 
-.section01 input {
+.forms-inputs input {
   border-radius: 5px;
   border: none;
   width: 250px;
   height: 45px;
   padding: 0 15px;
-  margin-right: 15px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 #house {
@@ -85,19 +103,10 @@ main {
   border-radius: 5px;
 }
 
-.aside img {
-  height: 500px;
-}
-
-.section2 {
-  width: 675px;
-  padding: 10px;
+.family {
   display: flex;
   justify-content: space-between;
-}
-
-.section2 input {
-  margin: 10px;
+  padding-bottom: 20px;
 }
 
 .radioDiv {
@@ -106,43 +115,112 @@ main {
   padding-top: 25px;
 }
 
+.subject label {
+  background-color: blueviolet;
+}
+
 .checkboxDiv {
   text-align: left;
   padding-top: 25px;
 }
 
-.section03 {
+.evaluation {
+  width: 675px;
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.section4 {
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.comment label{
+  text-align: left;
+  padding: 1rem 0;
+}
+
+#textarea{
+  height: 5rem;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid #503b83;
+  resize: none;
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
+  padding: 1rem;
+  color: #503b83;
+  outline: none;
+}
+
+#counter {
+  margin-top: 1rem;
+  bottom: 5px;
+  position: absolute;
+  right: 10px;
+}
+
+.infos {
   width: 675px;
   text-align: left;
   display: flex;
   align-items: center;
-}
-
-.section4 input {
   margin-left: 4px;
+  padding: 1rem 0;
 }
 
-.section05 {
+#label-infos {
+  padding-right: 5px;
+}
+
+button:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+  transition-duration: 0.2s;
+}
+
+.btn-submit {
   height: 40px;
   width: 675px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 }
 
-.section05 button {
+.btn-submit button {
   background-color: rgb(80, 59, 131);
   color: white;
   border: none;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.aside img {
+  height: 500px;
+  margin-left: 50px;
 }
 
 hr {
   margin: 5px;
   width: 100%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  width: 100%;
+  font-size: 1.1rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
