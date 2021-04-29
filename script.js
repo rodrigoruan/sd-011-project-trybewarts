@@ -28,6 +28,7 @@ textArea.addEventListener('keyup', () => {
 });
 
 // Requisito 21 contou com o auxílio de Gisele Costa
+// finalizado
 function checkSubject() {
   const subject = document.querySelectorAll('.subject:checked');
   const list = [];
