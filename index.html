@@ -29,14 +29,18 @@
           <input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div class="flex row2" >
-          <input type="email" id="input-email" placeholder="Email">
-          <select name="Casa" id="house">
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          </select>
+          <div class="flex row2" >
+            <div id="email">
+              <input type="email" id="input-email" placeholder="Email">
+            </div>
+          <div id="house">
+            <select name="Casa" id="input-house">
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            </select>
+          </div>
       </div>
     </form>
   </main>
@@ -48,12 +52,12 @@
     </div>
     <div class="checkbox-div">
       <h3 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h3>
-      <input type="checkbox" class="subject" value="HoFs" >HoFs
-      <input type="checkbox" class="subject" value="Jest" >Jest
-      <input type="checkbox" class="subject" value="Promises" >Promises
-      <input type="checkbox" class="subject" value="React" >React
-      <input type="checkbox" class="subject" value="SQL" >SQL
-      <input type="checkbox" class="subject" value="Python" >Python
+        <input type="checkbox" class="subject" name="materia" value="HoFs" >HoFs
+        <input type="checkbox" class="subject" name="materia" value="Jest" >Jest
+        <input type="checkbox" class="subject" name="materia" value="Promises" >Promises
+        <input type="checkbox" class="subject" name="materia" value="React" >React
+        <input type="checkbox" class="subject" name="materia" value="SQL" >SQL
+        <input type="checkbox" class="subject" name="materia" value="Python" >Python
     </div>
     <div id="label-rate-div" class="flex">
       <label for="label" id="label-rate">Como você avalia a Trybewarts?</label>

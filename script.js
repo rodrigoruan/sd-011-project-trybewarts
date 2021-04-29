@@ -29,20 +29,49 @@ function handleChangeFullName() {
   const nameElement = document.getElementById('input-name');
   const nameFilled = nameElement.value;
   const lastNameFilled = document.getElementById('input-lastname').value;
-  const divRow1 = nameElement.parentNode;
-  divRow1.innerHTML = `Nome: ${nameFilled} ${lastNameFilled}`;
+  const divParent = nameElement.parentNode;
+  divParent.innerHTML = `Nome: ${nameFilled} ${lastNameFilled}`;
 }
 
 function handleChangeEmail() {
   const emailElement = document.getElementById('input-email');
   const emailFilled = emailElement.value;
-  const divRow2 = emailElement.parentNode;
-  divRow2.innerHTML = `Email: ${emailFilled}`;
+  const divParent = emailElement.parentNode;
+  divParent.innerHTML = `Email: ${emailFilled}`;
+}
+
+function handleChangeHouse() {
+  const houseElement = document.getElementById('input-house');
+  const houseSelected = houseElement.value;
+  const divParent = houseElement.parentNode;
+  divParent.innerHTML = `Casa: ${houseSelected}`;
+}
+
+function handleFamily() {
+  const familyElementSelected = document.querySelector('input[name="family"]:checked');
+  const familyElementValue = familyElementSelected.value;
+  const divParent = familyElementSelected.parentNode;
+  divParent.innerHTML = `Família: ${familyElementValue}`;
+}
+
+function handleSubject() {
+  const subjectElementSelected = document.getElementsByName('materia');
+  let subjectsSelected = [];
+  for (let i = 0; i < subjectElementSelected.length; i += 1) {
+    if (subjectElementSelected[i].checked === true ) {
+      subjectsSelected.push(subjectElementSelected[i].value);
+    }
+  }
+  const divParent = subjectElementSelected[0].parentNode;
+  divParent.innerHTML = `Matérias: ${subjectsSelected.join(', ')}`;
 }
 
 function handleChanges() {
   handleChangeFullName();
   handleChangeEmail();
+  handleChangeHouse();
+  handleFamily();
+  handleSubject();
 }
 
 const button = document.getElementById('botao');
