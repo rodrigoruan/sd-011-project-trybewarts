@@ -52,14 +52,27 @@ input [ type = 'text' ] {
   color: white;
   font-weight: 600;
   font-size: 0.8em;
+  cursor: pointer;
+}
+
+#buttonLogin:hover {
+  background-color: rgb(89, 89, 179);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
 /* requisito 5 */
 #main-page {
+  background-color:beige;
   display: flex;
   flex-grow: row wrap;
   justify-content: center;
-  padding: 200px;
+  padding: 50px;
+  font-size: 1.3em;
 }
 
 /* requisito 5 e 6 */
@@ -96,6 +109,11 @@ input [ type = 'text' ] {
   column-gap: 8px;
 }
 
+.align-items-forms > * {
+  flex: 1;
+}
+
+
 #checkbox-input > * {
   flex: 1;
 }
@@ -126,41 +144,69 @@ footer {
   row-gap: 8px;
 }
 
-.align-items-forms {
-  display: flex;
-  justify-content: center;
-  column-gap: 8px;
-}
-
-/*
-.align-items-forms > * {
-  flex: 1;
-}
-*/
-
-.full-width-select-field {
-  display: flex;
-  align-items: center;
-  column-gap: 8px;
+#top-form input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .full-width-select-field select {
   flex: 1;
 }
 
+
+#top-form select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#top-form input:focus {
+  border: 3px solid #555;
+}
+
+.align-items-forms {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.full-width-select-field {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 172px;
+}
+
 #submit-btn {
+  margin-top: 10px;
   background-color: rgb(119, 119, 172);
   width: 675px;
   color: white;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
   font-size: 1em;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: rgb(89, 89, 179);
 }
 
 #textarea {
-  resize: none;
   width: 675px;
   height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
 }
 
 .form-content {
