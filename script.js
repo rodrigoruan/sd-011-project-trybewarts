@@ -1,54 +1,37 @@
-const buttonLogin = document.getElementById('button-login');
-const inputName = document.getElementById('input-login');
-const inputPassword = document.getElementById('input-password');
-const checkboxAgreement = document.getElementById('agreement');
-const userName = 'tryber@teste.com';
-const password = '123456';
-const counter = document.getElementById('counter');
-const textArea = document.getElementById('textarea');
-const formElement = document.getElementById('evaluation-form');
-const formNameInput = document.getElementById('input-name');
-const formLastNameInput = document.getElementById('input-lastname');
-const formEmailInput = document.getElementById('input-email');
-const formHouseInput = document.getElementById('house');
-const commentTextArea = document.getElementById('textarea');
-const submitButton = document.getElementById('submit-btn');
+const credentials = {
+  user: 'tryber@teste.com',
+  password: '123456',
+};
 
 function checkLogin() {
-  const validationLogin = (inputName.value === userName && inputPassword.value === password);
-  if (validationLogin) {
+  const inputName = document.getElementById('input-login').value;
+  const inputPassword = document.getElementById('input-password').value;
+  if (inputName === credentials.user && inputPassword === credentials.password) {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
   }
 }
 
-// Botão desabilitado: https://stackoverflow.com/questions/46917270/javascript-disable-button-until-all-fields-are-filled.
-function checkAgreement(event) {
-  if (event.target.classList.contains('on')) {
-    event.target.classList.remove('on');
-    submitButton.disabled = true;
-  } else {
-    event.target.classList.add('on');
-    submitButton.disabled = false;
-  }
-}
+const buttonLogin = document.getElementById('button-login');
+buttonLogin.addEventListener('click', checkLogin);
 
 // Ideia: https://stackoverflow.com/questions/14086398/count-textarea-characters
+const commentTextArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
 function countChars(event) {
   const { length } = event.target.value;
-  const charactersLeft = textArea.maxLength - length;
+  const charactersLeft = commentTextArea.maxLength - length;
   counter.innerText = charactersLeft;
 }
 
-window.onload = function opening() {
-  counter.innerText = 500;
-  submitButton.disabled = true;
-};
+commentTextArea.addEventListener('keyup', countChars);
 
-buttonLogin.addEventListener('click', checkLogin);
-checkboxAgreement.addEventListener('click', checkAgreement);
-textArea.addEventListener('keyup', countChars);
+const formNameInput = document.getElementById('input-name');
+const formLastNameInput = document.getElementById('input-lastname');
+const formEmailInput = document.getElementById('input-email');
+const formHouseInput = document.getElementById('house');
 
 function showValues() {
   const name = formNameInput.value;
@@ -96,6 +79,8 @@ function createTextElements() {
   return [nameText, emailText, houseText, familyText, subjectsText, rateText, commentText];
 }
 
+const formElement = document.getElementById('evaluation-form');
+
 function submitForm(event) {
   event.preventDefault();
   const elements = createTextElements();
@@ -105,4 +90,23 @@ function submitForm(event) {
   }
 }
 
+const submitButton = document.getElementById('submit-btn');
 submitButton.addEventListener('click', submitForm);
+
+// Botão desabilitado: https://stackoverflow.com/questions/46917270/javascript-disable-button-until-all-fields-are-filled.
+function checkAgreement(event) {
+  if (event.target.classList.contains('on')) {
+    event.target.classList.remove('on');
+    submitButton.disabled = true;
+  } else {
+    event.target.classList.add('on');
+    submitButton.disabled = false;
+  }
+}
+const checkboxAgreement = document.getElementById('agreement');
+checkboxAgreement.addEventListener('click', checkAgreement);
+
+window.onload = function opening() {
+  counter.innerText = 500;
+  submitButton.disabled = true;
+};
