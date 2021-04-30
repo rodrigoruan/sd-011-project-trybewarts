@@ -24,5 +24,3 @@ function checkAgreement() {
 }
 
 checkboxAgreement.addEventListener('click', checkAgreement);
-
-//
