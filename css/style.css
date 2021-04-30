@@ -56,8 +56,9 @@ hr {
 
 .trybewarts-login > * {
   border-radius: 4px;
-  height: 36px;
+  height: 32px;
   width: 104px;
+  padding: 8px;
 }
 
 .trybewarts-login > button {
