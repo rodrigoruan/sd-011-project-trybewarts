@@ -7,7 +7,7 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
 }
@@ -38,7 +38,7 @@
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 50px 30px;
   font-family: 'Bebas Neue', cursive;
   font-weight: 100;
@@ -62,6 +62,11 @@ main h2 {
 #evaluation-input {
   display: flex;
   flex-flow: wrap;
+}
+
+#loginButton {
+  background-color: rgb(239, 255, 13);
+  color: black;
 }
 
 #evaluation-input input{
@@ -104,33 +109,68 @@ hr {
 }
 
 #label-family {
-  font-size: 20px;
+  font-size: 25px;
+  margin:15px;
+}
+
+#familyForm {
+  display: flex;
+  justify-content: space-between;
 }
 
 #familySection {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
-
+  flex-basis: 40%;
+  justify-content: space-evenly;
 }
 
-#familyForm {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#label-content {
-  display: flex;
+#familySection label, input {
+  margin-right: 5px;
 }
 
 #learningContent {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#label-content {
+  display: flex;
+  /* background-color: red; */
+}
+#learningContent label {
+  margin: 20px;
+}
+
+.textarea {
+  margin-top: 20px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+#submit {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#submit-btn {
+  background-color: rgb(0, 3, 182);
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 footer {
   width: 100%;
   text-align: center;
-  padding: 50px;
-  background-color: red;
+  padding: 20px;
+  background-color: rgb(37, 16, 16);
+  color: white;
 }
