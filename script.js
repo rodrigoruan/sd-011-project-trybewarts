@@ -1,4 +1,3 @@
-// Formulario
 const buttonLogin = document.getElementById('btn-login');
 const sendBtn = document.getElementById('submit-btn');
 const mainForm = document.getElementById('main-form');
@@ -37,9 +36,6 @@ function counterText() {
 
 textField.addEventListener('keyup', counterText);
 
-// 21. Faça com que ao clicar no botão 'Enviar', o conteúdo do formulário seja substituído pelas informações preenchidas
-
-// Ao clicar no botão de enviar, existe um texto no formato Nome: -Nome- -Sobrenome-
 function nameAndLast() {
   const getName = document.getElementById('input-name').value;
   const getLastName = document.getElementById('input-lastname').value;
@@ -48,7 +44,6 @@ function nameAndLast() {
   return getDiv1;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Email: -Email-
 function emails() {
   const getEmail = document.getElementById('input-email').value;
   const getDiv2 = document.createElement('div');
@@ -56,7 +51,6 @@ function emails() {
   return getDiv2;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Casa: -Casa-
 function houses() {
   const getHouse = document.getElementById('house').value;
   const getDiv3 = document.createElement('div');
@@ -64,7 +58,6 @@ function houses() {
   return getDiv3;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Família: -Família-
 function families() {
   const input = document.querySelectorAll('input');
   const getDiv4 = document.createElement('div');
@@ -76,7 +69,6 @@ function families() {
   return getDiv4;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Matérias: -Matérias Selecionadas-
 function familyBox() {
   const getFamily = document.querySelectorAll('input[class="subject"]:checked');
   const getDiv5 = document.createElement('div');
@@ -91,7 +83,6 @@ function familyBox() {
   return getDiv5;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Avaliação: -Avaliação-
 function getRate() {
   const getAllInputs = document.querySelectorAll('input');
   const getDiv6 = document.createElement('div');
@@ -104,7 +95,6 @@ function getRate() {
   return getDiv6;
 }
 
-// Ao clicar no botão de enviar, existe um texto no formato Observações: -Observações-
 function observation() {
   const getComment = document.getElementById('textarea').value;
   const getDiv7 = document.createElement('div');
@@ -132,4 +122,5 @@ function copyDatas(event) {
   newestForm.appendChild(getDiv7);
   mainForm.replaceChild(newestForm, forms);
 }
+
 sendBtn.addEventListener('click', copyDatas);
