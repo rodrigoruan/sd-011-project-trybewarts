@@ -7,6 +7,7 @@ body {
   background-color: rgb(233, 233, 233);
   font-family: Acme, serif;
   text-align: center;
+  font-size: 20px;
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
 #trybewarts-header-title {
   color: white;
   padding: 20px;
+  font-size: 2em;
 }
 
 .trybewarts-login {
@@ -35,6 +37,7 @@ body {
   height: 45px;
   padding: 0 15px;
   margin-right: 15px;
+  outline: none;
 }
 
 .trybewarts-login button {
@@ -47,6 +50,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  outline: none;
 }
 
 .trybewarts-header-logo {
@@ -65,22 +69,27 @@ main {
   }
 }
 
+h2 {
+  font-size: 2em;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
-  height: 731px;
+  height: 900px;
   margin: 0 20px;
   flex-flow: column wrap;
   align-items: center;
+
 }
 
-#form-content {
+/* #form-content {
   display: flex;
   width: 675px;
   margin: 0 20px;
   flex-flow: column wrap;
   align-items: center;
-}
+} */
 
 .title {
   width: 675px;
@@ -114,24 +123,11 @@ main {
 
 .family {
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
+  justify-content: space-between;
   width: 675px;
-}
-
-.family input {
-  margin: 10px;
-}
-
-.radioDiv {
-  text-align: left;
-  padding-right: 40px;
   padding-top: 25px;
-}
-
-.checkboxDiv {
+  padding-bottom: 25px;
   text-align: left;
-  padding-top: 25px;
 }
 
 .evaluation {
