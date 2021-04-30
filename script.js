@@ -1,20 +1,12 @@
-const buttonLogin = document.getElementById('button-login');
-const inputName = document.getElementById('input-login');
-const inputPassword = document.getElementById('input-password');
-const checkboxAgreement = document.getElementById('agreement');
-const userName = 'tryber@teste.com';
-const password = '123456';
-const counter = document.getElementById('counter');
-const textArea = document.getElementById('textarea');
-const formElement = document.getElementById('evaluation-form');
-const formNameInput = document.getElementById('input-name');
-const formLastNameInput = document.getElementById('input-lastname');
-const formEmailInput = document.getElementById('input-email');
-const formHouseInput = document.getElementById('house');
 const commentTextArea = document.getElementById('textarea');
 const submitButton = document.getElementById('submit-btn');
 
+const userName = 'tryber@teste.com';
+const password = '123456';
+
 function checkLogin() {
+  const inputName = document.getElementById('input-login');
+  const inputPassword = document.getElementById('input-password');
   const validationLogin = (inputName.value === userName && inputPassword.value === password);
   if (validationLogin) {
     alert('Olá, Tryber!');
@@ -22,6 +14,9 @@ function checkLogin() {
     alert('Login ou senha inválidos.');
   }
 }
+
+const buttonLogin = document.getElementById('button-login');
+buttonLogin.addEventListener('click', checkLogin);
 
 // Botão desabilitado: https://stackoverflow.com/questions/46917270/javascript-disable-button-until-all-fields-are-filled.
 function checkAgreement(event) {
@@ -35,20 +30,23 @@ function checkAgreement(event) {
 }
 
 // Ideia: https://stackoverflow.com/questions/14086398/count-textarea-characters
+const counter = document.getElementById('counter');
+
 function countChars(event) {
   const { length } = event.target.value;
-  const charactersLeft = textArea.maxLength - length;
+  const charactersLeft = commentTextArea.maxLength - length;
   counter.innerText = charactersLeft;
 }
 
-window.onload = function opening() {
-  counter.innerText = 500;
-  submitButton.disabled = true;
-};
+const checkboxAgreement = document.getElementById('agreement');
 
-buttonLogin.addEventListener('click', checkLogin);
 checkboxAgreement.addEventListener('click', checkAgreement);
-textArea.addEventListener('keyup', countChars);
+commentTextArea.addEventListener('keyup', countChars);
+
+const formNameInput = document.getElementById('input-name');
+const formLastNameInput = document.getElementById('input-lastname');
+const formEmailInput = document.getElementById('input-email');
+const formHouseInput = document.getElementById('house');
 
 function showValues() {
   const name = formNameInput.value;
@@ -96,6 +94,8 @@ function createTextElements() {
   return [nameText, emailText, houseText, familyText, subjectsText, rateText, commentText];
 }
 
+const formElement = document.getElementById('evaluation-form');
+
 function submitForm(event) {
   event.preventDefault();
   const elements = createTextElements();
@@ -106,3 +106,8 @@ function submitForm(event) {
 }
 
 submitButton.addEventListener('click', submitForm);
+
+window.onload = function opening() {
+  counter.innerText = 500;
+  submitButton.disabled = true;
+};
