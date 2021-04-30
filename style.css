@@ -14,7 +14,7 @@
 
 .trybewarts-login {
   display: flex;
- align-self: center;
+  align-self: center;
 }
 
 .trybewarts-header-logo {
@@ -25,10 +25,9 @@
   align-self: center;
   font-size: 50px;
   color: white;
-  
 }
 
-#login, #senha, #loginButton {
+#login , #senha , #loginButton {
   border-radius: 10px;
   border-style: none;
   padding: 15px;
@@ -40,7 +39,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   margin: 50px 30px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: Bebas Neue, cursive;
   font-weight: 100;
   letter-spacing: 1px;
 }
@@ -69,18 +68,9 @@ main h2 {
   color: black;
 }
 
-#evaluation-input input{
- padding: 10px;
- font-size: 20px;
- width: 40%;
- margin: 10px 30px;
- border: 1px solid rgb(206, 200, 200);
- border-radius: 10px;
-}
-
 #evaluation-input select {
   width: 35%;
-  font-family: 'Bebas Neue', cursive;
+  font-family: Bebas Neue, cursive;
   font-size: 20px;
   letter-spacing: 1.5px;
   border: 1px solid rgb(206, 200, 200);
@@ -105,12 +95,12 @@ hr {
 }
 
 #evaluation-input label {
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 #label-family {
   font-size: 25px;
-  margin:15px;
+  margin: 15px;
 }
 
 #familyForm {
@@ -125,7 +115,16 @@ hr {
   justify-content: space-evenly;
 }
 
-#familySection label, input {
+#evaluation-input input {
+  padding: 10px;
+  font-size: 20px;
+  width: 40%;
+  margin: 10px 30px;
+  border: 1px solid rgb(206, 200, 200);
+  border-radius: 10px;
+}
+
+#familySection label {
   margin-right: 5px;
 }
 
@@ -137,8 +136,8 @@ hr {
 
 #label-content {
   display: flex;
-  /* background-color: red; */
 }
+
 #learningContent label {
   margin: 20px;
 }
