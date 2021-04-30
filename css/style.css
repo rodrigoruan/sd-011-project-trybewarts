@@ -28,7 +28,6 @@ hr {
 }
 
 /* HEADER */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +46,7 @@ hr {
 #trybewarts-header-title {
   display: flex;
   color: white;
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 .trybewarts-login {
@@ -66,7 +65,6 @@ hr {
 }
 
 /* MAIN */
-
 main {
   flex-grow: 1;
   display: flex;
@@ -77,12 +75,6 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-hr {
-  border: none;
-  height: 2px;
-  background-color: rgb(190, 190, 190);
 }
 
 #evaluation-form {
@@ -290,10 +282,6 @@ fieldset {
 
 #form-answer > button:focus , #form-answer > button:hover {
   background-color: rgb(40, 134, 117);
-}
-
-#form-answer.modal-active {
-  visibility: visible;
 }
 
 footer {
