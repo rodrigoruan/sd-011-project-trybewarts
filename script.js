@@ -55,9 +55,23 @@ const checkboxSubmit = document.getElementById('agreement');
 function checkSubmit() {
   if (checkboxSubmit.checked === true) {
     confirmButton.disabled = false;
+    confirmButton.style.opacity = '1.0';
   } else {
     confirmButton.disabled = true;
+    confirmButton.style.opacity = '0.6';
   }
 }
 
 checkboxSubmit.addEventListener('click', checkSubmit);
+
+//  Requisito resolvido com ajuda do Paulo Bomfim, Rafael Bamberg e José Henrique
+//  <https://github.com/tryber/sd-011-project-trybewarts/pull/155/files>
+//  Cria contador
+
+const textarea = document.getElementById('textarea');
+function contKeys(event) {
+  const cont = document.getElementById('counter');
+  cont.innerText = 500 - event.target.value.length;
+}
+
+textarea.addEventListener('input', contKeys);
