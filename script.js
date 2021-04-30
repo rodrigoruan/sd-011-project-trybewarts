@@ -32,3 +32,29 @@ textArea.addEventListener('input', () => {
   const caracteres = textArea.value.length;
   counter.innerHTML = textArea.maxLength - caracteres;
 });
+
+// Requisito 21 com a ajuda do códdigo do JHenrique e Paulo Henrique:
+// https://github.com/tryber/sd-011-project-trybewarts/blob/rafaelbamberg-011-project-trybewarts/script.js
+const formContent = document.querySelector('#form-content');
+const theForm = document.querySelector('#evaluation-form');
+
+// Adiciona o campo nome do Resultado
+const firstName = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+
+const nameData = () => {
+  const addName = document.createElement('p');
+  addName.innerHTML = `${firstName.value}  ${lastName.value}`;
+
+  formContent.appendChild(addName);
+};
+
+// Adiciona campo email
+
+// Adiciona o evento de para o atualização da página e preenche a seção form-content e limpa o form antigo
+theForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  theForm.innerHTML = '';
+  nameData();
+});

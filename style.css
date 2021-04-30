@@ -68,6 +68,15 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  height: 731px;
+  margin: 0 20px;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#form-content {
+  display: flex;
+  width: 675px;
   margin: 0 20px;
   flex-flow: column wrap;
   align-items: center;
@@ -105,18 +114,19 @@ main {
 
 .family {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 20px;
+  width: 675px;
+}
+
+.family input {
+  margin: 10px;
 }
 
 .radioDiv {
   text-align: left;
   padding-right: 40px;
   padding-top: 25px;
-}
-
-.subject label {
-  background-color: blueviolet;
 }
 
 .checkboxDiv {
