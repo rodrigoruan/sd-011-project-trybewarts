@@ -27,9 +27,7 @@
   color: white;
 }
 
-#login,
-#senha,
-#loginButton {
+#login , #senha , #loginButton {
   border-radius: 10px;
   border-style: none;
   padding: 15px;
