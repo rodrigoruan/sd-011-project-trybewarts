@@ -13,6 +13,7 @@ function sendUser() {
 loginButton.addEventListener('click', sendUser);
 
 const selectHouse = document.getElementById('house');
+
 function makeOptionSelect(arrayCasas, classOrId) {
   for (let index = 0; index < arrayCasas.length; index += 1) {
     const makeOption = document.createElement('option');
@@ -69,6 +70,7 @@ checkboxSubmit.addEventListener('click', checkSubmit);
 //  Cria contador
 
 const textarea = document.getElementById('textarea');
+
 function contKeys(event) {
   const cont = document.getElementById('counter');
   cont.innerText = 500 - event.target.value.length;
