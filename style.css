@@ -7,27 +7,56 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 10px 50px;
 }
 
 .trybewarts-login {
   display: flex;
+ align-self: center;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
 }
 
 #trybewarts-header-title {
   align-self: center;
+  font-size: 50px;
+  color: white;
+  
+}
+
+#login, #senha, #loginButton {
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px;
+  margin: 0 10px;
+  width: 150px;
 }
 
 main {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 50px 30px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+main h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #evaluation-form {
   display: flex;
   flex-flow: column;
   width: 675px;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 #evaluation-input {
@@ -35,21 +64,43 @@ main {
   flex-flow: wrap;
 }
 
-#evaluation-input input {
-  width: 40%;
-  margin: 3px;
+#evaluation-input input{
+ padding: 10px;
+ font-size: 20px;
+ width: 40%;
+ margin: 10px 30px;
+ border: 1px solid rgb(206, 200, 200);
+ border-radius: 10px;
 }
 
 #evaluation-input select {
-  width: 37%;
+  width: 35%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border: 1px solid rgb(206, 200, 200);
+  border-radius: 8px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.house {
-  height: 20px;
+hr {
+  width: 100%;
+  align-self: center;
+  margin: 20px 0;
+}
+
+#house {
+  height: 35%;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+#evaluation-input label {
+  margin: 10px 10px;
 }
 
 #label-family {
@@ -75,4 +126,11 @@ main {
 #learningContent {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  background-color: red;
 }
