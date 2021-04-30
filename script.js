@@ -67,7 +67,7 @@ checkboxSubmit.addEventListener('click', checkSubmit);
 
 //  Requisito resolvido com ajuda do Paulo Bomfim, Rafael Bamberg e José Henrique
 //  <https://github.com/tryber/sd-011-project-trybewarts/pull/155/files>
-//  Cria contador
+//  Cria contador.
 
 const textarea = document.getElementById('textarea');
 
