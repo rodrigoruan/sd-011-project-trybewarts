@@ -1,5 +1,5 @@
 const loginButton = document.querySelector('#loginButton');
-/*comentario*/
+
 function sendUser() {
   const loginText = document.getElementById('login').value;
   const senhaText = document.getElementById('senha').value;
