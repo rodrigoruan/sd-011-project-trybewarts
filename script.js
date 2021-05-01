@@ -46,7 +46,7 @@ const nameData = () => {
   addName.innerHTML = `Nome: ${firstName.value}  ${lastName.value}`;
   addName.style.padding = '5px';
 
-  const addTitle = document.createElement('h3');
+  const addTitle = document.createElement('h2');
   addTitle.innerHTML = 'Seus dados:';
   addTitle.style.padding = '8px';
 
@@ -147,7 +147,7 @@ theForm.addEventListener('submit', (event) => {
   comentaryData();
   removeForm();
 
-  theForm.style.backgroundColor = 'rgb(230, 230, 230)';
+  theForm.style.backgroundColor = 'rgb(220, 220, 220)';
   theForm.style.height = '500px';
   theForm.style.margin = 'auto';
 });
