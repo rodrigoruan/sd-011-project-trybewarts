@@ -35,7 +35,6 @@ textArea.addEventListener('input', () => {
 
 // Requisito 21 com a ajuda do códdigo do JHenrique e Paulo Henrique:
 // https://github.com/tryber/sd-011-project-trybewarts/blob/rafaelbamberg-011-project-trybewarts/script.js
-const formContent = document.querySelector('#form-content');
 const theForm = document.querySelector('#evaluation-form');
 
 // Adiciona o campo nome com valor do input
@@ -45,8 +44,10 @@ const lastName = document.querySelector('#input-lastname');
 const nameData = () => {
   const addName = document.createElement('p');
   addName.innerHTML = `Nome: ${firstName.value}  ${lastName.value}`;
+  addName.id = 'nome';
+  // document.querySelector('#nome')
 
-  formContent.appendChild(addName);
+  theForm.appendChild(addName);
 };
 
 // Adiciona campo email com valor do input
@@ -56,7 +57,7 @@ const emailData = () => {
   const addEmail = document.createElement('p');
   addEmail.innerHTML = `Email: ${email.value}`;
 
-  formContent.appendChild(addEmail);
+  theForm.appendChild(addEmail);
 };
 
 // Adiciona campo casa com valor do input
@@ -66,7 +67,7 @@ const casaData = () => {
   const addCasa = document.createElement('p');
   addCasa.innerHTML = `Casa: ${casa.value}`;
 
-  formContent.appendChild(addCasa);
+  theForm.appendChild(addCasa);
 };
 
 // Adiciona campo casa com valor do input
@@ -76,7 +77,7 @@ const familyData = () => {
   const addFamily = document.createElement('p');
   addFamily.innerHTML = `Família: ${chosenFamily.value}`;
 
-  formContent.appendChild(addFamily);
+  theForm.appendChild(addFamily);
 };
 
 const subjectsData = () => {
@@ -91,26 +92,51 @@ const subjectsData = () => {
   const addSubjects = document.createElement('p');
   addSubjects.innerHTML = `Matérias: ${result}`;
 
-  formContent.appendChild(addSubjects);
+  theForm.appendChild(addSubjects);
 };
 
+// Adiciona campo de avaliação com valor do input
 const elevadorData = () => {
   const rating = document.querySelector('input[name="rate"]:checked');
   const addRating = document.createElement('p');
   addRating.innerHTML = `Avaliação: ${rating.value}`;
 
-  formContent.appendChild(addRating);
+  theForm.appendChild(addRating);
+};
+
+// Adiciona campo de comentário
+const comentaryData = () => {
+  const comentary = document.querySelector('#textarea');
+  const addComentary = document.createElement('p');
+  addComentary.innerHTML = `Observações: ${comentary.value}`;
+
+  theForm.appendChild(addComentary);
+};
+
+// Função para apagar form
+const removeForm = () => {
+  const formSections = theForm.querySelectorAll('section');
+  for (let index = 0; index < formSections.length; index += 1) {
+    formSections[index].innerHTML = '';
+  }
+  theForm.querySelectorAll('hr')[0].remove();
+  theForm.querySelectorAll('hr')[0].remove();
+  theForm.querySelector('h2').remove();
 };
 
 // Adiciona o evento de para o atualização da página e preenche a seção form-content e limpa o form antigo
 theForm.addEventListener('submit', (event) => {
   event.preventDefault();
+  // https://stackoverflow.com/questions/7803814/prevent-refresh-of-page-when-button-inside-form-clicked
 
+  removeForm();
   nameData();
   emailData();
   casaData();
   familyData();
   subjectsData();
   elevadorData();
-  theForm.innerHTML = '';
+  comentaryData();
+
+  // theForm.querySelector('p').style.alignContent: screenLeft;
 });

@@ -80,16 +80,8 @@ h2 {
   margin: 0 20px;
   flex-flow: column wrap;
   align-items: center;
-
+  /* padding: ; */
 }
-
-/* #form-content {
-  display: flex;
-  width: 675px;
-  margin: 0 20px;
-  flex-flow: column wrap;
-  align-items: center;
-} */
 
 .title {
   width: 675px;
