@@ -44,9 +44,13 @@ const lastName = document.querySelector('#input-lastname');
 const nameData = () => {
   const addName = document.createElement('p');
   addName.innerHTML = `Nome: ${firstName.value}  ${lastName.value}`;
-  addName.id = 'nome';
-  // document.querySelector('#nome')
+  addName.style.padding = '5px';
 
+  const addTitle = document.createElement('h3');
+  addTitle.innerHTML = 'Seus dados:';
+  addTitle.style.padding = '8px';
+
+  theForm.append(addTitle);
   theForm.appendChild(addName);
 };
 
@@ -56,6 +60,7 @@ const email = document.querySelector('#input-email');
 const emailData = () => {
   const addEmail = document.createElement('p');
   addEmail.innerHTML = `Email: ${email.value}`;
+  addEmail.style.padding = '5px';
 
   theForm.appendChild(addEmail);
 };
@@ -66,6 +71,7 @@ const casa = document.querySelector('#house');
 const casaData = () => {
   const addCasa = document.createElement('p');
   addCasa.innerHTML = `Casa: ${casa.value}`;
+  addCasa.style.padding = '5px';
 
   theForm.appendChild(addCasa);
 };
@@ -76,6 +82,7 @@ const familyData = () => {
   const chosenFamily = document.querySelector('input[name="family"]:checked');
   const addFamily = document.createElement('p');
   addFamily.innerHTML = `Família: ${chosenFamily.value}`;
+  addFamily.style.padding = '5px';
 
   theForm.appendChild(addFamily);
 };
@@ -91,6 +98,7 @@ const subjectsData = () => {
 
   const addSubjects = document.createElement('p');
   addSubjects.innerHTML = `Matérias: ${result}`;
+  addSubjects.style.padding = '5px';
 
   theForm.appendChild(addSubjects);
 };
@@ -109,6 +117,7 @@ const comentaryData = () => {
   const comentary = document.querySelector('#textarea');
   const addComentary = document.createElement('p');
   addComentary.innerHTML = `Observações: ${comentary.value}`;
+  addComentary.style.padding = '5px';
 
   theForm.appendChild(addComentary);
 };
@@ -117,7 +126,7 @@ const comentaryData = () => {
 const removeForm = () => {
   const formSections = theForm.querySelectorAll('section');
   for (let index = 0; index < formSections.length; index += 1) {
-    formSections[index].innerHTML = '';
+    formSections[index].remove();
   }
   theForm.querySelectorAll('hr')[0].remove();
   theForm.querySelectorAll('hr')[0].remove();
@@ -129,7 +138,6 @@ theForm.addEventListener('submit', (event) => {
   event.preventDefault();
   // https://stackoverflow.com/questions/7803814/prevent-refresh-of-page-when-button-inside-form-clicked
 
-  removeForm();
   nameData();
   emailData();
   casaData();
@@ -137,6 +145,9 @@ theForm.addEventListener('submit', (event) => {
   subjectsData();
   elevadorData();
   comentaryData();
+  removeForm();
 
-  // theForm.querySelector('p').style.alignContent: screenLeft;
+  theForm.style.backgroundColor = 'rgb(230, 230, 230)';
+  theForm.style.height = '500px';
+  theForm.style.margin = 'auto';
 });

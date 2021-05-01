@@ -80,7 +80,6 @@ h2 {
   margin: 0 20px;
   flex-flow: column wrap;
   align-items: center;
-  /* padding: ; */
 }
 
 .title {
@@ -210,7 +209,7 @@ hr {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   background-color: rgb(60, 64, 74);
   color: white;
