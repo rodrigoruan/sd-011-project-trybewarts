@@ -1,11 +1,11 @@
-const email = 'tryber@teste.com';
-const pass = '123456';
+const emailDefault = 'tryber@teste.com';
+const passwordDefaul = '123456';
 const loginInput = document.querySelector('#login');
 const passwordInput = document.querySelector('#password');
 const buttonInput = document.querySelector('#button');
 
 function login() {
-  if (loginInput.value === email && passwordInput.value === pass) {
+  if (loginInput.value === emailDefault && passwordInput.value === passwordDefaul) {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
@@ -38,23 +38,79 @@ textArea.addEventListener('input', () => {
 const formContent = document.querySelector('#form-content');
 const theForm = document.querySelector('#evaluation-form');
 
-// Adiciona o campo nome do Resultado
+// Adiciona o campo nome com valor do input
 const firstName = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 
 const nameData = () => {
   const addName = document.createElement('p');
-  addName.innerHTML = `${firstName.value}  ${lastName.value}`;
+  addName.innerHTML = `Nome: ${firstName.value}  ${lastName.value}`;
 
   formContent.appendChild(addName);
 };
 
-// Adiciona campo email
+// Adiciona campo email com valor do input
+const email = document.querySelector('#input-email');
+
+const emailData = () => {
+  const addEmail = document.createElement('p');
+  addEmail.innerHTML = `Email: ${email.value}`;
+
+  formContent.appendChild(addEmail);
+};
+
+// Adiciona campo casa com valor do input
+const casa = document.querySelector('#house');
+
+const casaData = () => {
+  const addCasa = document.createElement('p');
+  addCasa.innerHTML = `Casa: ${casa.value}`;
+
+  formContent.appendChild(addCasa);
+};
+
+// Adiciona campo casa com valor do input
+const familyData = () => {
+// https://stackoverflow.com/questions/15839169/how-to-get-value-of-selected-radio-button
+  const chosenFamily = document.querySelector('input[name="family"]:checked');
+  const addFamily = document.createElement('p');
+  addFamily.innerHTML = `Família: ${chosenFamily.value}`;
+
+  formContent.appendChild(addFamily);
+};
+
+const subjectsData = () => {
+  const selectedSubjects = document.querySelectorAll('input[name="subs"]:checked');
+  const array = [];
+  let result = '';
+  for (let index = 0; index < selectedSubjects.length; index += 1) {
+    array.push(selectedSubjects[index].value);
+  }
+  result = array.join(', ');
+
+  const addSubjects = document.createElement('p');
+  addSubjects.innerHTML = `Matérias: ${result}`;
+
+  formContent.appendChild(addSubjects);
+};
+
+const elevadorData = () => {
+  const rating = document.querySelector('input[name="rate"]:checked');
+  const addRating = document.createElement('p');
+  addRating.innerHTML = `Avaliação: ${rating.value}`;
+
+  formContent.appendChild(addRating);
+};
 
 // Adiciona o evento de para o atualização da página e preenche a seção form-content e limpa o form antigo
 theForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  theForm.innerHTML = '';
   nameData();
+  emailData();
+  casaData();
+  familyData();
+  subjectsData();
+  elevadorData();
+  theForm.innerHTML = '';
 });
