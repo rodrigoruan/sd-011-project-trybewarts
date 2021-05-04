@@ -19,75 +19,80 @@
   </header>
   <main>
     <form id="evaluation-form" method="post">
-      <div class="hr">
-        <div class="row block1">
+      <div class="block block1">
+        <div class="row">
           <input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div class="row block1">
+        <div class="row">
           <input type="text" id="input-email" placeholder="Email">
-            <select name="house" id="house">
-              <option value="" id="house" disabled selected>Casa</option>
-              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-              <option value="Corvinode" id="corvinode-house">Corvinode</option>
-              <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
-          </label>
+          <select name="house" id="house" required>
+            <option disabled selected value="">Casa</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
         </div>
       </div>
-      <div class="row hr block2">
-        <div class="column family">
-          <label for="family" id="label-family">Qual sua família?</label>
-          <label><input type="radio" name="family" value="Frontend"> Frontend </label>
-          <label><input type="radio" name="family" value="Backend"> Backend </label>
-          <label><input type="radio" name="family" value="FullStack"> FullStack </label>
-        </div>
-        <div class="column">
-          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div class="row checkbox">
-            <label><input type="checkbox" value="HoFs" class="subject" name="subject"> HoFs </label>
-            <label><input type="checkbox" value="Jest" class="subject" name="subject"> Jest </label>
-            <label><input type="checkbox" value="Promises" class="subject" name="subject"> Promises </label>
-            <label><input type="checkbox" value="React" class="subject" name="subject"> React </label>
-            <label><input type="checkbox" value="SQL" class="subject" name="subject"> SQL </label>
-            <label><input type="checkbox" value="Python" class="subject" name="subject"> Python </label>
+      <div class="block hr">
+        <div class="row">
+          <div class="column separator">
+            <label for="family" id="label-family">Qual sua família?</label>
+            <label><input type="radio" name="family" value="Frontend"> Frontend </label>
+            <label><input type="radio" name="family" value="Backend"> Backend </label>
+            <label><input type="radio" name="family" value="FullStack"> FullStack </label>
+          </div>
+          <div class="column">
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div class="row checkbox">
+              <label><input type="checkbox" value="HoFs" class="subject" name="subject"> HoFs </label>
+              <label><input type="checkbox" value="Jest" class="subject" name="subject"> Jest </label>
+              <label><input type="checkbox" value="Promises" class="subject" name="subject"> Promises </label>
+              <label><input type="checkbox" value="React" class="subject" name="subject"> React </label>
+              <label><input type="checkbox" value="SQL" class="subject" name="subject"> SQL </label>
+              <label><input type="checkbox" value="Python" class="subject" name="subject"> Python </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="block3">
+      <div class="block">
         <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
-        <label><input type="radio" name="rate" value="1">1 </label>
-        <label><input type="radio" name="rate" value="2">2 </label>
-        <label><input type="radio" name="rate" value="3">3 </label>
-        <label><input type="radio" name="rate" value="4">4 </label>
-        <label><input type="radio" name="rate" value="5">5 </label>
-        <label><input type="radio" name="rate" value="6">6 </label>
-        <label><input type="radio" name="rate" value="7">7 </label>
-        <label><input type="radio" name="rate" value="8">8 </label>
-        <label><input type="radio" name="rate" value="9">9 </label>
-        <label><input type="radio" name="rate" value="10">10 </label>
+        <label><input type="radio" name="rate" value="1"> 1 </label>
+        <label><input type="radio" name="rate" value="2"> 2 </label>
+        <label><input type="radio" name="rate" value="3"> 3 </label>
+        <label><input type="radio" name="rate" value="4"> 4 </label>
+        <label><input type="radio" name="rate" value="5"> 5 </label>
+        <label><input type="radio" name="rate" value="6"> 6 </label>
+        <label><input type="radio" name="rate" value="7"> 7 </label>
+        <label><input type="radio" name="rate" value="8"> 8 </label>
+        <label><input type="radio" name="rate" value="9"> 9 </label>
+        <label><input type="radio" name="rate" value="10"> 10 </label>
       </div>
-      <div class="column block4">
-        <label for='textarea' class="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-        <div>
-          <span id="counter">500</span> caracteres restantes
+      <div class="block">
+        <div class="column">
+          <label for='textarea' class="textarea">Deixe seu comentário:</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+          <div>
+            <span id="counter">500</span> caracteres restantes
+          </div>
         </div>
       </div>
-      <div class="block5">
+      <div class="block">
         <label id="label-infos">Você concorda com o uso das informações acima? 
           <input type="checkbox" name="" id="agreement">
         </label>
       </div>
       <div>
-        <button type="submit" id="submit-btn" disabled>Enviar</button>
+        <button type="submit" id="submit-btn" disabled class="formBtn">Enviar</button>
       </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Trybewarts Colored Logo" id="trybewarts-forms-logo">
   </main>
 
-  <footer>Direitos reservados à Trybewarts&#169;</footer>
+  <footer>
+    <p>Direitos reservados à Trybewarts&#169;</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
