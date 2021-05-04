@@ -134,13 +134,6 @@ footer {
     justify-content: center;
   }
 
-  #evaluation-form {
-    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/images/trybewarts-colored.svg);
-    background-position: center bottom 100px;
-    background-repeat: no-repeat;
-    background-size: 400px;
-  }
-
   .textareaCounter {
     display: flex;
     justify-content: center;
