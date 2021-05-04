@@ -50,8 +50,6 @@ body {
   color: white;
 }
 
-
-
 .trybewarts-login {
   display: flex;
 }
@@ -186,7 +184,6 @@ footer {
     color: white;
     border-radius: 5px;
   }
-  
 
   .trybewarts-login button:hover {
     background-color: red;
