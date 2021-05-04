@@ -6,15 +6,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  color: white;
-  
-}
-
-.form-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
 }
 
 .trybewarts-header-logo {
@@ -24,19 +17,12 @@
 
 .trybewarts-login {
   display: flex;
-  margin: 15px 45px;
 }
 
 #title-id {
   display: flex;
   align-content: center;
   background-color: white;
-}
-
-.mage {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 main {
@@ -47,17 +33,10 @@ main {
   display: flex;
   width: 675px;
   flex-flow: column wrap;
-  line-height: 200%;
-  margin: 50px 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: large;
-  color: white;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin-top: 8%;
-  margin-left: 5%;
 }
 
 .family-input {
@@ -68,7 +47,6 @@ main {
 .rates {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .comentario {
@@ -78,29 +56,10 @@ main {
 
 footer {
   text-align: center;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(50, 167, 146);
 }
 
 #counter {
   display: flex;
   justify-content: flex-end;
-}
-
-#submit-btn {
-  width: 500px;
-  height: 25px;
-  margin-left: 13%;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 45px;
-  font-size: 20px;
-  color: white;
-}
-
-body {
-  background-image: url(https://www.centralxbox.com.br/wp-content/uploads/2021/01/thumb-1920-1102284.jpg);
 }
