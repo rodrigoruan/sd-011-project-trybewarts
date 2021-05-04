@@ -83,14 +83,14 @@ footer {
   padding-right: 120px;
 }
 
-.block1 input {
-  width: 307px;
+header input {
   padding: 5px;
   margin: 3px;
   height: 20px;
 }
 
-header input {
+.block1 input {
+  width: 307px;
   padding: 5px;
   margin: 3px;
   height: 20px;
@@ -103,15 +103,11 @@ select {
 }
 
 select:invalid {
-  color:gray;
-}
-
-option[disabled] {
-  display: none;
+  color: gray;
 }
 
 option {
-  color:black;
+  color: black;
 }
 
 button {
@@ -121,6 +117,7 @@ button {
 
 .formBtn {
   margin-top: 20px;
+  margin-left: 5%;
 }
 
 .hr {
@@ -130,10 +127,6 @@ button {
   margin: 15px 0;
 }
 
-input[type='radio'] {
+.radio {
   margin-left: 10px;
-}
-
-select option[disabled] {
-  display: none;
 }
