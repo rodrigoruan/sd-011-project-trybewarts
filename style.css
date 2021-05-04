@@ -58,3 +58,7 @@ main {
 #textarea {
   resize: none;
 }
+
+select option[disabled] {
+  display: none; 
+} 
