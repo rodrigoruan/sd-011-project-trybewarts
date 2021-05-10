@@ -75,6 +75,11 @@ function createTextElements() {
 function submitForm(event) {
   event.preventDefault();
   const elements = createTextElements();
+  formElement.innerHTML = '';
+  const title = document.createElement('h2');
+  title.textContent = 'Obrigado por enviar seu formulário!';
+  title.classList.add('after-submit');
+  formElement.appendChild(title);
   for (let index = 0; index < elements.length; index += 1) {
     formElement.appendChild(elements[index]);
   }

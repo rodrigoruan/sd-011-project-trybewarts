@@ -94,6 +94,10 @@ main {
   font-size: 2rem;
 }
 
+#evaluation-form p {
+  margin: 5px auto;
+}
+
 .form-section {
   display: flex;
   flex-wrap: wrap;
