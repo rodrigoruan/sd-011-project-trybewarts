@@ -6,8 +6,9 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
+    <img height="40px" class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login">
     	<input type="text" class="login" name="input-login" placeholder="Login" id="login">
@@ -15,12 +16,15 @@
       	<button type="submit" class="acesso" id='enviar'>Entrar</button>
     </form>
   </header>
+
   <main class="main" id="principal">
     <form id="evaluation-form">
+
         <div>
           <input type="text" id="input-name" placeholder="Nome">
           <input type="text" id="input-lastname" placeholder="Sobrenome">
         </div>
+
         <div>
           <input type="text" id="input-email" placeholder="Email">
           <select id="house">
@@ -88,9 +92,9 @@
             <label><input type="radio" value="10" name="rate">10</label>
         </div>
         <div id="textarea-container">
-            <label class="textarea">Deixe seu comentário:</label><br>
-            <textarea maxlength="500" id="textarea"></textarea>
-            <label id="counter">500</label>
+            <label class="textarea">Deixe seu comentário:</label>
+            <label id="counter">500</label><br>
+            <textarea maxlength="500" id="textarea" rows="5" cols="80"></textarea>
         </div>
         <div id="concorda-container">
             <label id="label-infos">Você concorda com o uso das informações acima?</label>
